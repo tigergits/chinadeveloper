@@ -9,7 +9,7 @@ import { LanguageSwitcher } from './language-switcher';
 import { ThemeToggle } from './theme-toggle';
 
 const socialLinks = [
-  { name: 'GitHub', icon: Github, href: 'https://github.com' }
+  { name: 'GitHub', icon: Github, href: 'https://github.com/tigergits' }
 ];
 
 export default function Header() {

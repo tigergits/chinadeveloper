@@ -1,6 +1,7 @@
-# ChinaDeveloper Portfolios Website
+# Tiger Liu - ChinaDeveloper - Portfolios Website
 
 A professional portfolios website built with Next.js, TypeScript, Tailwind CSS, and next-intl for multi-language support.
+[https://chinadeveloper.net](https://chinadeveloper.net)
 
 ## Features
 

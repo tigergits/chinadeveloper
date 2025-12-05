@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
 	setRequestLocale(locale)
 	const t = await getTranslations({ locale })
 
-	const isZhCN = locale === "zh_CN"
+	const isZhCN = locale === "zh-cn"
 	const title = `${t("contact.title")} - Tiger Liu | China Developer`
 	const description = isZhCN
 		? "联系 Tiger Liu 讨论远程工作机会。China Developer - 资深全栈软件开发工程师，寻求全职或兼职远程工作机会。"
@@ -69,7 +69,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
 	const emailItem = contacts.find((item) => item.name.toLowerCase() === "email")
 	const otherContacts = contacts.filter((item) => item.name.toLowerCase() !== "email")
 
-	const isZhCN = locale === "zh_CN"
+	const isZhCN = locale === "zh-cn"
 	const baseUrl = "https://chinadeveloper.net"
 	
 	// Breadcrumb structured data

@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
 			}
 		}
 
-		const isZhCN = locale === "zh_CN"
+		const isZhCN = locale === "zh-cn"
 		const portfolioTitle = portfolio.metadata.title || slug
 		const technologies = portfolio.metadata.technologies || []
 		const techKeywords = technologies.join(", ")
@@ -118,7 +118,7 @@ export default async function PortfolioPage({ params }: { params: Promise<{ loca
 			alt: image.alt || `${portfolio.metadata.title || slug} - Screenshot ${index + 1}`,
 		}))
 
-		const isZhCN = locale === "zh_CN"
+		const isZhCN = locale === "zh-cn"
 		const portfolioTitle = portfolio.metadata.title || slug
 		const baseUrl = "https://chinadeveloper.net"
 		

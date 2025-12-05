@@ -43,13 +43,13 @@ All content is stored in the `content/` directory:
 content/
   about/
 	en.md
-	zh_CN.md
+	zh-cn.md
 	es.md
 	fr.md
   portfolios/
     {slug}/
       en.md
-      zh_CN.md
+      zh-cn.md
       ...
   services/
     {slug}/

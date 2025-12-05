@@ -40,8 +40,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 			canonical: `/${locale}`,
 			languages: {
 				en: "/en",
-				"zh-CN": "/zh_CN",
-				"zh-TW": "/zh_TW",
+				"zh-CN": "/zh-cn",
+				"zh-TW": "/zh-tw",
 				es: "/es",
 				fr: "/fr",
 				ja: "/ja",

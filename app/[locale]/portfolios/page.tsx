@@ -10,7 +10,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
   setRequestLocale(locale);
   const t = await getTranslations({ locale });
 
-  const isZhCN = locale === "zh_CN"
+  const isZhCN = locale === "zh-cn"
   const title = `${t('portfolios.title')} - Tiger Liu | China Developer`
   const description = isZhCN
     ? "浏览 Tiger Liu 的软件项目作品集。China Developer 展示25+年经验的全栈开发工程师的专业项目案例。"
@@ -55,7 +55,7 @@ export default async function PortfolioPage({ params }: { params: Promise<{ loca
   const t = await getTranslations({ locale });
   const projects = await getAllContent('portfolios', locale);
 
-  const isZhCN = locale === "zh_CN"
+  const isZhCN = locale === "zh-cn"
   const baseUrl = "https://chinadeveloper.net"
   
   // Breadcrumb structured data

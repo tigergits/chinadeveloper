@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
 	setRequestLocale(locale)
 	const t = await getTranslations({ locale })
 
-	const isZhCN = locale === "zh_CN"
+	const isZhCN = locale === "zh-cn"
 	const title = `${t("about.title")} - Tiger Liu | China Developer`
 	const description = isZhCN
 		? "了解 Tiger Liu 作为资深全栈软件开发工程师的历程。China Developer - 自1993年起构建软件解决方案，拥有25+年专业经验。"
@@ -63,7 +63,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
 		.process(content)
 	const htmlContent = processedContent.toString()
 
-	const isZhCN = locale === "zh_CN"
+	const isZhCN = locale === "zh-cn"
 	const baseUrl = "https://chinadeveloper.net"
 	
 	// Breadcrumb structured data
@@ -100,7 +100,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
 						<div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-primary to-accent/30 flex items-center justify-center ring-4 ring-primary/20 shadow-2xl overflow-hidden">
 							<Image 
 								src="/assets/images/tiger.jpg" 
-								alt={locale === 'zh_CN' ? 'Tiger Liu - 资深全栈软件开发工程师，China Developer' : 'Tiger Liu - Senior Full-Stack Software Development Engineer, China Developer'}
+								alt={locale === 'zh-cn' ? 'Tiger Liu - 资深全栈软件开发工程师，China Developer' : 'Tiger Liu - Senior Full-Stack Software Development Engineer, China Developer'}
 								width={320}
 								height={320}
 								className="w-full h-full object-cover"

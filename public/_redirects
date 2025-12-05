@@ -1,0 +1,3 @@
+# Redirect root to default locale
+/  /en/  301
+

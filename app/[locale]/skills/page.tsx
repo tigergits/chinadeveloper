@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
 	setRequestLocale(locale)
 	const t = await getTranslations({ locale })
 
-	const isZhCN = locale === "zh_CN"
+	const isZhCN = locale === "zh-cn"
 	const title = `${t("skills.title")} - Tiger Liu | China Developer`
 	const description = isZhCN
 		? "Tiger Liu 掌握的技能与技术栈。China Developer - 资深全栈开发工程师的技术专长，涵盖前端、后端、移动端、数据库等多个领域。"
@@ -71,7 +71,7 @@ export default async function SkillsPage({ params }: { params: Promise<{ locale:
 	const t = await getTranslations({ locale })
 	const skills = await getSkills(locale)
 
-	const isZhCN = locale === "zh_CN"
+	const isZhCN = locale === "zh-cn"
 	const baseUrl = "https://chinadeveloper.net"
 	
 	// Breadcrumb structured data
@@ -131,7 +131,7 @@ export default async function SkillsPage({ params }: { params: Promise<{ locale:
 						{t("skills.title")}
 					</h1>
 					<p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-						{locale === "zh_CN"
+						{locale === "zh-cn"
 							? "覆盖前端、后端、移动端、桌面端、嵌入式、数据库等多个技术栈，可根据业务需求灵活选择最合适的技术组合。"
 							: "A broad set of technologies across frontend, backend, mobile, desktop, embedded, databases and more, so we can choose the right tool for each project."}
 					</p>
@@ -152,7 +152,7 @@ export default async function SkillsPage({ params }: { params: Promise<{ locale:
 									<div className="relative flex h-9 w-9 md:h-10 md:w-10 items-center justify-center rounded-xl bg-primary/5 ring-1 ring-primary/10 shadow-sm overflow-hidden shrink-0">
 										<Image
 											src={iconSrc}
-											alt={`${title} ${locale === "zh_CN" ? "技能图标" : "skill icon"} - Tiger Liu, China Developer`}
+											alt={`${title} ${locale === "zh-cn" ? "技能图标" : "skill icon"} - Tiger Liu, China Developer`}
 											fill
 											sizes="40px"
 											className="object-contain p-1.5"

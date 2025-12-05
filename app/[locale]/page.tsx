@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
 	setRequestLocale(locale)
 	const t = await getTranslations({ locale })
 
-	const isZhCN = locale === "zh_CN"
+	const isZhCN = locale === "zh-cn"
 	const title = isZhCN 
 		? "Tiger Liu - 资深全栈软件开发工程师 | China Developer"
 		: "Tiger Liu - Senior Full-Stack Developer | China Developer"
@@ -74,7 +74,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: L
 	const contactInfo = await getContactInfo(locale)
 	const featuredPortfolios = portfolios.filter(portfolio => ['atp', 'qtrade', 'train'].includes(portfolio.slug))
 
-	const isZhCN = locale === "zh_CN"
+	const isZhCN = locale === "zh-cn"
 	// Get social links from contact info for JSON-LD
 	const socialLinksForJsonLd = contactInfo
 		.filter(item => item.name !== 'Email')

@@ -37,7 +37,7 @@ export function HeroSection({ contactInfo = [] }: HeroSectionProps) {
   const descriptionText = t('description')
 
   const getAvatarText = () => {
-    return locale === 'zh_CN' ? '虎' : 'Tiger'
+    return locale === 'zh-cn' ? '虎' : 'Tiger'
   }
 
   return (

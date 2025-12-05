@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
 	setRequestLocale(locale)
 	const t = await getTranslations({ locale })
 
-	const isZhCN = locale === "zh_CN"
+	const isZhCN = locale === "zh-cn"
 	const title = `${t("services.title")} - Tiger Liu | China Developer`
 	const description = isZhCN
 		? `Tiger Liu 提供的专业服务项目。China Developer - ${t("services.description")} 资深全栈开发工程师，25+年经验，支持远程工作。`
@@ -73,7 +73,7 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
 	const t = await getTranslations({ locale })
 	const services = await getServices(locale)
 
-	const isZhCN = locale === "zh_CN"
+	const isZhCN = locale === "zh-cn"
 	const baseUrl = "https://chinadeveloper.net"
 	
 	// Breadcrumb structured data
@@ -158,7 +158,7 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
 									<div className="relative flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 ring-1 ring-primary/30">
 										<Image
 											src={iconPath}
-											alt={`${title} ${locale === "zh_CN" ? "服务图标" : "service icon"} - Tiger Liu, China Developer`}
+											alt={`${title} ${locale === "zh-cn" ? "服务图标" : "service icon"} - Tiger Liu, China Developer`}
 											width={48}
 											height={48}
 											className="h-8 w-8 object-contain transition-transform duration-300 group-hover:scale-110"
@@ -181,7 +181,7 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
 
 								<div className="mt-6 flex items-center justify-between text-xs text-muted-foreground">
 									<span className="inline-flex items-center gap-1 text-primary group-hover:translate-x-1 transition-transform">
-										{locale === "zh_CN" ? "联系我" : "Contact me"}
+										{locale === "zh-cn" ? "联系我" : "Contact me"}
 										<ArrowRight className="h-4 w-4" />
 									</span>
 								</div>

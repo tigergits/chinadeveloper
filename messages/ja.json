@@ -1,0 +1,63 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "about": "自己紹介",
+    "portfolios": "ポートフォリオ",
+    "skills": "スキル",
+    "services": "サービス",
+    "contact": "お問い合わせ"
+  },
+  "home": {
+    "title": "シニア・フルスタック開発者",
+    "subtitle": "Tiger Liu - China Developer | 1993年からソフトウェアソリューションを構築",
+    "cta": "お問い合わせ",
+    "viewPortfolios": "ポートフォリオを見る",
+    "featuredProjects": "注目プロジェクト",
+    "skills": "スキル & テクノロジー",
+    "welcome": "私のポートフォリオサイトへようこそ",
+    "experience": "25年以上のプロフェッショナル経験",
+    "description": "私は Tiger Liu です。シニア・フルスタック・ソフトウェアエンジニアとして、高性能で信頼性の高いシステムを設計・開発してきました。リモートのフルタイム / パートタイム案件にて、高品質な成果を提供します。",
+    "featuredDescription": "私の専門性を示す代表的なプロジェクト",
+    "skillsDescription": "日常的に使用している技術とツール"
+  },
+  "about": {
+    "title": "自己紹介"
+  },
+  "portfolios": {
+    "title": "ポートフォリオ",
+    "viewPortfolio": "詳細を見る",
+    "viewOnGithub": "GitHub で見る",
+    "viewDetails": "詳細を見る"
+  },
+  "skills": {
+    "title": "スキル & テクノロジー"
+  },
+  "services": {
+    "title": "提供サービス",
+    "description": "お手伝いできること"
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "email": "メール",
+    "social": "SNS でつながる"
+  },
+  "header": {
+    "brandName": "ChinaDeveloper",
+    "tagline": "Tiger Liu - シニア・フルスタック開発者"
+  },
+  "footer": {
+    "brandName": "Tiger Liu - China Developer",
+    "description": "Tiger Liu は 25 年以上の経験を持つシニア・フルスタック・ソフトウェア開発エンジニアです。China Developer は堅牢なソフトウェアソリューションの構築を専門としており、リモートワークの機会に対応可能です。",
+    "quickLinks": "クイックリンク",
+    "connect": "連絡先",
+    "about": "自己紹介",
+    "portfolio": "ポートフォリオ",
+    "services": "サービス",
+    "contact": "お問い合わせ",
+    "copyright": "All rights reserved.",
+    "builtWith": "Built with Next.js -",
+    "openSource": "Open Source"
+  }
+}
+
+

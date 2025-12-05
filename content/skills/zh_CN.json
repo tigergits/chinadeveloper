@@ -1,0 +1,132 @@
+[
+	{
+		"slug": "nextjs",
+		"name": "Next.js",
+		"description": "Next.js 是一个用于构建现代 Web 应用的 React 全栈框架，内置服务端渲染、静态站点生成、路由和性能优化等能力。"
+	},
+	{
+		"slug": "javascript",
+		"name": "JavaScript",
+		"description": "JavaScript 是 Web 前端开发的核心脚本语言，也可运行在服务器端，用于构建交互式、动态的应用程序。"
+	},
+	{
+		"slug": "react",
+		"name": "React",
+		"description": "React 是一个用于构建用户界面的声明式 JavaScript 库，强调组件化开发和单向数据流，易于构建复杂的前端应用。"
+	},
+	{
+		"slug": "vue",
+		"name": "Vue.js",
+		"description": "Vue.js 是一套渐进式 JavaScript 框架，易学易用，适合从小型组件到复杂单页应用的逐步扩展。"
+	},
+	{
+		"slug": "cpp",
+		"name": "C/C++",
+		"description": "C/C++ 是通用、高性能的系统级编程语言，适用于底层系统开发、高性能服务器、游戏引擎等场景。"
+	},
+	{
+		"slug": "qt",
+		"name": "Qt",
+		"description": "Qt 是一个跨平台 C++ 应用开发框架，提供丰富的 UI 组件和工具链，广泛用于桌面、嵌入式与工业控制等领域。"
+	},
+	{
+		"slug": "mfc",
+		"name": "MFC",
+		"description": "MFC（Microsoft Foundation Classes）是微软提供的 C++ 类库，用于快速构建原生 Windows 桌面应用程序。"
+	},
+	{
+		"slug": "python",
+		"name": "Python",
+		"description": "Python 是一种高级、解释型编程语言，语法简洁、生态完善，广泛应用于 Web 开发、数据分析、自动化和人工智能等领域。"
+	},
+	{
+		"slug": "go",
+		"name": "Go",
+		"description": "Go 是由 Google 设计的开源编程语言，具备并发友好、编译迅速和部署简单等特性，适合构建高性能后端和分布式系统。"
+	},
+	{
+		"slug": "php",
+		"name": "PHP",
+		"description": "PHP 是面向 Web 的服务器端脚本语言，生态成熟，支持快速构建各类网站与业务系统。"
+	},
+	{
+		"slug": "thinkphp",
+		"name": "ThinkPHP",
+		"description": "ThinkPHP 是国内广泛使用的轻量级 PHP 开发框架，遵循简单、快速、实用的设计理念，适合中小型业务系统构建。"
+	},
+	{
+		"slug": "laravel",
+		"name": "Laravel",
+		"description": "Laravel 是一个优雅、现代的 PHP Web 框架，提供完善的路由、ORM、队列、任务调度等能力，适合构建复杂业务应用。"
+	},
+	{
+		"slug": "objective-c",
+		"name": "Objective-C",
+		"description": "Objective-C 是一种面向对象编程语言，长期用于开发 iOS 与 macOS 原生应用，在维护存量项目和底层开发中仍有价值。"
+	},
+	{
+		"slug": "android",
+		"name": "Android",
+		"description": "Android 是主流的移动操作系统生态之一，涵盖系统层开发与应用层开发，适用于手机、平板及各类智能设备。"
+	},
+	{
+		"slug": "java",
+		"name": "Java",
+		"description": "Java 是一门成熟稳定的面向对象编程语言，具备跨平台特性，在企业级应用、金融、电信和大数据等领域广泛使用。"
+	},
+	{
+		"slug": "spring-boot",
+		"name": "Spring Boot",
+		"description": "Spring Boot 基于 Spring 生态，提供开箱即用的自动配置与脚手架能力，大幅简化 Java 后端服务的构建与部署。"
+	},
+	{
+		"slug": "spring-cloud",
+		"name": "Spring Cloud",
+		"description": "Spring Cloud 为微服务架构提供配置中心、服务发现、网关、熔断限流等组件，是构建分布式系统的主流解决方案之一。"
+	},
+	{
+		"slug": "redis",
+		"name": "Redis",
+		"description": "Redis 是高性能内存数据结构存储系统，常用于缓存、分布式锁、消息队列等场景，以提升系统吞吐量与响应速度。"
+	},
+	{
+		"slug": "mysql",
+		"name": "MySQL",
+		"description": "MySQL 是广泛使用的开源关系型数据库，以稳定、易用、性能优秀著称，是众多 Web 与企业系统的首选数据库。"
+	},
+	{
+		"slug": "sqlserver",
+		"name": "SQL Server",
+		"description": "Microsoft SQL Server 是企业级关系型数据库管理系统，集成良好、可用性高，适合对数据安全与运维要求严格的场景。"
+	},
+	{
+		"slug": "csharp",
+		"name": "C#",
+		"description": "C# 是微软主导的现代面向对象语言，与 .NET 平台深度集成，适用于企业级系统、桌面应用与服务端开发。"
+	},
+	{
+		"slug": "visual-basic",
+		"name": "Visual Basic",
+		"description": "Visual Basic 是一种易上手的事件驱动语言，历史上广泛用于快速构建 Windows 桌面与业务系统。"
+	},
+	{
+		"slug": "basic",
+		"name": "Basic",
+		"description": "Basic 是一门经典的入门级编程语言，以语法简单、学习曲线平缓著称，启发了后续众多高级语言的设计。"
+	},
+	{
+		"slug": "foxpro",
+		"name": "FoxPro",
+		"description": "FoxPro 是早期流行的数据库开发语言与工具，长期服务于各类管理信息系统和行业应用。"
+	},
+	{
+		"slug": "powerbuilder",
+		"name": "PowerBuilder",
+		"description": "PowerBuilder 是面向企业的快速应用开发工具，擅长构建客户端/服务器架构的数据密集型业务系统。"
+	},
+	{
+		"slug": "delphi",
+		"name": "Delphi",
+		"description": "Delphi 是基于 Object Pascal 的可视化开发工具与语言，具有编译速度快、运行效率高的特点，适合桌面与工业应用开发。"
+	}
+]

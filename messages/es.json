@@ -1,0 +1,62 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "portfolios": "Portafolios",
+    "skills": "Habilidades",
+    "services": "Servicios",
+    "contact": "Contacto"
+  },
+  "home": {
+    "title": "Desarrollador Full-Stack Senior",
+    "subtitle": "Tiger Liu - China Developer | Construyendo soluciones de software desde 1993",
+    "cta": "Contáctame",
+    "viewPortfolios": "Ver Portafolios",
+    "featuredProjects": "Proyectos Destacados",
+    "skills": "Habilidades y Tecnologías",
+    "welcome": "Bienvenido a mi portafolios",
+    "experience": "25+ Años de Experiencia Profesional",
+    "description": "Soy Tiger Liu, un Ingeniero Senior de Desarrollo de Software Full-Stack. China Developer - Construyo sistemas de software robustos y de alto rendimiento. Busco oportunidades remotas a tiempo completo o parcial.",
+    "featuredDescription": "Proyectos seleccionados que muestran mi experiencia",
+    "skillsDescription": "Tecnologías y herramientas con las que trabajo"
+  },
+  "about": {
+    "title": "Acerca de Mí"
+  },
+  "portfolios": {
+    "title": "Portafolios",
+    "viewPortfolio": "Ver Portafolio",
+    "viewPortfolioOnGithub": "Ver Portafolio en GitHub",
+    "viewDetails": "Ver detalles"
+  },
+  "skills": {
+    "title": "Habilidades y Tecnologías"
+  },
+  "services": {
+    "title": "Servicios",
+    "description": "Lo que puedo hacer por ti"
+  },
+  "contact": {
+    "title": "Contáctame",
+    "email": "Correo",
+    "social": "Conéctate conmigo"
+  },
+  "header": {
+    "brandName": "ChinaDeveloper",
+    "tagline": "Tiger Liu - Desarrollador Full-Stack Senior"
+  },
+  "footer": {
+    "brandName": "Tiger Liu - China Developer",
+    "description": "Tiger Liu es un Ingeniero Senior de Desarrollo de Software Full-Stack con más de 25 años de experiencia. China Developer se especializa en construir soluciones de software robustas y está disponible para oportunidades de trabajo remoto.",
+    "quickLinks": "Enlaces Rápidos",
+    "connect": "Conectar",
+    "about": "Acerca de",
+    "portfolio": "Portafolio",
+    "services": "Servicios",
+    "contact": "Contacto",
+    "copyright": "Todos los derechos reservados.",
+    "builtWith": "Construido con Next.js -",
+    "openSource": "Código Abierto"
+  }
+}
+

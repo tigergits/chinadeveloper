@@ -1,0 +1,62 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "portfolios": "Portfolios",
+    "skills": "Compétences",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Développeur Full-Stack Senior",
+    "subtitle": "Tiger Liu - China Developer | Création de solutions logicielles depuis 1993",
+    "cta": "Me contacter",
+    "viewPortfolios": "Voir les Portfolios",
+    "featuredProjects": "Projets en vedette",
+    "skills": "Compétences et Technologies",
+    "welcome": "Bienvenue sur mon portfolios",
+    "experience": "25+ Ans d'Expérience Professionnelle",
+    "description": "Je suis Tiger Liu, un Ingénieur Senior en Développement de Logiciels Full-Stack. China Developer - Je crée des systèmes logiciels robustes et performants. Je recherche des opportunités de travail à distance à temps plein ou partiel.",
+    "featuredDescription": "Projets sélectionnés montrant mon expertise",
+    "skillsDescription": "Technologies et outils avec lesquels je travaille"
+  },
+  "about": {
+    "title": "À propos de moi"
+  },
+  "portfolios": {
+    "title": "Portfolios",
+    "viewPortfolio": "Voir le Portfolio",
+    "viewPortfolioOnGithub": "Voir le Portfolio sur GitHub",
+    "viewDetails": "Voir les détails"
+  },
+  "skills": {
+    "title": "Compétences et Technologies"
+  },
+  "services": {
+    "title": "Services",
+    "description": "Ce que je peux faire pour vous"
+  },
+  "contact": {
+    "title": "Me contacter",
+    "email": "Email",
+    "social": "Connectez-vous avec moi"
+  },
+  "header": {
+    "brandName": "ChinaDeveloper",
+    "tagline": "Tiger Liu - Développeur Full-Stack Senior"
+  },
+  "footer": {
+    "brandName": "Tiger Liu - China Developer",
+    "description": "Tiger Liu est un Ingénieur Senior en Développement de Logiciels Full-Stack avec plus de 25 ans d'expérience. China Developer se spécialise dans la création de solutions logicielles robustes et est disponible pour des opportunités de travail à distance.",
+    "quickLinks": "Liens Rapides",
+    "connect": "Se Connecter",
+    "about": "À propos",
+    "portfolio": "Portfolio",
+    "services": "Services",
+    "contact": "Contact",
+    "copyright": "Tous droits réservés.",
+    "builtWith": "Construit avec Next.js -",
+    "openSource": "Open Source"
+  }
+}
+

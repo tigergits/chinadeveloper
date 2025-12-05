@@ -1,0 +1,52 @@
+[
+  {
+    "slug": "web-development",
+    "name": "Web 開發",
+    "tagline": "全端解決方案，從構想到上線",
+    "description": "憑藉近 30 年的 Web 開發經驗，我提供從架構設計到前後端實作的全端服務。精通 React、Vue、Next.js 等現代前端框架以及 Node.js、Python、Java 等後端技術，能為您打造高效能、可擴充的企業級 Web 應用與 API 服務。"
+  },
+  {
+    "slug": "mobile-development",
+    "name": "行動應用開發",
+    "tagline": "原生與跨平台，體驗優先",
+    "description": "提供 iOS 與 Android 平台的行動應用開發服務，涵蓋原生開發（Swift、Kotlin）以及跨平台解決方案（React Native、Flutter）。從使用者體驗設計到效能優化，從 API 串接到推播通知，讓您的 App 在各大應用商店中脫穎而出。"
+  },
+  {
+    "slug": "desktop-development",
+    "name": "桌面軟體開發",
+    "tagline": "跨平台桌面應用，效能與體驗兼具",
+    "description": "擁有豐富的 Windows、macOS、Linux 桌面應用開發經驗。支援 Electron、Qt 及原生開發等多種技術棧，能為您打造高效能、使用者體驗優異的桌面軟體，滿足複雜的企業級應用需求。"
+  },
+  {
+    "slug": "embedded-development",
+    "name": "嵌入式系統開發",
+    "tagline": "軟硬整合，深度客製化",
+    "description": "提供嵌入式系統開發服務，從硬體介面設計到底層軟體實作皆可涵蓋。在物聯網（IoT）、智慧裝置、工業自動化與邊緣運算等領域具備實務經驗，能處理高即時性與資源受限的複雜環境。"
+  },
+  {
+    "slug": "ai-development",
+    "name": "AI 應用開發",
+    "tagline": "智慧應用，數據驅動",
+    "description": "結合實際商業需求與人工智慧技術，提供機器學習模型開發、自然語言處理（NLP）、電腦視覺（CV）、推薦系統等 AI 應用服務。熟悉 TensorFlow、PyTorch 等主流程式庫，能完成從數據前處理到模型部署的完整流程。"
+  },
+  {
+    "slug": "cloud-development",
+    "name": "雲端開發",
+    "tagline": "雲原生架構與彈性擴充",
+    "description": "提供雲端平台上的系統開發與代管服務，包括雲原生應用（容器化、微服務架構）、雲端基礎設施管理（CI/CD、DevOps 自動化）、雲端安全與成本最佳化等。熟悉 AWS、Azure、GCP 等主流雲平台。"
+  },
+  {
+    "slug": "secondary-development",
+    "name": "二次開發與系統升級",
+    "tagline": "系統升級改造，平滑轉移",
+    "description": "為既有系統提供二次開發服務，包括老舊系統現代化、功能擴充、效能調校與架構重構。在維持業務連續性的前提下，協助您將舊技術棧穩健地搬遷到現代架構，提升可維護性與擴充性。"
+  },
+  {
+    "slug": "consulting",
+    "name": "技術顧問服務",
+    "tagline": "技術策略規劃與方案設計",
+    "description": "基於 30 年專案經驗，提供完整的技術顧問服務，包括需求分析、技術選型、系統架構設計、專案管理、程式碼審查與風險控管等。協助您的團隊制定技術藍圖、解決棘手技術問題，並提升整體開發效率與程式品質。"
+  }
+]
+
+

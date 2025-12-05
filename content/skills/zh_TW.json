@@ -1,0 +1,134 @@
+[
+  {
+    "slug": "nextjs",
+    "name": "Next.js",
+    "description": "Next.js 是一個基於 React 的全端框架，用於構建現代 Web 應用，內建伺服器端渲染、靜態產生、路由與效能優化等功能。"
+  },
+  {
+    "slug": "javascript",
+    "name": "JavaScript",
+    "description": "JavaScript 是 Web 的核心指令語言，可在瀏覽器與伺服器上執行，是打造互動式、動態使用者體驗不可或缺的技術。"
+  },
+  {
+    "slug": "react",
+    "name": "React",
+    "description": "React 是用於構建使用者介面的宣告式 JavaScript 函式庫，透過元件化架構與單向資料流，能高效管理大型前端專案的狀態與複雜度。"
+  },
+  {
+    "slug": "vue",
+    "name": "Vue.js",
+    "description": "Vue.js 是漸進式 JavaScript 框架，易於上手且適合從小型元件擴展到大型單頁應用。"
+  },
+  {
+    "slug": "cpp",
+    "name": "C/C++",
+    "description": "C/C++ 是通用、高效能的系統程式語言，廣泛用於作業系統、高併發服務、遊戲引擎與各種效能敏感場景。"
+  },
+  {
+    "slug": "qt",
+    "name": "Qt",
+    "description": "Qt 是跨平台 C++ 應用框架，提供豐富的 UI 元件與工具，適用於桌面、嵌入式與工業控制等應用開發。"
+  },
+  {
+    "slug": "mfc",
+    "name": "MFC",
+    "description": "MFC（Microsoft Foundation Classes）是微軟提供的 C++ 類別庫，用於快速構建原生 Windows 桌面應用程式。"
+  },
+  {
+    "slug": "python",
+    "name": "Python",
+    "description": "Python 是高階直譯式程式語言，語法簡潔且生態完整，廣泛應用於 Web 開發、自動化、資料分析與人工智慧領域。"
+  },
+  {
+    "slug": "go",
+    "name": "Go",
+    "description": "Go 是 Google 設計的開源語言，具備簡潔語法、原生並行處理能力與快速編譯等特性，特別適合雲原生與分散式系統。"
+  },
+  {
+    "slug": "php",
+    "name": "PHP",
+    "description": "PHP 是面向 Web 的伺服器端腳本語言，生態成熟，可快速打造各類網站與商業系統。"
+  },
+  {
+    "slug": "thinkphp",
+    "name": "ThinkPHP",
+    "description": "ThinkPHP 是華語圈常見的輕量級 PHP 框架，主打簡單、快速、實用，適合中小型業務系統。"
+  },
+  {
+    "slug": "laravel",
+    "name": "Laravel",
+    "description": "Laravel 是優雅現代的 PHP Web 框架，提供完善的路由、ORM、佇列、排程等功能，適用於複雜業務應用。"
+  },
+  {
+    "slug": "objective-c",
+    "name": "Objective-C",
+    "description": "Objective-C 是長期用於 iOS 與 macOS 原生開發的物件導向語言，在維護既有專案與撰寫低階元件時依然重要。"
+  },
+  {
+    "slug": "android",
+    "name": "Android",
+    "description": "Android 是主流行動作業系統與開發平台，涵蓋系統層與應用層開發，適用於手機、平板與各式智慧裝置。"
+  },
+  {
+    "slug": "java",
+    "name": "Java",
+    "description": "Java 是成熟穩定的物件導向程式語言，以跨平台特性著稱，廣泛用於企業後端系統、金融、電信與大數據生態。"
+  },
+  {
+    "slug": "spring-boot",
+    "name": "Spring Boot",
+    "description": "Spring Boot 建立在 Spring 生態之上，透過自動設定與慣例優於設定的理念，簡化 Java 後端服務與微服務的開發與部署。"
+  },
+  {
+    "slug": "spring-cloud",
+    "name": "Spring Cloud",
+    "description": "Spring Cloud 提供組態中心、服務註冊與發現、API 閘道、熔斷與限流等元件，是構建微服務與分散式系統的主流方案之一。"
+  },
+  {
+    "slug": "redis",
+    "name": "Redis",
+    "description": "Redis 是高效能記憶體資料庫，支援多種資料結構，常用於快取、分散式鎖、排行榜與輕量級訊息佇列。"
+  },
+  {
+    "slug": "mysql",
+    "name": "MySQL",
+    "description": "MySQL 是廣泛使用的開源關聯式資料庫，以穩定、易用與優良效能著稱，是許多 Web 與企業系統的首選。"
+  },
+  {
+    "slug": "sqlserver",
+    "name": "SQL Server",
+    "description": "Microsoft SQL Server 是企業級關聯式資料庫平台，具備高度整合性、安全性與良好的管理工具。"
+  },
+  {
+    "slug": "csharp",
+    "name": "C#",
+    "description": "C# 是微軟主導的現代物件導向語言，與 .NET 平台深度整合，廣泛用於企業應用、桌面程式與伺服器端開發。"
+  },
+  {
+    "slug": "visual-basic",
+    "name": "Visual Basic",
+    "description": "Visual Basic 是一種易於上手的事件驅動語言，歷史上常用於快速構建 Windows 桌面與商業系統，至今仍有大量既有程式需維護。"
+  },
+  {
+    "slug": "basic",
+    "name": "Basic",
+    "description": "Basic 是經典的入門程式語言，以簡單語法和低門檻著稱，啟發了許多後續高階語言的設計。"
+  },
+  {
+    "slug": "foxpro",
+    "name": "FoxPro",
+    "description": "FoxPro 是早期流行的資料庫程式語言與工具組，長期支撐各類管理資訊系統與垂直行業應用。"
+  },
+  {
+    "slug": "powerbuilder",
+    "name": "PowerBuilder",
+    "description": "PowerBuilder 是面向企業的快速應用開發工具，擅長建構資料密集型的 Client/Server 業務系統。"
+  },
+  {
+    "slug": "delphi",
+    "name": "Delphi",
+    "description": "Delphi 是基於 Object Pascal 的可視化開發環境與語言，編譯速度快、執行效能佳，適用於桌面與工業應用程式開發。"
+  }
+]
+
+

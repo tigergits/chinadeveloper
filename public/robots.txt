@@ -1,0 +1,18 @@
+# robots.txt for chinadeveloper.net
+# Generated for SEO optimization
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Disallow API routes and Next.js internals
+Disallow: /api/
+Disallow: /_next/
+Disallow: /feed.xml
+
+# Sitemap location
+Sitemap: https://chinadeveloper.net/sitemap.xml
+
+# Crawl-delay (optional, uncomment if needed)
+# Crawl-delay: 1
+

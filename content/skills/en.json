@@ -1,0 +1,132 @@
+[
+	{
+		"slug": "nextjs",
+		"name": "Next.js",
+		"description": "Next.js is a React-based full‑stack framework for building modern web applications, providing built‑in server‑side rendering, static site generation, routing, and performance optimization."
+	},
+	{
+		"slug": "javascript",
+		"name": "JavaScript",
+		"description": "JavaScript is the core scripting language of the web, running in both browsers and on servers, and is essential for building interactive and dynamic user experiences."
+	},
+	{
+		"slug": "react",
+		"name": "React",
+		"description": "React is a declarative JavaScript library for building user interfaces, emphasizing component‑based architecture and one‑way data flow to manage complex front‑end applications."
+	},
+	{
+		"slug": "vue",
+		"name": "Vue.js",
+		"description": "Vue.js is a progressive JavaScript framework that is easy to adopt and well‑suited for scaling from simple widgets to large single‑page applications."
+	},
+	{
+		"slug": "cpp",
+		"name": "C/C++",
+		"description": "C/C++ are general‑purpose, high‑performance system programming languages commonly used for operating systems, high‑throughput services, game engines, and performance‑critical components."
+	},
+	{
+		"slug": "qt",
+		"name": "Qt",
+		"description": "Qt is a cross‑platform C++ application framework that offers a rich set of UI components and tools for building desktop, embedded, and industrial applications."
+	},
+	{
+		"slug": "mfc",
+		"name": "MFC",
+		"description": "MFC (Microsoft Foundation Classes) is a C++ class library from Microsoft for creating native Windows desktop applications efficiently."
+	},
+	{
+		"slug": "python",
+		"name": "Python",
+		"description": "Python is a high‑level, interpreted programming language with clean syntax and a large ecosystem, widely used in web development, automation, data analysis, and AI/ML."
+	},
+	{
+		"slug": "go",
+		"name": "Go",
+		"description": "Go is an open‑source language designed at Google, featuring simple syntax, native concurrency primitives, and fast compilation, ideal for cloud‑native and distributed systems."
+	},
+	{
+		"slug": "php",
+		"name": "PHP",
+		"description": "PHP is a server‑side scripting language designed for web development, with a mature ecosystem for building content‑driven sites and business applications."
+	},
+	{
+		"slug": "thinkphp",
+		"name": "ThinkPHP",
+		"description": "ThinkPHP is a lightweight PHP framework popular in China, focused on rapid development, simplicity, and practicality for small to medium‑sized systems."
+	},
+	{
+		"slug": "laravel",
+		"name": "Laravel",
+		"description": "Laravel is a modern, elegant PHP web framework offering expressive syntax, powerful routing, ORM, queues, and task scheduling for complex business applications."
+	},
+	{
+		"slug": "objective-c",
+		"name": "Objective-C",
+		"description": "Objective‑C is an object‑oriented programming language historically used for native iOS and macOS development, still relevant for maintaining legacy and low‑level codebases."
+	},
+	{
+		"slug": "android",
+		"name": "Android",
+		"description": "Android is a leading mobile operating system and development platform, covering both system‑level and application‑level development across phones, tablets, and smart devices."
+	},
+	{
+		"slug": "java",
+		"name": "Java",
+		"description": "Java is a mature, object‑oriented language with strong cross‑platform support, widely adopted in enterprise back‑end systems, financial services, telecom, and big‑data ecosystems."
+	},
+	{
+		"slug": "spring-boot",
+		"name": "Spring Boot",
+		"description": "Spring Boot is a convention‑over‑configuration framework built on Spring that streamlines the creation, testing, and deployment of Java microservices and back‑end applications."
+	},
+	{
+		"slug": "spring-cloud",
+		"name": "Spring Cloud",
+		"description": "Spring Cloud provides a suite of tools for building microservice and distributed systems, including configuration management, service discovery, gateways, circuit breaking, and observability."
+	},
+	{
+		"slug": "redis",
+		"name": "Redis",
+		"description": "Redis is a high‑performance in‑memory data store supporting rich data structures, commonly used for caching, distributed locks, leaderboards, and lightweight messaging."
+	},
+	{
+		"slug": "mysql",
+		"name": "MySQL",
+		"description": "MySQL is one of the most widely used open‑source relational database management systems, known for its stability, performance, and ease of operation."
+	},
+	{
+		"slug": "sqlserver",
+		"name": "SQL Server",
+		"description": "Microsoft SQL Server is an enterprise‑grade relational database platform offering strong integration, security, and manageability for mission‑critical workloads."
+	},
+	{
+		"slug": "csharp",
+		"name": "C#",
+		"description": "C# is a modern object‑oriented language from Microsoft, tightly integrated with the .NET platform, and widely used for enterprise systems, desktop apps, and server‑side development."
+	},
+	{
+		"slug": "visual-basic",
+		"name": "Visual Basic",
+		"description": "Visual Basic is an event‑driven language that historically enabled rapid Windows application development and remains present in many existing business systems."
+	},
+	{
+		"slug": "basic",
+		"name": "Basic",
+		"description": "Basic is a classic beginner‑friendly programming language with simple syntax that has influenced the design of many modern high‑level languages."
+	},
+	{
+		"slug": "foxpro",
+		"name": "FoxPro",
+		"description": "FoxPro is a legacy database programming language and toolset that powered numerous management information systems and industry‑specific applications."
+	},
+	{
+		"slug": "powerbuilder",
+		"name": "PowerBuilder",
+		"description": "PowerBuilder is an enterprise‑oriented rapid application development tool, well‑suited for building data‑intensive client/server business applications."
+	},
+	{
+		"slug": "delphi",
+		"name": "Delphi",
+		"description": "Delphi is a visual development environment and language based on Object Pascal, offering fast compilation and high performance for desktop and industrial applications."
+	}
+]

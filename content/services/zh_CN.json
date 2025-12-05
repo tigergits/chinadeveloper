@@ -1,0 +1,50 @@
+[
+	{
+		"slug": "web-development",
+		"name": "Web 开发",
+		"tagline": "全栈解决方案，从概念到部署",
+		"description": "拥有近30年的Web开发经验，我提供从架构设计到前后端开发的全栈服务。精通现代前端框架（React、Vue、Next.js）和后端技术（Node.js、Python、Java），能够构建高性能、可扩展的企业级Web应用和API服务。"
+	},
+	{
+		"slug": "mobile-development",
+		"name": "移动开发",
+		"tagline": "原生与跨平台，体验优先",
+		"description": "我提供iOS和Android平台的移动应用开发服务，涵盖原生开发（Swift、Kotlin）和跨平台解决方案（React Native、Flutter）。从用户体验设计到性能优化，从API集成到推送通知，确保您的应用在各大应用商店脱颖而出。"
+	},
+	{
+		"slug": "desktop-development",
+		"name": "桌面开发",
+		"tagline": "跨平台桌面应用，性能卓越",
+		"description": "我在Windows、macOS和Linux平台上有丰富的桌面应用开发经验。支持Electron、Qt、原生开发等多种技术栈，能够为您打造高性能、用户体验优秀的桌面软件解决方案，满足企业级应用的复杂需求。"
+	},
+	{
+		"slug": "embedded-development",
+		"name": "嵌入式开发",
+		"tagline": "软硬结合，深度定制",
+		"description": "我提供嵌入式系统开发服务，涵盖从硬件接口设计到底层软件开发的完整解决方案。在物联网（IoT）、智能设备、工业自动化和边缘计算领域有丰富的项目经验，能够处理复杂的实时系统和资源受限环境。"
+	},
+	{
+		"slug": "ai-development",
+		"name": "AI 开发",
+		"tagline": "智能应用，数据驱动",
+		"description": "我将人工智能技术与实际业务需求相结合，提供机器学习模型开发、自然语言处理（NLP）、计算机视觉（CV）、推荐系统等AI应用开发服务。熟悉主流AI框架（TensorFlow、PyTorch），能够构建从数据预处理到模型部署的完整AI解决方案。"
+	},
+	{
+		"slug": "cloud-development",
+		"name": "云开发",
+		"tagline": "云原生架构，弹性扩展",
+		"description": "我提供云平台开发服务，包括云原生应用开发（容器化、微服务架构）、云基础设施管理（CI/CD、DevOps自动化）、云安全和成本优化等。熟悉AWS、Azure、GCP等主流云平台，能够设计高可用、可扩展的云架构方案。"
+	},
+	{
+		"slug": "secondary-development",
+		"name": "二次开发",
+		"tagline": "系统升级改造，平滑迁移",
+		"description": "我提供系统二次开发服务，包括遗留系统现代化改造、功能扩展、性能优化和架构重构。在保持业务连续性的前提下，将老旧技术栈迁移到现代架构，提升系统可维护性和扩展性，降低技术债务。"
+	},
+	{
+		"slug": "consulting",
+		"name": "咨询服务",
+		"tagline": "技术战略规划，方案设计",
+		"description": "基于30年的项目经验，我提供全方位的技术咨询服务，包括需求分析、技术选型、架构设计、项目管理、代码审查和风险控制。能够帮助您的团队制定技术路线图，解决复杂技术难题，提升开发效率和代码质量。"
+	}
+]

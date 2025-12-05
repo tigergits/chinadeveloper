@@ -1,0 +1,51 @@
+[
+	{
+		"slug": "web-development",
+		"name": "Desarrollo Web",
+		"tagline": "Soluciones Full-Stack, desde el Concepto hasta el Despliegue",
+		"description": "Con casi 30 años de experiencia en desarrollo web, ofrezco servicios full-stack desde el diseño de arquitectura hasta el desarrollo frontend y backend. Experto en frameworks frontend modernos (React, Vue, Next.js) y tecnologías backend (Node.js, Python, Java), puedo construir aplicaciones web empresariales de alto rendimiento y escalables, así como servicios API."
+	},
+	{
+		"slug": "mobile-development",
+		"name": "Desarrollo Móvil",
+		"tagline": "Nativo y Multiplataforma, Experiencia Primero",
+		"description": "Ofrezco servicios de desarrollo de aplicaciones móviles para plataformas iOS y Android, cubriendo desarrollo nativo (Swift, Kotlin) y soluciones multiplataforma (React Native, Flutter). Desde el diseño de experiencia de usuario hasta la optimización de rendimiento, desde la integración de API hasta notificaciones push, asegurando que su aplicación destaque en las principales tiendas de aplicaciones."
+	},
+	{
+		"slug": "desktop-development",
+		"name": "Desarrollo de Escritorio",
+		"tagline": "Aplicaciones de Escritorio Multiplataforma, Rendimiento Excepcional",
+		"description": "Tengo amplia experiencia en desarrollo de aplicaciones de escritorio en plataformas Windows, macOS y Linux. Compatible con varias pilas tecnológicas incluyendo Electron, Qt y desarrollo nativo, puedo crear soluciones de software de escritorio de alto rendimiento con excelente experiencia de usuario para satisfacer los requisitos complejos de aplicaciones empresariales."
+	},
+	{
+		"slug": "embedded-development",
+		"name": "Desarrollo Embebido",
+		"tagline": "Integración Hardware y Software, Personalización Profunda",
+		"description": "Ofrezco servicios de desarrollo de sistemas embebidos, cubriendo soluciones completas desde el diseño de interfaces de hardware hasta el desarrollo de software de bajo nivel. Con rica experiencia en proyectos en IoT, dispositivos inteligentes, automatización industrial y computación de borde, puedo manejar sistemas en tiempo real complejos y entornos con recursos limitados."
+	},
+	{
+		"slug": "ai-development",
+		"name": "Desarrollo de IA",
+		"tagline": "Aplicaciones Inteligentes, Impulsadas por Datos",
+		"description": "Combino tecnología de inteligencia artificial con necesidades comerciales reales, proporcionando servicios de desarrollo de aplicaciones de IA que incluyen desarrollo de modelos de aprendizaje automático, procesamiento de lenguaje natural (NLP), visión por computadora (CV) y sistemas de recomendación. Familiarizado con frameworks de IA principales (TensorFlow, PyTorch), puedo construir soluciones de IA completas desde el preprocesamiento de datos hasta el despliegue de modelos."
+	},
+	{
+		"slug": "cloud-development",
+		"name": "Desarrollo en la Nube",
+		"tagline": "Arquitectura Cloud-Native, Escalado Elástico",
+		"description": "Ofrezco servicios de desarrollo de plataformas en la nube, incluyendo desarrollo de aplicaciones cloud-native (containerización, arquitectura de microservicios), gestión de infraestructura en la nube (CI/CD, automatización DevOps), seguridad en la nube y optimización de costos. Familiarizado con plataformas en la nube principales como AWS, Azure y GCP, puedo diseñar soluciones de arquitectura en la nube altamente disponibles y escalables."
+	},
+	{
+		"slug": "secondary-development",
+		"name": "Desarrollo Secundario",
+		"tagline": "Actualización y Migración de Sistemas, Transición Suave",
+		"description": "Ofrezco servicios de desarrollo secundario de sistemas, incluyendo modernización de sistemas heredados, expansión de funcionalidades, optimización de rendimiento y refactorización de arquitectura. Mientras mantengo la continuidad del negocio, migro pilas tecnológicas antiguas a arquitecturas modernas, mejorando la mantenibilidad y escalabilidad del sistema mientras reduzco la deuda técnica."
+	},
+	{
+		"slug": "consulting",
+		"name": "Servicios de Consultoría",
+		"tagline": "Planificación Estratégica Técnica, Diseño de Soluciones",
+		"description": "Basado en 30 años de experiencia en proyectos, ofrezco servicios integrales de consultoría técnica, incluyendo análisis de requisitos, selección de tecnología, diseño de arquitectura, gestión de proyectos, revisión de código y control de riesgos. Puedo ayudar a su equipo a desarrollar hojas de ruta tecnológicas, resolver desafíos técnicos complejos y mejorar la eficiencia de desarrollo y la calidad del código."
+	}
+]
+

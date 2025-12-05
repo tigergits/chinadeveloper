@@ -1,0 +1,133 @@
+[
+	{
+		"slug": "nextjs",
+		"name": "Next.js",
+		"description": "Next.js es un framework full-stack basado en React para construir aplicaciones web modernas, proporcionando renderizado del lado del servidor, generación de sitios estáticos, enrutamiento y optimización de rendimiento integrados."
+	},
+	{
+		"slug": "javascript",
+		"name": "JavaScript",
+		"description": "JavaScript es el lenguaje de scripting central de la web, que se ejecuta tanto en navegadores como en servidores, y es esencial para construir experiencias de usuario interactivas y dinámicas."
+	},
+	{
+		"slug": "react",
+		"name": "React",
+		"description": "React es una biblioteca JavaScript declarativa para construir interfaces de usuario, enfatizando la arquitectura basada en componentes y el flujo de datos unidireccional para gestionar aplicaciones frontend complejas."
+	},
+	{
+		"slug": "vue",
+		"name": "Vue.js",
+		"description": "Vue.js es un framework JavaScript progresivo que es fácil de adoptar y muy adecuado para escalar desde widgets simples hasta aplicaciones de una sola página grandes."
+	},
+	{
+		"slug": "cpp",
+		"name": "C/C++",
+		"description": "C/C++ son lenguajes de programación de sistemas de propósito general y alto rendimiento, comúnmente utilizados para sistemas operativos, servicios de alto rendimiento, motores de juegos y componentes críticos para el rendimiento."
+	},
+	{
+		"slug": "qt",
+		"name": "Qt",
+		"description": "Qt es un framework de aplicaciones C++ multiplataforma que ofrece un rico conjunto de componentes de UI y herramientas para construir aplicaciones de escritorio, embebidas e industriales."
+	},
+	{
+		"slug": "mfc",
+		"name": "MFC",
+		"description": "MFC (Microsoft Foundation Classes) es una biblioteca de clases C++ de Microsoft para crear aplicaciones de escritorio nativas de Windows de manera eficiente."
+	},
+	{
+		"slug": "python",
+		"name": "Python",
+		"description": "Python es un lenguaje de programación de alto nivel e interpretado con sintaxis limpia y un gran ecosistema, ampliamente utilizado en desarrollo web, automatización, análisis de datos e IA/ML."
+	},
+	{
+		"slug": "go",
+		"name": "Go",
+		"description": "Go es un lenguaje de código abierto diseñado en Google, con sintaxis simple, primitivos de concurrencia nativos y compilación rápida, ideal para sistemas cloud-native y distribuidos."
+	},
+	{
+		"slug": "php",
+		"name": "PHP",
+		"description": "PHP es un lenguaje de scripting del lado del servidor diseñado para desarrollo web, con un ecosistema maduro para construir sitios impulsados por contenido y aplicaciones comerciales."
+	},
+	{
+		"slug": "thinkphp",
+		"name": "ThinkPHP",
+		"description": "ThinkPHP es un framework PHP ligero popular en China, enfocado en desarrollo rápido, simplicidad y practicidad para sistemas pequeños y medianos."
+	},
+	{
+		"slug": "laravel",
+		"name": "Laravel",
+		"description": "Laravel es un framework web PHP moderno y elegante que ofrece sintaxis expresiva, enrutamiento potente, ORM, colas y programación de tareas para aplicaciones comerciales complejas."
+	},
+	{
+		"slug": "objective-c",
+		"name": "Objective-C",
+		"description": "Objective-C es un lenguaje de programación orientado a objetos históricamente utilizado para el desarrollo nativo de iOS y macOS, aún relevante para mantener bases de código heredadas y de bajo nivel."
+	},
+	{
+		"slug": "android",
+		"name": "Android",
+		"description": "Android es un sistema operativo móvil líder y plataforma de desarrollo, que cubre tanto el desarrollo a nivel de sistema como a nivel de aplicación en teléfonos, tabletas y dispositivos inteligentes."
+	},
+	{
+		"slug": "java",
+		"name": "Java",
+		"description": "Java es un lenguaje orientado a objetos maduro con fuerte soporte multiplataforma, ampliamente adoptado en sistemas backend empresariales, servicios financieros, telecomunicaciones y ecosistemas de big data."
+	},
+	{
+		"slug": "spring-boot",
+		"name": "Spring Boot",
+		"description": "Spring Boot es un framework basado en convenciones sobre configuración construido sobre Spring que simplifica la creación, prueba y despliegue de microservicios Java y aplicaciones backend."
+	},
+	{
+		"slug": "spring-cloud",
+		"name": "Spring Cloud",
+		"description": "Spring Cloud proporciona un conjunto de herramientas para construir sistemas de microservicios y distribuidos, incluyendo gestión de configuración, descubrimiento de servicios, puertas de enlace, interruptores de circuito y observabilidad."
+	},
+	{
+		"slug": "redis",
+		"name": "Redis",
+		"description": "Redis es un almacén de datos en memoria de alto rendimiento que admite estructuras de datos ricas, comúnmente utilizado para caché, bloqueos distribuidos, tablas de clasificación y mensajería ligera."
+	},
+	{
+		"slug": "mysql",
+		"name": "MySQL",
+		"description": "MySQL es uno de los sistemas de gestión de bases de datos relacionales de código abierto más ampliamente utilizados, conocido por su estabilidad, rendimiento y facilidad de operación."
+	},
+	{
+		"slug": "sqlserver",
+		"name": "SQL Server",
+		"description": "Microsoft SQL Server es una plataforma de base de datos relacional de nivel empresarial que ofrece fuerte integración, seguridad y capacidad de gestión para cargas de trabajo críticas."
+	},
+	{
+		"slug": "csharp",
+		"name": "C#",
+		"description": "C# es un lenguaje orientado a objetos moderno de Microsoft, estrechamente integrado con la plataforma .NET, y ampliamente utilizado para sistemas empresariales, aplicaciones de escritorio y desarrollo del lado del servidor."
+	},
+	{
+		"slug": "visual-basic",
+		"name": "Visual Basic",
+		"description": "Visual Basic es un lenguaje impulsado por eventos que históricamente permitió el desarrollo rápido de aplicaciones Windows y permanece presente en muchos sistemas comerciales existentes."
+	},
+	{
+		"slug": "basic",
+		"name": "Basic",
+		"description": "Basic es un lenguaje de programación clásico amigable para principiantes con sintaxis simple que ha influido en el diseño de muchos lenguajes de alto nivel modernos."
+	},
+	{
+		"slug": "foxpro",
+		"name": "FoxPro",
+		"description": "FoxPro es un lenguaje de programación de bases de datos heredado y conjunto de herramientas que impulsó numerosos sistemas de información de gestión y aplicaciones específicas de la industria."
+	},
+	{
+		"slug": "powerbuilder",
+		"name": "PowerBuilder",
+		"description": "PowerBuilder es una herramienta de desarrollo rápido de aplicaciones orientada a empresas, muy adecuada para construir aplicaciones comerciales cliente/servidor intensivas en datos."
+	},
+	{
+		"slug": "delphi",
+		"name": "Delphi",
+		"description": "Delphi es un entorno de desarrollo visual y lenguaje basado en Object Pascal, que ofrece compilación rápida y alto rendimiento para aplicaciones de escritorio e industriales."
+	}
+]
+

@@ -1,0 +1,10 @@
+name = "chinadeveloper-portfolio"
+compatibility_date = "2024-01-01"
+
+[env.production]
+name = "chinadeveloper-portfolio"
+routes = [
+  { pattern = "chinadeveloper.net", zone_name = "chinadeveloper.net" },
+  { pattern = "www.chinadeveloper.net", zone_name = "chinadeveloper.net" }
+]
+

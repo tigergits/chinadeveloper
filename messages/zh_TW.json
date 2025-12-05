@@ -1,0 +1,63 @@
+{
+  "nav": {
+    "home": "首頁",
+    "about": "關於我",
+    "portfolios": "作品集",
+    "skills": "技能專長",
+    "services": "服務項目",
+    "contact": "聯絡我"
+  },
+  "home": {
+    "title": "資深全端開發工程師",
+    "subtitle": "Tiger Liu - China Developer | 自 1993 年起打造軟體解決方案",
+    "cta": "聯絡我",
+    "viewPortfolios": "查看作品集",
+    "featuredProjects": "精選作品",
+    "skills": "技能與技術",
+    "welcome": "歡迎來到我的作品集網站",
+    "experience": "25+ 年專業工作經驗",
+    "description": "我是 Tiger Liu，一位資深全端軟體開發工程師。China Developer - 我專注於構建穩定、高效能的軟體系統，並尋求全職或兼職的遠端合作機會，為您交付高品質成果。",
+    "featuredDescription": "展示我專業能力的精選專案",
+    "skillsDescription": "我日常使用的技術與工具"
+  },
+  "about": {
+    "title": "關於我"
+  },
+  "portfolios": {
+    "title": "作品集列表",
+    "viewPortfolio": "查看作品",
+    "viewOnGithub": "在 GitHub 上查看",
+    "viewDetails": "查看詳情"
+  },
+  "skills": {
+    "title": "技能專長"
+  },
+  "services": {
+    "title": "服務項目",
+    "description": "我能為您提供的服務"
+  },
+  "contact": {
+    "title": "聯絡我",
+    "email": "電子郵件",
+    "social": "與我聯繫"
+  },
+  "header": {
+    "brandName": "ChinaDeveloper",
+    "tagline": "Tiger Liu - 資深全端開發工程師"
+  },
+  "footer": {
+    "brandName": "Tiger Liu - China Developer",
+    "description": "Tiger Liu 是一位擁有 25+ 年經驗的資深全端軟體開發工程師。China Developer 專注於構建強大的軟體解決方案，可提供遠端工作服務。",
+    "quickLinks": "快速連結",
+    "connect": "聯絡方式",
+    "about": "關於我",
+    "portfolio": "作品集",
+    "services": "服務項目",
+    "contact": "聯絡我",
+    "copyright": "版權所有。",
+    "builtWith": "使用 Next.js 建構 -",
+    "openSource": "開源"
+  }
+}
+
+

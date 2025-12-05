@@ -1,0 +1,134 @@
+[
+  {
+    "slug": "nextjs",
+    "name": "Next.js",
+    "description": "Next.js は React ベースのフルスタックフレームワークで、サーバーサイドレンダリングや静的サイト生成、ルーティング、パフォーマンス最適化などを備えたモダン Web アプリケーション開発向けの基盤です。"
+  },
+  {
+    "slug": "javascript",
+    "name": "JavaScript",
+    "description": "JavaScript は Web の中核となるスクリプト言語であり、ブラウザとサーバーの両方で動作し、インタラクティブでダイナミックなユーザー体験を実現します。"
+  },
+  {
+    "slug": "react",
+    "name": "React",
+    "description": "React は宣言的な UI 構築のための JavaScript ライブラリで、コンポーネントベースの設計と一方向データフローにより、複雑なフロントエンドアプリケーションを効率よく構築できます。"
+  },
+  {
+    "slug": "vue",
+    "name": "Vue.js",
+    "description": "Vue.js は漸進的な JavaScript フレームワークで、小さなコンポーネントから大規模な SPA までスケールしやすく、学習コストも低いのが特長です。"
+  },
+  {
+    "slug": "cpp",
+    "name": "C/C++",
+    "description": "C/C++ は汎用かつ高性能なシステムプログラミング言語で、OS、ゲームエンジン、高スループットサービスなどパフォーマンスが重視される領域で広く使われています。"
+  },
+  {
+    "slug": "qt",
+    "name": "Qt",
+    "description": "Qt はクロスプラットフォームな C++ アプリケーションフレームワークで、デスクトップ・組込み・産業向けの UI アプリケーション構築に豊富なコンポーネントとツールを提供します。"
+  },
+  {
+    "slug": "mfc",
+    "name": "MFC",
+    "description": "MFC（Microsoft Foundation Classes）はネイティブ Windows デスクトップアプリケーションを効率よく構築するための C++ クラスライブラリです。"
+  },
+  {
+    "slug": "python",
+    "name": "Python",
+    "description": "Python は高水準で読みやすい構文と巨大なエコシステムを持つスクリプト言語で、Web 開発、自動化、データ分析、AI/ML など幅広い分野で活用されています。"
+  },
+  {
+    "slug": "go",
+    "name": "Go",
+    "description": "Go は Google が設計したオープンソース言語で、シンプルな構文と強力な並行処理機能、高速コンパイルを特長とし、クラウドネイティブや分散システムに適しています。"
+  },
+  {
+    "slug": "php",
+    "name": "PHP",
+    "description": "PHP は Web 向けのサーバーサイドスクリプト言語で、コンテンツ駆動型サイトや業務システムの構築に長年使われてきた実績ある技術です。"
+  },
+  {
+    "slug": "thinkphp",
+    "name": "ThinkPHP",
+    "description": "ThinkPHP は中国で広く利用されている軽量 PHP フレームワークで、シンプル・高速・実用性を重視し、中小規模システムに適しています。"
+  },
+  {
+    "slug": "laravel",
+    "name": "Laravel",
+    "description": "Laravel はモダンでエレガントな PHP Web フレームワークで、表現力豊かな文法と強力なルーティング、ORM、キュー、スケジューラなどを備えています。"
+  },
+  {
+    "slug": "objective-c",
+    "name": "Objective-C",
+    "description": "Objective-C は iOS / macOS のネイティブ開発に長年使われてきたオブジェクト指向言語で、既存コードベースや低レイヤ実装の保守に今も重要です。"
+  },
+  {
+    "slug": "android",
+    "name": "Android",
+    "description": "Android は世界的に広く利用されているモバイル OS と開発プラットフォームで、スマートフォンやタブレット、各種スマートデバイス向けのアプリ開発に用いられます。"
+  },
+  {
+    "slug": "java",
+    "name": "Java",
+    "description": "Java はクロスプラットフォームなオブジェクト指向言語で、エンタープライズバックエンド、金融、通信、大規模分散システムなどで広く採用されています。"
+  },
+  {
+    "slug": "spring-boot",
+    "name": "Spring Boot",
+    "description": "Spring Boot は Spring をベースにしたフレームワークで、設定より規約を重視し、Java マイクロサービスやバックエンドアプリケーションの構築と運用を簡素化します。"
+  },
+  {
+    "slug": "spring-cloud",
+    "name": "Spring Cloud",
+    "description": "Spring Cloud は設定管理、サービスディスカバリ、API ゲートウェイ、サーキットブレーカー、可観測性など、マイクロサービスや分散システム向けのツール群を提供します。"
+  },
+  {
+    "slug": "redis",
+    "name": "Redis",
+    "description": "Redis は高性能なインメモリデータストアで、多様なデータ構造をサポートし、キャッシュ、分散ロック、ランキング、軽量メッセージングなどに利用されます。"
+  },
+  {
+    "slug": "mysql",
+    "name": "MySQL",
+    "description": "MySQL は最も広く利用されているオープンソース RDBMS の一つで、安定性と性能、運用のしやすさで知られています。"
+  },
+  {
+    "slug": "sqlserver",
+    "name": "SQL Server",
+    "description": "Microsoft SQL Server はエンタープライズ向けのリレーショナルデータベースで、高い統合性とセキュリティ、運用性を備えています。"
+  },
+  {
+    "slug": "csharp",
+    "name": "C#",
+    "description": "C# は Microsoft が開発したモダンなオブジェクト指向言語で、.NET プラットフォームと密接に連携し、企業システムやデスクトップ、サーバーサイド開発に広く利用されています。"
+  },
+  {
+    "slug": "visual-basic",
+    "name": "Visual Basic",
+    "description": "Visual Basic はイベント駆動型の言語で、Windows アプリケーションを素早く構築する用途で長年使われ、多くの既存業務システムに今も残っています。"
+  },
+  {
+    "slug": "basic",
+    "name": "Basic",
+    "description": "Basic はクラシックな入門向けプログラミング言語で、シンプルな文法により多くの人をプログラミングの世界へ導きました。"
+  },
+  {
+    "slug": "foxpro",
+    "name": "FoxPro",
+    "description": "FoxPro はレガシーなデータベースプログラミング言語・ツールセットで、多くの管理系システムや業種特化アプリケーションの基盤として利用されてきました。"
+  },
+  {
+    "slug": "powerbuilder",
+    "name": "PowerBuilder",
+    "description": "PowerBuilder は企業向けの RAD（高速アプリケーション開発）ツールで、データ集約型のクライアント / サーバー業務アプリケーションに適しています。"
+  },
+  {
+    "slug": "delphi",
+    "name": "Delphi",
+    "description": "Delphi は Object Pascal をベースにした可視化開発環境とプログラミング言語で、高速コンパイルと高い実行性能を備え、デスクトップや産業用途の開発に適しています。"
+  }
+]
+
+

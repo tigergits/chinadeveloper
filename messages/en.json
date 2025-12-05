@@ -1,0 +1,61 @@
+{
+	"nav": {
+		"home": "Home",
+		"about": "About",
+		"portfolios": "Portfolios",
+		"skills": "Skills",
+		"services": "Services",
+		"contact": "Contact"
+	},
+	"home": {
+		"title": "Senior Full-Stack Developer",
+		"subtitle": "Tiger Liu - China Developer | Building software solutions since 1993",
+		"cta": "Get in Touch",
+		"viewPortfolios": "View Portfolios",
+		"featuredProjects": "Featured Projects",
+		"skills": "Skills & Technologies",
+		"welcome": "Welcome to my portfolios",
+		"experience": "25+ Years of Professional Experience",
+		"description": "I'm Tiger Liu, a Senior Full-Stack Software Development Engineer. China Developer - I build robust, high-performance software systems. I'm seeking full-time or part-time remote opportunities to deliver exceptional results.",
+		"featuredDescription": "Selected projects showcasing my expertise",
+		"skillsDescription": "Technologies and tools I work with"
+	},
+	"about": {
+		"title": "About Me"
+	},
+	"portfolios": {
+		"title": "Portfolios",
+		"viewPortfolio": "View Portfolio",
+		"viewOnGithub": "View on GitHub",
+		"viewDetails": "View Details"
+	},
+	"skills": {
+		"title": "Skills & Technologies"
+	},
+	"services": {
+		"title": "Services",
+		"description": "What I can do for you"
+	},
+	"contact": {
+		"title": "Get in Touch",
+		"email": "Email",
+		"social": "Connect with me"
+	},
+	"header": {
+		"brandName": "ChinaDeveloper",
+		"tagline": "Tiger Liu - Senior Full-Stack Developer"
+	},
+	"footer": {
+		"brandName": "Tiger Liu - China Developer",
+		"description": "Tiger Liu is a Senior Full-Stack Software Development Engineer with 25+ years of experience. China Developer specializes in building robust software solutions and is available for remote work opportunities.",
+		"quickLinks": "Quick Links",
+		"connect": "Connect",
+		"about": "About",
+		"portfolio": "Portfolio",
+		"services": "Services",
+		"contact": "Contact",
+		"copyright": "All rights reserved.",
+		"builtWith": "Built with Next.js -",
+		"openSource": "Open Source"
+	}
+}

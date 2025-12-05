@@ -1,0 +1,50 @@
+[
+	{
+		"slug": "web-development",
+		"name": "Web Development",
+		"tagline": "Full-Stack Solutions, From Concept to Deployment",
+		"description": "With nearly 30 years of web development experience, I provide full-stack services from architecture design to frontend and backend development. Proficient in modern frontend frameworks (React, Vue, Next.js) and backend technologies (Node.js, Python, Java), I can build high-performance, scalable enterprise-level web applications and API services."
+	},
+	{
+		"slug": "mobile-development",
+		"name": "Mobile Development",
+		"tagline": "Native & Cross-Platform, Experience First",
+		"description": "I provide mobile application development services for iOS and Android platforms, covering native development (Swift, Kotlin) and cross-platform solutions (React Native, Flutter). From UX design to performance optimization, from API integration to push notifications, ensuring your app stands out in major app stores."
+	},
+	{
+		"slug": "desktop-development",
+		"name": "Desktop Development",
+		"tagline": "Cross-Platform Desktop Apps, Outstanding Performance",
+		"description": "I have extensive experience in desktop application development across Windows, macOS, and Linux platforms. Supporting various technology stacks including Electron, Qt, and native development, I can create high-performance desktop software solutions with excellent user experience to meet complex enterprise application requirements."
+	},
+	{
+		"slug": "embedded-development",
+		"name": "Embedded Development",
+		"tagline": "Hardware & Software Integration, Deep Customization",
+		"description": "I provide embedded system development services, covering complete solutions from hardware interface design to low-level software development. With rich project experience in IoT, smart devices, industrial automation, and edge computing, I can handle complex real-time systems and resource-constrained environments."
+	},
+	{
+		"slug": "ai-development",
+		"name": "AI Development",
+		"tagline": "Intelligent Applications, Data-Driven",
+		"description": "I combine artificial intelligence technology with actual business needs, providing AI application development services including machine learning model development, natural language processing (NLP), computer vision (CV), and recommendation systems. Familiar with mainstream AI frameworks (TensorFlow, PyTorch), I can build complete AI solutions from data preprocessing to model deployment."
+	},
+	{
+		"slug": "cloud-development",
+		"name": "Cloud Development",
+		"tagline": "Cloud-Native Architecture, Elastic Scaling",
+		"description": "I provide cloud platform development services, including cloud-native application development (containerization, microservices architecture), cloud infrastructure management (CI/CD, DevOps automation), cloud security, and cost optimization. Familiar with mainstream cloud platforms like AWS, Azure, and GCP, I can design highly available, scalable cloud architecture solutions."
+	},
+	{
+		"slug": "secondary-development",
+		"name": "Secondary Development",
+		"tagline": "System Upgrade & Migration, Smooth Transition",
+		"description": "I provide secondary development services, including legacy system modernization, feature expansion, performance optimization, and architecture refactoring. While maintaining business continuity, I migrate old technology stacks to modern architectures, improving system maintainability and scalability while reducing technical debt."
+	},
+	{
+		"slug": "consulting",
+		"name": "Consulting Services",
+		"tagline": "Technical Strategy Planning, Solution Design",
+		"description": "Based on 30 years of project experience, I provide comprehensive technical consulting services, including requirements analysis, technology selection, architecture design, project management, code review, and risk control. I can help your team develop technology roadmaps, solve complex technical challenges, and improve development efficiency and code quality."
+	}
+]

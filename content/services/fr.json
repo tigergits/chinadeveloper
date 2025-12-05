@@ -1,0 +1,51 @@
+[
+	{
+		"slug": "web-development",
+		"name": "Développement Web",
+		"tagline": "Solutions Full-Stack, du Concept au Déploiement",
+		"description": "Avec près de 30 ans d'expérience en développement web, je propose des services full-stack allant de la conception d'architecture au développement frontend et backend. Maîtrisant les frameworks frontend modernes (React, Vue, Next.js) et les technologies backend (Node.js, Python, Java), je peux construire des applications web et services API d'entreprise hautes performances et évolutifs."
+	},
+	{
+		"slug": "mobile-development",
+		"name": "Développement Mobile",
+		"tagline": "Natif et Multiplateforme, Expérience d'Abord",
+		"description": "Je propose des services de développement d'applications mobiles pour les plateformes iOS et Android, couvrant le développement natif (Swift, Kotlin) et les solutions multiplateformes (React Native, Flutter). De la conception de l'expérience utilisateur à l'optimisation des performances, de l'intégration d'API aux notifications push, garantissant que votre application se démarque dans les principales boutiques d'applications."
+	},
+	{
+		"slug": "desktop-development",
+		"name": "Développement Desktop",
+		"tagline": "Applications Desktop Multiplateformes, Performance Exceptionnelle",
+		"description": "J'ai une vaste expérience en développement d'applications desktop sur les plateformes Windows, macOS et Linux. Supportant diverses piles technologiques incluant Electron, Qt et le développement natif, je peux créer des solutions logicielles desktop hautes performances avec une excellente expérience utilisateur pour répondre aux exigences complexes des applications d'entreprise."
+	},
+	{
+		"slug": "embedded-development",
+		"name": "Développement Embarqué",
+		"tagline": "Intégration Matérielle et Logicielle, Personnalisation Approfondie",
+		"description": "Je propose des services de développement de systèmes embarqués, couvrant des solutions complètes allant de la conception d'interfaces matérielles au développement logiciel de bas niveau. Avec une riche expérience de projets dans l'IoT, les appareils intelligents, l'automatisation industrielle et l'informatique en périphérie, je peux gérer des systèmes temps réel complexes et des environnements à ressources limitées."
+	},
+	{
+		"slug": "ai-development",
+		"name": "Développement IA",
+		"tagline": "Applications Intelligentes, Pilotées par les Données",
+		"description": "Je combine la technologie d'intelligence artificielle avec les besoins commerciaux réels, fournissant des services de développement d'applications IA incluant le développement de modèles d'apprentissage automatique, le traitement du langage naturel (NLP), la vision par ordinateur (CV) et les systèmes de recommandation. Familier avec les frameworks IA principaux (TensorFlow, PyTorch), je peux construire des solutions IA complètes du prétraitement des données au déploiement de modèles."
+	},
+	{
+		"slug": "cloud-development",
+		"name": "Développement Cloud",
+		"tagline": "Architecture Cloud-Native, Mise à l'Échelle Élastique",
+		"description": "Je propose des services de développement de plateformes cloud, incluant le développement d'applications cloud-native (containerisation, architecture de microservices), la gestion d'infrastructure cloud (CI/CD, automatisation DevOps), la sécurité cloud et l'optimisation des coûts. Familier avec les plateformes cloud principales comme AWS, Azure et GCP, je peux concevoir des solutions d'architecture cloud hautement disponibles et évolutives."
+	},
+	{
+		"slug": "secondary-development",
+		"name": "Développement Secondaire",
+		"tagline": "Mise à Niveau et Migration de Systèmes, Transition Douce",
+		"description": "Je propose des services de développement secondaire de systèmes, incluant la modernisation de systèmes hérités, l'expansion de fonctionnalités, l'optimisation des performances et la refactorisation d'architecture. Tout en maintenant la continuité des activités, je migre les piles technologiques anciennes vers des architectures modernes, améliorant la maintenabilité et l'évolutivité du système tout en réduisant la dette technique."
+	},
+	{
+		"slug": "consulting",
+		"name": "Services de Conseil",
+		"tagline": "Planification Stratégique Technique, Conception de Solutions",
+		"description": "Basé sur 30 ans d'expérience en projets, je propose des services de conseil technique complets, incluant l'analyse des besoins, la sélection de technologies, la conception d'architecture, la gestion de projets, la revue de code et le contrôle des risques. Je peux aider votre équipe à développer des feuilles de route technologiques, résoudre des défis techniques complexes et améliorer l'efficacité de développement et la qualité du code."
+	}
+]
+

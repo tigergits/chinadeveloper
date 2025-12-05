@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { getTranslations } from "next-intl/server"
+import { getTranslations, setRequestLocale } from "next-intl/server"
 import { Card } from "@/components/card"
 import { CardGrid } from "@/components/card-grid"
 import { Locale } from "@/i18n/request"
@@ -23,6 +23,7 @@ async function getSkills(locale: Locale): Promise<Skill[]> {
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }) {
 	const { locale } = await params
+	setRequestLocale(locale)
 	const t = await getTranslations({ locale })
 
 	const isZhCN = locale === "zh_CN"
@@ -66,6 +67,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
 
 export default async function SkillsPage({ params }: { params: Promise<{ locale: Locale }> }) {
 	const { locale } = await params
+	setRequestLocale(locale)
 	const t = await getTranslations({ locale })
 	const skills = await getSkills(locale)
 

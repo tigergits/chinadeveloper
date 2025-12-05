@@ -1,4 +1,4 @@
-import { getTranslations } from "next-intl/server"
+import { getTranslations, setRequestLocale } from "next-intl/server"
 import { getContentBySlug, getAllContent } from "@/lib/content"
 import { Locale } from "@/i18n/request"
 import { notFound } from "next/navigation"
@@ -100,6 +100,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
 
 export default async function PortfolioPage({ params }: { params: Promise<{ locale: Locale; slug: string }> }) {
 	const { locale, slug } = await params
+	setRequestLocale(locale)
 	const t = await getTranslations({ locale })
 
 	try {

@@ -1,4 +1,4 @@
-import { getTranslations } from "next-intl/server"
+import { getTranslations, setRequestLocale } from "next-intl/server"
 import { Locale } from "@/i18n/request"
 import { Github, Twitter, Facebook, Mail } from "lucide-react"
 import contactEn from "@/content/contact/en.json"
@@ -19,6 +19,7 @@ const iconMap: Record<string, typeof Mail> = {
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }) {
 	const { locale } = await params
+	setRequestLocale(locale)
 	const t = await getTranslations({ locale })
 
 	const isZhCN = locale === "zh_CN"
@@ -62,6 +63,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
 
 export default async function ContactPage({ params }: { params: Promise<{ locale: Locale }> }) {
 	const { locale } = await params
+	setRequestLocale(locale)
 	const t = await getTranslations({ locale })
 
 	const emailItem = contacts.find((item) => item.name.toLowerCase() === "email")

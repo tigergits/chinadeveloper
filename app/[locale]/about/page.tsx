@@ -1,4 +1,4 @@
-import { getTranslations } from "next-intl/server"
+import { getTranslations, setRequestLocale } from "next-intl/server"
 import { getAboutContent } from "@/lib/content"
 import { Locale } from "@/i18n/request"
 import Image from "next/image"
@@ -8,6 +8,7 @@ import remarkGfm from 'remark-gfm'
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }) {
 	const { locale } = await params
+	setRequestLocale(locale)
 	const t = await getTranslations({ locale })
 
 	const isZhCN = locale === "zh_CN"
@@ -51,6 +52,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
 
 export default async function AboutPage({ params }: { params: Promise<{ locale: Locale }> }) {
 	const { locale } = await params
+	setRequestLocale(locale)
 	const t = await getTranslations({ locale })
 	const content = await getAboutContent(locale)
 	

@@ -1,4 +1,4 @@
-import { getTranslations } from "next-intl/server"
+import { getTranslations, setRequestLocale } from "next-intl/server"
 import { HeroSection } from "@/components/hero-section"
 import { getAllContent, getContactInfo } from "@/lib/content"
 import { Locale } from "@/i18n/request"
@@ -10,6 +10,7 @@ import { SectionWrapper } from "@/components/section-wrapper"
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }) {
 	const { locale } = await params
+	setRequestLocale(locale)
 	const t = await getTranslations({ locale })
 
 	const isZhCN = locale === "zh_CN"
@@ -65,6 +66,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
 
 export default async function HomePage({ params }: { params: Promise<{ locale: Locale }> }) {
 	const { locale } = await params
+	setRequestLocale(locale)
 	const t = await getTranslations({ locale })
 
 	const portfolios = await getAllContent("portfolios", locale)

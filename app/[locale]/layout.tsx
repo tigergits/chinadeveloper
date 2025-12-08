@@ -91,7 +91,6 @@ export default async function LocaleLayout({
 	return (
 		<html lang={locale} suppressHydrationWarning>
 			<head>
-				<GoogleAnalytics />
 				<UmamiAnalytics />
 			</head>
 			<body className="flex flex-col min-h-screen">

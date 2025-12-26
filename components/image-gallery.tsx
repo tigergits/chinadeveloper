@@ -80,10 +80,7 @@ export function ImageGallery({ images }: ImageGalleryProps) {
 			</div>
 
 			{isOpen && (
-				<div
-					className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 px-4"
-					onClick={close}
-				>
+				<div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 px-4" onClick={close}>
 					<div
 						className="relative flex max-h-[90vh] w-full max-w-5xl items-center justify-center"
 						onClick={(e) => e.stopPropagation()}
@@ -138,5 +135,3 @@ export function ImageGallery({ images }: ImageGalleryProps) {
 		</>
 	)
 }
-
-

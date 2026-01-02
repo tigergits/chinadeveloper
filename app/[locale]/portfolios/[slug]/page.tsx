@@ -199,7 +199,7 @@ export default async function PortfolioPage({ params }: { params: Promise<{ loca
 								src={'/assets/images/portfolios/' + slug + '/' + portfolio.metadata.cover}
 								alt={`${portfolioTitle} - ${isZhCN ? "项目封面图" : "Project cover image"} by Tiger Liu, China Developer`}
 								fill
-								className="object-cover"
+								className="object-cover object-[top_center]"
 								priority
 							/>
 						</div>

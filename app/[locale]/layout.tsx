@@ -6,7 +6,6 @@ import Header from "@/components/header"
 import Footer from "@/components/footer"
 import CookieConsent from "@/components/cookie-consent"
 import GoogleAnalytics from "@/components/google-analytics"
-import UmamiAnalytics from "@/components/umami-analytics"
 import { ThemeProvider } from "@/components/theme-provider"
 import { getContactInfo } from "@/lib/content"
 import "./globals.css"
@@ -91,7 +90,7 @@ export default async function LocaleLayout({
 	return (
 		<html lang={locale} suppressHydrationWarning>
 			<head>
-				<UmamiAnalytics />
+				<GoogleAnalytics />
 			</head>
 			<body className="flex flex-col min-h-screen">
 				<ThemeProvider>

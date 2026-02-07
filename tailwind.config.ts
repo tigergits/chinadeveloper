@@ -44,6 +44,10 @@ const config: Config = {
         input: "var(--input)",
         ring: "var(--ring)",
       },
+      fontFamily: {
+        sans: ["var(--font-inter)", "system-ui", "-apple-system", "BlinkMacSystemFont", "'Segoe UI'", "'PingFang SC'", "'Hiragino Sans GB'", "'Microsoft YaHei'", "sans-serif"],
+        mono: ["var(--font-mono)", "'Cascadia Code'", "'Fira Code'", "ui-monospace", "monospace"],
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",

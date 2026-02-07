@@ -54,6 +54,7 @@
 		"portfolio": "Portfolio",
 		"services": "Services",
 		"contact": "Contact",
+		"privacy": "Privacy",
 		"copyright": "All rights reserved.",
 		"builtWith": "Built with Next.js -",
 		"openSource": "Open Source"

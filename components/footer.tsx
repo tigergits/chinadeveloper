@@ -72,6 +72,11 @@ export default function Footer({ contactInfo = [] }: FooterProps) {
                   {t('contact')}
                 </Link>
               </li>
+              <li>
+                <Link href={`/${locale}/privacy`} className="text-foreground/60 hover:text-foreground">
+                  {t('privacy')}
+                </Link>
+              </li>
             </ul>
           </div>
           

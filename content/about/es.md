@@ -1,5 +1,5 @@
 # Sobre Mí: Un Artesano del Código a Través de Tres Décadas
-La base técnica comenzó en 1993, con experiencia full-stack que abarca dos décadas. Soy un ingeniero senior y consultor técnico independiente (SOHO) que ama crear y persigue la eficiencia.
+La base técnica comenzó en 1993, con 30 años de experiencia full-stack, ahora amplificada por el desarrollo asistido por IA (Claude Code, Cursor, Codex). Soy un ingeniero senior y consultor técnico independiente (SOHO) que ama crear y persigue la eficiencia. Ayudo a personas y equipos a entregar software real rápidamente: tareas pequeñas en horas, proyectos complejos en días.
 
 ## Núcleo Técnico e Hitos Profesionales
 Mi viaje de programación comenzó en 1993 en el entorno 8086 PC/DOS, escribiendo mi primera línea de código en Basic. Desde los primeros C, ensamblador, VB, PowerBuilder hasta las aplicaciones cloud-native y de IA de hoy, siempre he estado explorando la vanguardia de la tecnología.
@@ -9,7 +9,7 @@ Mi viaje de programación comenzó en 1993 en el entorno 8086 PC/DOS, escribiend
 | 1993 | Fundación: Programación en entorno DOS | Basic, C, Ensamblador |
 | 1997 | Profesional: Desarrollo de software a tiempo completo | C++, FoxPro, PowerBuilder, PHP, Python, Go, Javascript, Java, C# |
 | 2000 | Transición: Consultor técnico independiente (SOHO) | Diseño de arquitectura, gestión de proyectos, desarrollo full-stack |
-| Presente | Innovación continua: Práctica multiplataforma multidisciplinaria | IA, IoT, Blockchain, Web, Móvil |
+| Presente | Entrega acelerada por IA | Claude Code, Cursor, Codex, AI Agents, IoT, Blockchain, Web, Mobile |
 
 ## Experiencia en Proyectos:
 Amplitud y Profundidad Combinadas
@@ -32,7 +32,7 @@ Puedo seleccionar e integrar de manera flexible stacks tecnológicos multiidioma
 | Legacy y Especializado | Delphi, PowerBuilder, Basic, PHP, Ruby | DOS, Windows 3.1, mantenimiento y migración de entornos |
 
 ## Trabajo Remoto e Intenciones de Colaboración
-Creo firmemente que el código de alta calidad se puede entregar de forma remota. Como profesional SOHO, disfruto programando, amo la vida y los viajes, y mantengo una auto-motivación extremadamente alta para asegurar el progreso y la calidad del proyecto.
+Creo firmemente que el código de alta calidad se puede entregar de forma remota. Como profesional SOHO, disfruto programando, amo la vida y los viajes, y mantengo una auto-motivación extremadamente alta para asegurar el progreso y la calidad del proyecto. Con flujos de trabajo asistidos por IA, entrego más rápido que nunca, sin comprometer la calidad.
 
 | Rol Profesional | Modelo de Colaboración | Mi Compromiso |
 |-----------------|----------------------|---------------|

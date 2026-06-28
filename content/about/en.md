@@ -1,5 +1,5 @@
 # About Me: A Code Craftsman Across Three Decades
-Technical foundation began in 1993, with full-stack experience spanning two decades. I am a senior engineer and independent technical consultant (SOHO) who loves creating and pursues efficiency.
+Technical foundation began in 1993, with 30 years of full-stack experience — now amplified by AI-assisted development (Claude Code, Cursor, Codex). I am a senior engineer and independent technical consultant (SOHO) who loves creating and pursues efficiency. I help individuals and teams ship real software fast: small tasks in hours, complex projects in days.
 
 ## Technical Core and Career Milestones
 My programming journey began in 1993 in the 8086 PC/DOS environment, writing my first line of code in Basic. From early C, assembly, VB, PowerBuilder to today's cloud-native and AI applications, I have always been exploring the cutting edge of technology.
@@ -9,7 +9,7 @@ My programming journey began in 1993 in the 8086 PC/DOS environment, writing my 
 | 1993 | Foundation: DOS environment programming | Basic, C, Assembly |
 | 1997 | Professional: Full-time software development | C++, FoxPro, PowerBuilder, PHP, Python, Go, Javascript, Java, C# |
 | 2000 | Transition: Independent technical consultant (SOHO) | Architecture design, project management, full-stack development |
-| Present | Continuous innovation: Multi-domain cross-platform practice | AI, IoT, Blockchain, Web, Mobile |
+| Present | AI-accelerated delivery: Multi-domain cross-platform practice | Claude Code, Cursor, Codex, AI Agents, IoT, Blockchain, Web, Mobile |
 
 ## Project Experience:
 Breadth and Depth Combined
@@ -32,7 +32,7 @@ I can flexibly select and integrate multi-language, multi-platform technology st
 | Legacy & Specialized | Delphi, PowerBuilder, Basic, PHP, Ruby | DOS, Windows 3.1, environment maintenance and migration |
 
 ## Remote Work and Collaboration Intentions
-I firmly believe that high-quality code can be delivered remotely. As a SOHO professional, I enjoy coding, love life and travel, and maintain extremely high self-motivation to ensure project progress and quality.
+I firmly believe that high-quality code can be delivered remotely. As a SOHO professional, I enjoy coding, love life and travel, and maintain extremely high self-motivation to ensure project progress and quality. With AI-assisted workflows, I deliver faster than ever — without compromising on quality.
 
 | Professional Role | Collaboration Model | My Commitment |
 |------------------|---------------------|---------------|

@@ -38,6 +38,11 @@ export function HeroSection({ contactInfo = [] }: HeroSectionProps) {
 
   // Capability tags (array) from i18n
   const tags = (t.raw('tags') as string[] | undefined) ?? []
+  const tagStyles = [
+    "bg-primary/10 text-primary border-primary/20",
+    "bg-accent/15 text-foreground border-accent/40",
+    "bg-secondary/20 text-foreground border-secondary/40",
+  ]
 
   return (
     <section className="relative px-6 py-20 md:py-28 overflow-hidden">
@@ -86,10 +91,10 @@ export function HeroSection({ contactInfo = [] }: HeroSectionProps) {
         {/* Capability tags */}
         {tags.length > 0 && (
           <div className="flex flex-wrap justify-center gap-2 mb-10 max-w-3xl mx-auto">
-            {tags.map((tag) => (
+            {tags.map((tag, i) => (
               <span
                 key={tag}
-                className="px-3 py-1 rounded-full bg-muted text-foreground/80 text-sm font-medium border border-border/60"
+                className={`px-3 py-1 rounded-full text-sm font-medium border ${tagStyles[i % tagStyles.length]}`}
               >
                 {tag}
               </span>

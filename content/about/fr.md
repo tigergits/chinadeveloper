@@ -1,5 +1,5 @@
 # À Propos de Moi : Un Artisan du Code à Travers Trois Décennies
-Les fondations techniques ont commencé en 1993, avec une expérience full-stack couvrant deux décennies. Je suis un ingénieur senior et consultant technique indépendant (SOHO) qui aime créer et poursuit l'efficacité.
+Les fondations techniques ont commencé en 1993, avec 30 ans d'expérience full-stack — désormais amplifiée par le développement assisté par IA (Claude Code, Cursor, Codex). Je suis un ingénieur senior et consultant technique indépendant (SOHO) qui aime créer et poursuit l'efficacité. J'aide les particuliers et les équipes à livrer rapidement de vrais logiciels : les petites tâches en quelques heures, les projets complexes en quelques jours.
 
 ## Noyau Technique et Jalons de Carrière
 Mon parcours de programmation a commencé en 1993 dans l'environnement 8086 PC/DOS, en écrivant ma première ligne de code en Basic. Des premiers C, assembleur, VB, PowerBuilder aux applications cloud-native et IA d'aujourd'hui, j'ai toujours exploré la pointe de la technologie.
@@ -9,7 +9,7 @@ Mon parcours de programmation a commencé en 1993 dans l'environnement 8086 PC/D
 | 1993 | Fondation : Programmation en environnement DOS | Basic, C, Assembleur |
 | 1997 | Professionnel : Développement logiciel à temps plein | C++, FoxPro, PowerBuilder, PHP, Python, Go, Javascript, Java, C# |
 | 2000 | Transition : Consultant technique indépendant (SOHO) | Conception d'architecture, gestion de projet, développement full-stack |
-| Présent | Innovation continue : Pratique multiplateforme multi-domaines | IA, IoT, Blockchain, Web, Mobile |
+| Présent | Livraison accélérée par l'IA | Claude Code, Cursor, Codex, AI Agents, IoT, Blockchain, Web, Mobile |
 
 ## Expérience en Projets :
 Largeur et Profondeur Combinées
@@ -32,7 +32,7 @@ Je peux sélectionner et intégrer de manière flexible des stacks technologique
 | Legacy et Spécialisé | Delphi, PowerBuilder, Basic, PHP, Ruby | DOS, Windows 3.1, maintenance et migration d'environnement |
 
 ## Travail à Distance et Intentions de Collaboration
-Je crois fermement que du code de haute qualité peut être livré à distance. En tant que professionnel SOHO, j'aime coder, j'aime la vie et les voyages, et je maintiens une auto-motivation extrêmement élevée pour assurer la progression et la qualité du projet.
+Je crois fermement que du code de haute qualité peut être livré à distance. En tant que professionnel SOHO, j'aime coder, j'aime la vie et les voyages, et je maintiens une auto-motivation extrêmement élevée pour assurer la progression et la qualité du projet. Grâce aux workflows assistés par IA, je livre plus vite que jamais — sans compromis sur la qualité.
 
 | Rôle Professionnel | Modèle de Collaboration | Mon Engagement |
 |-------------------|------------------------|----------------|

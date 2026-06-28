@@ -34,12 +34,16 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
 
 	return (
 		<div className="container px-4 py-12 md:py-16">
-			<div className="max-w-3xl mx-auto prose prose-neutral dark:prose-invert">
-				<h1 className="text-3xl font-bold mb-2">Privacy Policy</h1>
-				<p className="text-muted-foreground text-sm">
-					Last updated: February 8, 2025
-				</p>
-
+			<div className="max-w-3xl mx-auto">
+				<div className="mb-8">
+					<p className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-4">
+						<span className="h-1.5 w-1.5 rounded-full bg-primary" />
+						Legal
+					</p>
+					<h1 className="text-4xl font-bold tracking-tight mb-2 text-gradient-brand">Privacy Policy</h1>
+					<p className="text-muted-foreground text-sm">Last updated: February 8, 2025</p>
+				</div>
+				<div className="prose prose-neutral dark:prose-invert max-w-none">
 				<section className="mt-8">
 					<h2 className="text-xl font-semibold mt-6 mb-2">1. Introduction</h2>
 					<p>
@@ -192,6 +196,7 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
 				<p className="mt-10 text-sm text-muted-foreground border-t pt-6">
 					© {new Date().getFullYear()} China Developer. All rights reserved.
 				</p>
+				</div>
 			</div>
 		</div>
 	)

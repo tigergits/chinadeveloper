@@ -84,7 +84,7 @@ export default async function PortfolioPage({ params }: { params: Promise<{ loca
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
         <div className="mb-12 sm:mb-16">
-          <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">{t("portfolios.title")}</h1>
+          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4 text-gradient-brand">{t("portfolios.title")}</h1>
           <p className="text-lg text-muted-foreground max-w-2xl">
             {isZhCN 
               ? "探索我的软件项目和解决方案集合" 

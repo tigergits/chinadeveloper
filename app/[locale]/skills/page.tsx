@@ -127,7 +127,7 @@ export default async function SkillsPage({ params }: { params: Promise<{ locale:
 						<span className="h-1.5 w-1.5 rounded-full bg-primary" />
 						{t("skills.title")}
 					</p>
-					<h1 className="text-3xl md:text-4xl font-bold mb-3 tracking-tight text-balance">
+					<h1 className="text-3xl md:text-4xl font-bold mb-3 tracking-tight text-balance text-gradient-brand">
 						{t("skills.title")}
 					</h1>
 					<p className="text-sm md:text-base text-muted-foreground leading-relaxed">

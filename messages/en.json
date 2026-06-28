@@ -18,12 +18,20 @@
 		"experience": "30 years of full-stack experience, supercharged with Claude Code, Cursor & Codex",
 		"description": "I help any individual or team ship real software — fast. SaaS, web & mobile apps, games, browser extensions, AI workflows and more. From idea to launch, or taking over what you already have.",
 		"speed": "Small tasks in hours. Complex projects in days.",
+		"stats": [
+			{ "value": "30", "label": "Years of Experience" },
+			{ "value": "50+", "label": "Projects Delivered" },
+			{ "value": "24h", "label": "Avg. Reply Time" }
+		],
 		"tags": ["SaaS", "Web Apps", "iOS / Android", "Games", "Browser Extensions", "Code Migration", "SEO / GEO", "Doc Processing", "AI Workflows"],
 		"emailCta": "Email me",
 		"emailNote": "Tell me what you need — I usually reply within 24 hours.",
 		"servicesTitle": "What I Can Build for You",
 		"servicesDescription": "AI-accelerated services that solve real pain points — fast.",
 		"viewServices": "View all services →",
+		"availableBadge": "Available for new projects",
+		"testimonialsTitle": "What Clients Say",
+		"testimonialsDescription": "Feedback from founders and teams I've helped ship.",
 		"featuredDescription": "Selected projects showcasing my expertise",
 		"skillsDescription": "Technologies and tools I work with"
 	},
@@ -57,6 +65,7 @@
 	},
 	"footer": {
 		"brandName": "Tiger Liu - China Developer",
+		"emailCta": "Email me",
 		"description": "Tiger Liu is a Senior Full-Stack Software Development Engineer with 30 years of experience. China Developer specializes in AI-accelerated software development and is available for remote work opportunities.",
 		"quickLinks": "Quick Links",
 		"connect": "Connect",

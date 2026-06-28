@@ -38,6 +38,7 @@ export function HeroSection({ contactInfo = [] }: HeroSectionProps) {
 
   // Capability tags (array) from i18n
   const tags = (t.raw('tags') as string[] | undefined) ?? []
+  const stats = (t.raw('stats') as { value: string; label: string }[] | undefined) ?? []
   const tagStyles = [
     "bg-primary/10 text-primary border-primary/20",
     "bg-accent/15 text-foreground border-accent/40",
@@ -46,10 +47,12 @@ export function HeroSection({ contactInfo = [] }: HeroSectionProps) {
 
   return (
     <section className="relative px-6 py-20 md:py-28 overflow-hidden">
-      {/* Gradient background */}
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[40rem] h-[40rem] bg-accent/20 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-0 w-80 h-80 bg-primary/10 rounded-full blur-3xl"></div>
+      {/* Layered background: grid + brand glows */}
+      <div className="pointer-events-none absolute inset-0 -z-10">
+        <div className="absolute inset-0 bg-grid opacity-60" />
+        <div className="glow-blob absolute -top-24 left-1/2 -translate-x-1/2 w-[36rem] h-[36rem]" />
+        <div className="absolute top-1/3 -left-20 w-80 h-80 rounded-full bg-primary/20 blur-3xl" />
+        <div className="absolute bottom-0 -right-16 w-80 h-80 rounded-full bg-accent/20 blur-3xl" />
       </div>
 
       <div className="max-w-4xl mx-auto">
@@ -68,11 +71,18 @@ export function HeroSection({ contactInfo = [] }: HeroSectionProps) {
             <span className="h-1.5 w-1.5 rounded-full bg-primary" />
             {t('welcome')}
           </p>
+          <p className="mt-3 inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-600 dark:text-emerald-400">
+            <span className="relative flex h-2 w-2">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-500 opacity-75" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
+            </span>
+            {t('availableBadge')}
+          </p>
         </div>
 
         {/* Main Content */}
         <div className="text-center mb-8">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-balance leading-tight">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-balance leading-tight tracking-tight text-gradient-brand">
             {t('title')}
           </h1>
           <p className="text-lg md:text-xl font-semibold text-foreground/80 mb-4 max-w-3xl mx-auto">
@@ -87,6 +97,18 @@ export function HeroSection({ contactInfo = [] }: HeroSectionProps) {
             {t('speed')}
           </p>
         </div>
+
+        {/* Trust stats */}
+        {stats.length > 0 && (
+          <div className="flex flex-wrap justify-center gap-8 sm:gap-12 mb-10">
+            {stats.map((s) => (
+              <div key={s.label} className="text-center">
+                <div className="text-3xl md:text-4xl font-bold text-primary">{s.value}</div>
+                <div className="text-xs md:text-sm text-muted-foreground mt-1">{s.label}</div>
+              </div>
+            ))}
+          </div>
+        )}
 
         {/* Capability tags */}
         {tags.length > 0 && (
@@ -108,7 +130,7 @@ export function HeroSection({ contactInfo = [] }: HeroSectionProps) {
             {email && (
               <a
                 href={`mailto:${email.value}`}
-                className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition transform"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-xl font-semibold shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/40 hover:scale-105 transition transform"
               >
                 <Mail size={20} />
                 {t('emailCta')}
@@ -116,7 +138,7 @@ export function HeroSection({ contactInfo = [] }: HeroSectionProps) {
             )}
             <Link
               href={`/${locale}/services`}
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-lg font-semibold border border-border bg-card hover:bg-muted transition"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-semibold border border-border bg-card hover:border-primary/50 hover:bg-muted transition"
             >
               {t('viewServices')}
               <ArrowRight size={18} />

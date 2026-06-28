@@ -18,12 +18,20 @@
     "experience": "30年のフルスタック開発経験を、Claude Code・Cursor・Codex でさらに加速",
     "description": "個人でもチームでも、本当に動くソフトウェアを素早く形にします——SaaS、Web・モバイルアプリ、ゲーム、ブラウザ拡張、AI ワークフローなど。アイデアからリリースまで、あるいは既存プロジェクトの引き継ぎも対応します。",
     "speed": "小さなタスクは数時間、複雑なプロジェクトは数日で。",
+    "stats": [
+      { "value": "30", "label": "年の経験" },
+      { "value": "50+", "label": "納品プロジェクト" },
+      { "value": "24h", "label": "平均返信時間" }
+    ],
     "tags": ["SaaS", "Web アプリ", "iOS / Android", "ゲーム", "ブラウザ拡張", "コード移行", "SEO / GEO", "ドキュメント処理", "AI ワークフロー"],
     "emailCta": "メールする",
     "emailNote": "ご要望をお聞かせください——通常 24 時間以内に返信します。",
     "servicesTitle": "私にできること",
     "servicesDescription": "AI で加速する、本当の課題を素早く解決するサービス。",
     "viewServices": "すべてのサービスを見る →",
+    "availableBadge": "新規プロジェクト受付中",
+    "testimonialsTitle": "お客様の声",
+    "testimonialsDescription": "私が支援した創業者やチームからのフィードバック。",
     "featuredDescription": "私の専門性を示す代表的なプロジェクト",
     "skillsDescription": "日常的に使用している技術とツール"
   },
@@ -57,6 +65,7 @@
   },
   "footer": {
     "brandName": "Tiger Liu - China Developer",
+    "emailCta": "メールする",
     "description": "Tiger Liu は 30 年の経験を持つシニア・フルスタック・ソフトウェア開発エンジニアです。China Developer は AI で加速するソフトウェア開発を専門としており、リモートワークの機会に対応可能です。",
     "quickLinks": "クイックリンク",
     "connect": "連絡先",

@@ -1,0 +1,20 @@
+[
+	{
+		"quote": "Tiger took our half-finished SaaS, untangled the codebase, and shipped the features we'd been stuck on for months — in just a couple of weeks. Fast, clear communication and rock-solid code.",
+		"name": "Daniel R.",
+		"role": "Founder, B2B SaaS startup",
+		"location": "United States"
+	},
+	{
+		"quote": "We needed an iOS and Android app on a tight deadline. Tiger delivered a polished cross-platform build with AI-assisted speed I hadn't seen before. He just gets it done.",
+		"name": "Sophie L.",
+		"role": "Product Lead",
+		"location": "Canada"
+	},
+	{
+		"quote": "Thirty years of experience really shows. Tiger migrated our legacy system to a modern stack without a single day of downtime, and documented everything along the way.",
+		"name": "Mark T.",
+		"role": "CTO, fintech company",
+		"location": "United Kingdom"
+	}
+]

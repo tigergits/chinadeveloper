@@ -166,7 +166,7 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
 							<span className="h-1.5 w-1.5 rounded-full bg-primary" />
 							{isZhCN ? "AI 时代" : "AI Era"}
 						</p>
-						<h1 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight text-balance">
+						<h1 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight text-balance text-gradient-brand">
 							{t("services.title")}
 						</h1>
 						<p className="text-base md:text-lg text-muted-foreground leading-relaxed">
@@ -218,19 +218,20 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
 					</CardGrid>
 
 					{/* Email CTA */}
-					<div className="mt-16 max-w-2xl mx-auto text-center rounded-3xl border border-primary/20 bg-gradient-to-br from-primary/5 to-accent/10 px-6 py-12">
-						<h2 className="text-2xl md:text-3xl font-bold mb-3 tracking-tight">
+					<div className="relative mt-16 max-w-2xl mx-auto text-center rounded-3xl border border-primary/20 bg-gradient-to-br from-primary/10 to-accent/10 px-6 py-12 overflow-hidden">
+						<div className="glow-blob absolute -top-16 left-1/2 -translate-x-1/2 w-72 h-40" />
+						<h2 className="relative text-2xl md:text-3xl font-bold mb-3 tracking-tight">
 							{t("services.ctaTitle")}
 						</h2>
-						<p className="text-muted-foreground mb-6">{t("services.ctaText")}</p>
+						<p className="relative text-muted-foreground mb-6">{t("services.ctaText")}</p>
 						<a
 							href={`mailto:${email}`}
-							className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition transform"
+							className="relative inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-xl font-semibold shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/40 hover:scale-105 transition transform"
 						>
 							<Mail size={20} />
 							{t("services.ctaButton")}
 						</a>
-						<p className="mt-4 text-sm text-muted-foreground">
+						<p className="relative mt-4 text-sm text-muted-foreground">
 							<a href={`mailto:${email}`} className="font-medium text-foreground hover:text-primary transition-colors">
 								{email}
 							</a>

@@ -3,7 +3,6 @@ import { HeroSection } from "@/components/hero-section"
 import { getAllContent, getContactInfo } from "@/lib/content"
 import { Locale } from "@/i18n/request"
 import Link from "next/link"
-import Image from "next/image"
 import {
 	Mail,
 	Rocket,
@@ -21,12 +20,22 @@ import {
 import { Card } from "@/components/card"
 import { CardGrid } from "@/components/card-grid"
 import { SectionWrapper } from "@/components/section-wrapper"
+import { TechMarquee } from "@/components/tech-marquee"
+import { Testimonials, type Testimonial } from "@/components/testimonials"
 
 interface Service {
 	slug: string
 	name?: string
 	tagline?: string
 	description?: string
+}
+
+async function getTestimonials(locale: Locale): Promise<Testimonial[]> {
+	try {
+		return (await import(`@/content/testimonials/${locale}.json`)).default
+	} catch {
+		return (await import(`@/content/testimonials/en.json`)).default
+	}
 }
 
 const serviceIcons: Record<string, LucideIcon> = {
@@ -114,13 +123,12 @@ export default async function HomePage({ params }: { params: Promise<{ locale: L
 	setRequestLocale(locale)
 	const t = await getTranslations({ locale })
 
-	const portfolios = await getAllContent("portfolios", locale)
 	const skills = await getAllContent("skills", locale)
 	const contactInfo = await getContactInfo(locale)
 	const services = await getServices(locale)
 	const previewServices = services.slice(0, 6)
+	const testimonials = await getTestimonials(locale)
 	const emailForCta = contactInfo.find(item => item.name === 'Email')?.value || "tiger.hu.liu@gmail.com"
-	const featuredPortfolios = portfolios.filter(portfolio => ['atp', 'qtrade', 'train'].includes(portfolio.slug))
 
 	const isZhCN = locale === "zh-cn"
 	// Get social links from contact info for JSON-LD
@@ -172,6 +180,9 @@ export default async function HomePage({ params }: { params: Promise<{ locale: L
 			{/* Hero Section */}
 			<HeroSection contactInfo={contactInfo} />
 
+			{/* Tech stack trust strip */}
+			<TechMarquee />
+
 			{/* AI Services Preview */}
 			{previewServices.length > 0 && (
 				<SectionWrapper
@@ -219,54 +230,6 @@ export default async function HomePage({ params }: { params: Promise<{ locale: L
 				</SectionWrapper>
 			)}
 
-			{/* Featured Projects */}
-			{featuredPortfolios.length > 0 && (
-				<SectionWrapper
-					id="featured-projects"
-					title={t("home.featuredProjects")}
-					description={t("home.featuredDescription")}
-				>
-					<CardGrid columns={3}>
-						{featuredPortfolios.map((project) => (
-							<Card key={project.slug}>
-								<Link href={`/${locale}/portfolios/${project.slug}`} className="flex flex-col h-full">
-									{project.metadata.cover && (
-										<div className="relative w-full h-48 mb-4 rounded overflow-hidden">
-											<Image
-												src={
-													"/assets/images/portfolios/" +
-													project.slug +
-													"/" +
-													project.metadata.cover
-												}
-												alt={`${project.metadata.title || project.slug} - ${isZhCN ? "精选项目" : "Featured project"} by Tiger Liu, China Developer`}
-												fill
-												className="object-cover"
-											/>
-										</div>
-									)}
-									<h3 className="text-xl font-semibold mb-2">
-										{project.metadata.title || project.slug}
-									</h3>
-									{project.metadata.technologies && (
-										<div className="flex flex-wrap gap-2 mt-2">
-											{project.metadata.technologies.map((tech) => (
-												<span
-													key={tech}
-													className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium"
-												>
-													{tech}
-												</span>
-											))}
-										</div>
-									)}
-								</Link>
-							</Card>
-						))}
-					</CardGrid>
-				</SectionWrapper>
-			)}
-
 			{/* Skills Preview */}
 			{skills.length > 0 && (
 				<SectionWrapper
@@ -295,21 +258,29 @@ export default async function HomePage({ params }: { params: Promise<{ locale: L
 				</SectionWrapper>
 			)}
 
+			{/* Testimonials */}
+			<Testimonials
+				title={t("home.testimonialsTitle")}
+				description={t("home.testimonialsDescription")}
+				items={testimonials}
+			/>
+
 			{/* Email CTA */}
 			<section className="px-6 py-20">
-				<div className="max-w-2xl mx-auto text-center rounded-3xl border border-primary/20 bg-gradient-to-br from-primary/5 to-accent/10 px-6 py-12">
-					<h2 className="text-2xl md:text-3xl font-bold mb-3 tracking-tight">
+				<div className="relative max-w-2xl mx-auto text-center rounded-3xl border border-primary/20 bg-gradient-to-br from-primary/10 to-accent/10 px-6 py-12 overflow-hidden">
+					<div className="glow-blob absolute -top-16 left-1/2 -translate-x-1/2 w-72 h-40" />
+					<h2 className="relative text-2xl md:text-3xl font-bold mb-3 tracking-tight">
 						{t("services.ctaTitle")}
 					</h2>
-					<p className="text-muted-foreground mb-6">{t("home.emailNote")}</p>
+					<p className="relative text-muted-foreground mb-6">{t("home.emailNote")}</p>
 					<a
 						href={`mailto:${emailForCta}`}
-						className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition transform"
+						className="relative inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-xl font-semibold shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/40 hover:scale-105 transition transform"
 					>
 						<Mail size={20} />
 						{t("home.emailCta")}
 					</a>
-					<p className="mt-4 text-sm text-muted-foreground">
+					<p className="relative mt-4 text-sm text-muted-foreground">
 						<a href={`mailto:${emailForCta}`} className="font-medium text-foreground hover:text-primary transition-colors">
 							{emailForCta}
 						</a>

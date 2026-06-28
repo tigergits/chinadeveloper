@@ -18,12 +18,20 @@
     "experience": "30 ans d'expérience full-stack, boostés par Claude Code, Cursor et Codex",
     "description": "J'aide tout particulier ou équipe à livrer de vrais logiciels — vite. SaaS, applications web et mobiles, jeux, extensions de navigateur, workflows IA et plus encore. De l'idée au lancement, ou en reprenant ce que vous avez déjà.",
     "speed": "Petites tâches en heures. Projets complexes en jours.",
+    "stats": [
+      { "value": "30", "label": "Ans d'Expérience" },
+      { "value": "50+", "label": "Projets Livrés" },
+      { "value": "24h", "label": "Temps de Réponse" }
+    ],
     "tags": ["SaaS", "Applications Web", "iOS / Android", "Jeux", "Extensions de Navigateur", "Migration de Code", "SEO / GEO", "Traitement de Documents", "Workflows IA"],
     "emailCta": "Écrivez-moi",
     "emailNote": "Dites-moi ce dont vous avez besoin — je réponds généralement sous 24 heures.",
     "servicesTitle": "Ce Que Je Peux Construire Pour Vous",
     "servicesDescription": "Des services accélérés par l'IA qui résolvent de vrais problèmes — vite.",
     "viewServices": "Voir tous les services →",
+    "availableBadge": "Disponible pour de nouveaux projets",
+    "testimonialsTitle": "Ce que disent les clients",
+    "testimonialsDescription": "Retours de fondateurs et d'équipes que j'ai aidés à livrer.",
     "featuredDescription": "Projets sélectionnés montrant mon expertise",
     "skillsDescription": "Technologies et outils avec lesquels je travaille"
   },
@@ -58,6 +66,7 @@
   },
   "footer": {
     "brandName": "Tiger Liu - China Developer",
+    "emailCta": "Écrivez-moi",
     "description": "Tiger Liu est un Ingénieur Senior en Développement de Logiciels Full-Stack avec 30 ans d'expérience. China Developer se spécialise dans le développement logiciel accéléré par l'IA et est disponible pour des opportunités de travail à distance.",
     "quickLinks": "Liens Rapides",
     "connect": "Se Connecter",

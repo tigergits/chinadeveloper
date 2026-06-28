@@ -1,51 +1,62 @@
 [
 	{
-		"slug": "web-development",
-		"name": "Desarrollo Web",
-		"tagline": "Soluciones Full-Stack, desde el Concepto hasta el Despliegue",
-		"description": "Con casi 30 años de experiencia en desarrollo web, ofrezco servicios full-stack desde el diseño de arquitectura hasta el desarrollo frontend y backend. Experto en frameworks frontend modernos (React, Vue, Next.js) y tecnologías backend (Node.js, Python, Java), puedo construir aplicaciones web empresariales de alto rendimiento y escalables, así como servicios API."
+		"slug": "ai-fullstack",
+		"name": "Desarrollo Full-Stack con IA",
+		"tagline": "SaaS y Apps Web, de 0 a 1 en Tiempo Récord",
+		"description": "Construyo plataformas SaaS completas y aplicaciones web, desde la idea hasta el despliegue, usando Claude Code, Cursor y Codex para avanzar a una velocidad que los equipos tradicionales no pueden igualar. Stacks modernos (Next.js, React, Node.js, Python) con código limpio y mantenible que de verdad te pertenece."
 	},
 	{
-		"slug": "mobile-development",
-		"name": "Desarrollo Móvil",
-		"tagline": "Nativo y Multiplataforma, Experiencia Primero",
-		"description": "Ofrezco servicios de desarrollo de aplicaciones móviles para plataformas iOS y Android, cubriendo desarrollo nativo (Swift, Kotlin) y soluciones multiplataforma (React Native, Flutter). Desde el diseño de experiencia de usuario hasta la optimización de rendimiento, desde la integración de API hasta notificaciones push, asegurando que su aplicación destaque en las principales tiendas de aplicaciones."
+		"slug": "mobile-app",
+		"name": "Apps Móviles y Multiplataforma",
+		"tagline": "iOS y Android, Nativo y Más Allá",
+		"description": "Apps nativas (Swift, Kotlin) y multiplataforma (React Native, Flutter), desde la UX hasta el lanzamiento en las tiendas de aplicaciones. El desarrollo asistido por IA significa iteraciones más rápidas y menor costo, sin sacrificar la calidad."
 	},
 	{
-		"slug": "desktop-development",
-		"name": "Desarrollo de Escritorio",
-		"tagline": "Aplicaciones de Escritorio Multiplataforma, Rendimiento Excepcional",
-		"description": "Tengo amplia experiencia en desarrollo de aplicaciones de escritorio en plataformas Windows, macOS y Linux. Compatible con varias pilas tecnológicas incluyendo Electron, Qt y desarrollo nativo, puedo crear soluciones de software de escritorio de alto rendimiento con excelente experiencia de usuario para satisfacer los requisitos complejos de aplicaciones empresariales."
+		"slug": "game-development",
+		"name": "Desarrollo de Videojuegos",
+		"tagline": "Juegos Web, Móviles y Casuales",
+		"description": "Juegos web, móviles y casuales creados con Unity, Godot, Cocos o HTML5/Canvas puro. Desde un prototipo jugable rápido hasta un título pulido y listo para publicar: el desarrollo asistido por IA mantiene el plazo ajustado y el costo razonable."
 	},
 	{
-		"slug": "embedded-development",
-		"name": "Desarrollo Embebido",
-		"tagline": "Integración Hardware y Software, Personalización Profunda",
-		"description": "Ofrezco servicios de desarrollo de sistemas embebidos, cubriendo soluciones completas desde el diseño de interfaces de hardware hasta el desarrollo de software de bajo nivel. Con rica experiencia en proyectos en IoT, dispositivos inteligentes, automatización industrial y computación de borde, puedo manejar sistemas en tiempo real complejos y entornos con recursos limitados."
+		"slug": "browser-extension",
+		"name": "Desarrollo de Extensiones de Navegador",
+		"tagline": "Chrome y Edge, de la Idea a la Tienda",
+		"description": "Extensiones de navegador MV3 para Chrome y Edge: herramientas de productividad, scrapers, automatización y copilotos de IA. Me encargo de todo el recorrido, desde el prototipo hasta el envío a la tienda y la aprobación de la revisión."
 	},
 	{
-		"slug": "ai-development",
-		"name": "Desarrollo de IA",
-		"tagline": "Aplicaciones Inteligentes, Impulsadas por Datos",
-		"description": "Combino tecnología de inteligencia artificial con necesidades comerciales reales, proporcionando servicios de desarrollo de aplicaciones de IA que incluyen desarrollo de modelos de aprendizaje automático, procesamiento de lenguaje natural (NLP), visión por computadora (CV) y sistemas de recomendación. Familiarizado con frameworks de IA principales (TensorFlow, PyTorch), puedo construir soluciones de IA completas desde el preprocesamiento de datos hasta el despliegue de modelos."
+		"slug": "ai-agent",
+		"name": "Apps y Agentes de IA",
+		"tagline": "LLM, RAG y Agentes Autónomos",
+		"description": "Integro grandes modelos de lenguaje en tu producto: chatbots, sistemas de conocimiento RAG, agentes autónomos y flujos de trabajo con uso de herramientas. Desde el diseño de prompts hasta el despliegue en producción con Claude, OpenAI y modelos abiertos."
 	},
 	{
-		"slug": "cloud-development",
-		"name": "Desarrollo en la Nube",
-		"tagline": "Arquitectura Cloud-Native, Escalado Elástico",
-		"description": "Ofrezco servicios de desarrollo de plataformas en la nube, incluyendo desarrollo de aplicaciones cloud-native (containerización, arquitectura de microservicios), gestión de infraestructura en la nube (CI/CD, automatización DevOps), seguridad en la nube y optimización de costos. Familiarizado con plataformas en la nube principales como AWS, Azure y GCP, puedo diseñar soluciones de arquitectura en la nube altamente disponibles y escalables."
+		"slug": "ai-workflow",
+		"name": "Flujos de Trabajo y Automatización con IA",
+		"tagline": "Automatiza lo Repetitivo, Escala los Resultados",
+		"description": "Pipelines de generación de contenido, flujos de procesamiento de datos y automatizaciones de extremo a extremo que eliminan el trabajo manual repetitivo. Conecto tus herramientas, APIs y modelos de IA en flujos de trabajo fiables que se ejecutan solos."
 	},
 	{
-		"slug": "secondary-development",
-		"name": "Desarrollo Secundario",
-		"tagline": "Actualización y Migración de Sistemas, Transición Suave",
-		"description": "Ofrezco servicios de desarrollo secundario de sistemas, incluyendo modernización de sistemas heredados, expansión de funcionalidades, optimización de rendimiento y refactorización de arquitectura. Mientras mantengo la continuidad del negocio, migro pilas tecnológicas antiguas a arquitecturas modernas, mejorando la mantenibilidad y escalabilidad del sistema mientras reduzco la deuda técnica."
+		"slug": "maintenance-migration",
+		"name": "Mantenimiento y Migración de Código",
+		"tagline": "Moderniza, Migra, Mantenlo Funcionando",
+		"description": "¿Heredaste un código desordenado? Me hago cargo de proyectos heredados, actualizo frameworks, migro stacks tecnológicos y reduzco la deuda técnica, manteniendo tu producto vivo y en marcha mientras lo modernizo por dentro."
 	},
 	{
-		"slug": "consulting",
-		"name": "Servicios de Consultoría",
-		"tagline": "Planificación Estratégica Técnica, Diseño de Soluciones",
-		"description": "Basado en 30 años de experiencia en proyectos, ofrezco servicios integrales de consultoría técnica, incluyendo análisis de requisitos, selección de tecnología, diseño de arquitectura, gestión de proyectos, revisión de código y control de riesgos. Puedo ayudar a su equipo a desarrollar hojas de ruta tecnológicas, resolver desafíos técnicos complejos y mejorar la eficiencia de desarrollo y la calidad del código."
+		"slug": "seo-geo",
+		"name": "Optimización SEO y GEO",
+		"tagline": "Posiciónate en Google, Que la IA te Cite",
+		"description": "SEO tradicional más Optimización para Motores Generativos: hago que tu contenido sea descubrible por Google y citable por ChatGPT, Perplexity y la búsqueda con IA. SEO técnico, datos estructurados, estrategia de contenido y resultados medibles."
+	},
+	{
+		"slug": "doc-processing",
+		"name": "Procesamiento y Revisión de Documentos con IA",
+		"tagline": "Extrae, Revisa y Comprende a Gran Escala",
+		"description": "Extracción de documentos por lotes, revisión de contratos y contenido, y construcción de bases de conocimiento impulsadas por IA. Convierte montones de PDF, contratos y registros en datos estructurados, consultables y accionables."
+	},
+	{
+		"slug": "ai-consulting",
+		"name": "Consultoría de Productividad con IA",
+		"tagline": "Potencia tu Equipo con IA",
+		"description": "Ayudo a tu equipo a adoptar Claude Code, Cursor y flujos de trabajo asistidos por IA: desde la configuración y las mejores prácticas hasta la revisión automatizada de código y agentes personalizados. Respaldado por 30 años creando software real."
 	}
 ]
-

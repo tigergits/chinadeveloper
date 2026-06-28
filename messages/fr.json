@@ -8,15 +8,22 @@
     "contact": "Contact"
   },
   "home": {
-    "title": "Développeur Full-Stack Senior",
+    "title": "Je Construis Votre Logiciel — Plus Vite, avec l'IA",
     "subtitle": "Tiger Liu - China Developer | Création de solutions logicielles depuis 1993",
     "cta": "Me contacter",
     "viewPortfolios": "Voir les Portfolios",
     "featuredProjects": "Projets en vedette",
     "skills": "Compétences et Technologies",
-    "welcome": "Bienvenue sur mon portfolios",
-    "experience": "25+ Ans d'Expérience Professionnelle",
-    "description": "Je suis Tiger Liu, un Ingénieur Senior en Développement de Logiciels Full-Stack. China Developer - Je crée des systèmes logiciels robustes et performants. Je recherche des opportunités de travail à distance à temps plein ou partiel.",
+    "welcome": "Développement Full-Stack Natif IA",
+    "experience": "30 ans d'expérience full-stack, boostés par Claude Code, Cursor et Codex",
+    "description": "J'aide tout particulier ou équipe à livrer de vrais logiciels — vite. SaaS, applications web et mobiles, jeux, extensions de navigateur, workflows IA et plus encore. De l'idée au lancement, ou en reprenant ce que vous avez déjà.",
+    "speed": "Petites tâches en heures. Projets complexes en jours.",
+    "tags": ["SaaS", "Applications Web", "iOS / Android", "Jeux", "Extensions de Navigateur", "Migration de Code", "SEO / GEO", "Traitement de Documents", "Workflows IA"],
+    "emailCta": "Écrivez-moi",
+    "emailNote": "Dites-moi ce dont vous avez besoin — je réponds généralement sous 24 heures.",
+    "servicesTitle": "Ce Que Je Peux Construire Pour Vous",
+    "servicesDescription": "Des services accélérés par l'IA qui résolvent de vrais problèmes — vite.",
+    "viewServices": "Voir tous les services →",
     "featuredDescription": "Projets sélectionnés montrant mon expertise",
     "skillsDescription": "Technologies et outils avec lesquels je travaille"
   },
@@ -34,8 +41,11 @@
     "title": "Compétences et Technologies"
   },
   "services": {
-    "title": "Services",
-    "description": "Ce que je peux faire pour vous"
+    "title": "Services de Développement de l'Ère IA",
+    "description": "Un développement accéléré par l'IA qui transforme les idées en logiciels livrés — petites tâches en heures, projets complexes en jours.",
+    "ctaTitle": "Un projet à construire ?",
+    "ctaText": "Dites-moi ce dont vous avez besoin — je réponds généralement sous 24 heures.",
+    "ctaButton": "Écrivez-moi"
   },
   "contact": {
     "title": "Me contacter",
@@ -48,7 +58,7 @@
   },
   "footer": {
     "brandName": "Tiger Liu - China Developer",
-    "description": "Tiger Liu est un Ingénieur Senior en Développement de Logiciels Full-Stack avec plus de 25 ans d'expérience. China Developer se spécialise dans la création de solutions logicielles robustes et est disponible pour des opportunités de travail à distance.",
+    "description": "Tiger Liu est un Ingénieur Senior en Développement de Logiciels Full-Stack avec 30 ans d'expérience. China Developer se spécialise dans le développement logiciel accéléré par l'IA et est disponible pour des opportunités de travail à distance.",
     "quickLinks": "Liens Rapides",
     "connect": "Se Connecter",
     "about": "À propos",
@@ -61,4 +71,3 @@
     "openSource": "Open Source"
   }
 }
-

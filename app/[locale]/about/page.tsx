@@ -14,8 +14,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
 	const isZhCN = locale === "zh-cn"
 	const title = `${t("about.title")} - Tiger Liu | China Developer`
 	const description = isZhCN
-		? "了解 Tiger Liu 作为资深全栈软件开发工程师的历程。China Developer - 自1993年起构建软件解决方案，拥有25+年专业经验。"
-		: "Learn about Tiger Liu's journey as a Senior Full-Stack Software Development Engineer. China Developer - Building software solutions since 1993 with 25+ years of professional experience."
+		? "了解 Tiger Liu 作为资深全栈软件开发工程师的历程。China Developer - 自1993年起构建软件解决方案，拥有30年专业经验，由 AI 工具加持。"
+		: "Learn about Tiger Liu's journey as a Senior Full-Stack Software Development Engineer. China Developer - Building software solutions since 1993 with 30 years of professional experience, supercharged with AI."
 
 	const ogImageUrl = `https://chinadeveloper.net/assets/images/og-image.png`
 	

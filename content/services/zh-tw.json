@@ -1,52 +1,62 @@
 [
-  {
-    "slug": "web-development",
-    "name": "Web 開發",
-    "tagline": "全端解決方案，從構想到上線",
-    "description": "憑藉近 30 年的 Web 開發經驗，我提供從架構設計到前後端實作的全端服務。精通 React、Vue、Next.js 等現代前端框架以及 Node.js、Python、Java 等後端技術，能為您打造高效能、可擴充的企業級 Web 應用與 API 服務。"
-  },
-  {
-    "slug": "mobile-development",
-    "name": "行動應用開發",
-    "tagline": "原生與跨平台，體驗優先",
-    "description": "提供 iOS 與 Android 平台的行動應用開發服務，涵蓋原生開發（Swift、Kotlin）以及跨平台解決方案（React Native、Flutter）。從使用者體驗設計到效能優化，從 API 串接到推播通知，讓您的 App 在各大應用商店中脫穎而出。"
-  },
-  {
-    "slug": "desktop-development",
-    "name": "桌面軟體開發",
-    "tagline": "跨平台桌面應用，效能與體驗兼具",
-    "description": "擁有豐富的 Windows、macOS、Linux 桌面應用開發經驗。支援 Electron、Qt 及原生開發等多種技術棧，能為您打造高效能、使用者體驗優異的桌面軟體，滿足複雜的企業級應用需求。"
-  },
-  {
-    "slug": "embedded-development",
-    "name": "嵌入式系統開發",
-    "tagline": "軟硬整合，深度客製化",
-    "description": "提供嵌入式系統開發服務，從硬體介面設計到底層軟體實作皆可涵蓋。在物聯網（IoT）、智慧裝置、工業自動化與邊緣運算等領域具備實務經驗，能處理高即時性與資源受限的複雜環境。"
-  },
-  {
-    "slug": "ai-development",
-    "name": "AI 應用開發",
-    "tagline": "智慧應用，數據驅動",
-    "description": "結合實際商業需求與人工智慧技術，提供機器學習模型開發、自然語言處理（NLP）、電腦視覺（CV）、推薦系統等 AI 應用服務。熟悉 TensorFlow、PyTorch 等主流程式庫，能完成從數據前處理到模型部署的完整流程。"
-  },
-  {
-    "slug": "cloud-development",
-    "name": "雲端開發",
-    "tagline": "雲原生架構與彈性擴充",
-    "description": "提供雲端平台上的系統開發與代管服務，包括雲原生應用（容器化、微服務架構）、雲端基礎設施管理（CI/CD、DevOps 自動化）、雲端安全與成本最佳化等。熟悉 AWS、Azure、GCP 等主流雲平台。"
-  },
-  {
-    "slug": "secondary-development",
-    "name": "二次開發與系統升級",
-    "tagline": "系統升級改造，平滑轉移",
-    "description": "為既有系統提供二次開發服務，包括老舊系統現代化、功能擴充、效能調校與架構重構。在維持業務連續性的前提下，協助您將舊技術棧穩健地搬遷到現代架構，提升可維護性與擴充性。"
-  },
-  {
-    "slug": "consulting",
-    "name": "技術顧問服務",
-    "tagline": "技術策略規劃與方案設計",
-    "description": "基於 30 年專案經驗，提供完整的技術顧問服務，包括需求分析、技術選型、系統架構設計、專案管理、程式碼審查與風險控管等。協助您的團隊制定技術藍圖、解決棘手技術問題，並提升整體開發效率與程式品質。"
-  }
+	{
+		"slug": "ai-fullstack",
+		"name": "AI 全端開發",
+		"tagline": "SaaS 與 Web 應用，幾天就能從 0 到 1",
+		"description": "藉助 Claude Code、Cursor、Codex，我以傳統團隊難以企及的速度，從想法到上線打造完整的 SaaS 平台與 Web 應用。採用現代技術棧（Next.js、React、Node.js、Python），交付乾淨、易維護、完全歸你所有的程式碼。"
+	},
+	{
+		"slug": "mobile-app",
+		"name": "行動與跨平台 App",
+		"tagline": "iOS 與 Android，原生與跨端兼顧",
+		"description": "原生（Swift、Kotlin）與跨平台（React Native、Flutter）應用開發，從使用者體驗到應用商店上架全程涵蓋。AI 輔助開發讓迭代更快、成本更低，同時不犧牲品質。"
+	},
+	{
+		"slug": "game-development",
+		"name": "遊戲開發",
+		"tagline": "網頁、手機與休閒遊戲",
+		"description": "使用 Unity、Godot、Cocos 或純 HTML5/Canvas 開發網頁、手機與休閒遊戲。從可玩原型到打磨完整的成品，AI 輔助開發讓週期更緊湊、成本更可控。"
+	},
+	{
+		"slug": "browser-extension",
+		"name": "瀏覽器擴充功能開發",
+		"tagline": "Chrome 與 Edge，從想法到上架",
+		"description": "針對 Chrome 與 Edge 的 MV3 瀏覽器擴充功能——效率工具、資料擷取、自動化與 AI 助手。從原型到商店提交、審核通過，整個流程我都能搞定。"
+	},
+	{
+		"slug": "ai-agent",
+		"name": "AI 應用與 Agent 開發",
+		"tagline": "LLM、RAG 與自主 Agent",
+		"description": "把大型語言模型整合進你的產品：聊天機器人、RAG 知識庫、自主 Agent 與工具呼叫工作流。從提示詞設計到正式環境部署，支援 Claude、OpenAI 及開源模型。"
+	},
+	{
+		"slug": "ai-workflow",
+		"name": "AI 工作流與自動化",
+		"tagline": "把重複勞動自動化，把產出規模化",
+		"description": "內容生成流水線、資料處理流程與端到端自動化，消除重複的人工操作。我把你的工具、API 與 AI 模型串成可靠、自運轉的工作流。"
+	},
+	{
+		"slug": "maintenance-migration",
+		"name": "專案維護與程式碼遷移",
+		"tagline": "現代化、遷移、持續運行",
+		"description": "接手了一團亂的程式碼？我能接管遺留專案、升級框架、遷移技術棧、償還技術債——在底層悄悄現代化的同時，讓你的產品持續運行、持續推進。"
+	},
+	{
+		"slug": "seo-geo",
+		"name": "SEO 與 GEO 最佳化",
+		"tagline": "在 Google 排名，被 AI 引用",
+		"description": "傳統 SEO 加上生成式引擎最佳化（GEO）——既讓內容在 Google 上可被發現，也讓它能被 ChatGPT、Perplexity 等 AI 搜尋引用。涵蓋技術 SEO、結構化資料、內容策略與可量化的成果。"
+	},
+	{
+		"slug": "doc-processing",
+		"name": "AI 文件處理與審核",
+		"tagline": "批次擷取、審核、規模化理解",
+		"description": "由 AI 驅動的批次文件擷取、合約與內容審核、知識庫建構。把成堆的 PDF、合約與紀錄，變成結構化、可檢索、可落地的資料。"
+	},
+	{
+		"slug": "ai-consulting",
+		"name": "AI 提效顧問",
+		"tagline": "用 AI 為你的團隊提速",
+		"description": "我協助你的團隊導入 Claude Code、Cursor 與 AI 輔助工作流——從環境建置、最佳實踐，到自動化程式碼審查與客製 Agent。背後是 30 年交付真實軟體的經驗。"
+	}
 ]
-
-

@@ -8,15 +8,22 @@
 		"contact": "Contact"
 	},
 	"home": {
-		"title": "Senior Full-Stack Developer",
+		"title": "I Build Your Software — Faster, with AI",
 		"subtitle": "Tiger Liu - China Developer | Building software solutions since 1993",
 		"cta": "Get in Touch",
 		"viewPortfolios": "View Portfolios",
 		"featuredProjects": "Featured Projects",
 		"skills": "Skills & Technologies",
-		"welcome": "Welcome to my portfolios",
-		"experience": "25+ Years of Professional Experience",
-		"description": "I'm Tiger Liu, a Senior Full-Stack Software Development Engineer. China Developer - I build robust, high-performance software systems. I'm seeking full-time or part-time remote opportunities to deliver exceptional results.",
+		"welcome": "AI-Native Full-Stack Development",
+		"experience": "30 years of full-stack experience, supercharged with Claude Code, Cursor & Codex",
+		"description": "I help any individual or team ship real software — fast. SaaS, web & mobile apps, games, browser extensions, AI workflows and more. From idea to launch, or taking over what you already have.",
+		"speed": "Small tasks in hours. Complex projects in days.",
+		"tags": ["SaaS", "Web Apps", "iOS / Android", "Games", "Browser Extensions", "Code Migration", "SEO / GEO", "Doc Processing", "AI Workflows"],
+		"emailCta": "Email me",
+		"emailNote": "Tell me what you need — I usually reply within 24 hours.",
+		"servicesTitle": "What I Can Build for You",
+		"servicesDescription": "AI-accelerated services that solve real pain points — fast.",
+		"viewServices": "View all services →",
 		"featuredDescription": "Selected projects showcasing my expertise",
 		"skillsDescription": "Technologies and tools I work with"
 	},
@@ -33,8 +40,11 @@
 		"title": "Skills & Technologies"
 	},
 	"services": {
-		"title": "Services",
-		"description": "What I can do for you"
+		"title": "AI-Era Development Services",
+		"description": "AI-accelerated development that turns ideas into shipped software — small tasks in hours, complex projects in days.",
+		"ctaTitle": "Have something to build?",
+		"ctaText": "Tell me what you need — I usually reply within 24 hours.",
+		"ctaButton": "Email me"
 	},
 	"contact": {
 		"title": "Get in Touch",
@@ -47,7 +57,7 @@
 	},
 	"footer": {
 		"brandName": "Tiger Liu - China Developer",
-		"description": "Tiger Liu is a Senior Full-Stack Software Development Engineer with 25+ years of experience. China Developer specializes in building robust software solutions and is available for remote work opportunities.",
+		"description": "Tiger Liu is a Senior Full-Stack Software Development Engineer with 30 years of experience. China Developer specializes in AI-accelerated software development and is available for remote work opportunities.",
 		"quickLinks": "Quick Links",
 		"connect": "Connect",
 		"about": "About",

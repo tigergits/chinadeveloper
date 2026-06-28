@@ -8,15 +8,22 @@
     "contact": "联系我"
   },
   "home": {
-    "title": "资深全栈开发工程师",
+    "title": "用 AI，更快地把你的软件做出来",
     "subtitle": "Tiger Liu - China Developer | 自1993年起构建软件解决方案",
     "cta": "联系我",
     "viewPortfolios": "查看作品集",
     "featuredProjects": "精选作品",
     "skills": "技能与技术",
-    "welcome": "欢迎来到我的作品集",
-    "experience": "25+年专业工作经验",
-    "description": "我是 Tiger Liu，一位资深全栈软件开发工程师。China Developer - 我构建强大、高性能的软件系统。我正在寻求全职或兼职的远程工作机会。",
+    "welcome": "AI 时代的全栈开发",
+    "experience": "30 年全栈开发经验，由 Claude Code、Cursor、Codex 全面加持",
+    "description": "我帮任何个人或团队，又快又好地把软件真正做出来——SaaS、Web 与移动应用、游戏、浏览器扩展、AI 工作流等等。从想法到上线，或接手你已有的项目。",
+    "speed": "小任务几小时，复杂项目几天即可交付。",
+    "tags": ["SaaS", "Web 应用", "iOS / Android", "游戏", "浏览器扩展", "代码迁移", "SEO / GEO", "文档处理", "AI 工作流"],
+    "emailCta": "给我发邮件",
+    "emailNote": "告诉我你的需求——我通常 24 小时内回复。",
+    "servicesTitle": "我能帮你做什么",
+    "servicesDescription": "AI 加速的服务，快速解决真实痛点。",
+    "viewServices": "查看全部服务 →",
     "featuredDescription": "展示我专业技能的精选项目",
     "skillsDescription": "我使用的技术和工具"
   },
@@ -34,8 +41,11 @@
     "title": "技能专长"
   },
   "services": {
-    "title": "服务项目",
-    "description": "我能为您提供的服务"
+    "title": "AI 时代开发服务",
+    "description": "AI 加速的开发，把想法变成上线的产品——小任务几小时，复杂项目几天即可。",
+    "ctaTitle": "有想做的项目？",
+    "ctaText": "告诉我你的需求——我通常 24 小时内回复。",
+    "ctaButton": "给我发邮件"
   },
   "contact": {
     "title": "联系我",
@@ -48,7 +58,7 @@
   },
   "footer": {
     "brandName": "Tiger Liu - China Developer",
-    "description": "Tiger Liu 是一位拥有 25+ 年经验的资深全栈软件开发工程师。China Developer 专注于构建强大的软件解决方案，可提供远程工作服务。",
+    "description": "Tiger Liu 是一位拥有 30 年经验的资深全栈软件开发工程师。China Developer 专注于 AI 加速的软件开发，可提供远程工作服务。",
     "quickLinks": "快速链接",
     "connect": "联系方式",
     "about": "关于我",
@@ -61,4 +71,3 @@
     "openSource": "开源"
   }
 }
-

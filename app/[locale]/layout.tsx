@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 			template: "%s | Tiger Liu - China Developer",
 			default: "Tiger Liu - Senior Full-Stack Developer | China Developer",
 		},
-		description: "Tiger Liu is a Senior Full-Stack Software Development Engineer with 25+ years of experience. China Developer - Building robust software solutions since 1993. Available for remote work opportunities.",
+		description: "Tiger Liu is a Senior Full-Stack Software Development Engineer with 30 years of experience, supercharged with Claude Code, Cursor & Codex. China Developer - Building robust software solutions since 1993. Available for remote work opportunities.",
 		keywords: [
 			"Tiger Liu",
 			"China Developer",
@@ -44,7 +44,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 			"China Developer.net",
 			"remote developer",
 			"software development",
-			"25+ years experience",
+			"30 years experience",
+			"AI development",
+			"Claude Code",
 			"full-stack engineer",
 			"China developer portfolio",
 		],
@@ -64,7 +66,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 			type: "website",
 			siteName: "China Developer - Tiger Liu",
 			title: "Tiger Liu - Senior Full-Stack Developer | China Developer",
-			description: "Tiger Liu is a Senior Full-Stack Software Development Engineer with 25+ years of experience. China Developer - Building robust software solutions since 1993.",
+			description: "Tiger Liu is a Senior Full-Stack Software Development Engineer with 30 years of experience, supercharged with Claude Code, Cursor & Codex. China Developer - Building robust software solutions since 1993.",
 			images: [
 				{
 					url: "https://chinadeveloper.net/assets/images/og-image.png",
@@ -77,7 +79,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 		twitter: {
 			card: "summary_large_image",
 			title: "Tiger Liu - Senior Full-Stack Developer | China Developer",
-			description: "Tiger Liu is a Senior Full-Stack Software Development Engineer with 25+ years of experience. China Developer - Building robust software solutions since 1993.",
+			description: "Tiger Liu is a Senior Full-Stack Software Development Engineer with 30 years of experience, supercharged with Claude Code, Cursor & Codex. China Developer - Building robust software solutions since 1993.",
 			images: ["https://chinadeveloper.net/assets/images/og-image.png"],
 		},
 	}

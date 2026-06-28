@@ -8,15 +8,22 @@
     "contact": "聯絡我"
   },
   "home": {
-    "title": "資深全端開發工程師",
+    "title": "用 AI，更快地把你的軟體做出來",
     "subtitle": "Tiger Liu - China Developer | 自 1993 年起打造軟體解決方案",
     "cta": "聯絡我",
     "viewPortfolios": "查看作品集",
     "featuredProjects": "精選作品",
     "skills": "技能與技術",
-    "welcome": "歡迎來到我的作品集網站",
-    "experience": "25+ 年專業工作經驗",
-    "description": "我是 Tiger Liu，一位資深全端軟體開發工程師。China Developer - 我專注於構建穩定、高效能的軟體系統，並尋求全職或兼職的遠端合作機會，為您交付高品質成果。",
+    "welcome": "AI 時代的全端開發",
+    "experience": "30 年全端開發經驗，由 Claude Code、Cursor、Codex 全面加持",
+    "description": "我協助任何個人或團隊，又快又好地把軟體真正做出來——SaaS、Web 與行動應用、遊戲、瀏覽器擴充功能、AI 工作流等等。從想法到上線，或接手你既有的專案。",
+    "speed": "小任務幾小時，複雜專案幾天即可交付。",
+    "tags": ["SaaS", "Web 應用", "iOS / Android", "遊戲", "瀏覽器擴充", "程式碼遷移", "SEO / GEO", "文件處理", "AI 工作流"],
+    "emailCta": "寄信給我",
+    "emailNote": "告訴我你的需求——我通常 24 小時內回覆。",
+    "servicesTitle": "我能幫你做什麼",
+    "servicesDescription": "AI 加速的服務，快速解決真實痛點。",
+    "viewServices": "查看全部服務 →",
     "featuredDescription": "展示我專業能力的精選專案",
     "skillsDescription": "我日常使用的技術與工具"
   },
@@ -33,8 +40,11 @@
     "title": "技能專長"
   },
   "services": {
-    "title": "服務項目",
-    "description": "我能為您提供的服務"
+    "title": "AI 時代開發服務",
+    "description": "AI 加速的開發，把想法變成上線的產品——小任務幾小時，複雜專案幾天即可。",
+    "ctaTitle": "有想做的專案？",
+    "ctaText": "告訴我你的需求——我通常 24 小時內回覆。",
+    "ctaButton": "寄信給我"
   },
   "contact": {
     "title": "聯絡我",
@@ -47,7 +57,7 @@
   },
   "footer": {
     "brandName": "Tiger Liu - China Developer",
-    "description": "Tiger Liu 是一位擁有 25+ 年經驗的資深全端軟體開發工程師。China Developer 專注於構建強大的軟體解決方案，可提供遠端工作服務。",
+    "description": "Tiger Liu 是一位擁有 30 年經驗的資深全端軟體開發工程師。China Developer 專注於 AI 加速的軟體開發，可提供遠端工作服務。",
     "quickLinks": "快速連結",
     "connect": "聯絡方式",
     "about": "關於我",
@@ -60,5 +70,3 @@
     "openSource": "開源"
   }
 }
-
-

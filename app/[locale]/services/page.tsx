@@ -1,8 +1,23 @@
 import { getTranslations, setRequestLocale } from "next-intl/server"
-import Image from "next/image"
-import { ArrowRight } from "lucide-react"
+import Link from "next/link"
+import {
+	ArrowRight,
+	Mail,
+	Rocket,
+	Smartphone,
+	Gamepad2,
+	Puzzle,
+	Bot,
+	Workflow,
+	Wrench,
+	Search,
+	FileText,
+	GraduationCap,
+	type LucideIcon,
+} from "lucide-react"
 import { Card } from "@/components/card"
 import { CardGrid } from "@/components/card-grid"
+import { getContactInfo } from "@/lib/content"
 import { Locale } from "@/i18n/request"
 
 interface Service {
@@ -10,6 +25,19 @@ interface Service {
 	name?: string
 	tagline?: string
 	description?: string
+}
+
+const serviceIcons: Record<string, LucideIcon> = {
+	"ai-fullstack": Rocket,
+	"mobile-app": Smartphone,
+	"game-development": Gamepad2,
+	"browser-extension": Puzzle,
+	"ai-agent": Bot,
+	"ai-workflow": Workflow,
+	"maintenance-migration": Wrench,
+	"seo-geo": Search,
+	"doc-processing": FileText,
+	"ai-consulting": GraduationCap,
 }
 
 async function getServices(locale: Locale): Promise<Service[]> {
@@ -31,11 +59,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
 	const isZhCN = locale === "zh-cn"
 	const title = `${t("services.title")} - Tiger Liu | China Developer`
 	const description = isZhCN
-		? `Tiger Liu 提供的专业服务项目。China Developer - ${t("services.description")} 资深全栈开发工程师，25+年经验，支持远程工作。`
-		: `Professional services offered by Tiger Liu. China Developer - ${t("services.description")} Senior Full-Stack Developer with 25+ years of experience, available for remote work.`
+		? `Tiger Liu 提供 AI 时代的开发服务。China Developer - ${t("services.description")} 资深全栈开发工程师，30 年经验，支持远程工作。`
+		: `AI-era development services by Tiger Liu. China Developer - ${t("services.description")} Senior Full-Stack Developer with 30 years of experience, available for remote work.`
 
 	const ogImageUrl = `https://chinadeveloper.net/assets/images/og-image.png`
-	
+
 	return {
 		title,
 		description,
@@ -72,10 +100,12 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
 	setRequestLocale(locale)
 	const t = await getTranslations({ locale })
 	const services = await getServices(locale)
+	const contactInfo = await getContactInfo(locale)
+	const email = contactInfo.find((item) => item.name === "Email")?.value || "tiger.hu.liu@gmail.com"
 
 	const isZhCN = locale === "zh-cn"
 	const baseUrl = "https://chinadeveloper.net"
-	
+
 	// Breadcrumb structured data
 	const breadcrumbSchema = {
 		"@context": "https://schema.org",
@@ -122,75 +152,92 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
 					dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
 				/>
 			))}
-		<section className="relative px-4 py-4 md:py-4 overflow-hidden">
-			{/* Background gradient and decorative shapes */}
-			<div className="pointer-events-none absolute inset-0 -z-10">
-				<div className="absolute -top-24 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-accent/15 blur-3xl" />
-				<div className="absolute bottom-0 left-0 h-64 w-64 rounded-full bg-primary/10 blur-3xl" />
-				<div className="absolute -right-10 top-10 h-64 w-64 rounded-full bg-secondary/20 blur-3xl" />
-			</div>
-
-			<div className="container max-w-6xl mx-auto">
-				<div className="max-w-3xl mx-auto text-center mb-12">
-					<p className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1 text-xs font-medium uppercase tracking-[0.2em] text-primary mb-4">
-						<span className="h-1.5 w-1.5 rounded-full bg-primary" />
-						{t("services.title")}
-					</p>
-					<h1 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight text-balance">
-						{t("services.title")}
-					</h1>
-					<p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-						{t("services.description")}
-					</p>
+			<section className="relative px-4 py-4 md:py-4 overflow-hidden">
+				{/* Background gradient and decorative shapes */}
+				<div className="pointer-events-none absolute inset-0 -z-10">
+					<div className="absolute -top-24 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-accent/15 blur-3xl" />
+					<div className="absolute bottom-0 left-0 h-64 w-64 rounded-full bg-primary/10 blur-3xl" />
+					<div className="absolute -right-10 top-10 h-64 w-64 rounded-full bg-secondary/20 blur-3xl" />
 				</div>
 
-				<CardGrid columns={3} gap="lg">
-					{services.map((service) => {
-						const title = service.name || service.slug
-						const iconPath = `/assets/images/services/${service.slug}.svg`
+				<div className="container max-w-6xl mx-auto">
+					<div className="max-w-3xl mx-auto text-center mb-12">
+						<p className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1 text-xs font-medium uppercase tracking-[0.2em] text-primary mb-4">
+							<span className="h-1.5 w-1.5 rounded-full bg-primary" />
+							{isZhCN ? "AI 时代" : "AI Era"}
+						</p>
+						<h1 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight text-balance">
+							{t("services.title")}
+						</h1>
+						<p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+							{t("services.description")}
+						</p>
+					</div>
 
-						return (
-							<Card
-								key={service.slug}
-								className="group flex h-full flex-col bg-gradient-to-br from-card to-muted/40 border-border/60"
-							>
-								<div className="flex items-center gap-4 mb-4">
-									<div className="relative flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 ring-1 ring-primary/30">
-										<Image
-											src={iconPath}
-											alt={`${title} ${locale === "zh-cn" ? "服务图标" : "service icon"} - Tiger Liu, China Developer`}
-											width={48}
-											height={48}
-											className="h-8 w-8 object-contain transition-transform duration-300 group-hover:scale-110"
-										/>
+					<CardGrid columns={3} gap="lg">
+						{services.map((service) => {
+							const title = service.name || service.slug
+							const Icon = serviceIcons[service.slug] || Rocket
+
+							return (
+								<Card
+									key={service.slug}
+									className="group flex h-full flex-col bg-gradient-to-br from-card to-muted/40 border-border/60"
+								>
+									<div className="flex items-center gap-4 mb-4">
+										<div className="relative flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 ring-1 ring-primary/30">
+											<Icon className="h-7 w-7 text-primary transition-transform duration-300 group-hover:scale-110" />
+										</div>
+										<div className="flex flex-col">
+											<h2 className="text-lg md:text-xl font-semibold tracking-tight">{title}</h2>
+											<span className="mt-1 inline-flex items-center gap-1 text-xs font-medium text-primary/80">
+												<span className="h-1 w-1 rounded-full bg-primary/80" />
+												<span>{service.tagline}</span>
+											</span>
+										</div>
 									</div>
-									<div className="flex flex-col">
-										<h2 className="text-lg md:text-xl font-semibold tracking-tight">{title}</h2>
-										<span className="mt-1 inline-flex items-center gap-1 text-xs font-medium text-primary/80">
-											<span className="h-1 w-1 rounded-full bg-primary/80" />
-											<span>{service.tagline}</span>
-										</span>
+
+									{service.description && (
+										<p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+											{service.description}
+										</p>
+									)}
+
+									<div className="mt-6 flex items-center justify-between text-xs text-muted-foreground">
+										<a
+											href={`mailto:${email}`}
+											className="inline-flex items-center gap-1 text-primary group-hover:translate-x-1 transition-transform"
+										>
+											{isZhCN ? "联系我" : "Contact me"}
+											<ArrowRight className="h-4 w-4" />
+										</a>
 									</div>
-								</div>
+								</Card>
+							)
+						})}
+					</CardGrid>
 
-								{service.description && (
-									<p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-										{service.description}
-									</p>
-								)}
-
-								<div className="mt-6 flex items-center justify-between text-xs text-muted-foreground">
-									<span className="inline-flex items-center gap-1 text-primary group-hover:translate-x-1 transition-transform">
-										{locale === "zh-cn" ? "联系我" : "Contact me"}
-										<ArrowRight className="h-4 w-4" />
-									</span>
-								</div>
-							</Card>
-						)
-					})}
-				</CardGrid>
-			</div>
-		</section>
+					{/* Email CTA */}
+					<div className="mt-16 max-w-2xl mx-auto text-center rounded-3xl border border-primary/20 bg-gradient-to-br from-primary/5 to-accent/10 px-6 py-12">
+						<h2 className="text-2xl md:text-3xl font-bold mb-3 tracking-tight">
+							{t("services.ctaTitle")}
+						</h2>
+						<p className="text-muted-foreground mb-6">{t("services.ctaText")}</p>
+						<a
+							href={`mailto:${email}`}
+							className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition transform"
+						>
+							<Mail size={20} />
+							{t("services.ctaButton")}
+						</a>
+						<p className="mt-4 text-sm text-muted-foreground">
+							<a href={`mailto:${email}`} className="font-medium text-foreground hover:text-primary transition-colors">
+								{email}
+							</a>
+						</p>
+					</div>
+				</div>
+			</section>
 		</>
 	)
 }

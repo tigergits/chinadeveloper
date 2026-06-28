@@ -1,50 +1,62 @@
 [
 	{
-		"slug": "web-development",
-		"name": "Web Development",
-		"tagline": "Full-Stack Solutions, From Concept to Deployment",
-		"description": "With nearly 30 years of web development experience, I provide full-stack services from architecture design to frontend and backend development. Proficient in modern frontend frameworks (React, Vue, Next.js) and backend technologies (Node.js, Python, Java), I can build high-performance, scalable enterprise-level web applications and API services."
+		"slug": "ai-fullstack",
+		"name": "AI Full-Stack Development",
+		"tagline": "SaaS & Web Apps, 0 to 1 in Record Time",
+		"description": "I build complete SaaS platforms and web apps from idea to deployment, using Claude Code, Cursor and Codex to move at a speed traditional teams can't match. Modern stacks (Next.js, React, Node.js, Python) with clean, maintainable code you actually own."
 	},
 	{
-		"slug": "mobile-development",
-		"name": "Mobile Development",
-		"tagline": "Native & Cross-Platform, Experience First",
-		"description": "I provide mobile application development services for iOS and Android platforms, covering native development (Swift, Kotlin) and cross-platform solutions (React Native, Flutter). From UX design to performance optimization, from API integration to push notifications, ensuring your app stands out in major app stores."
+		"slug": "mobile-app",
+		"name": "Mobile & Cross-Platform Apps",
+		"tagline": "iOS & Android, Native and Beyond",
+		"description": "Native (Swift, Kotlin) and cross-platform (React Native, Flutter) apps, from UX to app-store launch. AI-assisted development means faster iterations and lower cost without cutting corners on quality."
 	},
 	{
-		"slug": "desktop-development",
-		"name": "Desktop Development",
-		"tagline": "Cross-Platform Desktop Apps, Outstanding Performance",
-		"description": "I have extensive experience in desktop application development across Windows, macOS, and Linux platforms. Supporting various technology stacks including Electron, Qt, and native development, I can create high-performance desktop software solutions with excellent user experience to meet complex enterprise application requirements."
+		"slug": "game-development",
+		"name": "Game Development",
+		"tagline": "Web, Mobile & Casual Games",
+		"description": "Web, mobile and casual games built with Unity, Godot, Cocos or pure HTML5/Canvas. From a quick playable prototype to a polished, shippable title — AI-assisted development keeps the timeline tight and the cost reasonable."
 	},
 	{
-		"slug": "embedded-development",
-		"name": "Embedded Development",
-		"tagline": "Hardware & Software Integration, Deep Customization",
-		"description": "I provide embedded system development services, covering complete solutions from hardware interface design to low-level software development. With rich project experience in IoT, smart devices, industrial automation, and edge computing, I can handle complex real-time systems and resource-constrained environments."
+		"slug": "browser-extension",
+		"name": "Browser Extension Development",
+		"tagline": "Chrome & Edge, Idea to Store",
+		"description": "MV3 browser extensions for Chrome and Edge — productivity tools, scrapers, automation and AI copilots. I handle the full path from prototype to store submission and review approval."
 	},
 	{
-		"slug": "ai-development",
-		"name": "AI Development",
-		"tagline": "Intelligent Applications, Data-Driven",
-		"description": "I combine artificial intelligence technology with actual business needs, providing AI application development services including machine learning model development, natural language processing (NLP), computer vision (CV), and recommendation systems. Familiar with mainstream AI frameworks (TensorFlow, PyTorch), I can build complete AI solutions from data preprocessing to model deployment."
+		"slug": "ai-agent",
+		"name": "AI Apps & Agents",
+		"tagline": "LLM, RAG & Autonomous Agents",
+		"description": "I integrate large language models into your product: chatbots, RAG knowledge systems, autonomous agents and tool-using workflows. From prompt design to production deployment with Claude, OpenAI and open models."
 	},
 	{
-		"slug": "cloud-development",
-		"name": "Cloud Development",
-		"tagline": "Cloud-Native Architecture, Elastic Scaling",
-		"description": "I provide cloud platform development services, including cloud-native application development (containerization, microservices architecture), cloud infrastructure management (CI/CD, DevOps automation), cloud security, and cost optimization. Familiar with mainstream cloud platforms like AWS, Azure, and GCP, I can design highly available, scalable cloud architecture solutions."
+		"slug": "ai-workflow",
+		"name": "AI Workflows & Automation",
+		"tagline": "Automate the Repetitive, Scale the Output",
+		"description": "Content-generation pipelines, data-processing flows and end-to-end automations that remove repetitive manual work. I connect your tools, APIs and AI models into reliable workflows that run themselves."
 	},
 	{
-		"slug": "secondary-development",
-		"name": "Secondary Development",
-		"tagline": "System Upgrade & Migration, Smooth Transition",
-		"description": "I provide secondary development services, including legacy system modernization, feature expansion, performance optimization, and architecture refactoring. While maintaining business continuity, I migrate old technology stacks to modern architectures, improving system maintainability and scalability while reducing technical debt."
+		"slug": "maintenance-migration",
+		"name": "Maintenance & Code Migration",
+		"tagline": "Modernize, Migrate, Keep It Running",
+		"description": "Inherited a messy codebase? I take over legacy projects, upgrade frameworks, migrate tech stacks and pay down technical debt — keeping your product alive and moving while modernizing it underneath."
 	},
 	{
-		"slug": "consulting",
-		"name": "Consulting Services",
-		"tagline": "Technical Strategy Planning, Solution Design",
-		"description": "Based on 30 years of project experience, I provide comprehensive technical consulting services, including requirements analysis, technology selection, architecture design, project management, code review, and risk control. I can help your team develop technology roadmaps, solve complex technical challenges, and improve development efficiency and code quality."
+		"slug": "seo-geo",
+		"name": "SEO & GEO Optimization",
+		"tagline": "Rank on Google, Get Cited by AI",
+		"description": "Traditional SEO plus Generative Engine Optimization — making your content discoverable by Google and citable by ChatGPT, Perplexity and AI search. Technical SEO, structured data, content strategy and measurable results."
+	},
+	{
+		"slug": "doc-processing",
+		"name": "AI Document Processing & Review",
+		"tagline": "Extract, Review, Understand at Scale",
+		"description": "Batch document extraction, contract and content review, and knowledge-base construction powered by AI. Turn piles of PDFs, contracts and records into structured, searchable, actionable data."
+	},
+	{
+		"slug": "ai-consulting",
+		"name": "AI Productivity Consulting",
+		"tagline": "Supercharge Your Team with AI",
+		"description": "I help your team adopt Claude Code, Cursor and AI-assisted workflows — from setup and best practices to automated code review and custom agents. Grounded in 30 years of shipping real software."
 	}
 ]

@@ -1,50 +1,62 @@
 [
 	{
-		"slug": "web-development",
-		"name": "Web 开发",
-		"tagline": "全栈解决方案，从概念到部署",
-		"description": "拥有近30年的Web开发经验，我提供从架构设计到前后端开发的全栈服务。精通现代前端框架（React、Vue、Next.js）和后端技术（Node.js、Python、Java），能够构建高性能、可扩展的企业级Web应用和API服务。"
+		"slug": "ai-fullstack",
+		"name": "AI 全栈开发",
+		"tagline": "SaaS 与 Web 应用，几天就能从 0 到 1",
+		"description": "借助 Claude Code、Cursor、Codex，我用传统团队难以企及的速度，从想法到上线构建完整的 SaaS 平台与 Web 应用。采用现代技术栈（Next.js、React、Node.js、Python），交付干净、可维护、完全归你所有的代码。"
 	},
 	{
-		"slug": "mobile-development",
-		"name": "移动开发",
-		"tagline": "原生与跨平台，体验优先",
-		"description": "我提供iOS和Android平台的移动应用开发服务，涵盖原生开发（Swift、Kotlin）和跨平台解决方案（React Native、Flutter）。从用户体验设计到性能优化，从API集成到推送通知，确保您的应用在各大应用商店脱颖而出。"
+		"slug": "mobile-app",
+		"name": "移动与跨平台 App",
+		"tagline": "iOS 与 Android，原生与跨端兼顾",
+		"description": "原生（Swift、Kotlin）与跨平台（React Native、Flutter）应用开发，从交互设计到应用商店上架全程覆盖。AI 辅助开发让迭代更快、成本更低，同时不牺牲质量。"
 	},
 	{
-		"slug": "desktop-development",
-		"name": "桌面开发",
-		"tagline": "跨平台桌面应用，性能卓越",
-		"description": "我在Windows、macOS和Linux平台上有丰富的桌面应用开发经验。支持Electron、Qt、原生开发等多种技术栈，能够为您打造高性能、用户体验优秀的桌面软件解决方案，满足企业级应用的复杂需求。"
+		"slug": "game-development",
+		"name": "游戏开发",
+		"tagline": "网页、手机与休闲游戏",
+		"description": "使用 Unity、Godot、Cocos 或纯 HTML5/Canvas 开发网页、手机与休闲游戏。从可玩原型到打磨完整的成品，AI 辅助开发让周期更紧凑、成本更可控。"
 	},
 	{
-		"slug": "embedded-development",
-		"name": "嵌入式开发",
-		"tagline": "软硬结合，深度定制",
-		"description": "我提供嵌入式系统开发服务，涵盖从硬件接口设计到底层软件开发的完整解决方案。在物联网（IoT）、智能设备、工业自动化和边缘计算领域有丰富的项目经验，能够处理复杂的实时系统和资源受限环境。"
+		"slug": "browser-extension",
+		"name": "浏览器扩展开发",
+		"tagline": "Chrome 与 Edge，从想法到上架",
+		"description": "面向 Chrome 与 Edge 的 MV3 浏览器扩展——效率工具、数据抓取、自动化与 AI 助手。从原型到商店提交、审核通过，全流程我都能搞定。"
 	},
 	{
-		"slug": "ai-development",
-		"name": "AI 开发",
-		"tagline": "智能应用，数据驱动",
-		"description": "我将人工智能技术与实际业务需求相结合，提供机器学习模型开发、自然语言处理（NLP）、计算机视觉（CV）、推荐系统等AI应用开发服务。熟悉主流AI框架（TensorFlow、PyTorch），能够构建从数据预处理到模型部署的完整AI解决方案。"
+		"slug": "ai-agent",
+		"name": "AI 应用与 Agent 开发",
+		"tagline": "LLM、RAG 与自主 Agent",
+		"description": "把大语言模型集成进你的产品：聊天机器人、RAG 知识库、自主 Agent 与工具调用工作流。从提示词设计到生产部署，支持 Claude、OpenAI 及开源模型。"
 	},
 	{
-		"slug": "cloud-development",
-		"name": "云开发",
-		"tagline": "云原生架构，弹性扩展",
-		"description": "我提供云平台开发服务，包括云原生应用开发（容器化、微服务架构）、云基础设施管理（CI/CD、DevOps自动化）、云安全和成本优化等。熟悉AWS、Azure、GCP等主流云平台，能够设计高可用、可扩展的云架构方案。"
+		"slug": "ai-workflow",
+		"name": "AI 工作流与自动化",
+		"tagline": "把重复劳动自动化，把产出规模化",
+		"description": "内容生成流水线、数据处理流程与端到端自动化，消除重复的人工操作。我把你的工具、API 与 AI 模型连成可靠、自运转的工作流。"
 	},
 	{
-		"slug": "secondary-development",
-		"name": "二次开发",
-		"tagline": "系统升级改造，平滑迁移",
-		"description": "我提供系统二次开发服务，包括遗留系统现代化改造、功能扩展、性能优化和架构重构。在保持业务连续性的前提下，将老旧技术栈迁移到现代架构，提升系统可维护性和扩展性，降低技术债务。"
+		"slug": "maintenance-migration",
+		"name": "项目维护与代码迁移",
+		"tagline": "现代化、迁移、持续运行",
+		"description": "接手了一团乱的代码？我能接管遗留项目、升级框架、迁移技术栈、偿还技术债——在底层悄悄现代化的同时，让你的产品持续运行、持续推进。"
 	},
 	{
-		"slug": "consulting",
-		"name": "咨询服务",
-		"tagline": "技术战略规划，方案设计",
-		"description": "基于30年的项目经验，我提供全方位的技术咨询服务，包括需求分析、技术选型、架构设计、项目管理、代码审查和风险控制。能够帮助您的团队制定技术路线图，解决复杂技术难题，提升开发效率和代码质量。"
+		"slug": "seo-geo",
+		"name": "SEO 与 GEO 优化",
+		"tagline": "在 Google 排名，被 AI 引用",
+		"description": "传统 SEO 加上生成式引擎优化（GEO）——既让内容在 Google 上可被发现，也让它能被 ChatGPT、Perplexity 等 AI 搜索引用。涵盖技术 SEO、结构化数据、内容策略与可量化的结果。"
+	},
+	{
+		"slug": "doc-processing",
+		"name": "AI 文档处理与审核",
+		"tagline": "批量提取、审核、规模化理解",
+		"description": "由 AI 驱动的批量文档提取、合同与内容审核、知识库构建。把成堆的 PDF、合同与记录，变成结构化、可检索、可落地的数据。"
+	},
+	{
+		"slug": "ai-consulting",
+		"name": "AI 提效咨询",
+		"tagline": "用 AI 为你的团队提速",
+		"description": "我帮你的团队落地 Claude Code、Cursor 与 AI 辅助工作流——从环境搭建、最佳实践，到自动化代码审查与定制 Agent。背后是 30 年交付真实软件的经验。"
 	}
 ]

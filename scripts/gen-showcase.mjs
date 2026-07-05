@@ -190,6 +190,32 @@ function discoverScreenshots(dir) {
 	return root.map((src) => ({ src, caption: "" }))
 }
 
+/**
+ * 解析扩展 logo：优先 store/icons/ 里最大的 PNG，其次扩展源码目录（store 的父目录）
+ * 里的 Plasmo 主图标 assets/icon.png，最后是 store 根或 public 里的 icon.png。
+ */
+function resolveExtensionLogo(dir, destDir, webBase) {
+	const iconDir = path.join(dir, "icons")
+	const parent = path.dirname(dir)
+	return copyAsset(
+		[
+			path.join(iconDir, "icon-512.png"),
+			path.join(iconDir, "icon512.png"),
+			path.join(iconDir, "icon-256.png"),
+			path.join(iconDir, "icon256.png"),
+			path.join(iconDir, "icon-128.png"),
+			path.join(iconDir, "icon128.png"),
+			path.join(dir, "icon.png"),
+			path.join(parent, "assets", "icon.png"),
+			path.join(parent, "public", "icon.png"),
+			path.join(parent, "icon.png"),
+		],
+		destDir,
+		"logo.png",
+		webBase
+	)
+}
+
 function buildExtension(item, destDir, webBase) {
 	const dir = item.sourceDir
 	const configPath = path.join(dir, "store-kit.config.json")
@@ -229,21 +255,8 @@ function buildExtension(item, destDir, webBase) {
 		if (!content[loc].short) content[loc].short = content.en.short
 	}
 
-	// logo：优先 icons/ 里最大的，其次 promo.iconSvg
-	const iconDir = path.join(dir, "icons")
-	let logo = copyAsset(
-		[
-			path.join(iconDir, "icon-512.png"),
-			path.join(iconDir, "icon512.png"),
-			path.join(iconDir, "icon-256.png"),
-			path.join(iconDir, "icon256.png"),
-			path.join(iconDir, "icon-128.png"),
-			path.join(iconDir, "icon128.png"),
-		],
-		destDir,
-		"logo.png",
-		webBase
-	)
+	// logo：优先真实 PNG 图标（含扩展源码目录里的 Plasmo 主图标），其次 promo.iconSvg
+	let logo = resolveExtensionLogo(dir, destDir, webBase)
 	let gradient = null
 	if (!logo && cfg.promo && cfg.promo.iconSvg) {
 		fs.mkdirSync(destDir, { recursive: true })
@@ -306,10 +319,11 @@ function buildExtensionInline(item, destDir, webBase) {
 	})
 
 	const privacyMarkdown = item.privacyFile ? readPrivacy(path.join(dir, item.privacyFile)) : null
+	const logo = resolveExtensionLogo(dir, destDir, webBase)
 
 	return {
 		categoryLabel: item.categoryLabel || "Extension",
-		logo: null,
+		logo,
 		gradient: null,
 		screenshots,
 		privacyMarkdown,
@@ -390,6 +404,106 @@ function buildGame(item, destDir, webBase) {
 	}
 }
 
+// ---------- Web 应用（webapp-store-kit） ----------
+
+function buildWebapp(item, destDir, webBase) {
+	const dir = item.sourceDir
+	const configPath = path.join(dir, "webapp-store-kit.config.json")
+	if (!fs.existsSync(configPath)) {
+		warn(`${item.slug}: 缺少 webapp-store-kit.config.json，跳过`)
+		return null
+	}
+	const cfg = readJson(configPath)
+	// 本地化字段形如 { en: "...", "zh-cn": "..." }，缺失回退英文
+	const pick = (o) => (o && typeof o === "object" ? o.en || o[Object.keys(o)[0]] || "" : o || "")
+
+	const features = (cfg.features || []).map((f) => ({
+		emoji: f.emoji || "",
+		title: pick(f.title),
+		desc: pick(f.desc),
+	}))
+
+	const content = emptyContent()
+	content.en = {
+		name: pick(cfg.brandLocalized) || cfg.brand,
+		tagline: pick(cfg.tagline),
+		short: pick(cfg.shortDescription),
+		long: pick(cfg.elevatorPitch),
+		features,
+	}
+
+	// listing/<lang>/ 覆盖各语言（name.txt / tagline.txt / short-description.txt / long-description.md）
+	const listingRoot = path.join(dir, "listing")
+	if (fs.existsSync(listingRoot)) {
+		for (const langDir of fs.readdirSync(listingRoot)) {
+			const loc = SITE_LOCALES.includes(langDir) ? langDir : LISTING_LOCALE_MAP[langDir.toLowerCase()]
+			if (!loc || !SITE_LOCALES.includes(loc)) continue
+			const ld = path.join(listingRoot, langDir)
+			const readTxt = (f) => (fs.existsSync(path.join(ld, f)) ? fs.readFileSync(path.join(ld, f), "utf8").trim() : "")
+			content[loc] = {
+				name: readTxt("name.txt") || content.en.name,
+				tagline: readTxt("tagline.txt") || content.en.tagline,
+				short: readTxt("short-description.txt") || content.en.short,
+				long: stripFrontmatter(readTxt("long-description.md")) || content.en.long,
+				features,
+			}
+		}
+	}
+	// 其余语言回退英文
+	for (const loc of SITE_LOCALES) {
+		if (!content[loc].name) content[loc] = { ...content.en }
+	}
+
+	// logo：visual/logo 里的主图标，其次 favicon，最后 brandKit.iconSvg
+	let logo = copyAsset(
+		[
+			path.join(dir, "visual", "logo", "icon-512x512.png"),
+			path.join(dir, "visual", "logo", "icon-512.png"),
+			path.join(dir, "visual", "favicon", "icon-512x512.png"),
+			path.join(dir, "visual", "favicon", "icon-192x192.png"),
+		],
+		destDir,
+		"logo.png",
+		webBase
+	)
+	let gradient = null
+	if (!logo && cfg.brandKit && cfg.brandKit.iconSvg) {
+		fs.mkdirSync(destDir, { recursive: true })
+		fs.writeFileSync(path.join(destDir, "logo.svg"), cfg.brandKit.iconSvg, "utf8")
+		logo = `${webBase}/logo.svg`
+		gradient = Array.isArray(cfg.brandKit.gradient) ? cfg.brandKit.gradient : null
+	}
+
+	// 截图：visual/screenshots/ 里的真实截图；没有时用 OG 图作封面
+	const shotsDir = path.join(dir, "visual", "screenshots")
+	const screenshots = []
+	if (fs.existsSync(shotsDir)) {
+		const files = fs
+			.readdirSync(shotsDir)
+			.filter((f) => /\.(png|jpg|jpeg|webp)$/i.test(f))
+			.sort()
+		files.forEach((f, i) => {
+			const web = copyAsset([path.join(shotsDir, f)], path.join(destDir, "scrn"), `${String(i + 1).padStart(2, "0")}-${f}`, `${webBase}/scrn`)
+			if (web) screenshots.push({ src: web, caption: "" })
+		})
+	}
+	if (!screenshots.length) {
+		const og = copyAsset([path.join(dir, "visual", "og", "og-1200x630.png")], path.join(destDir, "scrn"), "01-og.png", `${webBase}/scrn`)
+		if (og) screenshots.push({ src: og, caption: "" })
+	}
+
+	const privacyMarkdown = readPrivacy(path.join(dir, "legal", "privacy-policy-en.md"))
+
+	return {
+		categoryLabel: cfg.category || "Web App",
+		logo,
+		gradient,
+		screenshots,
+		privacyMarkdown,
+		content,
+	}
+}
+
 function readPrivacy(p) {
 	if (!fs.existsSync(p)) return null
 	return stripFrontmatter(fs.readFileSync(p, "utf8")).trim() || null
@@ -419,6 +533,7 @@ function main() {
 		if (item.type === "extension") built = buildExtension(item, destDir, webBase)
 		else if (item.type === "extension-inline") built = buildExtensionInline(item, destDir, webBase)
 		else if (item.type === "game") built = buildGame(item, destDir, webBase)
+		else if (item.type === "webapp") built = buildWebapp(item, destDir, webBase)
 		else warn(`${item.slug}: 未知 type ${item.type}`)
 
 		if (!built) continue

@@ -2,11 +2,21 @@
 	"_note": "Showcase 数据源清单。运行 `npm run gen:showcase` 会读取下列 store 目录，规范化后写入 data/showcase.generated.json 并把素材拷贝到 public/assets/showcase/。installUrl 为公开商店链接（Chrome Web Store / Steam），源里没有，需手动补——留空时安装按钮降级为『Coming soon / 查看详情』。sourceDir 使用正斜杠绝对路径（仅在 Tiger 本机存在，生成产物已提交，部署无需再跑）。",
 	"categories": [
 		{ "key": "webapp", "order": 1 },
-		{ "key": "extension", "order": 2 },
-		{ "key": "game", "order": 3 },
-		{ "key": "app", "order": 4 }
+		{ "key": "game", "order": 2 },
+		{ "key": "app", "order": 3 },
+		{
+			"key": "extension",
+			"order": 4
+		}
 	],
 	"items": [
+		{
+			"slug": "xeviora",
+			"category": "webapp",
+			"type": "webapp",
+			"sourceDir": "D:/PROJs/xeviora/src/xeviora/store",
+			"installUrl": "https://xeviora.com"
+		},
 		{
 			"slug": "clearkit",
 			"category": "extension",

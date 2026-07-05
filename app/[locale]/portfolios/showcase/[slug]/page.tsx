@@ -59,13 +59,15 @@ export default async function ShowcaseDetailPage({ params }: { params: Promise<{
 	}))
 
 	const baseUrl = "https://chinadeveloper.net"
+	const schemaType = isExtension ? "SoftwareApplication" : item.type === "game" ? "VideoGame" : "WebApplication"
+	const operatingSystem = isExtension ? "Chrome" : item.type === "game" ? "Windows" : "Web"
 	const appSchema = {
 		"@context": "https://schema.org",
-		"@type": isExtension ? "SoftwareApplication" : "VideoGame",
+		"@type": schemaType,
 		name: c.name,
 		description: c.short,
 		applicationCategory: item.categoryLabel,
-		operatingSystem: isExtension ? "Chrome" : "Windows",
+		operatingSystem,
 		author: { "@type": "Person", name: "Tiger Liu", url: baseUrl },
 		image: item.screenshots[0]?.src ? `${baseUrl}${item.screenshots[0].src}` : undefined,
 	}

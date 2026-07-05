@@ -10,27 +10,273 @@
 	],
 	"categories": [
 		{
-			"key": "extension",
-			"order": 2
+			"key": "webapp",
+			"order": 1
 		},
 		{
 			"key": "game",
-			"order": 3
+			"order": 2
+		},
+		{
+			"key": "extension",
+			"order": 4
 		}
 	],
 	"items": [
+		{
+			"slug": "xeviora",
+			"category": "webapp",
+			"type": "webapp",
+			"installUrl": "https://xeviora.com",
+			"categoryLabel": "AI Toolset / Productivity SaaS",
+			"logo": "/assets/showcase/xeviora/logo.png",
+			"gradient": null,
+			"screenshots": [
+				{
+					"src": "/assets/showcase/xeviora/scrn/01-og.png",
+					"caption": ""
+				}
+			],
+			"privacyMarkdown": "# Privacy Policy — pointer\n\n**xeviora already hosts its canonical privacy policy.** This store kit does **not** carry\na competing draft.\n\n- **Canonical page:** https://xeviora.com/privacy\n- **Source route:** `frontend/src/app/privacy/`\n\nIf you launch on a directory or platform that asks for a privacy URL, link the canonical\npage above. If the product's data handling changes (accounts, Paddle billing, or the\nserver-side task processing for AI tools), update the hosted page — keep this pointer in\nsync or delete it.\n\n> Note: xeviora has accounts (better-auth), payments (Paddle) and server-side AI task\n> processing (FastAPI/Celery backend), so the privacy policy must truthfully cover account\n> data, billing via the payment processor, and content processed on the servers to run a\n> tool. Don't downplay it.",
+			"content": {
+				"en": {
+					"name": "xeviora",
+					"tagline": "Every AI tool you actually use — in one credit-powered workspace.",
+					"short": "AI detection, writing, humanizing, career, outreach & compliance tools in one workspace — one login, one credit balance, no per-tool subscriptions.",
+					"long": "# xeviora — every AI tool you actually use, in one credit-powered workspace\n\nStop paying for a dozen separate AI subscriptions you barely touch. **xeviora** puts the\nAI tools creators and small teams actually reach for behind **one account** and a\n**single credit balance** — top up once, then spend your credits on whatever the job\nneeds, with every result kept in one unified history.\n\n## Why xeviora\n\n- **One login, one balance.** No per-tool subscriptions to juggle or cancel. Buy credits,\n  spend them anywhere across the toolset.\n- **Only pay for what you run.** Each tool costs a number of credits sized to the actual\n  AI work — a quick check costs little, a full report costs more. Nothing is wasted on\n  tools you don't use.\n- **Everything in one place.** Every run lands in a unified task history you can revisit,\n  re-download, or export.\n\n## What you can do\n\n- 🔍 **AI detection & verification** — check whether text reads as AI-generated (ChatGPT,\n  Claude and others) with a detailed probability report, before you publish or submit.\n- ✍️ **AI writing & content** — generate original articles from a brief, humanize AI\n  drafts into natural prose, and write click-worthy SEO meta descriptions.\n- 💼 **Career & job search** — rewrite resume bullets into quantified wins and generate\n  tailored cover letters from any job description.\n- 📧 **Sales & outreach** — produce cold-email variants with sharp subject lines,\n  personalized openers and a clear call to action, ready to A/B test.\n- 🛡️ **Compliance & privacy** — jump-start SOC 2, GDPR, ISO 27001 and EU AI Act readiness\n  with gap analysis, checklists and templates, plus privacy-policy generation.\n- 🚀 **Startup & marketing** — name a business, find a viable startup idea, build a\n  marketing strategy, audit a landing page and draft SEO content briefs.\n\n## How it works\n\nPick a tool, give it your input, and xeviora runs it on modern AI models — routed per\ntask for the right balance of quality and cost, so you never have to pick a model.\nLonger jobs (full articles, multi-section compliance reports) run on our servers and\nland in your task history when they're done; the content you submit is processed only to\nproduce your result and is never used to train models.\n\n## Built for\n\nContent creators, freelance writers, job seekers, sales and outreach teams, indie\nfounders, and small marketing or compliance teams who want a dependable grab-bag of AI\ntools without paying for a dozen separate subscriptions.\n\n## Availability\n\nWeb app at [xeviora.com](https://xeviora.com). Interface in English. Start free with 10\ncredits on signup — no credit card required.",
+					"features": [
+						{
+							"emoji": "🔍",
+							"title": "AI detection & verification",
+							"desc": "Check whether text reads as AI-generated from ChatGPT, Claude and others, with a detailed probability report, before you publish or submit."
+						},
+						{
+							"emoji": "✍️",
+							"title": "AI writing & content",
+							"desc": "Generate original articles from a brief, humanize AI drafts into natural prose, and write click-worthy SEO meta descriptions."
+						},
+						{
+							"emoji": "💼",
+							"title": "Career & job search",
+							"desc": "Rewrite resume bullets into quantified wins and generate tailored cover letters from any job description."
+						},
+						{
+							"emoji": "📧",
+							"title": "Sales & outreach",
+							"desc": "Produce cold-email variants with sharp subject lines, personalized openers and a clear call to action — ready to A/B test."
+						},
+						{
+							"emoji": "🛡️",
+							"title": "Compliance & privacy",
+							"desc": "Jump-start SOC 2, GDPR, ISO 27001 and EU AI Act readiness with gap analysis, checklists and templates, plus privacy-policy generation."
+						},
+						{
+							"emoji": "🚀",
+							"title": "Startup & marketing",
+							"desc": "Name a business, find a viable startup idea, build a marketing strategy, audit a landing page and draft SEO content briefs."
+						}
+					]
+				},
+				"zh-cn": {
+					"name": "xeviora",
+					"tagline": "Every AI tool you actually use — in one credit-powered workspace.",
+					"short": "AI detection, writing, humanizing, career, outreach & compliance tools in one workspace — one login, one credit balance, no per-tool subscriptions.",
+					"long": "# xeviora — every AI tool you actually use, in one credit-powered workspace\n\nStop paying for a dozen separate AI subscriptions you barely touch. **xeviora** puts the\nAI tools creators and small teams actually reach for behind **one account** and a\n**single credit balance** — top up once, then spend your credits on whatever the job\nneeds, with every result kept in one unified history.\n\n## Why xeviora\n\n- **One login, one balance.** No per-tool subscriptions to juggle or cancel. Buy credits,\n  spend them anywhere across the toolset.\n- **Only pay for what you run.** Each tool costs a number of credits sized to the actual\n  AI work — a quick check costs little, a full report costs more. Nothing is wasted on\n  tools you don't use.\n- **Everything in one place.** Every run lands in a unified task history you can revisit,\n  re-download, or export.\n\n## What you can do\n\n- 🔍 **AI detection & verification** — check whether text reads as AI-generated (ChatGPT,\n  Claude and others) with a detailed probability report, before you publish or submit.\n- ✍️ **AI writing & content** — generate original articles from a brief, humanize AI\n  drafts into natural prose, and write click-worthy SEO meta descriptions.\n- 💼 **Career & job search** — rewrite resume bullets into quantified wins and generate\n  tailored cover letters from any job description.\n- 📧 **Sales & outreach** — produce cold-email variants with sharp subject lines,\n  personalized openers and a clear call to action, ready to A/B test.\n- 🛡️ **Compliance & privacy** — jump-start SOC 2, GDPR, ISO 27001 and EU AI Act readiness\n  with gap analysis, checklists and templates, plus privacy-policy generation.\n- 🚀 **Startup & marketing** — name a business, find a viable startup idea, build a\n  marketing strategy, audit a landing page and draft SEO content briefs.\n\n## How it works\n\nPick a tool, give it your input, and xeviora runs it on modern AI models — routed per\ntask for the right balance of quality and cost, so you never have to pick a model.\nLonger jobs (full articles, multi-section compliance reports) run on our servers and\nland in your task history when they're done; the content you submit is processed only to\nproduce your result and is never used to train models.\n\n## Built for\n\nContent creators, freelance writers, job seekers, sales and outreach teams, indie\nfounders, and small marketing or compliance teams who want a dependable grab-bag of AI\ntools without paying for a dozen separate subscriptions.\n\n## Availability\n\nWeb app at [xeviora.com](https://xeviora.com). Interface in English. Start free with 10\ncredits on signup — no credit card required.",
+					"features": [
+						{
+							"emoji": "🔍",
+							"title": "AI detection & verification",
+							"desc": "Check whether text reads as AI-generated from ChatGPT, Claude and others, with a detailed probability report, before you publish or submit."
+						},
+						{
+							"emoji": "✍️",
+							"title": "AI writing & content",
+							"desc": "Generate original articles from a brief, humanize AI drafts into natural prose, and write click-worthy SEO meta descriptions."
+						},
+						{
+							"emoji": "💼",
+							"title": "Career & job search",
+							"desc": "Rewrite resume bullets into quantified wins and generate tailored cover letters from any job description."
+						},
+						{
+							"emoji": "📧",
+							"title": "Sales & outreach",
+							"desc": "Produce cold-email variants with sharp subject lines, personalized openers and a clear call to action — ready to A/B test."
+						},
+						{
+							"emoji": "🛡️",
+							"title": "Compliance & privacy",
+							"desc": "Jump-start SOC 2, GDPR, ISO 27001 and EU AI Act readiness with gap analysis, checklists and templates, plus privacy-policy generation."
+						},
+						{
+							"emoji": "🚀",
+							"title": "Startup & marketing",
+							"desc": "Name a business, find a viable startup idea, build a marketing strategy, audit a landing page and draft SEO content briefs."
+						}
+					]
+				},
+				"es": {
+					"name": "xeviora",
+					"tagline": "Every AI tool you actually use — in one credit-powered workspace.",
+					"short": "AI detection, writing, humanizing, career, outreach & compliance tools in one workspace — one login, one credit balance, no per-tool subscriptions.",
+					"long": "# xeviora — every AI tool you actually use, in one credit-powered workspace\n\nStop paying for a dozen separate AI subscriptions you barely touch. **xeviora** puts the\nAI tools creators and small teams actually reach for behind **one account** and a\n**single credit balance** — top up once, then spend your credits on whatever the job\nneeds, with every result kept in one unified history.\n\n## Why xeviora\n\n- **One login, one balance.** No per-tool subscriptions to juggle or cancel. Buy credits,\n  spend them anywhere across the toolset.\n- **Only pay for what you run.** Each tool costs a number of credits sized to the actual\n  AI work — a quick check costs little, a full report costs more. Nothing is wasted on\n  tools you don't use.\n- **Everything in one place.** Every run lands in a unified task history you can revisit,\n  re-download, or export.\n\n## What you can do\n\n- 🔍 **AI detection & verification** — check whether text reads as AI-generated (ChatGPT,\n  Claude and others) with a detailed probability report, before you publish or submit.\n- ✍️ **AI writing & content** — generate original articles from a brief, humanize AI\n  drafts into natural prose, and write click-worthy SEO meta descriptions.\n- 💼 **Career & job search** — rewrite resume bullets into quantified wins and generate\n  tailored cover letters from any job description.\n- 📧 **Sales & outreach** — produce cold-email variants with sharp subject lines,\n  personalized openers and a clear call to action, ready to A/B test.\n- 🛡️ **Compliance & privacy** — jump-start SOC 2, GDPR, ISO 27001 and EU AI Act readiness\n  with gap analysis, checklists and templates, plus privacy-policy generation.\n- 🚀 **Startup & marketing** — name a business, find a viable startup idea, build a\n  marketing strategy, audit a landing page and draft SEO content briefs.\n\n## How it works\n\nPick a tool, give it your input, and xeviora runs it on modern AI models — routed per\ntask for the right balance of quality and cost, so you never have to pick a model.\nLonger jobs (full articles, multi-section compliance reports) run on our servers and\nland in your task history when they're done; the content you submit is processed only to\nproduce your result and is never used to train models.\n\n## Built for\n\nContent creators, freelance writers, job seekers, sales and outreach teams, indie\nfounders, and small marketing or compliance teams who want a dependable grab-bag of AI\ntools without paying for a dozen separate subscriptions.\n\n## Availability\n\nWeb app at [xeviora.com](https://xeviora.com). Interface in English. Start free with 10\ncredits on signup — no credit card required.",
+					"features": [
+						{
+							"emoji": "🔍",
+							"title": "AI detection & verification",
+							"desc": "Check whether text reads as AI-generated from ChatGPT, Claude and others, with a detailed probability report, before you publish or submit."
+						},
+						{
+							"emoji": "✍️",
+							"title": "AI writing & content",
+							"desc": "Generate original articles from a brief, humanize AI drafts into natural prose, and write click-worthy SEO meta descriptions."
+						},
+						{
+							"emoji": "💼",
+							"title": "Career & job search",
+							"desc": "Rewrite resume bullets into quantified wins and generate tailored cover letters from any job description."
+						},
+						{
+							"emoji": "📧",
+							"title": "Sales & outreach",
+							"desc": "Produce cold-email variants with sharp subject lines, personalized openers and a clear call to action — ready to A/B test."
+						},
+						{
+							"emoji": "🛡️",
+							"title": "Compliance & privacy",
+							"desc": "Jump-start SOC 2, GDPR, ISO 27001 and EU AI Act readiness with gap analysis, checklists and templates, plus privacy-policy generation."
+						},
+						{
+							"emoji": "🚀",
+							"title": "Startup & marketing",
+							"desc": "Name a business, find a viable startup idea, build a marketing strategy, audit a landing page and draft SEO content briefs."
+						}
+					]
+				},
+				"fr": {
+					"name": "xeviora",
+					"tagline": "Every AI tool you actually use — in one credit-powered workspace.",
+					"short": "AI detection, writing, humanizing, career, outreach & compliance tools in one workspace — one login, one credit balance, no per-tool subscriptions.",
+					"long": "# xeviora — every AI tool you actually use, in one credit-powered workspace\n\nStop paying for a dozen separate AI subscriptions you barely touch. **xeviora** puts the\nAI tools creators and small teams actually reach for behind **one account** and a\n**single credit balance** — top up once, then spend your credits on whatever the job\nneeds, with every result kept in one unified history.\n\n## Why xeviora\n\n- **One login, one balance.** No per-tool subscriptions to juggle or cancel. Buy credits,\n  spend them anywhere across the toolset.\n- **Only pay for what you run.** Each tool costs a number of credits sized to the actual\n  AI work — a quick check costs little, a full report costs more. Nothing is wasted on\n  tools you don't use.\n- **Everything in one place.** Every run lands in a unified task history you can revisit,\n  re-download, or export.\n\n## What you can do\n\n- 🔍 **AI detection & verification** — check whether text reads as AI-generated (ChatGPT,\n  Claude and others) with a detailed probability report, before you publish or submit.\n- ✍️ **AI writing & content** — generate original articles from a brief, humanize AI\n  drafts into natural prose, and write click-worthy SEO meta descriptions.\n- 💼 **Career & job search** — rewrite resume bullets into quantified wins and generate\n  tailored cover letters from any job description.\n- 📧 **Sales & outreach** — produce cold-email variants with sharp subject lines,\n  personalized openers and a clear call to action, ready to A/B test.\n- 🛡️ **Compliance & privacy** — jump-start SOC 2, GDPR, ISO 27001 and EU AI Act readiness\n  with gap analysis, checklists and templates, plus privacy-policy generation.\n- 🚀 **Startup & marketing** — name a business, find a viable startup idea, build a\n  marketing strategy, audit a landing page and draft SEO content briefs.\n\n## How it works\n\nPick a tool, give it your input, and xeviora runs it on modern AI models — routed per\ntask for the right balance of quality and cost, so you never have to pick a model.\nLonger jobs (full articles, multi-section compliance reports) run on our servers and\nland in your task history when they're done; the content you submit is processed only to\nproduce your result and is never used to train models.\n\n## Built for\n\nContent creators, freelance writers, job seekers, sales and outreach teams, indie\nfounders, and small marketing or compliance teams who want a dependable grab-bag of AI\ntools without paying for a dozen separate subscriptions.\n\n## Availability\n\nWeb app at [xeviora.com](https://xeviora.com). Interface in English. Start free with 10\ncredits on signup — no credit card required.",
+					"features": [
+						{
+							"emoji": "🔍",
+							"title": "AI detection & verification",
+							"desc": "Check whether text reads as AI-generated from ChatGPT, Claude and others, with a detailed probability report, before you publish or submit."
+						},
+						{
+							"emoji": "✍️",
+							"title": "AI writing & content",
+							"desc": "Generate original articles from a brief, humanize AI drafts into natural prose, and write click-worthy SEO meta descriptions."
+						},
+						{
+							"emoji": "💼",
+							"title": "Career & job search",
+							"desc": "Rewrite resume bullets into quantified wins and generate tailored cover letters from any job description."
+						},
+						{
+							"emoji": "📧",
+							"title": "Sales & outreach",
+							"desc": "Produce cold-email variants with sharp subject lines, personalized openers and a clear call to action — ready to A/B test."
+						},
+						{
+							"emoji": "🛡️",
+							"title": "Compliance & privacy",
+							"desc": "Jump-start SOC 2, GDPR, ISO 27001 and EU AI Act readiness with gap analysis, checklists and templates, plus privacy-policy generation."
+						},
+						{
+							"emoji": "🚀",
+							"title": "Startup & marketing",
+							"desc": "Name a business, find a viable startup idea, build a marketing strategy, audit a landing page and draft SEO content briefs."
+						}
+					]
+				},
+				"ja": {
+					"name": "xeviora",
+					"tagline": "Every AI tool you actually use — in one credit-powered workspace.",
+					"short": "AI detection, writing, humanizing, career, outreach & compliance tools in one workspace — one login, one credit balance, no per-tool subscriptions.",
+					"long": "# xeviora — every AI tool you actually use, in one credit-powered workspace\n\nStop paying for a dozen separate AI subscriptions you barely touch. **xeviora** puts the\nAI tools creators and small teams actually reach for behind **one account** and a\n**single credit balance** — top up once, then spend your credits on whatever the job\nneeds, with every result kept in one unified history.\n\n## Why xeviora\n\n- **One login, one balance.** No per-tool subscriptions to juggle or cancel. Buy credits,\n  spend them anywhere across the toolset.\n- **Only pay for what you run.** Each tool costs a number of credits sized to the actual\n  AI work — a quick check costs little, a full report costs more. Nothing is wasted on\n  tools you don't use.\n- **Everything in one place.** Every run lands in a unified task history you can revisit,\n  re-download, or export.\n\n## What you can do\n\n- 🔍 **AI detection & verification** — check whether text reads as AI-generated (ChatGPT,\n  Claude and others) with a detailed probability report, before you publish or submit.\n- ✍️ **AI writing & content** — generate original articles from a brief, humanize AI\n  drafts into natural prose, and write click-worthy SEO meta descriptions.\n- 💼 **Career & job search** — rewrite resume bullets into quantified wins and generate\n  tailored cover letters from any job description.\n- 📧 **Sales & outreach** — produce cold-email variants with sharp subject lines,\n  personalized openers and a clear call to action, ready to A/B test.\n- 🛡️ **Compliance & privacy** — jump-start SOC 2, GDPR, ISO 27001 and EU AI Act readiness\n  with gap analysis, checklists and templates, plus privacy-policy generation.\n- 🚀 **Startup & marketing** — name a business, find a viable startup idea, build a\n  marketing strategy, audit a landing page and draft SEO content briefs.\n\n## How it works\n\nPick a tool, give it your input, and xeviora runs it on modern AI models — routed per\ntask for the right balance of quality and cost, so you never have to pick a model.\nLonger jobs (full articles, multi-section compliance reports) run on our servers and\nland in your task history when they're done; the content you submit is processed only to\nproduce your result and is never used to train models.\n\n## Built for\n\nContent creators, freelance writers, job seekers, sales and outreach teams, indie\nfounders, and small marketing or compliance teams who want a dependable grab-bag of AI\ntools without paying for a dozen separate subscriptions.\n\n## Availability\n\nWeb app at [xeviora.com](https://xeviora.com). Interface in English. Start free with 10\ncredits on signup — no credit card required.",
+					"features": [
+						{
+							"emoji": "🔍",
+							"title": "AI detection & verification",
+							"desc": "Check whether text reads as AI-generated from ChatGPT, Claude and others, with a detailed probability report, before you publish or submit."
+						},
+						{
+							"emoji": "✍️",
+							"title": "AI writing & content",
+							"desc": "Generate original articles from a brief, humanize AI drafts into natural prose, and write click-worthy SEO meta descriptions."
+						},
+						{
+							"emoji": "💼",
+							"title": "Career & job search",
+							"desc": "Rewrite resume bullets into quantified wins and generate tailored cover letters from any job description."
+						},
+						{
+							"emoji": "📧",
+							"title": "Sales & outreach",
+							"desc": "Produce cold-email variants with sharp subject lines, personalized openers and a clear call to action — ready to A/B test."
+						},
+						{
+							"emoji": "🛡️",
+							"title": "Compliance & privacy",
+							"desc": "Jump-start SOC 2, GDPR, ISO 27001 and EU AI Act readiness with gap analysis, checklists and templates, plus privacy-policy generation."
+						},
+						{
+							"emoji": "🚀",
+							"title": "Startup & marketing",
+							"desc": "Name a business, find a viable startup idea, build a marketing strategy, audit a landing page and draft SEO content briefs."
+						}
+					]
+				},
+				"zh-tw": {
+					"name": "xeviora",
+					"tagline": "Every AI tool you actually use — in one credit-powered workspace.",
+					"short": "AI detection, writing, humanizing, career, outreach & compliance tools in one workspace — one login, one credit balance, no per-tool subscriptions.",
+					"long": "# xeviora — every AI tool you actually use, in one credit-powered workspace\n\nStop paying for a dozen separate AI subscriptions you barely touch. **xeviora** puts the\nAI tools creators and small teams actually reach for behind **one account** and a\n**single credit balance** — top up once, then spend your credits on whatever the job\nneeds, with every result kept in one unified history.\n\n## Why xeviora\n\n- **One login, one balance.** No per-tool subscriptions to juggle or cancel. Buy credits,\n  spend them anywhere across the toolset.\n- **Only pay for what you run.** Each tool costs a number of credits sized to the actual\n  AI work — a quick check costs little, a full report costs more. Nothing is wasted on\n  tools you don't use.\n- **Everything in one place.** Every run lands in a unified task history you can revisit,\n  re-download, or export.\n\n## What you can do\n\n- 🔍 **AI detection & verification** — check whether text reads as AI-generated (ChatGPT,\n  Claude and others) with a detailed probability report, before you publish or submit.\n- ✍️ **AI writing & content** — generate original articles from a brief, humanize AI\n  drafts into natural prose, and write click-worthy SEO meta descriptions.\n- 💼 **Career & job search** — rewrite resume bullets into quantified wins and generate\n  tailored cover letters from any job description.\n- 📧 **Sales & outreach** — produce cold-email variants with sharp subject lines,\n  personalized openers and a clear call to action, ready to A/B test.\n- 🛡️ **Compliance & privacy** — jump-start SOC 2, GDPR, ISO 27001 and EU AI Act readiness\n  with gap analysis, checklists and templates, plus privacy-policy generation.\n- 🚀 **Startup & marketing** — name a business, find a viable startup idea, build a\n  marketing strategy, audit a landing page and draft SEO content briefs.\n\n## How it works\n\nPick a tool, give it your input, and xeviora runs it on modern AI models — routed per\ntask for the right balance of quality and cost, so you never have to pick a model.\nLonger jobs (full articles, multi-section compliance reports) run on our servers and\nland in your task history when they're done; the content you submit is processed only to\nproduce your result and is never used to train models.\n\n## Built for\n\nContent creators, freelance writers, job seekers, sales and outreach teams, indie\nfounders, and small marketing or compliance teams who want a dependable grab-bag of AI\ntools without paying for a dozen separate subscriptions.\n\n## Availability\n\nWeb app at [xeviora.com](https://xeviora.com). Interface in English. Start free with 10\ncredits on signup — no credit card required.",
+					"features": [
+						{
+							"emoji": "🔍",
+							"title": "AI detection & verification",
+							"desc": "Check whether text reads as AI-generated from ChatGPT, Claude and others, with a detailed probability report, before you publish or submit."
+						},
+						{
+							"emoji": "✍️",
+							"title": "AI writing & content",
+							"desc": "Generate original articles from a brief, humanize AI drafts into natural prose, and write click-worthy SEO meta descriptions."
+						},
+						{
+							"emoji": "💼",
+							"title": "Career & job search",
+							"desc": "Rewrite resume bullets into quantified wins and generate tailored cover letters from any job description."
+						},
+						{
+							"emoji": "📧",
+							"title": "Sales & outreach",
+							"desc": "Produce cold-email variants with sharp subject lines, personalized openers and a clear call to action — ready to A/B test."
+						},
+						{
+							"emoji": "🛡️",
+							"title": "Compliance & privacy",
+							"desc": "Jump-start SOC 2, GDPR, ISO 27001 and EU AI Act readiness with gap analysis, checklists and templates, plus privacy-policy generation."
+						},
+						{
+							"emoji": "🚀",
+							"title": "Startup & marketing",
+							"desc": "Name a business, find a viable startup idea, build a marketing strategy, audit a landing page and draft SEO content briefs."
+						}
+					]
+				}
+			}
+		},
 		{
 			"slug": "clearkit",
 			"category": "extension",
 			"type": "extension",
 			"installUrl": "",
 			"categoryLabel": "Productivity",
-			"logo": "/assets/showcase/clearkit/logo.svg",
-			"gradient": [
-				"#0D9488",
-				"#0F766E",
-				"#0E7490"
-			],
+			"logo": "/assets/showcase/clearkit/logo.png",
+			"gradient": null,
 			"screenshots": [
 				{
 					"src": "/assets/showcase/clearkit/scrn/01-popup.png",
@@ -1085,12 +1331,8 @@
 			"type": "extension",
 			"installUrl": "https://chromewebstore.google.com/detail/bulk-image-downloader/lamfengpphafgjdgacmmnpakdphmjlji",
 			"categoryLabel": "Productivity",
-			"logo": "/assets/showcase/bulk-image-downloader/logo.svg",
-			"gradient": [
-				"#15803D",
-				"#22C55E",
-				"#4ADE80"
-			],
+			"logo": "/assets/showcase/bulk-image-downloader/logo.png",
+			"gradient": null,
 			"screenshots": [
 				{
 					"src": "/assets/showcase/bulk-image-downloader/scrn/01-scrn-1.png",
@@ -1333,12 +1575,8 @@
 			"type": "extension",
 			"installUrl": "https://chromewebstore.google.com/detail/svg-grabber-by-svg-forge/gendlmilamjndnjeogphmanhlcagiail",
 			"categoryLabel": "Developer Tools",
-			"logo": "/assets/showcase/svg-grabber/logo.svg",
-			"gradient": [
-				"#4338CA",
-				"#5B21B6",
-				"#7C3AED"
-			],
+			"logo": "/assets/showcase/svg-grabber/logo.png",
+			"gradient": null,
 			"screenshots": [
 				{
 					"src": "/assets/showcase/svg-grabber/scrn/01-scrn-01.png",
@@ -1581,12 +1819,8 @@
 			"type": "extension",
 			"installUrl": "https://chromewebstore.google.com/detail/seo-pagerank/lndiecnlfaibiffoeijpjnblnmdlcpog",
 			"categoryLabel": "Developer Tools",
-			"logo": "/assets/showcase/seo-pagerank/logo.svg",
-			"gradient": [
-				"#1D4ED8",
-				"#3B82F6",
-				"#0891B2"
-			],
+			"logo": "/assets/showcase/seo-pagerank/logo.png",
+			"gradient": null,
 			"screenshots": [
 				{
 					"src": "/assets/showcase/seo-pagerank/scrn/01-scrn-1.png",
@@ -1961,7 +2195,7 @@
 			"type": "extension-inline",
 			"installUrl": "https://chromewebstore.google.com/detail/ahbkagdfnimnpalcoanpgiaojgeaklae",
 			"categoryLabel": "Developer Tools",
-			"logo": null,
+			"logo": "/assets/showcase/ip-flager/logo.png",
 			"gradient": null,
 			"screenshots": [
 				{

@@ -1,83 +1,118 @@
 {
-  "nav": {
-    "home": "Inicio",
-    "about": "Acerca de",
-    "portfolios": "Portafolios",
-    "skills": "Habilidades",
-    "services": "Servicios",
-    "contact": "Contacto"
-  },
-  "home": {
-    "title": "Construyo Tu Software — Más Rápido, con IA",
-    "subtitle": "Tiger Liu - China Developer | Construyendo soluciones de software desde 1993",
-    "cta": "Contáctame",
-    "viewPortfolios": "Ver Portafolios",
-    "featuredProjects": "Proyectos Destacados",
-    "skills": "Habilidades y Tecnologías",
-    "welcome": "Desarrollo Full-Stack Nativo de IA",
-    "experience": "30 años de experiencia full-stack, potenciados con Claude Code, Cursor y Codex",
-    "description": "Ayudo a cualquier persona o equipo a lanzar software real — rápido. SaaS, apps web y móviles, juegos, extensiones de navegador, flujos de trabajo con IA y más. De la idea al lanzamiento, o retomando lo que ya tienes.",
-    "speed": "Tareas pequeñas en horas. Proyectos complejos en días.",
-    "stats": [
-      { "value": "30", "label": "Años de Experiencia" },
-      { "value": "50+", "label": "Proyectos Entregados" },
-      { "value": "24h", "label": "Tiempo de Respuesta" }
-    ],
-    "tags": ["SaaS", "Apps Web", "iOS / Android", "Juegos", "Extensiones de Navegador", "Migración de Código", "SEO / GEO", "Procesamiento de Documentos", "Flujos de IA"],
-    "emailCta": "Escríbeme",
-    "emailNote": "Cuéntame qué necesitas — normalmente respondo en 24 horas.",
-    "servicesTitle": "Lo Que Puedo Construir Para Ti",
-    "servicesDescription": "Servicios acelerados con IA que resuelven problemas reales — rápido.",
-    "viewServices": "Ver todos los servicios →",
-    "availableBadge": "Disponible para nuevos proyectos",
-    "testimonialsTitle": "Lo que dicen los clientes",
-    "testimonialsDescription": "Comentarios de fundadores y equipos a los que he ayudado a lanzar.",
-    "featuredDescription": "Proyectos seleccionados que muestran mi experiencia",
-    "skillsDescription": "Tecnologías y herramientas con las que trabajo"
-  },
-  "about": {
-    "title": "Acerca de Mí"
-  },
-  "portfolios": {
-    "title": "Portafolios",
-    "viewPortfolio": "Ver Portafolio",
-    "viewPortfolioOnGithub": "Ver Portafolio en GitHub",
-    "viewOnGithub": "Ver en GitHub",
-    "viewDetails": "Ver detalles"
-  },
-  "skills": {
-    "title": "Habilidades y Tecnologías"
-  },
-  "services": {
-    "title": "Servicios de Desarrollo de la Era IA",
-    "description": "Desarrollo acelerado con IA que convierte ideas en software lanzado — tareas pequeñas en horas, proyectos complejos en días.",
-    "ctaTitle": "¿Tienes algo que construir?",
-    "ctaText": "Cuéntame qué necesitas — normalmente respondo en 24 horas.",
-    "ctaButton": "Escríbeme"
-  },
-  "contact": {
-    "title": "Contáctame",
-    "subtitle": "Disponible para trabajo remoto a tiempo completo o parcial, y también para tareas puntuales. Cuéntame sobre tu proyecto y te responderé en 24 horas.",
-    "email": "Correo",
-    "social": "Conéctate conmigo"
-  },
-  "header": {
-    "brandName": "ChinaDeveloper",
-    "tagline": "Tiger Liu - Desarrollador Full-Stack Senior"
-  },
-  "footer": {
-    "brandName": "Tiger Liu - China Developer",
-    "emailCta": "Escríbeme",
-    "description": "Tiger Liu es un Ingeniero Senior de Desarrollo de Software Full-Stack con 30 años de experiencia. China Developer se especializa en el desarrollo de software acelerado con IA y está disponible para oportunidades de trabajo remoto.",
-    "quickLinks": "Enlaces Rápidos",
-    "connect": "Conectar",
-    "about": "Acerca de",
-    "portfolio": "Portafolio",
-    "services": "Servicios",
-    "contact": "Contacto",
-    "privacy": "Privacidad",
-    "copyright": "Todos los derechos reservados.",
-    "builtWith": "Construido con Next.js -",
-    "openSource": "Código Abierto"
-  }
+	"nav": {
+		"home": "Inicio",
+		"about": "Acerca de",
+		"portfolios": "Portafolios",
+		"skills": "Habilidades",
+		"services": "Servicios",
+		"contact": "Contacto"
+	},
+	"home": {
+		"title": "Construyo Tu Software — Más Rápido, con IA",
+		"subtitle": "Tiger Liu - China Developer | Construyendo soluciones de software desde 1993",
+		"cta": "Contáctame",
+		"viewPortfolios": "Ver Portafolios",
+		"featuredProjects": "Proyectos Destacados",
+		"skills": "Habilidades y Tecnologías",
+		"welcome": "Desarrollo Full-Stack Nativo de IA",
+		"experience": "30 años de experiencia full-stack, potenciados con Claude Code, Cursor y Codex",
+		"description": "Ayudo a cualquier persona o equipo a lanzar software real — rápido. SaaS, apps web y móviles, juegos, extensiones de navegador, flujos de trabajo con IA y más. De la idea al lanzamiento, o retomando lo que ya tienes.",
+		"speed": "Tareas pequeñas en horas. Proyectos complejos en días.",
+		"stats": [
+			{
+				"value": "30",
+				"label": "Años de Experiencia"
+			},
+			{
+				"value": "50+",
+				"label": "Proyectos Entregados"
+			},
+			{
+				"value": "24h",
+				"label": "Tiempo de Respuesta"
+			}
+		],
+		"tags": [
+			"SaaS",
+			"Apps Web",
+			"iOS / Android",
+			"Juegos",
+			"Extensiones de Navegador",
+			"Migración de Código",
+			"SEO / GEO",
+			"Procesamiento de Documentos",
+			"Flujos de IA"
+		],
+		"emailCta": "Escríbeme",
+		"emailNote": "Cuéntame qué necesitas — normalmente respondo en 24 horas.",
+		"servicesTitle": "Lo Que Puedo Construir Para Ti",
+		"servicesDescription": "Servicios acelerados con IA que resuelven problemas reales — rápido.",
+		"viewServices": "Ver todos los servicios →",
+		"availableBadge": "Disponible para nuevos proyectos",
+		"testimonialsTitle": "Lo que dicen los clientes",
+		"testimonialsDescription": "Comentarios de fundadores y equipos a los que he ayudado a lanzar.",
+		"featuredDescription": "Proyectos seleccionados que muestran mi experiencia",
+		"skillsDescription": "Tecnologías y herramientas con las que trabajo"
+	},
+	"about": {
+		"title": "Acerca de Mí"
+	},
+	"portfolios": {
+		"title": "Portafolios",
+		"viewPortfolio": "Ver Portafolio",
+		"viewPortfolioOnGithub": "Ver Portafolio en GitHub",
+		"viewOnGithub": "Ver en GitHub",
+		"viewDetails": "Ver detalles",
+		"subtitle": "Productos que he creado: extensiones de navegador, aplicaciones web y juegos. Entregados rápido en la era de la IA.",
+		"categories": {
+			"webapp": "Aplicaciones web",
+			"extension": "Extensiones de navegador",
+			"game": "Juegos",
+			"app": "Apps"
+		},
+		"install": "Obtener",
+		"comingSoon": "Próximamente",
+		"itemsCount": "elementos",
+		"highlights": "Destacados",
+		"privacyPolicy": "Política de privacidad",
+		"backToShowcase": "Volver a Portafolios",
+		"moreTitle": "Más proyectos",
+		"moreDescription": "Trabajo anterior y empresarial: simulación de ferrocarril de alta velocidad, nube educativa, sistemas de trading y más.",
+		"moreCta": "Ver todos los proyectos"
+	},
+	"skills": {
+		"title": "Habilidades y Tecnologías"
+	},
+	"services": {
+		"title": "Servicios de Desarrollo de la Era IA",
+		"description": "Desarrollo acelerado con IA que convierte ideas en software lanzado — tareas pequeñas en horas, proyectos complejos en días.",
+		"ctaTitle": "¿Tienes algo que construir?",
+		"ctaText": "Cuéntame qué necesitas — normalmente respondo en 24 horas.",
+		"ctaButton": "Escríbeme"
+	},
+	"contact": {
+		"title": "Contáctame",
+		"subtitle": "Disponible para trabajo remoto a tiempo completo o parcial, y también para tareas puntuales. Cuéntame sobre tu proyecto y te responderé en 24 horas.",
+		"email": "Correo",
+		"social": "Conéctate conmigo"
+	},
+	"header": {
+		"brandName": "ChinaDeveloper",
+		"tagline": "Tiger Liu - Desarrollador Full-Stack Senior"
+	},
+	"footer": {
+		"brandName": "Tiger Liu - China Developer",
+		"emailCta": "Escríbeme",
+		"description": "Tiger Liu es un Ingeniero Senior de Desarrollo de Software Full-Stack con 30 años de experiencia. China Developer se especializa en el desarrollo de software acelerado con IA y está disponible para oportunidades de trabajo remoto.",
+		"quickLinks": "Enlaces Rápidos",
+		"connect": "Conectar",
+		"about": "Acerca de",
+		"portfolio": "Portafolio",
+		"services": "Servicios",
+		"contact": "Contacto",
+		"privacy": "Privacidad",
+		"copyright": "Todos los derechos reservados.",
+		"builtWith": "Construido con Next.js -",
+		"openSource": "Código Abierto"
+	}
 }

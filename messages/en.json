@@ -19,11 +19,30 @@
 		"description": "I help any individual or team ship real software — fast. SaaS, web & mobile apps, games, browser extensions, AI workflows and more. From idea to launch, or taking over what you already have.",
 		"speed": "Small tasks in hours. Complex projects in days.",
 		"stats": [
-			{ "value": "30", "label": "Years of Experience" },
-			{ "value": "50+", "label": "Projects Delivered" },
-			{ "value": "24h", "label": "Avg. Reply Time" }
+			{
+				"value": "30",
+				"label": "Years of Experience"
+			},
+			{
+				"value": "50+",
+				"label": "Projects Delivered"
+			},
+			{
+				"value": "24h",
+				"label": "Avg. Reply Time"
+			}
 		],
-		"tags": ["SaaS", "Web Apps", "iOS / Android", "Games", "Browser Extensions", "Code Migration", "SEO / GEO", "Doc Processing", "AI Workflows"],
+		"tags": [
+			"SaaS",
+			"Web Apps",
+			"iOS / Android",
+			"Games",
+			"Browser Extensions",
+			"Code Migration",
+			"SEO / GEO",
+			"Doc Processing",
+			"AI Workflows"
+		],
 		"emailCta": "Email me",
 		"emailNote": "Tell me what you need — I usually reply within 24 hours.",
 		"servicesTitle": "What I Can Build for You",
@@ -42,7 +61,23 @@
 		"title": "Portfolios",
 		"viewPortfolio": "View Portfolio",
 		"viewOnGithub": "View on GitHub",
-		"viewDetails": "View Details"
+		"viewDetails": "View Details",
+		"subtitle": "Products I've built — browser extensions, web apps and games. Shipped fast in the AI era.",
+		"categories": {
+			"webapp": "Web Apps",
+			"extension": "Browser Extensions",
+			"game": "Games",
+			"app": "Apps"
+		},
+		"install": "Get it",
+		"comingSoon": "Coming soon",
+		"itemsCount": "items",
+		"highlights": "Highlights",
+		"privacyPolicy": "Privacy Policy",
+		"backToShowcase": "Back to Portfolios",
+		"moreTitle": "More Projects",
+		"moreDescription": "Earlier and enterprise work — high-speed rail simulation, education cloud, trading systems and more.",
+		"moreCta": "Browse all projects"
 	},
 	"skills": {
 		"title": "Skills & Technologies"

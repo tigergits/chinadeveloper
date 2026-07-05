@@ -1,0 +1,95 @@
+{
+	"_note": "Showcase 数据源清单。运行 `npm run gen:showcase` 会读取下列 store 目录，规范化后写入 data/showcase.generated.json 并把素材拷贝到 public/assets/showcase/。installUrl 为公开商店链接（Chrome Web Store / Steam），源里没有，需手动补——留空时安装按钮降级为『Coming soon / 查看详情』。sourceDir 使用正斜杠绝对路径（仅在 Tiger 本机存在，生成产物已提交，部署无需再跑）。",
+	"categories": [
+		{ "key": "webapp", "order": 1 },
+		{ "key": "extension", "order": 2 },
+		{ "key": "game", "order": 3 },
+		{ "key": "app", "order": 4 }
+	],
+	"items": [
+		{
+			"slug": "clearkit",
+			"category": "extension",
+			"type": "extension",
+			"sourceDir": "D:/PROJs/browserexts/src/clear/store",
+			"installUrl": ""
+		},
+		{
+			"slug": "qr-studio",
+			"category": "extension",
+			"type": "extension",
+			"sourceDir": "D:/PROJs/browserexts/src/qrcode/store",
+			"installUrl": "https://chromewebstore.google.com/detail/pmhaplicaffnppnlkcgfdonnjjonaeil"
+		},
+		{
+			"slug": "reelcap",
+			"category": "extension",
+			"type": "extension",
+			"sourceDir": "D:/PROJs/browserexts/src/reelcap/store",
+			"installUrl": "https://chromewebstore.google.com/detail/kpjphmleblfdacbnieepeicinlhgcfhn"
+		},
+		{
+			"slug": "scrncap",
+			"category": "extension",
+			"type": "extension",
+			"sourceDir": "D:/PROJs/browserexts/src/scrncap/store",
+			"installUrl": ""
+		},
+		{
+			"slug": "bulk-image-downloader",
+			"category": "extension",
+			"type": "extension",
+			"sourceDir": "D:/PROJs/browserexts/src/imgdown/store",
+			"installUrl": "https://chromewebstore.google.com/detail/bulk-image-downloader/lamfengpphafgjdgacmmnpakdphmjlji"
+		},
+		{
+			"slug": "svg-grabber",
+			"category": "extension",
+			"type": "extension",
+			"sourceDir": "D:/PROJs/xeviora/src/svg/extension/store",
+			"installUrl": "https://chromewebstore.google.com/detail/svg-grabber-by-svg-forge/gendlmilamjndnjeogphmanhlcagiail"
+		},
+		{
+			"slug": "seo-pagerank",
+			"category": "extension",
+			"type": "extension",
+			"sourceDir": "D:/PROJs/webs/pagerankstatus.org/extension/store",
+			"installUrl": "https://chromewebstore.google.com/detail/seo-pagerank/lndiecnlfaibiffoeijpjnblnmdlcpog"
+		},
+		{
+			"slug": "ip-flager",
+			"category": "extension",
+			"type": "extension-inline",
+			"sourceDir": "D:/PROJs/webs/myiplocation.org/src/extension/store",
+			"installUrl": "https://chromewebstore.google.com/detail/ahbkagdfnimnpalcoanpgiaojgeaklae",
+			"privacyFile": "privacy-policy.md",
+			"categoryLabel": "Developer Tools",
+			"screenshots": [
+				{ "src": "scrn-1.png", "caption": "Country flag in the toolbar, updated as you browse" },
+				{ "src": "scrn-2.png", "caption": "Click for the full IP report — city, region, timezone, coordinates" },
+				{ "src": "scrn-3.png", "caption": "Clearly marks localhost and private LAN addresses" }
+			],
+			"content": {
+				"en": {
+					"name": "IP Flager — Country Flag for Any Site",
+					"tagline": "See where any website is hosted — right in your toolbar.",
+					"short": "See where any website is hosted — its country flag in your toolbar, plus IP, city & full geolocation in one click. Fast & local.",
+					"long": "Know where any website really lives — without leaving the page. IP Flager puts a small country flag on your toolbar showing where the site you're viewing is hosted. One glance tells you the server's country; one click reveals the full picture — IP address, city, region, postal code, timezone and coordinates.\n\nCountry detection runs against a built-in IP database, so the flag appears immediately with no network call. It clearly marks localhost and LAN / private (RFC1918) IPs instead of guessing, ships a polished modern UI with automatic dark mode, and links out to the full IP report on MyIPLocation.org.\n\nPrivate by design: the toolbar flag is detected entirely on your device — no network request, no tracking, no account. Only when you open the details popup is the site's server IP sent to MyIPLocation.org to fetch city-level information. Your browsing history is never collected, stored remotely, or sold."
+				},
+				"zh-cn": {
+					"name": "IP Flager — 显示网站所在国家国旗",
+					"tagline": "在工具栏一眼看出网站托管在哪个国家。",
+					"short": "在工具栏一眼看出网站托管在哪个国家，点击即可查看 IP、城市与完整地理位置信息。本地识别、即时、隐私友好。",
+					"long": "不离开页面，就知道任意网站托管在哪里。IP Flager 会在你的工具栏上显示一面小国旗，标明你正在浏览的网站托管在哪个国家。看一眼就知道服务器所在国家，点一下就能看到完整信息 —— IP 地址、城市、地区、邮政编码、时区和经纬度坐标。\n\n国家识别基于内置 IP 数据库完成，国旗立即出现、无需联网。清晰标记 localhost 与局域网 / 私有（RFC1918）IP，绝不瞎猜；精致现代的界面自动适配暗色模式，并可一键跳转 MyIPLocation.org 查看完整 IP 报告。\n\n隐私优先，从设计之初：工具栏上的国旗完全在你本机识别 —— 不联网、不追踪、无需账号。只有当你打开详情弹窗时，才会把该网站的服务器 IP 发送到 MyIPLocation.org 以获取城市级信息。你的浏览历史绝不会被收集、上传或出售。"
+				}
+			}
+		},
+		{
+			"slug": "one-thought-immortal",
+			"category": "game",
+			"type": "game",
+			"sourceDir": "D:/PROJs/games/cultivation/store",
+			"installUrl": ""
+		}
+	]
+}

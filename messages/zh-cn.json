@@ -1,83 +1,118 @@
 {
-  "nav": {
-    "home": "首页",
-    "about": "关于我",
-    "portfolios": "作品集",
-    "skills": "技能专长",
-    "services": "服务项目",
-    "contact": "联系我"
-  },
-  "home": {
-    "title": "用 AI，更快地把你的软件做出来",
-    "subtitle": "Tiger Liu - China Developer | 自1993年起构建软件解决方案",
-    "cta": "联系我",
-    "viewPortfolios": "查看作品集",
-    "featuredProjects": "精选作品",
-    "skills": "技能与技术",
-    "welcome": "AI 时代的全栈开发",
-    "experience": "30 年全栈开发经验，由 Claude Code、Cursor、Codex 全面加持",
-    "description": "我帮任何个人或团队，又快又好地把软件真正做出来——SaaS、Web 与移动应用、游戏、浏览器扩展、AI 工作流等等。从想法到上线，或接手你已有的项目。",
-    "speed": "小任务几小时，复杂项目几天即可交付。",
-    "stats": [
-      { "value": "30", "label": "年专业经验" },
-      { "value": "50+", "label": "交付项目" },
-      { "value": "24h", "label": "平均回复时间" }
-    ],
-    "tags": ["SaaS", "Web 应用", "iOS / Android", "游戏", "浏览器扩展", "代码迁移", "SEO / GEO", "文档处理", "AI 工作流"],
-    "emailCta": "给我发邮件",
-    "emailNote": "告诉我你的需求——我通常 24 小时内回复。",
-    "servicesTitle": "我能帮你做什么",
-    "servicesDescription": "AI 加速的服务，快速解决真实痛点。",
-    "viewServices": "查看全部服务 →",
-    "availableBadge": "正在承接新项目",
-    "testimonialsTitle": "客户怎么说",
-    "testimonialsDescription": "来自我帮助过的创始人与团队的真实反馈。",
-    "featuredDescription": "展示我专业技能的精选项目",
-    "skillsDescription": "我使用的技术和工具"
-  },
-  "about": {
-    "title": "关于我"
-  },
-  "portfolios": {
-    "title": "作品集列表",
-    "viewPortfolio": "查看作品",
-    "viewPortfolioOnGithub": "在GitHub上查看作品",
-    "viewOnGithub": "在GitHub上查看",
-    "viewDetails": "查看详情"
-  },
-  "skills": {
-    "title": "技能专长"
-  },
-  "services": {
-    "title": "AI 时代开发服务",
-    "description": "AI 加速的开发，把想法变成上线的产品——小任务几小时，复杂项目几天即可。",
-    "ctaTitle": "有想做的项目？",
-    "ctaText": "告诉我你的需求——我通常 24 小时内回复。",
-    "ctaButton": "给我发邮件"
-  },
-  "contact": {
-    "title": "联系我",
-    "subtitle": "我可承接全职或兼职远程工作，也接快速的单次任务。说说你的项目，我会在 24 小时内回复你。",
-    "email": "邮箱",
-    "social": "与我联系"
-  },
-  "header": {
-    "brandName": "ChinaDeveloper",
-    "tagline": "Tiger Liu - 资深全栈开发工程师"
-  },
-  "footer": {
-    "brandName": "Tiger Liu - China Developer",
-    "emailCta": "给我发邮件",
-    "description": "Tiger Liu 是一位拥有 30 年经验的资深全栈软件开发工程师。China Developer 专注于 AI 加速的软件开发，可提供远程工作服务。",
-    "quickLinks": "快速链接",
-    "connect": "联系方式",
-    "about": "关于我",
-    "portfolio": "作品集",
-    "services": "服务项目",
-    "contact": "联系我",
-    "privacy": "隐私政策",
-    "copyright": "版权所有。",
-    "builtWith": "使用 Next.js 构建 -",
-    "openSource": "开源"
-  }
+	"nav": {
+		"home": "首页",
+		"about": "关于我",
+		"portfolios": "作品集",
+		"skills": "技能专长",
+		"services": "服务项目",
+		"contact": "联系我"
+	},
+	"home": {
+		"title": "用 AI，更快地把你的软件做出来",
+		"subtitle": "Tiger Liu - China Developer | 自1993年起构建软件解决方案",
+		"cta": "联系我",
+		"viewPortfolios": "查看作品集",
+		"featuredProjects": "精选作品",
+		"skills": "技能与技术",
+		"welcome": "AI 时代的全栈开发",
+		"experience": "30 年全栈开发经验，由 Claude Code、Cursor、Codex 全面加持",
+		"description": "我帮任何个人或团队，又快又好地把软件真正做出来——SaaS、Web 与移动应用、游戏、浏览器扩展、AI 工作流等等。从想法到上线，或接手你已有的项目。",
+		"speed": "小任务几小时，复杂项目几天即可交付。",
+		"stats": [
+			{
+				"value": "30",
+				"label": "年专业经验"
+			},
+			{
+				"value": "50+",
+				"label": "交付项目"
+			},
+			{
+				"value": "24h",
+				"label": "平均回复时间"
+			}
+		],
+		"tags": [
+			"SaaS",
+			"Web 应用",
+			"iOS / Android",
+			"游戏",
+			"浏览器扩展",
+			"代码迁移",
+			"SEO / GEO",
+			"文档处理",
+			"AI 工作流"
+		],
+		"emailCta": "给我发邮件",
+		"emailNote": "告诉我你的需求——我通常 24 小时内回复。",
+		"servicesTitle": "我能帮你做什么",
+		"servicesDescription": "AI 加速的服务，快速解决真实痛点。",
+		"viewServices": "查看全部服务 →",
+		"availableBadge": "正在承接新项目",
+		"testimonialsTitle": "客户怎么说",
+		"testimonialsDescription": "来自我帮助过的创始人与团队的真实反馈。",
+		"featuredDescription": "展示我专业技能的精选项目",
+		"skillsDescription": "我使用的技术和工具"
+	},
+	"about": {
+		"title": "关于我"
+	},
+	"portfolios": {
+		"title": "作品集列表",
+		"viewPortfolio": "查看作品",
+		"viewPortfolioOnGithub": "在GitHub上查看作品",
+		"viewOnGithub": "在GitHub上查看",
+		"viewDetails": "查看详情",
+		"subtitle": "我打造的产品 —— 浏览器扩展、Web 应用与游戏。AI 时代，快速交付。",
+		"categories": {
+			"webapp": "Web 应用",
+			"extension": "浏览器扩展",
+			"game": "游戏",
+			"app": "应用"
+		},
+		"install": "获取",
+		"comingSoon": "即将上线",
+		"itemsCount": "个",
+		"highlights": "亮点",
+		"privacyPolicy": "隐私政策",
+		"backToShowcase": "返回作品集",
+		"moreTitle": "更多项目",
+		"moreDescription": "早期与企业级项目 —— 高铁仿真、教育云、交易系统等。",
+		"moreCta": "浏览全部项目"
+	},
+	"skills": {
+		"title": "技能专长"
+	},
+	"services": {
+		"title": "AI 时代开发服务",
+		"description": "AI 加速的开发，把想法变成上线的产品——小任务几小时，复杂项目几天即可。",
+		"ctaTitle": "有想做的项目？",
+		"ctaText": "告诉我你的需求——我通常 24 小时内回复。",
+		"ctaButton": "给我发邮件"
+	},
+	"contact": {
+		"title": "联系我",
+		"subtitle": "我可承接全职或兼职远程工作，也接快速的单次任务。说说你的项目，我会在 24 小时内回复你。",
+		"email": "邮箱",
+		"social": "与我联系"
+	},
+	"header": {
+		"brandName": "ChinaDeveloper",
+		"tagline": "Tiger Liu - 资深全栈开发工程师"
+	},
+	"footer": {
+		"brandName": "Tiger Liu - China Developer",
+		"emailCta": "给我发邮件",
+		"description": "Tiger Liu 是一位拥有 30 年经验的资深全栈软件开发工程师。China Developer 专注于 AI 加速的软件开发，可提供远程工作服务。",
+		"quickLinks": "快速链接",
+		"connect": "联系方式",
+		"about": "关于我",
+		"portfolio": "作品集",
+		"services": "服务项目",
+		"contact": "联系我",
+		"privacy": "隐私政策",
+		"copyright": "版权所有。",
+		"builtWith": "使用 Next.js 构建 -",
+		"openSource": "开源"
+	}
 }

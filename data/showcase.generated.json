@@ -1,0 +1,2260 @@
+{
+	"generatedOn": "2026-07-05",
+	"locales": [
+		"en",
+		"zh-cn",
+		"es",
+		"fr",
+		"ja",
+		"zh-tw"
+	],
+	"categories": [
+		{
+			"key": "extension",
+			"order": 2
+		},
+		{
+			"key": "game",
+			"order": 3
+		}
+	],
+	"items": [
+		{
+			"slug": "clearkit",
+			"category": "extension",
+			"type": "extension",
+			"installUrl": "",
+			"categoryLabel": "Productivity",
+			"logo": "/assets/showcase/clearkit/logo.svg",
+			"gradient": [
+				"#0D9488",
+				"#0F766E",
+				"#0E7490"
+			],
+			"screenshots": [
+				{
+					"src": "/assets/showcase/clearkit/scrn/01-popup.png",
+					"caption": "Pick a time range and data types, then clear in one click"
+				},
+				{
+					"src": "/assets/showcase/clearkit/scrn/02-dashboard.png",
+					"caption": "Search history, delete by domain, see your top sites & heatmap"
+				},
+				{
+					"src": "/assets/showcase/clearkit/scrn/03-options.png",
+					"caption": "Whitelist your sites and set up the panic shortcut"
+				}
+			],
+			"privacyMarkdown": "# Privacy Policy — ClearKit\n\n_Last updated: 2026-07-04_\n\nClearKit (\"the extension\") is a browsing-data cleaner that runs entirely inside your web browser. It has no account system and no backend server.\n\n## Data we collect\n\n**None.** ClearKit does not collect, store on any server, transmit, share, or sell any personal data or browsing history. There is no sign-in, no analytics, and no telemetry. Everything the extension does — clearing data, searching and deleting history, running scheduled rules — happens locally on your own device. Your settings, auto-clean rules and the local event log (the last 200 clean runs) are stored in your browser via the standard extension storage and never leave your machine.\n\n## Permissions and why they are needed\n\n- **browsingData** — Performs the actual clearing you ask for (history, cache, cookies and other site data) via the browser's `browsingData` API. Your whitelist is enforced here so protected sites are skipped, and the reverse mode targets only the sites you list. It runs only on an explicit action by you, your keyboard shortcut, or a schedule you configured.\n- **history** — Powers the local history dashboard: searching and filtering entries, showing top-domain and browsing-heatmap statistics, and deleting history grouped by domain (including per-domain deletion when you clear the current site). History is read and deleted on your device only — nothing is uploaded or transmitted.\n- **storage** — Persists your settings, auto-clean rules and the local-only event log so they survive the service worker being recycled. All values stay in the browser's local extension storage.\n- **alarms** — Schedules your auto-clean rules on the cadence you set (every 15 minutes to 24 hours, or at browser startup). Used only for the extension's own local scheduling.\n- **notifications** — Shows a system notification when a clean finishes, so you get confirmation of a task you started. Notifications result from your own actions or your own scheduled rules.\n- **activeTab** — Reads the current tab's URL, only while the popup is open, so the \"Clear this site\" card can show and target the site's domain. Limited to the tab you are on at that moment; ClearKit does not request the broader `tabs` permission.\n\nClearKit requests **no host permissions** and does not use the `cookies` or `scripting` permissions — it never runs code on the pages you visit.\n\n## Remote code\n\nClearKit does **not** load or execute any remote code. All JavaScript and WebAssembly are bundled in the extension package.\n\n## Changes\n\nIf this policy changes, the \"Last updated\" date above will change accordingly. The current version is published at: https://xeviora.com/clearkit-privacy\n\n## Contact\n\nQuestions? Contact tiger.hu.liu@gmail.com",
+			"content": {
+				"en": {
+					"name": "ClearKit – History & Cache Cleaner",
+					"tagline": "Clear your browsing history, cache and cookies in one click or on an automatic schedule — while a whitelist keeps you signed in to the sites you use every day.",
+					"short": "Clear history, cache & cookies in one click or on schedule. A whitelist keeps you signed in. 100% offline, no login.",
+					"long": "Most cleaners force a trade-off: wipe your cookies to clear tracking, and you're logged out of everything you use. ClearKit fixes that. Clear your history, cache and cookies in one click — or on an automatic schedule — while a whitelist protects the sites you want to stay signed in to. Everything runs inside your browser: no account, no server, nothing ever leaves your device.\n\n**Why install it**\nClearKit is a proper cleaning centre, not a single button. It does one-click manual cleaning the most convenient way, gives you free scheduled auto-cleaning that paid extensions charge for, and adds three things nobody else offers together: a whitelist that protects your logins, a panic shortcut, and a history dashboard — all 100% offline.\n\n**What you can do**\n- 🧹 **One-click cleaning** — Clear 13 data types across 12 time ranges — from the last minute to all time. Pin your favourites, confirm before wiping, and get a badge, sound-free notification and animation when it's done.\n- 🛡️ **Whitelist keeps you signed in** — Protect the domains you care about: cookies, cache and site data for whitelisted sites are skipped, so your history clears clean but you stay logged in to Gmail, GitHub and the rest. A reverse mode clears only the sites you list.\n- 🌐 **Clear this site** — One tap on the current tab wipes its cookies, cache and site data — and, if you want, every history entry for that domain, subdomains included.\n- ⚡ **Panic shortcut** — Alt+Shift+C instantly runs your preset — no popup, no questions — and can close every tab and open a fresh window for a leave-no-trace retreat.\n- ⏰ **Scheduled auto-clean** — Build rules that run in the background every 15 minutes to 24 hours, or at browser startup. Free — no subscription, no upsell. Sensitive types are off by default so nothing wipes while you type.\n- 📊 **History dashboard** — Search and filter your history, delete it grouped by domain, and see your top sites and a browsing heatmap. A running log records every clean; official links jump to server-side search history you can't delete locally.\n- 🔒 **100% offline & no login** — Everything runs in your browser. No account, no backend, no analytics, no tracking — nothing ever leaves your device.\n\n**Private by design**\nClearKit collects nothing. There is no sign-in, no server, and no analytics. Your history and settings stay in your browser's local storage and are never sold or transmitted. It asks for the minimum permissions — no host permissions, no access to your browsing beyond the local dashboard you open yourself.\n\n**Great for**\nAnyone who wants a clean, private browser — privacy-minded users, people on shared or public computers, and power users who want scheduled, hands-off cleanup without losing their logins.\n\n**Keyboard shortcuts**\n- Open ClearKit: Alt+Shift+K\n- Panic clean (run preset now): Alt+Shift+C\n\n**A note on sensitive data**\nSaved passwords and form data are off by default and clearly marked — ClearKit will never wipe them unless you deliberately opt in. Scheduled rules leave them out too, so nothing disappears while you're filling in a form.\n\n**Privacy**\nClearKit collects nothing and runs entirely offline. Privacy policy: https://xeviora.com/clearkit-privacy",
+					"features": [
+						{
+							"emoji": "🧹",
+							"title": "One-click cleaning",
+							"desc": "Clear 13 data types across 12 time ranges — from the last minute to all time. Pin your favourites, confirm before wiping, and get a badge, sound-free notification and animation when it's done."
+						},
+						{
+							"emoji": "🛡️",
+							"title": "Whitelist keeps you signed in",
+							"desc": "Protect the domains you care about: cookies, cache and site data for whitelisted sites are skipped, so your history clears clean but you stay logged in to Gmail, GitHub and the rest. A reverse mode clears only the sites you list."
+						},
+						{
+							"emoji": "🌐",
+							"title": "Clear this site",
+							"desc": "One tap on the current tab wipes its cookies, cache and site data — and, if you want, every history entry for that domain, subdomains included."
+						},
+						{
+							"emoji": "⚡",
+							"title": "Panic shortcut",
+							"desc": "Alt+Shift+C instantly runs your preset — no popup, no questions — and can close every tab and open a fresh window for a leave-no-trace retreat."
+						},
+						{
+							"emoji": "⏰",
+							"title": "Scheduled auto-clean",
+							"desc": "Build rules that run in the background every 15 minutes to 24 hours, or at browser startup. Free — no subscription, no upsell. Sensitive types are off by default so nothing wipes while you type."
+						},
+						{
+							"emoji": "📊",
+							"title": "History dashboard",
+							"desc": "Search and filter your history, delete it grouped by domain, and see your top sites and a browsing heatmap. A running log records every clean; official links jump to server-side search history you can't delete locally."
+						},
+						{
+							"emoji": "🔒",
+							"title": "100% offline & no login",
+							"desc": "Everything runs in your browser. No account, no backend, no analytics, no tracking — nothing ever leaves your device."
+						}
+					]
+				},
+				"zh-cn": {
+					"name": "ClearKit – 历史与缓存清理",
+					"short": "一键或定时清理历史、缓存和 Cookie，白名单让你保持登录。100% 离线，无需注册登录。",
+					"long": "大多数清理工具都逼你二选一：想清掉追踪就得删 Cookie，结果所有网站的登录状态全没了。ClearKit 解决了这个问题。一键——或按自动计划——清理历史、缓存和 Cookie，同时用白名单保护你想保持登录的网站。一切都在浏览器内完成：无账号、无服务器，数据从不离开你的设备。\n\n**为什么值得安装**\nClearKit 是一个真正的清理中心，而不是一个孤零零的按钮。它把一键手动清理做到最顺手，免费提供其他扩展要收费的定时自动清理，还集齐了别家不会一起给你的三件事：保护登录的白名单、应急快捷键，以及历史面板——全部 100% 离线。\n\n**你能做什么**\n- 🧹 **一键清理** — 覆盖 13 种数据类型、12 个时间范围，从最近一分钟到全部时间。收藏常用项、清理前确认，完成后有角标、静音通知和动画提示。\n- 🛡️ **白名单保持登录** — 保护你在意的域名：白名单站点的 Cookie、缓存和网站数据会被跳过，历史干净清空，但 Gmail、GitHub 等仍保持登录。反向模式则只清理你列出的网站。\n- 🌐 **清理本站** — 在当前标签页点一下，即可清除该站的 Cookie、缓存和网站数据；如需要，还可连同该域名（含子域名）的全部历史记录一起清掉。\n- ⚡ **应急快捷键** — Alt+Shift+C 立即执行你的预设——无弹窗、无追问——还能关闭所有标签页并打开一个全新窗口，做到不留痕迹的快速撤离。\n- ⏰ **定时自动清理** — 创建规则，在后台每 15 分钟到 24 小时运行一次，或在浏览器启动时运行。完全免费——无订阅、无诱导付费。敏感类型默认关闭，打字时不会被误清。\n- 📊 **历史面板** — 搜索并筛选历史记录，按域名分组删除，查看常访问站点和浏览热力图。运行日志记录每次清理；官方链接可跳转到本地无法删除的服务端搜索历史。\n- 🔒 **100% 离线，无需登录** — 一切都在浏览器内运行。无账号、无后端、无分析、无追踪——数据从不离开你的设备。\n\n**从设计之初就注重隐私**\nClearKit 不收集任何数据。没有登录、没有服务器、没有分析统计。你的历史和设置只保存在浏览器本地存储中，绝不出售或上传。它只申请最少的权限——没有主机权限，除了你自己打开的本地面板外，不访问你的任何浏览数据。\n\n**适合谁**\n任何想要一个干净、私密浏览器的人——注重隐私的用户、使用共享或公用电脑的人，以及希望定时自动清理又不丢失登录状态的高级用户。\n\n**键盘快捷键**\n- 打开 ClearKit：Alt+Shift+K\n- 应急清理（立即执行预设）：Alt+Shift+C\n\n**关于敏感数据的说明**\n已保存的密码和表单数据默认关闭并明确标注——除非你主动勾选，ClearKit 绝不会清除它们。定时规则同样会跳过这些数据，填表时不会有东西突然消失。\n\n**隐私**\nClearKit 不收集任何数据，完全离线运行。隐私政策：https://xeviora.com/clearkit-privacy",
+					"features": [
+						{
+							"emoji": "🧹",
+							"title": "One-click cleaning",
+							"desc": "Clear 13 data types across 12 time ranges — from the last minute to all time. Pin your favourites, confirm before wiping, and get a badge, sound-free notification and animation when it's done."
+						},
+						{
+							"emoji": "🛡️",
+							"title": "Whitelist keeps you signed in",
+							"desc": "Protect the domains you care about: cookies, cache and site data for whitelisted sites are skipped, so your history clears clean but you stay logged in to Gmail, GitHub and the rest. A reverse mode clears only the sites you list."
+						},
+						{
+							"emoji": "🌐",
+							"title": "Clear this site",
+							"desc": "One tap on the current tab wipes its cookies, cache and site data — and, if you want, every history entry for that domain, subdomains included."
+						},
+						{
+							"emoji": "⚡",
+							"title": "Panic shortcut",
+							"desc": "Alt+Shift+C instantly runs your preset — no popup, no questions — and can close every tab and open a fresh window for a leave-no-trace retreat."
+						},
+						{
+							"emoji": "⏰",
+							"title": "Scheduled auto-clean",
+							"desc": "Build rules that run in the background every 15 minutes to 24 hours, or at browser startup. Free — no subscription, no upsell. Sensitive types are off by default so nothing wipes while you type."
+						},
+						{
+							"emoji": "📊",
+							"title": "History dashboard",
+							"desc": "Search and filter your history, delete it grouped by domain, and see your top sites and a browsing heatmap. A running log records every clean; official links jump to server-side search history you can't delete locally."
+						},
+						{
+							"emoji": "🔒",
+							"title": "100% offline & no login",
+							"desc": "Everything runs in your browser. No account, no backend, no analytics, no tracking — nothing ever leaves your device."
+						}
+					]
+				},
+				"es": {
+					"name": "ClearKit – Limpiador de historial y caché",
+					"short": "Borra historial, caché y cookies con un clic o programado. Una lista blanca te mantiene con sesión. 100% sin conexión.",
+					"long": "La mayoría de los limpiadores te obligan a elegir: borras las cookies para eliminar el rastreo y te quedas sin sesión en todo lo que usas. ClearKit lo soluciona. Borra tu historial, caché y cookies con un solo clic —o de forma automática programada— mientras una lista blanca protege los sitios en los que quieres seguir con la sesión iniciada. Todo se ejecuta dentro de tu navegador: sin cuenta, sin servidor, nada sale nunca de tu dispositivo.\n\n**Por qué instalarlo**\nClearKit es un auténtico centro de limpieza, no un simple botón. Ofrece la limpieza manual con un clic de la forma más cómoda, te da gratis la limpieza automática programada que otras extensiones cobran, y suma tres cosas que nadie más reúne: una lista blanca que protege tus sesiones, un atajo de pánico y un panel de historial, todo 100% sin conexión.\n\n**Qué puedes hacer**\n- 🧹 **Limpieza con un clic** — Borra 13 tipos de datos en 12 rangos de tiempo, desde el último minuto hasta todo el historial. Fija tus favoritos, confirma antes de borrar y recibe una insignia, una notificación silenciosa y una animación al terminar.\n- 🛡️ **La lista blanca mantiene tu sesión** — Protege los dominios que te importan: las cookies, la caché y los datos de sitio de la lista blanca se omiten, así tu historial queda limpio pero sigues con la sesión iniciada en Gmail, GitHub y los demás. Un modo inverso borra solo los sitios que indiques.\n- 🌐 **Limpiar este sitio** — Un toque en la pestaña actual borra sus cookies, caché y datos de sitio y, si quieres, todas las entradas de historial de ese dominio, subdominios incluidos.\n- ⚡ **Atajo de pánico** — Alt+Shift+C ejecuta tu preajuste al instante —sin ventana emergente, sin preguntas— y puede cerrar todas las pestañas y abrir una ventana nueva para una retirada sin dejar rastro.\n- ⏰ **Limpieza automática programada** — Crea reglas que se ejecutan en segundo plano cada 15 minutos a 24 horas, o al iniciar el navegador. Gratis, sin suscripción ni ventas adicionales. Los tipos sensibles están desactivados por defecto, así que nada se borra mientras escribes.\n- 📊 **Panel de historial** — Busca y filtra tu historial, elimínalo agrupado por dominio y consulta tus sitios más visitados y un mapa de calor de navegación. Un registro anota cada limpieza; los enlaces oficiales te llevan al historial de búsqueda del servidor que no puedes borrar en local.\n- 🔒 **100% sin conexión y sin inicio de sesión** — Todo se ejecuta en tu navegador. Sin cuenta, sin servidor, sin analíticas, sin rastreo; nada sale nunca de tu dispositivo.\n\n**Privado por diseño**\nClearKit no recopila nada. No hay inicio de sesión, ni servidor, ni analíticas. Tu historial y tu configuración se quedan en el almacenamiento local del navegador y nunca se venden ni se transmiten. Pide los permisos mínimos: sin permisos de host, sin acceso a tu navegación más allá del panel local que abres tú mismo.\n\n**Ideal para**\nCualquiera que quiera un navegador limpio y privado: personas que cuidan su privacidad, quienes usan ordenadores compartidos o públicos y usuarios avanzados que buscan una limpieza automática y programada sin perder sus sesiones.\n\n**Atajos de teclado**\n- Abrir ClearKit: Alt+Shift+K\n- Limpieza de pánico (ejecutar preajuste ahora): Alt+Shift+C\n\n**Nota sobre los datos sensibles**\nLas contraseñas guardadas y los datos de formularios están desactivados por defecto y claramente marcados: ClearKit nunca los borrará a menos que lo actives a propósito. Las reglas programadas también los omiten, así que nada desaparece mientras rellenas un formulario.\n\n**Privacidad**\nClearKit no recopila nada y funciona totalmente sin conexión. Política de privacidad: https://xeviora.com/clearkit-privacy",
+					"features": [
+						{
+							"emoji": "🧹",
+							"title": "One-click cleaning",
+							"desc": "Clear 13 data types across 12 time ranges — from the last minute to all time. Pin your favourites, confirm before wiping, and get a badge, sound-free notification and animation when it's done."
+						},
+						{
+							"emoji": "🛡️",
+							"title": "Whitelist keeps you signed in",
+							"desc": "Protect the domains you care about: cookies, cache and site data for whitelisted sites are skipped, so your history clears clean but you stay logged in to Gmail, GitHub and the rest. A reverse mode clears only the sites you list."
+						},
+						{
+							"emoji": "🌐",
+							"title": "Clear this site",
+							"desc": "One tap on the current tab wipes its cookies, cache and site data — and, if you want, every history entry for that domain, subdomains included."
+						},
+						{
+							"emoji": "⚡",
+							"title": "Panic shortcut",
+							"desc": "Alt+Shift+C instantly runs your preset — no popup, no questions — and can close every tab and open a fresh window for a leave-no-trace retreat."
+						},
+						{
+							"emoji": "⏰",
+							"title": "Scheduled auto-clean",
+							"desc": "Build rules that run in the background every 15 minutes to 24 hours, or at browser startup. Free — no subscription, no upsell. Sensitive types are off by default so nothing wipes while you type."
+						},
+						{
+							"emoji": "📊",
+							"title": "History dashboard",
+							"desc": "Search and filter your history, delete it grouped by domain, and see your top sites and a browsing heatmap. A running log records every clean; official links jump to server-side search history you can't delete locally."
+						},
+						{
+							"emoji": "🔒",
+							"title": "100% offline & no login",
+							"desc": "Everything runs in your browser. No account, no backend, no analytics, no tracking — nothing ever leaves your device."
+						}
+					]
+				},
+				"fr": {
+					"name": "ClearKit – Nettoyeur d'historique et cache",
+					"short": "Effacez historique, cache et cookies en un clic ou automatiquement. Une liste blanche vous garde connecté. 100% hors ligne.",
+					"long": "La plupart des nettoyeurs vous imposent un compromis : effacez vos cookies pour supprimer le pistage, et vous voilà déconnecté de tout ce que vous utilisez. ClearKit résout ce problème. Effacez votre historique, votre cache et vos cookies en un clic — ou selon une planification automatique — pendant qu'une liste blanche protège les sites où vous voulez rester connecté. Tout s'exécute dans votre navigateur : aucun compte, aucun serveur, rien ne quitte jamais votre appareil.\n\n**Pourquoi l'installer**\nClearKit est un véritable centre de nettoyage, pas un simple bouton. Il propose le nettoyage manuel en un clic de la façon la plus pratique, vous offre gratuitement le nettoyage automatique planifié que d'autres extensions font payer, et réunit trois choses que personne d'autre ne rassemble : une liste blanche qui protège vos connexions, un raccourci d'urgence et un tableau de bord d'historique — le tout 100% hors ligne.\n\n**Ce que vous pouvez faire**\n- 🧹 **Nettoyage en un clic** — Effacez 13 types de données sur 12 plages de temps, de la dernière minute à l'historique complet. Épinglez vos favoris, confirmez avant d'effacer et recevez un badge, une notification silencieuse et une animation à la fin.\n- 🛡️ **La liste blanche vous garde connecté** — Protégez les domaines qui comptent : les cookies, le cache et les données de site des sites en liste blanche sont ignorés, votre historique s'efface proprement mais vous restez connecté à Gmail, GitHub et les autres. Un mode inverse n'efface que les sites que vous indiquez.\n- 🌐 **Effacer ce site** — Un appui sur l'onglet actif supprime ses cookies, son cache et ses données de site — et, si vous le souhaitez, chaque entrée d'historique de ce domaine, sous-domaines compris.\n- ⚡ **Raccourci d'urgence** — Alt+Shift+C exécute instantanément votre préréglage — sans fenêtre, sans question — et peut fermer tous les onglets et ouvrir une nouvelle fenêtre pour une retraite sans laisser de trace.\n- ⏰ **Nettoyage automatique planifié** — Créez des règles qui s'exécutent en arrière-plan toutes les 15 minutes à 24 heures, ou au démarrage du navigateur. Gratuit, sans abonnement ni vente incitative. Les types sensibles sont désactivés par défaut, rien ne s'efface pendant que vous tapez.\n- 📊 **Tableau de bord d'historique** — Recherchez et filtrez votre historique, supprimez-le par domaine et consultez vos sites les plus visités ainsi qu'une carte de chaleur de navigation. Un journal enregistre chaque nettoyage ; des liens officiels mènent à l'historique de recherche côté serveur, impossible à supprimer en local.\n- 🔒 **100% hors ligne et sans connexion** — Tout s'exécute dans votre navigateur. Aucun compte, aucun serveur, aucune analyse, aucun pistage — rien ne quitte jamais votre appareil.\n\n**Confidentiel par conception**\nClearKit ne collecte rien. Pas de connexion, pas de serveur, pas d'analyse. Votre historique et vos réglages restent dans le stockage local de votre navigateur et ne sont jamais vendus ni transmis. Il demande le minimum d'autorisations : aucune autorisation d'hôte, aucun accès à votre navigation au-delà du tableau de bord local que vous ouvrez vous-même.\n\n**Idéal pour**\nToute personne qui veut un navigateur propre et privé : utilisateurs soucieux de leur vie privée, personnes sur ordinateurs partagés ou publics et utilisateurs avancés qui veulent un nettoyage planifié et automatique sans perdre leurs connexions.\n\n**Raccourcis clavier**\n- Ouvrir ClearKit : Alt+Shift+K\n- Nettoyage d'urgence (exécuter le préréglage) : Alt+Shift+C\n\n**Remarque sur les données sensibles**\nLes mots de passe enregistrés et les données de formulaire sont désactivés par défaut et clairement signalés — ClearKit ne les effacera jamais sans que vous l'activiez délibérément. Les règles planifiées les excluent aussi, rien ne disparaît pendant que vous remplissez un formulaire.\n\n**Confidentialité**\nClearKit ne collecte rien et fonctionne entièrement hors ligne. Politique de confidentialité : https://xeviora.com/clearkit-privacy",
+					"features": [
+						{
+							"emoji": "🧹",
+							"title": "One-click cleaning",
+							"desc": "Clear 13 data types across 12 time ranges — from the last minute to all time. Pin your favourites, confirm before wiping, and get a badge, sound-free notification and animation when it's done."
+						},
+						{
+							"emoji": "🛡️",
+							"title": "Whitelist keeps you signed in",
+							"desc": "Protect the domains you care about: cookies, cache and site data for whitelisted sites are skipped, so your history clears clean but you stay logged in to Gmail, GitHub and the rest. A reverse mode clears only the sites you list."
+						},
+						{
+							"emoji": "🌐",
+							"title": "Clear this site",
+							"desc": "One tap on the current tab wipes its cookies, cache and site data — and, if you want, every history entry for that domain, subdomains included."
+						},
+						{
+							"emoji": "⚡",
+							"title": "Panic shortcut",
+							"desc": "Alt+Shift+C instantly runs your preset — no popup, no questions — and can close every tab and open a fresh window for a leave-no-trace retreat."
+						},
+						{
+							"emoji": "⏰",
+							"title": "Scheduled auto-clean",
+							"desc": "Build rules that run in the background every 15 minutes to 24 hours, or at browser startup. Free — no subscription, no upsell. Sensitive types are off by default so nothing wipes while you type."
+						},
+						{
+							"emoji": "📊",
+							"title": "History dashboard",
+							"desc": "Search and filter your history, delete it grouped by domain, and see your top sites and a browsing heatmap. A running log records every clean; official links jump to server-side search history you can't delete locally."
+						},
+						{
+							"emoji": "🔒",
+							"title": "100% offline & no login",
+							"desc": "Everything runs in your browser. No account, no backend, no analytics, no tracking — nothing ever leaves your device."
+						}
+					]
+				},
+				"ja": {
+					"name": "ClearKit – 履歴とキャッシュのクリーナー",
+					"short": "履歴・キャッシュ・Cookie をワンクリックまたは定期実行で削除。ホワイトリストでログインは維持。100% オフライン、登録不要。",
+					"long": "たいていのクリーナーはトレードオフを迫ります。追跡を消すために Cookie を消せば、使っているサービスから軒並みログアウトされてしまう。ClearKit はそれを解決します。履歴・キャッシュ・Cookie をワンクリック、あるいは自動スケジュールで削除しながら、ホワイトリストがログインを保ちたいサイトを守ります。すべてはブラウザ内で完結し、アカウントもサーバーも不要、データが端末から出ることは一切ありません。\n\n**インストールする理由**\nClearKit は単なるボタンではなく、本格的なクリーニングセンターです。ワンクリックの手動クリーニングを最も手軽にこなし、有料拡張が課金する定期自動クリーニングを無料で提供し、さらに他社がまとめて提供しない3つ——ログインを守るホワイトリスト、緊急ショートカット、履歴ダッシュボード——を備えています。すべて 100% オフライン。\n\n**できること**\n- 🧹 **ワンクリック削除** — 13種類のデータを12の期間で削除。直近1分から全期間まで対応。よく使う設定をピン留めし、削除前に確認、完了時にはバッジ・無音通知・アニメーションでお知らせ。\n- 🛡️ **ホワイトリストでログイン維持** — 大切なドメインを保護。ホワイトリスト登録サイトの Cookie・キャッシュ・サイトデータはスキップされ、履歴はきれいに消えても Gmail や GitHub などのログインは維持されます。逆モードでは登録したサイトだけを削除します。\n- 🌐 **このサイトを削除** — 現在のタブで1タップするだけで、そのサイトの Cookie・キャッシュ・サイトデータを削除。必要なら、そのドメイン（サブドメイン含む）の履歴もすべてまとめて削除できます。\n- ⚡ **緊急ショートカット** — Alt+Shift+C でプリセットを即実行——ポップアップも確認もなし——さらに全タブを閉じて新しいウィンドウを開き、痕跡を残さず退避できます。\n- ⏰ **定期自動クリーニング** — 15分〜24時間ごと、またはブラウザ起動時にバックグラウンドで動くルールを作成。無料——サブスクもアップセルもなし。機微なデータ種別は初期状態でオフなので、入力中に消える心配はありません。\n- 📊 **履歴ダッシュボード** — 履歴を検索・絞り込みし、ドメインごとにまとめて削除。よく見るサイトや閲覧ヒートマップも確認できます。実行ログが毎回のクリーニングを記録し、公式リンクからローカルでは消せないサーバー側の検索履歴へ移動できます。\n- 🔒 **100% オフライン・ログイン不要** — すべてブラウザ内で動作。アカウントもバックエンドも解析も追跡もなし——データが端末から出ることはありません。\n\n**設計段階からプライバシー重視**\nClearKit は何も収集しません。ログインもサーバーも解析もありません。履歴と設定はブラウザのローカルストレージに保存され、売却も送信も一切されません。要求する権限は最小限——ホスト権限はなく、自分で開くローカルダッシュボード以外にあなたの閲覧へアクセスすることはありません。\n\n**こんな人におすすめ**\nクリーンでプライベートなブラウザが欲しいすべての人——プライバシーを重視する人、共有・公共のパソコンを使う人、そしてログインを失わずに定期的な自動クリーニングをしたい上級ユーザー。\n\n**キーボードショートカット**\n- ClearKit を開く：Alt+Shift+K\n- 緊急クリーニング（プリセットを今すぐ実行）：Alt+Shift+C\n\n**機微なデータについて**\n保存済みのパスワードやフォームデータは初期状態でオフになっており、明確に表示されます——あなたが意図的にオンにしない限り、ClearKit が消すことはありません。定期ルールもこれらを除外するため、フォーム入力中に何かが消える心配はありません。\n\n**プライバシー**\nClearKit は何も収集せず、完全にオフラインで動作します。プライバシーポリシー：https://xeviora.com/clearkit-privacy",
+					"features": [
+						{
+							"emoji": "🧹",
+							"title": "One-click cleaning",
+							"desc": "Clear 13 data types across 12 time ranges — from the last minute to all time. Pin your favourites, confirm before wiping, and get a badge, sound-free notification and animation when it's done."
+						},
+						{
+							"emoji": "🛡️",
+							"title": "Whitelist keeps you signed in",
+							"desc": "Protect the domains you care about: cookies, cache and site data for whitelisted sites are skipped, so your history clears clean but you stay logged in to Gmail, GitHub and the rest. A reverse mode clears only the sites you list."
+						},
+						{
+							"emoji": "🌐",
+							"title": "Clear this site",
+							"desc": "One tap on the current tab wipes its cookies, cache and site data — and, if you want, every history entry for that domain, subdomains included."
+						},
+						{
+							"emoji": "⚡",
+							"title": "Panic shortcut",
+							"desc": "Alt+Shift+C instantly runs your preset — no popup, no questions — and can close every tab and open a fresh window for a leave-no-trace retreat."
+						},
+						{
+							"emoji": "⏰",
+							"title": "Scheduled auto-clean",
+							"desc": "Build rules that run in the background every 15 minutes to 24 hours, or at browser startup. Free — no subscription, no upsell. Sensitive types are off by default so nothing wipes while you type."
+						},
+						{
+							"emoji": "📊",
+							"title": "History dashboard",
+							"desc": "Search and filter your history, delete it grouped by domain, and see your top sites and a browsing heatmap. A running log records every clean; official links jump to server-side search history you can't delete locally."
+						},
+						{
+							"emoji": "🔒",
+							"title": "100% offline & no login",
+							"desc": "Everything runs in your browser. No account, no backend, no analytics, no tracking — nothing ever leaves your device."
+						}
+					]
+				},
+				"zh-tw": {
+					"name": "ClearKit – 歷史與快取清理",
+					"short": "一鍵或定時清理歷史、快取和 Cookie，白名單讓你保持登入。100% 離線，免註冊登入。",
+					"long": "大多數清理工具都逼你二選一：想清掉追蹤就得刪 Cookie，結果所有網站的登入狀態全沒了。ClearKit 解決了這個問題。一鍵——或依自動排程——清理歷史、快取和 Cookie，同時用白名單保護你想保持登入的網站。一切都在瀏覽器內完成：無帳號、無伺服器，資料從不離開你的裝置。\n\n**為什麼值得安裝**\nClearKit 是一個真正的清理中心，而不是一個孤零零的按鈕。它把一鍵手動清理做到最順手，免費提供其他擴充功能要收費的定時自動清理，還集齊了別家不會一起給你的三件事：保護登入的白名單、緊急快捷鍵，以及歷史儀表板——全部 100% 離線。\n\n**你能做什麼**\n- 🧹 **一鍵清理** — 涵蓋 13 種資料類型、12 個時間範圍，從最近一分鐘到所有時間。釘選常用項、清理前確認，完成後有角標、靜音通知和動畫提示。\n- 🛡️ **白名單保持登入** — 保護你在意的網域：白名單網站的 Cookie、快取和網站資料會被略過，歷史乾淨清空，但 Gmail、GitHub 等仍保持登入。反向模式則只清理你列出的網站。\n- 🌐 **清理本站** — 在目前分頁點一下，即可清除該站的 Cookie、快取和網站資料；如有需要，還可連同該網域（含子網域）的全部歷史記錄一併清掉。\n- ⚡ **緊急快捷鍵** — Alt+Shift+C 立即執行你的預設——無彈窗、無追問——還能關閉所有分頁並開啟一個全新視窗，做到不留痕跡的快速撤離。\n- ⏰ **定時自動清理** — 建立規則，在背景每 15 分鐘到 24 小時執行一次，或在瀏覽器啟動時執行。完全免費——無訂閱、無誘導付費。敏感類型預設關閉，打字時不會被誤清。\n- 📊 **歷史儀表板** — 搜尋並篩選歷史記錄，依網域分組刪除，查看常造訪網站和瀏覽熱力圖。執行紀錄記下每次清理；官方連結可跳轉到本機無法刪除的伺服器端搜尋歷史。\n- 🔒 **100% 離線，免登入** — 一切都在瀏覽器內執行。無帳號、無後端、無分析、無追蹤——資料從不離開你的裝置。\n\n**從設計之初就注重隱私**\nClearKit 不收集任何資料。沒有登入、沒有伺服器、沒有分析統計。你的歷史和設定只保存在瀏覽器本機儲存空間中，絕不出售或傳輸。它只要求最少的權限——沒有主機權限，除了你自己開啟的本機儀表板外，不存取你的任何瀏覽資料。\n\n**適合誰**\n任何想要一個乾淨、私密瀏覽器的人——注重隱私的使用者、使用共用或公用電腦的人，以及希望定時自動清理又不丟失登入狀態的進階使用者。\n\n**鍵盤快捷鍵**\n- 開啟 ClearKit：Alt+Shift+K\n- 緊急清理（立即執行預設）：Alt+Shift+C\n\n**關於敏感資料的說明**\n已儲存的密碼和表單資料預設關閉並明確標註——除非你主動勾選，ClearKit 絕不會清除它們。定時規則同樣會略過這些資料，填表時不會有東西突然消失。\n\n**隱私**\nClearKit 不收集任何資料，完全離線執行。隱私政策：https://xeviora.com/clearkit-privacy",
+					"features": [
+						{
+							"emoji": "🧹",
+							"title": "One-click cleaning",
+							"desc": "Clear 13 data types across 12 time ranges — from the last minute to all time. Pin your favourites, confirm before wiping, and get a badge, sound-free notification and animation when it's done."
+						},
+						{
+							"emoji": "🛡️",
+							"title": "Whitelist keeps you signed in",
+							"desc": "Protect the domains you care about: cookies, cache and site data for whitelisted sites are skipped, so your history clears clean but you stay logged in to Gmail, GitHub and the rest. A reverse mode clears only the sites you list."
+						},
+						{
+							"emoji": "🌐",
+							"title": "Clear this site",
+							"desc": "One tap on the current tab wipes its cookies, cache and site data — and, if you want, every history entry for that domain, subdomains included."
+						},
+						{
+							"emoji": "⚡",
+							"title": "Panic shortcut",
+							"desc": "Alt+Shift+C instantly runs your preset — no popup, no questions — and can close every tab and open a fresh window for a leave-no-trace retreat."
+						},
+						{
+							"emoji": "⏰",
+							"title": "Scheduled auto-clean",
+							"desc": "Build rules that run in the background every 15 minutes to 24 hours, or at browser startup. Free — no subscription, no upsell. Sensitive types are off by default so nothing wipes while you type."
+						},
+						{
+							"emoji": "📊",
+							"title": "History dashboard",
+							"desc": "Search and filter your history, delete it grouped by domain, and see your top sites and a browsing heatmap. A running log records every clean; official links jump to server-side search history you can't delete locally."
+						},
+						{
+							"emoji": "🔒",
+							"title": "100% offline & no login",
+							"desc": "Everything runs in your browser. No account, no backend, no analytics, no tracking — nothing ever leaves your device."
+						}
+					]
+				}
+			}
+		},
+		{
+			"slug": "qr-studio",
+			"category": "extension",
+			"type": "extension",
+			"installUrl": "https://chromewebstore.google.com/detail/pmhaplicaffnppnlkcgfdonnjjonaeil",
+			"categoryLabel": "Productivity",
+			"logo": "/assets/showcase/qr-studio/logo.png",
+			"gradient": null,
+			"screenshots": [
+				{
+					"src": "/assets/showcase/qr-studio/scrn/01-generator.jpg",
+					"caption": ""
+				},
+				{
+					"src": "/assets/showcase/qr-studio/scrn/02-popup.jpg",
+					"caption": ""
+				},
+				{
+					"src": "/assets/showcase/qr-studio/scrn/03-tools.jpg",
+					"caption": ""
+				}
+			],
+			"privacyMarkdown": "# Privacy Policy — QR Studio\r\n\r\n**Last updated:** 2026-06-28\r\n\r\nQR Studio (“the extension”) is designed to be 100% local and private. This policy explains exactly what the extension does and does not do with your information.\r\n\r\n## Summary\r\n\r\nQR Studio **does not collect, store remotely, sell, or transmit any personal data.** All QR code generation and scanning happens entirely on your device. The extension makes **no business network requests**, contains **no analytics or tracking**, and requires **no account**.\r\n\r\n## What we collect\r\n\r\nNothing. The extension does not gather analytics, telemetry, usage statistics, identifiers, or any personal information, and it sends nothing to us or to any third party.\r\n\r\n## Data stored on your device\r\n\r\nTo provide its features, QR Studio saves the following **only in your browser’s local storage** (`chrome.storage.local`), on your own computer:\r\n\r\n- Your generation and scan **history** (the content you encode or decode).\r\n- Your saved **style templates**.\r\n- Your **settings** (theme, history limit, and related preferences).\r\n\r\nThis data never leaves your browser. You can clear your history at any time from the extension’s settings, and you can export or import it yourself as a JSON file that stays on your device.\r\n\r\n## Permissions and why they are needed\r\n\r\nThe extension requests the minimum permissions required for its features:\r\n\r\n- **activeTab** — Reads the current tab’s URL (only when you open the popup) to pre-fill a QR code, and captures the visible tab when you choose full-page scanning. Limited to the tab you explicitly acted on.\r\n- **contextMenus** — Adds right-click menu items so you can generate a QR for the current page, link or selected text, or scan a QR code inside an image.\r\n- **storage** — Saves your history, style templates and settings locally on your device.\r\n- **unlimitedStorage** — Allows a larger local history and template library without hitting the default storage quota. Still entirely local.\r\n- **scripting** — Injects a small result overlay on demand (only when you scan an image via the right-click menu) to display the decoded value on the page.\r\n\r\nThe extension does **not** request `host_permissions`, broad site access, `tabs`, or `downloads`.\r\n\r\n## Third parties\r\n\r\nThere are no third-party services, SDKs, analytics providers, or remote APIs integrated into the extension.\r\n\r\n## Children’s privacy\r\n\r\nThe extension collects no data from anyone, including children.\r\n\r\n## Changes to this policy\r\n\r\nIf this policy changes, the updated version will be published at the URL below with a new “Last updated” date.\r\n\r\n## Contact\r\n\r\nQuestions about this policy: **tiger.hu.liu@gmail.com**\r\n\r\nPublic policy URL: **https://xeviora.com/qrcode-privacy**",
+			"content": {
+				"en": {
+					"name": "QR Studio – QR Code Generator & Scanner",
+					"tagline": "Styled QR codes and camera-free scanning — 100% offline, nothing ever leaves your browser.",
+					"short": "Create styled QR codes (logo, colors, frames) & scan from image or page — 100% offline, no data leaves your browser.",
+					"long": "Most QR tools hide the good parts behind a paywall, mark them “coming soon,” or quietly send your data to a server. QR Studio does the opposite: every professional feature is built in, free, and runs entirely on your device.\n\n**Why install it**\nQR Studio generates and scans QR codes 100% locally. No network requests, no analytics, no account, no remote API — your data never leaves your browser. It works fully offline.\n\n**What you can do**\n\n🎨 Fully styled QR codes — Embed a logo, apply linear or radial gradients, pick dot and corner-eye shapes, and add a frame with a custom call-to-action label.\n\n🔢 12+ data types — URL, plain text, WiFi, vCard contact, email, SMS, phone, geo location, calendar event, crypto address, app-store link and social profiles.\n\n🖼️ Professional export — Download as PNG, SVG, JPG or PDF, copy to the clipboard, or export in HD up to 2048px.\n\n📷 Scan without a camera — Decode from an image file, drag & drop, clipboard paste, full-page capture, or right-click any image on a page. Reads QR plus many 1D/2D barcodes.\n\n🕘 History & templates — Searchable local history with tags and favorites, reusable style templates, and one-click JSON backup / restore.\n\n🔒 100% offline & private — Everything is generated and decoded on your device. There is nothing to sign up for and nothing to track.\n\n🌍 16 languages — A fully localized interface in 16 major world languages.\n\n**Private by design**\nQR Studio collects no data. It makes no network requests, contains no analytics or tracking SDKs, and asks for the minimum permissions needed. Your history, templates and settings are stored only in your browser’s local storage.\n\n**Great for**\nMarketers, developers, small businesses, event organizers, and anyone who values a fast, private, offline QR toolkit.",
+					"features": [
+						{
+							"emoji": "🎨",
+							"title": "Fully styled QR codes",
+							"desc": "Embed a logo, apply linear/radial gradients, pick dot and corner-eye shapes, and add a frame with a custom call-to-action label."
+						},
+						{
+							"emoji": "🔢",
+							"title": "12+ data types",
+							"desc": "URL, plain text, WiFi, vCard contact, email, SMS, phone, geo location, calendar event, crypto address, app-store link and social profiles."
+						},
+						{
+							"emoji": "🖼️",
+							"title": "Professional export",
+							"desc": "Download as PNG, SVG, JPG or PDF, copy to the clipboard, or export in HD up to 2048px."
+						},
+						{
+							"emoji": "📷",
+							"title": "Scan without a camera",
+							"desc": "Decode from an image file, drag & drop, clipboard paste, full-page capture, or right-click any image on a page. Reads QR plus many 1D/2D barcodes."
+						},
+						{
+							"emoji": "🕘",
+							"title": "History & templates",
+							"desc": "Searchable local history with tags and favorites, reusable style templates, and one-click JSON backup / restore."
+						},
+						{
+							"emoji": "🔒",
+							"title": "100% offline & private",
+							"desc": "No network requests, no analytics, no account, no remote API. Everything is generated and decoded on your device."
+						},
+						{
+							"emoji": "🌍",
+							"title": "16 languages",
+							"desc": "A fully localized interface in 16 major world languages."
+						}
+					]
+				},
+				"zh-cn": {
+					"name": "QR Studio – 二维码生成器与扫描器",
+					"short": "制作带 Logo、配色、边框的精美 QR 码，并从图片或网页扫码——100% 离线，数据绝不离开浏览器。",
+					"long": "大多数二维码工具把好用的功能锁在付费墙后、标注“即将推出”，或悄悄把你的数据传到服务器。QR Studio 反其道而行：每一项专业功能都已内置、完全免费，并且全程在你的设备上运行。\n\n**为什么要安装**\nQR Studio 100% 在本地生成与扫描二维码。没有网络请求、没有数据分析、无需账户、不调用远程 API——你的数据绝不离开浏览器。它完全离线可用。\n\n**你能做什么**\n\n🎨 全样式二维码 —— 嵌入 Logo，应用线性或径向渐变，挑选码点与定位角形状，并添加带自定义行动号召文案的边框。\n\n🔢 12+ 种数据类型 —— URL、纯文本、WiFi、vCard 名片、邮件、SMS、电话、地理位置、日历事件、加密货币地址、应用商店链接以及社交主页。\n\n🖼️ 专业级导出 —— 导出为 PNG、SVG、JPG 或 PDF，复制到剪贴板，或以高清画质导出（最高 2048px）。\n\n📷 无需摄像头扫码 —— 从图片文件、拖放、剪贴板粘贴、整页截取，或在网页上右键任意图片进行解码。可识别 QR 及多种 1D/2D 条码。\n\n🕘 历史与模板 —— 可搜索的本地历史，支持标签与收藏，可复用的样式模板，以及一键 JSON 备份／恢复。\n\n🔒 100% 离线且私密 —— 所有内容都在你的设备上生成与解码。无需注册任何账户，也没有任何追踪。\n\n🌍 16 种语言 —— 提供 16 种主流世界语言的完整本地化界面。\n\n**隐私优先的设计**\nQR Studio 不收集任何数据。它不发起网络请求，不含任何数据分析或追踪 SDK，并且只申请所需的最小权限。你的历史、模板和设置仅保存在浏览器的本地存储中。\n\n**适用人群**\n营销人员、开发者、小微企业、活动组织者，以及任何看重快速、私密、离线二维码工具的人。",
+					"features": [
+						{
+							"emoji": "🎨",
+							"title": "Fully styled QR codes",
+							"desc": "Embed a logo, apply linear/radial gradients, pick dot and corner-eye shapes, and add a frame with a custom call-to-action label."
+						},
+						{
+							"emoji": "🔢",
+							"title": "12+ data types",
+							"desc": "URL, plain text, WiFi, vCard contact, email, SMS, phone, geo location, calendar event, crypto address, app-store link and social profiles."
+						},
+						{
+							"emoji": "🖼️",
+							"title": "Professional export",
+							"desc": "Download as PNG, SVG, JPG or PDF, copy to the clipboard, or export in HD up to 2048px."
+						},
+						{
+							"emoji": "📷",
+							"title": "Scan without a camera",
+							"desc": "Decode from an image file, drag & drop, clipboard paste, full-page capture, or right-click any image on a page. Reads QR plus many 1D/2D barcodes."
+						},
+						{
+							"emoji": "🕘",
+							"title": "History & templates",
+							"desc": "Searchable local history with tags and favorites, reusable style templates, and one-click JSON backup / restore."
+						},
+						{
+							"emoji": "🔒",
+							"title": "100% offline & private",
+							"desc": "No network requests, no analytics, no account, no remote API. Everything is generated and decoded on your device."
+						},
+						{
+							"emoji": "🌍",
+							"title": "16 languages",
+							"desc": "A fully localized interface in 16 major world languages."
+						}
+					]
+				},
+				"es": {
+					"name": "QR Studio – Generador y Escáner QR",
+					"short": "Crea QR con estilo (logo, colores, marcos) y escanea desde imagen o página — 100% offline, tus datos no salen del navegador.",
+					"long": "La mayoría de las herramientas QR esconden lo mejor tras un muro de pago, lo marcan como «próximamente» o envían tus datos a un servidor sin avisar. QR Studio hace lo contrario: cada función profesional viene incluida, es gratis y se ejecuta por completo en tu dispositivo.\n\n**Por qué instalarlo**\nQR Studio genera y escanea códigos QR 100% en local. Sin peticiones de red, sin analíticas, sin cuenta, sin API remota — tus datos nunca salen de tu navegador. Funciona totalmente offline.\n\n**Lo que puedes hacer**\n\n🎨 Códigos QR con estilo completo — Incrusta un logo, aplica degradados lineales o radiales, elige las formas de los puntos y de los ojos de las esquinas, y añade un marco con una etiqueta de llamada a la acción personalizada.\n\n🔢 Más de 12 tipos de datos — URL, texto plano, WiFi, contacto vCard, email, SMS, teléfono, geolocalización, evento de calendario, dirección de criptomoneda, enlace a tienda de apps y perfiles sociales.\n\n🖼️ Exportación profesional — Descarga como PNG, SVG, JPG o PDF, copia al portapapeles o exporta en HD hasta 2048px.\n\n📷 Escanea sin cámara — Decodifica desde un archivo de imagen, arrastrar y soltar, pegar del portapapeles, captura de página completa o haz clic derecho en cualquier imagen de una página. Lee QR y muchos códigos de barras 1D/2D.\n\n🕘 Historial y plantillas — Historial local con búsqueda, etiquetas y favoritos, plantillas de estilo reutilizables y copia de seguridad / restauración JSON con un clic.\n\n🔒 100% offline y privado — Todo se genera y decodifica en tu dispositivo. No hay nada que registrar ni nada que rastrear.\n\n🌍 16 idiomas — Una interfaz totalmente localizada en 16 de los principales idiomas del mundo.\n\n**Privado por diseño**\nQR Studio no recopila ningún dato. No hace peticiones de red, no contiene analíticas ni SDK de seguimiento, y pide los permisos mínimos necesarios. Tu historial, plantillas y ajustes se guardan únicamente en el almacenamiento local de tu navegador.\n\n**Ideal para**\nProfesionales de marketing, desarrolladores, pequeñas empresas, organizadores de eventos y cualquiera que valore un kit de herramientas QR rápido, privado y offline.",
+					"features": [
+						{
+							"emoji": "🎨",
+							"title": "Fully styled QR codes",
+							"desc": "Embed a logo, apply linear/radial gradients, pick dot and corner-eye shapes, and add a frame with a custom call-to-action label."
+						},
+						{
+							"emoji": "🔢",
+							"title": "12+ data types",
+							"desc": "URL, plain text, WiFi, vCard contact, email, SMS, phone, geo location, calendar event, crypto address, app-store link and social profiles."
+						},
+						{
+							"emoji": "🖼️",
+							"title": "Professional export",
+							"desc": "Download as PNG, SVG, JPG or PDF, copy to the clipboard, or export in HD up to 2048px."
+						},
+						{
+							"emoji": "📷",
+							"title": "Scan without a camera",
+							"desc": "Decode from an image file, drag & drop, clipboard paste, full-page capture, or right-click any image on a page. Reads QR plus many 1D/2D barcodes."
+						},
+						{
+							"emoji": "🕘",
+							"title": "History & templates",
+							"desc": "Searchable local history with tags and favorites, reusable style templates, and one-click JSON backup / restore."
+						},
+						{
+							"emoji": "🔒",
+							"title": "100% offline & private",
+							"desc": "No network requests, no analytics, no account, no remote API. Everything is generated and decoded on your device."
+						},
+						{
+							"emoji": "🌍",
+							"title": "16 languages",
+							"desc": "A fully localized interface in 16 major world languages."
+						}
+					]
+				},
+				"fr": {
+					"name": "QR Studio – Générateur & scanner QR",
+					"short": "Créez des QR codes stylisés (logo, couleurs, cadres) et scannez depuis une image ou une page — 100% hors ligne.",
+					"long": "La plupart des outils QR cachent les bonnes fonctions derrière un paywall, les marquent « bientôt disponibles » ou envoient discrètement vos données vers un serveur. QR Studio fait l'inverse : chaque fonctionnalité professionnelle est intégrée, gratuite et fonctionne entièrement sur votre appareil.\n\n**Pourquoi l'installer**\nQR Studio génère et scanne les QR codes 100% en local. Aucune requête réseau, aucune analyse, aucun compte, aucune API distante — vos données ne quittent jamais votre navigateur. Il fonctionne totalement hors ligne.\n\n**Ce que vous pouvez faire**\n\n🎨 QR codes entièrement stylisés — Intégrez un logo, appliquez des dégradés linéaires ou radiaux, choisissez la forme des points et des yeux d'angle, et ajoutez un cadre avec un libellé d'appel à l'action personnalisé.\n\n🔢 Plus de 12 types de données — URL, texte brut, WiFi, contact vCard, e-mail, SMS, téléphone, géolocalisation, événement de calendrier, adresse crypto, lien App Store / Google Play et profils sociaux.\n\n🖼️ Export professionnel — Téléchargez en PNG, SVG, JPG ou PDF, copiez dans le presse-papiers, ou exportez en HD jusqu'à 2048px.\n\n📷 Scannez sans caméra — Décodez à partir d'un fichier image, par glisser-déposer, collage du presse-papiers, capture de page entière, ou clic droit sur n'importe quelle image d'une page. Lit les QR ainsi que de nombreux codes-barres 1D/2D.\n\n🕘 Historique & modèles — Historique local consultable avec tags et favoris, modèles de style réutilisables, et sauvegarde / restauration JSON en un clic.\n\n🔒 100% hors ligne & privé — Tout est généré et décodé sur votre appareil. Aucune inscription, aucun suivi.\n\n🌍 16 langues — Une interface entièrement localisée dans 16 grandes langues mondiales.\n\n**Confidentialité par conception**\nQR Studio ne collecte aucune donnée. Il n'effectue aucune requête réseau, ne contient aucun SDK d'analyse ou de suivi, et demande le minimum de permissions nécessaires. Votre historique, vos modèles et vos paramètres sont stockés uniquement dans le stockage local de votre navigateur.\n\n**Idéal pour**\nMarketeurs, développeurs, petites entreprises, organisateurs d'événements, et toute personne qui valorise une boîte à outils QR rapide, privée et hors ligne.",
+					"features": [
+						{
+							"emoji": "🎨",
+							"title": "Fully styled QR codes",
+							"desc": "Embed a logo, apply linear/radial gradients, pick dot and corner-eye shapes, and add a frame with a custom call-to-action label."
+						},
+						{
+							"emoji": "🔢",
+							"title": "12+ data types",
+							"desc": "URL, plain text, WiFi, vCard contact, email, SMS, phone, geo location, calendar event, crypto address, app-store link and social profiles."
+						},
+						{
+							"emoji": "🖼️",
+							"title": "Professional export",
+							"desc": "Download as PNG, SVG, JPG or PDF, copy to the clipboard, or export in HD up to 2048px."
+						},
+						{
+							"emoji": "📷",
+							"title": "Scan without a camera",
+							"desc": "Decode from an image file, drag & drop, clipboard paste, full-page capture, or right-click any image on a page. Reads QR plus many 1D/2D barcodes."
+						},
+						{
+							"emoji": "🕘",
+							"title": "History & templates",
+							"desc": "Searchable local history with tags and favorites, reusable style templates, and one-click JSON backup / restore."
+						},
+						{
+							"emoji": "🔒",
+							"title": "100% offline & private",
+							"desc": "No network requests, no analytics, no account, no remote API. Everything is generated and decoded on your device."
+						},
+						{
+							"emoji": "🌍",
+							"title": "16 languages",
+							"desc": "A fully localized interface in 16 major world languages."
+						}
+					]
+				},
+				"ja": {
+					"name": "QR Studio – QRコード生成・スキャナー",
+					"short": "ロゴ・色・フレーム付きのQRコードを作成し、画像やページからスキャン。100%オフラインでデータは外部に送信されません。",
+					"long": "多くのQRツールは便利な機能を有料の壁の向こうに隠したり、「近日公開」と表示したり、こっそりデータをサーバーへ送信したりします。QR Studioはその逆です。すべてのプロ向け機能が標準搭載で、無料、そして完全にあなたのデバイス上で動作します。\n\n**インストールする理由**\nQR StudioはQRコードの生成とスキャンを100%ローカルで行います。ネットワークリクエストなし、解析なし、アカウントなし、リモートAPIなし — あなたのデータがブラウザの外に出ることはありません。完全にオフラインで動作します。\n\n**できること**\n\n🎨 完全カスタムスタイルのQRコード — ロゴを埋め込み、線形または放射状のグラデーションを適用し、ドットやコーナーアイの形状を選択し、カスタムのコールトゥアクションラベル付きフレームを追加できます。\n\n🔢 12種類以上のデータタイプ — URL、プレーンテキスト、WiFi、vCard連絡先、メール、SMS、電話、位置情報、カレンダーイベント、暗号資産アドレス、アプリストアリンク、ソーシャルプロフィール。\n\n🖼️ プロ仕様のエクスポート — PNG、SVG、JPG、PDFでダウンロード、クリップボードへコピー、または最大2048pxのHDでエクスポート。\n\n📷 カメラ不要のスキャン — 画像ファイル、ドラッグ&ドロップ、クリップボード貼り付け、ページ全体のキャプチャ、またはページ上の任意の画像を右クリックしてデコード。QRに加え多くの1D/2Dバーコードを読み取ります。\n\n🕘 履歴とテンプレート — タグとお気に入り付きの検索可能なローカル履歴、再利用可能なスタイルテンプレート、ワンクリックのJSONバックアップ/復元。\n\n🔒 100%オフライン&プライベート — すべてあなたのデバイス上で生成・デコードされます。サインアップ不要、追跡も一切ありません。\n\n🌍 16言語対応 — 世界の主要16言語に完全ローカライズされたインターフェース。\n\n**設計段階からプライベート**\nQR Studioはデータを一切収集しません。ネットワークリクエストを行わず、解析やトラッキングのSDKを含まず、必要最小限の権限のみを要求します。あなたの履歴、テンプレート、設定はブラウザのローカルストレージにのみ保存されます。\n\n**こんな方に最適**\nマーケター、開発者、小規模ビジネス、イベント主催者、そして高速でプライベート、オフラインのQRツールキットを求めるすべての方に。",
+					"features": [
+						{
+							"emoji": "🎨",
+							"title": "Fully styled QR codes",
+							"desc": "Embed a logo, apply linear/radial gradients, pick dot and corner-eye shapes, and add a frame with a custom call-to-action label."
+						},
+						{
+							"emoji": "🔢",
+							"title": "12+ data types",
+							"desc": "URL, plain text, WiFi, vCard contact, email, SMS, phone, geo location, calendar event, crypto address, app-store link and social profiles."
+						},
+						{
+							"emoji": "🖼️",
+							"title": "Professional export",
+							"desc": "Download as PNG, SVG, JPG or PDF, copy to the clipboard, or export in HD up to 2048px."
+						},
+						{
+							"emoji": "📷",
+							"title": "Scan without a camera",
+							"desc": "Decode from an image file, drag & drop, clipboard paste, full-page capture, or right-click any image on a page. Reads QR plus many 1D/2D barcodes."
+						},
+						{
+							"emoji": "🕘",
+							"title": "History & templates",
+							"desc": "Searchable local history with tags and favorites, reusable style templates, and one-click JSON backup / restore."
+						},
+						{
+							"emoji": "🔒",
+							"title": "100% offline & private",
+							"desc": "No network requests, no analytics, no account, no remote API. Everything is generated and decoded on your device."
+						},
+						{
+							"emoji": "🌍",
+							"title": "16 languages",
+							"desc": "A fully localized interface in 16 major world languages."
+						}
+					]
+				},
+				"zh-tw": {
+					"name": "QR Studio – QR Code 產生器與掃描器",
+					"short": "製作有風格的 QR Code（Logo、色彩、外框）並從圖片或頁面掃描——100% 離線，資料不離開瀏覽器。",
+					"long": "多數 QR 工具把好用的功能藏在付費牆後、標示「即將推出」，或悄悄把你的資料送往伺服器。QR Studio 反其道而行：每一項專業功能都內建、免費，且完全在你的裝置上執行。\n\n**為什麼要安裝**\nQR Studio 100% 在本機產生與掃描 QR Code。沒有網路請求、沒有分析追蹤、不需帳號、沒有遠端 API——你的資料永不離開瀏覽器。完全可離線運作。\n\n**你可以做什麼**\n\n🎨 完整風格化 QR Code——嵌入 Logo、套用線性或放射狀漸層、挑選點陣與角眼形狀，並加上帶自訂行動呼籲標籤的外框。\n\n🔢 12+ 種資料類型——URL、純文字、WiFi、vCard 聯絡人、電子郵件、SMS、電話、地理位置、行事曆活動、加密貨幣地址、App Store 連結與社群檔案。\n\n🖼️ 專業匯出——下載為 PNG、SVG、JPG 或 PDF，複製到剪貼簿，或以最高 2048px 的 HD 匯出。\n\n📷 免相機掃描——從圖片檔、拖放、剪貼簿貼上、整頁擷取，或在頁面上任一圖片按右鍵解碼。可讀取 QR 以及多種 1D/2D 條碼。\n\n🕘 歷史與範本——可搜尋的本機歷史，附標籤與最愛、可重複使用的樣式範本，以及一鍵 JSON 備份／還原。\n\n🔒 100% 離線且隱私——一切都在你的裝置上產生與解碼。無須註冊，也沒有任何追蹤。\n\n🌍 16 種語言——以 16 種世界主要語言完整在地化的介面。\n\n**以隱私為設計核心**\nQR Studio 不收集任何資料。它不發出網路請求、不含任何分析或追蹤 SDK，並只要求必要的最低權限。你的歷史、範本與設定僅儲存在瀏覽器的本機儲存空間中。\n\n**適合誰使用**\n行銷人員、開發者、小型企業、活動籌辦者，以及任何重視快速、隱私、離線 QR 工具組的人。",
+					"features": [
+						{
+							"emoji": "🎨",
+							"title": "Fully styled QR codes",
+							"desc": "Embed a logo, apply linear/radial gradients, pick dot and corner-eye shapes, and add a frame with a custom call-to-action label."
+						},
+						{
+							"emoji": "🔢",
+							"title": "12+ data types",
+							"desc": "URL, plain text, WiFi, vCard contact, email, SMS, phone, geo location, calendar event, crypto address, app-store link and social profiles."
+						},
+						{
+							"emoji": "🖼️",
+							"title": "Professional export",
+							"desc": "Download as PNG, SVG, JPG or PDF, copy to the clipboard, or export in HD up to 2048px."
+						},
+						{
+							"emoji": "📷",
+							"title": "Scan without a camera",
+							"desc": "Decode from an image file, drag & drop, clipboard paste, full-page capture, or right-click any image on a page. Reads QR plus many 1D/2D barcodes."
+						},
+						{
+							"emoji": "🕘",
+							"title": "History & templates",
+							"desc": "Searchable local history with tags and favorites, reusable style templates, and one-click JSON backup / restore."
+						},
+						{
+							"emoji": "🔒",
+							"title": "100% offline & private",
+							"desc": "No network requests, no analytics, no account, no remote API. Everything is generated and decoded on your device."
+						},
+						{
+							"emoji": "🌍",
+							"title": "16 languages",
+							"desc": "A fully localized interface in 16 major world languages."
+						}
+					]
+				}
+			}
+		},
+		{
+			"slug": "reelcap",
+			"category": "extension",
+			"type": "extension",
+			"installUrl": "https://chromewebstore.google.com/detail/kpjphmleblfdacbnieepeicinlhgcfhn",
+			"categoryLabel": "Productivity",
+			"logo": "/assets/showcase/reelcap/logo.png",
+			"gradient": null,
+			"screenshots": [
+				{
+					"src": "/assets/showcase/reelcap/scrn/01-popup.png",
+					"caption": "Pick a tab, size, mic & webcam — then hit record"
+				},
+				{
+					"src": "/assets/showcase/reelcap/scrn/02-record-preview.png",
+					"caption": "Preview your demo and download the WEBM"
+				},
+				{
+					"src": "/assets/showcase/reelcap/scrn/03-settings.png",
+					"caption": "Tune cursor highlights, click ripples & output"
+				}
+			],
+			"privacyMarkdown": "# Privacy Policy — ReelCap\n\n_Last updated: 2026-06-29_\n\nReelCap (\"the extension\") is a screen recorder that runs entirely inside your web browser. It has no account system and no backend server.\n\n## Data we collect\n\n**None.** ReelCap does not collect, store on any server, transmit, share, or sell any personal data, browsing history, recordings, microphone audio, or camera video. There is no sign-in, no analytics, and no telemetry. Every recording you make is captured, composited, and encoded locally on your own device. Settings are stored locally in your browser via the standard extension storage and never leave your machine.\n\n## Permissions and why they are needed\n\n- **tabCapture** — Captures the rendered video (and optional audio) of the active tab you choose to record. It only starts on an explicit action by you.\n- **offscreen** — Runs an offscreen document, the only MV3 context allowed to use `getUserMedia` and `MediaRecorder`, to grab the stream, mix audio, composite the canvas, and encode the WEBM file.\n- **activeTab** — Grants one-time access to the current tab only when you start a recording, so its stream can be captured.\n- **scripting** — Injects the self-drawn cursor and click-ripple overlay into the page being recorded on demand. ReelCap does not run a persistent content script.\n- **tabs** — Reads the active tab's title/URL to name the recording and route the finished clip to the local preview page.\n- **storage** — Persists your settings and the recording state so an in-progress recording survives the service worker being recycled.\n- **unlimitedStorage** — Lets long recordings be buffered locally without hitting the small default storage quota.\n- **downloads** — Saves the finished WEBM video to your Downloads folder.\n- **Host access (`<all_urls>`)** — Required so the highlighted cursor and click ripples can be drawn on whatever page you record. Access happens only when you start a recording.\n\nMicrophone and camera are **not** requested in the manifest. They are granted at runtime through the browser's standard `getUserMedia` prompt, only if you enable them, and the streams are mixed/composited locally and never transmitted.\n\n## Remote code\n\nReelCap does **not** load or execute any remote code. All JavaScript and WebAssembly are bundled in the extension package.\n\n## Changes\n\nIf this policy changes, the \"Last updated\" date above will change accordingly. The current version is published at: https://xeviora.com/reelcap-privacy\n\n## Contact\n\nQuestions? Contact tiger.hu.liu@gmail.com",
+			"content": {
+				"en": {
+					"name": "ReelCap – Web Demo Screen Recorder",
+					"tagline": "Record any browser tab into a polished demo video — with a hand-drawn cursor, click highlights, a webcam bubble and fixed output sizes.",
+					"short": "Record any tab to video — mic, webcam bubble, highlighted cursor, click ripples and fixed sizes. 100% offline, no login.",
+					"long": "Recording a clean web demo usually means a heavy screen recorder, then editing out the browser chrome. ReelCap does it right in your browser: record the tab, with a hand-drawn cursor and click highlights baked in, then download a polished WEBM. No account, no upload, nothing leaves your device.\n\n- 🎬 Record any tab — capture the active tab straight to WEBM, page renders only, never the browser UI.\n- 🖱️ Highlighted cursor & click ripples — a hand-drawn cursor and click ripples baked in, so viewers follow every move.\n- 🎙️ Mic + tab audio — narrate with your microphone while keeping the page's sound, mixed into one clean track.\n- 📷 Webcam bubble — overlay your camera as a circular bubble in any corner, with adjustable size.\n- 📐 Fixed output sizes & frame rate — original, 1080p, 720p, square or vertical, at 24/30/60 fps.\n- 🔒 100% offline & no login — recording and encoding run in your browser; no account, no backend, no tracking.\n\nGreat for makers, founders and creators recording web demos for YouTube, Product Hunt, onboarding and support.",
+					"features": [
+						{
+							"emoji": "🎬",
+							"title": "Record any tab",
+							"desc": "Capture the active browser tab straight to a WEBM video — page renders only, never the browser UI, so the result stays clean."
+						},
+						{
+							"emoji": "🖱️",
+							"title": "Highlight cursor & click ripples",
+							"desc": "A hand-drawn cursor and click ripples are painted into the video so viewers always follow exactly where you point and tap."
+						},
+						{
+							"emoji": "🎙️",
+							"title": "Mic + tab audio",
+							"desc": "Narrate with your microphone while keeping the page's own sound — both are mixed into a single clean audio track."
+						},
+						{
+							"emoji": "📷",
+							"title": "Webcam bubble",
+							"desc": "Overlay your camera as a circular or rounded bubble in any corner, with adjustable size — perfect for a personal demo."
+						},
+						{
+							"emoji": "📐",
+							"title": "Fixed output sizes & frame rate",
+							"desc": "Export at original, 1080p, 720p, square or vertical, at 24/30/60 fps — ready for YouTube, Product Hunt or social."
+						},
+						{
+							"emoji": "🔒",
+							"title": "100% offline & no login",
+							"desc": "Recording and encoding run entirely in your browser. No account, no backend, no tracking — nothing ever leaves your device."
+						}
+					]
+				},
+				"zh-cn": {
+					"name": "ReelCap – 网页演示录屏工具",
+					"short": "录制任意标签页为视频——麦克风、摄像头气泡、高亮光标、点击波纹与固定尺寸。100% 离线，无需登录。",
+					"long": "录一段干净的网页演示，通常得用笨重的录屏软件，再手动裁掉浏览器边框。ReelCap 在浏览器里一站搞定：录制标签页，自带自绘光标与点击高亮，直接下载精致的 WEBM。无需账号，无需上传，数据不出本机。\n\n- 🎬 录制任意标签页——将当前标签页直接录成 WEBM，只录页面渲染区，不含浏览器 UI。\n- 🖱️ 高亮光标与点击波纹——自绘光标和点击波纹直接合进画面，观众跟得上每一步操作。\n- 🎙️ 麦克风 + 标签页声音——用麦克风讲解，同时保留页面原声，混成一条干净音轨。\n- 📷 摄像头气泡——把摄像头叠成圆形气泡置于任意角落，大小可调。\n- 📐 固定输出尺寸与帧率——原始、1080p、720p、方形或竖屏，24/30/60 fps 任选。\n- 🔒 100% 离线、无需登录——录制与编码全在浏览器；无账号、无后端、无跟踪。\n\n适合做产品演示的创客、创始人与创作者，发 YouTube、Product Hunt、上手引导与客服。",
+					"features": [
+						{
+							"emoji": "🎬",
+							"title": "Record any tab",
+							"desc": "Capture the active browser tab straight to a WEBM video — page renders only, never the browser UI, so the result stays clean."
+						},
+						{
+							"emoji": "🖱️",
+							"title": "Highlight cursor & click ripples",
+							"desc": "A hand-drawn cursor and click ripples are painted into the video so viewers always follow exactly where you point and tap."
+						},
+						{
+							"emoji": "🎙️",
+							"title": "Mic + tab audio",
+							"desc": "Narrate with your microphone while keeping the page's own sound — both are mixed into a single clean audio track."
+						},
+						{
+							"emoji": "📷",
+							"title": "Webcam bubble",
+							"desc": "Overlay your camera as a circular or rounded bubble in any corner, with adjustable size — perfect for a personal demo."
+						},
+						{
+							"emoji": "📐",
+							"title": "Fixed output sizes & frame rate",
+							"desc": "Export at original, 1080p, 720p, square or vertical, at 24/30/60 fps — ready for YouTube, Product Hunt or social."
+						},
+						{
+							"emoji": "🔒",
+							"title": "100% offline & no login",
+							"desc": "Recording and encoding run entirely in your browser. No account, no backend, no tracking — nothing ever leaves your device."
+						}
+					]
+				},
+				"es": {
+					"name": "ReelCap – Grabador de demos web",
+					"short": "Graba cualquier pestaña en vídeo: micro, burbuja de webcam, cursor resaltado, ondas de clic y tamaños fijos. 100% local, sin login.",
+					"long": "Grabar una demo web limpia suele implicar un grabador pesado y luego recortar el marco del navegador. ReelCap lo hace dentro del navegador: graba la pestaña, con cursor dibujado y resaltado de clics integrados, y descarga un WEBM pulido. Sin cuenta, sin subidas, nada sale de tu dispositivo.\n\n- 🎬 Graba cualquier pestaña: captura la pestaña activa directo a WEBM, solo la página, nunca la interfaz del navegador.\n- 🖱️ Cursor resaltado y ondas de clic: cursor dibujado y ondas de clic integrados para que se siga cada movimiento.\n- 🎙️ Micro + audio de la pestaña: narra con tu micrófono y mantén el sonido de la página, mezclados en una pista limpia.\n- 📷 Burbuja de webcam: superpón tu cámara como burbuja circular en cualquier esquina, con tamaño ajustable.\n- 📐 Tamaños y fotogramas fijos: original, 1080p, 720p, cuadrado o vertical, a 24/30/60 fps.\n- 🔒 100% local y sin login: grabación y codificación en tu navegador; sin cuenta, sin servidor, sin rastreo.\n\nIdeal para makers, fundadores y creadores que graban demos web para YouTube, Product Hunt, onboarding y soporte.",
+					"features": [
+						{
+							"emoji": "🎬",
+							"title": "Record any tab",
+							"desc": "Capture the active browser tab straight to a WEBM video — page renders only, never the browser UI, so the result stays clean."
+						},
+						{
+							"emoji": "🖱️",
+							"title": "Highlight cursor & click ripples",
+							"desc": "A hand-drawn cursor and click ripples are painted into the video so viewers always follow exactly where you point and tap."
+						},
+						{
+							"emoji": "🎙️",
+							"title": "Mic + tab audio",
+							"desc": "Narrate with your microphone while keeping the page's own sound — both are mixed into a single clean audio track."
+						},
+						{
+							"emoji": "📷",
+							"title": "Webcam bubble",
+							"desc": "Overlay your camera as a circular or rounded bubble in any corner, with adjustable size — perfect for a personal demo."
+						},
+						{
+							"emoji": "📐",
+							"title": "Fixed output sizes & frame rate",
+							"desc": "Export at original, 1080p, 720p, square or vertical, at 24/30/60 fps — ready for YouTube, Product Hunt or social."
+						},
+						{
+							"emoji": "🔒",
+							"title": "100% offline & no login",
+							"desc": "Recording and encoding run entirely in your browser. No account, no backend, no tracking — nothing ever leaves your device."
+						}
+					]
+				},
+				"fr": {
+					"name": "ReelCap – Enregistreur de démos web",
+					"short": "Enregistrez un onglet en vidéo : micro, bulle webcam, curseur surligné, ondes de clic et tailles fixes. 100% local, sans compte.",
+					"long": "Enregistrer une démo web propre demande souvent un logiciel lourd, puis de rogner le cadre du navigateur. ReelCap fait tout dans votre navigateur : enregistrez l'onglet, avec un curseur dessiné et la mise en valeur des clics intégrés, puis téléchargez un WEBM soigné. Sans compte, sans envoi, rien ne quitte votre appareil.\n\n- 🎬 Enregistrez un onglet : capturez l'onglet actif directement en WEBM, la page seule, jamais l'interface du navigateur.\n- 🖱️ Curseur surligné et ondes de clic : un curseur dessiné et des ondes de clic intégrés pour suivre chaque geste.\n- 🎙️ Micro + audio de l'onglet : commentez au micro tout en gardant le son de la page, mixés en une piste propre.\n- 📷 Bulle webcam : superposez votre caméra en bulle ronde dans un coin, taille réglable.\n- 📐 Tailles et fréquence fixes : original, 1080p, 720p, carré ou vertical, à 24/30/60 fps.\n- 🔒 100% local et sans compte : enregistrement et encodage dans votre navigateur ; pas de compte, pas de serveur, pas de suivi.\n\nParfait pour les makers, fondateurs et créateurs qui filment des démos web pour YouTube, Product Hunt, l'onboarding et le support.",
+					"features": [
+						{
+							"emoji": "🎬",
+							"title": "Record any tab",
+							"desc": "Capture the active browser tab straight to a WEBM video — page renders only, never the browser UI, so the result stays clean."
+						},
+						{
+							"emoji": "🖱️",
+							"title": "Highlight cursor & click ripples",
+							"desc": "A hand-drawn cursor and click ripples are painted into the video so viewers always follow exactly where you point and tap."
+						},
+						{
+							"emoji": "🎙️",
+							"title": "Mic + tab audio",
+							"desc": "Narrate with your microphone while keeping the page's own sound — both are mixed into a single clean audio track."
+						},
+						{
+							"emoji": "📷",
+							"title": "Webcam bubble",
+							"desc": "Overlay your camera as a circular or rounded bubble in any corner, with adjustable size — perfect for a personal demo."
+						},
+						{
+							"emoji": "📐",
+							"title": "Fixed output sizes & frame rate",
+							"desc": "Export at original, 1080p, 720p, square or vertical, at 24/30/60 fps — ready for YouTube, Product Hunt or social."
+						},
+						{
+							"emoji": "🔒",
+							"title": "100% offline & no login",
+							"desc": "Recording and encoding run entirely in your browser. No account, no backend, no tracking — nothing ever leaves your device."
+						}
+					]
+				},
+				"ja": {
+					"name": "ReelCap – ウェブデモ録画ツール",
+					"short": "タブを動画に録画。マイク・ウェブカメラ・強調カーソル・クリック波紋・固定サイズ。完全オフライン、ログイン不要。",
+					"long": "きれいなウェブデモを録るには、重い録画ソフトを使い、ブラウザーの枠を切り抜く手間が普通です。ReelCap はブラウザー内で完結：タブを録画し、手描きカーソルとクリック強調を合成して、洗練された WEBM をダウンロード。アカウント不要、アップロードなし、データは端末から出ません。\n\n- 🎬 どのタブも録画 — アクティブなタブをそのまま WEBM に、ページ描画のみ、ブラウザー UI は含めません。\n- 🖱️ 強調カーソルとクリック波紋 — 手描きカーソルとクリック波紋を映像に合成し、操作を追いやすく。\n- 🎙️ マイク + タブ音声 — マイクで解説しつつページ音を残し、1本のクリーンな音声トラックに混合。\n- 📷 ウェブカメラバブル — カメラを丸いバブルとして任意の角に重ね、サイズ調整可。\n- 📐 固定の出力サイズとフレームレート — オリジナル、1080p、720p、正方形や縦型、24/30/60 fps。\n- 🔒 完全オフライン・ログイン不要 — 録画とエンコードはブラウザー内；アカウントもサーバーも追跡もなし。\n\nYouTube、Product Hunt、オンボーディング、サポート向けにウェブデモを録るメーカー、創業者、クリエイターに最適。",
+					"features": [
+						{
+							"emoji": "🎬",
+							"title": "Record any tab",
+							"desc": "Capture the active browser tab straight to a WEBM video — page renders only, never the browser UI, so the result stays clean."
+						},
+						{
+							"emoji": "🖱️",
+							"title": "Highlight cursor & click ripples",
+							"desc": "A hand-drawn cursor and click ripples are painted into the video so viewers always follow exactly where you point and tap."
+						},
+						{
+							"emoji": "🎙️",
+							"title": "Mic + tab audio",
+							"desc": "Narrate with your microphone while keeping the page's own sound — both are mixed into a single clean audio track."
+						},
+						{
+							"emoji": "📷",
+							"title": "Webcam bubble",
+							"desc": "Overlay your camera as a circular or rounded bubble in any corner, with adjustable size — perfect for a personal demo."
+						},
+						{
+							"emoji": "📐",
+							"title": "Fixed output sizes & frame rate",
+							"desc": "Export at original, 1080p, 720p, square or vertical, at 24/30/60 fps — ready for YouTube, Product Hunt or social."
+						},
+						{
+							"emoji": "🔒",
+							"title": "100% offline & no login",
+							"desc": "Recording and encoding run entirely in your browser. No account, no backend, no tracking — nothing ever leaves your device."
+						}
+					]
+				},
+				"zh-tw": {
+					"name": "ReelCap – 網頁示範錄影工具",
+					"short": "把任何分頁錄成影片——麥克風、攝影機泡泡、高亮游標、點擊漣漪與固定尺寸。100% 離線，免登入。",
+					"long": "錄一段乾淨的網頁示範，通常得用笨重的錄影軟體，再手動裁掉瀏覽器外框。ReelCap 在瀏覽器裡一站搞定：錄製分頁，自帶手繪游標與點擊高亮，直接下載精緻的 WEBM。免註冊、免上傳，任何資料都不離開你的裝置。\n\n- 🎬 錄製任何分頁 — 把目前分頁直接錄成 WEBM，只錄頁面渲染區，不含瀏覽器 UI。\n- 🖱️ 高亮游標與點擊漣漪 — 手繪游標與點擊漣漪直接合進畫面，觀眾跟得上每一步。\n- 🎙️ 麥克風 + 分頁聲音 — 用麥克風旁白，同時保留頁面原聲，混成單一乾淨音軌。\n- 📷 攝影機泡泡 — 把攝影機疊成圓形泡泡放在任一角落，大小可調。\n- 📐 固定輸出尺寸與影格率 — 原始、1080p、720p、方形或直式，24/30/60 fps 任選。\n- 🔒 100% 離線、免登入 — 錄製與編碼全在瀏覽器；無帳號、無後端、無追蹤。\n\n適合做產品示範的創客、創辦人與創作者，發 YouTube、Product Hunt、上手導引與客服。",
+					"features": [
+						{
+							"emoji": "🎬",
+							"title": "Record any tab",
+							"desc": "Capture the active browser tab straight to a WEBM video — page renders only, never the browser UI, so the result stays clean."
+						},
+						{
+							"emoji": "🖱️",
+							"title": "Highlight cursor & click ripples",
+							"desc": "A hand-drawn cursor and click ripples are painted into the video so viewers always follow exactly where you point and tap."
+						},
+						{
+							"emoji": "🎙️",
+							"title": "Mic + tab audio",
+							"desc": "Narrate with your microphone while keeping the page's own sound — both are mixed into a single clean audio track."
+						},
+						{
+							"emoji": "📷",
+							"title": "Webcam bubble",
+							"desc": "Overlay your camera as a circular or rounded bubble in any corner, with adjustable size — perfect for a personal demo."
+						},
+						{
+							"emoji": "📐",
+							"title": "Fixed output sizes & frame rate",
+							"desc": "Export at original, 1080p, 720p, square or vertical, at 24/30/60 fps — ready for YouTube, Product Hunt or social."
+						},
+						{
+							"emoji": "🔒",
+							"title": "100% offline & no login",
+							"desc": "Recording and encoding run entirely in your browser. No account, no backend, no tracking — nothing ever leaves your device."
+						}
+					]
+				}
+			}
+		},
+		{
+			"slug": "scrncap",
+			"category": "extension",
+			"type": "extension",
+			"installUrl": "",
+			"categoryLabel": "Productivity",
+			"logo": "/assets/showcase/scrncap/logo.png",
+			"gradient": null,
+			"screenshots": [
+				{
+					"src": "/assets/showcase/scrncap/scrn/01-scrn-1-popup.png",
+					"caption": ""
+				},
+				{
+					"src": "/assets/showcase/scrncap/scrn/02-scrn-2-editor.png",
+					"caption": ""
+				},
+				{
+					"src": "/assets/showcase/scrncap/scrn/03-scrn-3-batch.png",
+					"caption": ""
+				}
+			],
+			"privacyMarkdown": "# Privacy Policy — ScrnCap\n\n_Last updated: 2026-06-28_\n\nScrnCap (\"the extension\") is a screenshot tool that runs entirely inside your web browser. It has no account system and no backend server.\n\n## Data we collect\n\n**None.** ScrnCap does not collect, store on any server, transmit, share, or sell any personal data, browsing history, or screenshot content. There is no sign-in, no analytics, and no telemetry. Every screenshot you take is captured, annotated, and exported locally on your own device. Settings are stored locally in your browser via the standard extension storage and never leave your machine.\n\n## Permissions and why they are needed\n\n- **activeTab** — Grants one-time access to the current tab only when you trigger a capture, so its pixels can be read for the screenshot.\n- **scripting** — Injects the measurement, scrolling, and selection-overlay helpers into the page on demand during a capture. ScrnCap does not run a persistent content script.\n- **tabs** — Reads tab titles/URLs and switches the active tab when you batch-capture several open tabs in sequence.\n- **storage** — Persists your settings and hands the captured image to the local preview/editor page.\n- **unlimitedStorage** — Lets large full-page or batch captures be held locally without hitting the small default storage quota.\n- **contextMenus** — Adds right-click capture entries on the page.\n- **downloads** — Saves the exported image or PDF to your Downloads folder.\n- **Host access (`<all_urls>`)** — Required so capture (and the capture helpers) can work on whatever page you are on; full-page, region, and fixed-size modes need to read and scroll the current page. Access happens only when you start a capture.\n\n## Remote code\n\nScrnCap does **not** load or execute any remote code. All JavaScript and WebAssembly are bundled in the extension package.\n\n## Changes\n\nIf this policy changes, the \"Last updated\" date above will change accordingly. The current version is published at: https://example.com/scrncap/privacy\n\n## Contact\n\nQuestions? Contact tiger.hu.liu@gmail.com",
+			"content": {
+				"en": {
+					"name": "ScrnCap – Screenshot & Full Page Capture",
+					"tagline": "Screenshot any web page — visible area, full page, a region or a fixed size — then annotate and export.",
+					"short": "Capture visible area, full page, a region or fixed size. Annotate, then export PNG/JPG/WEBP/PDF or print. 100% offline.",
+					"long": "Taking the same web screenshots over and over — then cropping, marking up and converting them by hand — is slow. ScrnCap does the whole loop in your browser: capture, annotate, export. No account, no upload, nothing leaves your device.\n\n- 🖥️ Four capture modes — visible area, full scrolling page (stitched), a selected region, or a fixed size like 1920×1080 plus custom sizes.\n- ✏️ Built-in annotator — crop, arrows, shapes, pen, text, highlight, mosaic/blur, numbered steps, undo & redo.\n- 💾 Export anywhere — PNG, JPG, WEBP, PDF, copy to clipboard, or print.\n- 🗂️ Batch multiple tabs — download as a ZIP or a single multi-page PDF.\n- 🤖 Send to AI — copy and open ChatGPT, Claude or Gemini, then paste.\n- 🔒 100% offline & no login — no account, no backend, no tracking.\n\nGreat for designers, QA engineers, support agents, marketers and researchers.",
+					"features": [
+						{
+							"emoji": "🖥️",
+							"title": "Four capture modes",
+							"desc": "Visible area, full scrolling page (stitched), a freely selected region, or a fixed size like 1920×1080 plus your own custom sizes."
+						},
+						{
+							"emoji": "✏️",
+							"title": "Built-in annotator",
+							"desc": "Crop, arrows, rectangles, ellipses, pen, text, highlight, mosaic/blur and numbered steps — with undo & redo."
+						},
+						{
+							"emoji": "💾",
+							"title": "Export anywhere",
+							"desc": "Save as PNG, JPG, WEBP or PDF, copy to clipboard, or send straight to the system print dialog."
+						},
+						{
+							"emoji": "🗂️",
+							"title": "Batch multiple tabs",
+							"desc": "Capture many open tabs in one go and download them as a ZIP archive or a single multi-page PDF."
+						},
+						{
+							"emoji": "🤖",
+							"title": "Send to AI",
+							"desc": "Copy the shot to the clipboard and open ChatGPT, Claude or Gemini in one click — paste and ask."
+						},
+						{
+							"emoji": "🔒",
+							"title": "100% offline & no login",
+							"desc": "Everything runs in your browser. No account, no backend, no tracking — nothing ever leaves your device."
+						}
+					]
+				},
+				"zh-cn": {
+					"name": "ScrnCap – 网页截图与整页捕获",
+					"short": "截取可见区域、整页、自选区域或固定尺寸。标注后导出 PNG/JPG/WEBP/PDF 或打印。100% 离线。",
+					"long": "一遍遍地截同样的网页，再手动裁剪、标注、转格式，太慢了。ScrnCap 把整个流程都放进浏览器：截图、标注、导出。无需账号，无需上传，数据不出本机。\n\n- 🖥️ 四种截图模式——可见区域、整页滚动拼接、自选区域，或 1920×1080 等固定尺寸及自定义尺寸。\n- ✏️ 内置标注器——裁剪、箭头、形状、画笔、文字、高亮、马赛克/模糊、序号标注、撤销与重做。\n- 💾 随处导出——PNG、JPG、WEBP、PDF，复制到剪贴板或直接打印。\n- 🗂️ 批量多标签页——打包 ZIP 或合成多页 PDF。\n- 🤖 发送到 AI——复制并打开 ChatGPT、Claude 或 Gemini，粘贴即问。\n- 🔒 100% 离线、无需登录——无账号、无后端、无跟踪。\n\n适合设计师、测试工程师、客服、营销与研究人员。",
+					"features": [
+						{
+							"emoji": "🖥️",
+							"title": "Four capture modes",
+							"desc": "Visible area, full scrolling page (stitched), a freely selected region, or a fixed size like 1920×1080 plus your own custom sizes."
+						},
+						{
+							"emoji": "✏️",
+							"title": "Built-in annotator",
+							"desc": "Crop, arrows, rectangles, ellipses, pen, text, highlight, mosaic/blur and numbered steps — with undo & redo."
+						},
+						{
+							"emoji": "💾",
+							"title": "Export anywhere",
+							"desc": "Save as PNG, JPG, WEBP or PDF, copy to clipboard, or send straight to the system print dialog."
+						},
+						{
+							"emoji": "🗂️",
+							"title": "Batch multiple tabs",
+							"desc": "Capture many open tabs in one go and download them as a ZIP archive or a single multi-page PDF."
+						},
+						{
+							"emoji": "🤖",
+							"title": "Send to AI",
+							"desc": "Copy the shot to the clipboard and open ChatGPT, Claude or Gemini in one click — paste and ask."
+						},
+						{
+							"emoji": "🔒",
+							"title": "100% offline & no login",
+							"desc": "Everything runs in your browser. No account, no backend, no tracking — nothing ever leaves your device."
+						}
+					]
+				},
+				"es": {
+					"name": "ScrnCap – Captura de pantalla completa",
+					"short": "Captura el área visible, la página completa, una región o un tamaño fijo. Anota y exporta a PNG/JPG/WEBP/PDF. 100% local.",
+					"long": "Hacer las mismas capturas web una y otra vez —y luego recortar, marcar y convertir a mano— es lento. ScrnCap hace todo el ciclo en tu navegador: capturar, anotar, exportar. Sin cuenta, sin subidas, nada sale de tu dispositivo.\n\n- 🖥️ Cuatro modos de captura: área visible, página completa (unida), una región seleccionada o un tamaño fijo como 1920×1080 y tamaños propios.\n- ✏️ Editor de anotaciones: recorte, flechas, formas, lápiz, texto, resaltado, mosaico/desenfoque, pasos numerados, deshacer y rehacer.\n- 💾 Exporta a todo: PNG, JPG, WEBP, PDF, copia al portapapeles o imprime.\n- 🗂️ Varias pestañas a la vez: descarga un ZIP o un único PDF de varias páginas.\n- 🤖 Enviar a IA: copia y abre ChatGPT, Claude o Gemini, y pega.\n- 🔒 100% local y sin inicio de sesión: sin cuenta, sin servidor, sin rastreo.\n\nIdeal para diseñadores, QA, soporte, marketing e investigación.",
+					"features": [
+						{
+							"emoji": "🖥️",
+							"title": "Four capture modes",
+							"desc": "Visible area, full scrolling page (stitched), a freely selected region, or a fixed size like 1920×1080 plus your own custom sizes."
+						},
+						{
+							"emoji": "✏️",
+							"title": "Built-in annotator",
+							"desc": "Crop, arrows, rectangles, ellipses, pen, text, highlight, mosaic/blur and numbered steps — with undo & redo."
+						},
+						{
+							"emoji": "💾",
+							"title": "Export anywhere",
+							"desc": "Save as PNG, JPG, WEBP or PDF, copy to clipboard, or send straight to the system print dialog."
+						},
+						{
+							"emoji": "🗂️",
+							"title": "Batch multiple tabs",
+							"desc": "Capture many open tabs in one go and download them as a ZIP archive or a single multi-page PDF."
+						},
+						{
+							"emoji": "🤖",
+							"title": "Send to AI",
+							"desc": "Copy the shot to the clipboard and open ChatGPT, Claude or Gemini in one click — paste and ask."
+						},
+						{
+							"emoji": "🔒",
+							"title": "100% offline & no login",
+							"desc": "Everything runs in your browser. No account, no backend, no tracking — nothing ever leaves your device."
+						}
+					]
+				},
+				"fr": {
+					"name": "ScrnCap – Capture d'écran pleine page",
+					"short": "Capturez la zone visible, la page entière, une région ou une taille fixe. Annotez et exportez en PNG/JPG/WEBP/PDF. 100% local.",
+					"long": "Refaire sans cesse les mêmes captures web — puis rogner, annoter et convertir à la main — c'est lent. ScrnCap fait toute la boucle dans votre navigateur : capturer, annoter, exporter. Sans compte, sans envoi, rien ne quitte votre appareil.\n\n- 🖥️ Quatre modes de capture : zone visible, page entière (assemblée), région sélectionnée ou taille fixe comme 1920×1080 et tailles personnalisées.\n- ✏️ Éditeur d'annotation : recadrage, flèches, formes, stylo, texte, surlignage, mosaïque/flou, étapes numérotées, annuler et rétablir.\n- 💾 Export partout : PNG, JPG, WEBP, PDF, copie dans le presse-papiers ou impression.\n- 🗂️ Plusieurs onglets en lot : téléchargez un ZIP ou un seul PDF multipage.\n- 🤖 Envoyer à l'IA : copiez et ouvrez ChatGPT, Claude ou Gemini, puis collez.\n- 🔒 100% local et sans connexion : pas de compte, pas de serveur, pas de suivi.\n\nParfait pour les designers, QA, support, marketing et recherche.",
+					"features": [
+						{
+							"emoji": "🖥️",
+							"title": "Four capture modes",
+							"desc": "Visible area, full scrolling page (stitched), a freely selected region, or a fixed size like 1920×1080 plus your own custom sizes."
+						},
+						{
+							"emoji": "✏️",
+							"title": "Built-in annotator",
+							"desc": "Crop, arrows, rectangles, ellipses, pen, text, highlight, mosaic/blur and numbered steps — with undo & redo."
+						},
+						{
+							"emoji": "💾",
+							"title": "Export anywhere",
+							"desc": "Save as PNG, JPG, WEBP or PDF, copy to clipboard, or send straight to the system print dialog."
+						},
+						{
+							"emoji": "🗂️",
+							"title": "Batch multiple tabs",
+							"desc": "Capture many open tabs in one go and download them as a ZIP archive or a single multi-page PDF."
+						},
+						{
+							"emoji": "🤖",
+							"title": "Send to AI",
+							"desc": "Copy the shot to the clipboard and open ChatGPT, Claude or Gemini in one click — paste and ask."
+						},
+						{
+							"emoji": "🔒",
+							"title": "100% offline & no login",
+							"desc": "Everything runs in your browser. No account, no backend, no tracking — nothing ever leaves your device."
+						}
+					]
+				},
+				"ja": {
+					"name": "ScrnCap – スクショ＆ページ全体保存",
+					"short": "表示領域・ページ全体・範囲選択・固定サイズで撮影。注釈してPNG/JPG/WEBP/PDFに書き出し。完全オフライン。",
+					"long": "同じウェブのスクショを何度も撮り、手作業で切り抜き・注釈・変換するのは大変です。ScrnCap は撮影・注釈・書き出しのすべてをブラウザー内で完結。アカウント不要、アップロードなし、データは端末から出ません。\n\n- 🖥️ 4つの撮影モード：表示領域、ページ全体（スクロール結合）、範囲選択、1920×1080 などの固定サイズとカスタムサイズ。\n- ✏️ 内蔵の注釈ツール：トリミング、矢印、図形、ペン、テキスト、ハイライト、モザイク/ぼかし、連番ステップ、元に戻す／やり直し。\n- 💾 どこへでも書き出し：PNG・JPG・WEBP・PDF、クリップボードへコピー、印刷。\n- 🗂️ 複数タブを一括：ZIP または1つの複数ページ PDF でダウンロード。\n- 🤖 AI へ送信：コピーして ChatGPT・Claude・Gemini を開き、貼り付け。\n- 🔒 完全オフライン・ログイン不要：アカウントもサーバーも追跡もなし。\n\nデザイナー、QA、サポート、マーケティング、リサーチに最適。",
+					"features": [
+						{
+							"emoji": "🖥️",
+							"title": "Four capture modes",
+							"desc": "Visible area, full scrolling page (stitched), a freely selected region, or a fixed size like 1920×1080 plus your own custom sizes."
+						},
+						{
+							"emoji": "✏️",
+							"title": "Built-in annotator",
+							"desc": "Crop, arrows, rectangles, ellipses, pen, text, highlight, mosaic/blur and numbered steps — with undo & redo."
+						},
+						{
+							"emoji": "💾",
+							"title": "Export anywhere",
+							"desc": "Save as PNG, JPG, WEBP or PDF, copy to clipboard, or send straight to the system print dialog."
+						},
+						{
+							"emoji": "🗂️",
+							"title": "Batch multiple tabs",
+							"desc": "Capture many open tabs in one go and download them as a ZIP archive or a single multi-page PDF."
+						},
+						{
+							"emoji": "🤖",
+							"title": "Send to AI",
+							"desc": "Copy the shot to the clipboard and open ChatGPT, Claude or Gemini in one click — paste and ask."
+						},
+						{
+							"emoji": "🔒",
+							"title": "100% offline & no login",
+							"desc": "Everything runs in your browser. No account, no backend, no tracking — nothing ever leaves your device."
+						}
+					]
+				},
+				"zh-tw": {
+					"name": "ScrnCap – 螢幕截圖與整頁擷取",
+					"short": "擷取可視區、整頁、自選區域或固定尺寸，標註後匯出 PNG/JPG/WEBP/PDF 或列印。100% 離線。",
+					"long": "一次又一次截相同的網頁，再手動裁切、標註、轉檔，真的很費時。ScrnCap 在瀏覽器裡一站搞定：擷取、標註、匯出。免註冊、免上傳，任何資料都不離開你的裝置。\n\n- 🖥️ 四種擷取模式 — 可視區、整頁滾動拼接、自選區域，或像 1920×1080 的固定尺寸與自訂尺寸。\n- ✏️ 內建標註工具 — 裁切、箭頭、圖形、畫筆、文字、螢光標示、馬賽克/模糊、編號步驟，還能復原與重做。\n- 💾 隨處匯出 — PNG、JPG、WEBP、PDF、複製到剪貼簿，或直接列印。\n- 🗂️ 多分頁批次 — 下載成 ZIP，或合併為單一多頁 PDF。\n- 🤖 送給 AI — 一鍵複製並開啟 ChatGPT、Claude 或 Gemini，貼上即用。\n- 🔒 100% 離線、免登入 — 不需帳號、沒有後端、不做追蹤。\n\n設計師、QA 工程師、客服人員、行銷與研究人員都好用。",
+					"features": [
+						{
+							"emoji": "🖥️",
+							"title": "Four capture modes",
+							"desc": "Visible area, full scrolling page (stitched), a freely selected region, or a fixed size like 1920×1080 plus your own custom sizes."
+						},
+						{
+							"emoji": "✏️",
+							"title": "Built-in annotator",
+							"desc": "Crop, arrows, rectangles, ellipses, pen, text, highlight, mosaic/blur and numbered steps — with undo & redo."
+						},
+						{
+							"emoji": "💾",
+							"title": "Export anywhere",
+							"desc": "Save as PNG, JPG, WEBP or PDF, copy to clipboard, or send straight to the system print dialog."
+						},
+						{
+							"emoji": "🗂️",
+							"title": "Batch multiple tabs",
+							"desc": "Capture many open tabs in one go and download them as a ZIP archive or a single multi-page PDF."
+						},
+						{
+							"emoji": "🤖",
+							"title": "Send to AI",
+							"desc": "Copy the shot to the clipboard and open ChatGPT, Claude or Gemini in one click — paste and ask."
+						},
+						{
+							"emoji": "🔒",
+							"title": "100% offline & no login",
+							"desc": "Everything runs in your browser. No account, no backend, no tracking — nothing ever leaves your device."
+						}
+					]
+				}
+			}
+		},
+		{
+			"slug": "bulk-image-downloader",
+			"category": "extension",
+			"type": "extension",
+			"installUrl": "https://chromewebstore.google.com/detail/bulk-image-downloader/lamfengpphafgjdgacmmnpakdphmjlji",
+			"categoryLabel": "Productivity",
+			"logo": "/assets/showcase/bulk-image-downloader/logo.svg",
+			"gradient": [
+				"#15803D",
+				"#22C55E",
+				"#4ADE80"
+			],
+			"screenshots": [
+				{
+					"src": "/assets/showcase/bulk-image-downloader/scrn/01-scrn-1.png",
+					"caption": "Preview every image on the page, then filter by size and type"
+				},
+				{
+					"src": "/assets/showcase/bulk-image-downloader/scrn/02-scrn-2.png",
+					"caption": "Pick a range — all tabs, current, or left / right — and download in one click"
+				}
+			],
+			"privacyMarkdown": "# Privacy Policy — Bulk Image Downloader\n\n_Last updated: 2026-07-04_\n\nThis policy explains how the **Bulk Image Downloader** browser extension handles your\ninformation. The published version of this policy is hosted at\n<https://chinadeveloper.net/privacy/imgdown>.\n\n## Summary\n\nBulk Image Downloader is a fully local tool. It **does not collect, sell, or transmit\nany personal data**. There are no accounts, no analytics, no tracking, and no servers.\nEvery action — finding, filtering, previewing and downloading images — happens entirely\ninside your own browser, on your own device.\n\n## What data we collect\n\n**None.** We do not collect, store remotely, or share:\n\n- Personal or contact information\n- Browsing history or the list of tabs you open\n- The images you view or download\n- Any usage, analytics, or telemetry data\n\n## Data stored on your device\n\nThe extension saves a small amount of data **locally**, using `chrome.storage`, so it can\nremember your preferences between sessions:\n\n- Your image filter rules (width/height ranges, selected file types, sort order)\n- Your light/dark theme choice\n- The state of the optional \"rate this extension\" prompt\n\nThis data never leaves your device and is not accessible to us or any third party. Removing\nthe extension clears it.\n\n## Permissions and why they are needed\n\nThe extension requests only the permissions required for its features:\n\n- **downloads** — Save the images you selected to your Downloads folder, and save a single\n  image when you use the right-click menu. Triggered only by your explicit action.\n- **storage** — Remember your own preferences locally (filter rules, theme, rating-prompt\n  state), as described above. Nothing in storage is sent anywhere.\n- **contextMenus** — Add a \"Download image\" item to the right-click menu so you can save any\n  single image directly to Downloads.\n- **tabs** — Enumerate the tabs in the current window so you can bulk download from all tabs,\n  the current tab, or every tab to the left or right of it. No browsing history is collected\n  or transmitted.\n- **scripting** — Inject the extension's image-collecting script into the specific tab(s) you\n  chose to act on, so it can list the images on those pages. The script runs locally.\n- **Host access (`*://*/*`)** — Because you can trigger the extension on any website, it needs\n  permission to read image URLs from whatever page you are viewing. It reads the page locally\n  only when you act, and sends nothing to any server.\n\n## Third parties\n\nNone. The extension does not integrate any advertising, analytics, or third-party data\nservices, and does not share data with anyone.\n\n## Children's privacy\n\nThe extension collects no data from anyone, including children.\n\n## Changes to this policy\n\nIf this policy changes, the updated version will be posted at the URL above with a new\n\"Last updated\" date.\n\n## Contact\n\nQuestions about this policy? Contact **tiger.hu.liu@gmail.com**.",
+			"content": {
+				"en": {
+					"name": "Bulk Image Downloader",
+					"tagline": "The fastest way to bulk download images from any website.",
+					"short": "Bulk download images from multiple tabs in one click. AVIF, WebP & AI images supported. Filter by size and file type.",
+					"long": "**The fastest way to bulk download images from any website.** Save photos from one page or many tabs at once — with powerful filters for resolution, file type and more.\n\nPerfect for designers, photographers, researchers and AI artists who need to save lots of images quickly and efficiently.\n\n**Why install it**\n\nDownloading images one by one is slow. Bulk Image Downloader previews every image on a page — or across many tabs — lets you filter and sort them, then saves the whole selection to your Downloads folder with a single click. No accounts, no uploads, no configuration.\n\n**What you can do**\n\n🗂️ **Multi-tab bulk download** — Grab images from all tabs, the current tab, or every tab to the left or right of it — in one click.\n\n🔍 **Powerful filters** — Filter by width, height and file type, then sort by resolution or tab order before you download.\n\n🖼️ **Modern & AI formats** — Full support for AVIF, WebP, SVG plus data: URI images (data:image/jpeg, data:image/png, data:image/webp) from Midjourney, DALL·E and Stable Diffusion.\n\n👁️ **Preview before you save** — See every image found on the page — including linked ones — and use invert-selection to pick fast.\n\n🖱️ **Right-click to save** — Save any single image straight to your Downloads folder from the context menu, just like Safari.\n\n⌨️ **Keyboard shortcuts** — Trigger each range instantly with Alt+A (all), Alt+C (current), Alt+R (right) and Alt+L (left).\n\n**Private by design**\n\nEverything runs locally in your browser. Bulk Image Downloader does not collect, sell or transmit any data — no analytics, no accounts, no servers. Your settings are stored only on your device.\n\n**Great for**\n\nDesigners, photographers, researchers and AI artists who need to save lots of images quickly.\n\nJust press **Download**, and every selected image is saved to your default Chrome download directory. No extra configuration needed.",
+					"features": [
+						{
+							"emoji": "🗂️",
+							"title": "Multi-tab bulk download",
+							"desc": "Grab images from all tabs, the current tab, or every tab to the left or right of it — in one click."
+						},
+						{
+							"emoji": "🔍",
+							"title": "Powerful filters",
+							"desc": "Filter by width, height and file type, then sort by resolution or tab order before you download."
+						},
+						{
+							"emoji": "🖼️",
+							"title": "Modern & AI formats",
+							"desc": "Full support for AVIF, WebP, SVG plus data: URI images from Midjourney, DALL·E and Stable Diffusion."
+						},
+						{
+							"emoji": "👁️",
+							"title": "Preview before you save",
+							"desc": "See every image found on the page — including linked ones — and use invert-selection to pick fast."
+						},
+						{
+							"emoji": "🖱️",
+							"title": "Right-click to save",
+							"desc": "Save any single image straight to your Downloads folder from the context menu, just like Safari."
+						},
+						{
+							"emoji": "⌨️",
+							"title": "Keyboard shortcuts",
+							"desc": "Trigger each range instantly with Alt+A (all), Alt+C (current), Alt+R (right) and Alt+L (left)."
+						}
+					]
+				},
+				"zh-cn": {
+					"name": "Bulk Image Downloader",
+					"short": "一键批量下载多个标签页中的图片。支持 AVIF、WebP 与 AI 图片，可按尺寸和文件类型筛选。",
+					"long": "**从任意网站批量下载图片的最快方式。** 一次保存单个页面或多个标签页中的图片，并提供分辨率、文件类型等强大筛选功能。\n\n非常适合需要快速高效保存大量图片的设计师、摄影师、研究人员和 AI 创作者。\n\n**为什么要安装它**\n\n一张一张下载图片太慢了。Bulk Image Downloader 会预览页面上——或多个标签页中——的每一张图片，让你先筛选和排序，然后只需一次点击即可将整个选区保存到\"下载\"文件夹。无需账户、无需上传、无需任何配置。\n\n**你可以做什么**\n\n🗂️ **多标签批量下载** — 一键抓取所有标签页、当前标签页，或其左右两侧任意标签页中的图片。\n\n🔍 **强大的筛选** — 按宽度、高度和文件类型筛选，下载前还可按分辨率或标签页顺序排序。\n\n🖼️ **现代格式与 AI 格式** — 完整支持 AVIF、WebP、SVG，以及来自 Midjourney、DALL·E 和 Stable Diffusion 的 data: URI 图片（data:image/jpeg、data:image/png、data:image/webp）。\n\n👁️ **保存前先预览** — 查看页面上找到的每一张图片（包括链接图片），并可用反选功能快速挑选。\n\n🖱️ **右键即可保存** — 从右键菜单将任意单张图片直接保存到\"下载\"文件夹，就像 Safari 一样。\n\n⌨️ **键盘快捷键** — 使用 Alt+A（全部）、Alt+C（当前）、Alt+R（右侧）和 Alt+L（左侧）即时触发各个范围。\n\n**隐私优先的设计**\n\n一切都在你的浏览器本地运行。Bulk Image Downloader 不收集、不出售、不传输任何数据——没有分析统计、没有账户、没有服务器。你的设置仅保存在你自己的设备上。\n\n**适合以下人群**\n\n需要快速保存大量图片的设计师、摄影师、研究人员和 AI 创作者。\n\n只需按下 **下载**，每一张选中的图片都会保存到你的 Chrome 默认下载目录。无需额外配置。",
+					"features": [
+						{
+							"emoji": "🗂️",
+							"title": "Multi-tab bulk download",
+							"desc": "Grab images from all tabs, the current tab, or every tab to the left or right of it — in one click."
+						},
+						{
+							"emoji": "🔍",
+							"title": "Powerful filters",
+							"desc": "Filter by width, height and file type, then sort by resolution or tab order before you download."
+						},
+						{
+							"emoji": "🖼️",
+							"title": "Modern & AI formats",
+							"desc": "Full support for AVIF, WebP, SVG plus data: URI images from Midjourney, DALL·E and Stable Diffusion."
+						},
+						{
+							"emoji": "👁️",
+							"title": "Preview before you save",
+							"desc": "See every image found on the page — including linked ones — and use invert-selection to pick fast."
+						},
+						{
+							"emoji": "🖱️",
+							"title": "Right-click to save",
+							"desc": "Save any single image straight to your Downloads folder from the context menu, just like Safari."
+						},
+						{
+							"emoji": "⌨️",
+							"title": "Keyboard shortcuts",
+							"desc": "Trigger each range instantly with Alt+A (all), Alt+C (current), Alt+R (right) and Alt+L (left)."
+						}
+					]
+				},
+				"es": {
+					"name": "Bulk Image Downloader",
+					"short": "Descarga imágenes en lote de varias pestañas con un clic. Compatible con AVIF, WebP e IA. Filtra por tamaño y tipo.",
+					"long": "**La forma más rápida de descargar imágenes en lote desde cualquier sitio web.** Guarda fotos de una página o de muchas pestañas a la vez, con potentes filtros de resolución, tipo de archivo y más.\n\nPerfecta para diseñadores, fotógrafos, investigadores y artistas de IA que necesitan guardar muchas imágenes de forma rápida y eficiente.\n\n**Por qué instalarla**\n\nDescargar imágenes una por una es lento. Bulk Image Downloader muestra una vista previa de cada imagen de una página —o de muchas pestañas—, te permite filtrarlas y ordenarlas, y luego guarda toda la selección en tu carpeta de Descargas con un solo clic. Sin cuentas, sin subidas, sin configuración.\n\n**Qué puedes hacer**\n\n🗂️ **Descarga en lote multipestaña** — Captura imágenes de todas las pestañas, de la pestaña actual o de todas las que estén a su izquierda o derecha, con un solo clic.\n\n🔍 **Filtros potentes** — Filtra por ancho, alto y tipo de archivo, y ordena por resolución o por orden de pestañas antes de descargar.\n\n🖼️ **Formatos modernos y de IA** — Compatibilidad total con AVIF, WebP, SVG y con imágenes data: URI (data:image/jpeg, data:image/png, data:image/webp) de Midjourney, DALL·E y Stable Diffusion.\n\n👁️ **Vista previa antes de guardar** — Mira todas las imágenes encontradas en la página, incluidas las enlazadas, y usa la inversión de selección para elegir rápido.\n\n🖱️ **Guardar con clic derecho** — Guarda cualquier imagen individual directamente en tu carpeta de Descargas desde el menú contextual, igual que en Safari.\n\n⌨️ **Atajos de teclado** — Activa cada rango al instante con Alt+A (todas), Alt+C (actual), Alt+R (derecha) y Alt+L (izquierda).\n\n**Privada por diseño**\n\nTodo se ejecuta localmente en tu navegador. Bulk Image Downloader no recopila, vende ni transmite ningún dato: sin analíticas, sin cuentas, sin servidores. Tus ajustes se guardan únicamente en tu dispositivo.\n\n**Ideal para**\n\nDiseñadores, fotógrafos, investigadores y artistas de IA que necesitan guardar muchas imágenes rápidamente.\n\nSolo pulsa **Descargar** y todas las imágenes seleccionadas se guardarán en tu directorio de descargas predeterminado de Chrome. Sin configuración adicional.",
+					"features": [
+						{
+							"emoji": "🗂️",
+							"title": "Multi-tab bulk download",
+							"desc": "Grab images from all tabs, the current tab, or every tab to the left or right of it — in one click."
+						},
+						{
+							"emoji": "🔍",
+							"title": "Powerful filters",
+							"desc": "Filter by width, height and file type, then sort by resolution or tab order before you download."
+						},
+						{
+							"emoji": "🖼️",
+							"title": "Modern & AI formats",
+							"desc": "Full support for AVIF, WebP, SVG plus data: URI images from Midjourney, DALL·E and Stable Diffusion."
+						},
+						{
+							"emoji": "👁️",
+							"title": "Preview before you save",
+							"desc": "See every image found on the page — including linked ones — and use invert-selection to pick fast."
+						},
+						{
+							"emoji": "🖱️",
+							"title": "Right-click to save",
+							"desc": "Save any single image straight to your Downloads folder from the context menu, just like Safari."
+						},
+						{
+							"emoji": "⌨️",
+							"title": "Keyboard shortcuts",
+							"desc": "Trigger each range instantly with Alt+A (all), Alt+C (current), Alt+R (right) and Alt+L (left)."
+						}
+					]
+				},
+				"fr": {
+					"name": "Bulk Image Downloader",
+					"short": "Téléchargez des images depuis plusieurs onglets en un clic. AVIF, WebP et images IA gérés. Filtrez par taille et type.",
+					"long": "**Le moyen le plus rapide de télécharger des images en masse depuis n'importe quel site web.** Enregistrez les photos d'une page ou de plusieurs onglets à la fois, avec de puissants filtres de résolution, de type de fichier et bien plus.\n\nParfaite pour les designers, photographes, chercheurs et artistes IA qui doivent enregistrer beaucoup d'images rapidement et efficacement.\n\n**Pourquoi l'installer**\n\nTélécharger les images une par une, c'est lent. Bulk Image Downloader affiche un aperçu de chaque image d'une page — ou de plusieurs onglets —, vous laisse les filtrer et les trier, puis enregistre toute la sélection dans votre dossier Téléchargements en un seul clic. Sans compte, sans envoi, sans configuration.\n\n**Ce que vous pouvez faire**\n\n🗂️ **Téléchargement multi-onglets** — Récupérez les images de tous les onglets, de l'onglet actif, ou de tous les onglets à sa gauche ou à sa droite — en un clic.\n\n🔍 **Filtres puissants** — Filtrez par largeur, hauteur et type de fichier, puis triez par résolution ou par ordre des onglets avant de télécharger.\n\n🖼️ **Formats modernes et IA** — Prise en charge complète d'AVIF, WebP, SVG ainsi que des images data: URI (data:image/jpeg, data:image/png, data:image/webp) de Midjourney, DALL·E et Stable Diffusion.\n\n👁️ **Aperçu avant l'enregistrement** — Voyez chaque image trouvée sur la page — y compris les images liées — et utilisez l'inversion de sélection pour choisir rapidement.\n\n🖱️ **Enregistrer d'un clic droit** — Enregistrez n'importe quelle image directement dans votre dossier Téléchargements depuis le menu contextuel, comme sur Safari.\n\n⌨️ **Raccourcis clavier** — Déclenchez chaque plage instantanément avec Alt+A (tous), Alt+C (actif), Alt+R (droite) et Alt+L (gauche).\n\n**Respectueuse de la vie privée**\n\nTout s'exécute localement dans votre navigateur. Bulk Image Downloader ne collecte, ne vend ni ne transmet aucune donnée : pas d'analyse, pas de compte, pas de serveur. Vos réglages sont stockés uniquement sur votre appareil.\n\n**Idéale pour**\n\nLes designers, photographes, chercheurs et artistes IA qui doivent enregistrer beaucoup d'images rapidement.\n\nAppuyez simplement sur **Télécharger**, et chaque image sélectionnée est enregistrée dans votre dossier de téléchargement Chrome par défaut. Aucune configuration supplémentaire.",
+					"features": [
+						{
+							"emoji": "🗂️",
+							"title": "Multi-tab bulk download",
+							"desc": "Grab images from all tabs, the current tab, or every tab to the left or right of it — in one click."
+						},
+						{
+							"emoji": "🔍",
+							"title": "Powerful filters",
+							"desc": "Filter by width, height and file type, then sort by resolution or tab order before you download."
+						},
+						{
+							"emoji": "🖼️",
+							"title": "Modern & AI formats",
+							"desc": "Full support for AVIF, WebP, SVG plus data: URI images from Midjourney, DALL·E and Stable Diffusion."
+						},
+						{
+							"emoji": "👁️",
+							"title": "Preview before you save",
+							"desc": "See every image found on the page — including linked ones — and use invert-selection to pick fast."
+						},
+						{
+							"emoji": "🖱️",
+							"title": "Right-click to save",
+							"desc": "Save any single image straight to your Downloads folder from the context menu, just like Safari."
+						},
+						{
+							"emoji": "⌨️",
+							"title": "Keyboard shortcuts",
+							"desc": "Trigger each range instantly with Alt+A (all), Alt+C (current), Alt+R (right) and Alt+L (left)."
+						}
+					]
+				},
+				"ja": {
+					"name": "Bulk Image Downloader",
+					"short": "複数のタブから画像をワンクリックで一括ダウンロード。AVIF、WebP、AI画像に対応。サイズやファイル形式で絞り込み。",
+					"long": "**あらゆるウェブサイトから画像を一括ダウンロードする最速の方法。** 1つのページからでも、複数のタブからでも、写真をまとめて保存。解像度やファイル形式などの強力なフィルターを備えています。\n\n大量の画像を素早く効率的に保存したいデザイナー、写真家、研究者、AIクリエイターに最適です。\n\n**インストールする理由**\n\n画像を1枚ずつダウンロードするのは時間がかかります。Bulk Image Downloader は、ページ上の——あるいは複数タブにまたがる——すべての画像をプレビューし、絞り込みや並べ替えを行ったうえで、選択したすべてをワンクリックで「ダウンロード」フォルダーに保存します。アカウント不要、アップロード不要、設定不要です。\n\n**できること**\n\n🗂️ **複数タブの一括ダウンロード** — すべてのタブ、現在のタブ、またはその左右にあるすべてのタブから、ワンクリックで画像を取得します。\n\n🔍 **強力なフィルター** — 幅・高さ・ファイル形式で絞り込み、ダウンロード前に解像度やタブ順で並べ替えできます。\n\n🖼️ **最新フォーマットとAIフォーマット** — AVIF、WebP、SVG に完全対応。さらに Midjourney、DALL·E、Stable Diffusion の data: URI 画像（data:image/jpeg、data:image/png、data:image/webp）にも対応します。\n\n👁️ **保存前にプレビュー** — リンクされた画像も含め、ページ内で見つかったすべての画像を確認でき、選択反転で素早く選べます。\n\n🖱️ **右クリックで保存** — Safari のように、コンテキストメニューから任意の1枚を「ダウンロード」フォルダーへ直接保存できます。\n\n⌨️ **キーボードショートカット** — Alt+A（すべて）、Alt+C（現在）、Alt+R（右）、Alt+L（左）で各範囲を即座に実行します。\n\n**設計段階からプライバシー重視**\n\nすべてはお使いのブラウザ内でローカルに動作します。Bulk Image Downloader はいかなるデータも収集・販売・送信しません——解析なし、アカウントなし、サーバーなし。設定はお使いのデバイスにのみ保存されます。\n\n**こんな方におすすめ**\n\n大量の画像を素早く保存したいデザイナー、写真家、研究者、AIクリエイター。\n\n**ダウンロード** を押すだけで、選択したすべての画像が Chrome の既定のダウンロード先に保存されます。追加の設定は不要です。",
+					"features": [
+						{
+							"emoji": "🗂️",
+							"title": "Multi-tab bulk download",
+							"desc": "Grab images from all tabs, the current tab, or every tab to the left or right of it — in one click."
+						},
+						{
+							"emoji": "🔍",
+							"title": "Powerful filters",
+							"desc": "Filter by width, height and file type, then sort by resolution or tab order before you download."
+						},
+						{
+							"emoji": "🖼️",
+							"title": "Modern & AI formats",
+							"desc": "Full support for AVIF, WebP, SVG plus data: URI images from Midjourney, DALL·E and Stable Diffusion."
+						},
+						{
+							"emoji": "👁️",
+							"title": "Preview before you save",
+							"desc": "See every image found on the page — including linked ones — and use invert-selection to pick fast."
+						},
+						{
+							"emoji": "🖱️",
+							"title": "Right-click to save",
+							"desc": "Save any single image straight to your Downloads folder from the context menu, just like Safari."
+						},
+						{
+							"emoji": "⌨️",
+							"title": "Keyboard shortcuts",
+							"desc": "Trigger each range instantly with Alt+A (all), Alt+C (current), Alt+R (right) and Alt+L (left)."
+						}
+					]
+				},
+				"zh-tw": {
+					"features": [
+						{
+							"emoji": "🗂️",
+							"title": "Multi-tab bulk download",
+							"desc": "Grab images from all tabs, the current tab, or every tab to the left or right of it — in one click."
+						},
+						{
+							"emoji": "🔍",
+							"title": "Powerful filters",
+							"desc": "Filter by width, height and file type, then sort by resolution or tab order before you download."
+						},
+						{
+							"emoji": "🖼️",
+							"title": "Modern & AI formats",
+							"desc": "Full support for AVIF, WebP, SVG plus data: URI images from Midjourney, DALL·E and Stable Diffusion."
+						},
+						{
+							"emoji": "👁️",
+							"title": "Preview before you save",
+							"desc": "See every image found on the page — including linked ones — and use invert-selection to pick fast."
+						},
+						{
+							"emoji": "🖱️",
+							"title": "Right-click to save",
+							"desc": "Save any single image straight to your Downloads folder from the context menu, just like Safari."
+						},
+						{
+							"emoji": "⌨️",
+							"title": "Keyboard shortcuts",
+							"desc": "Trigger each range instantly with Alt+A (all), Alt+C (current), Alt+R (right) and Alt+L (left)."
+						}
+					],
+					"name": "Bulk Image Downloader",
+					"short": "Bulk download images from multiple tabs in one click. AVIF, WebP & AI images supported. Filter by size and file type."
+				}
+			}
+		},
+		{
+			"slug": "svg-grabber",
+			"category": "extension",
+			"type": "extension",
+			"installUrl": "https://chromewebstore.google.com/detail/svg-grabber-by-svg-forge/gendlmilamjndnjeogphmanhlcagiail",
+			"categoryLabel": "Developer Tools",
+			"logo": "/assets/showcase/svg-grabber/logo.svg",
+			"gradient": [
+				"#4338CA",
+				"#5B21B6",
+				"#7C3AED"
+			],
+			"screenshots": [
+				{
+					"src": "/assets/showcase/svg-grabber/scrn/01-scrn-01.png",
+					"caption": ""
+				},
+				{
+					"src": "/assets/showcase/svg-grabber/scrn/02-scrn-02.png",
+					"caption": ""
+				}
+			],
+			"privacyMarkdown": "# Privacy Policy — SVG Grabber by SVG Forge\n\n**Last updated:** 2026-06-15\n\nThis policy explains what SVG Grabber by SVG Forge (\"the extension\") does and does not\ndo with your data. The public version of this policy is hosted at\nhttps://svg.xeviora.com/privacy.\n\n## Summary\n\nSVG Grabber **does not collect, store, sell, or transmit any personal data.** It has no\nanalytics, no tracking, no account, and no backend that receives your information. Every\naction runs locally in your browser.\n\n## What the extension does\n\nWhen you click the toolbar icon, the extension scans the current page for vector graphics\n(inline SVGs, `.svg` images, CSS background images, and embedded `<object>` graphics) and\nshows them in a popup. From there you can download an SVG, copy its source code, export it\nas a PNG, or open it in the SVG Forge web app to edit. You can also right-click any image\nand choose \"Vectorize this image with SVG Forge\" to send it to the converter tool.\n\nAll scanning, copying, and PNG conversion happens **on your device, in your browser.** The\nextension does not send the pages you visit, the SVGs you grab, or any other information to\nus or to any third party.\n\n## Data collection\n\n**None.** The extension does not collect, log, or transmit:\n\n- personal or contact information,\n- browsing history or the URLs of pages you visit,\n- the content of pages you scan,\n- analytics, telemetry, or usage statistics.\n\nThere is no account, no sign-in, and no server that stores your data.\n\n## When you open the SVG Forge web app\n\nThe \"Edit with AI\" and \"Vectorize\" actions open a tab on the SVG Forge web app\n(svg.xeviora.com) and pass the selected SVG or image to it **through the page URL fragment**,\nwhich stays in your browser and is not sent to a server as part of that handoff. Once you are\non the SVG Forge website, that site's own privacy policy applies. The link also carries a\nnon-identifying `utm_source` marker so SVG Forge knows the visit came from the extension; it\ncontains no personal data.\n\n## Permissions and why they are needed\n\nThe extension requests only what its features require:\n\n- **activeTab** — to read the current tab's content and collect its SVGs, only when you open\n  the extension on that tab.\n- **contextMenus** — to add the right-click \"Vectorize this image with SVG Forge\" menu item.\n- **downloads** — to save the `.svg` files and PNG exports you explicitly choose to download.\n- **clipboardWrite** — to copy an SVG's source code to your clipboard when you click \"Copy\".\n- **Host access (`<all_urls>`)** — because SVGs can appear on any website, the extension must\n  be able to read the page you are viewing and fetch referenced `.svg` files. This access is\n  used only to find and grab SVGs locally; nothing is sent to any server.\n\n## Data sharing and sale\n\nThe extension shares no data with anyone and sells no data, because it collects none.\n\n## Changes to this policy\n\nIf this policy changes, the \"Last updated\" date above will change and the current version\nwill always be available at https://svg.xeviora.com/privacy.\n\n## Contact\n\nQuestions about privacy? Email tiger.hu.liu@gmail.com.",
+			"content": {
+				"en": {
+					"name": "SVG Grabber by SVG Forge",
+					"tagline": "One click. Every SVG on the page.",
+					"short": "Grab every SVG on any page in one click — download, copy code, export PNG, or edit with AI. Free forever, no account needed.",
+					"long": "",
+					"features": [
+						{
+							"emoji": "📥",
+							"title": "Download the original SVG",
+							"desc": "Save the untouched .svg file straight from any page — no emailing, no screenshots."
+						},
+						{
+							"emoji": "📋",
+							"title": "Copy the source code",
+							"desc": "One click copies the full SVG markup to your clipboard, ready to paste into your project."
+						},
+						{
+							"emoji": "🖼️",
+							"title": "Export as PNG (2×)",
+							"desc": "Rasterize any grabbed SVG at 2× resolution for slides, docs, and mockups."
+						},
+						{
+							"emoji": "✨",
+							"title": "Edit with AI",
+							"desc": "Open any grabbed SVG in SVG Forge's free online editor and AI generator."
+						},
+						{
+							"emoji": "🖱️",
+							"title": "Right-click vectorize",
+							"desc": "Send any image (PNG/JPG) to SVG Forge's converter to turn it into a clean, scalable vector."
+						},
+						{
+							"emoji": "🔍",
+							"title": "Finds every kind of SVG",
+							"desc": "Inline SVGs, .svg images, logos hidden in CSS backgrounds, and embedded <object> graphics."
+						}
+					]
+				},
+				"zh-cn": {
+					"name": "SVG Grabber — 一键抓取网页 SVG",
+					"short": "一键抓取网页上的所有 SVG：下载、复制代码、导出 PNG，或用 AI 编辑。永久免费，无需注册。",
+					"long": "**一键搞定，抓取页面上的每一个 SVG。**\n\nSVG Grabber 扫描你正在浏览的网页，找出每一个矢量图形——内联 SVG、.svg 图片、藏在 CSS 背景里的 logo，甚至嵌入的对象，并整齐排列成网格，让你立刻拿到所需的图形。\n\n**你可以做什么**\n- 📥 **下载原始 SVG** —— 直接从网页保存原汁原味的 .svg 文件。\n- 📋 **复制源代码** —— 一键把完整 SVG 代码复制到剪贴板。\n- 🖼️ **导出 PNG（2×）** —— 把任意 SVG 以 2 倍分辨率栅格化，用于幻灯片和文档。\n- ✨ **用 AI 编辑** —— 在 SVG Forge 免费在线编辑器与 AI 生成器中打开任意 SVG。\n- 🖱️ **右键矢量化** —— 把任意图片（PNG/JPG）送进 SVG Forge 转换工具。\n- 🔍 **识别各种 SVG** —— 内联、.svg 图片、CSS 背景、嵌入的 `<object>`。\n\n**隐私优先**\n扫描全部在你的浏览器本地完成。不上传、不追踪、不出售、不存储。无需注册，永久免费。\n\nSVG Grabber 是 SVG Forge（svg.xeviora.com）的配套扩展——所有 SVG 工具集于一处，外加可由文字生成干净、分层、可编辑 SVG 代码的 AI 生成器。",
+					"features": [
+						{
+							"emoji": "📥",
+							"title": "Download the original SVG",
+							"desc": "Save the untouched .svg file straight from any page — no emailing, no screenshots."
+						},
+						{
+							"emoji": "📋",
+							"title": "Copy the source code",
+							"desc": "One click copies the full SVG markup to your clipboard, ready to paste into your project."
+						},
+						{
+							"emoji": "🖼️",
+							"title": "Export as PNG (2×)",
+							"desc": "Rasterize any grabbed SVG at 2× resolution for slides, docs, and mockups."
+						},
+						{
+							"emoji": "✨",
+							"title": "Edit with AI",
+							"desc": "Open any grabbed SVG in SVG Forge's free online editor and AI generator."
+						},
+						{
+							"emoji": "🖱️",
+							"title": "Right-click vectorize",
+							"desc": "Send any image (PNG/JPG) to SVG Forge's converter to turn it into a clean, scalable vector."
+						},
+						{
+							"emoji": "🔍",
+							"title": "Finds every kind of SVG",
+							"desc": "Inline SVGs, .svg images, logos hidden in CSS backgrounds, and embedded <object> graphics."
+						}
+					]
+				},
+				"es": {
+					"name": "SVG Grabber — Descarga y copia SVG",
+					"short": "Captura cada SVG de cualquier página en un clic: descarga, copia el código, exporta PNG o edita con IA. Gratis, sin cuenta.",
+					"long": "**Un clic. Todos los SVG de la página.**\n\nSVG Grabber escanea la página en la que estás y encuentra cada gráfico vectorial: SVG en línea, imágenes .svg, logotipos ocultos en fondos CSS e incluso objetos incrustados. Los organiza en una cuadrícula limpia para que tomes justo lo que necesitas, al instante.\n\n**Qué puedes hacer**\n- 📥 **Descargar el SVG original** — guarda el archivo .svg intacto desde cualquier página.\n- 📋 **Copiar el código fuente** — un clic copia todo el marcado SVG al portapapeles.\n- 🖼️ **Exportar como PNG (2×)** — rasteriza cualquier SVG a 2× para presentaciones y documentos.\n- ✨ **Editar con IA** — abre cualquier SVG en el editor en línea y el generador de IA de SVG Forge.\n- 🖱️ **Vectorizar con clic derecho** — envía cualquier imagen (PNG/JPG) al conversor de SVG Forge.\n- 🔍 **Encuentra todo tipo de SVG** — en línea, imágenes .svg, fondos CSS y objetos `<object>`.\n\n**Privado por diseño**\nEl escaneo ocurre localmente en tu navegador. No se sube, rastrea, vende ni almacena nada. Sin cuenta. Gratis para siempre.\n\nSVG Grabber es la extensión complementaria de SVG Forge (svg.xeviora.com): todas las herramientas SVG en un solo lugar, además de un generador de IA que escribe código SVG limpio, en capas y editable a partir de texto.",
+					"features": [
+						{
+							"emoji": "📥",
+							"title": "Download the original SVG",
+							"desc": "Save the untouched .svg file straight from any page — no emailing, no screenshots."
+						},
+						{
+							"emoji": "📋",
+							"title": "Copy the source code",
+							"desc": "One click copies the full SVG markup to your clipboard, ready to paste into your project."
+						},
+						{
+							"emoji": "🖼️",
+							"title": "Export as PNG (2×)",
+							"desc": "Rasterize any grabbed SVG at 2× resolution for slides, docs, and mockups."
+						},
+						{
+							"emoji": "✨",
+							"title": "Edit with AI",
+							"desc": "Open any grabbed SVG in SVG Forge's free online editor and AI generator."
+						},
+						{
+							"emoji": "🖱️",
+							"title": "Right-click vectorize",
+							"desc": "Send any image (PNG/JPG) to SVG Forge's converter to turn it into a clean, scalable vector."
+						},
+						{
+							"emoji": "🔍",
+							"title": "Finds every kind of SVG",
+							"desc": "Inline SVGs, .svg images, logos hidden in CSS backgrounds, and embedded <object> graphics."
+						}
+					]
+				},
+				"fr": {
+					"name": "SVG Grabber — Télécharger tout SVG",
+					"short": "Récupérez chaque SVG d'une page en un clic : télécharger, copier le code, exporter en PNG ou éditer avec l'IA. Gratuit, sans compte.",
+					"long": "**Un clic. Tous les SVG de la page.**\n\nSVG Grabber analyse la page que vous consultez et trouve chaque graphique vectoriel : SVG en ligne, images .svg, logos cachés dans les fonds CSS, et même objets intégrés. Il les présente dans une grille nette pour que vous preniez exactement ce dont vous avez besoin, instantanément.\n\n**Ce que vous pouvez faire**\n- 📥 **Télécharger le SVG d'origine** — enregistrez le fichier .svg intact depuis n'importe quelle page.\n- 📋 **Copier le code source** — un clic copie tout le balisage SVG dans le presse-papiers.\n- 🖼️ **Exporter en PNG (2×)** — rastérisez n'importe quel SVG en 2× pour les présentations et documents.\n- ✨ **Éditer avec l'IA** — ouvrez n'importe quel SVG dans l'éditeur en ligne et le générateur IA de SVG Forge.\n- 🖱️ **Vectoriser par clic droit** — envoyez n'importe quelle image (PNG/JPG) au convertisseur de SVG Forge.\n- 🔍 **Trouve tous les types de SVG** — en ligne, images .svg, fonds CSS et objets `<object>`.\n\n**Confidentiel par conception**\nL'analyse se fait localement dans votre navigateur. Rien n'est téléversé, suivi, vendu ni stocké. Sans compte. Gratuit pour toujours.\n\nSVG Grabber est l'extension compagnon de SVG Forge (svg.xeviora.com) : tous les outils SVG au même endroit, plus un générateur IA qui écrit du code SVG propre, structuré en calques et modifiable à partir de texte.",
+					"features": [
+						{
+							"emoji": "📥",
+							"title": "Download the original SVG",
+							"desc": "Save the untouched .svg file straight from any page — no emailing, no screenshots."
+						},
+						{
+							"emoji": "📋",
+							"title": "Copy the source code",
+							"desc": "One click copies the full SVG markup to your clipboard, ready to paste into your project."
+						},
+						{
+							"emoji": "🖼️",
+							"title": "Export as PNG (2×)",
+							"desc": "Rasterize any grabbed SVG at 2× resolution for slides, docs, and mockups."
+						},
+						{
+							"emoji": "✨",
+							"title": "Edit with AI",
+							"desc": "Open any grabbed SVG in SVG Forge's free online editor and AI generator."
+						},
+						{
+							"emoji": "🖱️",
+							"title": "Right-click vectorize",
+							"desc": "Send any image (PNG/JPG) to SVG Forge's converter to turn it into a clean, scalable vector."
+						},
+						{
+							"emoji": "🔍",
+							"title": "Finds every kind of SVG",
+							"desc": "Inline SVGs, .svg images, logos hidden in CSS backgrounds, and embedded <object> graphics."
+						}
+					]
+				},
+				"ja": {
+					"name": "SVG Grabber — ページのSVGを取得",
+					"short": "ページ上のすべてのSVGをワンクリックで取得。ダウンロード、コード複製、PNG書き出し、AI編集。永久無料、アカウント不要。",
+					"long": "**ワンクリックで、ページ上のすべてのSVGを。**\n\nSVG Grabber は表示中のページをスキャンし、あらゆるベクター画像を見つけます——インラインSVG、.svg画像、CSS背景に隠れたロゴ、埋め込みオブジェクトまで。きれいなグリッドに並べるので、必要なものをすぐに取得できます。\n\n**できること**\n- 📥 **オリジナルSVGをダウンロード** —— どのページからでも無加工の.svgファイルを保存。\n- 📋 **ソースコードを複製** —— ワンクリックでSVGコード全体をクリップボードへ。\n- 🖼️ **PNGで書き出し（2×）** —— 任意のSVGを2倍解像度でラスタライズ。スライドや資料に。\n- ✨ **AIで編集** —— SVG Forgeの無料オンラインエディタとAIジェネレーターで開く。\n- 🖱️ **右クリックでベクター化** —— 任意の画像（PNG/JPG）をSVG Forgeの変換ツールへ。\n- 🔍 **あらゆるSVGを検出** —— インライン、.svg画像、CSS背景、`<object>`埋め込み。\n\n**プライバシー重視**\nスキャンはすべてブラウザ内でローカルに行われます。アップロード・追跡・販売・保存は一切なし。アカウント不要、永久無料。\n\nSVG Grabber は SVG Forge（svg.xeviora.com）のコンパニオン拡張機能です——すべてのSVGツールを一か所に集約し、テキストからクリーンで階層化された編集可能なSVGコードを書き出すAIジェネレーターも備えています。",
+					"features": [
+						{
+							"emoji": "📥",
+							"title": "Download the original SVG",
+							"desc": "Save the untouched .svg file straight from any page — no emailing, no screenshots."
+						},
+						{
+							"emoji": "📋",
+							"title": "Copy the source code",
+							"desc": "One click copies the full SVG markup to your clipboard, ready to paste into your project."
+						},
+						{
+							"emoji": "🖼️",
+							"title": "Export as PNG (2×)",
+							"desc": "Rasterize any grabbed SVG at 2× resolution for slides, docs, and mockups."
+						},
+						{
+							"emoji": "✨",
+							"title": "Edit with AI",
+							"desc": "Open any grabbed SVG in SVG Forge's free online editor and AI generator."
+						},
+						{
+							"emoji": "🖱️",
+							"title": "Right-click vectorize",
+							"desc": "Send any image (PNG/JPG) to SVG Forge's converter to turn it into a clean, scalable vector."
+						},
+						{
+							"emoji": "🔍",
+							"title": "Finds every kind of SVG",
+							"desc": "Inline SVGs, .svg images, logos hidden in CSS backgrounds, and embedded <object> graphics."
+						}
+					]
+				},
+				"zh-tw": {
+					"features": [
+						{
+							"emoji": "📥",
+							"title": "Download the original SVG",
+							"desc": "Save the untouched .svg file straight from any page — no emailing, no screenshots."
+						},
+						{
+							"emoji": "📋",
+							"title": "Copy the source code",
+							"desc": "One click copies the full SVG markup to your clipboard, ready to paste into your project."
+						},
+						{
+							"emoji": "🖼️",
+							"title": "Export as PNG (2×)",
+							"desc": "Rasterize any grabbed SVG at 2× resolution for slides, docs, and mockups."
+						},
+						{
+							"emoji": "✨",
+							"title": "Edit with AI",
+							"desc": "Open any grabbed SVG in SVG Forge's free online editor and AI generator."
+						},
+						{
+							"emoji": "🖱️",
+							"title": "Right-click vectorize",
+							"desc": "Send any image (PNG/JPG) to SVG Forge's converter to turn it into a clean, scalable vector."
+						},
+						{
+							"emoji": "🔍",
+							"title": "Finds every kind of SVG",
+							"desc": "Inline SVGs, .svg images, logos hidden in CSS backgrounds, and embedded <object> graphics."
+						}
+					],
+					"name": "SVG Grabber by SVG Forge",
+					"short": "Grab every SVG on any page in one click — download, copy code, export PNG, or edit with AI. Free forever, no account needed."
+				}
+			}
+		},
+		{
+			"slug": "seo-pagerank",
+			"category": "extension",
+			"type": "extension",
+			"installUrl": "https://chromewebstore.google.com/detail/seo-pagerank/lndiecnlfaibiffoeijpjnblnmdlcpog",
+			"categoryLabel": "Developer Tools",
+			"logo": "/assets/showcase/seo-pagerank/logo.svg",
+			"gradient": [
+				"#1D4ED8",
+				"#3B82F6",
+				"#0891B2"
+			],
+			"screenshots": [
+				{
+					"src": "/assets/showcase/seo-pagerank/scrn/01-scrn-1.png",
+					"caption": "One click, one clear score out of 100"
+				},
+				{
+					"src": "/assets/showcase/seo-pagerank/scrn/02-scrn-2.png",
+					"caption": "A–E grade with a category-by-category breakdown"
+				},
+				{
+					"src": "/assets/showcase/seo-pagerank/scrn/03-scrn-3.png",
+					"caption": "Every check explains exactly what to fix"
+				},
+				{
+					"src": "/assets/showcase/seo-pagerank/scrn/04-scrn-4.png",
+					"caption": "Metadata, structure, links, technical & schema"
+				},
+				{
+					"src": "/assets/showcase/seo-pagerank/scrn/05-scrn-5.png",
+					"caption": "Fully localized — 18 languages, 100% local"
+				}
+			],
+			"privacyMarkdown": "# Privacy Policy — SEO PageRank\n\n**Last updated: July 4, 2026**\n\nSEO PageRank is a browser extension that performs on-page SEO audits entirely inside your browser. This policy explains exactly what the extension accesses and what it does — and does not — do with it.\n\n## The short version\n\nSEO PageRank **does not collect, store, transmit, sell, or share any data**. There is no account, no server, no analytics, and no AI key. Every analysis runs locally on your device and the result never leaves your browser.\n\n## What the extension accesses\n\nWhen you click the SEO PageRank icon on a page, it reads that page's DOM — its title, meta tags, headings, links, images, and structured data (Open Graph, Twitter Cards, JSON-LD) — in order to compute an SEO score. This reading happens **on the page you explicitly acted on, at the moment you acted**, and the data is used only to render the audit in the drawer. It is discarded when you close the page.\n\n## Permissions and why they are needed\n\n- **`activeTab`** — Grants temporary access to the current tab only when you invoke the extension, so it can read that page's content and compute the SEO score locally. Access is scoped to the tab you acted on and only for that action.\n- **Host permissions (`https://*/*`, `http://*/*`)** — Allow the content script that renders the audit drawer to run on any page you choose to analyze, since SEO audits apply to sites across the whole web. The extension still only reads a page when you actively invoke it, and it never sends page content anywhere.\n\n## Data collection\n\n**None.** SEO PageRank does not collect personally identifiable information, browsing history, financial information, authentication information, personal communications, location, or any web activity. Nothing is stored remotely, and nothing is transmitted off your device.\n\n## Remote code\n\nThe extension contains no remotely hosted code. All JavaScript and assets are bundled in the package and reviewed by the Chrome Web Store. It does not download or execute code from any server.\n\n## Changes to this policy\n\nIf this policy changes, the updated version will be posted at the URL below with a new \"Last updated\" date.\n\n## Contact\n\nQuestions about this policy: **support@pagerankstatus.org**\nHosted policy URL: **https://pagerankstatus.org/extension/privacy**",
+			"content": {
+				"en": {
+					"name": "SEO PageRank",
+					"tagline": "Instant on-page SEO audit — score any page out of 100 with an A–E grade, 100% local.",
+					"short": "Instant on-page SEO audit: 100-point score, A–E grade and fixes for metadata, structure, links, technical & schema.",
+					"long": "**Auditing a page's SEO shouldn't mean copy-pasting into five different tools.** SEO PageRank scores any webpage out of 100 in a single click and tells you exactly what to fix.\n\n**Why install it** — Open the drawer on any page and get a clear, honest score in seconds. No account, no upload, no waiting. The A–E letter grade even shows on the toolbar badge.\n\n**What it checks**\n- 📊 100-point SEO score across five weighted categories\n- 🏅 A–E letter grade, shown on the toolbar badge\n- 📋 Metadata — title, meta description, canonical URL\n- 🧱 Content structure — H1 uniqueness, heading hierarchy, image alt text\n- 🔗 Links & navigation — href validity, anchor-text quality\n- 🔒 Technical SEO — HTTPS, viewport, lang, charset\n- 🌐 Social & structured data — Open Graph, Twitter Cards, JSON-LD\n- 💡 Actionable fixes for every issue\n- 🈳 18 languages\n\n**Private by design** — Runs 100% locally. Reads only the page you click it on, sends nothing to any server. No account, no tracking, no AI key.\n\n**Great for** SEO professionals, content creators, marketers and web developers.",
+					"features": [
+						{
+							"emoji": "📊",
+							"title": "100-point SEO score",
+							"desc": "Five weighted categories audited in a single click, distilled into one clear score out of 100."
+						},
+						{
+							"emoji": "🏅",
+							"title": "A–E letter grade",
+							"desc": "See the page's grade right on the toolbar badge — A (≥90%) down to E (<60%)."
+						},
+						{
+							"emoji": "📋",
+							"title": "Metadata checks",
+							"desc": "Title tag, meta description and canonical URL — the essentials search engines read first."
+						},
+						{
+							"emoji": "🧱",
+							"title": "Content structure",
+							"desc": "H1 uniqueness, heading hierarchy and image alt-text coverage."
+						},
+						{
+							"emoji": "🔗",
+							"title": "Links & navigation",
+							"desc": "Href validity and anchor-text quality across the page."
+						},
+						{
+							"emoji": "🔒",
+							"title": "Technical SEO",
+							"desc": "HTTPS, viewport, lang attribute and charset — the mobile & crawlability basics."
+						},
+						{
+							"emoji": "🌐",
+							"title": "Social & structured data",
+							"desc": "Open Graph, Twitter Cards and JSON-LD structured data detection."
+						},
+						{
+							"emoji": "💡",
+							"title": "Actionable fixes",
+							"desc": "Every check explains what is wrong and why it matters, so you know exactly what to fix."
+						},
+						{
+							"emoji": "🈳",
+							"title": "18 languages",
+							"desc": "Fully localized interface in 18 languages, auto-selected from your browser."
+						},
+						{
+							"emoji": "🛡️",
+							"title": "100% local & private",
+							"desc": "Pure in-browser DOM analysis — no account, no server, no AI key. Nothing leaves your browser."
+						}
+					]
+				},
+				"zh-cn": {
+					"name": "SEO PageRank",
+					"short": "即时页面 SEO 体检：100 分评分、A–E 等级，覆盖元数据、结构、链接、技术与结构化数据并给出修复建议。",
+					"long": "**做页面 SEO 体检，不该在五个工具之间来回复制粘贴。** SEO PageRank 一键为任意网页打出百分制分数，并告诉你到底该修什么。\n\n**为什么装它** — 在任意页面打开抽屉，几秒得到清晰、诚实的评分。无需账号、无需上传、无需等待。A–E 等级还会直接显示在工具栏徽章上。\n\n**它检查什么**\n- 📊 五大加权类别的 100 分制 SEO 评分\n- 🏅 A–E 字母等级，显示在工具栏徽章\n- 📋 元数据 — 标题、meta 描述、canonical\n- 🧱 内容结构 — H1 唯一性、标题层级、图片 alt\n- 🔗 链接与导航 — href 有效性、锚文本质量\n- 🔒 技术规范 — HTTPS、viewport、lang、charset\n- 🌐 社交与结构化数据 — Open Graph、Twitter Cards、JSON-LD\n- 💡 每一项问题都给出可执行的修复建议\n- 🈳 18 种语言\n\n**隐私优先** — 100% 本地运行。只读取你点击的那个页面，不向任何服务器发送数据。无账号、无追踪、无 AI 密钥。\n\n**适合** SEO 从业者、内容创作者、营销人员与网页开发者。",
+					"features": [
+						{
+							"emoji": "📊",
+							"title": "100-point SEO score",
+							"desc": "Five weighted categories audited in a single click, distilled into one clear score out of 100."
+						},
+						{
+							"emoji": "🏅",
+							"title": "A–E letter grade",
+							"desc": "See the page's grade right on the toolbar badge — A (≥90%) down to E (<60%)."
+						},
+						{
+							"emoji": "📋",
+							"title": "Metadata checks",
+							"desc": "Title tag, meta description and canonical URL — the essentials search engines read first."
+						},
+						{
+							"emoji": "🧱",
+							"title": "Content structure",
+							"desc": "H1 uniqueness, heading hierarchy and image alt-text coverage."
+						},
+						{
+							"emoji": "🔗",
+							"title": "Links & navigation",
+							"desc": "Href validity and anchor-text quality across the page."
+						},
+						{
+							"emoji": "🔒",
+							"title": "Technical SEO",
+							"desc": "HTTPS, viewport, lang attribute and charset — the mobile & crawlability basics."
+						},
+						{
+							"emoji": "🌐",
+							"title": "Social & structured data",
+							"desc": "Open Graph, Twitter Cards and JSON-LD structured data detection."
+						},
+						{
+							"emoji": "💡",
+							"title": "Actionable fixes",
+							"desc": "Every check explains what is wrong and why it matters, so you know exactly what to fix."
+						},
+						{
+							"emoji": "🈳",
+							"title": "18 languages",
+							"desc": "Fully localized interface in 18 languages, auto-selected from your browser."
+						},
+						{
+							"emoji": "🛡️",
+							"title": "100% local & private",
+							"desc": "Pure in-browser DOM analysis — no account, no server, no AI key. Nothing leaves your browser."
+						}
+					]
+				},
+				"es": {
+					"name": "SEO PageRank",
+					"short": "Auditoría SEO instantánea: puntuación sobre 100, nota A–E y correcciones de metadatos, estructura, enlaces y schema.",
+					"long": "**Auditar el SEO de una página no debería obligarte a copiar y pegar en cinco herramientas.** SEO PageRank puntúa cualquier página sobre 100 con un solo clic y te dice exactamente qué corregir.\n\n**Por qué instalarlo** — Abre el panel en cualquier página y obtén una puntuación clara y honesta en segundos. Sin cuenta, sin subir nada, sin esperas. La nota A–E aparece incluso en la insignia de la barra de herramientas.\n\n**Qué analiza**\n- 📊 Puntuación SEO sobre 100 en cinco categorías ponderadas\n- 🏅 Nota A–E, mostrada en la insignia\n- 📋 Metadatos — título, meta description, URL canónica\n- 🧱 Estructura — unicidad del H1, jerarquía de encabezados, texto alt\n- 🔗 Enlaces — validez de href, calidad del texto ancla\n- 🔒 SEO técnico — HTTPS, viewport, lang, charset\n- 🌐 Social y datos estructurados — Open Graph, Twitter Cards, JSON-LD\n- 💡 Correcciones accionables para cada problema\n- 🈳 18 idiomas\n\n**Privado por diseño** — Funciona 100% en local. Solo lee la página en la que haces clic y no envía nada a ningún servidor. Sin cuenta, sin rastreo, sin clave de IA.\n\n**Ideal para** profesionales SEO, creadores de contenido, especialistas en marketing y desarrolladores web.",
+					"features": [
+						{
+							"emoji": "📊",
+							"title": "100-point SEO score",
+							"desc": "Five weighted categories audited in a single click, distilled into one clear score out of 100."
+						},
+						{
+							"emoji": "🏅",
+							"title": "A–E letter grade",
+							"desc": "See the page's grade right on the toolbar badge — A (≥90%) down to E (<60%)."
+						},
+						{
+							"emoji": "📋",
+							"title": "Metadata checks",
+							"desc": "Title tag, meta description and canonical URL — the essentials search engines read first."
+						},
+						{
+							"emoji": "🧱",
+							"title": "Content structure",
+							"desc": "H1 uniqueness, heading hierarchy and image alt-text coverage."
+						},
+						{
+							"emoji": "🔗",
+							"title": "Links & navigation",
+							"desc": "Href validity and anchor-text quality across the page."
+						},
+						{
+							"emoji": "🔒",
+							"title": "Technical SEO",
+							"desc": "HTTPS, viewport, lang attribute and charset — the mobile & crawlability basics."
+						},
+						{
+							"emoji": "🌐",
+							"title": "Social & structured data",
+							"desc": "Open Graph, Twitter Cards and JSON-LD structured data detection."
+						},
+						{
+							"emoji": "💡",
+							"title": "Actionable fixes",
+							"desc": "Every check explains what is wrong and why it matters, so you know exactly what to fix."
+						},
+						{
+							"emoji": "🈳",
+							"title": "18 languages",
+							"desc": "Fully localized interface in 18 languages, auto-selected from your browser."
+						},
+						{
+							"emoji": "🛡️",
+							"title": "100% local & private",
+							"desc": "Pure in-browser DOM analysis — no account, no server, no AI key. Nothing leaves your browser."
+						}
+					]
+				},
+				"fr": {
+					"name": "SEO PageRank",
+					"short": "Audit SEO instantané : score sur 100, note A–E et correctifs pour métadonnées, structure, liens et schema.",
+					"long": "**Auditer le SEO d'une page ne devrait pas exiger de copier-coller dans cinq outils.** SEO PageRank note n'importe quelle page sur 100 en un clic et vous dit exactement quoi corriger.\n\n**Pourquoi l'installer** — Ouvrez le panneau sur n'importe quelle page et obtenez un score clair et honnête en quelques secondes. Sans compte, sans envoi, sans attente. La note A–E s'affiche même sur le badge de la barre d'outils.\n\n**Ce qu'il vérifie**\n- 📊 Score SEO sur 100 réparti en cinq catégories pondérées\n- 🏅 Note A–E, affichée sur le badge\n- 📋 Métadonnées — balise title, meta description, URL canonique\n- 🧱 Structure — unicité du H1, hiérarchie des titres, texte alt\n- 🔗 Liens — validité des href, qualité du texte d'ancrage\n- 🔒 SEO technique — HTTPS, viewport, lang, charset\n- 🌐 Social et données structurées — Open Graph, Twitter Cards, JSON-LD\n- 💡 Correctifs actionnables pour chaque problème\n- 🈳 18 langues\n\n**Confidentiel par conception** — Fonctionne 100% en local. Ne lit que la page sur laquelle vous cliquez et n'envoie rien à aucun serveur. Sans compte, sans suivi, sans clé IA.\n\n**Idéal pour** les professionnels du SEO, créateurs de contenu, marketeurs et développeurs web.",
+					"features": [
+						{
+							"emoji": "📊",
+							"title": "100-point SEO score",
+							"desc": "Five weighted categories audited in a single click, distilled into one clear score out of 100."
+						},
+						{
+							"emoji": "🏅",
+							"title": "A–E letter grade",
+							"desc": "See the page's grade right on the toolbar badge — A (≥90%) down to E (<60%)."
+						},
+						{
+							"emoji": "📋",
+							"title": "Metadata checks",
+							"desc": "Title tag, meta description and canonical URL — the essentials search engines read first."
+						},
+						{
+							"emoji": "🧱",
+							"title": "Content structure",
+							"desc": "H1 uniqueness, heading hierarchy and image alt-text coverage."
+						},
+						{
+							"emoji": "🔗",
+							"title": "Links & navigation",
+							"desc": "Href validity and anchor-text quality across the page."
+						},
+						{
+							"emoji": "🔒",
+							"title": "Technical SEO",
+							"desc": "HTTPS, viewport, lang attribute and charset — the mobile & crawlability basics."
+						},
+						{
+							"emoji": "🌐",
+							"title": "Social & structured data",
+							"desc": "Open Graph, Twitter Cards and JSON-LD structured data detection."
+						},
+						{
+							"emoji": "💡",
+							"title": "Actionable fixes",
+							"desc": "Every check explains what is wrong and why it matters, so you know exactly what to fix."
+						},
+						{
+							"emoji": "🈳",
+							"title": "18 languages",
+							"desc": "Fully localized interface in 18 languages, auto-selected from your browser."
+						},
+						{
+							"emoji": "🛡️",
+							"title": "100% local & private",
+							"desc": "Pure in-browser DOM analysis — no account, no server, no AI key. Nothing leaves your browser."
+						}
+					]
+				},
+				"ja": {
+					"name": "SEO PageRank",
+					"short": "即時オンページ SEO 診断：100 点満点スコア、A–E 評価、メタ・構造・リンク・技術・schema の改善提案。",
+					"long": "**ページの SEO 診断のために、5 つのツールへコピペを繰り返す必要はありません。** SEO PageRank はワンクリックで任意のページを 100 点満点で採点し、何を直すべきかを的確に示します。\n\n**導入する理由** — 任意のページでドロワーを開けば、数秒で明快かつ誠実なスコアが得られます。アカウント不要、アップロード不要、待ち時間なし。A–E 評価はツールバーのバッジにも表示されます。\n\n**チェック項目**\n- 📊 5 つの加重カテゴリによる 100 点満点 SEO スコア\n- 🏅 A–E 評価（ツールバーバッジ表示）\n- 📋 メタデータ — タイトル、meta description、canonical\n- 🧱 コンテンツ構造 — H1 の一意性、見出し階層、画像 alt\n- 🔗 リンクとナビゲーション — href の有効性、アンカーテキスト品質\n- 🔒 技術 SEO — HTTPS、viewport、lang、charset\n- 🌐 ソーシャルと構造化データ — Open Graph、Twitter Cards、JSON-LD\n- 💡 すべての問題に実行可能な改善提案\n- 🈳 18 言語\n\n**設計段階からプライバシー重視** — 100% ローカルで動作。クリックしたページだけを読み取り、サーバーへは何も送信しません。アカウント・追跡・AI キーは一切なし。\n\n**最適な対象** SEO 担当者、コンテンツ制作者、マーケター、Web 開発者。",
+					"features": [
+						{
+							"emoji": "📊",
+							"title": "100-point SEO score",
+							"desc": "Five weighted categories audited in a single click, distilled into one clear score out of 100."
+						},
+						{
+							"emoji": "🏅",
+							"title": "A–E letter grade",
+							"desc": "See the page's grade right on the toolbar badge — A (≥90%) down to E (<60%)."
+						},
+						{
+							"emoji": "📋",
+							"title": "Metadata checks",
+							"desc": "Title tag, meta description and canonical URL — the essentials search engines read first."
+						},
+						{
+							"emoji": "🧱",
+							"title": "Content structure",
+							"desc": "H1 uniqueness, heading hierarchy and image alt-text coverage."
+						},
+						{
+							"emoji": "🔗",
+							"title": "Links & navigation",
+							"desc": "Href validity and anchor-text quality across the page."
+						},
+						{
+							"emoji": "🔒",
+							"title": "Technical SEO",
+							"desc": "HTTPS, viewport, lang attribute and charset — the mobile & crawlability basics."
+						},
+						{
+							"emoji": "🌐",
+							"title": "Social & structured data",
+							"desc": "Open Graph, Twitter Cards and JSON-LD structured data detection."
+						},
+						{
+							"emoji": "💡",
+							"title": "Actionable fixes",
+							"desc": "Every check explains what is wrong and why it matters, so you know exactly what to fix."
+						},
+						{
+							"emoji": "🈳",
+							"title": "18 languages",
+							"desc": "Fully localized interface in 18 languages, auto-selected from your browser."
+						},
+						{
+							"emoji": "🛡️",
+							"title": "100% local & private",
+							"desc": "Pure in-browser DOM analysis — no account, no server, no AI key. Nothing leaves your browser."
+						}
+					]
+				},
+				"zh-tw": {
+					"features": [
+						{
+							"emoji": "📊",
+							"title": "100-point SEO score",
+							"desc": "Five weighted categories audited in a single click, distilled into one clear score out of 100."
+						},
+						{
+							"emoji": "🏅",
+							"title": "A–E letter grade",
+							"desc": "See the page's grade right on the toolbar badge — A (≥90%) down to E (<60%)."
+						},
+						{
+							"emoji": "📋",
+							"title": "Metadata checks",
+							"desc": "Title tag, meta description and canonical URL — the essentials search engines read first."
+						},
+						{
+							"emoji": "🧱",
+							"title": "Content structure",
+							"desc": "H1 uniqueness, heading hierarchy and image alt-text coverage."
+						},
+						{
+							"emoji": "🔗",
+							"title": "Links & navigation",
+							"desc": "Href validity and anchor-text quality across the page."
+						},
+						{
+							"emoji": "🔒",
+							"title": "Technical SEO",
+							"desc": "HTTPS, viewport, lang attribute and charset — the mobile & crawlability basics."
+						},
+						{
+							"emoji": "🌐",
+							"title": "Social & structured data",
+							"desc": "Open Graph, Twitter Cards and JSON-LD structured data detection."
+						},
+						{
+							"emoji": "💡",
+							"title": "Actionable fixes",
+							"desc": "Every check explains what is wrong and why it matters, so you know exactly what to fix."
+						},
+						{
+							"emoji": "🈳",
+							"title": "18 languages",
+							"desc": "Fully localized interface in 18 languages, auto-selected from your browser."
+						},
+						{
+							"emoji": "🛡️",
+							"title": "100% local & private",
+							"desc": "Pure in-browser DOM analysis — no account, no server, no AI key. Nothing leaves your browser."
+						}
+					],
+					"name": "SEO PageRank",
+					"short": "Instant on-page SEO audit: 100-point score, A–E grade and fixes for metadata, structure, links, technical & schema."
+				}
+			}
+		},
+		{
+			"slug": "ip-flager",
+			"category": "extension",
+			"type": "extension-inline",
+			"installUrl": "https://chromewebstore.google.com/detail/ahbkagdfnimnpalcoanpgiaojgeaklae",
+			"categoryLabel": "Developer Tools",
+			"logo": null,
+			"gradient": null,
+			"screenshots": [
+				{
+					"src": "/assets/showcase/ip-flager/scrn/01-scrn-1.png",
+					"caption": "Country flag in the toolbar, updated as you browse"
+				},
+				{
+					"src": "/assets/showcase/ip-flager/scrn/02-scrn-2.png",
+					"caption": "Click for the full IP report — city, region, timezone, coordinates"
+				},
+				{
+					"src": "/assets/showcase/ip-flager/scrn/03-scrn-3.png",
+					"caption": "Clearly marks localhost and private LAN addresses"
+				}
+			],
+			"privacyMarkdown": "# Privacy Policy — IP Flager\n\n_Last updated: June 9, 2026_\n\n**Short version:** IP Flager detects the country flag for the website you are\nviewing entirely on your device. It has no accounts, no analytics, and no\nserver of its own. The only network request it makes is when you open the\ndetails popup, at which point the visited site's server IP is sent to\nMyIPLocation.org to return city-level geolocation.\n\n> Host this file at a public URL (e.g. GitHub Pages) and paste that URL into the\n> Chrome Web Store listing's \"Privacy policy\" field.\n\n## What the extension does\n\nAs you browse, IP Flager reads the IP address that served the current page\n(provided directly by Chrome's `webRequest` API), looks up its country in a\n**bundled, on-device IP database**, and shows that country's flag on the toolbar\nicon. Hovering the icon shows the domain, IP and country. This all happens\nlocally — no network request is made for the flag.\n\nWhen you **click the icon** to open the details popup, the extension sends the\ncurrent site's server IP to our geolocation API at `myiplocation.org` to\nretrieve city-level details (city, region, postal code, timezone, coordinates).\n\n## Data we collect\n\n**None is collected or stored on any server we operate.** The extension keeps a\nsmall, per-tab cache of the resolved IP and country code in\n`chrome.storage.session`, and a local flag for the \"rate this extension\" prompt\nin `chrome.storage.local`. Both live only in your browser and are cleared when\nyou remove the extension.\n\nWe do not build profiles, run analytics, use cookies, or sell or share any data.\n\n## Information sent to MyIPLocation.org\n\nWhen (and only when) you open the details popup, the IP address of the website\nyou are inspecting is sent to `myiplocation.org` so it can return that IP's\napproximate location. This is the destination website's server IP — needed to\nanswer your lookup — and is used solely to provide the geolocation you asked for.\nIt is not associated with your identity, not logged for advertising, and not\nsold. MyIPLocation.org has its own privacy policy.\n\nIf you never open the popup, no IP is sent anywhere — the toolbar flag works\nfully offline.\n\n## Permissions and why they are needed\n\n- **webRequest** — to read the IP address that served the page you navigated to,\n  which is how the correct country flag is determined. Read-only; nothing is\n  blocked or modified.\n- **tabs** — to show the active tab's domain in the UI and to key the per-tab\n  IP/country cache. No browsing history is collected or transmitted.\n- **storage** — to remember the per-tab lookup result and the rate-prompt state,\n  on your device only.\n- **host access (`<all_urls>`)** — the flag must work on whatever site you\n  visit, and the URL cannot be known in advance, so requests are observed across\n  all sites; it also allows the popup to fetch geolocation from myiplocation.org.\n  The extension does not read or transmit page content.\n\n## Changes\n\nIf this policy changes, the \"Last updated\" date above will change and the new\nversion will ship with the extension update.\n\n## Contact\n\nQuestions? Email tiger.hu.liu@gmail.com",
+			"content": {
+				"en": {
+					"name": "IP Flager — Country Flag for Any Site",
+					"tagline": "See where any website is hosted — right in your toolbar.",
+					"short": "See where any website is hosted — its country flag in your toolbar, plus IP, city & full geolocation in one click. Fast & local.",
+					"long": "Know where any website really lives — without leaving the page. IP Flager puts a small country flag on your toolbar showing where the site you're viewing is hosted. One glance tells you the server's country; one click reveals the full picture — IP address, city, region, postal code, timezone and coordinates.\n\nCountry detection runs against a built-in IP database, so the flag appears immediately with no network call. It clearly marks localhost and LAN / private (RFC1918) IPs instead of guessing, ships a polished modern UI with automatic dark mode, and links out to the full IP report on MyIPLocation.org.\n\nPrivate by design: the toolbar flag is detected entirely on your device — no network request, no tracking, no account. Only when you open the details popup is the site's server IP sent to MyIPLocation.org to fetch city-level information. Your browsing history is never collected, stored remotely, or sold.",
+					"features": []
+				},
+				"zh-cn": {
+					"name": "IP Flager — 显示网站所在国家国旗",
+					"tagline": "在工具栏一眼看出网站托管在哪个国家。",
+					"short": "在工具栏一眼看出网站托管在哪个国家，点击即可查看 IP、城市与完整地理位置信息。本地识别、即时、隐私友好。",
+					"long": "不离开页面，就知道任意网站托管在哪里。IP Flager 会在你的工具栏上显示一面小国旗，标明你正在浏览的网站托管在哪个国家。看一眼就知道服务器所在国家，点一下就能看到完整信息 —— IP 地址、城市、地区、邮政编码、时区和经纬度坐标。\n\n国家识别基于内置 IP 数据库完成，国旗立即出现、无需联网。清晰标记 localhost 与局域网 / 私有（RFC1918）IP，绝不瞎猜；精致现代的界面自动适配暗色模式，并可一键跳转 MyIPLocation.org 查看完整 IP 报告。\n\n隐私优先，从设计之初：工具栏上的国旗完全在你本机识别 —— 不联网、不追踪、无需账号。只有当你打开详情弹窗时，才会把该网站的服务器 IP 发送到 MyIPLocation.org 以获取城市级信息。你的浏览历史绝不会被收集、上传或出售。",
+					"features": []
+				},
+				"es": {
+					"name": "IP Flager — Country Flag for Any Site",
+					"tagline": "See where any website is hosted — right in your toolbar.",
+					"short": "See where any website is hosted — its country flag in your toolbar, plus IP, city & full geolocation in one click. Fast & local.",
+					"long": "Know where any website really lives — without leaving the page. IP Flager puts a small country flag on your toolbar showing where the site you're viewing is hosted. One glance tells you the server's country; one click reveals the full picture — IP address, city, region, postal code, timezone and coordinates.\n\nCountry detection runs against a built-in IP database, so the flag appears immediately with no network call. It clearly marks localhost and LAN / private (RFC1918) IPs instead of guessing, ships a polished modern UI with automatic dark mode, and links out to the full IP report on MyIPLocation.org.\n\nPrivate by design: the toolbar flag is detected entirely on your device — no network request, no tracking, no account. Only when you open the details popup is the site's server IP sent to MyIPLocation.org to fetch city-level information. Your browsing history is never collected, stored remotely, or sold.",
+					"features": []
+				},
+				"fr": {
+					"name": "IP Flager — Country Flag for Any Site",
+					"tagline": "See where any website is hosted — right in your toolbar.",
+					"short": "See where any website is hosted — its country flag in your toolbar, plus IP, city & full geolocation in one click. Fast & local.",
+					"long": "Know where any website really lives — without leaving the page. IP Flager puts a small country flag on your toolbar showing where the site you're viewing is hosted. One glance tells you the server's country; one click reveals the full picture — IP address, city, region, postal code, timezone and coordinates.\n\nCountry detection runs against a built-in IP database, so the flag appears immediately with no network call. It clearly marks localhost and LAN / private (RFC1918) IPs instead of guessing, ships a polished modern UI with automatic dark mode, and links out to the full IP report on MyIPLocation.org.\n\nPrivate by design: the toolbar flag is detected entirely on your device — no network request, no tracking, no account. Only when you open the details popup is the site's server IP sent to MyIPLocation.org to fetch city-level information. Your browsing history is never collected, stored remotely, or sold.",
+					"features": []
+				},
+				"ja": {
+					"name": "IP Flager — Country Flag for Any Site",
+					"tagline": "See where any website is hosted — right in your toolbar.",
+					"short": "See where any website is hosted — its country flag in your toolbar, plus IP, city & full geolocation in one click. Fast & local.",
+					"long": "Know where any website really lives — without leaving the page. IP Flager puts a small country flag on your toolbar showing where the site you're viewing is hosted. One glance tells you the server's country; one click reveals the full picture — IP address, city, region, postal code, timezone and coordinates.\n\nCountry detection runs against a built-in IP database, so the flag appears immediately with no network call. It clearly marks localhost and LAN / private (RFC1918) IPs instead of guessing, ships a polished modern UI with automatic dark mode, and links out to the full IP report on MyIPLocation.org.\n\nPrivate by design: the toolbar flag is detected entirely on your device — no network request, no tracking, no account. Only when you open the details popup is the site's server IP sent to MyIPLocation.org to fetch city-level information. Your browsing history is never collected, stored remotely, or sold.",
+					"features": []
+				},
+				"zh-tw": {
+					"name": "IP Flager — Country Flag for Any Site",
+					"tagline": "See where any website is hosted — right in your toolbar.",
+					"short": "See where any website is hosted — its country flag in your toolbar, plus IP, city & full geolocation in one click. Fast & local.",
+					"long": "Know where any website really lives — without leaving the page. IP Flager puts a small country flag on your toolbar showing where the site you're viewing is hosted. One glance tells you the server's country; one click reveals the full picture — IP address, city, region, postal code, timezone and coordinates.\n\nCountry detection runs against a built-in IP database, so the flag appears immediately with no network call. It clearly marks localhost and LAN / private (RFC1918) IPs instead of guessing, ships a polished modern UI with automatic dark mode, and links out to the full IP report on MyIPLocation.org.\n\nPrivate by design: the toolbar flag is detected entirely on your device — no network request, no tracking, no account. Only when you open the details popup is the site's server IP sent to MyIPLocation.org to fetch city-level information. Your browsing history is never collected, stored remotely, or sold.",
+					"features": []
+				}
+			}
+		},
+		{
+			"slug": "one-thought-immortal",
+			"category": "game",
+			"type": "game",
+			"installUrl": "",
+			"categoryLabel": "RPG · Roguelite · Strategy",
+			"releaseStatus": "In development (targeting Steam)",
+			"logo": "/assets/showcase/one-thought-immortal/logo.png",
+			"gradient": null,
+			"screenshots": [
+				{
+					"src": "/assets/showcase/one-thought-immortal/scrn/01-alchemy.webp",
+					"caption": "Alchemy"
+				},
+				{
+					"src": "/assets/showcase/one-thought-immortal/scrn/02-city.webp",
+					"caption": "City"
+				},
+				{
+					"src": "/assets/showcase/one-thought-immortal/scrn/03-market.webp",
+					"caption": "Market"
+				},
+				{
+					"src": "/assets/showcase/one-thought-immortal/scrn/04-sect-qingyun.webp",
+					"caption": "Sect Qingyun"
+				},
+				{
+					"src": "/assets/showcase/one-thought-immortal/scrn/05-world-map.webp",
+					"caption": "World Map"
+				}
+			],
+			"privacyMarkdown": "# Privacy Policy — One Thought Immortal\n\n_Last updated: 2026-07-04_\n\nOne Thought Immortal respects your privacy.\n\n## What we collect\nOnly voluntarily-submitted, cryptographically-signed run-score codes for the optional online Dao-ranking leaderboard, plus a player-chosen display name. No personal information, no advertising, no third-party trackers. All game progress and saves stay on your device.\n\n## What we do NOT do\n- No personal information (name, email, location) is required to play.\n- No advertising, analytics SDKs, or third-party trackers.\n- No selling or sharing of data.\n\n## The online leaderboard\nSubmitting a run to the online Dao-ranking leaderboard is entirely optional. When you choose to submit, the game sends a cryptographically-signed score code and a display name you pick. The score is re-computed server-side from the signed payload; the game never trusts a self-reported score. Do not use personal information as your display name.\n\n## Local data\nAll saves and game progress are stored locally on your device.\n\n## Contact\nQuestions: tiger.hu.liu@gmail.com\nPolicy URL: https://cultivation.chinadeveloper.net/privacy",
+			"content": {
+				"en": {
+					"name": "One Thought Immortal",
+					"tagline": "One thought to immortal, one thought to demon.",
+					"short": "One Thought Immortal is a turn-based cultivation roguelite. Rise from mortal to immortal across procedurally generated sects, rivals and secret realms. Build a fighting style, survive the heaven-defying tribulation, and when you fall, reincarnate and carry your Dao forward.",
+					"long": "# One Thought Immortal\n\n*One thought to immortal, one thought to demon.*\n\n## Why you'll love it\n\n🎲 **Every life is a new run** — Sects, rivals, the world map and events are all procedurally generated — no two cultivation journeys are alike. Fall, reincarnate, and carry your Dao-insight forward as permanent meta-progression.\n\n⚔️ **Combat with real depth** — Techniques, spells, talismans, a natal artifact and status effects (poison, shatter, shields) — assemble a fighting style, then survive the heaven-defying tribulation to break through.\n\n🏯 **A living cultivation world** — Join a sect of named NPCs with their own traits and relationships. Climb from odd-jobs disciple to sect master, win a dao-companion, make a sworn nemesis, raid dens, bid at live auctions, and delve procedural secret realms.\n\n⏳ **Time has weight** — Lifespan is a resource that ticks in real time. Every year in seclusion is a year closer to your final calamity — press your luck against the clock of your own mortality.\n\n🌏 **Three languages, online Dao-ranking** — Fully playable in English, Simplified and Traditional Chinese, with an optional online leaderboard where your best run is submitted as a tamper-proof signed score code.\n\n## What you can do\n\n- Procedural world map with righteous & demonic sects, cities, markets, dens, battlefields and secret realms\n- Named-NPC sects with traits, relationships, ranks and master–disciple progression (odd-jobs → sect master)\n- Turn-based combat: techniques, spells, talismans, natal artifacts, equipment and status effects\n- Cultivation, breakthrough and heaven-defying tribulation with lifespan pressure\n- Alchemy, artifact forging and formations\n- Live auction house with AI bidders, explorable procedural secret realms, and den/bandit-camp raids\n- Nemesis system, dao-companion courtship & marriage dowry, party recruitment\n- Reincarnation meta-progression, manual save/load, in-game encyclopedia and rumors\n- Full English / Simplified / Traditional Chinese localization\n- Optional online Dao-ranking leaderboard via tamper-proof signed score codes\n\n## Built for\n\nRoguelite and turn-based RPG players who love deep, systemic games, permadeath with meta-progression, and Eastern xianxia/cultivation fantasy — fans of Slay the Spire, Loop Hero, and Amazing Cultivation Simulator.\n\n## Languages & features\n\nPlayable in English, Simplified Chinese and Traditional Chinese. Optional online Dao-ranking leaderboard (submission is voluntary; no personal data required).",
+					"features": [
+						{
+							"emoji": "🎲",
+							"title": "Every life is a new run",
+							"desc": "Sects, rivals, the world map and events are all procedurally generated — no two cultivation journeys are alike. Fall, reincarnate, and carry your Dao-insight forward as permanent meta-progression."
+						},
+						{
+							"emoji": "⚔️",
+							"title": "Combat with real depth",
+							"desc": "Techniques, spells, talismans, a natal artifact and status effects (poison, shatter, shields) — assemble a fighting style, then survive the heaven-defying tribulation to break through."
+						},
+						{
+							"emoji": "🏯",
+							"title": "A living cultivation world",
+							"desc": "Join a sect of named NPCs with their own traits and relationships. Climb from odd-jobs disciple to sect master, win a dao-companion, make a sworn nemesis, raid dens, bid at live auctions, and delve procedural secret realms."
+						},
+						{
+							"emoji": "⏳",
+							"title": "Time has weight",
+							"desc": "Lifespan is a resource that ticks in real time. Every year in seclusion is a year closer to your final calamity — press your luck against the clock of your own mortality."
+						},
+						{
+							"emoji": "🌏",
+							"title": "Three languages, online Dao-ranking",
+							"desc": "Fully playable in English, Simplified and Traditional Chinese, with an optional online leaderboard where your best run is submitted as a tamper-proof signed score code."
+						}
+					]
+				},
+				"zh-cn": {
+					"name": "一念修仙",
+					"tagline": "一念成仙，一念成魔。",
+					"short": "《一念修仙》是一款回合制修仙 Roguelite。在程序化生成的宗门、宿敌与秘境间，从凡人一步步问鼎长生。练成打法、渡过雷劫；一世陨落，便转世重修、道韵长存。一念成仙，一念成魔。",
+					"long": "# 一念修仙\n\n*一念成仙，一念成魔。*\n\n## 为什么好玩\n\n🎲 **一世即一局** — 宗门、宿敌、舆图与事件全程序化生成，没有两条相同的修仙路。陨落、转世，带着「道韵」局外成长继续前行。\n\n⚔️ **有深度的回合战斗** — 功法、法术、符箓、本命法器与临时状态（中毒／破防／护盾）自由搭配，练成一套打法，再去闯逆天雷劫求突破。\n\n🏯 **活着的修仙世界** — 拜入有名有姓、各有性格与关系的宗门。从杂役弟子一路做到宗主，结道侣、树宿敌，闯据点、竞真实拍卖、探程序化秘境。\n\n⏳ **岁月有重量** — 寿元是会实时流逝的资源。每一年闭关都离大限更近一步——与自己的寿数赛跑，贪多则殒。\n\n🌏 **三语 · 在线道行榜** — 英文／简体／繁体三语全量可玩，并有可选的在线「道行榜」，以防作弊的签名战绩码提交你的最佳一世。\n\n## 你可以做什么\n\n- Procedural world map with righteous & demonic sects, cities, markets, dens, battlefields and secret realms\n- Named-NPC sects with traits, relationships, ranks and master–disciple progression (odd-jobs → sect master)\n- Turn-based combat: techniques, spells, talismans, natal artifacts, equipment and status effects\n- Cultivation, breakthrough and heaven-defying tribulation with lifespan pressure\n- Alchemy, artifact forging and formations\n- Live auction house with AI bidders, explorable procedural secret realms, and den/bandit-camp raids\n- Nemesis system, dao-companion courtship & marriage dowry, party recruitment\n- Reincarnation meta-progression, manual save/load, in-game encyclopedia and rumors\n- Full English / Simplified / Traditional Chinese localization\n- Optional online Dao-ranking leaderboard via tamper-proof signed score codes\n\n## 适合谁\n\n喜欢深度系统、永久死亡＋局外成长、以及东方修仙题材的 Roguelite／回合制 RPG 玩家；玩过《杀戮尖塔》《循环英雄》《了不起的修仙模拟器》的人会一见如故。\n\n## 语言与功能\n\n支持英文、简体中文、繁体中文。可选在线「道行榜」（提交自愿，无需个人信息）。",
+					"features": [
+						{
+							"emoji": "🎲",
+							"title": "一世即一局",
+							"desc": "宗门、宿敌、舆图与事件全程序化生成，没有两条相同的修仙路。陨落、转世，带着「道韵」局外成长继续前行。"
+						},
+						{
+							"emoji": "⚔️",
+							"title": "有深度的回合战斗",
+							"desc": "功法、法术、符箓、本命法器与临时状态（中毒／破防／护盾）自由搭配，练成一套打法，再去闯逆天雷劫求突破。"
+						},
+						{
+							"emoji": "🏯",
+							"title": "活着的修仙世界",
+							"desc": "拜入有名有姓、各有性格与关系的宗门。从杂役弟子一路做到宗主，结道侣、树宿敌，闯据点、竞真实拍卖、探程序化秘境。"
+						},
+						{
+							"emoji": "⏳",
+							"title": "岁月有重量",
+							"desc": "寿元是会实时流逝的资源。每一年闭关都离大限更近一步——与自己的寿数赛跑，贪多则殒。"
+						},
+						{
+							"emoji": "🌏",
+							"title": "三语 · 在线道行榜",
+							"desc": "英文／简体／繁体三语全量可玩，并有可选的在线「道行榜」，以防作弊的签名战绩码提交你的最佳一世。"
+						}
+					]
+				},
+				"es": {
+					"name": "One Thought Immortal",
+					"tagline": "One thought to immortal, one thought to demon.",
+					"short": "One Thought Immortal is a turn-based cultivation roguelite. Rise from mortal to immortal across procedurally generated sects, rivals and secret realms. Build a fighting style, survive the heaven-defying tribulation, and when you fall, reincarnate and carry your Dao forward.",
+					"long": "# One Thought Immortal\n\n*One thought to immortal, one thought to demon.*\n\n## Why you'll love it\n\n🎲 **Every life is a new run** — Sects, rivals, the world map and events are all procedurally generated — no two cultivation journeys are alike. Fall, reincarnate, and carry your Dao-insight forward as permanent meta-progression.\n\n⚔️ **Combat with real depth** — Techniques, spells, talismans, a natal artifact and status effects (poison, shatter, shields) — assemble a fighting style, then survive the heaven-defying tribulation to break through.\n\n🏯 **A living cultivation world** — Join a sect of named NPCs with their own traits and relationships. Climb from odd-jobs disciple to sect master, win a dao-companion, make a sworn nemesis, raid dens, bid at live auctions, and delve procedural secret realms.\n\n⏳ **Time has weight** — Lifespan is a resource that ticks in real time. Every year in seclusion is a year closer to your final calamity — press your luck against the clock of your own mortality.\n\n🌏 **Three languages, online Dao-ranking** — Fully playable in English, Simplified and Traditional Chinese, with an optional online leaderboard where your best run is submitted as a tamper-proof signed score code.\n\n## What you can do\n\n- Procedural world map with righteous & demonic sects, cities, markets, dens, battlefields and secret realms\n- Named-NPC sects with traits, relationships, ranks and master–disciple progression (odd-jobs → sect master)\n- Turn-based combat: techniques, spells, talismans, natal artifacts, equipment and status effects\n- Cultivation, breakthrough and heaven-defying tribulation with lifespan pressure\n- Alchemy, artifact forging and formations\n- Live auction house with AI bidders, explorable procedural secret realms, and den/bandit-camp raids\n- Nemesis system, dao-companion courtship & marriage dowry, party recruitment\n- Reincarnation meta-progression, manual save/load, in-game encyclopedia and rumors\n- Full English / Simplified / Traditional Chinese localization\n- Optional online Dao-ranking leaderboard via tamper-proof signed score codes\n\n## Built for\n\nRoguelite and turn-based RPG players who love deep, systemic games, permadeath with meta-progression, and Eastern xianxia/cultivation fantasy — fans of Slay the Spire, Loop Hero, and Amazing Cultivation Simulator.\n\n## Languages & features\n\nPlayable in English, Simplified Chinese and Traditional Chinese. Optional online Dao-ranking leaderboard (submission is voluntary; no personal data required).",
+					"features": [
+						{
+							"emoji": "🎲",
+							"title": "Every life is a new run",
+							"desc": "Sects, rivals, the world map and events are all procedurally generated — no two cultivation journeys are alike. Fall, reincarnate, and carry your Dao-insight forward as permanent meta-progression."
+						},
+						{
+							"emoji": "⚔️",
+							"title": "Combat with real depth",
+							"desc": "Techniques, spells, talismans, a natal artifact and status effects (poison, shatter, shields) — assemble a fighting style, then survive the heaven-defying tribulation to break through."
+						},
+						{
+							"emoji": "🏯",
+							"title": "A living cultivation world",
+							"desc": "Join a sect of named NPCs with their own traits and relationships. Climb from odd-jobs disciple to sect master, win a dao-companion, make a sworn nemesis, raid dens, bid at live auctions, and delve procedural secret realms."
+						},
+						{
+							"emoji": "⏳",
+							"title": "Time has weight",
+							"desc": "Lifespan is a resource that ticks in real time. Every year in seclusion is a year closer to your final calamity — press your luck against the clock of your own mortality."
+						},
+						{
+							"emoji": "🌏",
+							"title": "Three languages, online Dao-ranking",
+							"desc": "Fully playable in English, Simplified and Traditional Chinese, with an optional online leaderboard where your best run is submitted as a tamper-proof signed score code."
+						}
+					]
+				},
+				"fr": {
+					"name": "One Thought Immortal",
+					"tagline": "One thought to immortal, one thought to demon.",
+					"short": "One Thought Immortal is a turn-based cultivation roguelite. Rise from mortal to immortal across procedurally generated sects, rivals and secret realms. Build a fighting style, survive the heaven-defying tribulation, and when you fall, reincarnate and carry your Dao forward.",
+					"long": "# One Thought Immortal\n\n*One thought to immortal, one thought to demon.*\n\n## Why you'll love it\n\n🎲 **Every life is a new run** — Sects, rivals, the world map and events are all procedurally generated — no two cultivation journeys are alike. Fall, reincarnate, and carry your Dao-insight forward as permanent meta-progression.\n\n⚔️ **Combat with real depth** — Techniques, spells, talismans, a natal artifact and status effects (poison, shatter, shields) — assemble a fighting style, then survive the heaven-defying tribulation to break through.\n\n🏯 **A living cultivation world** — Join a sect of named NPCs with their own traits and relationships. Climb from odd-jobs disciple to sect master, win a dao-companion, make a sworn nemesis, raid dens, bid at live auctions, and delve procedural secret realms.\n\n⏳ **Time has weight** — Lifespan is a resource that ticks in real time. Every year in seclusion is a year closer to your final calamity — press your luck against the clock of your own mortality.\n\n🌏 **Three languages, online Dao-ranking** — Fully playable in English, Simplified and Traditional Chinese, with an optional online leaderboard where your best run is submitted as a tamper-proof signed score code.\n\n## What you can do\n\n- Procedural world map with righteous & demonic sects, cities, markets, dens, battlefields and secret realms\n- Named-NPC sects with traits, relationships, ranks and master–disciple progression (odd-jobs → sect master)\n- Turn-based combat: techniques, spells, talismans, natal artifacts, equipment and status effects\n- Cultivation, breakthrough and heaven-defying tribulation with lifespan pressure\n- Alchemy, artifact forging and formations\n- Live auction house with AI bidders, explorable procedural secret realms, and den/bandit-camp raids\n- Nemesis system, dao-companion courtship & marriage dowry, party recruitment\n- Reincarnation meta-progression, manual save/load, in-game encyclopedia and rumors\n- Full English / Simplified / Traditional Chinese localization\n- Optional online Dao-ranking leaderboard via tamper-proof signed score codes\n\n## Built for\n\nRoguelite and turn-based RPG players who love deep, systemic games, permadeath with meta-progression, and Eastern xianxia/cultivation fantasy — fans of Slay the Spire, Loop Hero, and Amazing Cultivation Simulator.\n\n## Languages & features\n\nPlayable in English, Simplified Chinese and Traditional Chinese. Optional online Dao-ranking leaderboard (submission is voluntary; no personal data required).",
+					"features": [
+						{
+							"emoji": "🎲",
+							"title": "Every life is a new run",
+							"desc": "Sects, rivals, the world map and events are all procedurally generated — no two cultivation journeys are alike. Fall, reincarnate, and carry your Dao-insight forward as permanent meta-progression."
+						},
+						{
+							"emoji": "⚔️",
+							"title": "Combat with real depth",
+							"desc": "Techniques, spells, talismans, a natal artifact and status effects (poison, shatter, shields) — assemble a fighting style, then survive the heaven-defying tribulation to break through."
+						},
+						{
+							"emoji": "🏯",
+							"title": "A living cultivation world",
+							"desc": "Join a sect of named NPCs with their own traits and relationships. Climb from odd-jobs disciple to sect master, win a dao-companion, make a sworn nemesis, raid dens, bid at live auctions, and delve procedural secret realms."
+						},
+						{
+							"emoji": "⏳",
+							"title": "Time has weight",
+							"desc": "Lifespan is a resource that ticks in real time. Every year in seclusion is a year closer to your final calamity — press your luck against the clock of your own mortality."
+						},
+						{
+							"emoji": "🌏",
+							"title": "Three languages, online Dao-ranking",
+							"desc": "Fully playable in English, Simplified and Traditional Chinese, with an optional online leaderboard where your best run is submitted as a tamper-proof signed score code."
+						}
+					]
+				},
+				"ja": {
+					"name": "One Thought Immortal",
+					"tagline": "One thought to immortal, one thought to demon.",
+					"short": "One Thought Immortal is a turn-based cultivation roguelite. Rise from mortal to immortal across procedurally generated sects, rivals and secret realms. Build a fighting style, survive the heaven-defying tribulation, and when you fall, reincarnate and carry your Dao forward.",
+					"long": "# One Thought Immortal\n\n*One thought to immortal, one thought to demon.*\n\n## Why you'll love it\n\n🎲 **Every life is a new run** — Sects, rivals, the world map and events are all procedurally generated — no two cultivation journeys are alike. Fall, reincarnate, and carry your Dao-insight forward as permanent meta-progression.\n\n⚔️ **Combat with real depth** — Techniques, spells, talismans, a natal artifact and status effects (poison, shatter, shields) — assemble a fighting style, then survive the heaven-defying tribulation to break through.\n\n🏯 **A living cultivation world** — Join a sect of named NPCs with their own traits and relationships. Climb from odd-jobs disciple to sect master, win a dao-companion, make a sworn nemesis, raid dens, bid at live auctions, and delve procedural secret realms.\n\n⏳ **Time has weight** — Lifespan is a resource that ticks in real time. Every year in seclusion is a year closer to your final calamity — press your luck against the clock of your own mortality.\n\n🌏 **Three languages, online Dao-ranking** — Fully playable in English, Simplified and Traditional Chinese, with an optional online leaderboard where your best run is submitted as a tamper-proof signed score code.\n\n## What you can do\n\n- Procedural world map with righteous & demonic sects, cities, markets, dens, battlefields and secret realms\n- Named-NPC sects with traits, relationships, ranks and master–disciple progression (odd-jobs → sect master)\n- Turn-based combat: techniques, spells, talismans, natal artifacts, equipment and status effects\n- Cultivation, breakthrough and heaven-defying tribulation with lifespan pressure\n- Alchemy, artifact forging and formations\n- Live auction house with AI bidders, explorable procedural secret realms, and den/bandit-camp raids\n- Nemesis system, dao-companion courtship & marriage dowry, party recruitment\n- Reincarnation meta-progression, manual save/load, in-game encyclopedia and rumors\n- Full English / Simplified / Traditional Chinese localization\n- Optional online Dao-ranking leaderboard via tamper-proof signed score codes\n\n## Built for\n\nRoguelite and turn-based RPG players who love deep, systemic games, permadeath with meta-progression, and Eastern xianxia/cultivation fantasy — fans of Slay the Spire, Loop Hero, and Amazing Cultivation Simulator.\n\n## Languages & features\n\nPlayable in English, Simplified Chinese and Traditional Chinese. Optional online Dao-ranking leaderboard (submission is voluntary; no personal data required).",
+					"features": [
+						{
+							"emoji": "🎲",
+							"title": "Every life is a new run",
+							"desc": "Sects, rivals, the world map and events are all procedurally generated — no two cultivation journeys are alike. Fall, reincarnate, and carry your Dao-insight forward as permanent meta-progression."
+						},
+						{
+							"emoji": "⚔️",
+							"title": "Combat with real depth",
+							"desc": "Techniques, spells, talismans, a natal artifact and status effects (poison, shatter, shields) — assemble a fighting style, then survive the heaven-defying tribulation to break through."
+						},
+						{
+							"emoji": "🏯",
+							"title": "A living cultivation world",
+							"desc": "Join a sect of named NPCs with their own traits and relationships. Climb from odd-jobs disciple to sect master, win a dao-companion, make a sworn nemesis, raid dens, bid at live auctions, and delve procedural secret realms."
+						},
+						{
+							"emoji": "⏳",
+							"title": "Time has weight",
+							"desc": "Lifespan is a resource that ticks in real time. Every year in seclusion is a year closer to your final calamity — press your luck against the clock of your own mortality."
+						},
+						{
+							"emoji": "🌏",
+							"title": "Three languages, online Dao-ranking",
+							"desc": "Fully playable in English, Simplified and Traditional Chinese, with an optional online leaderboard where your best run is submitted as a tamper-proof signed score code."
+						}
+					]
+				},
+				"zh-tw": {
+					"name": "一念修仙",
+					"tagline": "一念成仙，一念成魔。",
+					"short": "《一念修仙》是一款回合制修仙 Roguelite。在程序化生成的宗門、宿敵與秘境間，從凡人一步步問鼎長生。練成打法、渡過雷劫；一世殞落，便轉世重修、道韻長存。一念成仙，一念成魔。",
+					"long": "# 一念修仙\n\n*一念成仙，一念成魔。*\n\n## 為什麼好玩\n\n🎲 **一世即一局** — 宗門、宿敵、輿圖與事件全程序化生成，沒有兩條相同的修仙路。殞落、轉世，帶著「道韻」局外成長繼續前行。\n\n⚔️ **有深度的回合戰鬥** — 功法、法術、符籙、本命法器與臨時狀態（中毒／破防／護盾）自由搭配，練成一套打法，再去闖逆天雷劫求突破。\n\n🏯 **活著的修仙世界** — 拜入有名有姓、各有性格與關係的宗門。從雜役弟子一路做到宗主，結道侶、樹宿敵，闖據點、競真實拍賣、探程序化秘境。\n\n⏳ **歲月有重量** — 壽元是會即時流逝的資源。每一年閉關都離大限更近一步——與自己的壽數賽跑，貪多則殞。\n\n🌏 **三語 · 線上道行榜** — 英文／簡體／繁體三語全量可玩，並有可選的線上「道行榜」，以防作弊的簽名戰績碼提交你的最佳一世。\n\n## 你可以做什麼\n\n- Procedural world map with righteous & demonic sects, cities, markets, dens, battlefields and secret realms\n- Named-NPC sects with traits, relationships, ranks and master–disciple progression (odd-jobs → sect master)\n- Turn-based combat: techniques, spells, talismans, natal artifacts, equipment and status effects\n- Cultivation, breakthrough and heaven-defying tribulation with lifespan pressure\n- Alchemy, artifact forging and formations\n- Live auction house with AI bidders, explorable procedural secret realms, and den/bandit-camp raids\n- Nemesis system, dao-companion courtship & marriage dowry, party recruitment\n- Reincarnation meta-progression, manual save/load, in-game encyclopedia and rumors\n- Full English / Simplified / Traditional Chinese localization\n- Optional online Dao-ranking leaderboard via tamper-proof signed score codes\n\n## 適合誰\n\n喜歡深度系統、永久死亡＋局外成長、以及東方修仙題材的 Roguelite／回合制 RPG 玩家；玩過《殺戮尖塔》《循環英雄》《了不起的修仙模擬器》的人會一見如故。\n\n## 語言與功能\n\n支援英文、簡體中文、繁體中文。可選線上「道行榜」（提交自願，無需個人資訊）。",
+					"features": [
+						{
+							"emoji": "🎲",
+							"title": "一世即一局",
+							"desc": "宗門、宿敵、輿圖與事件全程序化生成，沒有兩條相同的修仙路。殞落、轉世，帶著「道韻」局外成長繼續前行。"
+						},
+						{
+							"emoji": "⚔️",
+							"title": "有深度的回合戰鬥",
+							"desc": "功法、法術、符籙、本命法器與臨時狀態（中毒／破防／護盾）自由搭配，練成一套打法，再去闖逆天雷劫求突破。"
+						},
+						{
+							"emoji": "🏯",
+							"title": "活著的修仙世界",
+							"desc": "拜入有名有姓、各有性格與關係的宗門。從雜役弟子一路做到宗主，結道侶、樹宿敵，闖據點、競真實拍賣、探程序化秘境。"
+						},
+						{
+							"emoji": "⏳",
+							"title": "歲月有重量",
+							"desc": "壽元是會即時流逝的資源。每一年閉關都離大限更近一步——與自己的壽數賽跑，貪多則殞。"
+						},
+						{
+							"emoji": "🌏",
+							"title": "三語 · 線上道行榜",
+							"desc": "英文／簡體／繁體三語全量可玩，並有可選的線上「道行榜」，以防作弊的簽名戰績碼提交你的最佳一世。"
+						}
+					]
+				}
+			}
+		}
+	]
+}

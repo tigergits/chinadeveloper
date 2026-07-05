@@ -18,6 +18,20 @@
 			"installUrl": "https://xeviora.com"
 		},
 		{
+			"slug": "xeviora-svg",
+			"category": "webapp",
+			"type": "webapp",
+			"sourceDir": "D:/PROJs/xeviora/src/svg/store",
+			"installUrl": "https://svg.xeviora.com"
+		},
+		{
+			"slug": "lifechapter",
+			"category": "webapp",
+			"type": "webapp",
+			"sourceDir": "D:/PROJs/lifechapter/store",
+			"installUrl": "https://lifechapter.app"
+		},
+		{
 			"slug": "clearkit",
 			"category": "extension",
 			"type": "extension",

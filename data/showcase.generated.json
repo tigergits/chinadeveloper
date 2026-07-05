@@ -270,6 +270,528 @@
 			}
 		},
 		{
+			"slug": "xeviora-svg",
+			"category": "webapp",
+			"type": "webapp",
+			"installUrl": "https://svg.xeviora.com",
+			"categoryLabel": "SVG Tools + AI SVG Generator",
+			"logo": "/assets/showcase/xeviora-svg/logo.png",
+			"gradient": null,
+			"screenshots": [
+				{
+					"src": "/assets/showcase/xeviora-svg/scrn/01-shot-1.png",
+					"caption": ""
+				}
+			],
+			"privacyMarkdown": "# Privacy Policy\n\n_Last updated: 2026-07-05_\n\nSVG Forge (\"SVG Forge\", \"we\", \"us\") is a product operated by Xeviora and available at\n[svg.xeviora.com](https://svg.xeviora.com/). This policy explains what we collect and why.\nQuestions: **support@xeviora.com**.\n\n## The short version\n\n- The free SVG tools (viewer/editor, converters, optimizer, vectorizer, code exporters)\n  run **entirely in your browser**. The files you convert, optimize or vectorize are\n  **never uploaded** to us.\n- The **AI Text-to-SVG generator** is the one exception: your text prompt is sent to our\n  server so a language model can write the SVG code. We do not sell your inputs or use\n  them to train models.\n- We keep the minimum needed to run accounts and billing. We do not run advertising\n  trackers.\n\n## What we collect\n\n**1. Account data.** If you create an account, we store your email address and\nauthentication data through our authentication provider (better-auth). This is used to\nsign you in, associate your plan and credits with you, and contact you about your account.\n\n**2. Billing data.** Payments are processed by **Paddle**, which acts as the merchant of\nrecord. When you subscribe or buy a credit pack, Paddle handles your payment details — we\ndo **not** see or store full card numbers. We receive and store transaction and\nsubscription status (plan, renewal, credit balance) needed to provision your account.\n\n**3. AI generation data.** When you use the AI generator, the **text prompt** and chosen\nstyle you submit are sent to our server and to the AI model provider that fulfills the\nrequest, solely to generate the SVG you asked for. On paid plans we retain your\n**generation history** so you can revisit past results; you can request its deletion.\n\n**4. Technical data.** Standard server logs (IP address, timestamp, request metadata) and\nminimal counters used to enforce free-tier limits (e.g. the 3-free-generations-per-day\nquota and anonymous trial limits). These are used for security, abuse prevention and\noperating the service.\n\n## What we do NOT do\n\n- We do **not** upload the files you process with the free client-side tools.\n- We do **not** sell your personal data or your prompts.\n- We do **not** use your inputs to train our own or third-party models.\n- We do **not** run third-party advertising or cross-site tracking.\n\n## Cookies\n\nWe use strictly necessary cookies for authentication (host-only cookies scoped to\nsvg.xeviora.com) and theme preferences. We do not set advertising cookies.\n\n## Third parties we share data with\n\n- **Paddle** — payment processing and billing (merchant of record).\n- **AI model providers** — receive your prompt to generate the requested SVG.\n- **Hosting/infrastructure** — to serve the app and store account/billing records.\n\nEach processes data only to provide its part of the service.\n\n## Data retention\n\nAccount and billing records are kept while your account is active and as required for\nlegal/accounting purposes. Generation history is kept until you delete it or close your\naccount. Server logs are rotated on a rolling basis.\n\n## Your rights\n\nYou may request access to, correction of, or deletion of your personal data, and you may\nclose your account at any time. Contact **support@xeviora.com**. Depending on your\nregion (e.g. GDPR/UK GDPR, CCPA), additional rights may apply.\n\n## Children\n\nSVG Forge is not directed to children under 13 (or the minimum age in your jurisdiction)\nand we do not knowingly collect their data.\n\n## Changes\n\nWe may update this policy; material changes will be reflected by the \"Last updated\" date\nabove.\n\n## Contact\n\nXeviora — **support@xeviora.com** · [svg.xeviora.com](https://svg.xeviora.com/)\n\n---\n\n> **Draft notice:** this is a developer-authored draft to get you started, not legal\n> advice. Have it reviewed before publishing, and keep it in sync with the app's hosted\n> policy once one exists.",
+			"content": {
+				"en": {
+					"name": "SVG Forge",
+					"tagline": "Every SVG tool in one place — plus AI that writes clean, editable SVG code.",
+					"short": "View, convert, optimize and vectorize SVG free in your browser — plus AI that writes clean, editable SVG code from text.",
+					"long": "# SVG Forge\n\n**Every SVG tool in one place — plus AI that writes clean, editable SVG code.**\n\n## Why SVG Forge\n\nMost people keep a bookmark folder of half-broken single-purpose SVG sites, and every \"AI SVG generator\" they try spits out a traced bitmap: thousands of path points, base64 blobs and code no one can edit. SVG Forge fixes both problems. Eleven focused tools live under one roof and run **entirely in your browser**, and the AI generator writes SVG the way a careful developer would — layered, semantic and genuinely editable.\n\n## What you can do\n\n- 🖼️ **View & edit SVG** — Paste code or drop a file for a live preview, tweak the markup, toggle light/dark/checkerboard backgrounds and download.\n- 🔄 **Convert any format** — SVG to PNG, JPG, WebP or PDF at 1x–4x scale or a custom width, with transparency preserved where the format allows.\n- 🗜️ **Optimize with SVGO** — Strip editor junk and redundant precision to shrink files by up to 80%, with a before/after size and preview.\n- ✏️ **Vectorize images** — Trace a PNG or JPG into a scalable SVG with tunable color and detail — great for logos and icons.\n- ⚛️ **Export to code** — Turn any SVG into a React or Vue component, a CSS `background-image`, or a Data URI — clean and paste-ready.\n- 🤖 **AI Text-to-SVG** — Describe what you want and get clean, layered, editable SVG code: semantic groups, tidy rounded paths, a proper `viewBox`, no traced bitmap soup.\n\n## How it works\n\nThe free tools are 100% client-side — SVGO, the converters, the vectorizer and the code exporters all run on your own machine, so nothing you convert or optimize is ever uploaded. The **AI generator** is the one exception: your text prompt is sent to our server, which runs a language model to write the SVG code and returns it to you. Free accounts get 3 AI generations a day (reset daily); Pro and credit packs add more.\n\n## Built for\n\nDesigners, front-end developers and indie makers who work with icons, logos and illustrations and want fast, private, in-browser SVG tools — plus AI that outputs code they can actually edit.\n\n## Pricing\n\nEvery tool is free forever. Go **Pro for $9.99/month** (or $99/year) for 300 AI generations a month with generation history and commercial use, or grab a **one-time $4.99 credit pack** of 100 generations that never expire.\n\n## Availability\n\nEnglish · runs in any modern browser at [svg.xeviora.com](https://svg.xeviora.com/).",
+					"features": [
+						{
+							"emoji": "🖼️",
+							"title": "View & edit SVG",
+							"desc": "Paste code or drop a file for a live in-browser preview, then edit the markup and download — nothing is uploaded."
+						},
+						{
+							"emoji": "🔄",
+							"title": "Convert any format",
+							"desc": "SVG to PNG, JPG, WebP or PDF at 1x–4x scale or a custom width, with transparency preserved where the format allows."
+						},
+						{
+							"emoji": "🗜️",
+							"title": "Optimize with SVGO",
+							"desc": "Strip editor junk and redundant precision to shrink files up to 80%, with a before/after size and preview."
+						},
+						{
+							"emoji": "✏️",
+							"title": "Vectorize images",
+							"desc": "Trace PNG or JPG into scalable SVG with tunable color and detail — logos and icons in seconds."
+						},
+						{
+							"emoji": "⚛️",
+							"title": "Export to code",
+							"desc": "Turn any SVG into a React or Vue component, a CSS background, or a Data URI — clean and paste-ready."
+						},
+						{
+							"emoji": "🤖",
+							"title": "AI Text-to-SVG",
+							"desc": "Describe it and get clean, layered, editable SVG code — semantic groups, tidy paths, no traced bitmap soup."
+						}
+					]
+				},
+				"zh-cn": {
+					"name": "SVG Forge",
+					"tagline": "Every SVG tool in one place — plus AI that writes clean, editable SVG code.",
+					"short": "View, convert, optimize and vectorize SVG free in your browser — plus AI that writes clean, editable SVG code from text.",
+					"long": "# SVG Forge\n\n**Every SVG tool in one place — plus AI that writes clean, editable SVG code.**\n\n## Why SVG Forge\n\nMost people keep a bookmark folder of half-broken single-purpose SVG sites, and every \"AI SVG generator\" they try spits out a traced bitmap: thousands of path points, base64 blobs and code no one can edit. SVG Forge fixes both problems. Eleven focused tools live under one roof and run **entirely in your browser**, and the AI generator writes SVG the way a careful developer would — layered, semantic and genuinely editable.\n\n## What you can do\n\n- 🖼️ **View & edit SVG** — Paste code or drop a file for a live preview, tweak the markup, toggle light/dark/checkerboard backgrounds and download.\n- 🔄 **Convert any format** — SVG to PNG, JPG, WebP or PDF at 1x–4x scale or a custom width, with transparency preserved where the format allows.\n- 🗜️ **Optimize with SVGO** — Strip editor junk and redundant precision to shrink files by up to 80%, with a before/after size and preview.\n- ✏️ **Vectorize images** — Trace a PNG or JPG into a scalable SVG with tunable color and detail — great for logos and icons.\n- ⚛️ **Export to code** — Turn any SVG into a React or Vue component, a CSS `background-image`, or a Data URI — clean and paste-ready.\n- 🤖 **AI Text-to-SVG** — Describe what you want and get clean, layered, editable SVG code: semantic groups, tidy rounded paths, a proper `viewBox`, no traced bitmap soup.\n\n## How it works\n\nThe free tools are 100% client-side — SVGO, the converters, the vectorizer and the code exporters all run on your own machine, so nothing you convert or optimize is ever uploaded. The **AI generator** is the one exception: your text prompt is sent to our server, which runs a language model to write the SVG code and returns it to you. Free accounts get 3 AI generations a day (reset daily); Pro and credit packs add more.\n\n## Built for\n\nDesigners, front-end developers and indie makers who work with icons, logos and illustrations and want fast, private, in-browser SVG tools — plus AI that outputs code they can actually edit.\n\n## Pricing\n\nEvery tool is free forever. Go **Pro for $9.99/month** (or $99/year) for 300 AI generations a month with generation history and commercial use, or grab a **one-time $4.99 credit pack** of 100 generations that never expire.\n\n## Availability\n\nEnglish · runs in any modern browser at [svg.xeviora.com](https://svg.xeviora.com/).",
+					"features": [
+						{
+							"emoji": "🖼️",
+							"title": "View & edit SVG",
+							"desc": "Paste code or drop a file for a live in-browser preview, then edit the markup and download — nothing is uploaded."
+						},
+						{
+							"emoji": "🔄",
+							"title": "Convert any format",
+							"desc": "SVG to PNG, JPG, WebP or PDF at 1x–4x scale or a custom width, with transparency preserved where the format allows."
+						},
+						{
+							"emoji": "🗜️",
+							"title": "Optimize with SVGO",
+							"desc": "Strip editor junk and redundant precision to shrink files up to 80%, with a before/after size and preview."
+						},
+						{
+							"emoji": "✏️",
+							"title": "Vectorize images",
+							"desc": "Trace PNG or JPG into scalable SVG with tunable color and detail — logos and icons in seconds."
+						},
+						{
+							"emoji": "⚛️",
+							"title": "Export to code",
+							"desc": "Turn any SVG into a React or Vue component, a CSS background, or a Data URI — clean and paste-ready."
+						},
+						{
+							"emoji": "🤖",
+							"title": "AI Text-to-SVG",
+							"desc": "Describe it and get clean, layered, editable SVG code — semantic groups, tidy paths, no traced bitmap soup."
+						}
+					]
+				},
+				"es": {
+					"name": "SVG Forge",
+					"tagline": "Every SVG tool in one place — plus AI that writes clean, editable SVG code.",
+					"short": "View, convert, optimize and vectorize SVG free in your browser — plus AI that writes clean, editable SVG code from text.",
+					"long": "# SVG Forge\n\n**Every SVG tool in one place — plus AI that writes clean, editable SVG code.**\n\n## Why SVG Forge\n\nMost people keep a bookmark folder of half-broken single-purpose SVG sites, and every \"AI SVG generator\" they try spits out a traced bitmap: thousands of path points, base64 blobs and code no one can edit. SVG Forge fixes both problems. Eleven focused tools live under one roof and run **entirely in your browser**, and the AI generator writes SVG the way a careful developer would — layered, semantic and genuinely editable.\n\n## What you can do\n\n- 🖼️ **View & edit SVG** — Paste code or drop a file for a live preview, tweak the markup, toggle light/dark/checkerboard backgrounds and download.\n- 🔄 **Convert any format** — SVG to PNG, JPG, WebP or PDF at 1x–4x scale or a custom width, with transparency preserved where the format allows.\n- 🗜️ **Optimize with SVGO** — Strip editor junk and redundant precision to shrink files by up to 80%, with a before/after size and preview.\n- ✏️ **Vectorize images** — Trace a PNG or JPG into a scalable SVG with tunable color and detail — great for logos and icons.\n- ⚛️ **Export to code** — Turn any SVG into a React or Vue component, a CSS `background-image`, or a Data URI — clean and paste-ready.\n- 🤖 **AI Text-to-SVG** — Describe what you want and get clean, layered, editable SVG code: semantic groups, tidy rounded paths, a proper `viewBox`, no traced bitmap soup.\n\n## How it works\n\nThe free tools are 100% client-side — SVGO, the converters, the vectorizer and the code exporters all run on your own machine, so nothing you convert or optimize is ever uploaded. The **AI generator** is the one exception: your text prompt is sent to our server, which runs a language model to write the SVG code and returns it to you. Free accounts get 3 AI generations a day (reset daily); Pro and credit packs add more.\n\n## Built for\n\nDesigners, front-end developers and indie makers who work with icons, logos and illustrations and want fast, private, in-browser SVG tools — plus AI that outputs code they can actually edit.\n\n## Pricing\n\nEvery tool is free forever. Go **Pro for $9.99/month** (or $99/year) for 300 AI generations a month with generation history and commercial use, or grab a **one-time $4.99 credit pack** of 100 generations that never expire.\n\n## Availability\n\nEnglish · runs in any modern browser at [svg.xeviora.com](https://svg.xeviora.com/).",
+					"features": [
+						{
+							"emoji": "🖼️",
+							"title": "View & edit SVG",
+							"desc": "Paste code or drop a file for a live in-browser preview, then edit the markup and download — nothing is uploaded."
+						},
+						{
+							"emoji": "🔄",
+							"title": "Convert any format",
+							"desc": "SVG to PNG, JPG, WebP or PDF at 1x–4x scale or a custom width, with transparency preserved where the format allows."
+						},
+						{
+							"emoji": "🗜️",
+							"title": "Optimize with SVGO",
+							"desc": "Strip editor junk and redundant precision to shrink files up to 80%, with a before/after size and preview."
+						},
+						{
+							"emoji": "✏️",
+							"title": "Vectorize images",
+							"desc": "Trace PNG or JPG into scalable SVG with tunable color and detail — logos and icons in seconds."
+						},
+						{
+							"emoji": "⚛️",
+							"title": "Export to code",
+							"desc": "Turn any SVG into a React or Vue component, a CSS background, or a Data URI — clean and paste-ready."
+						},
+						{
+							"emoji": "🤖",
+							"title": "AI Text-to-SVG",
+							"desc": "Describe it and get clean, layered, editable SVG code — semantic groups, tidy paths, no traced bitmap soup."
+						}
+					]
+				},
+				"fr": {
+					"name": "SVG Forge",
+					"tagline": "Every SVG tool in one place — plus AI that writes clean, editable SVG code.",
+					"short": "View, convert, optimize and vectorize SVG free in your browser — plus AI that writes clean, editable SVG code from text.",
+					"long": "# SVG Forge\n\n**Every SVG tool in one place — plus AI that writes clean, editable SVG code.**\n\n## Why SVG Forge\n\nMost people keep a bookmark folder of half-broken single-purpose SVG sites, and every \"AI SVG generator\" they try spits out a traced bitmap: thousands of path points, base64 blobs and code no one can edit. SVG Forge fixes both problems. Eleven focused tools live under one roof and run **entirely in your browser**, and the AI generator writes SVG the way a careful developer would — layered, semantic and genuinely editable.\n\n## What you can do\n\n- 🖼️ **View & edit SVG** — Paste code or drop a file for a live preview, tweak the markup, toggle light/dark/checkerboard backgrounds and download.\n- 🔄 **Convert any format** — SVG to PNG, JPG, WebP or PDF at 1x–4x scale or a custom width, with transparency preserved where the format allows.\n- 🗜️ **Optimize with SVGO** — Strip editor junk and redundant precision to shrink files by up to 80%, with a before/after size and preview.\n- ✏️ **Vectorize images** — Trace a PNG or JPG into a scalable SVG with tunable color and detail — great for logos and icons.\n- ⚛️ **Export to code** — Turn any SVG into a React or Vue component, a CSS `background-image`, or a Data URI — clean and paste-ready.\n- 🤖 **AI Text-to-SVG** — Describe what you want and get clean, layered, editable SVG code: semantic groups, tidy rounded paths, a proper `viewBox`, no traced bitmap soup.\n\n## How it works\n\nThe free tools are 100% client-side — SVGO, the converters, the vectorizer and the code exporters all run on your own machine, so nothing you convert or optimize is ever uploaded. The **AI generator** is the one exception: your text prompt is sent to our server, which runs a language model to write the SVG code and returns it to you. Free accounts get 3 AI generations a day (reset daily); Pro and credit packs add more.\n\n## Built for\n\nDesigners, front-end developers and indie makers who work with icons, logos and illustrations and want fast, private, in-browser SVG tools — plus AI that outputs code they can actually edit.\n\n## Pricing\n\nEvery tool is free forever. Go **Pro for $9.99/month** (or $99/year) for 300 AI generations a month with generation history and commercial use, or grab a **one-time $4.99 credit pack** of 100 generations that never expire.\n\n## Availability\n\nEnglish · runs in any modern browser at [svg.xeviora.com](https://svg.xeviora.com/).",
+					"features": [
+						{
+							"emoji": "🖼️",
+							"title": "View & edit SVG",
+							"desc": "Paste code or drop a file for a live in-browser preview, then edit the markup and download — nothing is uploaded."
+						},
+						{
+							"emoji": "🔄",
+							"title": "Convert any format",
+							"desc": "SVG to PNG, JPG, WebP or PDF at 1x–4x scale or a custom width, with transparency preserved where the format allows."
+						},
+						{
+							"emoji": "🗜️",
+							"title": "Optimize with SVGO",
+							"desc": "Strip editor junk and redundant precision to shrink files up to 80%, with a before/after size and preview."
+						},
+						{
+							"emoji": "✏️",
+							"title": "Vectorize images",
+							"desc": "Trace PNG or JPG into scalable SVG with tunable color and detail — logos and icons in seconds."
+						},
+						{
+							"emoji": "⚛️",
+							"title": "Export to code",
+							"desc": "Turn any SVG into a React or Vue component, a CSS background, or a Data URI — clean and paste-ready."
+						},
+						{
+							"emoji": "🤖",
+							"title": "AI Text-to-SVG",
+							"desc": "Describe it and get clean, layered, editable SVG code — semantic groups, tidy paths, no traced bitmap soup."
+						}
+					]
+				},
+				"ja": {
+					"name": "SVG Forge",
+					"tagline": "Every SVG tool in one place — plus AI that writes clean, editable SVG code.",
+					"short": "View, convert, optimize and vectorize SVG free in your browser — plus AI that writes clean, editable SVG code from text.",
+					"long": "# SVG Forge\n\n**Every SVG tool in one place — plus AI that writes clean, editable SVG code.**\n\n## Why SVG Forge\n\nMost people keep a bookmark folder of half-broken single-purpose SVG sites, and every \"AI SVG generator\" they try spits out a traced bitmap: thousands of path points, base64 blobs and code no one can edit. SVG Forge fixes both problems. Eleven focused tools live under one roof and run **entirely in your browser**, and the AI generator writes SVG the way a careful developer would — layered, semantic and genuinely editable.\n\n## What you can do\n\n- 🖼️ **View & edit SVG** — Paste code or drop a file for a live preview, tweak the markup, toggle light/dark/checkerboard backgrounds and download.\n- 🔄 **Convert any format** — SVG to PNG, JPG, WebP or PDF at 1x–4x scale or a custom width, with transparency preserved where the format allows.\n- 🗜️ **Optimize with SVGO** — Strip editor junk and redundant precision to shrink files by up to 80%, with a before/after size and preview.\n- ✏️ **Vectorize images** — Trace a PNG or JPG into a scalable SVG with tunable color and detail — great for logos and icons.\n- ⚛️ **Export to code** — Turn any SVG into a React or Vue component, a CSS `background-image`, or a Data URI — clean and paste-ready.\n- 🤖 **AI Text-to-SVG** — Describe what you want and get clean, layered, editable SVG code: semantic groups, tidy rounded paths, a proper `viewBox`, no traced bitmap soup.\n\n## How it works\n\nThe free tools are 100% client-side — SVGO, the converters, the vectorizer and the code exporters all run on your own machine, so nothing you convert or optimize is ever uploaded. The **AI generator** is the one exception: your text prompt is sent to our server, which runs a language model to write the SVG code and returns it to you. Free accounts get 3 AI generations a day (reset daily); Pro and credit packs add more.\n\n## Built for\n\nDesigners, front-end developers and indie makers who work with icons, logos and illustrations and want fast, private, in-browser SVG tools — plus AI that outputs code they can actually edit.\n\n## Pricing\n\nEvery tool is free forever. Go **Pro for $9.99/month** (or $99/year) for 300 AI generations a month with generation history and commercial use, or grab a **one-time $4.99 credit pack** of 100 generations that never expire.\n\n## Availability\n\nEnglish · runs in any modern browser at [svg.xeviora.com](https://svg.xeviora.com/).",
+					"features": [
+						{
+							"emoji": "🖼️",
+							"title": "View & edit SVG",
+							"desc": "Paste code or drop a file for a live in-browser preview, then edit the markup and download — nothing is uploaded."
+						},
+						{
+							"emoji": "🔄",
+							"title": "Convert any format",
+							"desc": "SVG to PNG, JPG, WebP or PDF at 1x–4x scale or a custom width, with transparency preserved where the format allows."
+						},
+						{
+							"emoji": "🗜️",
+							"title": "Optimize with SVGO",
+							"desc": "Strip editor junk and redundant precision to shrink files up to 80%, with a before/after size and preview."
+						},
+						{
+							"emoji": "✏️",
+							"title": "Vectorize images",
+							"desc": "Trace PNG or JPG into scalable SVG with tunable color and detail — logos and icons in seconds."
+						},
+						{
+							"emoji": "⚛️",
+							"title": "Export to code",
+							"desc": "Turn any SVG into a React or Vue component, a CSS background, or a Data URI — clean and paste-ready."
+						},
+						{
+							"emoji": "🤖",
+							"title": "AI Text-to-SVG",
+							"desc": "Describe it and get clean, layered, editable SVG code — semantic groups, tidy paths, no traced bitmap soup."
+						}
+					]
+				},
+				"zh-tw": {
+					"name": "SVG Forge",
+					"tagline": "Every SVG tool in one place — plus AI that writes clean, editable SVG code.",
+					"short": "View, convert, optimize and vectorize SVG free in your browser — plus AI that writes clean, editable SVG code from text.",
+					"long": "# SVG Forge\n\n**Every SVG tool in one place — plus AI that writes clean, editable SVG code.**\n\n## Why SVG Forge\n\nMost people keep a bookmark folder of half-broken single-purpose SVG sites, and every \"AI SVG generator\" they try spits out a traced bitmap: thousands of path points, base64 blobs and code no one can edit. SVG Forge fixes both problems. Eleven focused tools live under one roof and run **entirely in your browser**, and the AI generator writes SVG the way a careful developer would — layered, semantic and genuinely editable.\n\n## What you can do\n\n- 🖼️ **View & edit SVG** — Paste code or drop a file for a live preview, tweak the markup, toggle light/dark/checkerboard backgrounds and download.\n- 🔄 **Convert any format** — SVG to PNG, JPG, WebP or PDF at 1x–4x scale or a custom width, with transparency preserved where the format allows.\n- 🗜️ **Optimize with SVGO** — Strip editor junk and redundant precision to shrink files by up to 80%, with a before/after size and preview.\n- ✏️ **Vectorize images** — Trace a PNG or JPG into a scalable SVG with tunable color and detail — great for logos and icons.\n- ⚛️ **Export to code** — Turn any SVG into a React or Vue component, a CSS `background-image`, or a Data URI — clean and paste-ready.\n- 🤖 **AI Text-to-SVG** — Describe what you want and get clean, layered, editable SVG code: semantic groups, tidy rounded paths, a proper `viewBox`, no traced bitmap soup.\n\n## How it works\n\nThe free tools are 100% client-side — SVGO, the converters, the vectorizer and the code exporters all run on your own machine, so nothing you convert or optimize is ever uploaded. The **AI generator** is the one exception: your text prompt is sent to our server, which runs a language model to write the SVG code and returns it to you. Free accounts get 3 AI generations a day (reset daily); Pro and credit packs add more.\n\n## Built for\n\nDesigners, front-end developers and indie makers who work with icons, logos and illustrations and want fast, private, in-browser SVG tools — plus AI that outputs code they can actually edit.\n\n## Pricing\n\nEvery tool is free forever. Go **Pro for $9.99/month** (or $99/year) for 300 AI generations a month with generation history and commercial use, or grab a **one-time $4.99 credit pack** of 100 generations that never expire.\n\n## Availability\n\nEnglish · runs in any modern browser at [svg.xeviora.com](https://svg.xeviora.com/).",
+					"features": [
+						{
+							"emoji": "🖼️",
+							"title": "View & edit SVG",
+							"desc": "Paste code or drop a file for a live in-browser preview, then edit the markup and download — nothing is uploaded."
+						},
+						{
+							"emoji": "🔄",
+							"title": "Convert any format",
+							"desc": "SVG to PNG, JPG, WebP or PDF at 1x–4x scale or a custom width, with transparency preserved where the format allows."
+						},
+						{
+							"emoji": "🗜️",
+							"title": "Optimize with SVGO",
+							"desc": "Strip editor junk and redundant precision to shrink files up to 80%, with a before/after size and preview."
+						},
+						{
+							"emoji": "✏️",
+							"title": "Vectorize images",
+							"desc": "Trace PNG or JPG into scalable SVG with tunable color and detail — logos and icons in seconds."
+						},
+						{
+							"emoji": "⚛️",
+							"title": "Export to code",
+							"desc": "Turn any SVG into a React or Vue component, a CSS background, or a Data URI — clean and paste-ready."
+						},
+						{
+							"emoji": "🤖",
+							"title": "AI Text-to-SVG",
+							"desc": "Describe it and get clean, layered, editable SVG code — semantic groups, tidy paths, no traced bitmap soup."
+						}
+					]
+				}
+			}
+		},
+		{
+			"slug": "lifechapter",
+			"category": "webapp",
+			"type": "webapp",
+			"installUrl": "https://lifechapter.app",
+			"categoryLabel": "Life Timeline & Memory Journal",
+			"logo": "/assets/showcase/lifechapter/logo.png",
+			"gradient": null,
+			"screenshots": [
+				{
+					"src": "/assets/showcase/lifechapter/scrn/01-shot-1.png",
+					"caption": ""
+				}
+			],
+			"privacyMarkdown": "# Privacy Policy — pointer\n\nLifeChapter already hosts its canonical privacy policy in the app.\n\n**Canonical policy: https://lifechapter.app/privacy**\n\nSource page: `react/app/(land)/privacy/page.tsx`\n\nDo not maintain a second draft here. Keep this store kit in sync with the hosted page (or delete this file). For reference, the app collects account email + authentication data, billing data via Paddle, and the timeline content and images you submit — which are processed and stored server-side (Postgres + Cloudflare R2) so your timeline works across devices, with AI features running server-side via OpenRouter.",
+			"content": {
+				"en": {
+					"name": "LifeChapter",
+					"tagline": "Record your life's most precious moments as a beautiful timeline.",
+					"short": "Turn memories and milestones into a beautiful timeline. Make PDF books, generate a personal website, and share your life story — with AI support.",
+					"long": "# LifeChapter — Your Life Story as a Beautiful Timeline\n\n**Record your life's most precious moments as a beautiful timeline.**\n\nYour life is full of moments worth keeping — first days, big trips, quiet turning points, the milestones you never want to forget. LifeChapter gives them a home: a clean, visual timeline that tells your unique story, and the tools to turn it into a book, a website, or something you share with the people you love.\n\n## Why LifeChapter\n\nNotes get lost. Photos scatter across phones and drives. LifeChapter brings your memories into one place, in order, and makes them beautiful — so your story is preserved instead of forgotten.\n\n## What you can do\n\n- **📖 Build a beautiful visual timeline** — organize your life's moments and milestones into a stunning, chronological story you can revisit anytime.\n- **🗓️ Use flexible dates** — record events by year, month, day, or a date range when you don't remember the exact day. Everything sorts in the right order automatically.\n- **🖼️ Add photos, tags & moods** — enrich each memory with images, tags, and how it felt, so the timeline captures more than just facts.\n- **🤖 Generate timelines with AI** — let AI draft a ready-made timeline from your notes, or turn a web page into a timeline in one click with the Chrome extension.\n- **📚 Export a PDF book** — turn your timeline into a beautifully designed PDF book to keep, gift, or print.\n- **🌐 Generate a personal website** — publish a shareable personal website from your timeline in a single click.\n- **🔗 Share & explore in the Plaza** — share your story privately or publish it, and discover other people's life stories in the Plaza.\n\n## How it works\n\n1. Add life events — with a photo, a mood, and a date as precise or as vague as you remember.\n2. LifeChapter arranges them into a clean visual timeline, automatically in the right order.\n3. When you're ready, export a PDF book, generate a personal website, or share a private link.\n\nYour content is stored securely on our servers so your timeline is available across devices, and AI features run server-side to draft timelines from your notes. Timelines are private by default — you decide what to share.\n\n## Built for\n\nMemory keepers of every kind — parents documenting family milestones, journalers and diarists, retirees writing a memoir, and creators building a personal narrative worth sharing.\n\n## Availability\n\nLifeChapter is a web app available at [lifechapter.app](https://lifechapter.app), with a companion Chrome extension for one-click AI timelines. The interface is in English. **Free to start — no credit card required.**",
+					"features": [
+						{
+							"emoji": "📖",
+							"title": "Beautiful visual timeline",
+							"desc": "Organize your life's moments and milestones into a stunning, chronological story you can revisit anytime."
+						},
+						{
+							"emoji": "🗓️",
+							"title": "Flexible dates",
+							"desc": "Record events by year, month, day — or a date range — when you don't remember the exact day."
+						},
+						{
+							"emoji": "🖼️",
+							"title": "Photos, tags & moods",
+							"desc": "Enrich each memory with images, tags and how it felt, so the timeline captures more than just facts."
+						},
+						{
+							"emoji": "🤖",
+							"title": "AI timeline generation",
+							"desc": "Let AI draft a ready-made timeline from your notes, or from a web page via the Chrome extension."
+						},
+						{
+							"emoji": "📚",
+							"title": "PDF book export",
+							"desc": "Export your timeline as a beautifully designed PDF book to keep, gift or print."
+						},
+						{
+							"emoji": "🌐",
+							"title": "Personal website",
+							"desc": "Generate a shareable personal website from your timeline in a single click."
+						},
+						{
+							"emoji": "🔗",
+							"title": "Sharing & Plaza",
+							"desc": "Share your story privately or publish it, and explore other people's life stories in the Plaza."
+						}
+					]
+				},
+				"zh-cn": {
+					"name": "LifeChapter",
+					"tagline": "Record your life's most precious moments as a beautiful timeline.",
+					"short": "Turn memories and milestones into a beautiful timeline. Make PDF books, generate a personal website, and share your life story — with AI support.",
+					"long": "# LifeChapter — Your Life Story as a Beautiful Timeline\n\n**Record your life's most precious moments as a beautiful timeline.**\n\nYour life is full of moments worth keeping — first days, big trips, quiet turning points, the milestones you never want to forget. LifeChapter gives them a home: a clean, visual timeline that tells your unique story, and the tools to turn it into a book, a website, or something you share with the people you love.\n\n## Why LifeChapter\n\nNotes get lost. Photos scatter across phones and drives. LifeChapter brings your memories into one place, in order, and makes them beautiful — so your story is preserved instead of forgotten.\n\n## What you can do\n\n- **📖 Build a beautiful visual timeline** — organize your life's moments and milestones into a stunning, chronological story you can revisit anytime.\n- **🗓️ Use flexible dates** — record events by year, month, day, or a date range when you don't remember the exact day. Everything sorts in the right order automatically.\n- **🖼️ Add photos, tags & moods** — enrich each memory with images, tags, and how it felt, so the timeline captures more than just facts.\n- **🤖 Generate timelines with AI** — let AI draft a ready-made timeline from your notes, or turn a web page into a timeline in one click with the Chrome extension.\n- **📚 Export a PDF book** — turn your timeline into a beautifully designed PDF book to keep, gift, or print.\n- **🌐 Generate a personal website** — publish a shareable personal website from your timeline in a single click.\n- **🔗 Share & explore in the Plaza** — share your story privately or publish it, and discover other people's life stories in the Plaza.\n\n## How it works\n\n1. Add life events — with a photo, a mood, and a date as precise or as vague as you remember.\n2. LifeChapter arranges them into a clean visual timeline, automatically in the right order.\n3. When you're ready, export a PDF book, generate a personal website, or share a private link.\n\nYour content is stored securely on our servers so your timeline is available across devices, and AI features run server-side to draft timelines from your notes. Timelines are private by default — you decide what to share.\n\n## Built for\n\nMemory keepers of every kind — parents documenting family milestones, journalers and diarists, retirees writing a memoir, and creators building a personal narrative worth sharing.\n\n## Availability\n\nLifeChapter is a web app available at [lifechapter.app](https://lifechapter.app), with a companion Chrome extension for one-click AI timelines. The interface is in English. **Free to start — no credit card required.**",
+					"features": [
+						{
+							"emoji": "📖",
+							"title": "Beautiful visual timeline",
+							"desc": "Organize your life's moments and milestones into a stunning, chronological story you can revisit anytime."
+						},
+						{
+							"emoji": "🗓️",
+							"title": "Flexible dates",
+							"desc": "Record events by year, month, day — or a date range — when you don't remember the exact day."
+						},
+						{
+							"emoji": "🖼️",
+							"title": "Photos, tags & moods",
+							"desc": "Enrich each memory with images, tags and how it felt, so the timeline captures more than just facts."
+						},
+						{
+							"emoji": "🤖",
+							"title": "AI timeline generation",
+							"desc": "Let AI draft a ready-made timeline from your notes, or from a web page via the Chrome extension."
+						},
+						{
+							"emoji": "📚",
+							"title": "PDF book export",
+							"desc": "Export your timeline as a beautifully designed PDF book to keep, gift or print."
+						},
+						{
+							"emoji": "🌐",
+							"title": "Personal website",
+							"desc": "Generate a shareable personal website from your timeline in a single click."
+						},
+						{
+							"emoji": "🔗",
+							"title": "Sharing & Plaza",
+							"desc": "Share your story privately or publish it, and explore other people's life stories in the Plaza."
+						}
+					]
+				},
+				"es": {
+					"name": "LifeChapter",
+					"tagline": "Record your life's most precious moments as a beautiful timeline.",
+					"short": "Turn memories and milestones into a beautiful timeline. Make PDF books, generate a personal website, and share your life story — with AI support.",
+					"long": "# LifeChapter — Your Life Story as a Beautiful Timeline\n\n**Record your life's most precious moments as a beautiful timeline.**\n\nYour life is full of moments worth keeping — first days, big trips, quiet turning points, the milestones you never want to forget. LifeChapter gives them a home: a clean, visual timeline that tells your unique story, and the tools to turn it into a book, a website, or something you share with the people you love.\n\n## Why LifeChapter\n\nNotes get lost. Photos scatter across phones and drives. LifeChapter brings your memories into one place, in order, and makes them beautiful — so your story is preserved instead of forgotten.\n\n## What you can do\n\n- **📖 Build a beautiful visual timeline** — organize your life's moments and milestones into a stunning, chronological story you can revisit anytime.\n- **🗓️ Use flexible dates** — record events by year, month, day, or a date range when you don't remember the exact day. Everything sorts in the right order automatically.\n- **🖼️ Add photos, tags & moods** — enrich each memory with images, tags, and how it felt, so the timeline captures more than just facts.\n- **🤖 Generate timelines with AI** — let AI draft a ready-made timeline from your notes, or turn a web page into a timeline in one click with the Chrome extension.\n- **📚 Export a PDF book** — turn your timeline into a beautifully designed PDF book to keep, gift, or print.\n- **🌐 Generate a personal website** — publish a shareable personal website from your timeline in a single click.\n- **🔗 Share & explore in the Plaza** — share your story privately or publish it, and discover other people's life stories in the Plaza.\n\n## How it works\n\n1. Add life events — with a photo, a mood, and a date as precise or as vague as you remember.\n2. LifeChapter arranges them into a clean visual timeline, automatically in the right order.\n3. When you're ready, export a PDF book, generate a personal website, or share a private link.\n\nYour content is stored securely on our servers so your timeline is available across devices, and AI features run server-side to draft timelines from your notes. Timelines are private by default — you decide what to share.\n\n## Built for\n\nMemory keepers of every kind — parents documenting family milestones, journalers and diarists, retirees writing a memoir, and creators building a personal narrative worth sharing.\n\n## Availability\n\nLifeChapter is a web app available at [lifechapter.app](https://lifechapter.app), with a companion Chrome extension for one-click AI timelines. The interface is in English. **Free to start — no credit card required.**",
+					"features": [
+						{
+							"emoji": "📖",
+							"title": "Beautiful visual timeline",
+							"desc": "Organize your life's moments and milestones into a stunning, chronological story you can revisit anytime."
+						},
+						{
+							"emoji": "🗓️",
+							"title": "Flexible dates",
+							"desc": "Record events by year, month, day — or a date range — when you don't remember the exact day."
+						},
+						{
+							"emoji": "🖼️",
+							"title": "Photos, tags & moods",
+							"desc": "Enrich each memory with images, tags and how it felt, so the timeline captures more than just facts."
+						},
+						{
+							"emoji": "🤖",
+							"title": "AI timeline generation",
+							"desc": "Let AI draft a ready-made timeline from your notes, or from a web page via the Chrome extension."
+						},
+						{
+							"emoji": "📚",
+							"title": "PDF book export",
+							"desc": "Export your timeline as a beautifully designed PDF book to keep, gift or print."
+						},
+						{
+							"emoji": "🌐",
+							"title": "Personal website",
+							"desc": "Generate a shareable personal website from your timeline in a single click."
+						},
+						{
+							"emoji": "🔗",
+							"title": "Sharing & Plaza",
+							"desc": "Share your story privately or publish it, and explore other people's life stories in the Plaza."
+						}
+					]
+				},
+				"fr": {
+					"name": "LifeChapter",
+					"tagline": "Record your life's most precious moments as a beautiful timeline.",
+					"short": "Turn memories and milestones into a beautiful timeline. Make PDF books, generate a personal website, and share your life story — with AI support.",
+					"long": "# LifeChapter — Your Life Story as a Beautiful Timeline\n\n**Record your life's most precious moments as a beautiful timeline.**\n\nYour life is full of moments worth keeping — first days, big trips, quiet turning points, the milestones you never want to forget. LifeChapter gives them a home: a clean, visual timeline that tells your unique story, and the tools to turn it into a book, a website, or something you share with the people you love.\n\n## Why LifeChapter\n\nNotes get lost. Photos scatter across phones and drives. LifeChapter brings your memories into one place, in order, and makes them beautiful — so your story is preserved instead of forgotten.\n\n## What you can do\n\n- **📖 Build a beautiful visual timeline** — organize your life's moments and milestones into a stunning, chronological story you can revisit anytime.\n- **🗓️ Use flexible dates** — record events by year, month, day, or a date range when you don't remember the exact day. Everything sorts in the right order automatically.\n- **🖼️ Add photos, tags & moods** — enrich each memory with images, tags, and how it felt, so the timeline captures more than just facts.\n- **🤖 Generate timelines with AI** — let AI draft a ready-made timeline from your notes, or turn a web page into a timeline in one click with the Chrome extension.\n- **📚 Export a PDF book** — turn your timeline into a beautifully designed PDF book to keep, gift, or print.\n- **🌐 Generate a personal website** — publish a shareable personal website from your timeline in a single click.\n- **🔗 Share & explore in the Plaza** — share your story privately or publish it, and discover other people's life stories in the Plaza.\n\n## How it works\n\n1. Add life events — with a photo, a mood, and a date as precise or as vague as you remember.\n2. LifeChapter arranges them into a clean visual timeline, automatically in the right order.\n3. When you're ready, export a PDF book, generate a personal website, or share a private link.\n\nYour content is stored securely on our servers so your timeline is available across devices, and AI features run server-side to draft timelines from your notes. Timelines are private by default — you decide what to share.\n\n## Built for\n\nMemory keepers of every kind — parents documenting family milestones, journalers and diarists, retirees writing a memoir, and creators building a personal narrative worth sharing.\n\n## Availability\n\nLifeChapter is a web app available at [lifechapter.app](https://lifechapter.app), with a companion Chrome extension for one-click AI timelines. The interface is in English. **Free to start — no credit card required.**",
+					"features": [
+						{
+							"emoji": "📖",
+							"title": "Beautiful visual timeline",
+							"desc": "Organize your life's moments and milestones into a stunning, chronological story you can revisit anytime."
+						},
+						{
+							"emoji": "🗓️",
+							"title": "Flexible dates",
+							"desc": "Record events by year, month, day — or a date range — when you don't remember the exact day."
+						},
+						{
+							"emoji": "🖼️",
+							"title": "Photos, tags & moods",
+							"desc": "Enrich each memory with images, tags and how it felt, so the timeline captures more than just facts."
+						},
+						{
+							"emoji": "🤖",
+							"title": "AI timeline generation",
+							"desc": "Let AI draft a ready-made timeline from your notes, or from a web page via the Chrome extension."
+						},
+						{
+							"emoji": "📚",
+							"title": "PDF book export",
+							"desc": "Export your timeline as a beautifully designed PDF book to keep, gift or print."
+						},
+						{
+							"emoji": "🌐",
+							"title": "Personal website",
+							"desc": "Generate a shareable personal website from your timeline in a single click."
+						},
+						{
+							"emoji": "🔗",
+							"title": "Sharing & Plaza",
+							"desc": "Share your story privately or publish it, and explore other people's life stories in the Plaza."
+						}
+					]
+				},
+				"ja": {
+					"name": "LifeChapter",
+					"tagline": "Record your life's most precious moments as a beautiful timeline.",
+					"short": "Turn memories and milestones into a beautiful timeline. Make PDF books, generate a personal website, and share your life story — with AI support.",
+					"long": "# LifeChapter — Your Life Story as a Beautiful Timeline\n\n**Record your life's most precious moments as a beautiful timeline.**\n\nYour life is full of moments worth keeping — first days, big trips, quiet turning points, the milestones you never want to forget. LifeChapter gives them a home: a clean, visual timeline that tells your unique story, and the tools to turn it into a book, a website, or something you share with the people you love.\n\n## Why LifeChapter\n\nNotes get lost. Photos scatter across phones and drives. LifeChapter brings your memories into one place, in order, and makes them beautiful — so your story is preserved instead of forgotten.\n\n## What you can do\n\n- **📖 Build a beautiful visual timeline** — organize your life's moments and milestones into a stunning, chronological story you can revisit anytime.\n- **🗓️ Use flexible dates** — record events by year, month, day, or a date range when you don't remember the exact day. Everything sorts in the right order automatically.\n- **🖼️ Add photos, tags & moods** — enrich each memory with images, tags, and how it felt, so the timeline captures more than just facts.\n- **🤖 Generate timelines with AI** — let AI draft a ready-made timeline from your notes, or turn a web page into a timeline in one click with the Chrome extension.\n- **📚 Export a PDF book** — turn your timeline into a beautifully designed PDF book to keep, gift, or print.\n- **🌐 Generate a personal website** — publish a shareable personal website from your timeline in a single click.\n- **🔗 Share & explore in the Plaza** — share your story privately or publish it, and discover other people's life stories in the Plaza.\n\n## How it works\n\n1. Add life events — with a photo, a mood, and a date as precise or as vague as you remember.\n2. LifeChapter arranges them into a clean visual timeline, automatically in the right order.\n3. When you're ready, export a PDF book, generate a personal website, or share a private link.\n\nYour content is stored securely on our servers so your timeline is available across devices, and AI features run server-side to draft timelines from your notes. Timelines are private by default — you decide what to share.\n\n## Built for\n\nMemory keepers of every kind — parents documenting family milestones, journalers and diarists, retirees writing a memoir, and creators building a personal narrative worth sharing.\n\n## Availability\n\nLifeChapter is a web app available at [lifechapter.app](https://lifechapter.app), with a companion Chrome extension for one-click AI timelines. The interface is in English. **Free to start — no credit card required.**",
+					"features": [
+						{
+							"emoji": "📖",
+							"title": "Beautiful visual timeline",
+							"desc": "Organize your life's moments and milestones into a stunning, chronological story you can revisit anytime."
+						},
+						{
+							"emoji": "🗓️",
+							"title": "Flexible dates",
+							"desc": "Record events by year, month, day — or a date range — when you don't remember the exact day."
+						},
+						{
+							"emoji": "🖼️",
+							"title": "Photos, tags & moods",
+							"desc": "Enrich each memory with images, tags and how it felt, so the timeline captures more than just facts."
+						},
+						{
+							"emoji": "🤖",
+							"title": "AI timeline generation",
+							"desc": "Let AI draft a ready-made timeline from your notes, or from a web page via the Chrome extension."
+						},
+						{
+							"emoji": "📚",
+							"title": "PDF book export",
+							"desc": "Export your timeline as a beautifully designed PDF book to keep, gift or print."
+						},
+						{
+							"emoji": "🌐",
+							"title": "Personal website",
+							"desc": "Generate a shareable personal website from your timeline in a single click."
+						},
+						{
+							"emoji": "🔗",
+							"title": "Sharing & Plaza",
+							"desc": "Share your story privately or publish it, and explore other people's life stories in the Plaza."
+						}
+					]
+				},
+				"zh-tw": {
+					"name": "LifeChapter",
+					"tagline": "Record your life's most precious moments as a beautiful timeline.",
+					"short": "Turn memories and milestones into a beautiful timeline. Make PDF books, generate a personal website, and share your life story — with AI support.",
+					"long": "# LifeChapter — Your Life Story as a Beautiful Timeline\n\n**Record your life's most precious moments as a beautiful timeline.**\n\nYour life is full of moments worth keeping — first days, big trips, quiet turning points, the milestones you never want to forget. LifeChapter gives them a home: a clean, visual timeline that tells your unique story, and the tools to turn it into a book, a website, or something you share with the people you love.\n\n## Why LifeChapter\n\nNotes get lost. Photos scatter across phones and drives. LifeChapter brings your memories into one place, in order, and makes them beautiful — so your story is preserved instead of forgotten.\n\n## What you can do\n\n- **📖 Build a beautiful visual timeline** — organize your life's moments and milestones into a stunning, chronological story you can revisit anytime.\n- **🗓️ Use flexible dates** — record events by year, month, day, or a date range when you don't remember the exact day. Everything sorts in the right order automatically.\n- **🖼️ Add photos, tags & moods** — enrich each memory with images, tags, and how it felt, so the timeline captures more than just facts.\n- **🤖 Generate timelines with AI** — let AI draft a ready-made timeline from your notes, or turn a web page into a timeline in one click with the Chrome extension.\n- **📚 Export a PDF book** — turn your timeline into a beautifully designed PDF book to keep, gift, or print.\n- **🌐 Generate a personal website** — publish a shareable personal website from your timeline in a single click.\n- **🔗 Share & explore in the Plaza** — share your story privately or publish it, and discover other people's life stories in the Plaza.\n\n## How it works\n\n1. Add life events — with a photo, a mood, and a date as precise or as vague as you remember.\n2. LifeChapter arranges them into a clean visual timeline, automatically in the right order.\n3. When you're ready, export a PDF book, generate a personal website, or share a private link.\n\nYour content is stored securely on our servers so your timeline is available across devices, and AI features run server-side to draft timelines from your notes. Timelines are private by default — you decide what to share.\n\n## Built for\n\nMemory keepers of every kind — parents documenting family milestones, journalers and diarists, retirees writing a memoir, and creators building a personal narrative worth sharing.\n\n## Availability\n\nLifeChapter is a web app available at [lifechapter.app](https://lifechapter.app), with a companion Chrome extension for one-click AI timelines. The interface is in English. **Free to start — no credit card required.**",
+					"features": [
+						{
+							"emoji": "📖",
+							"title": "Beautiful visual timeline",
+							"desc": "Organize your life's moments and milestones into a stunning, chronological story you can revisit anytime."
+						},
+						{
+							"emoji": "🗓️",
+							"title": "Flexible dates",
+							"desc": "Record events by year, month, day — or a date range — when you don't remember the exact day."
+						},
+						{
+							"emoji": "🖼️",
+							"title": "Photos, tags & moods",
+							"desc": "Enrich each memory with images, tags and how it felt, so the timeline captures more than just facts."
+						},
+						{
+							"emoji": "🤖",
+							"title": "AI timeline generation",
+							"desc": "Let AI draft a ready-made timeline from your notes, or from a web page via the Chrome extension."
+						},
+						{
+							"emoji": "📚",
+							"title": "PDF book export",
+							"desc": "Export your timeline as a beautifully designed PDF book to keep, gift or print."
+						},
+						{
+							"emoji": "🌐",
+							"title": "Personal website",
+							"desc": "Generate a shareable personal website from your timeline in a single click."
+						},
+						{
+							"emoji": "🔗",
+							"title": "Sharing & Plaza",
+							"desc": "Share your story privately or publish it, and explore other people's life stories in the Plaza."
+						}
+					]
+				}
+			}
+		},
+		{
 			"slug": "clearkit",
 			"category": "extension",
 			"type": "extension",
@@ -291,13 +813,13 @@
 					"caption": "Whitelist your sites and set up the panic shortcut"
 				}
 			],
-			"privacyMarkdown": "# Privacy Policy — ClearKit\n\n_Last updated: 2026-07-04_\n\nClearKit (\"the extension\") is a browsing-data cleaner that runs entirely inside your web browser. It has no account system and no backend server.\n\n## Data we collect\n\n**None.** ClearKit does not collect, store on any server, transmit, share, or sell any personal data or browsing history. There is no sign-in, no analytics, and no telemetry. Everything the extension does — clearing data, searching and deleting history, running scheduled rules — happens locally on your own device. Your settings, auto-clean rules and the local event log (the last 200 clean runs) are stored in your browser via the standard extension storage and never leave your machine.\n\n## Permissions and why they are needed\n\n- **browsingData** — Performs the actual clearing you ask for (history, cache, cookies and other site data) via the browser's `browsingData` API. Your whitelist is enforced here so protected sites are skipped, and the reverse mode targets only the sites you list. It runs only on an explicit action by you, your keyboard shortcut, or a schedule you configured.\n- **history** — Powers the local history dashboard: searching and filtering entries, showing top-domain and browsing-heatmap statistics, and deleting history grouped by domain (including per-domain deletion when you clear the current site). History is read and deleted on your device only — nothing is uploaded or transmitted.\n- **storage** — Persists your settings, auto-clean rules and the local-only event log so they survive the service worker being recycled. All values stay in the browser's local extension storage.\n- **alarms** — Schedules your auto-clean rules on the cadence you set (every 15 minutes to 24 hours, or at browser startup). Used only for the extension's own local scheduling.\n- **notifications** — Shows a system notification when a clean finishes, so you get confirmation of a task you started. Notifications result from your own actions or your own scheduled rules.\n- **activeTab** — Reads the current tab's URL, only while the popup is open, so the \"Clear this site\" card can show and target the site's domain. Limited to the tab you are on at that moment; ClearKit does not request the broader `tabs` permission.\n\nClearKit requests **no host permissions** and does not use the `cookies` or `scripting` permissions — it never runs code on the pages you visit.\n\n## Remote code\n\nClearKit does **not** load or execute any remote code. All JavaScript and WebAssembly are bundled in the extension package.\n\n## Changes\n\nIf this policy changes, the \"Last updated\" date above will change accordingly. The current version is published at: https://xeviora.com/clearkit-privacy\n\n## Contact\n\nQuestions? Contact tiger.hu.liu@gmail.com",
+			"privacyMarkdown": "# Privacy Policy — ClearKit\n\n_Last updated: 2026-07-04_\n\nClearKit (\"the extension\") is a browsing-data cleaner that runs entirely inside your web browser. It has no account system and no backend server.\n\n## Data we collect\n\n**None.** ClearKit does not collect, store on any server, transmit, share, or sell any personal data or browsing history. There is no sign-in, no analytics, and no telemetry. Everything the extension does — clearing data, searching and deleting history, running scheduled rules — happens locally on your own device. Your settings, auto-clean rules and the local event log (the last 200 clean runs) are stored in your browser via the standard extension storage and never leave your machine.\n\n## Permissions and why they are needed\n\n- **browsingData** — Performs the actual clearing you ask for (history, cache, cookies and other site data) via the browser's `browsingData` API. Your whitelist is enforced here so protected sites are skipped, and the reverse mode targets only the sites you list. It runs only on an explicit action by you, your keyboard shortcut, or a schedule you configured.\n- **history** — Powers the local history dashboard: searching and filtering entries, showing top-domain and browsing-heatmap statistics, and deleting history grouped by domain (including per-domain deletion when you clear the current site). History is read and deleted on your device only — nothing is uploaded or transmitted.\n- **storage** — Persists your settings, auto-clean rules and the local-only event log so they survive the service worker being recycled. All values stay in the browser's local extension storage.\n- **alarms** — Schedules your auto-clean rules on the cadence you set (every 15 minutes to 24 hours, or at browser startup). Used only for the extension's own local scheduling.\n- **notifications** — Shows a system notification when a clean finishes, so you get confirmation of a task you started. Notifications result from your own actions or your own scheduled rules.\n- **activeTab** — Reads the current tab's URL, only while the popup is open, so the \"Clear this site\" card can show and target the site's domain. Limited to the tab you are on at that moment; ClearKit does not request the broader `tabs` permission.\n\nClearKit requests **no host permissions** and does not use the `cookies` or `scripting` permissions — it never runs code on the pages you visit.\n\n## Remote code\n\nClearKit does **not** load or execute any remote code. All JavaScript and WebAssembly are bundled in the extension package.\n\n## Changes\n\nIf this policy changes, the \"Last updated\" date above will change accordingly. The current version is published at: https://chinadeveloper.net/en/portfolios/showcase/clearkit/privacy\n\n## Contact\n\nQuestions? Contact tiger.hu.liu@gmail.com",
 			"content": {
 				"en": {
 					"name": "ClearKit – History & Cache Cleaner",
 					"tagline": "Clear your browsing history, cache and cookies in one click or on an automatic schedule — while a whitelist keeps you signed in to the sites you use every day.",
 					"short": "Clear history, cache & cookies in one click or on schedule. A whitelist keeps you signed in. 100% offline, no login.",
-					"long": "Most cleaners force a trade-off: wipe your cookies to clear tracking, and you're logged out of everything you use. ClearKit fixes that. Clear your history, cache and cookies in one click — or on an automatic schedule — while a whitelist protects the sites you want to stay signed in to. Everything runs inside your browser: no account, no server, nothing ever leaves your device.\n\n**Why install it**\nClearKit is a proper cleaning centre, not a single button. It does one-click manual cleaning the most convenient way, gives you free scheduled auto-cleaning that paid extensions charge for, and adds three things nobody else offers together: a whitelist that protects your logins, a panic shortcut, and a history dashboard — all 100% offline.\n\n**What you can do**\n- 🧹 **One-click cleaning** — Clear 13 data types across 12 time ranges — from the last minute to all time. Pin your favourites, confirm before wiping, and get a badge, sound-free notification and animation when it's done.\n- 🛡️ **Whitelist keeps you signed in** — Protect the domains you care about: cookies, cache and site data for whitelisted sites are skipped, so your history clears clean but you stay logged in to Gmail, GitHub and the rest. A reverse mode clears only the sites you list.\n- 🌐 **Clear this site** — One tap on the current tab wipes its cookies, cache and site data — and, if you want, every history entry for that domain, subdomains included.\n- ⚡ **Panic shortcut** — Alt+Shift+C instantly runs your preset — no popup, no questions — and can close every tab and open a fresh window for a leave-no-trace retreat.\n- ⏰ **Scheduled auto-clean** — Build rules that run in the background every 15 minutes to 24 hours, or at browser startup. Free — no subscription, no upsell. Sensitive types are off by default so nothing wipes while you type.\n- 📊 **History dashboard** — Search and filter your history, delete it grouped by domain, and see your top sites and a browsing heatmap. A running log records every clean; official links jump to server-side search history you can't delete locally.\n- 🔒 **100% offline & no login** — Everything runs in your browser. No account, no backend, no analytics, no tracking — nothing ever leaves your device.\n\n**Private by design**\nClearKit collects nothing. There is no sign-in, no server, and no analytics. Your history and settings stay in your browser's local storage and are never sold or transmitted. It asks for the minimum permissions — no host permissions, no access to your browsing beyond the local dashboard you open yourself.\n\n**Great for**\nAnyone who wants a clean, private browser — privacy-minded users, people on shared or public computers, and power users who want scheduled, hands-off cleanup without losing their logins.\n\n**Keyboard shortcuts**\n- Open ClearKit: Alt+Shift+K\n- Panic clean (run preset now): Alt+Shift+C\n\n**A note on sensitive data**\nSaved passwords and form data are off by default and clearly marked — ClearKit will never wipe them unless you deliberately opt in. Scheduled rules leave them out too, so nothing disappears while you're filling in a form.\n\n**Privacy**\nClearKit collects nothing and runs entirely offline. Privacy policy: https://xeviora.com/clearkit-privacy",
+					"long": "Most cleaners force a trade-off: wipe your cookies to clear tracking, and you're logged out of everything you use. ClearKit fixes that. Clear your history, cache and cookies in one click — or on an automatic schedule — while a whitelist protects the sites you want to stay signed in to. Everything runs inside your browser: no account, no server, nothing ever leaves your device.\n\n**Why install it**\nClearKit is a proper cleaning centre, not a single button. It does one-click manual cleaning the most convenient way, gives you free scheduled auto-cleaning that paid extensions charge for, and adds three things nobody else offers together: a whitelist that protects your logins, a panic shortcut, and a history dashboard — all 100% offline.\n\n**What you can do**\n- 🧹 **One-click cleaning** — Clear 13 data types across 12 time ranges — from the last minute to all time. Pin your favourites, confirm before wiping, and get a badge, sound-free notification and animation when it's done.\n- 🛡️ **Whitelist keeps you signed in** — Protect the domains you care about: cookies, cache and site data for whitelisted sites are skipped, so your history clears clean but you stay logged in to Gmail, GitHub and the rest. A reverse mode clears only the sites you list.\n- 🌐 **Clear this site** — One tap on the current tab wipes its cookies, cache and site data — and, if you want, every history entry for that domain, subdomains included.\n- ⚡ **Panic shortcut** — Alt+Shift+C instantly runs your preset — no popup, no questions — and can close every tab and open a fresh window for a leave-no-trace retreat.\n- ⏰ **Scheduled auto-clean** — Build rules that run in the background every 15 minutes to 24 hours, or at browser startup. Free — no subscription, no upsell. Sensitive types are off by default so nothing wipes while you type.\n- 📊 **History dashboard** — Search and filter your history, delete it grouped by domain, and see your top sites and a browsing heatmap. A running log records every clean; official links jump to server-side search history you can't delete locally.\n- 🔒 **100% offline & no login** — Everything runs in your browser. No account, no backend, no analytics, no tracking — nothing ever leaves your device.\n\n**Private by design**\nClearKit collects nothing. There is no sign-in, no server, and no analytics. Your history and settings stay in your browser's local storage and are never sold or transmitted. It asks for the minimum permissions — no host permissions, no access to your browsing beyond the local dashboard you open yourself.\n\n**Great for**\nAnyone who wants a clean, private browser — privacy-minded users, people on shared or public computers, and power users who want scheduled, hands-off cleanup without losing their logins.\n\n**Keyboard shortcuts**\n- Open ClearKit: Alt+Shift+K\n- Panic clean (run preset now): Alt+Shift+C\n\n**A note on sensitive data**\nSaved passwords and form data are off by default and clearly marked — ClearKit will never wipe them unless you deliberately opt in. Scheduled rules leave them out too, so nothing disappears while you're filling in a form.\n\n**Privacy**\nClearKit collects nothing and runs entirely offline.",
 					"features": [
 						{
 							"emoji": "🧹",
@@ -339,7 +861,7 @@
 				"zh-cn": {
 					"name": "ClearKit – 历史与缓存清理",
 					"short": "一键或定时清理历史、缓存和 Cookie，白名单让你保持登录。100% 离线，无需注册登录。",
-					"long": "大多数清理工具都逼你二选一：想清掉追踪就得删 Cookie，结果所有网站的登录状态全没了。ClearKit 解决了这个问题。一键——或按自动计划——清理历史、缓存和 Cookie，同时用白名单保护你想保持登录的网站。一切都在浏览器内完成：无账号、无服务器，数据从不离开你的设备。\n\n**为什么值得安装**\nClearKit 是一个真正的清理中心，而不是一个孤零零的按钮。它把一键手动清理做到最顺手，免费提供其他扩展要收费的定时自动清理，还集齐了别家不会一起给你的三件事：保护登录的白名单、应急快捷键，以及历史面板——全部 100% 离线。\n\n**你能做什么**\n- 🧹 **一键清理** — 覆盖 13 种数据类型、12 个时间范围，从最近一分钟到全部时间。收藏常用项、清理前确认，完成后有角标、静音通知和动画提示。\n- 🛡️ **白名单保持登录** — 保护你在意的域名：白名单站点的 Cookie、缓存和网站数据会被跳过，历史干净清空，但 Gmail、GitHub 等仍保持登录。反向模式则只清理你列出的网站。\n- 🌐 **清理本站** — 在当前标签页点一下，即可清除该站的 Cookie、缓存和网站数据；如需要，还可连同该域名（含子域名）的全部历史记录一起清掉。\n- ⚡ **应急快捷键** — Alt+Shift+C 立即执行你的预设——无弹窗、无追问——还能关闭所有标签页并打开一个全新窗口，做到不留痕迹的快速撤离。\n- ⏰ **定时自动清理** — 创建规则，在后台每 15 分钟到 24 小时运行一次，或在浏览器启动时运行。完全免费——无订阅、无诱导付费。敏感类型默认关闭，打字时不会被误清。\n- 📊 **历史面板** — 搜索并筛选历史记录，按域名分组删除，查看常访问站点和浏览热力图。运行日志记录每次清理；官方链接可跳转到本地无法删除的服务端搜索历史。\n- 🔒 **100% 离线，无需登录** — 一切都在浏览器内运行。无账号、无后端、无分析、无追踪——数据从不离开你的设备。\n\n**从设计之初就注重隐私**\nClearKit 不收集任何数据。没有登录、没有服务器、没有分析统计。你的历史和设置只保存在浏览器本地存储中，绝不出售或上传。它只申请最少的权限——没有主机权限，除了你自己打开的本地面板外，不访问你的任何浏览数据。\n\n**适合谁**\n任何想要一个干净、私密浏览器的人——注重隐私的用户、使用共享或公用电脑的人，以及希望定时自动清理又不丢失登录状态的高级用户。\n\n**键盘快捷键**\n- 打开 ClearKit：Alt+Shift+K\n- 应急清理（立即执行预设）：Alt+Shift+C\n\n**关于敏感数据的说明**\n已保存的密码和表单数据默认关闭并明确标注——除非你主动勾选，ClearKit 绝不会清除它们。定时规则同样会跳过这些数据，填表时不会有东西突然消失。\n\n**隐私**\nClearKit 不收集任何数据，完全离线运行。隐私政策：https://xeviora.com/clearkit-privacy",
+					"long": "大多数清理工具都逼你二选一：想清掉追踪就得删 Cookie，结果所有网站的登录状态全没了。ClearKit 解决了这个问题。一键——或按自动计划——清理历史、缓存和 Cookie，同时用白名单保护你想保持登录的网站。一切都在浏览器内完成：无账号、无服务器，数据从不离开你的设备。\n\n**为什么值得安装**\nClearKit 是一个真正的清理中心，而不是一个孤零零的按钮。它把一键手动清理做到最顺手，免费提供其他扩展要收费的定时自动清理，还集齐了别家不会一起给你的三件事：保护登录的白名单、应急快捷键，以及历史面板——全部 100% 离线。\n\n**你能做什么**\n- 🧹 **一键清理** — 覆盖 13 种数据类型、12 个时间范围，从最近一分钟到全部时间。收藏常用项、清理前确认，完成后有角标、静音通知和动画提示。\n- 🛡️ **白名单保持登录** — 保护你在意的域名：白名单站点的 Cookie、缓存和网站数据会被跳过，历史干净清空，但 Gmail、GitHub 等仍保持登录。反向模式则只清理你列出的网站。\n- 🌐 **清理本站** — 在当前标签页点一下，即可清除该站的 Cookie、缓存和网站数据；如需要，还可连同该域名（含子域名）的全部历史记录一起清掉。\n- ⚡ **应急快捷键** — Alt+Shift+C 立即执行你的预设——无弹窗、无追问——还能关闭所有标签页并打开一个全新窗口，做到不留痕迹的快速撤离。\n- ⏰ **定时自动清理** — 创建规则，在后台每 15 分钟到 24 小时运行一次，或在浏览器启动时运行。完全免费——无订阅、无诱导付费。敏感类型默认关闭，打字时不会被误清。\n- 📊 **历史面板** — 搜索并筛选历史记录，按域名分组删除，查看常访问站点和浏览热力图。运行日志记录每次清理；官方链接可跳转到本地无法删除的服务端搜索历史。\n- 🔒 **100% 离线，无需登录** — 一切都在浏览器内运行。无账号、无后端、无分析、无追踪——数据从不离开你的设备。\n\n**从设计之初就注重隐私**\nClearKit 不收集任何数据。没有登录、没有服务器、没有分析统计。你的历史和设置只保存在浏览器本地存储中，绝不出售或上传。它只申请最少的权限——没有主机权限，除了你自己打开的本地面板外，不访问你的任何浏览数据。\n\n**适合谁**\n任何想要一个干净、私密浏览器的人——注重隐私的用户、使用共享或公用电脑的人，以及希望定时自动清理又不丢失登录状态的高级用户。\n\n**键盘快捷键**\n- 打开 ClearKit：Alt+Shift+K\n- 应急清理（立即执行预设）：Alt+Shift+C\n\n**关于敏感数据的说明**\n已保存的密码和表单数据默认关闭并明确标注——除非你主动勾选，ClearKit 绝不会清除它们。定时规则同样会跳过这些数据，填表时不会有东西突然消失。\n\n**隐私**\nClearKit 不收集任何数据，完全离线运行。",
 					"features": [
 						{
 							"emoji": "🧹",
@@ -381,7 +903,7 @@
 				"es": {
 					"name": "ClearKit – Limpiador de historial y caché",
 					"short": "Borra historial, caché y cookies con un clic o programado. Una lista blanca te mantiene con sesión. 100% sin conexión.",
-					"long": "La mayoría de los limpiadores te obligan a elegir: borras las cookies para eliminar el rastreo y te quedas sin sesión en todo lo que usas. ClearKit lo soluciona. Borra tu historial, caché y cookies con un solo clic —o de forma automática programada— mientras una lista blanca protege los sitios en los que quieres seguir con la sesión iniciada. Todo se ejecuta dentro de tu navegador: sin cuenta, sin servidor, nada sale nunca de tu dispositivo.\n\n**Por qué instalarlo**\nClearKit es un auténtico centro de limpieza, no un simple botón. Ofrece la limpieza manual con un clic de la forma más cómoda, te da gratis la limpieza automática programada que otras extensiones cobran, y suma tres cosas que nadie más reúne: una lista blanca que protege tus sesiones, un atajo de pánico y un panel de historial, todo 100% sin conexión.\n\n**Qué puedes hacer**\n- 🧹 **Limpieza con un clic** — Borra 13 tipos de datos en 12 rangos de tiempo, desde el último minuto hasta todo el historial. Fija tus favoritos, confirma antes de borrar y recibe una insignia, una notificación silenciosa y una animación al terminar.\n- 🛡️ **La lista blanca mantiene tu sesión** — Protege los dominios que te importan: las cookies, la caché y los datos de sitio de la lista blanca se omiten, así tu historial queda limpio pero sigues con la sesión iniciada en Gmail, GitHub y los demás. Un modo inverso borra solo los sitios que indiques.\n- 🌐 **Limpiar este sitio** — Un toque en la pestaña actual borra sus cookies, caché y datos de sitio y, si quieres, todas las entradas de historial de ese dominio, subdominios incluidos.\n- ⚡ **Atajo de pánico** — Alt+Shift+C ejecuta tu preajuste al instante —sin ventana emergente, sin preguntas— y puede cerrar todas las pestañas y abrir una ventana nueva para una retirada sin dejar rastro.\n- ⏰ **Limpieza automática programada** — Crea reglas que se ejecutan en segundo plano cada 15 minutos a 24 horas, o al iniciar el navegador. Gratis, sin suscripción ni ventas adicionales. Los tipos sensibles están desactivados por defecto, así que nada se borra mientras escribes.\n- 📊 **Panel de historial** — Busca y filtra tu historial, elimínalo agrupado por dominio y consulta tus sitios más visitados y un mapa de calor de navegación. Un registro anota cada limpieza; los enlaces oficiales te llevan al historial de búsqueda del servidor que no puedes borrar en local.\n- 🔒 **100% sin conexión y sin inicio de sesión** — Todo se ejecuta en tu navegador. Sin cuenta, sin servidor, sin analíticas, sin rastreo; nada sale nunca de tu dispositivo.\n\n**Privado por diseño**\nClearKit no recopila nada. No hay inicio de sesión, ni servidor, ni analíticas. Tu historial y tu configuración se quedan en el almacenamiento local del navegador y nunca se venden ni se transmiten. Pide los permisos mínimos: sin permisos de host, sin acceso a tu navegación más allá del panel local que abres tú mismo.\n\n**Ideal para**\nCualquiera que quiera un navegador limpio y privado: personas que cuidan su privacidad, quienes usan ordenadores compartidos o públicos y usuarios avanzados que buscan una limpieza automática y programada sin perder sus sesiones.\n\n**Atajos de teclado**\n- Abrir ClearKit: Alt+Shift+K\n- Limpieza de pánico (ejecutar preajuste ahora): Alt+Shift+C\n\n**Nota sobre los datos sensibles**\nLas contraseñas guardadas y los datos de formularios están desactivados por defecto y claramente marcados: ClearKit nunca los borrará a menos que lo actives a propósito. Las reglas programadas también los omiten, así que nada desaparece mientras rellenas un formulario.\n\n**Privacidad**\nClearKit no recopila nada y funciona totalmente sin conexión. Política de privacidad: https://xeviora.com/clearkit-privacy",
+					"long": "La mayoría de los limpiadores te obligan a elegir: borras las cookies para eliminar el rastreo y te quedas sin sesión en todo lo que usas. ClearKit lo soluciona. Borra tu historial, caché y cookies con un solo clic —o de forma automática programada— mientras una lista blanca protege los sitios en los que quieres seguir con la sesión iniciada. Todo se ejecuta dentro de tu navegador: sin cuenta, sin servidor, nada sale nunca de tu dispositivo.\n\n**Por qué instalarlo**\nClearKit es un auténtico centro de limpieza, no un simple botón. Ofrece la limpieza manual con un clic de la forma más cómoda, te da gratis la limpieza automática programada que otras extensiones cobran, y suma tres cosas que nadie más reúne: una lista blanca que protege tus sesiones, un atajo de pánico y un panel de historial, todo 100% sin conexión.\n\n**Qué puedes hacer**\n- 🧹 **Limpieza con un clic** — Borra 13 tipos de datos en 12 rangos de tiempo, desde el último minuto hasta todo el historial. Fija tus favoritos, confirma antes de borrar y recibe una insignia, una notificación silenciosa y una animación al terminar.\n- 🛡️ **La lista blanca mantiene tu sesión** — Protege los dominios que te importan: las cookies, la caché y los datos de sitio de la lista blanca se omiten, así tu historial queda limpio pero sigues con la sesión iniciada en Gmail, GitHub y los demás. Un modo inverso borra solo los sitios que indiques.\n- 🌐 **Limpiar este sitio** — Un toque en la pestaña actual borra sus cookies, caché y datos de sitio y, si quieres, todas las entradas de historial de ese dominio, subdominios incluidos.\n- ⚡ **Atajo de pánico** — Alt+Shift+C ejecuta tu preajuste al instante —sin ventana emergente, sin preguntas— y puede cerrar todas las pestañas y abrir una ventana nueva para una retirada sin dejar rastro.\n- ⏰ **Limpieza automática programada** — Crea reglas que se ejecutan en segundo plano cada 15 minutos a 24 horas, o al iniciar el navegador. Gratis, sin suscripción ni ventas adicionales. Los tipos sensibles están desactivados por defecto, así que nada se borra mientras escribes.\n- 📊 **Panel de historial** — Busca y filtra tu historial, elimínalo agrupado por dominio y consulta tus sitios más visitados y un mapa de calor de navegación. Un registro anota cada limpieza; los enlaces oficiales te llevan al historial de búsqueda del servidor que no puedes borrar en local.\n- 🔒 **100% sin conexión y sin inicio de sesión** — Todo se ejecuta en tu navegador. Sin cuenta, sin servidor, sin analíticas, sin rastreo; nada sale nunca de tu dispositivo.\n\n**Privado por diseño**\nClearKit no recopila nada. No hay inicio de sesión, ni servidor, ni analíticas. Tu historial y tu configuración se quedan en el almacenamiento local del navegador y nunca se venden ni se transmiten. Pide los permisos mínimos: sin permisos de host, sin acceso a tu navegación más allá del panel local que abres tú mismo.\n\n**Ideal para**\nCualquiera que quiera un navegador limpio y privado: personas que cuidan su privacidad, quienes usan ordenadores compartidos o públicos y usuarios avanzados que buscan una limpieza automática y programada sin perder sus sesiones.\n\n**Atajos de teclado**\n- Abrir ClearKit: Alt+Shift+K\n- Limpieza de pánico (ejecutar preajuste ahora): Alt+Shift+C\n\n**Nota sobre los datos sensibles**\nLas contraseñas guardadas y los datos de formularios están desactivados por defecto y claramente marcados: ClearKit nunca los borrará a menos que lo actives a propósito. Las reglas programadas también los omiten, así que nada desaparece mientras rellenas un formulario.\n\n**Privacidad**\nClearKit no recopila nada y funciona totalmente sin conexión.",
 					"features": [
 						{
 							"emoji": "🧹",
@@ -423,7 +945,7 @@
 				"fr": {
 					"name": "ClearKit – Nettoyeur d'historique et cache",
 					"short": "Effacez historique, cache et cookies en un clic ou automatiquement. Une liste blanche vous garde connecté. 100% hors ligne.",
-					"long": "La plupart des nettoyeurs vous imposent un compromis : effacez vos cookies pour supprimer le pistage, et vous voilà déconnecté de tout ce que vous utilisez. ClearKit résout ce problème. Effacez votre historique, votre cache et vos cookies en un clic — ou selon une planification automatique — pendant qu'une liste blanche protège les sites où vous voulez rester connecté. Tout s'exécute dans votre navigateur : aucun compte, aucun serveur, rien ne quitte jamais votre appareil.\n\n**Pourquoi l'installer**\nClearKit est un véritable centre de nettoyage, pas un simple bouton. Il propose le nettoyage manuel en un clic de la façon la plus pratique, vous offre gratuitement le nettoyage automatique planifié que d'autres extensions font payer, et réunit trois choses que personne d'autre ne rassemble : une liste blanche qui protège vos connexions, un raccourci d'urgence et un tableau de bord d'historique — le tout 100% hors ligne.\n\n**Ce que vous pouvez faire**\n- 🧹 **Nettoyage en un clic** — Effacez 13 types de données sur 12 plages de temps, de la dernière minute à l'historique complet. Épinglez vos favoris, confirmez avant d'effacer et recevez un badge, une notification silencieuse et une animation à la fin.\n- 🛡️ **La liste blanche vous garde connecté** — Protégez les domaines qui comptent : les cookies, le cache et les données de site des sites en liste blanche sont ignorés, votre historique s'efface proprement mais vous restez connecté à Gmail, GitHub et les autres. Un mode inverse n'efface que les sites que vous indiquez.\n- 🌐 **Effacer ce site** — Un appui sur l'onglet actif supprime ses cookies, son cache et ses données de site — et, si vous le souhaitez, chaque entrée d'historique de ce domaine, sous-domaines compris.\n- ⚡ **Raccourci d'urgence** — Alt+Shift+C exécute instantanément votre préréglage — sans fenêtre, sans question — et peut fermer tous les onglets et ouvrir une nouvelle fenêtre pour une retraite sans laisser de trace.\n- ⏰ **Nettoyage automatique planifié** — Créez des règles qui s'exécutent en arrière-plan toutes les 15 minutes à 24 heures, ou au démarrage du navigateur. Gratuit, sans abonnement ni vente incitative. Les types sensibles sont désactivés par défaut, rien ne s'efface pendant que vous tapez.\n- 📊 **Tableau de bord d'historique** — Recherchez et filtrez votre historique, supprimez-le par domaine et consultez vos sites les plus visités ainsi qu'une carte de chaleur de navigation. Un journal enregistre chaque nettoyage ; des liens officiels mènent à l'historique de recherche côté serveur, impossible à supprimer en local.\n- 🔒 **100% hors ligne et sans connexion** — Tout s'exécute dans votre navigateur. Aucun compte, aucun serveur, aucune analyse, aucun pistage — rien ne quitte jamais votre appareil.\n\n**Confidentiel par conception**\nClearKit ne collecte rien. Pas de connexion, pas de serveur, pas d'analyse. Votre historique et vos réglages restent dans le stockage local de votre navigateur et ne sont jamais vendus ni transmis. Il demande le minimum d'autorisations : aucune autorisation d'hôte, aucun accès à votre navigation au-delà du tableau de bord local que vous ouvrez vous-même.\n\n**Idéal pour**\nToute personne qui veut un navigateur propre et privé : utilisateurs soucieux de leur vie privée, personnes sur ordinateurs partagés ou publics et utilisateurs avancés qui veulent un nettoyage planifié et automatique sans perdre leurs connexions.\n\n**Raccourcis clavier**\n- Ouvrir ClearKit : Alt+Shift+K\n- Nettoyage d'urgence (exécuter le préréglage) : Alt+Shift+C\n\n**Remarque sur les données sensibles**\nLes mots de passe enregistrés et les données de formulaire sont désactivés par défaut et clairement signalés — ClearKit ne les effacera jamais sans que vous l'activiez délibérément. Les règles planifiées les excluent aussi, rien ne disparaît pendant que vous remplissez un formulaire.\n\n**Confidentialité**\nClearKit ne collecte rien et fonctionne entièrement hors ligne. Politique de confidentialité : https://xeviora.com/clearkit-privacy",
+					"long": "La plupart des nettoyeurs vous imposent un compromis : effacez vos cookies pour supprimer le pistage, et vous voilà déconnecté de tout ce que vous utilisez. ClearKit résout ce problème. Effacez votre historique, votre cache et vos cookies en un clic — ou selon une planification automatique — pendant qu'une liste blanche protège les sites où vous voulez rester connecté. Tout s'exécute dans votre navigateur : aucun compte, aucun serveur, rien ne quitte jamais votre appareil.\n\n**Pourquoi l'installer**\nClearKit est un véritable centre de nettoyage, pas un simple bouton. Il propose le nettoyage manuel en un clic de la façon la plus pratique, vous offre gratuitement le nettoyage automatique planifié que d'autres extensions font payer, et réunit trois choses que personne d'autre ne rassemble : une liste blanche qui protège vos connexions, un raccourci d'urgence et un tableau de bord d'historique — le tout 100% hors ligne.\n\n**Ce que vous pouvez faire**\n- 🧹 **Nettoyage en un clic** — Effacez 13 types de données sur 12 plages de temps, de la dernière minute à l'historique complet. Épinglez vos favoris, confirmez avant d'effacer et recevez un badge, une notification silencieuse et une animation à la fin.\n- 🛡️ **La liste blanche vous garde connecté** — Protégez les domaines qui comptent : les cookies, le cache et les données de site des sites en liste blanche sont ignorés, votre historique s'efface proprement mais vous restez connecté à Gmail, GitHub et les autres. Un mode inverse n'efface que les sites que vous indiquez.\n- 🌐 **Effacer ce site** — Un appui sur l'onglet actif supprime ses cookies, son cache et ses données de site — et, si vous le souhaitez, chaque entrée d'historique de ce domaine, sous-domaines compris.\n- ⚡ **Raccourci d'urgence** — Alt+Shift+C exécute instantanément votre préréglage — sans fenêtre, sans question — et peut fermer tous les onglets et ouvrir une nouvelle fenêtre pour une retraite sans laisser de trace.\n- ⏰ **Nettoyage automatique planifié** — Créez des règles qui s'exécutent en arrière-plan toutes les 15 minutes à 24 heures, ou au démarrage du navigateur. Gratuit, sans abonnement ni vente incitative. Les types sensibles sont désactivés par défaut, rien ne s'efface pendant que vous tapez.\n- 📊 **Tableau de bord d'historique** — Recherchez et filtrez votre historique, supprimez-le par domaine et consultez vos sites les plus visités ainsi qu'une carte de chaleur de navigation. Un journal enregistre chaque nettoyage ; des liens officiels mènent à l'historique de recherche côté serveur, impossible à supprimer en local.\n- 🔒 **100% hors ligne et sans connexion** — Tout s'exécute dans votre navigateur. Aucun compte, aucun serveur, aucune analyse, aucun pistage — rien ne quitte jamais votre appareil.\n\n**Confidentiel par conception**\nClearKit ne collecte rien. Pas de connexion, pas de serveur, pas d'analyse. Votre historique et vos réglages restent dans le stockage local de votre navigateur et ne sont jamais vendus ni transmis. Il demande le minimum d'autorisations : aucune autorisation d'hôte, aucun accès à votre navigation au-delà du tableau de bord local que vous ouvrez vous-même.\n\n**Idéal pour**\nToute personne qui veut un navigateur propre et privé : utilisateurs soucieux de leur vie privée, personnes sur ordinateurs partagés ou publics et utilisateurs avancés qui veulent un nettoyage planifié et automatique sans perdre leurs connexions.\n\n**Raccourcis clavier**\n- Ouvrir ClearKit : Alt+Shift+K\n- Nettoyage d'urgence (exécuter le préréglage) : Alt+Shift+C\n\n**Remarque sur les données sensibles**\nLes mots de passe enregistrés et les données de formulaire sont désactivés par défaut et clairement signalés — ClearKit ne les effacera jamais sans que vous l'activiez délibérément. Les règles planifiées les excluent aussi, rien ne disparaît pendant que vous remplissez un formulaire.\n\n**Confidentialité**\nClearKit ne collecte rien et fonctionne entièrement hors ligne.",
 					"features": [
 						{
 							"emoji": "🧹",
@@ -465,7 +987,7 @@
 				"ja": {
 					"name": "ClearKit – 履歴とキャッシュのクリーナー",
 					"short": "履歴・キャッシュ・Cookie をワンクリックまたは定期実行で削除。ホワイトリストでログインは維持。100% オフライン、登録不要。",
-					"long": "たいていのクリーナーはトレードオフを迫ります。追跡を消すために Cookie を消せば、使っているサービスから軒並みログアウトされてしまう。ClearKit はそれを解決します。履歴・キャッシュ・Cookie をワンクリック、あるいは自動スケジュールで削除しながら、ホワイトリストがログインを保ちたいサイトを守ります。すべてはブラウザ内で完結し、アカウントもサーバーも不要、データが端末から出ることは一切ありません。\n\n**インストールする理由**\nClearKit は単なるボタンではなく、本格的なクリーニングセンターです。ワンクリックの手動クリーニングを最も手軽にこなし、有料拡張が課金する定期自動クリーニングを無料で提供し、さらに他社がまとめて提供しない3つ——ログインを守るホワイトリスト、緊急ショートカット、履歴ダッシュボード——を備えています。すべて 100% オフライン。\n\n**できること**\n- 🧹 **ワンクリック削除** — 13種類のデータを12の期間で削除。直近1分から全期間まで対応。よく使う設定をピン留めし、削除前に確認、完了時にはバッジ・無音通知・アニメーションでお知らせ。\n- 🛡️ **ホワイトリストでログイン維持** — 大切なドメインを保護。ホワイトリスト登録サイトの Cookie・キャッシュ・サイトデータはスキップされ、履歴はきれいに消えても Gmail や GitHub などのログインは維持されます。逆モードでは登録したサイトだけを削除します。\n- 🌐 **このサイトを削除** — 現在のタブで1タップするだけで、そのサイトの Cookie・キャッシュ・サイトデータを削除。必要なら、そのドメイン（サブドメイン含む）の履歴もすべてまとめて削除できます。\n- ⚡ **緊急ショートカット** — Alt+Shift+C でプリセットを即実行——ポップアップも確認もなし——さらに全タブを閉じて新しいウィンドウを開き、痕跡を残さず退避できます。\n- ⏰ **定期自動クリーニング** — 15分〜24時間ごと、またはブラウザ起動時にバックグラウンドで動くルールを作成。無料——サブスクもアップセルもなし。機微なデータ種別は初期状態でオフなので、入力中に消える心配はありません。\n- 📊 **履歴ダッシュボード** — 履歴を検索・絞り込みし、ドメインごとにまとめて削除。よく見るサイトや閲覧ヒートマップも確認できます。実行ログが毎回のクリーニングを記録し、公式リンクからローカルでは消せないサーバー側の検索履歴へ移動できます。\n- 🔒 **100% オフライン・ログイン不要** — すべてブラウザ内で動作。アカウントもバックエンドも解析も追跡もなし——データが端末から出ることはありません。\n\n**設計段階からプライバシー重視**\nClearKit は何も収集しません。ログインもサーバーも解析もありません。履歴と設定はブラウザのローカルストレージに保存され、売却も送信も一切されません。要求する権限は最小限——ホスト権限はなく、自分で開くローカルダッシュボード以外にあなたの閲覧へアクセスすることはありません。\n\n**こんな人におすすめ**\nクリーンでプライベートなブラウザが欲しいすべての人——プライバシーを重視する人、共有・公共のパソコンを使う人、そしてログインを失わずに定期的な自動クリーニングをしたい上級ユーザー。\n\n**キーボードショートカット**\n- ClearKit を開く：Alt+Shift+K\n- 緊急クリーニング（プリセットを今すぐ実行）：Alt+Shift+C\n\n**機微なデータについて**\n保存済みのパスワードやフォームデータは初期状態でオフになっており、明確に表示されます——あなたが意図的にオンにしない限り、ClearKit が消すことはありません。定期ルールもこれらを除外するため、フォーム入力中に何かが消える心配はありません。\n\n**プライバシー**\nClearKit は何も収集せず、完全にオフラインで動作します。プライバシーポリシー：https://xeviora.com/clearkit-privacy",
+					"long": "たいていのクリーナーはトレードオフを迫ります。追跡を消すために Cookie を消せば、使っているサービスから軒並みログアウトされてしまう。ClearKit はそれを解決します。履歴・キャッシュ・Cookie をワンクリック、あるいは自動スケジュールで削除しながら、ホワイトリストがログインを保ちたいサイトを守ります。すべてはブラウザ内で完結し、アカウントもサーバーも不要、データが端末から出ることは一切ありません。\n\n**インストールする理由**\nClearKit は単なるボタンではなく、本格的なクリーニングセンターです。ワンクリックの手動クリーニングを最も手軽にこなし、有料拡張が課金する定期自動クリーニングを無料で提供し、さらに他社がまとめて提供しない3つ——ログインを守るホワイトリスト、緊急ショートカット、履歴ダッシュボード——を備えています。すべて 100% オフライン。\n\n**できること**\n- 🧹 **ワンクリック削除** — 13種類のデータを12の期間で削除。直近1分から全期間まで対応。よく使う設定をピン留めし、削除前に確認、完了時にはバッジ・無音通知・アニメーションでお知らせ。\n- 🛡️ **ホワイトリストでログイン維持** — 大切なドメインを保護。ホワイトリスト登録サイトの Cookie・キャッシュ・サイトデータはスキップされ、履歴はきれいに消えても Gmail や GitHub などのログインは維持されます。逆モードでは登録したサイトだけを削除します。\n- 🌐 **このサイトを削除** — 現在のタブで1タップするだけで、そのサイトの Cookie・キャッシュ・サイトデータを削除。必要なら、そのドメイン（サブドメイン含む）の履歴もすべてまとめて削除できます。\n- ⚡ **緊急ショートカット** — Alt+Shift+C でプリセットを即実行——ポップアップも確認もなし——さらに全タブを閉じて新しいウィンドウを開き、痕跡を残さず退避できます。\n- ⏰ **定期自動クリーニング** — 15分〜24時間ごと、またはブラウザ起動時にバックグラウンドで動くルールを作成。無料——サブスクもアップセルもなし。機微なデータ種別は初期状態でオフなので、入力中に消える心配はありません。\n- 📊 **履歴ダッシュボード** — 履歴を検索・絞り込みし、ドメインごとにまとめて削除。よく見るサイトや閲覧ヒートマップも確認できます。実行ログが毎回のクリーニングを記録し、公式リンクからローカルでは消せないサーバー側の検索履歴へ移動できます。\n- 🔒 **100% オフライン・ログイン不要** — すべてブラウザ内で動作。アカウントもバックエンドも解析も追跡もなし——データが端末から出ることはありません。\n\n**設計段階からプライバシー重視**\nClearKit は何も収集しません。ログインもサーバーも解析もありません。履歴と設定はブラウザのローカルストレージに保存され、売却も送信も一切されません。要求する権限は最小限——ホスト権限はなく、自分で開くローカルダッシュボード以外にあなたの閲覧へアクセスすることはありません。\n\n**こんな人におすすめ**\nクリーンでプライベートなブラウザが欲しいすべての人——プライバシーを重視する人、共有・公共のパソコンを使う人、そしてログインを失わずに定期的な自動クリーニングをしたい上級ユーザー。\n\n**キーボードショートカット**\n- ClearKit を開く：Alt+Shift+K\n- 緊急クリーニング（プリセットを今すぐ実行）：Alt+Shift+C\n\n**機微なデータについて**\n保存済みのパスワードやフォームデータは初期状態でオフになっており、明確に表示されます——あなたが意図的にオンにしない限り、ClearKit が消すことはありません。定期ルールもこれらを除外するため、フォーム入力中に何かが消える心配はありません。\n\n**プライバシー**\nClearKit は何も収集せず、完全にオフラインで動作します。",
 					"features": [
 						{
 							"emoji": "🧹",
@@ -507,7 +1029,7 @@
 				"zh-tw": {
 					"name": "ClearKit – 歷史與快取清理",
 					"short": "一鍵或定時清理歷史、快取和 Cookie，白名單讓你保持登入。100% 離線，免註冊登入。",
-					"long": "大多數清理工具都逼你二選一：想清掉追蹤就得刪 Cookie，結果所有網站的登入狀態全沒了。ClearKit 解決了這個問題。一鍵——或依自動排程——清理歷史、快取和 Cookie，同時用白名單保護你想保持登入的網站。一切都在瀏覽器內完成：無帳號、無伺服器，資料從不離開你的裝置。\n\n**為什麼值得安裝**\nClearKit 是一個真正的清理中心，而不是一個孤零零的按鈕。它把一鍵手動清理做到最順手，免費提供其他擴充功能要收費的定時自動清理，還集齊了別家不會一起給你的三件事：保護登入的白名單、緊急快捷鍵，以及歷史儀表板——全部 100% 離線。\n\n**你能做什麼**\n- 🧹 **一鍵清理** — 涵蓋 13 種資料類型、12 個時間範圍，從最近一分鐘到所有時間。釘選常用項、清理前確認，完成後有角標、靜音通知和動畫提示。\n- 🛡️ **白名單保持登入** — 保護你在意的網域：白名單網站的 Cookie、快取和網站資料會被略過，歷史乾淨清空，但 Gmail、GitHub 等仍保持登入。反向模式則只清理你列出的網站。\n- 🌐 **清理本站** — 在目前分頁點一下，即可清除該站的 Cookie、快取和網站資料；如有需要，還可連同該網域（含子網域）的全部歷史記錄一併清掉。\n- ⚡ **緊急快捷鍵** — Alt+Shift+C 立即執行你的預設——無彈窗、無追問——還能關閉所有分頁並開啟一個全新視窗，做到不留痕跡的快速撤離。\n- ⏰ **定時自動清理** — 建立規則，在背景每 15 分鐘到 24 小時執行一次，或在瀏覽器啟動時執行。完全免費——無訂閱、無誘導付費。敏感類型預設關閉，打字時不會被誤清。\n- 📊 **歷史儀表板** — 搜尋並篩選歷史記錄，依網域分組刪除，查看常造訪網站和瀏覽熱力圖。執行紀錄記下每次清理；官方連結可跳轉到本機無法刪除的伺服器端搜尋歷史。\n- 🔒 **100% 離線，免登入** — 一切都在瀏覽器內執行。無帳號、無後端、無分析、無追蹤——資料從不離開你的裝置。\n\n**從設計之初就注重隱私**\nClearKit 不收集任何資料。沒有登入、沒有伺服器、沒有分析統計。你的歷史和設定只保存在瀏覽器本機儲存空間中，絕不出售或傳輸。它只要求最少的權限——沒有主機權限，除了你自己開啟的本機儀表板外，不存取你的任何瀏覽資料。\n\n**適合誰**\n任何想要一個乾淨、私密瀏覽器的人——注重隱私的使用者、使用共用或公用電腦的人，以及希望定時自動清理又不丟失登入狀態的進階使用者。\n\n**鍵盤快捷鍵**\n- 開啟 ClearKit：Alt+Shift+K\n- 緊急清理（立即執行預設）：Alt+Shift+C\n\n**關於敏感資料的說明**\n已儲存的密碼和表單資料預設關閉並明確標註——除非你主動勾選，ClearKit 絕不會清除它們。定時規則同樣會略過這些資料，填表時不會有東西突然消失。\n\n**隱私**\nClearKit 不收集任何資料，完全離線執行。隱私政策：https://xeviora.com/clearkit-privacy",
+					"long": "大多數清理工具都逼你二選一：想清掉追蹤就得刪 Cookie，結果所有網站的登入狀態全沒了。ClearKit 解決了這個問題。一鍵——或依自動排程——清理歷史、快取和 Cookie，同時用白名單保護你想保持登入的網站。一切都在瀏覽器內完成：無帳號、無伺服器，資料從不離開你的裝置。\n\n**為什麼值得安裝**\nClearKit 是一個真正的清理中心，而不是一個孤零零的按鈕。它把一鍵手動清理做到最順手，免費提供其他擴充功能要收費的定時自動清理，還集齊了別家不會一起給你的三件事：保護登入的白名單、緊急快捷鍵，以及歷史儀表板——全部 100% 離線。\n\n**你能做什麼**\n- 🧹 **一鍵清理** — 涵蓋 13 種資料類型、12 個時間範圍，從最近一分鐘到所有時間。釘選常用項、清理前確認，完成後有角標、靜音通知和動畫提示。\n- 🛡️ **白名單保持登入** — 保護你在意的網域：白名單網站的 Cookie、快取和網站資料會被略過，歷史乾淨清空，但 Gmail、GitHub 等仍保持登入。反向模式則只清理你列出的網站。\n- 🌐 **清理本站** — 在目前分頁點一下，即可清除該站的 Cookie、快取和網站資料；如有需要，還可連同該網域（含子網域）的全部歷史記錄一併清掉。\n- ⚡ **緊急快捷鍵** — Alt+Shift+C 立即執行你的預設——無彈窗、無追問——還能關閉所有分頁並開啟一個全新視窗，做到不留痕跡的快速撤離。\n- ⏰ **定時自動清理** — 建立規則，在背景每 15 分鐘到 24 小時執行一次，或在瀏覽器啟動時執行。完全免費——無訂閱、無誘導付費。敏感類型預設關閉，打字時不會被誤清。\n- 📊 **歷史儀表板** — 搜尋並篩選歷史記錄，依網域分組刪除，查看常造訪網站和瀏覽熱力圖。執行紀錄記下每次清理；官方連結可跳轉到本機無法刪除的伺服器端搜尋歷史。\n- 🔒 **100% 離線，免登入** — 一切都在瀏覽器內執行。無帳號、無後端、無分析、無追蹤——資料從不離開你的裝置。\n\n**從設計之初就注重隱私**\nClearKit 不收集任何資料。沒有登入、沒有伺服器、沒有分析統計。你的歷史和設定只保存在瀏覽器本機儲存空間中，絕不出售或傳輸。它只要求最少的權限——沒有主機權限，除了你自己開啟的本機儀表板外，不存取你的任何瀏覽資料。\n\n**適合誰**\n任何想要一個乾淨、私密瀏覽器的人——注重隱私的使用者、使用共用或公用電腦的人，以及希望定時自動清理又不丟失登入狀態的進階使用者。\n\n**鍵盤快捷鍵**\n- 開啟 ClearKit：Alt+Shift+K\n- 緊急清理（立即執行預設）：Alt+Shift+C\n\n**關於敏感資料的說明**\n已儲存的密碼和表單資料預設關閉並明確標註——除非你主動勾選，ClearKit 絕不會清除它們。定時規則同樣會略過這些資料，填表時不會有東西突然消失。\n\n**隱私**\nClearKit 不收集任何資料，完全離線執行。",
 					"features": [
 						{
 							"emoji": "🧹",

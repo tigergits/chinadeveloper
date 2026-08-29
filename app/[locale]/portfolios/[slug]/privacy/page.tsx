@@ -39,7 +39,7 @@ export default async function ShowcasePrivacyPage({ params }: { params: Promise<
 		<div className="container px-4 py-8">
 			<div className="mx-auto max-w-3xl">
 				<Link
-					href={`/${locale}/portfolios/showcase/${slug}`}
+					href={`/${locale}/portfolios/${slug}`}
 					className="mb-6 inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
 				>
 					<ArrowLeft className="h-4 w-4" />

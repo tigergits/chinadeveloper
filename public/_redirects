@@ -2,8 +2,12 @@
 /  /en/  301
 
 # 旧 URL → 新 slug（xeviora 注册表权威 slug）
-/:locale/portfolios/showcase/svg-grabber/*  /:locale/portfolios/showcase/svg-forge/  301
-/:locale/portfolios/showcase/xeviora-svg/*  /:locale/portfolios/showcase/svg-forge/  301
+/:locale/portfolios/showcase/svg-grabber/*  /:locale/portfolios/svg-forge/  301
+/:locale/portfolios/showcase/xeviora-svg/*  /:locale/portfolios/svg-forge/  301
+
+# showcase 层级已拍平：/portfolios/showcase/<slug> → /portfolios/<slug>
+# 必须排在上面两条之后（_redirects 先匹配先生效），同时覆盖详情页与 /privacy 子页
+/:locale/portfolios/showcase/*  /:locale/portfolios/:splat  301
 
 # more 页已并入主作品集网格
 /:locale/portfolios/more/  /:locale/portfolios/  301

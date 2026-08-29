@@ -158,7 +158,7 @@ export function toExplorerItem(item: ShowcaseItem, locale: Locale): ExplorerItem
 	const c = localizeShowcase(item, locale)
 	return {
 		slug: item.slug,
-		href: `/${locale}/portfolios/showcase/${item.slug}`,
+		href: `/${locale}/portfolios/${item.slug}`,
 		name: c.name,
 		tagline: c.tagline || "",
 		short: c.short,

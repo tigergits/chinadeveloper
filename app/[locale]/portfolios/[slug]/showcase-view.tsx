@@ -1,19 +1,14 @@
-import { getTranslations, setRequestLocale } from "next-intl/server"
+import { getTranslations } from "next-intl/server"
 import { Locale } from "@/i18n/request"
 import { notFound } from "next/navigation"
 import Link from "next/link"
 import { ArrowLeft, Download, Shield, Globe, Chrome, Gamepad2, PlayCircle, Github } from "lucide-react"
-import { getAllShowcaseItems, getShowcaseItem, localizeShowcase } from "@/lib/showcase"
+import { getShowcaseItem, localizeShowcase } from "@/lib/showcase"
 import { markdownToHtml } from "@/lib/portfolio"
 import { ImageGallery } from "@/components/image-gallery"
 import { HireCta } from "@/components/hire-cta"
 
-export async function generateStaticParams() {
-	return getAllShowcaseItems().map((it) => ({ slug: it.slug }))
-}
-
-export async function generateMetadata({ params }: { params: Promise<{ locale: Locale; slug: string }> }) {
-	const { locale, slug } = await params
+export async function showcaseMetadata(locale: Locale, slug: string) {
 	const item = getShowcaseItem(slug)
 	if (!item) return { title: "Not Found" }
 	const c = localizeShowcase(item, locale)
@@ -26,12 +21,12 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
 		title,
 		description,
 		authors: [{ name: "Tiger Liu", url: "https://chinadeveloper.net" }],
-		alternates: { canonical: `https://chinadeveloper.net/${locale}/portfolios/showcase/${slug}` },
+		alternates: { canonical: `https://chinadeveloper.net/${locale}/portfolios/${slug}` },
 		openGraph: {
 			title,
 			description,
 			type: "article",
-			url: `https://chinadeveloper.net/${locale}/portfolios/showcase/${slug}`,
+			url: `https://chinadeveloper.net/${locale}/portfolios/${slug}`,
 			siteName: "China Developer - Tiger Liu",
 			images: [{ url: ogImageUrl, width: 1200, height: 630, alt: c.name }],
 		},
@@ -39,9 +34,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
 	}
 }
 
-export default async function ShowcaseDetailPage({ params }: { params: Promise<{ locale: Locale; slug: string }> }) {
-	const { locale, slug } = await params
-	setRequestLocale(locale)
+export async function ShowcaseView({ locale, slug }: { locale: Locale; slug: string }) {
 	const t = await getTranslations({ locale })
 
 	const item = getShowcaseItem(slug)
@@ -101,7 +94,7 @@ export default async function ShowcaseDetailPage({ params }: { params: Promise<{
 		itemListElement: [
 			{ "@type": "ListItem", position: 1, name: "Home", item: `${baseUrl}/${locale}` },
 			{ "@type": "ListItem", position: 2, name: t("portfolios.title"), item: `${baseUrl}/${locale}/portfolios` },
-			{ "@type": "ListItem", position: 3, name: c.name, item: `${baseUrl}/${locale}/portfolios/showcase/${slug}` },
+			{ "@type": "ListItem", position: 3, name: c.name, item: `${baseUrl}/${locale}/portfolios/${slug}` },
 		],
 	}
 
@@ -208,7 +201,7 @@ export default async function ShowcaseDetailPage({ params }: { params: Promise<{
 					{item.releaseStatus && <span className="text-sm text-muted-foreground">{item.releaseStatus}</span>}
 					{isExtension && item.privacyMarkdown && (
 						<Link
-							href={`/${locale}/portfolios/showcase/${slug}/privacy`}
+							href={`/${locale}/portfolios/${slug}/privacy`}
 							className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
 						>
 							<Shield className="h-4 w-4" />

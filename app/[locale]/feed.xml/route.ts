@@ -32,7 +32,7 @@ export async function GET(
     // showcase 产品（自动采集）
     for (const item of getAllShowcaseItems()) {
       const c = localizeShowcase(item, locale as Locale);
-      const url = `${baseUrl}/${locale}/portfolios/showcase/${item.slug}`;
+      const url = `${baseUrl}/${locale}/portfolios/${item.slug}`;
       feed.addItem({
         title: c.name,
         id: url,

@@ -65,14 +65,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // showcase 产品详情页 + 扩展隐私页
     for (const item of getAllShowcaseItems()) {
       routes.push({
-        url: `${baseUrl}/${locale}/portfolios/showcase/${item.slug}`,
+        url: `${baseUrl}/${locale}/portfolios/${item.slug}`,
         lastModified: new Date(),
         changeFrequency: 'weekly',
         priority: 0.8,
       });
       if (item.privacyMarkdown) {
         routes.push({
-          url: `${baseUrl}/${locale}/portfolios/showcase/${item.slug}/privacy`,
+          url: `${baseUrl}/${locale}/portfolios/${item.slug}/privacy`,
           lastModified: new Date(),
           changeFrequency: 'yearly',
           priority: 0.3,

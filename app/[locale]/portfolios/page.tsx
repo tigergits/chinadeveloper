@@ -78,7 +78,7 @@ export default async function PortfolioPage({ params }: { params: Promise<{ loca
         "@type": "ListItem",
         "position": i + 1,
         "name": c.name,
-        "url": `${baseUrl}/${locale}/portfolios/showcase/${it.slug}`,
+        "url": `${baseUrl}/${locale}/portfolios/${it.slug}`,
       }
     }),
   }

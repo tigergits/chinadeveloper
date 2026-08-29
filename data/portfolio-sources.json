@@ -1,93 +1,153 @@
 {
-	"_note": "Showcase 数据源清单。运行 `npm run gen:showcase` 会读取下列 store 目录，规范化后写入 data/showcase.generated.json 并把素材拷贝到 public/assets/showcase/。installUrl 为公开商店链接（Chrome Web Store / Steam），源里没有，需手动补——留空时安装按钮降级为『Coming soon / 查看详情』。sourceDir 使用正斜杠绝对路径（仅在 Tiger 本机存在，生成产物已提交，部署无需再跑）。",
+	"_note": "Showcase 数据源清单 v2。运行 `npm run gen:showcase` 生成 data/showcase.generated.json 并把素材写入 public/assets/showcase/。xeviora 段：自动同步 xeviora.com 产品注册表（17 个产品，上新自动进入）。items 段：注册表之外的显式条目（游戏 / 独立站扩展 / 客户案例）。源路径仅在 Tiger 本机存在；生成产物已提交，部署端无需再跑。某个源缺失时沿用上一版数据（--strict 则报错），不会静默丢条目。",
 	"categories": [
 		{ "key": "webapp", "order": 1 },
-		{ "key": "game", "order": 2 },
-		{ "key": "app", "order": 3 },
-		{
-			"key": "extension",
-			"order": 4
-		}
+		{ "key": "extension", "order": 2 },
+		{ "key": "game", "order": 3 },
+		{ "key": "client", "order": 4 }
 	],
+	"xeviora": {
+		"root": "D:/PROJs/xeviora/src",
+		"portal": "D:/PROJs/xeviora/src/xeviora/frontend",
+		"exclude": []
+	},
 	"items": [
 		{
 			"slug": "xeviora",
 			"category": "webapp",
-			"type": "webapp",
-			"sourceDir": "D:/PROJs/xeviora/src/xeviora/store",
-			"installUrl": "https://xeviora.com"
-		},
-		{
-			"slug": "xeviora-svg",
-			"category": "webapp",
-			"type": "webapp",
-			"sourceDir": "D:/PROJs/xeviora/src/svg/store",
-			"installUrl": "https://svg.xeviora.com"
+			"type": "inline",
+			"status": "live",
+			"pricing": "freemium",
+			"platforms": ["web"],
+			"techStack": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Prisma", "Paddle"],
+			"links": { "site": "https://xeviora.com" },
+			"installUrl": "https://xeviora.com",
+			"categoryLabel": "Product Studio",
+			"sourceDir": "D:/PROJs/xeviora/src/xeviora/frontend/public",
+			"logoCandidates": ["brand/png/xeviora-icon-512.png"],
+			"screenshots": [{ "src": "og-image.png", "caption": "" }],
+			"content": {
+				"en": {
+					"name": "Xeviora",
+					"tagline": "One indie studio, seventeen products — and counting.",
+					"short": "The brand portal of my product studio: 17 shipped browser extensions and SaaS tools localized into 10 languages, with centralized Paddle payments and a unified uninstall-feedback hub across the whole site network.",
+					"long": "Xeviora.com is the home of my product family — every browser extension and SaaS tool I ship lives under this one brand.\n\nThe portal itself is a lean Next.js site that does three jobs: it showcases the full product grid in 10 languages, it acts as the central Paddle payment dispatcher for the entire network of product sites, and it hosts a unified uninstall-feedback flow that cross-promotes sibling products.\n\nEvery product page is statically generated from a single typed registry, so adding a product to the whole network is one config entry plus copy.",
+					"metaDescription": "Xeviora — the portal of an indie product studio: 17 browser extensions and SaaS tools, 10 languages, centralized Paddle payments.",
+					"features": [
+						{ "emoji": "🧩", "title": "17-product portfolio grid", "desc": "A typed product registry drives the home grid, footer, product pages and cross-sell — one config entry per product." },
+						{ "emoji": "💳", "title": "Central Paddle dispatch", "desc": "One payment integration serves the entire site network — product sites stay static and delegate checkout." },
+						{ "emoji": "🌍", "title": "10-language localization", "desc": "Full product copy in en / zh / ja / ko / es / fr / de / pt-BR / ru with a build gate that enforces parity." },
+						{ "emoji": "📉", "title": "Unified uninstall hub", "desc": "Every extension routes its uninstall page here — one survey table, plus seeded cross-recommendations." }
+					]
+				},
+				"zh-cn": {
+					"name": "Xeviora",
+					"tagline": "一个独立工作室，十七款产品，仍在增长。",
+					"short": "我的产品工作室品牌门户：17 款已上线的浏览器扩展与 SaaS 工具，10 种语言本地化，全站群统一的 Paddle 支付分发与卸载反馈中心。",
+					"long": "Xeviora.com 是我全部产品的品牌之家——我发布的每一款浏览器扩展和 SaaS 工具都归于这个品牌之下。\n\n门户本身是一个精简的 Next.js 站点，承担三件事：以 10 种语言展示完整产品矩阵；作为整个站群的 Paddle 支付中央分发器；承载统一的卸载反馈流程并交叉推荐兄弟产品。\n\n所有产品页都由同一份类型化注册表静态生成，为整个站群新增一款产品只需要一条配置加文案。",
+					"metaDescription": "Xeviora——独立产品工作室门户：17 款浏览器扩展与 SaaS 工具，10 种语言，统一 Paddle 支付。",
+					"features": [
+						{ "emoji": "🧩", "title": "17 款产品矩阵", "desc": "类型化产品注册表驱动首页网格、footer、产品页与交叉推荐——每款产品只是一条配置。" },
+						{ "emoji": "💳", "title": "Paddle 中央分发", "desc": "一处支付集成服务整个站群——产品站保持纯静态，结账统一委托给门户。" },
+						{ "emoji": "🌍", "title": "10 语言本地化", "desc": "英 / 中 / 日 / 韩 / 西 / 法 / 德 / 葡 / 俄 全量文案，构建门禁强制各语言齐平。" },
+						{ "emoji": "📉", "title": "统一卸载中心", "desc": "每个扩展的卸载页都汇聚于此——一张调查表，外加带种子的交叉推荐。" }
+					]
+				},
+				"zh-tw": {
+					"name": "Xeviora",
+					"tagline": "一個獨立工作室，十七款產品，仍在增長。",
+					"short": "我的產品工作室品牌門戶：17 款已上線的瀏覽器擴充功能與 SaaS 工具，10 種語言在地化，全站群統一的 Paddle 支付分發與解除安裝回饋中心。",
+					"long": "Xeviora.com 是我全部產品的品牌之家——我發布的每一款瀏覽器擴充功能和 SaaS 工具都歸於這個品牌之下。\n\n門戶本身是一個精簡的 Next.js 站點，承擔三件事：以 10 種語言展示完整產品矩陣；作為整個站群的 Paddle 支付中央分發器；承載統一的解除安裝回饋流程並交叉推薦兄弟產品。",
+					"metaDescription": "Xeviora——獨立產品工作室門戶：17 款瀏覽器擴充功能與 SaaS 工具，10 種語言，統一 Paddle 支付。",
+					"features": [
+						{ "emoji": "🧩", "title": "17 款產品矩陣", "desc": "類型化產品註冊表驅動首頁網格、footer、產品頁與交叉推薦。" },
+						{ "emoji": "💳", "title": "Paddle 中央分發", "desc": "一處支付整合服務整個站群——產品站保持純靜態。" },
+						{ "emoji": "🌍", "title": "10 語言在地化", "desc": "英 / 中 / 日 / 韓 / 西 / 法 / 德 / 葡 / 俄全量文案，建置門禁強制齊平。" },
+						{ "emoji": "📉", "title": "統一解除安裝中心", "desc": "每個擴充功能的解除安裝頁都匯聚於此。" }
+					]
+				},
+				"es": {
+					"name": "Xeviora",
+					"tagline": "Un estudio indie, diecisiete productos — y subiendo.",
+					"short": "El portal de mi estudio de productos: 17 extensiones de navegador y herramientas SaaS publicadas, localizadas a 10 idiomas, con pagos Paddle centralizados y un centro unificado de feedback de desinstalación.",
+					"metaDescription": "Xeviora — portal de un estudio indie: 17 extensiones y herramientas SaaS, 10 idiomas, pagos Paddle centralizados.",
+					"features": [
+						{ "emoji": "🧩", "title": "Matriz de 17 productos", "desc": "Un registro tipado genera la cuadrícula, el footer y las páginas de producto." },
+						{ "emoji": "💳", "title": "Pagos Paddle centralizados", "desc": "Una sola integración de pago sirve a toda la red de sitios." },
+						{ "emoji": "🌍", "title": "10 idiomas", "desc": "Textos completos en 10 idiomas con verificación de paridad en el build." },
+						{ "emoji": "📉", "title": "Centro de desinstalación", "desc": "Cada extensión enruta aquí su página de desinstalación, con recomendaciones cruzadas." }
+					]
+				},
+				"fr": {
+					"name": "Xeviora",
+					"tagline": "Un studio indépendant, dix-sept produits — et ça continue.",
+					"short": "Le portail de mon studio produit : 17 extensions de navigateur et outils SaaS publiés, localisés en 10 langues, avec paiements Paddle centralisés et un hub unifié de retours de désinstallation.",
+					"metaDescription": "Xeviora — portail d'un studio indépendant : 17 extensions et outils SaaS, 10 langues, paiements Paddle centralisés.",
+					"features": [
+						{ "emoji": "🧩", "title": "Grille de 17 produits", "desc": "Un registre typé génère la grille d'accueil, le footer et les pages produit." },
+						{ "emoji": "💳", "title": "Paiements Paddle centralisés", "desc": "Une seule intégration de paiement pour tout le réseau de sites." },
+						{ "emoji": "🌍", "title": "10 langues", "desc": "Textes complets en 10 langues, parité vérifiée au build." },
+						{ "emoji": "📉", "title": "Hub de désinstallation", "desc": "Chaque extension route sa page de désinstallation ici, avec recommandations croisées." }
+					]
+				},
+				"ja": {
+					"name": "Xeviora",
+					"tagline": "ひとつのインディースタジオ、17 のプロダクト——そして増加中。",
+					"short": "私のプロダクトスタジオのブランドポータル。公開済みのブラウザ拡張と SaaS ツール 17 本を 10 言語にローカライズし、Paddle 決済の一元化とアンインストールフィードバックの統合ハブを担う。",
+					"metaDescription": "Xeviora — インディースタジオのポータル：17 の拡張機能と SaaS ツール、10 言語、Paddle 決済一元化。",
+					"features": [
+						{ "emoji": "🧩", "title": "17 プロダクトのグリッド", "desc": "型付きレジストリがホームグリッド・フッター・製品ページを生成。" },
+						{ "emoji": "💳", "title": "Paddle 決済の一元化", "desc": "ひとつの決済統合がサイト群全体をカバー。" },
+						{ "emoji": "🌍", "title": "10 言語対応", "desc": "10 言語の全文コピーをビルドゲートでパリティ保証。" },
+						{ "emoji": "📉", "title": "統合アンインストールハブ", "desc": "各拡張のアンインストールページを集約し、関連製品を紹介。" }
+					]
+				}
+			}
 		},
 		{
 			"slug": "lifechapter",
 			"category": "webapp",
 			"type": "webapp",
+			"status": "live",
+			"pricing": "freemium",
+			"platforms": ["web", "extension", "mobile"],
+			"techStack": ["Next.js", "React", "TypeScript", "Prisma", "Plasmo", "React Native"],
+			"links": { "site": "https://lifechapter.app" },
 			"sourceDir": "D:/PROJs/lifechapter/store",
 			"installUrl": "https://lifechapter.app"
-		},
-		{
-			"slug": "clearkit",
-			"category": "extension",
-			"type": "extension",
-			"sourceDir": "D:/PROJs/browserexts/src/clear/store",
-			"installUrl": ""
-		},
-		{
-			"slug": "qr-studio",
-			"category": "extension",
-			"type": "extension",
-			"sourceDir": "D:/PROJs/browserexts/src/qrcode/store",
-			"installUrl": "https://chromewebstore.google.com/detail/pmhaplicaffnppnlkcgfdonnjjonaeil"
-		},
-		{
-			"slug": "reelcap",
-			"category": "extension",
-			"type": "extension",
-			"sourceDir": "D:/PROJs/browserexts/src/reelcap/store",
-			"installUrl": "https://chromewebstore.google.com/detail/kpjphmleblfdacbnieepeicinlhgcfhn"
-		},
-		{
-			"slug": "scrncap",
-			"category": "extension",
-			"type": "extension",
-			"sourceDir": "D:/PROJs/browserexts/src/scrncap/store",
-			"installUrl": ""
-		},
-		{
-			"slug": "bulk-image-downloader",
-			"category": "extension",
-			"type": "extension",
-			"sourceDir": "D:/PROJs/browserexts/src/imgdown/store",
-			"installUrl": "https://chromewebstore.google.com/detail/bulk-image-downloader/lamfengpphafgjdgacmmnpakdphmjlji"
-		},
-		{
-			"slug": "svg-grabber",
-			"category": "extension",
-			"type": "extension",
-			"sourceDir": "D:/PROJs/xeviora/src/svg/extension/store",
-			"installUrl": "https://chromewebstore.google.com/detail/svg-grabber-by-svg-forge/gendlmilamjndnjeogphmanhlcagiail"
 		},
 		{
 			"slug": "seo-pagerank",
 			"category": "extension",
 			"type": "extension",
+			"status": "live",
+			"pricing": "free",
+			"platforms": ["extension", "web"],
+			"techStack": ["Plasmo", "React", "TypeScript"],
+			"links": {
+				"site": "https://pagerankstatus.org",
+				"chromeStore": "https://chromewebstore.google.com/detail/seo-pagerank/lndiecnlfaibiffoeijpjnblnmdlcpog"
+			},
 			"sourceDir": "D:/PROJs/webs/pagerankstatus.org/extension/store",
 			"installUrl": "https://chromewebstore.google.com/detail/seo-pagerank/lndiecnlfaibiffoeijpjnblnmdlcpog"
 		},
 		{
 			"slug": "ip-flager",
 			"category": "extension",
-			"type": "extension-inline",
+			"type": "inline",
+			"status": "live",
+			"pricing": "free",
+			"platforms": ["extension", "web"],
+			"techStack": ["Plasmo", "React", "TypeScript"],
+			"links": {
+				"site": "https://myiplocation.org",
+				"chromeStore": "https://chromewebstore.google.com/detail/ahbkagdfnimnpalcoanpgiaojgeaklae"
+			},
 			"sourceDir": "D:/PROJs/webs/myiplocation.org/src/extension/store",
 			"installUrl": "https://chromewebstore.google.com/detail/ahbkagdfnimnpalcoanpgiaojgeaklae",
 			"privacyFile": "privacy-policy.md",
 			"categoryLabel": "Developer Tools",
+			"logoCandidates": ["icon/icon-256.png", "icon/icon-128.png", "../assets/icon.png"],
 			"screenshots": [
 				{ "src": "scrn-1.png", "caption": "Country flag in the toolbar, updated as you browse" },
 				{ "src": "scrn-2.png", "caption": "Click for the full IP report — city, region, timezone, coordinates" },
@@ -112,8 +172,209 @@
 			"slug": "one-thought-immortal",
 			"category": "game",
 			"type": "game",
-			"sourceDir": "D:/PROJs/games/cultivation/store",
-			"installUrl": ""
+			"status": "in-development",
+			"pricing": "premium",
+			"platforms": ["desktop", "web", "mobile"],
+			"techStack": ["React", "Pixi.js", "TypeScript", "Tauri v2", "Rust", "Vite"],
+			"links": {
+				"steam": "https://store.steampowered.com/app/4977250/",
+				"site": "https://cultivation.xeviora.com",
+				"demo": "https://cultivation-demo.xeviora.com"
+			},
+			"sourceDir": "D:/PROJs/games/cultivation/store/steam",
+			"installUrl": "https://cultivation-demo.xeviora.com",
+			"screenshotPrefix": "steam-en-"
+		},
+		{
+			"slug": "sanguo-trade-road",
+			"category": "game",
+			"type": "inline",
+			"status": "in-development",
+			"pricing": "premium",
+			"platforms": ["desktop"],
+			"techStack": ["Godot 4", "GDScript", "Next.js", "PostgreSQL"],
+			"links": {},
+			"installUrl": "",
+			"categoryLabel": "Trading Sim · Strategy",
+			"sourceDir": "D:/PROJs/games/sanguo/game/shots",
+			"logoCandidates": [],
+			"screenshots": [
+				{ "src": "title.png", "caption": "Title screen" },
+				{ "src": "world.png", "caption": "The overland trade map of Han-dynasty China" },
+				{ "src": "city_noon.png", "caption": "City view at noon — workshops and warehouses" },
+				{ "src": "city_dusk.png", "caption": "The same city at dusk, with day/night lighting" },
+				{ "src": "city_night_rain.png", "caption": "Dynamic weather — night rain over the market" },
+				{ "src": "editor.png", "caption": "Built-in map editor" }
+			],
+			"content": {
+				"en": {
+					"name": "Sanguo Trade Road (三国商道)",
+					"tagline": "From a single cart to the greatest merchant house of the Three Kingdoms.",
+					"short": "A real-time trading and tycoon sim set in late-Han China: build warehouses and workshops, run caravan routes between the 36 cities, court warlords for tax breaks and out-trade 3–5 rival AI merchant houses. In development with Godot 4.",
+					"long": "You are a traveling merchant in the chaos of the late Han dynasty. Like the historical traders who bankrolled Liu Bei, you start with a single cart — build warehouses, open workshops, and haul Shu brocade, well salt, war horses and weapons across the nine provinces.\n\nThe game runs in real time with variable speed and pause (in the spirit of Uncharted Waters): plan trade routes with per-stop buy/sell orders, watch your caravans move across a living map, and react when war, bandits, famine or plague destroy one route and create a windfall on another.\n\nWarlord factions fight their historical wars in the background — cities change hands, tariffs shift, and your friendship with each faction decides market access and tax rates. Meanwhile 3–5 AI merchant houses compete for land, routes and monopolies. Climb the leaderboard and become the richest house under heaven.\n\nCurrently in development; built with Godot 4, with a companion Next.js leaderboard portal.",
+					"metaDescription": "Sanguo Trade Road — a real-time Three Kingdoms trading & tycoon sim built with Godot 4. In development.",
+					"features": [
+						{ "emoji": "🏯", "title": "Production–trade loop", "desc": "Buy land, build warehouses and workshops, then run caravan routes that buy low and sell high across 36 cities." },
+						{ "emoji": "⚔️", "title": "A living wartime economy", "desc": "War, bandits, tariffs, famine and plague destroy routes — and open windfall opportunities for the bold." },
+						{ "emoji": "🤝", "title": "Faction diplomacy", "desc": "Befriend Cao Cao, Sun Quan or Liu Bei; friendship decides market access, tax rates and expansion room." },
+						{ "emoji": "📈", "title": "Rival merchant houses", "desc": "3–5 AI houses compete for land, routes and monopolies; a leaderboard crowns the top house of the realm." }
+					]
+				},
+				"zh-cn": {
+					"name": "三国商道",
+					"tagline": "白手起家，纵横三十六城，成一方商道之主。",
+					"short": "汉末乱世的实时经营贸易模拟：购地建栈、作坊生产、通商路贩运蜀锦井盐良马，结好群雄换取减税准入，与 3–5 家 AI 商号明争暗斗。Godot 4 开发中。",
+					"long": "你是汉末乱世中的一介行商。像当年贩马资刘备的糜竺、张世平那样，从一辆马车起家——建货栈、开作坊、通商路，把蜀锦、井盐、良马、军械贩遍九州。\n\n游戏采用大航海时代式的实时可变速系统：规划每站买卖指令的商路，看着自己的车队在活的大地图上行进；战争、山匪、灾荒、瘟疫会摧毁一条商路，也会在另一条商路上制造暴利窗口。\n\n群雄征战在背景中按史实推进——城池易主、关税变动，你与各势力的友好度决定市场准入与税率。与此同时，3–5 家 AI 商号与你抢地、抢商路、抢专营。登上商道榜，成为天下第一商号。\n\n目前开发中；使用 Godot 4 构建，配套 Next.js 排行榜门户。",
+					"metaDescription": "三国商道——Godot 4 开发中的三国题材实时经营贸易模拟游戏。",
+					"features": [
+						{ "emoji": "🏯", "title": "生产—贸易循环", "desc": "购地建栈、作坊生产，规划商路在三十六城之间低买高卖。" },
+						{ "emoji": "⚔️", "title": "乱世活经济", "desc": "战争、山匪、关税、灾荒既毁商路，也为胆大者造就暴利窗口。" },
+						{ "emoji": "🤝", "title": "势力博弈", "desc": "结好曹操、孙权或刘备——友好度决定准入、税率与扩张空间。" },
+						{ "emoji": "📈", "title": "商号竞争", "desc": "3–5 家 AI 商号抢地抢路抢专营；商道榜见证天下第一商号。" }
+					]
+				},
+				"zh-tw": {
+					"name": "三國商道",
+					"tagline": "白手起家，縱橫三十六城，成一方商道之主。",
+					"short": "漢末亂世的即時經營貿易模擬：購地建棧、作坊生產、通商路販運蜀錦井鹽良馬，結好群雄換取減稅准入，與 3–5 家 AI 商號明爭暗鬥。Godot 4 開發中。",
+					"long": "你是漢末亂世中的一介行商。像當年販馬資劉備的糜竺、張世平那樣，從一輛馬車起家——建貨棧、開作坊、通商路，把蜀錦、井鹽、良馬、軍械販遍九州。\n\n遊戲採用大航海時代式的即時可變速系統：規劃每站買賣指令的商路，看著自己的車隊在活的大地圖上行進；戰爭、山匪、災荒、瘟疫會摧毀一條商路，也會在另一條商路上製造暴利窗口。\n\n群雄征戰在背景中按史實推進——城池易主、關稅變動，你與各勢力的友好度決定市場准入與稅率。同時 3–5 家 AI 商號與你搶地、搶商路、搶專營。登上商道榜，成為天下第一商號。",
+					"metaDescription": "三國商道——Godot 4 開發中的三國題材即時經營貿易模擬遊戲。",
+					"features": [
+						{ "emoji": "🏯", "title": "生產—貿易循環", "desc": "購地建棧、作坊生產，規劃商路在三十六城之間低買高賣。" },
+						{ "emoji": "⚔️", "title": "亂世活經濟", "desc": "戰爭、山匪、關稅、災荒既毀商路，也為膽大者造就暴利窗口。" },
+						{ "emoji": "🤝", "title": "勢力博弈", "desc": "結好曹操、孫權或劉備——友好度決定准入、稅率與擴張空間。" },
+						{ "emoji": "📈", "title": "商號競爭", "desc": "3–5 家 AI 商號搶地搶路搶專營；商道榜見證天下第一商號。" }
+					]
+				},
+				"es": {
+					"name": "Sanguo Trade Road (三国商道)",
+					"tagline": "De una sola carreta a la mayor casa mercantil de los Tres Reinos.",
+					"short": "Simulador comercial en tiempo real ambientado en la China de finales de la dinastía Han: construye almacenes y talleres, gestiona rutas de caravanas entre 36 ciudades y supera a 3–5 casas mercantiles rivales controladas por IA. En desarrollo con Godot 4.",
+					"metaDescription": "Sanguo Trade Road — simulador comercial de los Tres Reinos en tiempo real, desarrollado con Godot 4.",
+					"features": [
+						{ "emoji": "🏯", "title": "Ciclo producción–comercio", "desc": "Compra terrenos, construye almacenes y talleres, y comercia entre 36 ciudades." },
+						{ "emoji": "⚔️", "title": "Economía de guerra viva", "desc": "Guerras, bandidos y hambrunas destruyen rutas y crean oportunidades de oro." },
+						{ "emoji": "🤝", "title": "Diplomacia de facciones", "desc": "Tu amistad con cada señor de la guerra decide acceso a mercados e impuestos." },
+						{ "emoji": "📈", "title": "Casas rivales", "desc": "3–5 casas mercantiles IA compiten por tierras, rutas y monopolios." }
+					]
+				},
+				"fr": {
+					"name": "Sanguo Trade Road (三国商道)",
+					"tagline": "D'une simple charrette à la plus grande maison marchande des Trois Royaumes.",
+					"short": "Simulation commerciale en temps réel dans la Chine de la fin des Han : construisez entrepôts et ateliers, gérez des routes caravanières entre 36 villes et surpassez 3 à 5 maisons marchandes rivales contrôlées par l'IA. En développement avec Godot 4.",
+					"metaDescription": "Sanguo Trade Road — simulation commerciale des Trois Royaumes en temps réel, développée avec Godot 4.",
+					"features": [
+						{ "emoji": "🏯", "title": "Boucle production–commerce", "desc": "Achetez des terrains, bâtissez entrepôts et ateliers, commercez entre 36 villes." },
+						{ "emoji": "⚔️", "title": "Économie de guerre vivante", "desc": "Guerres, bandits et famines détruisent des routes et créent des aubaines." },
+						{ "emoji": "🤝", "title": "Diplomatie des factions", "desc": "Votre amitié avec chaque seigneur décide de l'accès aux marchés et des taxes." },
+						{ "emoji": "📈", "title": "Maisons rivales", "desc": "3 à 5 maisons IA se disputent terres, routes et monopoles." }
+					]
+				},
+				"ja": {
+					"name": "三国商道 (Sanguo Trade Road)",
+					"tagline": "一台の荷車から、三国一の豪商へ。",
+					"short": "後漢末の中国を舞台にしたリアルタイム交易経営シム。倉庫と工房を建て、36 都市を結ぶ隊商ルートを運営し、群雄と誼を結んで減税と market への参入を勝ち取り、3〜5 の AI 商家と覇を競う。Godot 4 で開発中。",
+					"metaDescription": "三国商道 — Godot 4 で開発中の三国志リアルタイム交易経営シミュレーション。",
+					"features": [
+						{ "emoji": "🏯", "title": "生産と交易のループ", "desc": "土地を買い、倉庫と工房を建て、36 都市で安く買い高く売る。" },
+						{ "emoji": "⚔️", "title": "生きた戦時経済", "desc": "戦争・山賊・飢饉がルートを破壊し、同時に大儲けの好機を生む。" },
+						{ "emoji": "🤝", "title": "勢力外交", "desc": "曹操・孫権・劉備との友好度が市場参入と税率を左右する。" },
+						{ "emoji": "📈", "title": "ライバル商家", "desc": "3〜5 の AI 商家が土地とルートと専売権を奪い合う。" }
+					]
+				}
+			}
+		},
+		{
+			"slug": "inkjet-printer-suite",
+			"category": "client",
+			"type": "inline",
+			"status": "case-study",
+			"pricing": "",
+			"platforms": ["mobile", "desktop", "wechat"],
+			"techStack": ["Android (Java)", "WPF / .NET 9", "uni-app", "WeChat Mini Program", "Python"],
+			"links": {},
+			"installUrl": "",
+			"categoryLabel": "Industrial · Client Work",
+			"sourceDir": "D:/PROJs/coding/src",
+			"logoCandidates": ["android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp"],
+			"screenshots": [],
+			"content": {
+				"en": {
+					"name": "Industrial Inkjet Printer Suite",
+					"tagline": "Full-stack control software for an industrial inkjet coding machine.",
+					"short": "Commissioned client project: an Android HMI on an embedded 800×480 panel driving the print head over RS485/232, a Windows companion for USB-key provisioning and Excel batch-job generation, and a WeChat mini-program for remote content push. Shown as a technology case study.",
+					"long": "A complete software suite built for an industrial inkjet coding/marking machine manufacturer, spanning four platforms.\n\n**Android HMI** — the operator interface running on an embedded Android 10 panel (800×480). It edits print files with multiple layer types (text, images, barcodes, QR codes, dates, symbols and serial numbers), renders exact dot-matrix previews, and drives the print head over RS485/232 — pushing print data, sending control commands and reading live printing status. Localized into 6 languages.\n\n**Windows companion (WPF, .NET 9)** — a provisioning and batch tool: one-click creation of authorized USB keys (MBR partitioning, FAT32 formatting, dual-redundant license sectors with customer traceability), dual-pane file management between the local workspace and the device key, and Excel-driven batch generation — one spreadsheet row becomes one print file, with QR / DataMatrix / EAN13 / CODE39 / CODE128 barcode layers and per-row dot-matrix preview. It also links to machines over LAN with a six-digit pairing code for file transfer, parameter editing and full-device backup.\n\n**WeChat mini-program + uni-app** — remote sending of text, images, barcodes and QR codes to the machine via Bluetooth.\n\n**Font pipeline (Python)** — scripts that bake CJK dot-matrix font libraries so on-screen previews match the printed output dot for dot.\n\nDelivered under a confidential engagement — no client branding or UI screenshots are shown here.",
+					"metaDescription": "Client case study: Android HMI + Windows WPF + WeChat mini-program suite for an industrial inkjet coding machine.",
+					"features": [
+						{ "emoji": "🖥️", "title": "Embedded Android HMI", "desc": "Layered print-file editor with exact dot-matrix preview, driving the hardware over RS485/232." },
+						{ "emoji": "🔑", "title": "USB-key provisioning", "desc": "One-click authorized-key creation with dual-redundant license sectors that survive accidental reformatting." },
+						{ "emoji": "📊", "title": "Excel batch generation", "desc": "One spreadsheet row → one print file, with barcode layers, serial numbers and per-row preview." },
+						{ "emoji": "📡", "title": "Remote push & LAN link", "desc": "WeChat mini-program sends content over Bluetooth; the Windows app pairs over LAN for files, parameters and backups." }
+					]
+				},
+				"zh-cn": {
+					"name": "工业喷码机上位机套件",
+					"tagline": "为工业喷码机打造的全栈控制软件。",
+					"short": "客户委托项目：运行于 800×480 嵌入式屏的 Android 上位机（RS485/232 驱动喷头），Windows 制盘与 Excel 批量生成工具，微信小程序蓝牙远程推送。此处作为技术案例展示。",
+					"long": "为一家工业喷码机厂商打造的完整软件套件，横跨四个平台。\n\n**Android 上位机（HMI）**——运行在 Android 10 嵌入式面板（800×480）上的操作界面：编辑多图层喷印文件（文本、图片、条形码、二维码、日期、符号、流水号），逐点渲染点阵预览，通过 RS485/232 驱动喷头——推送喷印数据、下发控制命令、读取实时喷印状态。支持 6 种语言。\n\n**Windows 配套程序（WPF，.NET 9）**——制盘与批量工具：一键制作授权 U 盘（MBR 分区、FAT32 格式化、双冗余授权扇区并写入客户追溯信息），本地工作区与 U 盘之间的双栏文件管理，以及 Excel 驱动的批量生成——一行表格生成一个喷印文件，支持 QR / DataMatrix / EAN13 / CODE39 / CODE128 条码图层与逐行点阵预览。还支持局域网六位连接码配对，实现传文件、改参数、整机备份。\n\n**微信小程序 + uni-app**——通过蓝牙向设备远程发送文字、图片、条码与二维码。\n\n**字库管线（Python）**——烘焙中日韩点阵字库的脚本，确保屏幕预览与实际喷印逐点一致。\n\n保密项目交付——此处不展示客户品牌与界面截图。",
+					"metaDescription": "客户案例：工业喷码机的 Android 上位机 + Windows WPF + 微信小程序全栈软件套件。",
+					"features": [
+						{ "emoji": "🖥️", "title": "嵌入式 Android 上位机", "desc": "多图层喷印文件编辑器，逐点点阵预览，RS485/232 直驱硬件。" },
+						{ "emoji": "🔑", "title": "U 盘授权制盘", "desc": "一键制作授权盘，双冗余授权扇区，误格式化后仍可识别。" },
+						{ "emoji": "📊", "title": "Excel 批量生成", "desc": "一行表格生成一个喷印文件，支持条码图层、流水号与逐行预览。" },
+						{ "emoji": "📡", "title": "远程推送与联机", "desc": "微信小程序经蓝牙推送内容；Windows 端局域网配对传文件、改参数、整机备份。" }
+					]
+				},
+				"zh-tw": {
+					"name": "工業噴碼機上位機套件",
+					"tagline": "為工業噴碼機打造的全端控制軟體。",
+					"short": "客戶委託專案：執行於 800×480 嵌入式螢幕的 Android 上位機（RS485/232 驅動噴頭），Windows 製盤與 Excel 批次生成工具，微信小程式藍牙遠端推送。此處作為技術案例展示。",
+					"long": "為一家工業噴碼機廠商打造的完整軟體套件，橫跨四個平台：Android 10 嵌入式操作介面（多圖層噴印檔案編輯、點陣預覽、RS485/232 驅動噴頭）、Windows WPF 製盤與 Excel 批次生成工具、微信小程式藍牙遠端推送，以及 Python 點陣字庫管線。\n\n保密專案交付——此處不展示客戶品牌與介面截圖。",
+					"metaDescription": "客戶案例：工業噴碼機的 Android 上位機 + Windows WPF + 微信小程式全端軟體套件。",
+					"features": [
+						{ "emoji": "🖥️", "title": "嵌入式 Android 上位機", "desc": "多圖層噴印檔案編輯器，逐點點陣預覽，RS485/232 直驅硬體。" },
+						{ "emoji": "🔑", "title": "USB 授權製盤", "desc": "一鍵製作授權碟，雙冗餘授權磁區，誤格式化後仍可識別。" },
+						{ "emoji": "📊", "title": "Excel 批次生成", "desc": "一行表格生成一個噴印檔案，支援條碼圖層、流水號與逐行預覽。" },
+						{ "emoji": "📡", "title": "遠端推送與連線", "desc": "微信小程式經藍牙推送內容；Windows 端區網配對傳檔、改參數、整機備份。" }
+					]
+				},
+				"es": {
+					"name": "Suite para impresora industrial de inyección",
+					"tagline": "Software de control full-stack para una máquina industrial de codificación por inyección de tinta.",
+					"short": "Proyecto por encargo: HMI Android en panel embebido de 800×480 que controla el cabezal por RS485/232, aplicación Windows para llaves USB autorizadas y generación por lotes desde Excel, y mini-programa de WeChat para envío remoto. Mostrado como caso de estudio.",
+					"metaDescription": "Caso de estudio: suite Android + Windows WPF + WeChat para una máquina industrial de codificación.",
+					"features": [
+						{ "emoji": "🖥️", "title": "HMI Android embebido", "desc": "Editor de archivos de impresión por capas con vista previa exacta de matriz de puntos." },
+						{ "emoji": "🔑", "title": "Llaves USB autorizadas", "desc": "Creación en un clic con sectores de licencia redundantes." },
+						{ "emoji": "📊", "title": "Generación por lotes con Excel", "desc": "Una fila de hoja de cálculo → un archivo de impresión, con códigos de barras y previsualización." },
+						{ "emoji": "📡", "title": "Envío remoto y enlace LAN", "desc": "Mini-programa WeChat por Bluetooth; emparejamiento LAN para archivos, parámetros y copias." }
+					]
+				},
+				"fr": {
+					"name": "Suite pour imprimante industrielle à jet d'encre",
+					"tagline": "Logiciel de contrôle full-stack pour une machine industrielle de codage à jet d'encre.",
+					"short": "Projet client : IHM Android sur écran embarqué 800×480 pilotant la tête d'impression en RS485/232, application Windows pour clés USB autorisées et génération par lots depuis Excel, et mini-programme WeChat pour l'envoi à distance. Présenté comme étude de cas.",
+					"metaDescription": "Étude de cas client : suite Android + Windows WPF + WeChat pour une machine industrielle de codage.",
+					"features": [
+						{ "emoji": "🖥️", "title": "IHM Android embarquée", "desc": "Éditeur de fichiers d'impression par calques avec aperçu matriciel exact." },
+						{ "emoji": "🔑", "title": "Clés USB autorisées", "desc": "Création en un clic avec secteurs de licence redondants." },
+						{ "emoji": "📊", "title": "Génération par lots Excel", "desc": "Une ligne de tableur → un fichier d'impression, avec codes-barres et aperçu." },
+						{ "emoji": "📡", "title": "Envoi distant et liaison LAN", "desc": "Mini-programme WeChat en Bluetooth ; appairage LAN pour fichiers, paramètres et sauvegardes." }
+					]
+				},
+				"ja": {
+					"name": "産業用インクジェットプリンタ制御スイート",
+					"tagline": "産業用インクジェット捺印機のためのフルスタック制御ソフトウェア。",
+					"short": "受託開発プロジェクト：800×480 組込みパネル上の Android HMI（RS485/232 でプリントヘッドを制御）、USB キー発行と Excel バッチ生成の Windows アプリ、Bluetooth 経由の WeChat ミニプログラム。技術ケーススタディとして掲載。",
+					"metaDescription": "クライアント事例：産業用捺印機の Android HMI + Windows WPF + WeChat ミニプログラムのスイート。",
+					"features": [
+						{ "emoji": "🖥️", "title": "組込み Android HMI", "desc": "レイヤー式印字ファイルエディタとドット単位のプレビュー。RS485/232 でハードを直接制御。" },
+						{ "emoji": "🔑", "title": "USB キー発行", "desc": "ワンクリックで認証キーを作成。二重冗長ライセンスセクタ。" },
+						{ "emoji": "📊", "title": "Excel バッチ生成", "desc": "スプレッドシート 1 行 → 印字ファイル 1 件。バーコードレイヤーと行ごとのプレビュー。" },
+						{ "emoji": "📡", "title": "リモート送信と LAN 連携", "desc": "WeChat ミニプログラムから Bluetooth 送信。LAN ペアリングでファイル・パラメータ・バックアップ。" }
+					]
+				}
+			}
 		}
 	]
 }

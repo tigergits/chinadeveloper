@@ -7,6 +7,7 @@ import Image from "next/image"
 import { Github, ExternalLink } from "lucide-react"
 import { markdownToHtml, parsePortfolioSections } from "@/lib/portfolio"
 import { ImageGallery } from "@/components/image-gallery"
+import { HireCta } from "@/components/hire-cta"
 
 export async function generateStaticParams() {
 	try {
@@ -21,7 +22,8 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ locale: Locale; slug: string }> }) {
 	const { locale, slug } = await params
 	try {
-		const portfolio = await getContentBySlug("portfolios", slug, locale)
+		const portfolio =
+			(await getContentBySlug("portfolios", slug, locale)) || (await getContentBySlug("portfolios", slug, "en"))
 
 		if (!portfolio) {
 			return {
@@ -104,7 +106,9 @@ export default async function PortfolioPage({ params }: { params: Promise<{ loca
 	const t = await getTranslations({ locale })
 
 	try {
-		const portfolio = await getContentBySlug("portfolios", slug, locale)
+		// 指定语言缺文件时回退英文，保证条目在六个语言下都可访问
+		const portfolio =
+			(await getContentBySlug("portfolios", slug, locale)) || (await getContentBySlug("portfolios", slug, "en"))
 
 		if (!portfolio) {
 			notFound()
@@ -261,6 +265,8 @@ export default async function PortfolioPage({ params }: { params: Promise<{ loca
 							)}
 						</div>
 					)}
+
+					<HireCta locale={locale} projectSlug={slug} projectName={portfolioTitle} />
 				</div>
 			</div>
 		)

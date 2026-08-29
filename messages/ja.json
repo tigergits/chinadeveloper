@@ -62,22 +62,50 @@
 		"viewPortfolio": "詳細を見る",
 		"viewOnGithub": "GitHub で見る",
 		"viewDetails": "詳細を見る",
-		"subtitle": "私が作ったプロダクト —— ブラウザ拡張、Web アプリ、ゲーム。AI 時代に、素早くお届け。",
+		"subtitle": "これまでに公開したすべて——ブラウザ拡張、SaaS アプリ、インディーゲーム、企業向け受託プロジェクト。検索・絞り込みで自由に探索。",
 		"categories": {
 			"webapp": "Web アプリ",
 			"extension": "ブラウザ拡張",
 			"game": "ゲーム",
-			"app": "アプリ"
+			"app": "アプリ",
+			"client": "受託・エンタープライズ"
 		},
 		"install": "入手する",
 		"comingSoon": "近日公開",
-		"itemsCount": "件",
+		"itemsCount": "件のプロジェクト",
 		"highlights": "ハイライト",
 		"privacyPolicy": "プライバシーポリシー",
 		"backToShowcase": "ポートフォリオに戻る",
-		"moreTitle": "その他のプロジェクト",
-		"moreDescription": "初期・エンタープライズ案件 —— 高速鉄道シミュレーション、教育クラウド、取引システムなど。",
-		"moreCta": "すべてのプロジェクトを見る"
+		"searchPlaceholder": "プロジェクト・技術・キーワードを検索…",
+		"all": "すべて",
+		"platformsLabel": "プラットフォーム",
+		"techLabel": "技術",
+		"clearFilters": "フィルターをクリア",
+		"noResults": "該当するプロジェクトがありません——フィルターを外してみてください。",
+		"platforms": {
+			"web": "Web",
+			"extension": "拡張機能",
+			"desktop": "デスクトップ",
+			"mobile": "モバイル",
+			"wechat": "WeChat"
+		},
+		"status": {
+			"live": "公開中",
+			"inDevelopment": "開発中",
+			"caseStudy": "ケーススタディ",
+			"delivered": "納品済み"
+		},
+		"links": {
+			"site": "公式サイト",
+			"chromeStore": "Chrome ウェブストア",
+			"steam": "Steam",
+			"demo": "デモを遊ぶ",
+			"appStore": "App Store",
+			"playStore": "Google Play",
+			"github": "GitHub"
+		},
+		"techStackTitle": "技術スタック",
+		"plansTitle": "料金"
 	},
 	"skills": {
 		"title": "スキル & テクノロジー"
@@ -93,11 +121,42 @@
 		"title": "お問い合わせ",
 		"subtitle": "フルタイム・パートタイムのリモートワークはもちろん、単発のご依頼も歓迎します。プロジェクトについてお聞かせください。24 時間以内に返信します。",
 		"email": "メール",
-		"social": "SNS でつながる"
+		"social": "SNS でつながる",
+		"formTitle": "プロジェクトについて教えてください",
+		"formName": "お名前",
+		"formEmail": "メールアドレス",
+		"formProjectType": "プロジェクトの種類",
+		"formBudget": "予算",
+		"formMessage": "何を作りたいですか？",
+		"formMessagePlaceholder": "ざっくりで大丈夫です——目的、主な機能、希望納期など…",
+		"formSend": "送信",
+		"formSending": "送信中…",
+		"formSuccess": "送信しました！24 時間以内にご返信します。",
+		"formError": "フォームを送信できませんでした——下のメールボタンをご利用ください。",
+		"formFallbackCta": "メールアプリで送る",
+		"formMailtoOpened": "メールアプリが開いて内容が入力されているはずです。そのまま送信してください。何も起きない場合は、直接こちらまで：",
+		"aboutProject": "対象：{name}",
+		"projectTypes": {
+			"webapp": "Web アプリ / SaaS",
+			"extension": "ブラウザ拡張",
+			"mobile": "モバイルアプリ",
+			"game": "ゲーム",
+			"ai": "AI / 自動化",
+			"other": "その他"
+		},
+		"budgets": {
+			"b0": "まだ未定",
+			"b1": "$500 未満",
+			"b2": "$500 – $2,000",
+			"b3": "$2,000 – $10,000",
+			"b4": "$10,000 以上"
+		},
+		"hirePlatforms": "こちらでも依頼可"
 	},
 	"header": {
 		"brandName": "ChinaDeveloper",
-		"tagline": "Tiger Liu - シニア・フルスタック開発者"
+		"tagline": "Tiger Liu - シニア・フルスタック開発者",
+		"hireMe": "依頼する"
 	},
 	"footer": {
 		"brandName": "Tiger Liu - China Developer",
@@ -113,5 +172,13 @@
 		"copyright": "All rights reserved.",
 		"builtWith": "Built with Next.js -",
 		"openSource": "Open Source"
+	},
+	"hire": {
+		"badge": "一緒に作りましょう",
+		"title": "{name} のようなものが欲しい？",
+		"titleGeneric": "作りたいアイデアはありますか？",
+		"description": "AI を活用して本番品質のソフトウェアを高速開発します——Web アプリ、ブラウザ拡張、モバイルアプリ、ゲーム——エージェンシーの数分の一のコストで。小さなタスクは数時間、複雑なプロジェクトも数日で。",
+		"cta": "無料で見積もりを依頼",
+		"or": "こちらでも受け付けています："
 	}
 }

@@ -1,3 +1,9 @@
 # Redirect root to default locale
 /  /en/  301
 
+# 旧 URL → 新 slug（xeviora 注册表权威 slug）
+/:locale/portfolios/showcase/svg-grabber/*  /:locale/portfolios/showcase/svg-forge/  301
+/:locale/portfolios/showcase/xeviora-svg/*  /:locale/portfolios/showcase/svg-forge/  301
+
+# more 页已并入主作品集网格
+/:locale/portfolios/more/  /:locale/portfolios/  301

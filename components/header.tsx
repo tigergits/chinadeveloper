@@ -3,7 +3,7 @@
 import { useTranslations, useLocale } from 'next-intl';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Github, Twitter, Facebook, Youtube } from 'lucide-react';
+import { Github, Briefcase } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { LanguageSwitcher } from './language-switcher';
 import { ThemeToggle } from './theme-toggle';
@@ -81,6 +81,13 @@ export default function Header() {
 
 						<ThemeToggle />
 						<LanguageSwitcher />
+						<Link
+							href={`/${locale}/contact`}
+							className="hidden sm:inline-flex items-center gap-1.5 rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-md shadow-primary/25 transition hover:scale-105 hover:shadow-lg"
+						>
+							<Briefcase className="h-4 w-4" />
+							{tHeader('hireMe')}
+						</Link>
 					</div>
 				</div>
 			</div>

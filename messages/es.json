@@ -60,25 +60,52 @@
 	"portfolios": {
 		"title": "Portafolios",
 		"viewPortfolio": "Ver Portafolio",
-		"viewPortfolioOnGithub": "Ver Portafolio en GitHub",
 		"viewOnGithub": "Ver en GitHub",
 		"viewDetails": "Ver detalles",
-		"subtitle": "Productos que he creado: extensiones de navegador, aplicaciones web y juegos. Entregados rápido en la era de la IA.",
+		"subtitle": "Todo lo que he publicado: extensiones de navegador, aplicaciones SaaS, juegos indie y proyectos empresariales para clientes. Busca, filtra y explora.",
 		"categories": {
 			"webapp": "Aplicaciones web",
 			"extension": "Extensiones de navegador",
 			"game": "Juegos",
-			"app": "Apps"
+			"app": "Apps",
+			"client": "Clientes y empresas"
 		},
 		"install": "Obtener",
 		"comingSoon": "Próximamente",
-		"itemsCount": "elementos",
+		"itemsCount": "proyectos",
 		"highlights": "Destacados",
 		"privacyPolicy": "Política de privacidad",
 		"backToShowcase": "Volver a Portafolios",
-		"moreTitle": "Más proyectos",
-		"moreDescription": "Trabajo anterior y empresarial: simulación de ferrocarril de alta velocidad, nube educativa, sistemas de trading y más.",
-		"moreCta": "Ver todos los proyectos"
+		"searchPlaceholder": "Buscar proyectos, tecnologías, palabras clave…",
+		"all": "Todos",
+		"platformsLabel": "Plataforma",
+		"techLabel": "Tecnología",
+		"clearFilters": "Limpiar filtros",
+		"noResults": "Ningún proyecto coincide — prueba a limpiar algunos filtros.",
+		"platforms": {
+			"web": "Web",
+			"extension": "Extensión",
+			"desktop": "Escritorio",
+			"mobile": "Móvil",
+			"wechat": "WeChat"
+		},
+		"status": {
+			"live": "En producción",
+			"inDevelopment": "En desarrollo",
+			"caseStudy": "Caso de estudio",
+			"delivered": "Entregado"
+		},
+		"links": {
+			"site": "Sitio web",
+			"chromeStore": "Chrome Web Store",
+			"steam": "Steam",
+			"demo": "Probar demo",
+			"appStore": "App Store",
+			"playStore": "Google Play",
+			"github": "GitHub"
+		},
+		"techStackTitle": "Tecnologías",
+		"plansTitle": "Precios"
 	},
 	"skills": {
 		"title": "Habilidades y Tecnologías"
@@ -94,11 +121,42 @@
 		"title": "Contáctame",
 		"subtitle": "Disponible para trabajo remoto a tiempo completo o parcial, y también para tareas puntuales. Cuéntame sobre tu proyecto y te responderé en 24 horas.",
 		"email": "Correo",
-		"social": "Conéctate conmigo"
+		"social": "Conéctate conmigo",
+		"formTitle": "Cuéntame tu proyecto",
+		"formName": "Tu nombre",
+		"formEmail": "Tu email",
+		"formProjectType": "Tipo de proyecto",
+		"formBudget": "Presupuesto",
+		"formMessage": "¿Qué necesitas construir?",
+		"formMessagePlaceholder": "Una descripción aproximada basta: objetivos, funciones clave, plazos…",
+		"formSend": "Enviar mensaje",
+		"formSending": "Enviando…",
+		"formSuccess": "¡Gracias! Tu mensaje está en camino — responderé en 24 horas.",
+		"formError": "El formulario no se pudo enviar — usa el botón de email de abajo.",
+		"formFallbackCta": "Enviar por email",
+		"formMailtoOpened": "Tu aplicación de correo debería haberse abierto con todo rellenado — solo pulsa enviar. Si no ha pasado nada, escríbeme directamente:",
+		"aboutProject": "Sobre: {name}",
+		"projectTypes": {
+			"webapp": "Aplicación web / SaaS",
+			"extension": "Extensión de navegador",
+			"mobile": "App móvil",
+			"game": "Juego",
+			"ai": "IA / Automatización",
+			"other": "Otro"
+		},
+		"budgets": {
+			"b0": "Aún no lo sé",
+			"b1": "Menos de $500",
+			"b2": "$500 – $2,000",
+			"b3": "$2,000 – $10,000",
+			"b4": "Más de $10,000"
+		},
+		"hirePlatforms": "Contrátame en"
 	},
 	"header": {
 		"brandName": "ChinaDeveloper",
-		"tagline": "Tiger Liu - Desarrollador Full-Stack Senior"
+		"tagline": "Tiger Liu - Desarrollador Full-Stack Senior",
+		"hireMe": "Contrátame"
 	},
 	"footer": {
 		"brandName": "Tiger Liu - China Developer",
@@ -114,5 +172,13 @@
 		"copyright": "Todos los derechos reservados.",
 		"builtWith": "Construido con Next.js -",
 		"openSource": "Código Abierto"
+	},
+	"hire": {
+		"badge": "Trabaja conmigo",
+		"title": "¿Quieres algo como {name}?",
+		"titleGeneric": "¿Tienes una idea que construir?",
+		"description": "Construyo software de producción rápidamente con IA — aplicaciones web, extensiones, apps móviles y juegos — a una fracción del coste de una agencia. Tareas pequeñas en horas, proyectos complejos en días.",
+		"cta": "Pide un presupuesto gratis",
+		"or": "o encuéntrame en"
 	}
 }

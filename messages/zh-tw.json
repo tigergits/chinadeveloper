@@ -62,22 +62,50 @@
 		"viewPortfolio": "查看作品",
 		"viewOnGithub": "在 GitHub 上查看",
 		"viewDetails": "查看詳情",
-		"subtitle": "我打造的產品 —— 瀏覽器擴充功能、Web 應用與遊戲。AI 時代，快速交付。",
+		"subtitle": "我發布過的一切——瀏覽器擴充功能、SaaS 應用、獨立遊戲與企業級客戶專案。搜尋、篩選、隨意探索。",
 		"categories": {
 			"webapp": "Web 應用",
 			"extension": "瀏覽器擴充功能",
 			"game": "遊戲",
-			"app": "應用"
+			"app": "應用",
+			"client": "客戶與企業專案"
 		},
 		"install": "取得",
 		"comingSoon": "即將上線",
-		"itemsCount": "個",
+		"itemsCount": "個專案",
 		"highlights": "亮點",
 		"privacyPolicy": "隱私政策",
 		"backToShowcase": "返回作品集",
-		"moreTitle": "更多專案",
-		"moreDescription": "早期與企業級專案 —— 高鐵模擬、教育雲、交易系統等。",
-		"moreCta": "瀏覽全部專案"
+		"searchPlaceholder": "搜尋專案、技術、關鍵字…",
+		"all": "全部",
+		"platformsLabel": "平台",
+		"techLabel": "技術",
+		"clearFilters": "清除篩選",
+		"noResults": "沒有符合的專案——試試清除部分篩選條件。",
+		"platforms": {
+			"web": "Web",
+			"extension": "擴充功能",
+			"desktop": "桌面",
+			"mobile": "行動",
+			"wechat": "微信"
+		},
+		"status": {
+			"live": "已上線",
+			"inDevelopment": "開發中",
+			"caseStudy": "案例研究",
+			"delivered": "已交付"
+		},
+		"links": {
+			"site": "官網",
+			"chromeStore": "Chrome 商店",
+			"steam": "Steam",
+			"demo": "線上試玩",
+			"appStore": "App Store",
+			"playStore": "Google Play",
+			"github": "GitHub"
+		},
+		"techStackTitle": "技術棧",
+		"plansTitle": "定價"
 	},
 	"skills": {
 		"title": "技能專長"
@@ -93,11 +121,42 @@
 		"title": "聯絡我",
 		"subtitle": "我可承接全職或兼職遠端工作，也接快速的單次任務。說說你的專案，我會在 24 小時內回覆你。",
 		"email": "電子郵件",
-		"social": "與我聯繫"
+		"social": "與我聯繫",
+		"formTitle": "告訴我你的專案",
+		"formName": "你的稱呼",
+		"formEmail": "你的信箱",
+		"formProjectType": "專案類型",
+		"formBudget": "預算",
+		"formMessage": "你想做什麼？",
+		"formMessagePlaceholder": "大致描述即可——目標、核心功能、時程要求…",
+		"formSend": "送出",
+		"formSending": "傳送中…",
+		"formSuccess": "已送出！我會在 24 小時內回覆你。",
+		"formError": "表單暫時無法送出——請改用下面的郵件按鈕。",
+		"formFallbackCta": "用郵件傳送",
+		"formMailtoOpened": "郵件用戶端應該已經開啟並填好內容了，直接按送出即可。如果沒有反應，可以直接寫信給我：",
+		"aboutProject": "關於：{name}",
+		"projectTypes": {
+			"webapp": "Web 應用 / SaaS",
+			"extension": "瀏覽器擴充功能",
+			"mobile": "行動應用",
+			"game": "遊戲",
+			"ai": "AI / 自動化",
+			"other": "其他"
+		},
+		"budgets": {
+			"b0": "還不確定",
+			"b1": "$500 以內",
+			"b2": "$500 – $2,000",
+			"b3": "$2,000 – $10,000",
+			"b4": "$10,000 以上"
+		},
+		"hirePlatforms": "接案平台"
 	},
 	"header": {
 		"brandName": "ChinaDeveloper",
-		"tagline": "Tiger Liu - 資深全端開發工程師"
+		"tagline": "Tiger Liu - 資深全端開發工程師",
+		"hireMe": "僱用我"
 	},
 	"footer": {
 		"brandName": "Tiger Liu - China Developer",
@@ -113,5 +172,13 @@
 		"copyright": "版權所有。",
 		"builtWith": "使用 Next.js 建構 -",
 		"openSource": "開源"
+	},
+	"hire": {
+		"badge": "與我合作",
+		"title": "想要一個類似 {name} 的產品？",
+		"titleGeneric": "有想法要實現？",
+		"description": "我用 AI 快速交付生產級軟體——Web 應用、瀏覽器擴充功能、行動應用和遊戲——成本遠低於外包公司。小任務數小時完成，複雜專案數天交付。",
+		"cta": "免費取得報價",
+		"or": "也可以在這裡找到我："
 	}
 }

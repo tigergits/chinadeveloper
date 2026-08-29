@@ -1,0 +1,8 @@
+{
+	"_note": "接单渠道配置。upwork / fiverr 填入个人主页 URL 后全站 Hire CTA、联系页、JSON-LD sameAs 自动生效；留空则不渲染对应按钮。",
+	"email": "tiger.hu.liu@gmail.com",
+	"upwork": "",
+	"fiverr": "",
+	"linkedin": "https://www.linkedin.com/in/tigerliudev/",
+	"github": "https://github.com/tigergits"
+}

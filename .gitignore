@@ -35,6 +35,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 /.history
+
+# gen:showcase 的临时构建目录
+/.showcase-build
 /REQUEST.md
 /package-lock.json
 /pnpm-lock.yaml

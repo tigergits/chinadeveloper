@@ -62,22 +62,58 @@
 		"viewPortfolio": "View Portfolio",
 		"viewOnGithub": "View on GitHub",
 		"viewDetails": "View Details",
-		"subtitle": "Products I've built — browser extensions, web apps and games. Shipped fast in the AI era.",
+		"subtitle": "Everything I've shipped — browser extensions, SaaS web apps, indie games and enterprise client work. Search, filter, explore.",
 		"categories": {
 			"webapp": "Web Apps",
 			"extension": "Browser Extensions",
 			"game": "Games",
-			"app": "Apps"
+			"app": "Apps",
+			"client": "Client & Enterprise"
 		},
 		"install": "Get it",
 		"comingSoon": "Coming soon",
-		"itemsCount": "items",
+		"itemsCount": "projects",
 		"highlights": "Highlights",
 		"privacyPolicy": "Privacy Policy",
 		"backToShowcase": "Back to Portfolios",
-		"moreTitle": "More Projects",
-		"moreDescription": "Earlier and enterprise work — high-speed rail simulation, education cloud, trading systems and more.",
-		"moreCta": "Browse all projects"
+		"searchPlaceholder": "Search projects, tech, keywords…",
+		"all": "All",
+		"platformsLabel": "Platform",
+		"techLabel": "Tech",
+		"clearFilters": "Clear filters",
+		"noResults": "No projects match — try clearing some filters.",
+		"platforms": {
+			"web": "Web",
+			"extension": "Extension",
+			"desktop": "Desktop",
+			"mobile": "Mobile",
+			"wechat": "WeChat"
+		},
+		"status": {
+			"live": "Live",
+			"inDevelopment": "In development",
+			"caseStudy": "Case study",
+			"delivered": "Delivered"
+		},
+		"links": {
+			"site": "Website",
+			"chromeStore": "Chrome Web Store",
+			"steam": "Steam",
+			"demo": "Play demo",
+			"appStore": "App Store",
+			"playStore": "Google Play",
+			"github": "GitHub"
+		},
+		"techStackTitle": "Tech Stack",
+		"plansTitle": "Pricing"
+	},
+	"hire": {
+		"badge": "Work with me",
+		"title": "Want something like {name}?",
+		"titleGeneric": "Have an idea to build?",
+		"description": "I build production software fast with AI — web apps, browser extensions, mobile apps and games — at a fraction of agency cost. Small tasks in hours, complex projects in days.",
+		"cta": "Get a free quote",
+		"or": "or find me on"
 	},
 	"skills": {
 		"title": "Skills & Technologies"
@@ -93,11 +129,42 @@
 		"title": "Get in Touch",
 		"subtitle": "Available for full-time or part-time remote work — and quick one-off tasks too. Tell me about your project and I'll get back to you within 24 hours.",
 		"email": "Email",
-		"social": "Connect with me"
+		"social": "Connect with me",
+		"formTitle": "Tell me about your project",
+		"formName": "Your name",
+		"formEmail": "Your email",
+		"formProjectType": "Project type",
+		"formBudget": "Budget",
+		"formMessage": "What do you need built?",
+		"formMessagePlaceholder": "A rough description is enough — goals, key features, timeline…",
+		"formSend": "Send message",
+		"formSending": "Sending…",
+		"formSuccess": "Thanks! Your message is on its way — I'll get back to you within 24 hours.",
+		"formError": "The form couldn't be sent right now — use the email button below instead.",
+		"formFallbackCta": "Send via email app",
+		"formMailtoOpened": "Your email app should now be open with everything filled in — just press send. If nothing happened, write to me directly:",
+		"aboutProject": "About: {name}",
+		"projectTypes": {
+			"webapp": "Web App / SaaS",
+			"extension": "Browser Extension",
+			"mobile": "Mobile App",
+			"game": "Game",
+			"ai": "AI / Automation",
+			"other": "Other"
+		},
+		"budgets": {
+			"b0": "Not sure yet",
+			"b1": "Under $500",
+			"b2": "$500 – $2,000",
+			"b3": "$2,000 – $10,000",
+			"b4": "$10,000+"
+		},
+		"hirePlatforms": "Hire me on"
 	},
 	"header": {
 		"brandName": "ChinaDeveloper",
-		"tagline": "Tiger Liu - Senior Full-Stack Developer"
+		"tagline": "Tiger Liu - Senior Full-Stack Developer",
+		"hireMe": "Hire Me"
 	},
 	"footer": {
 		"brandName": "Tiger Liu - China Developer",

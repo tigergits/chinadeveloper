@@ -1,550 +1,149 @@
 // @ts-check
 /**
- * Showcase 生成器
+ * Showcase 生成器 v2
  *
- * 读取 data/portfolio-sources.json 里列出的各 store 目录（浏览器扩展 / 游戏），
- * 规范化为 data/showcase.generated.json，并把 logo / 截图素材拷贝到
- * public/assets/showcase/<slug>/。
+ * 数据源两路：
+ *   1. xeviora 自动同步 —— 解析 xeviora.com 产品注册表（products-config.ts），
+ *      17 个已发布产品全部自动进入，上新后重跑即可；
+ *   2. data/portfolio-sources.json 的 items —— 注册表之外的显式条目
+ *      （游戏 / 独立站扩展 / 客户案例 / 内嵌文案条目）。
  *
- * 运行：npm run gen:showcase
+ * 输出：data/showcase.generated.json + public/assets/showcase/<slug>/（截图统一压缩为 webp）。
  *
- * 说明：sourceDir 是 Tiger 本机的绝对路径，只在本机能跑；生成产物（JSON + public 素材）
- * 已提交仓库，部署端无需再跑。缺失的源目录会被跳过并告警，不会中断。
+ * 安全机制：先在 .showcase-build/ 临时目录完整构建，全部成功后一次性替换，
+ * 不再先清空线上素材目录。某个条目的源缺失/构建失败时，沿用上一版 JSON 与素材
+ * 并告警（跑 `--strict` 时改为报错退出）；只有从清单/注册表里主动移除的条目才会消失。
+ *
+ * 运行：npm run gen:showcase   （源路径是 Tiger 本机绝对路径，仅本机能跑；产物已提交，部署端无需再跑）
  */
 
 import fs from "node:fs"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
+import { SITE_LOCALES, readJson, warn, warnings } from "./showcase/util.mjs"
+import { harvestXeviora } from "./showcase/xeviora.mjs"
+import { buildExtension, buildWebapp, buildGame, buildInline } from "./showcase/builders.mjs"
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const ROOT = path.resolve(__dirname, "..")
 const SOURCES_FILE = path.join(ROOT, "data", "portfolio-sources.json")
 const OUT_FILE = path.join(ROOT, "data", "showcase.generated.json")
 const PUBLIC_DIR = path.join(ROOT, "public", "assets", "showcase")
+const BUILD_DIR = path.join(ROOT, ".showcase-build")
 
-const SITE_LOCALES = ["en", "zh-cn", "es", "fr", "ja", "zh-tw"]
+const STRICT = process.argv.includes("--strict")
 
-// listing-all-languages.md 里的语言码 → 站点 locale
-const LISTING_LOCALE_MAP = {
-	en: "en",
-	zh: "zh-cn",
-	"zh-cn": "zh-cn",
-	"zh_cn": "zh-cn",
-	"zh-hans": "zh-cn",
-	"zh_hans": "zh-cn",
-	"zh-tw": "zh-tw",
-	"zh_tw": "zh-tw",
-	"zh-hant": "zh-tw",
-	"zh_hant": "zh-tw",
-	es: "es",
-	fr: "fr",
-	ja: "ja",
-}
-// 游戏 listing 目录名 → 站点 locale
-const GAME_LOCALE_MAP = { en: "en", "zh-Hans": "zh-cn", "zh-Hant": "zh-tw" }
-
-const warnings = []
-const warn = (m) => {
-	warnings.push(m)
-	console.warn("  ⚠ " + m)
-}
-
-// ---------- 小工具 ----------
-
-function readJson(p) {
-	return JSON.parse(fs.readFileSync(p, "utf8"))
-}
-
-function stripFrontmatter(md) {
-	if (md.startsWith("---")) {
-		const end = md.indexOf("\n---", 3)
-		if (end !== -1) return md.slice(md.indexOf("\n", end + 1) + 1).trimStart()
+/** 上一版条目（slug → item），源缺失时用于沿用 */
+function loadPrevious() {
+	try {
+		const prev = readJson(OUT_FILE)
+		return new Map((prev.items || []).map((it) => [it.slug, it]))
+	} catch {
+		return new Map()
 	}
-	return md
 }
 
-function ensureEmptyDir(dir) {
-	fs.rmSync(dir, { recursive: true, force: true })
-	fs.mkdirSync(dir, { recursive: true })
-}
-
-/** 在多个候选位置里找到第一个存在的文件，拷贝到目标目录，返回 web 路径（或 null） */
-function copyAsset(candidates, destDir, destName, webBase) {
-	for (const c of candidates) {
-		if (c && fs.existsSync(c) && fs.statSync(c).isFile()) {
-			fs.mkdirSync(destDir, { recursive: true })
-			fs.copyFileSync(c, path.join(destDir, destName))
-			return `${webBase}/${destName}`
-		}
-	}
-	return null
-}
-
-function titleFromFilename(name) {
-	return name
-		.replace(/\.[a-z0-9]+$/i, "")
-		.replace(/[-_]+/g, " ")
-		.replace(/\b\w/g, (ch) => ch.toUpperCase())
-}
-
-/** 空的 per-locale 容器 */
-function emptyContent() {
-	const c = {}
-	for (const l of SITE_LOCALES) c[l] = {}
-	return c
-}
-
-// ---------- 解析 listing-all-languages.md ----------
-
-/** 字段标签 → 规范字段名（兼容 Short / Short description、Detailed / Detailed description） */
-function normalizeField(label) {
-	const l = label.trim().toLowerCase()
-	if (l.startsWith("name")) return "name"
-	if (l.startsWith("short")) return "short"
-	if (l.startsWith("detail")) return "long"
-	if (l.startsWith("categor")) return "category"
-	return null
-}
-
-/**
- * 返回 { <siteLocale>: { name, short, long, category } }
- * 分节：`## 语言名 (code)`。节内字段两种写法都支持：
- *   - `### Name` / `### Short description` / `### Detailed description`（下一行起为内容）
- *   - `**Name:** 值` / `**Short:** 值` / `**Detailed:**`（同行可带值）
- */
-function parseAllLanguages(mdPath) {
-	if (!fs.existsSync(mdPath)) return {}
-	const lines = fs.readFileSync(mdPath, "utf8").split(/\r?\n/)
-	const out = {}
-	let locale = null
-	let field = null
-	let buf = []
-
-	const flush = () => {
-		if (locale && field && buf.length) {
-			const text = buf.join("\n").trim()
-			if (text) {
-				out[locale] = out[locale] || {}
-				out[locale][field] = text
-			}
-		}
-		buf = []
-	}
-
-	for (const line of lines) {
-		const h2 = line.match(/^##\s+.*\(([\w-]+)\)\s*$/)
-		if (h2) {
-			flush()
-			field = null
-			locale = LISTING_LOCALE_MAP[h2[1].toLowerCase()] || null
-			continue
-		}
-		if (/^##\s+/.test(line)) {
-			flush()
-			locale = null
-			field = null
-			continue
-		}
-		if (/^---\s*$/.test(line)) {
-			flush()
-			field = null
-			continue
-		}
-		const h3 = line.match(/^###\s+(.+?)\s*$/)
-		if (h3) {
-			flush()
-			field = normalizeField(h3[1])
-			continue
-		}
-		const bold = line.match(/^\*\*([\w ]+?):\*\*\s*(.*)$/)
-		if (bold) {
-			flush()
-			field = normalizeField(bold[1])
-			if (field && bold[2].trim()) buf.push(bold[2])
-			continue
-		}
-		if (locale && field) buf.push(line)
-	}
-	flush()
-	return out
-}
-
-// ---------- 扩展 ----------
-
-/** config 没有 screenshots 时，自动从 scrn/ 或 store 根发现截图 */
-function discoverScreenshots(dir) {
-	const isImg = (f) => /\.(png|jpg|jpeg|webp)$/i.test(f)
-	const scrnDir = path.join(dir, "scrn")
-	if (fs.existsSync(scrnDir)) {
-		const all = fs.readdirSync(scrnDir).filter(isImg)
-		// 优先编号帧 cws-N / scrn-N；否则取全部
-		const framed = all.filter((f) => /^(cws|scrn)[-_]?\d/i.test(f)).sort()
-		const pick = framed.length ? framed : all.sort()
-		return pick.map((src) => ({ src, caption: "" }))
-	}
-	// 无 scrn/ 目录：扫描 store 根的编号截图（排除 use-*、promo 等）
-	const root = fs
-		.readdirSync(dir)
-		.filter((f) => isImg(f) && /^(cws|scrn)[-_]?\d/i.test(f))
-		.sort()
-	return root.map((src) => ({ src, caption: "" }))
-}
-
-/**
- * 解析扩展 logo：优先 store/icons/ 里最大的 PNG，其次扩展源码目录（store 的父目录）
- * 里的 Plasmo 主图标 assets/icon.png，最后是 store 根或 public 里的 icon.png。
- */
-function resolveExtensionLogo(dir, destDir, webBase) {
-	const iconDir = path.join(dir, "icons")
-	const parent = path.dirname(dir)
-	return copyAsset(
-		[
-			path.join(iconDir, "icon-512.png"),
-			path.join(iconDir, "icon512.png"),
-			path.join(iconDir, "icon-256.png"),
-			path.join(iconDir, "icon256.png"),
-			path.join(iconDir, "icon-128.png"),
-			path.join(iconDir, "icon128.png"),
-			path.join(dir, "icon.png"),
-			path.join(parent, "assets", "icon.png"),
-			path.join(parent, "public", "icon.png"),
-			path.join(parent, "icon.png"),
-		],
-		destDir,
-		"logo.png",
-		webBase
-	)
-}
-
-function buildExtension(item, destDir, webBase) {
-	const dir = item.sourceDir
-	const configPath = path.join(dir, "store-kit.config.json")
-	if (!fs.existsSync(configPath)) {
-		warn(`${item.slug}: 缺少 store-kit.config.json，跳过`)
+/** 沿用上一版：拷回旧素材目录 + 复用旧 JSON */
+function carryPrevious(slug, prevBySlug, stats) {
+	const prev = prevBySlug.get(slug)
+	if (!prev) {
+		warn(`${slug}: 构建失败且没有上一版可沿用，条目丢失`)
+		stats.lost.push(slug)
 		return null
 	}
-	const cfg = readJson(configPath)
-	const perLang = parseAllLanguages(path.join(dir, "listing-all-languages.md"))
+	const oldAssets = path.join(PUBLIC_DIR, slug)
+	if (fs.existsSync(oldAssets)) {
+		fs.cpSync(oldAssets, path.join(BUILD_DIR, slug), { recursive: true })
+	}
+	warn(`${slug}: 源不可用，沿用上一版数据`)
+	stats.carried.push(slug)
+	return prev
+}
 
-	// 内容：以 config 英文为基底，用 listing 覆盖各语言
-	const content = emptyContent()
-	content.en = {
-		name: cfg.brand,
-		tagline: cfg.tagline || "",
-		short: cfg.shortDescription || "",
-		long: "",
-		features: (cfg.features || []).map((f) => ({
-			emoji: f.emoji || "",
-			title: f.title || "",
-			desc: f.desc || "",
-		})),
-	}
-	for (const [loc, v] of Object.entries(perLang)) {
-		if (!SITE_LOCALES.includes(loc)) continue
-		content[loc] = {
-			...content[loc],
-			name: v.name || content[loc].name,
-			short: v.short || content[loc].short,
-			long: v.long || "",
-		}
-	}
-	// 每个语言都带上英文 features（扩展 features 仅英文）
-	for (const loc of SITE_LOCALES) {
-		if (!content[loc].features) content[loc].features = content.en.features
-		if (!content[loc].name) content[loc].name = content.en.name
-		if (!content[loc].short) content[loc].short = content.en.short
+/** 显式条目：结构字段来自 manifest，内容来自对应构建器 */
+async function buildExplicitItem(item, prevBySlug, stats) {
+	const destDir = path.join(BUILD_DIR, item.slug)
+	const webBase = `/assets/showcase/${item.slug}`
+
+	const sourceOk = !item.sourceDir || fs.existsSync(item.sourceDir)
+	let built = null
+	if (sourceOk) {
+		if (item.type === "extension") built = await buildExtension(item, destDir, webBase)
+		else if (item.type === "webapp") built = await buildWebapp(item, destDir, webBase)
+		else if (item.type === "game") built = await buildGame(item, destDir, webBase)
+		else if (item.type === "inline") built = await buildInline(item, destDir, webBase)
+		else warn(`${item.slug}: 未知 type ${item.type}`)
+	} else {
+		warn(`${item.slug}: 源目录不存在（${item.sourceDir}）`)
 	}
 
-	// logo：优先真实 PNG 图标（含扩展源码目录里的 Plasmo 主图标），其次 promo.iconSvg
-	let logo = resolveExtensionLogo(dir, destDir, webBase)
-	let gradient = null
-	if (!logo && cfg.promo && cfg.promo.iconSvg) {
-		fs.mkdirSync(destDir, { recursive: true })
-		fs.writeFileSync(path.join(destDir, "logo.svg"), cfg.promo.iconSvg, "utf8")
-		logo = `${webBase}/logo.svg`
-		gradient = Array.isArray(cfg.promo.gradient) ? cfg.promo.gradient : null
+	if (!built) {
+		if (STRICT) throw new Error(`--strict：${item.slug} 构建失败`)
+		return carryPrevious(item.slug, prevBySlug, stats)
 	}
 
-	// 截图：优先 config.screenshots，否则扫描 scrn/ 或 store 根目录
-	const screenshots = []
-	let shots = Array.isArray(cfg.screenshots) ? cfg.screenshots : null
-	if (!shots) shots = discoverScreenshots(dir)
-	shots.forEach((s, i) => {
-		const web = copyAsset(
-			[path.join(dir, "scrn", s.src), path.join(dir, s.src), path.join(dir, "promo", s.src)],
-			path.join(destDir, "scrn"),
-			`${String(i + 1).padStart(2, "0")}-${s.src.replace(/[^\w.-]/g, "_")}`,
-			`${webBase}/scrn`
-		)
-		if (web) screenshots.push({ src: web, caption: s.caption || "" })
-		else warn(`${item.slug}: 找不到截图 ${s.src}`)
-	})
-
-	const privacyMarkdown = readPrivacy(path.join(dir, "privacy-policy.md"))
-
+	stats.built.push(item.slug)
 	return {
-		categoryLabel: cfg.category || "Extension",
-		logo,
-		gradient,
-		screenshots,
-		privacyMarkdown,
-		content,
+		slug: item.slug,
+		category: item.category,
+		type: item.type,
+		status: item.status || "live",
+		pricing: item.pricing || "",
+		platforms: item.platforms || [],
+		techStack: item.techStack || [],
+		links: item.links || {},
+		installUrl: item.installUrl || "",
+		...built,
+		// manifest 可覆盖构建器给出的 categoryLabel
+		categoryLabel: item.categoryLabel || built.categoryLabel,
 	}
 }
 
-// ---------- 扩展（内联，无 config） ----------
-
-function buildExtensionInline(item, destDir, webBase) {
-	const dir = item.sourceDir
-	const content = emptyContent()
-	for (const [loc, v] of Object.entries(item.content || {})) {
-		if (!SITE_LOCALES.includes(loc)) continue
-		content[loc] = { name: v.name, tagline: v.tagline || "", short: v.short, long: v.long || "", features: [] }
-	}
-	// 回退英文
-	for (const loc of SITE_LOCALES) {
-		if (!content[loc].name) content[loc] = { ...content.en }
-	}
-
-	const screenshots = []
-	;(item.screenshots || []).forEach((s, i) => {
-		const web = copyAsset(
-			[path.join(dir, "scrn", s.src), path.join(dir, s.src)],
-			path.join(destDir, "scrn"),
-			`${String(i + 1).padStart(2, "0")}-${s.src}`,
-			`${webBase}/scrn`
-		)
-		if (web) screenshots.push({ src: web, caption: s.caption || "" })
-		else warn(`${item.slug}: 找不到截图 ${s.src}`)
-	})
-
-	const privacyMarkdown = item.privacyFile ? readPrivacy(path.join(dir, item.privacyFile)) : null
-	const logo = resolveExtensionLogo(dir, destDir, webBase)
-
-	return {
-		categoryLabel: item.categoryLabel || "Extension",
-		logo,
-		gradient: null,
-		screenshots,
-		privacyMarkdown,
-		content,
-	}
-}
-
-// ---------- 游戏 ----------
-
-function buildGame(item, destDir, webBase) {
-	const dir = item.sourceDir
-	const configPath = path.join(dir, "game-store-kit.config.json")
-	if (!fs.existsSync(configPath)) {
-		warn(`${item.slug}: 缺少 game-store-kit.config.json，跳过`)
-		return null
-	}
-	const cfg = readJson(configPath)
-	const facts = fs.existsSync(path.join(dir, "meta", "facts.json"))
-		? readJson(path.join(dir, "meta", "facts.json"))
-		: {}
-
-	const content = emptyContent()
-	for (const [gameLoc, siteLoc] of Object.entries(GAME_LOCALE_MAP)) {
-		const ld = path.join(dir, "listing", gameLoc)
-		const readTxt = (f) => (fs.existsSync(path.join(ld, f)) ? fs.readFileSync(path.join(ld, f), "utf8").trim() : "")
-		const features = (cfg.sellingPoints || []).map((p) => ({
-			emoji: p.emoji || "",
-			title: (p.title && (p.title[gameLoc] || p.title.en)) || "",
-			desc: (p.desc && (p.desc[gameLoc] || p.desc.en)) || "",
-		}))
-		content[siteLoc] = {
-			name: readTxt("name.txt") || (cfg.brandLocalized && cfg.brandLocalized[gameLoc]) || cfg.brand,
-			tagline: readTxt("tagline.txt") || (cfg.tagline && cfg.tagline[gameLoc]) || "",
-			short: readTxt("short-description.txt") || "",
-			long: stripFrontmatter(readTxt("about.md") || ""),
-			features,
-		}
-	}
-	// 其余语言回退英文
-	for (const loc of SITE_LOCALES) {
-		if (!content[loc].name) content[loc] = { ...content.en }
-	}
-
-	// logo
-	const iconDir = path.join(dir, "visual", "icon")
-	const logo = copyAsset(
-		[path.join(iconDir, "icon.png"), path.join(iconDir, "StoreLogo.png"), path.join(iconDir, "Square310x310Logo.png")],
-		destDir,
-		"logo.png",
-		webBase
-	)
-
-	// 截图：visual/screenshots/*.webp
-	const shotsDir = path.join(dir, "visual", "screenshots")
-	const screenshots = []
-	if (fs.existsSync(shotsDir)) {
-		const files = fs
-			.readdirSync(shotsDir)
-			.filter((f) => /\.(webp|png|jpg|jpeg)$/i.test(f))
-			.sort()
-		files.forEach((f, i) => {
-			const web = copyAsset([path.join(shotsDir, f)], path.join(destDir, "scrn"), `${String(i + 1).padStart(2, "0")}-${f}`, `${webBase}/scrn`)
-			if (web) screenshots.push({ src: web, caption: titleFromFilename(f) })
-		})
-	}
-
-	const privacyMarkdown = readPrivacy(path.join(dir, "legal", "privacy-policy-en.md"))
-	const genres = Array.isArray(facts.genres) ? facts.genres : cfg.genres || []
-
-	return {
-		categoryLabel: genres.slice(0, 3).join(" · ") || "Game",
-		releaseStatus: cfg.releaseStatus || facts.releaseStatus || "",
-		logo,
-		gradient: null,
-		screenshots,
-		privacyMarkdown,
-		content,
-	}
-}
-
-// ---------- Web 应用（webapp-store-kit） ----------
-
-function buildWebapp(item, destDir, webBase) {
-	const dir = item.sourceDir
-	const configPath = path.join(dir, "webapp-store-kit.config.json")
-	if (!fs.existsSync(configPath)) {
-		warn(`${item.slug}: 缺少 webapp-store-kit.config.json，跳过`)
-		return null
-	}
-	const cfg = readJson(configPath)
-	// 本地化字段形如 { en: "...", "zh-cn": "..." }，缺失回退英文
-	const pick = (o) => (o && typeof o === "object" ? o.en || o[Object.keys(o)[0]] || "" : o || "")
-
-	const features = (cfg.features || []).map((f) => ({
-		emoji: f.emoji || "",
-		title: pick(f.title),
-		desc: pick(f.desc),
-	}))
-
-	const content = emptyContent()
-	content.en = {
-		name: pick(cfg.brandLocalized) || cfg.brand,
-		tagline: pick(cfg.tagline),
-		short: pick(cfg.shortDescription),
-		long: pick(cfg.elevatorPitch),
-		features,
-	}
-
-	// listing/<lang>/ 覆盖各语言（name.txt / tagline.txt / short-description.txt / long-description.md）
-	const listingRoot = path.join(dir, "listing")
-	if (fs.existsSync(listingRoot)) {
-		for (const langDir of fs.readdirSync(listingRoot)) {
-			const loc = SITE_LOCALES.includes(langDir) ? langDir : LISTING_LOCALE_MAP[langDir.toLowerCase()]
-			if (!loc || !SITE_LOCALES.includes(loc)) continue
-			const ld = path.join(listingRoot, langDir)
-			const readTxt = (f) => (fs.existsSync(path.join(ld, f)) ? fs.readFileSync(path.join(ld, f), "utf8").trim() : "")
-			content[loc] = {
-				name: readTxt("name.txt") || content.en.name,
-				tagline: readTxt("tagline.txt") || content.en.tagline,
-				short: readTxt("short-description.txt") || content.en.short,
-				long: stripFrontmatter(readTxt("long-description.md")) || content.en.long,
-				features,
-			}
-		}
-	}
-	// 其余语言回退英文
-	for (const loc of SITE_LOCALES) {
-		if (!content[loc].name) content[loc] = { ...content.en }
-	}
-
-	// logo：visual/logo 里的主图标，其次 favicon，最后 brandKit.iconSvg
-	let logo = copyAsset(
-		[
-			path.join(dir, "visual", "logo", "icon-512x512.png"),
-			path.join(dir, "visual", "logo", "icon-512.png"),
-			path.join(dir, "visual", "favicon", "icon-512x512.png"),
-			path.join(dir, "visual", "favicon", "icon-192x192.png"),
-		],
-		destDir,
-		"logo.png",
-		webBase
-	)
-	let gradient = null
-	if (!logo && cfg.brandKit && cfg.brandKit.iconSvg) {
-		fs.mkdirSync(destDir, { recursive: true })
-		fs.writeFileSync(path.join(destDir, "logo.svg"), cfg.brandKit.iconSvg, "utf8")
-		logo = `${webBase}/logo.svg`
-		gradient = Array.isArray(cfg.brandKit.gradient) ? cfg.brandKit.gradient : null
-	}
-
-	// 截图：visual/screenshots/ 里的真实截图；没有时用 OG 图作封面
-	const shotsDir = path.join(dir, "visual", "screenshots")
-	const screenshots = []
-	if (fs.existsSync(shotsDir)) {
-		const files = fs
-			.readdirSync(shotsDir)
-			.filter((f) => /\.(png|jpg|jpeg|webp)$/i.test(f))
-			.sort()
-		files.forEach((f, i) => {
-			const web = copyAsset([path.join(shotsDir, f)], path.join(destDir, "scrn"), `${String(i + 1).padStart(2, "0")}-${f}`, `${webBase}/scrn`)
-			if (web) screenshots.push({ src: web, caption: "" })
-		})
-	}
-	if (!screenshots.length) {
-		const og = copyAsset([path.join(dir, "visual", "og", "og-1200x630.png")], path.join(destDir, "scrn"), "01-og.png", `${webBase}/scrn`)
-		if (og) screenshots.push({ src: og, caption: "" })
-	}
-
-	const privacyMarkdown = readPrivacy(path.join(dir, "legal", "privacy-policy-en.md"))
-
-	return {
-		categoryLabel: cfg.category || "Web App",
-		logo,
-		gradient,
-		screenshots,
-		privacyMarkdown,
-		content,
-	}
-}
-
-function readPrivacy(p) {
-	if (!fs.existsSync(p)) return null
-	return stripFrontmatter(fs.readFileSync(p, "utf8")).trim() || null
-}
-
-// ---------- 主流程 ----------
-
-function main() {
-	if (!fs.existsSync(SOURCES_FILE)) {
-		console.error("找不到 data/portfolio-sources.json")
-		process.exit(1)
-	}
+async function main() {
 	const sources = readJson(SOURCES_FILE)
-	ensureEmptyDir(PUBLIC_DIR)
+	const prevBySlug = loadPrevious()
+	const stats = { built: [], carried: [], lost: [] }
+
+	fs.rmSync(BUILD_DIR, { recursive: true, force: true })
+	fs.mkdirSync(BUILD_DIR, { recursive: true })
 
 	const items = []
-	for (const item of sources.items) {
-		if (!fs.existsSync(item.sourceDir)) {
-			warn(`${item.slug}: 源目录不存在（${item.sourceDir}），跳过`)
-			continue
+	const seen = new Set()
+	const push = (it) => {
+		if (!it) return
+		if (seen.has(it.slug)) {
+			warn(`slug 重复：${it.slug}（后者被忽略）`)
+			return
 		}
+		seen.add(it.slug)
+		items.push(it)
+	}
+
+	// 1) xeviora 注册表自动同步
+	if (sources.xeviora) {
+		if (!fs.existsSync(sources.xeviora.portal)) {
+			if (STRICT) throw new Error("--strict：xeviora portal 目录不存在")
+			warn(`xeviora portal 目录不存在（${sources.xeviora.portal}），本批全部沿用上一版`)
+			// 上一版里 xeviora 来源的条目无法精确识别，保守起见沿用所有非显式条目
+			const explicitSlugs = new Set((sources.items || []).map((i) => i.slug))
+			for (const [slug, prev] of prevBySlug) {
+				if (!explicitSlugs.has(slug)) push(carryPrevious(slug, prevBySlug, stats))
+			}
+		} else {
+			console.log("• 自动同步 xeviora 产品注册表…")
+			const auto = await harvestXeviora(sources.xeviora, { buildDir: BUILD_DIR })
+			for (const it of auto) {
+				stats.built.push(it.slug)
+				push(it)
+			}
+			console.log(`  ↳ ${auto.length} 个产品`)
+		}
+	}
+
+	// 2) 显式条目
+	for (const item of sources.items || []) {
 		console.log(`• ${item.slug} (${item.type})`)
-		const destDir = path.join(PUBLIC_DIR, item.slug)
-		const webBase = `/assets/showcase/${item.slug}`
-
-		let built = null
-		if (item.type === "extension") built = buildExtension(item, destDir, webBase)
-		else if (item.type === "extension-inline") built = buildExtensionInline(item, destDir, webBase)
-		else if (item.type === "game") built = buildGame(item, destDir, webBase)
-		else if (item.type === "webapp") built = buildWebapp(item, destDir, webBase)
-		else warn(`${item.slug}: 未知 type ${item.type}`)
-
-		if (!built) continue
-
-		items.push({
-			slug: item.slug,
-			category: item.category,
-			type: item.type,
-			installUrl: item.installUrl || "",
-			...built,
-		})
+		push(await buildExplicitItem(item, prevBySlug, stats))
 	}
 
 	// 分类元数据（只输出有 items 的分类，保持 order）
@@ -558,10 +157,22 @@ function main() {
 		categories: cats,
 		items,
 	}
+
+	// 全部成功 → 原子替换素材目录与 JSON
+	fs.rmSync(PUBLIC_DIR, { recursive: true, force: true })
+	fs.mkdirSync(path.dirname(PUBLIC_DIR), { recursive: true })
+	fs.cpSync(BUILD_DIR, PUBLIC_DIR, { recursive: true })
+	fs.rmSync(BUILD_DIR, { recursive: true, force: true })
 	fs.writeFileSync(OUT_FILE, JSON.stringify(generated, null, "\t") + "\n", "utf8")
 
 	console.log(`\n✔ 写入 ${path.relative(ROOT, OUT_FILE)}：${items.length} 个条目，${cats.length} 个分类`)
+	console.log(`  新建/更新 ${stats.built.length}｜沿用上一版 ${stats.carried.length}｜丢失 ${stats.lost.length}`)
+	if (stats.carried.length) console.log(`  沿用：${stats.carried.join(", ")}`)
+	if (stats.lost.length) console.log(`  丢失：${stats.lost.join(", ")}`)
 	if (warnings.length) console.log(`  ${warnings.length} 条告警（见上）`)
 }
 
-main()
+main().catch((e) => {
+	console.error("生成失败：", e)
+	process.exitCode = 1
+})

@@ -60,25 +60,52 @@
 	"portfolios": {
 		"title": "作品集列表",
 		"viewPortfolio": "查看作品",
-		"viewPortfolioOnGithub": "在GitHub上查看作品",
 		"viewOnGithub": "在GitHub上查看",
 		"viewDetails": "查看详情",
-		"subtitle": "我打造的产品 —— 浏览器扩展、Web 应用与游戏。AI 时代，快速交付。",
+		"subtitle": "我发布过的一切——浏览器扩展、SaaS 应用、独立游戏与企业级客户项目。搜索、筛选、随意探索。",
 		"categories": {
 			"webapp": "Web 应用",
 			"extension": "浏览器扩展",
 			"game": "游戏",
-			"app": "应用"
+			"app": "应用",
+			"client": "客户与企业项目"
 		},
 		"install": "获取",
 		"comingSoon": "即将上线",
-		"itemsCount": "个",
+		"itemsCount": "个项目",
 		"highlights": "亮点",
 		"privacyPolicy": "隐私政策",
 		"backToShowcase": "返回作品集",
-		"moreTitle": "更多项目",
-		"moreDescription": "早期与企业级项目 —— 高铁仿真、教育云、交易系统等。",
-		"moreCta": "浏览全部项目"
+		"searchPlaceholder": "搜索项目、技术、关键词…",
+		"all": "全部",
+		"platformsLabel": "平台",
+		"techLabel": "技术",
+		"clearFilters": "清除筛选",
+		"noResults": "没有匹配的项目——试试清除部分筛选条件。",
+		"platforms": {
+			"web": "Web",
+			"extension": "扩展",
+			"desktop": "桌面",
+			"mobile": "移动",
+			"wechat": "微信"
+		},
+		"status": {
+			"live": "已上线",
+			"inDevelopment": "开发中",
+			"caseStudy": "案例研究",
+			"delivered": "已交付"
+		},
+		"links": {
+			"site": "官网",
+			"chromeStore": "Chrome 商店",
+			"steam": "Steam",
+			"demo": "在线试玩",
+			"appStore": "App Store",
+			"playStore": "Google Play",
+			"github": "GitHub"
+		},
+		"techStackTitle": "技术栈",
+		"plansTitle": "定价"
 	},
 	"skills": {
 		"title": "技能专长"
@@ -94,11 +121,42 @@
 		"title": "联系我",
 		"subtitle": "我可承接全职或兼职远程工作，也接快速的单次任务。说说你的项目，我会在 24 小时内回复你。",
 		"email": "邮箱",
-		"social": "与我联系"
+		"social": "与我联系",
+		"formTitle": "告诉我你的项目",
+		"formName": "你的称呼",
+		"formEmail": "你的邮箱",
+		"formProjectType": "项目类型",
+		"formBudget": "预算",
+		"formMessage": "你想做什么？",
+		"formMessagePlaceholder": "大致描述即可——目标、核心功能、时间要求…",
+		"formSend": "发送",
+		"formSending": "发送中…",
+		"formSuccess": "已发送！我会在 24 小时内回复你。",
+		"formError": "表单暂时无法发送——请改用下面的邮件按钮。",
+		"formFallbackCta": "用邮件发送",
+		"formMailtoOpened": "邮件客户端应该已经打开并填好内容了，直接点发送即可。如果没有反应，可以直接写信给我：",
+		"aboutProject": "关于：{name}",
+		"projectTypes": {
+			"webapp": "Web 应用 / SaaS",
+			"extension": "浏览器扩展",
+			"mobile": "移动应用",
+			"game": "游戏",
+			"ai": "AI / 自动化",
+			"other": "其他"
+		},
+		"budgets": {
+			"b0": "还不确定",
+			"b1": "$500 以内",
+			"b2": "$500 – $2,000",
+			"b3": "$2,000 – $10,000",
+			"b4": "$10,000 以上"
+		},
+		"hirePlatforms": "接单平台"
 	},
 	"header": {
 		"brandName": "ChinaDeveloper",
-		"tagline": "Tiger Liu - 资深全栈开发工程师"
+		"tagline": "Tiger Liu - 资深全栈开发工程师",
+		"hireMe": "雇用我"
 	},
 	"footer": {
 		"brandName": "Tiger Liu - China Developer",
@@ -114,5 +172,13 @@
 		"copyright": "版权所有。",
 		"builtWith": "使用 Next.js 构建 -",
 		"openSource": "开源"
+	},
+	"hire": {
+		"badge": "与我合作",
+		"title": "想要一个类似 {name} 的产品？",
+		"titleGeneric": "有想法要实现？",
+		"description": "我用 AI 快速交付生产级软件——Web 应用、浏览器扩展、移动应用和游戏——成本远低于外包公司。小任务数小时完成，复杂项目数天交付。",
+		"cta": "免费获取报价",
+		"or": "也可以在这里找到我："
 	}
 }

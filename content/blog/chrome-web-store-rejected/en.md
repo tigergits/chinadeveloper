@@ -194,6 +194,12 @@ source is how I eventually caught
 [a routing config that was silently doing nothing](/en/blog/nextjs-static-export-i18n/) on one of
 the companion sites.
 
+Two of these reference IDs turned into permanent changes rather than one-off fixes. Blue Argon is
+why I now [export PDF and Office files without shipping a library](/en/blog/chrome-extension-pdf-export/),
+and Purple Potassium is why every extension I write
+[asks for host permissions at runtime](/en/blog/chrome-extension-runtime-host-permissions/)
+instead of at install.
+
 One thing I still cannot measure: how long a review actually takes. The only intervals I have
 are between two rejection emails — five days and nineteen hours for ScrnCap, twenty-three
 hours for AI Chat Exporter — and both of those include however long I spent fixing the thing

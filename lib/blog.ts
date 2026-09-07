@@ -119,18 +119,28 @@ export function getAllBlogTags(): { tag: string; count: number }[] {
 	)
 }
 
-/** 同标签的其他文章，用于详情页底部的相关阅读 */
+/**
+ * 详情页底部的相关阅读：优先同标签，标签无交集时回退到最新文章。
+ * 回退是必要的——否则一篇标签独特的文章会变成没有任何出口的死胡同。
+ */
 export function getRelatedPosts(slug: string, limit = 3): BlogPost[] {
 	const current = getBlogPost(slug)
 	if (!current) return []
 
-	const scored = getAllBlogPosts()
-		.filter((p) => p.slug !== slug)
+	const others = getAllBlogPosts().filter((p) => p.slug !== slug)
+
+	const byTag = others
 		.map((p) => ({ post: p, shared: p.tags.filter((t) => current.tags.includes(t)).length }))
 		.filter((s) => s.shared > 0)
 		.sort((a, b) => b.shared - a.shared || b.post.date.localeCompare(a.post.date))
+		.map((s) => s.post)
 
-	return scored.slice(0, limit).map((s) => s.post)
+	if (byTag.length >= limit) return byTag.slice(0, limit)
+
+	// 补足：按日期倒序取尚未入选的
+	const picked = new Set(byTag.map((p) => p.slug))
+	const filler = others.filter((p) => !picked.has(p.slug))
+	return [...byTag, ...filler].slice(0, limit)
 }
 
 /** kebab-case 标签转展示文案：chrome-extensions → Chrome Extensions */

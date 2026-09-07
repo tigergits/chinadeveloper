@@ -189,6 +189,11 @@ The one habit that changed the most: when a notice names a file, I now assume th
 files. I search for the pattern across the whole bundle before resubmitting, because a second
 rejection for the same reference ID costs another review cycle and there is no partial credit.
 
+The same discipline pays off away from the store, too — reading the build output rather than the
+source is how I eventually caught
+[a routing config that was silently doing nothing](/en/blog/nextjs-static-export-i18n/) on one of
+the companion sites.
+
 One thing I still cannot measure: how long a review actually takes. The only intervals I have
 are between two rejection emails — five days and nineteen hours for ScrnCap, twenty-three
 hours for AI Chat Exporter — and both of those include however long I spent fixing the thing

@@ -23,6 +23,8 @@ export default function Header() {
     { href: `/${locale}/about`, label: t('about') },
     { href: `/${locale}/services`, label: t('services') },
     { href: `/${locale}/portfolios`, label: t('portfolios') },
+    // 博客是单语英文，任何语言下都指向 /en/blog
+    { href: `/en/blog`, label: t('blog') },
     { href: `/${locale}/skills`, label: t('skills') },
     { href: `/${locale}/contact`, label: t('contact') },
   ];

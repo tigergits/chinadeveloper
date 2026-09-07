@@ -111,7 +111,11 @@ export default async function LocaleLayout({
 				<ThemeProvider>
 					<NextIntlClientProvider messages={messages}>
 						<Header />
-						<main className="flex-1 flex flex-col max-w-7xl mx-auto px-8 py-4">{children}</main>
+						{/* w-full + min-w-0 缺一不可：
+					    mx-auto 的 auto 外边距会关闭 flex 的 cross-axis stretch，main 转而按内容宽度计算，
+					    于是宽表格/长代码行会把整页撑出横向滚动条（移动端尤其明显）。
+					    w-full 给回确定宽度，min-w-0 允许收缩，子级的 max-width/overflow-x 才会生效。 */}
+					<main className="flex-1 flex flex-col w-full min-w-0 max-w-7xl mx-auto px-8 py-4">{children}</main>
 						<Footer contactInfo={contactInfo} />
 						<CookieConsent />
 					</NextIntlClientProvider>

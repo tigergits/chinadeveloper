@@ -2,6 +2,7 @@ import { Feed } from 'feed';
 import { getAllContent } from '@/lib/content';
 import { locales, type Locale } from '@/i18n/request';
 import { getAllShowcaseItems, localizeShowcase } from '@/lib/showcase';
+import { getAllBlogPosts, BLOG_LOCALE } from '@/lib/blog';
 
 export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -29,6 +30,22 @@ export async function GET(
   });
 
   try {
+    // 博客文章（单语英文，只进英文 feed），按日期倒序排在最前
+    if (locale === BLOG_LOCALE) {
+      for (const post of getAllBlogPosts()) {
+        const url = `${baseUrl}/${BLOG_LOCALE}/blog/${post.slug}/`;
+        feed.addItem({
+          title: post.title,
+          id: url,
+          link: url,
+          description: post.description,
+          date: new Date(`${post.updated}T00:00:00Z`),
+          author: [{ name: 'Tiger Liu', link: baseUrl }],
+          category: post.tags.map((name) => ({ name })),
+        });
+      }
+    }
+
     // showcase 产品（自动采集）
     for (const item of getAllShowcaseItems()) {
       const c = localizeShowcase(item, locale as Locale);

@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && node scripts/prune-blog-locales.mjs",
     "start": "next start",
     "lint": "next lint",
     "gen:showcase": "node scripts/gen-showcase.mjs"

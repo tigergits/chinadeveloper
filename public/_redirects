@@ -11,3 +11,16 @@
 
 # more 页已并入主作品集网格
 /:locale/portfolios/more/  /:locale/portfolios/  301
+
+# 博客是单语英文：其余语言的 /blog 一律 301 到英文版
+# （配合 scripts/prune-blog-locales.mjs 删除这些语言下的静态产物）
+/zh-cn/blog  /en/blog/  301
+/zh-cn/blog/*  /en/blog/:splat  301
+/zh-tw/blog  /en/blog/  301
+/zh-tw/blog/*  /en/blog/:splat  301
+/es/blog  /en/blog/  301
+/es/blog/*  /en/blog/:splat  301
+/fr/blog  /en/blog/  301
+/fr/blog/*  /en/blog/:splat  301
+/ja/blog  /en/blog/  301
+/ja/blog/*  /en/blog/:splat  301

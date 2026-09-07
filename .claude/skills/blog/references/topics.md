@@ -21,7 +21,7 @@
 
 | 状态 | 标题草案 | targetKeyword | 一手事实（写不出就别开写） | 内链产品 |
 | --- | --- | --- | --- | --- |
-| idea | Every Reason Chrome Web Store Rejected My Extensions | `chrome web store rejected` | 需要：历次拒信**原文**、被拒次数、每次改了什么、过审耗时 | 多个 |
+| drafting | Chrome Web Store Rejected Me 7 Times in 9 Months → `content/blog/chrome-web-store-rejected/` | `chrome web store rejected` | ✅ 已齐：7 封拒信原文（2026-01-01 ~ 09-03）、4 个违规参考 ID、pdfobject 代码段原文、三份 manifest 前后对比、AI Chat Exporter 三版描述。**缺**：过审耗时（拒信间隔含修复时间，无法反推） | scrncap, ai-chat-exporter, reelcap, web-to-markdown |
 | idea | MV3 Service Worker Keeps Dying: What Actually Kept Mine Alive | `mv3 service worker keeps dying` | 需要：试过的几种保活方案、哪个失败了、线上才暴露的现象 | 待定 |
 | idea | The chrome.storage.sync Quota That Broke My Sync | `chrome.storage.sync quota exceeded` | 需要：报错原文、撞限时的数据量、最终的分片方案 | bookmark-commander |
 | idea | Writing Chrome Permission Justifications That Pass Review | `chrome extension permission justification` | 需要：真实提交过的 justification 文本、被打回的版本 vs 通过的版本 | 多个 |
@@ -68,4 +68,8 @@
 
 随手记下真实遇到的报错和问题，这是长尾词最好的来源——比任何关键词工具都准，因为它就是别人会去搜的原话。
 
-- （待补充：粘贴真实报错原文、审核拒信、用户提问）
+- Chrome Web Store 违规参考 ID（拒信里的代号，开发者会直接拿它去搜，竞争极低）：
+  `Purple Potassium` 未使用权限 · `Blue Argon` MV3 远程托管代码 · `Yellow Argon` 关键字垃圾 ·
+  `Red Nickel` 资源图模仿排名/宣传信息（"Free"/"New"/"#1"/"Best"/"Featured"）
+- 拒信原件存档：`C:\Users\tiger\Downloads\8f085e7c-06bf-4451-8993-0ba8a66acb61`（7 封，2026-01-01 ~ 09-03）
+- （继续补充：真实报错原文、审核拒信、用户提问）

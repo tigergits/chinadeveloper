@@ -257,3 +257,21 @@
   @apply border-border my-8;
 }
 
+
+/* 博客正文专用：宽表格在窄屏内部横向滚动，页面本身不产生横向滚动条。
+   只挂在 .blog-content 上，作品集页的 .markdown-content 表格行为不变。 */
+.blog-content table {
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* 引用块用于原文摘录（拒信、商店描述），保持等宽可读、不斜体 */
+.blog-content blockquote {
+  @apply not-italic;
+}
+
+.blog-content h2 {
+  @apply scroll-mt-24;
+}

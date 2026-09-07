@@ -41,3 +41,6 @@ next-env.d.ts
 /REQUEST.md
 /package-lock.json
 /pnpm-lock.yaml
+
+# Playwright MCP 截图/快照产物
+.playwright-mcp/

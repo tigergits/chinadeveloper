@@ -54,7 +54,21 @@ description: chinadeveloper.net 博客写作管线——出选题、挖关键词
 4. 先出**大纲**给用户确认（H2 列表 + 每节要放哪条一手事实），再写正文。
 5. 写正文。严格按 `voice.md` 的禁令写，不是写完再改。
 6. `node .claude/skills/blog/scripts/lint-post.mjs <slug>` 自检，修到全绿。
-7. 报告：目标词、字数、内链了哪些产品、哪几条一手事实。
+7. **生成封面图**（列表页和 OG 都用它）：
+
+   ```
+   node .claude/skills/blog/scripts/gen-cover.mjs <slug> --ledger "2026-01-01|Purple Potassium,..."
+   ```
+
+   封面渲染文章的**真实数据**，不做装饰。三选一：
+   - `--ledger "左|右,..."` — 首选。带日期的记录列表（拒信、里程碑、版本），左列等宽字体，
+     右列名称首个单词若是颜色词（purple/blue/yellow/red/green/orange）会自动配色圆点
+   - `--stat "7|rejections"` — 只有一个关键数字时
+   - `--chips "Plasmo,WXT"` — 无日期的并列项（对比类文章）
+
+   都不给就只排标题。**列表页 featured 卡会整幅显示这张图**，所以图里别放会被裁掉的关键信息。
+
+8. 报告：目标词、字数、内链了哪些产品、哪几条一手事实。
 
 ### 分支 4：去 AI 味 / 润色已有稿
 

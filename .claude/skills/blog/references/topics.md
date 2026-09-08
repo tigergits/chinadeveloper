@@ -33,7 +33,7 @@
 
 | 状态 | 标题草案 | targetKeyword | 一手事实 | 内链产品 |
 | --- | --- | --- | --- | --- |
-| idea | 17 Chrome Extensions in 12 Months: The Actual Numbers | `shipping chrome extensions solo` | 需要：真实安装量、收入、时间线、哪几个是失败的 | xeviora |
+| idea | 17 Chrome Extensions in 12 Months: The Actual Numbers | `shipping chrome extensions solo` | 部分素材已被 `monetize-free-chrome-extension` 用掉（101,347/$0、筛选规则、CWS 重复功能条款）。**剩余需要**：17 个产品的完整数字表（用户数/上线日期/定价）、收入、哪几个是失败的 | xeviora |
 | idea | One Monorepo, Seventeen Extensions: The Layout | `chrome extension monorepo` | 需要：真实目录结构、共享了什么、哪次重构做错了 | xeviora |
 | idea | 30 Years In, Here's Where Claude Code Actually Fails Me | `claude code workflow` | 需要：具体失败案例，**不能是软文**——负面细节才是可信度来源 | — |
 
@@ -65,13 +65,14 @@
 | 2026-09-07 | `chrome-web-store-rejected` | pitfall | `chrome web store rejected` |
 | 2026-09-07 | `nextjs-static-export-i18n` | howto | `next.js static export i18n` |
 | 2026-09-08 | `chrome-extension-pdf-export` | howto | `chrome extension pdf export` |
+| 2026-09-08 | `monetize-free-chrome-extension` | build-in-public | `monetize a free chrome extension` |
 | 2026-09-09 | `chrome-extension-runtime-host-permissions` | howto | `optional_host_permissions` |
 | 2026-09-10 | `mv3-offscreen-tab-recording` | howto | `mv3 offscreen document` |
 
 **内链集群**：首篇（拒信）是枢纽，Blue Argon → `chrome-extension-pdf-export`，
-Purple Potassium → `chrome-extension-runtime-host-permissions`，五篇两两互链。
+Purple Potassium → `chrome-extension-runtime-host-permissions`，重复功能条款 → `monetize-free-chrome-extension`，六篇两两互链。
 
-**待办**：GSC 提交 5 条 URL；30 天后看 query 报告，按真实曝光词补写小节。
+**待办**：GSC 提交 6 条 URL；30 天后看 query 报告，按真实曝光词补写小节。
 
 ---
 

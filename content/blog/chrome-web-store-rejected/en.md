@@ -2,7 +2,7 @@
 title: "Chrome Web Store Rejected Me 7 Times in 9 Months"
 description: "Chrome Web Store rejected my extensions seven times in nine months. Every notice, the exact code and copy they flagged, and what I changed to pass."
 date: 2026-09-07
-updated: 2026-09-07
+updated: 2026-09-08
 type: pitfall
 targetKeyword: "chrome web store rejected"
 secondaryKeywords:
@@ -199,6 +199,13 @@ why I now [export PDF and Office files without shipping a library](/en/blog/chro
 and Purple Potassium is why every extension I write
 [asks for host permissions at runtime](/en/blog/chrome-extension-runtime-host-permissions/)
 instead of at install.
+
+All seven of these cost me days. None of them ever put an existing listing at risk, which I
+did not appreciate until I read a different section of the same rulebook: the duplicate
+functionality clause reaches the developer account and its affiliates, not just the
+submission in front of it. That is the reason
+[I never shipped a Pro version of my most-installed extension](/en/blog/monetize-free-chrome-extension/) —
+a rejection costs a review cycle, an account-level enforcement costs the install base.
 
 One thing I still cannot measure: how long a review actually takes. The only intervals I have
 are between two rejection emails — five days and nineteen hours for ScrnCap, twenty-three

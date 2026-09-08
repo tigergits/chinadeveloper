@@ -1,5 +1,5 @@
 {
-	"generatedOn": "2026-08-29",
+	"generatedOn": "2026-09-08",
 	"locales": [
 		"en",
 		"zh-cn",
@@ -22,8 +22,12 @@
 			"order": 3
 		},
 		{
-			"key": "client",
+			"key": "app",
 			"order": 4
+		},
+		{
+			"key": "client",
+			"order": 5
 		}
 	],
 	"items": [
@@ -1079,7 +1083,7 @@
 			"category": "extension",
 			"type": "extension",
 			"status": "live",
-			"pricing": "free",
+			"pricing": "freemium",
 			"platforms": [
 				"extension",
 				"web"
@@ -1090,7 +1094,7 @@
 				"Plasmo",
 				"TypeScript",
 				"Tailwind CSS",
-				"Playwright"
+				"Prisma"
 			],
 			"links": {
 				"site": "https://scrncap.xeviora.com",
@@ -1103,25 +1107,33 @@
 			"screenshots": [
 				{
 					"src": "/assets/showcase/scrncap/scrn/01.webp",
-					"caption": ""
+					"caption": "Four capture modes, one keystroke away"
 				},
 				{
 					"src": "/assets/showcase/scrncap/scrn/02.webp",
-					"caption": ""
+					"caption": "Annotate right after the shot — arrows, blur and numbered steps"
 				},
 				{
 					"src": "/assets/showcase/scrncap/scrn/03.webp",
-					"caption": ""
+					"caption": "Pro: drop it on a background, round the corners, add a window frame"
+				},
+				{
+					"src": "/assets/showcase/scrncap/scrn/04.webp",
+					"caption": "Pro: capture every tab you tick, or a whole list of addresses"
+				},
+				{
+					"src": "/assets/showcase/scrncap/scrn/05.webp",
+					"caption": "Your settings — and the optional account that unlocks Pro"
 				}
 			],
-			"privacyMarkdown": "# Privacy Policy — ScrnCap\n\n_Last updated: 2026-06-28_\n\nScrnCap (\"the extension\") is a screenshot tool that runs entirely inside your web browser. It has no account system and no backend server.\n\n## Data we collect\n\n**None.** ScrnCap does not collect, store on any server, transmit, share, or sell any personal data, browsing history, or screenshot content. There is no sign-in, no analytics, and no telemetry. Every screenshot you take is captured, annotated, and exported locally on your own device. Settings are stored locally in your browser via the standard extension storage and never leave your machine.\n\n## Permissions and why they are needed\n\n- **activeTab** — Grants one-time access to the current tab only when you trigger a capture, so its pixels can be read for the screenshot.\n- **scripting** — Injects the measurement, scrolling, and selection-overlay helpers into the page on demand during a capture. ScrnCap does not run a persistent content script.\n- **tabs** — Reads tab titles/URLs and switches the active tab when you batch-capture several open tabs in sequence.\n- **storage** — Persists your settings and hands the captured image to the local preview/editor page.\n- **unlimitedStorage** — Lets large full-page or batch captures be held locally without hitting the small default storage quota.\n- **contextMenus** — Adds right-click capture entries on the page.\n- **downloads** — Saves the exported image or PDF to your Downloads folder.\n- **Host access (`<all_urls>`)** — Required so capture (and the capture helpers) can work on whatever page you are on; full-page, region, and fixed-size modes need to read and scroll the current page. Access happens only when you start a capture.\n\n## Remote code\n\nScrnCap does **not** load or execute any remote code. All JavaScript and WebAssembly are bundled in the extension package.\n\n## Changes\n\nIf this policy changes, the \"Last updated\" date above will change accordingly. The current version is published at: https://example.com/scrncap/privacy\n\n## Contact\n\nQuestions? Contact tiger.hu.liu@gmail.com",
+			"privacyMarkdown": "# Privacy Policy — ScrnCap\n\n_Last updated: 2026-09-05_\n\n> **This file is a mirror.** The authoritative, publicly hosted policy lives at\n> <https://scrncap.xeviora.com/privacy> and is generated from\n> `frontend/src/config/privacy.ts`. That URL is the one submitted to the Chrome Web\n> Store. Change the site copy first, then re-sync this file — never the other way round.\n\nScrnCap (\"the extension\") is a screenshot tool that runs entirely inside your web browser. Every screenshot is captured, annotated and exported on your own device — including the paid features. No image ever reaches our servers. The website (scrncap.xeviora.com) hosts three things and nothing more: an optional account, checkout, and a licence lookup the extension calls once you have signed in.\n\n## Data we collect\n\n**No image data, ever.** ScrnCap does not collect, store on any server, transmit, share, or sell any screenshot content or browsing history. Every screenshot you take — free or paid — is captured, annotated and exported locally on your own device. Your settings, capture history and project files stay in your browser via the standard extension storage and never leave your machine.\n\n**If you never create an account, the extension never contacts us.** Capturing, annotating and exporting work with no network access at all. The first request to our servers only happens after you click a sign-in or restore-purchase button yourself.\n\nIf you do create an account, we store your email address, a password hash (or the identifier from the social provider you chose), and your subscription status. That is the entire list — we do not count or record how you use the extension.\n\n## Accounts and subscriptions\n\nAn account is optional and is only needed to unlock the paid features. Sign-in is handled on the website; the session cookie is set on scrncap.xeviora.com only and is never shared with other Xeviora sites.\n\nPayments are processed by **Paddle.com Market Ltd**, which acts as the merchant of record. We never see or store your card details. Paddle sends us the resulting subscription status so the paid features can be unlocked on your account.\n\nWhen the extension checks whether your account is entitled to the paid features, it sends a single request carrying only your session cookie. That request contains **no page URL, no page content and no image data**. The reply is your plan and its expiry — nothing else.\n\nYou can delete your account by writing to the contact address below; deleting it removes your email, session and subscription rows from our database.\n\n## Permissions and why they are needed\n\n- **activeTab** — Grants one-time access to the current tab only when you trigger a capture, so its pixels can be read for the screenshot.\n- **scripting** — Injects the measurement, scrolling, and selection-overlay helpers into the page on demand during a capture. ScrnCap does not run a persistent content script.\n- **tabs** — Reads tab titles/URLs and switches the active tab when you batch-capture several open tabs in sequence.\n- **storage** — Persists your settings and hands the captured image to the local preview/editor page.\n- **unlimitedStorage** — Lets large full-page or batch captures be held locally without hitting the small default storage quota.\n- **contextMenus** — Adds right-click capture entries on the page.\n- **downloads** — Saves the exported image or PDF to your Downloads folder.\n- **Host access (`<all_urls>`)** — Required so capture (and the temporary capture helpers) can work on whatever page you are on; full-page, region and fixed-size modes need to read and scroll the current page. Access happens only when you start a capture. The same permission carries the signed-in licence check to scrncap.xeviora.com, which sends nothing but your session cookie.\n\n## Analytics and tracking\n\nScrnCap contains no analytics, no advertising scripts and no third-party trackers. Your theme and language preference are kept in local browser storage and are never sent anywhere.\n\n## Remote code\n\nScrnCap does **not** load or execute any remote code. All JavaScript and WebAssembly are bundled in the extension package.\n\n## Changes\n\nIf this policy changes, the \"Last updated\" date above will change accordingly. The current version is always published at: <https://scrncap.xeviora.com/privacy>\n\n## Contact\n\nQuestions? Contact tiger.hu.liu@gmail.com",
 			"content": {
 				"en": {
 					"name": "ScrnCap – Screenshot & Full Page Capture",
 					"tagline": "Screenshot any page. Then make it yours.",
-					"short": "Capture the visible area, the whole scrolling page, a region you draw or an exact size — then crop, annotate and blur right where you took it, and export to PNG, JPG, WEBP or PDF. Nothing is ever uploaded.",
-					"long": "Taking the same web screenshots over and over — then cropping, marking up and converting them by hand — is slow. ScrnCap does the whole loop in your browser: capture, annotate, export. No account, no upload, nothing leaves your device.\n\n- 🖥️ Four capture modes — visible area, full scrolling page (stitched), a selected region, or a fixed size like 1920×1080 plus custom sizes.\n- ✏️ Built-in annotator — crop, arrows, shapes, pen, text, highlight, mosaic/blur, numbered steps, undo & redo.\n- 💾 Export anywhere — PNG, JPG, WEBP, PDF, copy to clipboard, or print.\n- 🗂️ Batch multiple tabs — download as a ZIP or a single multi-page PDF.\n- 🤖 Send to AI — copy and open ChatGPT, Claude or Gemini, then paste.\n- 🔒 100% offline & no login — no account, no backend, no tracking.\n\nGreat for designers, QA engineers, support agents, marketers and researchers.",
-					"metaDescription": "Free Chrome extension for full page, region, visible-area and fixed-size screenshots. Annotate and export to PNG, JPG, WEBP or PDF. 100% offline, no account.",
+					"short": "Capture the visible area, the whole scrolling page, a region you draw or an exact size — then crop, annotate and blur right where you took it, and export to PNG, JPG, WEBP or PDF. Capturing stays free, offline and account-free; Pro adds beautified exports, batch capture and project files, all composed in your browser.",
+					"long": "Taking the same web screenshots over and over — then cropping, marking up and converting them by hand — is slow. ScrnCap does the whole loop inside your browser: capture, annotate, export.\n\nGenuinely offline: capturing, annotating and exporting need no account and make no network request at all.\n\n- 🖥️ Four capture modes — visible area, full scrolling page (stitched), a selected region, or a fixed size like 1920×1080 plus custom sizes.\n- ✏️ Built-in annotator — crop, arrows, shapes, pen, text, highlight, mosaic/blur, numbered steps, undo & redo.\n- 💾 Export anywhere — save as an image (PNG/JPG/WEBP) or a PDF, copy to the clipboard, or print.\n- 🤖 Send to AI — copy the shot and open your preferred AI chat site, then paste and ask.\n- ⌨️ Keyboard shortcuts and right-click capture.\n- 🌍 Available in 27 interface languages.\n\nVersion 1.0.0 adds — beautified export (gradient backgrounds, rounded corners, shadow, a window frame, social sizes such as 1200×630); batch capture of your open tabs or a whole list of addresses into a ZIP or one multi-page PDF, optionally at desktop/tablet/mobile widths in the same run; your logo as an automatic watermark; hiding cookie banners and sticky bars before a full-page shot; re-editable project files; and a searchable local capture history. These are the optional paid extras. They run in your browser exactly like the rest of the extension — no screenshot is ever uploaded — and everything listed above stays open to everyone.\n\nPrivacy: no screenshot ever leaves your device, on any plan. No analytics, no trackers. The optional account stores only your email address and your subscription status. Full policy: https://scrncap.xeviora.com/privacy\n\nGreat for designers, QA engineers, support agents, marketers and researchers.",
+					"metaDescription": "Free Chrome extension for full page, region and fixed-size screenshots. Annotate and export to PNG, JPG, WEBP or PDF offline; Pro adds beautified batch exports.",
 					"features": [
 						{
 							"emoji": "🖥️",
@@ -1139,28 +1151,28 @@
 							"desc": "Save as PNG, JPG, WEBP or PDF, copy to clipboard, or send straight to the system print dialog."
 						},
 						{
-							"emoji": "🗂️",
-							"title": "Batch multiple tabs",
-							"desc": "Capture many open tabs in one go and download them as a ZIP archive or a single multi-page PDF."
-						},
-						{
 							"emoji": "🤖",
 							"title": "Send to AI",
-							"desc": "Copy the shot to the clipboard and open ChatGPT, Claude or Gemini in one click — paste and ask."
+							"desc": "Copy the shot to the clipboard and open your preferred AI chat site in one click — paste and ask."
 						},
 						{
 							"emoji": "🔒",
-							"title": "100% offline & no login",
-							"desc": "Everything runs in your browser. No account, no backend, no tracking — nothing ever leaves your device."
+							"title": "Works fully offline",
+							"desc": "Capturing, annotating and exporting need no account and no network — the extension makes no request at all until you choose to sign in."
+						},
+						{
+							"emoji": "✨",
+							"title": "Optional Pro",
+							"desc": "Beautified exports (gradient backgrounds, rounded corners, shadow, browser frame, social sizes), batch capture of your tabs or a URL list, your logo as a watermark, cookie-banner removal before full-page shots, and re-editable project files. Pro runs in your browser too — no screenshot is ever uploaded."
 						}
 					]
 				},
 				"zh-cn": {
 					"name": "ScrnCap – 网页截图与整页捕获",
 					"tagline": "截下任意页面，然后随你怎么改。",
-					"short": "可见区域、整页滚动拼接、自选区域、精确尺寸，四种取景任你挑；截完就在原地裁剪、标注、打码，再导出成 PNG、JPG、WEBP 或 PDF。全程不上传。",
-					"long": "一遍遍地截同样的网页，再手动裁剪、标注、转格式，太慢了。ScrnCap 把整个流程都放进浏览器：截图、标注、导出。无需账号，无需上传，数据不出本机。\n\n- 🖥️ 四种截图模式——可见区域、整页滚动拼接、自选区域，或 1920×1080 等固定尺寸及自定义尺寸。\n- ✏️ 内置标注器——裁剪、箭头、形状、画笔、文字、高亮、马赛克/模糊、序号标注、撤销与重做。\n- 💾 随处导出——PNG、JPG、WEBP、PDF，复制到剪贴板或直接打印。\n- 🗂️ 批量多标签页——打包 ZIP 或合成多页 PDF。\n- 🤖 发送到 AI——复制并打开 ChatGPT、Claude 或 Gemini，粘贴即问。\n- 🔒 100% 离线、无需登录——无账号、无后端、无跟踪。\n\n适合设计师、测试工程师、客服、营销与研究人员。",
-					"metaDescription": "免费 Chrome 扩展：可见区域、整页长截图、自选区域、固定尺寸四种模式，截完就地标注，导出 PNG / JPG / WEBP / PDF。100% 离线，无需账号。",
+					"short": "可见区域、整页滚动拼接、自选区域、精确尺寸，四种取景任你挑；截完就在原地裁剪、标注、打码，再导出成 PNG、JPG、WEBP 或 PDF。截图永久免费、免账号、全程离线；Pro 再加美化导出、批量水印与可再编辑的工程文件，同样只在你的浏览器里合成。",
+					"long": "一遍遍地截同样的网页，再手动裁剪、标注、转格式，太慢了。ScrnCap 把整个流程都放进浏览器：截图、标注、导出。\n\n真正离线：截图、标注、导出都不需要账号，也不会发出任何网络请求。\n\n- 🖥️ 四种截图模式——可见区域、整页滚动拼接、自选区域，或 1920×1080 等固定尺寸及自定义尺寸。\n- ✏️ 内置标注器——裁剪、箭头、形状、画笔、文字、高亮、马赛克/模糊、序号标注、撤销与重做。\n- 💾 随处导出——存为图片（PNG/JPG/WEBP）或 PDF，复制到剪贴板，或直接打印。\n- 🤖 发送到 AI——复制截图后一键打开你常用的 AI 对话站，粘贴即问。\n- ⌨️ 支持快捷键与右键菜单截图。\n- 🌍 提供 27 种界面语言。\n\n1.0.0 加入——美化导出（渐变背景、圆角、投影、窗口外框，以及 1200×630 等社媒尺寸）；批量截图，把打开的标签页或一整列网址打包成 ZIP 或合成多页 PDF，还可在同一次运行里按桌面/平板/手机三种宽度出图；用自己的 logo 自动打水印；整页截图前先隐藏 cookie 横幅与吸顶栏；可再编辑的工程文件；以及可搜索的本地截图历史。以上属于可选的付费功能，它们和扩展的其他部分一样全在你的浏览器里运行——截图从不上传——而上面列出的功能始终人人可用。\n\n隐私：无论哪个方案，截图都不会离开你的设备。没有分析统计，没有跟踪器。可选账号只保存你的邮箱地址与订阅状态。完整政策：https://scrncap.xeviora.com/privacy\n\n适合设计师、测试工程师、客服、营销与研究人员。",
+					"metaDescription": "免费 Chrome 扩展：可见区域、整页长截图、自选区域、固定尺寸四种模式，截完就地标注，离线导出 PNG / JPG / WEBP / PDF；Pro 加美化与批量导出。",
 					"features": [
 						{
 							"emoji": "🖥️",
@@ -1178,13 +1190,13 @@
 							"desc": ""
 						},
 						{
-							"emoji": "🗂️",
+							"emoji": "🤖",
 							"title": "一键发给 AI：自动复制截图并打开 ChatGPT、Claude 或 Gemini，粘贴即可",
 							"desc": ""
 						},
 						{
-							"emoji": "🤖",
-							"title": "100% 离线——不用账号、没有服务器，截图永远不离开你的设备",
+							"emoji": "🔒",
+							"title": "Pro 解锁美化导出、URL 列表批量截图加自有水印、可再编辑的 .scrncap 工程文件——每一像素都在你的浏览器里合成，图像从不上传",
 							"desc": ""
 						}
 					]
@@ -1192,9 +1204,9 @@
 				"es": {
 					"name": "ScrnCap – Captura de pantalla y de página completa",
 					"tagline": "Captura cualquier página. Y hazla tuya.",
-					"short": "Captura el área visible, la página entera con desplazamiento, una región que dibujas o un tamaño exacto; después recorta, anota y difumina en el mismo sitio y exporta a PNG, JPG, WEBP o PDF. Nada se sube nunca.",
-					"long": "Hacer las mismas capturas web una y otra vez —y luego recortar, marcar y convertir a mano— es lento. ScrnCap hace todo el ciclo en tu navegador: capturar, anotar, exportar. Sin cuenta, sin subidas, nada sale de tu dispositivo.\n\n- 🖥️ Cuatro modos de captura: área visible, página completa (unida), una región seleccionada o un tamaño fijo como 1920×1080 y tamaños propios.\n- ✏️ Editor de anotaciones: recorte, flechas, formas, lápiz, texto, resaltado, mosaico/desenfoque, pasos numerados, deshacer y rehacer.\n- 💾 Exporta a todo: PNG, JPG, WEBP, PDF, copia al portapapeles o imprime.\n- 🗂️ Varias pestañas a la vez: descarga un ZIP o un único PDF de varias páginas.\n- 🤖 Enviar a IA: copia y abre ChatGPT, Claude o Gemini, y pega.\n- 🔒 100% local y sin inicio de sesión: sin cuenta, sin servidor, sin rastreo.\n\nIdeal para diseñadores, QA, soporte, marketing e investigación.",
-					"metaDescription": "Extensión gratuita de Chrome: captura la página completa, una región o un tamaño fijo, anota y exporta a PNG, JPG, WEBP o PDF. 100 % sin conexión.",
+					"short": "Captura el área visible, la página entera con desplazamiento, una región que dibujas o un tamaño exacto; después recorta, anota y difumina en el mismo sitio y exporta a PNG, JPG, WEBP o PDF. Capturar es gratis, sin conexión y sin cuenta; Pro añade exportaciones embellecidas, capturas por lotes con tu marca de agua y archivos de proyecto reeditables, todo compuesto en tu navegador.",
+					"long": "Hacer una y otra vez las mismas capturas de páginas web — y luego recortarlas, marcarlas y convertirlas a mano — es lento. ScrnCap hace todo el ciclo dentro de tu navegador: capturar, anotar, exportar.\n\nRealmente sin conexión: capturar, anotar y exportar no requieren cuenta y no hacen ninguna petición de red.\n\n- 🖥️ Cuatro modos de captura — área visible, página completa con desplazamiento (unida), una región que dibujas, o un tamaño fijo como 1920×1080 más tus propios tamaños.\n- ✏️ Anotador integrado — recorte, flechas, formas, lápiz, texto, resaltado, mosaico/desenfoque, pasos numerados, deshacer y rehacer.\n- 💾 Exporta donde quieras — guarda como imagen (PNG/JPG/WEBP) o PDF, copia al portapapeles o imprime.\n- 🤖 Enviar a la IA — copia la captura y abre tu sitio de chat de IA preferido para pegarla y preguntar.\n- ⌨️ Atajos de teclado y captura desde el menú contextual.\n- 🌍 Disponible en 27 idiomas de interfaz.\n\nLa versión 1.0.0 añade — exportación embellecida (fondos degradados, esquinas redondeadas, sombra, marco de ventana y tamaños para redes como 1200×630); captura por lotes de tus pestañas abiertas o de una lista entera de direcciones, en un ZIP o en un solo PDF de varias páginas, opcionalmente con anchos de escritorio, tableta y móvil en la misma pasada; tu logotipo como marca de agua automática; ocultar avisos de cookies y barras fijas antes de una captura de página completa; archivos de proyecto reeditables; y un historial local de capturas con búsqueda. Todo esto son los extras de pago opcionales. Funcionan en tu navegador igual que el resto de la extensión — ninguna captura se sube nunca — y todo lo anterior sigue abierto a todo el mundo.\n\nPrivacidad: ninguna captura sale de tu dispositivo, sea cual sea el plan. Sin analíticas ni rastreadores. La cuenta opcional solo guarda tu correo electrónico y el estado de tu suscripción. Política completa: https://scrncap.xeviora.com/privacy\n\nIdeal para diseñadores, ingenieros de QA, agentes de soporte, especialistas en marketing e investigadores.",
+					"metaDescription": "Extensión de Chrome: captura la página completa, una región o un tamaño fijo, anota y exporta a PNG, JPG, WEBP o PDF sin conexión. Pro: lotes y marca de agua.",
 					"features": [
 						{
 							"emoji": "🖥️",
@@ -1212,13 +1224,13 @@
 							"desc": ""
 						},
 						{
-							"emoji": "🗂️",
+							"emoji": "🤖",
 							"title": "Envía a una IA con un clic: copia la captura y abre ChatGPT, Claude o Gemini listo para pegar",
 							"desc": ""
 						},
 						{
-							"emoji": "🤖",
-							"title": "100 % sin conexión: sin cuenta ni servidor, las capturas no salen de tu equipo",
+							"emoji": "🔒",
+							"title": "Pro añade exportaciones embellecidas, capturas por lotes desde una lista de URL con tu marca de agua y archivos .scrncap reeditables: todo se compone en tu navegador y nada se sube",
 							"desc": ""
 						}
 					]
@@ -1226,9 +1238,9 @@
 				"fr": {
 					"name": "ScrnCap – Capture d'écran et de page entière",
 					"tagline": "Capturez n'importe quelle page. Puis faites-la vôtre.",
-					"short": "Capturez la zone visible, la page entière avec défilement, une région que vous dessinez ou une taille précise, puis recadrez, annotez et floutez sur place, et exportez en PNG, JPG, WEBP ou PDF. Rien n'est jamais envoyé en ligne.",
-					"long": "Refaire sans cesse les mêmes captures web — puis rogner, annoter et convertir à la main — c'est lent. ScrnCap fait toute la boucle dans votre navigateur : capturer, annoter, exporter. Sans compte, sans envoi, rien ne quitte votre appareil.\n\n- 🖥️ Quatre modes de capture : zone visible, page entière (assemblée), région sélectionnée ou taille fixe comme 1920×1080 et tailles personnalisées.\n- ✏️ Éditeur d'annotation : recadrage, flèches, formes, stylo, texte, surlignage, mosaïque/flou, étapes numérotées, annuler et rétablir.\n- 💾 Export partout : PNG, JPG, WEBP, PDF, copie dans le presse-papiers ou impression.\n- 🗂️ Plusieurs onglets en lot : téléchargez un ZIP ou un seul PDF multipage.\n- 🤖 Envoyer à l'IA : copiez et ouvrez ChatGPT, Claude ou Gemini, puis collez.\n- 🔒 100% local et sans connexion : pas de compte, pas de serveur, pas de suivi.\n\nParfait pour les designers, QA, support, marketing et recherche.",
-					"metaDescription": "Extension Chrome gratuite : capturez une page entière, une région ou une taille fixe, annotez, puis exportez en PNG, JPG, WEBP ou PDF. 100 % hors ligne.",
+					"short": "Capturez la zone visible, la page entière avec défilement, une région que vous dessinez ou une taille précise, puis recadrez, annotez et floutez sur place, et exportez en PNG, JPG, WEBP ou PDF. La capture reste gratuite, hors ligne et sans compte ; Pro ajoute les exports embellis, les lots avec votre filigrane et des fichiers de projet rééditables, calculés eux aussi dans votre navigateur.",
+					"long": "Reprendre encore et encore les mêmes captures de pages web — puis les rogner, les annoter et les convertir à la main — prend du temps. ScrnCap fait toute la boucle dans votre navigateur : capturer, annoter, exporter.\n\nRéellement hors ligne : capturer, annoter et exporter ne demandent aucun compte et n'émettent aucune requête réseau.\n\n- 🖥️ Quatre modes de capture — zone visible, page entière avec défilement (assemblée), une région que vous tracez, ou une taille fixe comme 1920×1080 ainsi que vos tailles personnalisées.\n- ✏️ Éditeur d'annotation intégré — recadrage, flèches, formes, stylo, texte, surligneur, mosaïque/flou, étapes numérotées, annuler et rétablir.\n- 💾 Exportez partout — enregistrez en image (PNG/JPG/WEBP) ou en PDF, copiez dans le presse-papiers, ou imprimez.\n- 🤖 Envoyer à l'IA — copiez la capture et ouvrez le site de chat IA de votre choix pour la coller et poser votre question.\n- ⌨️ Raccourcis clavier et capture par clic droit.\n- 🌍 Disponible en 27 langues d'interface.\n\nLa version 1.0.0 ajoute — export embelli (arrière-plans dégradés, coins arrondis, ombre, cadre de fenêtre et formats sociaux comme 1200×630) ; capture par lots de vos onglets ouverts ou d'une liste entière d'adresses, en ZIP ou en un seul PDF multipage, et si vous le souhaitez aux largeurs bureau, tablette et mobile dans la même passe ; votre logo en filigrane automatique ; masquage des bandeaux de cookies et des barres fixes avant une capture pleine page ; des fichiers de projet rééditables ; et un historique local de captures avec recherche. Ce sont les extras payants optionnels. Ils s'exécutent dans votre navigateur exactement comme le reste de l'extension — aucune capture n'est jamais envoyée — et tout ce qui précède reste ouvert à tous.\n\nConfidentialité : aucune capture ne quitte votre appareil, quelle que soit la formule. Aucune analyse, aucun traqueur. Le compte optionnel ne stocke que votre adresse e-mail et l'état de votre abonnement. Politique complète : https://scrncap.xeviora.com/privacy\n\nParfait pour les designers, les ingénieurs QA, les agents de support, les marketeurs et les chercheurs.",
+					"metaDescription": "Extension Chrome : capturez une page entière, une région ou une taille fixe, annotez et exportez en PNG, JPG, WEBP ou PDF hors ligne. Pro : lots et filigrane.",
 					"features": [
 						{
 							"emoji": "🖥️",
@@ -1246,13 +1258,13 @@
 							"desc": ""
 						},
 						{
-							"emoji": "🗂️",
+							"emoji": "🤖",
 							"title": "Envoyer à une IA en un clic : la capture est copiée et ChatGPT, Claude ou Gemini s'ouvre",
 							"desc": ""
 						},
 						{
-							"emoji": "🤖",
-							"title": "100 % hors ligne : sans compte ni serveur, vos captures ne quittent pas votre appareil",
+							"emoji": "🔒",
+							"title": "Pro ajoute les exports embellis, la capture par lots depuis une liste d'URL avec votre filigrane et les fichiers de projet .scrncap rééditables — tout est composé dans votre navigateur, rien n'est envoyé",
 							"desc": ""
 						}
 					]
@@ -1260,9 +1272,9 @@
 				"ja": {
 					"name": "ScrnCap – スクリーンショット＆ページ全体キャプチャ",
 					"tagline": "どのページも撮って、その場で仕上げる。",
-					"short": "表示範囲、スクロールするページ全体、自分で囲んだ範囲、あるいは正確なサイズ ——撮ったその場で切り抜き、注釈、ぼかしまで済ませて、PNG・JPG・WEBP・PDF に書き出せます。アップロードは一切ありません。",
-					"long": "同じウェブのスクショを何度も撮り、手作業で切り抜き・注釈・変換するのは大変です。ScrnCap は撮影・注釈・書き出しのすべてをブラウザー内で完結。アカウント不要、アップロードなし、データは端末から出ません。\n\n- 🖥️ 4つの撮影モード：表示領域、ページ全体（スクロール結合）、範囲選択、1920×1080 などの固定サイズとカスタムサイズ。\n- ✏️ 内蔵の注釈ツール：トリミング、矢印、図形、ペン、テキスト、ハイライト、モザイク/ぼかし、連番ステップ、元に戻す／やり直し。\n- 💾 どこへでも書き出し：PNG・JPG・WEBP・PDF、クリップボードへコピー、印刷。\n- 🗂️ 複数タブを一括：ZIP または1つの複数ページ PDF でダウンロード。\n- 🤖 AI へ送信：コピーして ChatGPT・Claude・Gemini を開き、貼り付け。\n- 🔒 完全オフライン・ログイン不要：アカウントもサーバーも追跡もなし。\n\nデザイナー、QA、サポート、マーケティング、リサーチに最適。",
-					"metaDescription": "表示範囲・ページ全体・範囲選択・固定サイズの 4 モードに対応した無料の Chrome 拡張機能。撮ったその場で注釈を入れ、PNG / JPG / WEBP / PDF に書き出せます。100% オフライン、アカウント不要。",
+					"short": "表示範囲、スクロールするページ全体、自分で囲んだ範囲、あるいは正確なサイズ ——撮ったその場で切り抜き、注釈、ぼかしまで済ませて、PNG・JPG・WEBP・PDF に書き出せます。撮影は無料・アカウント不要で完全オフライン。Pro では美化エクスポート、一括撮影と透かし、再編集できるプロジェクトファイルが加わり、それもすべてブラウザ内で合成されます。",
+					"long": "同じウェブページを何度も撮っては、手作業で切り抜き、注釈を入れ、形式を変換する——時間がかかります。ScrnCap はその一連の流れをブラウザの中で完結させます。撮る、書き込む、書き出す。\n\n本当にオフライン。撮影・注釈・書き出しにアカウントは不要で、ネットワークリクエストも一切発生しません。\n\n- 🖥️ 4 つのキャプチャモード——表示範囲、スクロールするページ全体（自動連結）、ドラッグで選んだ範囲、1920×1080 などの固定サイズとカスタムサイズ。\n- ✏️ 内蔵の注釈エディタ——切り抜き、矢印、図形、ペン、テキスト、蛍光ペン、モザイク/ぼかし、連番マーカー、元に戻す・やり直し。\n- 💾 どこへでも書き出し——画像（PNG/JPG/WEBP）または PDF として保存、クリップボードへコピー、そのまま印刷。\n- 🤖 AI へ送る——撮った画像をコピーして、よく使う AI チャットサイトをワンクリックで開き、貼り付けて質問。\n- ⌨️ キーボードショートカットと右クリックからのキャプチャ。\n- 🌍 27 のインターフェース言語に対応。\n\n1.0.0 での追加——装飾エクスポート（グラデーション背景、角丸、影、ウィンドウ枠、1200×630 などの SNS サイズ）。開いているタブや住所リストをまとめて撮る一括キャプチャ（ZIP または 1 つの複数ページ PDF として出力、同じ実行内でデスクトップ・タブレット・モバイルの各幅に対応）。自分のロゴを自動で透かしとして追加。ページ全体を撮る前に Cookie バナーや固定ヘッダーを隠す機能。後から編集できるプロジェクトファイル。検索できるローカル履歴。これらは任意の有料機能です。拡張機能の他の部分とまったく同じくブラウザ内で動き——スクリーンショットがアップロードされることはありません——上に挙げた機能は今後も誰でも使えます。\n\nプライバシー：どのプランでも、スクリーンショットが端末から出ることはありません。解析もトラッカーもありません。任意のアカウントが保存するのはメールアドレスとサブスクリプションの状態だけです。全文：https://scrncap.xeviora.com/privacy\n\nデザイナー、QA エンジニア、サポート担当、マーケター、リサーチャーにおすすめです。",
+					"metaDescription": "表示範囲・ページ全体・範囲選択・固定サイズの 4 モードに対応した無料の Chrome 拡張機能。撮影はオフラインで、注釈と PNG / JPG / WEBP / PDF 書き出し。Pro で美化と一括撮影。",
 					"features": [
 						{
 							"emoji": "🖥️",
@@ -1280,13 +1292,13 @@
 							"desc": ""
 						},
 						{
-							"emoji": "🗂️",
+							"emoji": "🤖",
 							"title": "ワンクリックで AI へ：画像をコピーして ChatGPT・Claude・Gemini を開き、貼るだけ",
 							"desc": ""
 						},
 						{
-							"emoji": "🤖",
-							"title": "100% オフライン——アカウントもサーバーもなく、画像は端末から出ません",
+							"emoji": "🔒",
+							"title": "Pro で美化エクスポート、URL リストの一括撮影と自社ロゴの透かし、再編集できる .scrncap プロジェクトファイルを解放——合成はすべてブラウザ内、画像はアップロードされません",
 							"desc": ""
 						}
 					]
@@ -1294,9 +1306,9 @@
 				"zh-tw": {
 					"name": "ScrnCap – 網頁截圖與整頁擷取",
 					"tagline": "擷取任何頁面，然後隨你怎麼改。",
-					"short": "可見範圍、整頁捲動拼接、自選區域、精確尺寸，四種取景任你挑；擷取後就地裁切、標註、打上馬賽克，再匯出成 PNG、JPG、WEBP 或 PDF。全程不上傳。",
-					"long": "一次又一次截相同的網頁，再手動裁切、標註、轉檔，真的很費時。ScrnCap 在瀏覽器裡一站搞定：擷取、標註、匯出。免註冊、免上傳，任何資料都不離開你的裝置。\n\n- 🖥️ 四種擷取模式 — 可視區、整頁滾動拼接、自選區域，或像 1920×1080 的固定尺寸與自訂尺寸。\n- ✏️ 內建標註工具 — 裁切、箭頭、圖形、畫筆、文字、螢光標示、馬賽克/模糊、編號步驟，還能復原與重做。\n- 💾 隨處匯出 — PNG、JPG、WEBP、PDF、複製到剪貼簿，或直接列印。\n- 🗂️ 多分頁批次 — 下載成 ZIP，或合併為單一多頁 PDF。\n- 🤖 送給 AI — 一鍵複製並開啟 ChatGPT、Claude 或 Gemini，貼上即用。\n- 🔒 100% 離線、免登入 — 不需帳號、沒有後端、不做追蹤。\n\n設計師、QA 工程師、客服人員、行銷與研究人員都好用。",
-					"metaDescription": "免費 Chrome 擴充功能：可見範圍、整頁長截圖、自選區域、固定尺寸四種模式，擷取後就地標註，匯出 PNG / JPG / WEBP / PDF。100% 離線，免註冊。",
+					"short": "可見範圍、整頁捲動拼接、自選區域、精確尺寸，四種取景任你挑；擷取後就地裁切、標註、打上馬賽克，再匯出成 PNG、JPG、WEBP 或 PDF。擷取永久免費、免帳號、全程離線；Pro 再加美化匯出、批次浮水印與可再編輯的專案檔，同樣只在你的瀏覽器裡合成。",
+					"long": "一遍遍地截同樣的網頁，再手動裁切、標註、轉格式，實在太慢。ScrnCap 把整個流程都放進瀏覽器：截圖、標註、匯出。\n\n真正離線：截圖、標註、匯出都不需要帳號，也不會發出任何網路請求。\n\n- 🖥️ 四種截圖模式——可見區域、整頁滾動拼接、自選區域，或 1920×1080 等固定尺寸及自訂尺寸。\n- ✏️ 內建標註器——裁切、箭頭、形狀、畫筆、文字、螢光筆、馬賽克/模糊、編號標記、復原與重做。\n- 💾 隨處匯出——存成圖片（PNG/JPG/WEBP）或 PDF，複製到剪貼簿，或直接列印。\n- 🤖 傳送到 AI——複製截圖後一鍵開啟你慣用的 AI 對話網站，貼上就問。\n- ⌨️ 支援快速鍵與右鍵選單截圖。\n- 🌍 提供 27 種介面語言。\n\n1.0.0 加入——美化匯出（漸層背景、圓角、陰影、視窗外框，以及 1200×630 等社群尺寸）；批次截圖，把開啟的分頁或一整列網址打包成 ZIP 或合成多頁 PDF，還可在同一次執行中按桌機/平板/手機三種寬度出圖；用自己的 logo 自動加浮水印；整頁截圖前先隱藏 cookie 橫幅與置頂列；可再編輯的專案檔；以及可搜尋的本機截圖紀錄。以上屬於選購的付費功能，它們和擴充功能的其他部分一樣全在你的瀏覽器裡執行——截圖從不上傳——而上面列出的功能始終人人可用。\n\n隱私：無論哪個方案，截圖都不會離開你的裝置。沒有分析統計，沒有追蹤器。選用帳號只儲存你的電子郵件與訂閱狀態。完整政策：https://scrncap.xeviora.com/privacy\n\n適合設計師、測試工程師、客服、行銷與研究人員。",
+					"metaDescription": "免費 Chrome 擴充功能：可見範圍、整頁長截圖、自選區域、固定尺寸四種模式，擷取後就地標註，離線匯出 PNG / JPG / WEBP / PDF；Pro 加美化與批次匯出。",
 					"features": [
 						{
 							"emoji": "🖥️",
@@ -1314,13 +1326,13 @@
 							"desc": ""
 						},
 						{
-							"emoji": "🗂️",
+							"emoji": "🤖",
 							"title": "一鍵送給 AI：自動複製截圖並開啟 ChatGPT、Claude 或 Gemini，貼上即可",
 							"desc": ""
 						},
 						{
-							"emoji": "🤖",
-							"title": "100% 離線——免帳號、沒有伺服器，截圖永遠不離開你的裝置",
+							"emoji": "🔒",
+							"title": "Pro 解鎖美化匯出、URL 清單批次擷取加自有浮水印、可再編輯的 .scrncap 專案檔——每一個像素都在你的瀏覽器裡合成，圖片從不上傳",
 							"desc": ""
 						}
 					]
@@ -1332,7 +1344,7 @@
 			"category": "extension",
 			"type": "extension",
 			"status": "live",
-			"pricing": "free",
+			"pricing": "freemium",
 			"platforms": [
 				"extension",
 				"web"
@@ -1343,7 +1355,7 @@
 				"Plasmo",
 				"TypeScript",
 				"Tailwind CSS",
-				"Playwright"
+				"Prisma"
 			],
 			"links": {
 				"site": "https://reelcap.xeviora.com",
@@ -1356,25 +1368,25 @@
 			"screenshots": [
 				{
 					"src": "/assets/showcase/reelcap/scrn/01.webp",
-					"caption": "Pick a tab, size, mic & webcam — then hit record"
+					"caption": "Pick a size, format, mic & auto-zoom — then hit record"
 				},
 				{
 					"src": "/assets/showcase/reelcap/scrn/02.webp",
-					"caption": "Preview your demo and download the WEBM"
+					"caption": "Preview your demo — download MP4 or export a GIF"
 				},
 				{
 					"src": "/assets/showcase/reelcap/scrn/03.webp",
 					"caption": "Tune cursor highlights, click ripples & output"
 				}
 			],
-			"privacyMarkdown": "# Privacy Policy — ReelCap\n\n_Last updated: 2026-06-29_\n\nReelCap (\"the extension\") is a screen recorder that runs entirely inside your web browser. It has no account system and no backend server.\n\n## Data we collect\n\n**None.** ReelCap does not collect, store on any server, transmit, share, or sell any personal data, browsing history, recordings, microphone audio, or camera video. There is no sign-in, no analytics, and no telemetry. Every recording you make is captured, composited, and encoded locally on your own device. Settings are stored locally in your browser via the standard extension storage and never leave your machine.\n\n## Permissions and why they are needed\n\n- **tabCapture** — Captures the rendered video (and optional audio) of the active tab you choose to record. It only starts on an explicit action by you.\n- **offscreen** — Runs an offscreen document, the only MV3 context allowed to use `getUserMedia` and `MediaRecorder`, to grab the stream, mix audio, composite the canvas, and encode the WEBM file.\n- **activeTab** — Grants one-time access to the current tab only when you start a recording, so its stream can be captured.\n- **scripting** — Injects the self-drawn cursor and click-ripple overlay into the page being recorded on demand. ReelCap does not run a persistent content script.\n- **tabs** — Reads the active tab's title/URL to name the recording and route the finished clip to the local preview page.\n- **storage** — Persists your settings and the recording state so an in-progress recording survives the service worker being recycled.\n- **unlimitedStorage** — Lets long recordings be buffered locally without hitting the small default storage quota.\n- **downloads** — Saves the finished WEBM video to your Downloads folder.\n- **Host access (`<all_urls>`)** — Required so the highlighted cursor and click ripples can be drawn on whatever page you record. Access happens only when you start a recording.\n\nMicrophone and camera are **not** requested in the manifest. They are granted at runtime through the browser's standard `getUserMedia` prompt, only if you enable them, and the streams are mixed/composited locally and never transmitted.\n\n## Remote code\n\nReelCap does **not** load or execute any remote code. All JavaScript and WebAssembly are bundled in the extension package.\n\n## Changes\n\nIf this policy changes, the \"Last updated\" date above will change accordingly. The current version is published at: https://reelcap.xeviora.com/privacy\n\nThe previous address, https://xeviora.com/reelcap-privacy, still points to the same policy.\n\n## Contact\n\nQuestions? Contact support@xeviora.com — the earlier address, tiger.hu.liu@gmail.com, still reaches us as well.",
+			"privacyMarkdown": "# Privacy Policy — ReelCap\n\n_Last updated: 2026-09-01_\n\nReelCap (\"the extension\") is a screen recorder that runs entirely inside your web browser. Recording, editing and exporting — including the paid Pro features — happen on your own device; your video never reaches our servers, or anyone else's. An optional account exists for two purposes only: trying the Pro tools (a free account includes 10 uses) and buying or restoring a Pro plan.\n\n## Data we collect\n\n**No recordings, ever.** ReelCap does not collect, store on any server, transmit, share, or sell your recordings, microphone audio, camera video, browsing history, or page content. Every recording is captured, composited and encoded locally on your own device. Settings and a local cache of your plan status and remaining free-tries balance are stored in your browser via the standard extension storage. There is no analytics and no telemetry.\n\n**If you create an account**, and only then, we store what an account requires: your email address, an authentication record, your subscription status, and — for free accounts — how many of your included Pro tries you have used. Payment card details are handled by our payment processor (Paddle) and never reach us.\n\n## Pro features and your account\n\nThe three paid features — click auto-zoom, MP4 export and GIF export — are computed **entirely in your browser**, exactly like the free ones. Paying does not change where your video goes; it goes nowhere.\n\nThe account exists so your free tries and any purchase can follow you to another machine. **The extension makes no network request of any kind until you take an explicit action** — pressing \"Sign in\" on a locked Pro control or \"Restore purchase\" in its settings. After that it re-checks `https://reelcap.xeviora.com/api/ext/entitlement` about once a day; that request carries your session cookie and nothing else: no recording data, no page URLs. When you use one of your included free tries, the extension additionally reports a single counter tick so your remaining balance stays correct across devices — that is the only usage information that ever leaves your browser.\n\nYou can delete your account and its subscription record at any time by emailing us; deletion removes the email address and authentication record from our database.\n\n## Payments\n\nPayments are processed by **Paddle**, which acts as the merchant of record for Xeviora. Checkout runs on xeviora.com; Paddle collects and processes the billing details needed to complete the sale under its own privacy policy. We receive from Paddle only your subscription status and the identifiers needed to keep it in sync — never your full card number.\n\n## Permissions and why they are needed\n\n- **tabCapture** — Captures the rendered video (and optional audio) of the active tab you choose to record. It only starts on an explicit action by you.\n- **offscreen** — Runs an offscreen document, the only MV3 context allowed to use `getUserMedia` and `MediaRecorder`, to grab the stream, mix audio, composite the canvas, and encode the WEBM file.\n- **activeTab** — Grants one-time access to the current tab only when you start a recording, so its stream can be captured.\n- **scripting** — Injects the self-drawn cursor and click-ripple overlay into the page being recorded on demand. ReelCap does not run a persistent content script.\n- **tabs** — Reads the active tab's title/URL to name the recording and route the finished clip to the local preview page.\n- **storage** — Persists your settings and the recording state so an in-progress recording survives the service worker being recycled.\n- **unlimitedStorage** — Lets long recordings be buffered locally without hitting the small default storage quota.\n- **Host access (`<all_urls>`)** — Required so the highlighted cursor and click ripples can be drawn on whatever page you record, and so the extension can ask reelcap.xeviora.com about your Pro plan. Access happens only when you start a recording; ReelCap does not run a persistent content script and reads no page content.\n\nMicrophone and camera are **not** requested in the manifest. They are granted at runtime through the browser's standard `getUserMedia` prompt, only if you enable them, and the streams are mixed/composited locally and never transmitted.\n\n## Where your recordings live\n\nA finished recording is written to your browser's local IndexedDB so the preview tab can play it back, and it is saved to your own Downloads folder when you click download. Converting to MP4 or GIF reads that same local copy and writes the result locally too. Nothing is uploaded — we operate no service that could receive a video. Discarding a recording in the preview tab deletes it from local storage.\n\n## Remote code\n\nReelCap does **not** load or execute any remote code. All JavaScript and WebAssembly are bundled in the extension package.\n\n## Changes\n\nIf this policy changes, the \"Last updated\" date above will change accordingly. The current version is published at: https://reelcap.xeviora.com/privacy\n\nThe previous address, https://xeviora.com/reelcap-privacy, still points to the same policy.\n\n## Contact\n\nQuestions? Contact support@xeviora.com — the earlier address, tiger.hu.liu@gmail.com, still reaches us as well.",
 			"content": {
 				"en": {
 					"name": "ReelCap – Web Demo Screen Recorder",
 					"tagline": "Record web demos that point where you point.",
-					"short": "ReelCap captures any browser tab straight to video — with a highlighted cursor, click ripples, your voice and a webcam bubble. No account, no upload, no watermark.",
-					"long": "Recording a clean web demo usually means a heavy screen recorder, then editing out the browser chrome. ReelCap does it right in your browser: record the tab, with a hand-drawn cursor and click highlights baked in, then download a polished WEBM. No account, no upload, nothing leaves your device.\n\n- 🎬 Record any tab — capture the active tab straight to WEBM, page renders only, never the browser UI.\n- 🖱️ Highlighted cursor & click ripples — a hand-drawn cursor and click ripples baked in, so viewers follow every move.\n- 🎙️ Mic + tab audio — narrate with your microphone while keeping the page's sound, mixed into one clean track.\n- 📷 Webcam bubble — overlay your camera as a circular bubble in any corner, with adjustable size.\n- 📐 Fixed output sizes & frame rate — original, 1080p, 720p, square or vertical, at 24/30/60 fps.\n- 🔒 100% offline & no login — recording and encoding run in your browser; no account, no backend, no tracking.\n\nGreat for makers, founders and creators recording web demos for YouTube, Product Hunt, onboarding and support.",
-					"metaDescription": "Record any Chrome tab into a polished demo video: highlighted cursor, click ripples, mic and webcam bubble. 100% offline, no login, no watermark.",
+					"short": "ReelCap captures any browser tab straight to video — with a highlighted cursor, click ripples, your voice and a webcam bubble. Recording is free and needs no account; Pro adds click auto-zoom, MP4 and GIF export, and those run in your browser too.",
+					"long": "Recording a clean web demo usually means juggling a heavyweight screen recorder, then editing out the browser chrome and trying to make your cursor easy to follow. ReelCap does it right inside your browser: record the tab, with a hand-drawn cursor and click highlights baked in, then download a polished video. Free recording is 100% offline — no account, no upload, nothing leaves your device.\n\nWHY INSTALL IT\n\nReelCap is built for product demos. It records just the page (never the browser UI), paints a highlighted cursor and click ripples so viewers follow every move, and lets you add narration and a webcam bubble. Everything — including the paid Pro tools — is processed on your own machine; your video never touches a server.\n\nWHAT YOU CAN DO — FREE, OFFLINE FOREVER\n\n- 🎬 Record any tab — capture the active tab straight to a WEBM video, page renders only, never the browser UI.\n- 🖱️ Highlighted cursor & click ripples — a hand-drawn cursor and click ripples baked into the video, so viewers follow exactly where you point and tap.\n- 🎙️ Mic + tab audio — narrate with your microphone while keeping the page's own sound, mixed into one clean track.\n- 📷 Webcam bubble — overlay your camera as a circular bubble in any corner, with adjustable size.\n- 📐 Fixed output sizes & frame rate — original, 1080p, 720p, square or vertical, at 24/30/60 fps.\n\nPRO TOOLS — STILL 100% ON YOUR DEVICE\n\n- 🔍 Click auto-zoom — the video smoothly zooms in on every click, so small buttons and menus read clearly.\n- 🎞️ MP4 recording & conversion — record straight to MP4 where the browser supports it, or convert a finished WEBM, right on your device.\n- 🌀 GIF export — turn a clip into a shareable GIF, encoded locally in the browser.\n\nPaying changes what is unlocked, not where your video goes. Create a free account and you get 10 Pro operations to try — the three tools share the same pool. A subscription or a one-time lifetime purchase unlocks them for good.\n\nPRIVATE BY DESIGN\n\nFree recording makes no network requests at all — no account, no analytics, no telemetry. Signing in is only ever needed to try or unlock the Pro tools, and the only thing the extension asks our server is whether your plan is active. Your recordings never leave your machine. Full policy: https://reelcap.xeviora.com/privacy\n\nKEYBOARD SHORTCUTS\n\nOpen ReelCap: Alt+Shift+R · Stop recording: Alt+Shift+S\n\nGREAT FOR\n\nMakers, founders and creators recording product demos, launch videos, onboarding clips and support replies — no editing skills required.\n\nWHAT'S NEW\n\n1.0.1 — New Pro tools: click auto-zoom, MP4 recording and GIF export — all processed 100% on your device; sign in once for 10 free tries.\n\nAvailable in 27 interface languages.",
+					"metaDescription": "Record any Chrome tab into a polished demo video: highlighted cursor, click ripples, mic and webcam. Free to record, no login; Pro adds MP4 and GIF, all local.",
 					"features": [
 						{
 							"emoji": "🎬",
@@ -1399,21 +1411,31 @@
 						{
 							"emoji": "📐",
 							"title": "Fixed output sizes & frame rate",
-							"desc": "Export at original, 1080p, 720p, square or vertical, at 24/30/60 fps — ready for YouTube, Product Hunt or social."
+							"desc": "Export at original, 1080p, 720p, square or vertical, at 24/30/60 fps — ready for a launch post, a product page or social."
 						},
 						{
-							"emoji": "🔒",
-							"title": "100% offline & no login",
-							"desc": "Recording and encoding run entirely in your browser. No account, no backend, no tracking — nothing ever leaves your device."
+							"emoji": "🔍",
+							"title": "Click auto-zoom (Pro)",
+							"desc": "The video smoothly zooms in on every click, so small buttons and menus read clearly even in a full-page recording."
+						},
+						{
+							"emoji": "🎞️",
+							"title": "MP4 recording & conversion (Pro)",
+							"desc": "Record straight to MP4 where the browser supports it, or convert a finished WEBM — the conversion runs on your own device."
+						},
+						{
+							"emoji": "🌀",
+							"title": "GIF export (Pro)",
+							"desc": "Turn a clip into a shareable GIF, encoded locally in the browser — nothing is uploaded anywhere."
 						}
 					]
 				},
 				"zh-cn": {
 					"name": "ReelCap – 网页演示录屏",
 					"tagline": "录出的演示，观众一眼看懂你在指哪。",
-					"short": "ReelCap 把任意浏览器标签页直接录成视频——带高亮光标、点击波纹、你的解说和摄像头小窗。无需账号，不上传，无水印。",
-					"long": "录一段干净的网页演示，通常得用笨重的录屏软件，再手动裁掉浏览器边框。ReelCap 在浏览器里一站搞定：录制标签页，自带自绘光标与点击高亮，直接下载精致的 WEBM。无需账号，无需上传，数据不出本机。\n\n- 🎬 录制任意标签页——将当前标签页直接录成 WEBM，只录页面渲染区，不含浏览器 UI。\n- 🖱️ 高亮光标与点击波纹——自绘光标和点击波纹直接合进画面，观众跟得上每一步操作。\n- 🎙️ 麦克风 + 标签页声音——用麦克风讲解，同时保留页面原声，混成一条干净音轨。\n- 📷 摄像头气泡——把摄像头叠成圆形气泡置于任意角落，大小可调。\n- 📐 固定输出尺寸与帧率——原始、1080p、720p、方形或竖屏，24/30/60 fps 任选。\n- 🔒 100% 离线、无需登录——录制与编码全在浏览器；无账号、无后端、无跟踪。\n\n适合做产品演示的创客、创始人与创作者，发 YouTube、Product Hunt、上手引导与客服。",
-					"metaDescription": "把任意 Chrome 标签页录成精致的演示视频：高亮光标、点击波纹、麦克风、摄像头小窗与固定输出尺寸。100% 离线、免登录、无水印。",
+					"short": "ReelCap 把任意浏览器标签页直接录成视频——带高亮光标、点击波纹、你的解说和摄像头小窗。录制永久免费、免账号；Pro 再加点击自动缩放、MP4 与 GIF 导出，同样只在你的浏览器里跑。",
+					"long": "录一段干净的网页演示，通常得用笨重的录屏软件，再手动裁掉浏览器边框，还要想办法让光标容易跟上。ReelCap 在浏览器里一站搞定：录制标签页时，自绘光标与点击高亮直接合进画面，录完下载精致的视频。免费录制 100% 离线 — 免账号、免上传，任何数据都不离开你的设备。\n\n为什么安装\n\nReelCap 专为产品演示打造。它只录页面（绝不含浏览器 UI），画出高亮光标与点击波纹让观众跟上每一步，还能加上旁白与摄像头气泡。所有处理 — 包括付费的 Pro 工具 — 都在你自己的电脑上完成；视频绝不经过任何服务器。\n\n你可以做什么 — 免费、永远离线\n\n- 🎬 录制任意标签页 — 将当前标签页直接录成 WEBM 视频，只录页面渲染区，不含浏览器 UI。\n- 🖱️ 高亮光标与点击波纹 — 自绘光标和点击波纹直接合进视频，观众清楚看到你指哪里、点哪里。\n- 🎙️ 麦克风 + 标签页声音 — 用麦克风讲解，同时保留页面原声，混成一条干净音轨。\n- 📷 摄像头气泡 — 把摄像头叠成圆形气泡置于任意角落，大小可调。\n- 📐 固定输出尺寸与帧率 — 原始、1080p、720p、方形或竖屏，24/30/60 fps 任选。\n\nPRO 工具 — 依然 100% 在你的设备上\n\n- 🔍 点击自动缩放 — 每次点击视频都平滑放大，小按钮与菜单看得一清二楚。\n- 🎞️ MP4 录制与转换 — 浏览器支持时直接录成 MP4，或把录好的 WEBM 在设备上转换。\n- 🌀 GIF 导出 — 把片段变成易分享的 GIF，在浏览器内本机编码。\n\n付费改变的是解锁哪些功能，而不是视频去哪里。注册免费账号即得 10 次 Pro 操作试用 — 三个工具共享同一额度。订阅或一次性买断即可永久解锁。\n\n隐私始于设计\n\n免费录制完全不发出任何网络请求 — 无账号、无分析、无遥测。只有在试用或解锁 Pro 工具时才需要登录，扩展向服务器询问的唯一一件事，就是你的套餐是否有效。你的录像绝不离开你的电脑。完整政策：https://reelcap.xeviora.com/privacy\n\n键盘快捷键\n\n打开 ReelCap：Alt+Shift+R · 停止录制：Alt+Shift+S\n\n适合谁\n\n录制产品演示、发布视频、上手引导与客服回复的创客、创始人与创作者 — 不需要剪辑技能。\n\n新增功能\n\n1.0.1 — 新增 Pro 工具：点击自动缩放、MP4 录制与 GIF 导出 — 全部 100% 在本机处理；登录一次即得 10 次免费试用。\n\n提供 27 种界面语言。",
+					"metaDescription": "把任意 Chrome 标签页录成精致的演示视频：高亮光标、点击波纹、麦克风与摄像头小窗。录制免费、免登录；Pro 加 MP4 与 GIF 导出，全部本地完成。",
 					"features": [
 						{
 							"emoji": "🎬",
@@ -1437,7 +1459,7 @@
 						},
 						{
 							"emoji": "📐",
-							"title": "无水印、不限时长、免账号——采集与编码全在你的浏览器里完成",
+							"title": "Pro 解锁点击自动缩放、MP4 与 GIF 导出——依然无水印、不限时长，每一帧都在你自己的机器上编码",
 							"desc": ""
 						}
 					]
@@ -1445,9 +1467,9 @@
 				"es": {
 					"name": "ReelCap – Grabador de pantalla para demos web",
 					"tagline": "Demos que señalan justo donde tú señalas.",
-					"short": "ReelCap captura cualquier pestaña del navegador directamente en vídeo, con cursor resaltado, ondas al hacer clic, tu voz y una burbuja de cámara. Sin cuenta, sin subidas y sin marca de agua.",
-					"long": "Grabar una demo web limpia suele implicar un grabador pesado y luego recortar el marco del navegador. ReelCap lo hace dentro del navegador: graba la pestaña, con cursor dibujado y resaltado de clics integrados, y descarga un WEBM pulido. Sin cuenta, sin subidas, nada sale de tu dispositivo.\n\n- 🎬 Graba cualquier pestaña: captura la pestaña activa directo a WEBM, solo la página, nunca la interfaz del navegador.\n- 🖱️ Cursor resaltado y ondas de clic: cursor dibujado y ondas de clic integrados para que se siga cada movimiento.\n- 🎙️ Micro + audio de la pestaña: narra con tu micrófono y mantén el sonido de la página, mezclados en una pista limpia.\n- 📷 Burbuja de webcam: superpón tu cámara como burbuja circular en cualquier esquina, con tamaño ajustable.\n- 📐 Tamaños y fotogramas fijos: original, 1080p, 720p, cuadrado o vertical, a 24/30/60 fps.\n- 🔒 100% local y sin login: grabación y codificación en tu navegador; sin cuenta, sin servidor, sin rastreo.\n\nIdeal para makers, fundadores y creadores que graban demos web para YouTube, Product Hunt, onboarding y soporte.",
-					"metaDescription": "Graba cualquier pestaña de Chrome en un vídeo de demostración: cursor resaltado, ondas al hacer clic, micrófono y cámara. 100 % sin conexión y sin cuenta.",
+					"short": "ReelCap captura cualquier pestaña del navegador directamente en vídeo, con cursor resaltado, ondas al hacer clic, tu voz y una burbuja de cámara. Grabar es gratis y sin cuenta; Pro añade zoom automático al clic y exportación a MP4 y GIF, que también se procesan en tu navegador.",
+					"long": "Grabar una demo web limpia suele implicar un grabador pesado, luego recortar el marco del navegador e intentar que el cursor sea fácil de seguir. ReelCap lo hace dentro de tu navegador: graba la pestaña, con un cursor dibujado y el resaltado de clics integrados en la imagen, y descarga un vídeo pulido. La grabación gratuita es 100 % sin conexión — sin cuenta, sin subidas, nada sale de tu dispositivo.\n\nPOR QUÉ INSTALARLO\n\nReelCap está hecho para demos de producto. Graba solo la página (nunca la interfaz del navegador), dibuja un cursor resaltado y ondas de clic para que el espectador siga cada movimiento, y te deja añadir narración y una burbuja de webcam. Todo — incluidas las herramientas Pro de pago — se procesa en tu propia máquina; tu vídeo nunca toca un servidor.\n\nQUÉ PUEDES HACER — GRATIS, SIN CONEXIÓN PARA SIEMPRE\n\n- 🎬 Graba cualquier pestaña — captura la pestaña activa directo a un vídeo WEBM, solo la página, nunca la interfaz del navegador.\n- 🖱️ Cursor resaltado y ondas de clic — cursor dibujado y ondas de clic integrados en el vídeo: el espectador ve exactamente dónde señalas y haces clic.\n- 🎙️ Micro + audio de la pestaña — narra con tu micrófono manteniendo el sonido de la página, mezclados en una pista limpia.\n- 📷 Burbuja de webcam — superpón tu cámara como burbuja circular en cualquier esquina, con tamaño ajustable.\n- 📐 Tamaños y fotogramas fijos — original, 1080p, 720p, cuadrado o vertical, a 24/30/60 fps.\n\nHERRAMIENTAS PRO — SIGUEN AL 100 % EN TU DISPOSITIVO\n\n- 🔍 Auto-zoom al hacer clic — el vídeo hace zoom suave en cada clic: botones y menús pequeños se leen con claridad.\n- 🎞️ Grabación y conversión MP4 — graba directo en MP4 donde el navegador lo permita, o convierte un WEBM terminado — en tu propio dispositivo.\n- 🌀 Exportación de GIF — convierte un clip en un GIF para compartir, codificado localmente en el navegador.\n\nPagar cambia lo que se desbloquea, no adónde va tu vídeo. Crea una cuenta gratuita y recibe 10 operaciones Pro de prueba — las tres herramientas comparten la misma reserva. Una suscripción o una compra única de por vida las desbloquea para siempre.\n\nPRIVADO POR DISEÑO\n\nLa grabación gratuita no hace ninguna petición de red — sin cuenta, sin analítica, sin telemetría. Iniciar sesión solo hace falta para probar o desbloquear las herramientas Pro, y lo único que la extensión pregunta a nuestro servidor es si tu plan está activo. Tus grabaciones nunca salen de tu máquina. Política completa: https://reelcap.xeviora.com/privacy\n\nATAJOS DE TECLADO\n\nAbrir ReelCap: Alt+Shift+R · Detener la grabación: Alt+Shift+S\n\nIDEAL PARA\n\nMakers, fundadores y creadores que graban demos de producto, vídeos de lanzamiento, clips de onboarding y respuestas de soporte — sin conocimientos de edición.\n\nNOVEDADES\n\n1.0.1 — Nuevas herramientas Pro: auto-zoom al hacer clic, grabación MP4 y exportación GIF — todo procesado 100 % en tu dispositivo; inicia sesión una vez y obtén 10 usos gratis.\n\nDisponible en 27 idiomas de interfaz.",
+					"metaDescription": "Graba cualquier pestaña de Chrome en vídeo: cursor resaltado, ondas al clic, micrófono y cámara. Gratis y sin cuenta; Pro añade MP4 y GIF, todo en local.",
 					"features": [
 						{
 							"emoji": "🎬",
@@ -1471,7 +1493,7 @@
 						},
 						{
 							"emoji": "📐",
-							"title": "Sin marca de agua, sin límite de tiempo y sin cuenta: todo se graba y codifica en tu navegador",
+							"title": "Pro añade zoom automático al clic y exportación a MP4 y GIF: sigue sin marca de agua, sin límite de tiempo y con la codificación en tu propio equipo",
 							"desc": ""
 						}
 					]
@@ -1479,9 +1501,9 @@
 				"fr": {
 					"name": "ReelCap – Enregistreur d'écran pour démos web",
 					"tagline": "Des démos qui montrent là où vous pointez.",
-					"short": "ReelCap capture n'importe quel onglet directement en vidéo — avec un curseur mis en évidence, des ondes au clic, votre voix et une bulle webcam. Sans compte, sans envoi, sans filigrane.",
-					"long": "Enregistrer une démo web propre demande souvent un logiciel lourd, puis de rogner le cadre du navigateur. ReelCap fait tout dans votre navigateur : enregistrez l'onglet, avec un curseur dessiné et la mise en valeur des clics intégrés, puis téléchargez un WEBM soigné. Sans compte, sans envoi, rien ne quitte votre appareil.\n\n- 🎬 Enregistrez un onglet : capturez l'onglet actif directement en WEBM, la page seule, jamais l'interface du navigateur.\n- 🖱️ Curseur surligné et ondes de clic : un curseur dessiné et des ondes de clic intégrés pour suivre chaque geste.\n- 🎙️ Micro + audio de l'onglet : commentez au micro tout en gardant le son de la page, mixés en une piste propre.\n- 📷 Bulle webcam : superposez votre caméra en bulle ronde dans un coin, taille réglable.\n- 📐 Tailles et fréquence fixes : original, 1080p, 720p, carré ou vertical, à 24/30/60 fps.\n- 🔒 100% local et sans compte : enregistrement et encodage dans votre navigateur ; pas de compte, pas de serveur, pas de suivi.\n\nParfait pour les makers, fondateurs et créateurs qui filment des démos web pour YouTube, Product Hunt, l'onboarding et le support.",
-					"metaDescription": "Enregistrez n'importe quel onglet Chrome en vidéo de démo : curseur mis en évidence, ondes au clic, micro et bulle webcam. 100 % hors ligne, sans compte.",
+					"short": "ReelCap capture n'importe quel onglet directement en vidéo — avec un curseur mis en évidence, des ondes au clic, votre voix et une bulle webcam. L'enregistrement est gratuit et sans compte ; Pro ajoute le zoom automatique au clic et l'export MP4 et GIF, eux aussi traités dans votre navigateur.",
+					"long": "Enregistrer une démo web propre demande souvent un logiciel lourd, puis de rogner le cadre du navigateur et de rendre le curseur facile à suivre. ReelCap fait tout dans votre navigateur : enregistrez l'onglet, avec un curseur dessiné et la mise en valeur des clics intégrés à l'image, puis téléchargez une vidéo soignée. L'enregistrement gratuit est 100 % hors ligne — sans compte, sans envoi, rien ne quitte votre appareil.\n\nPOURQUOI L'INSTALLER\n\nReelCap est conçu pour les démos produit. Il n'enregistre que la page (jamais l'interface du navigateur), dessine un curseur surligné et des ondes de clic pour que le spectateur suive chaque geste, et vous laisse ajouter une narration et une bulle webcam. Tout — y compris les outils Pro payants — est traité sur votre propre machine ; votre vidéo ne touche jamais un serveur.\n\nCE QUE VOUS POUVEZ FAIRE — GRATUIT, HORS LIGNE POUR TOUJOURS\n\n- 🎬 Enregistrez n'importe quel onglet — capturez l'onglet actif directement en vidéo WEBM, la page seule, jamais l'interface du navigateur.\n- 🖱️ Curseur surligné et ondes de clic — un curseur dessiné et des ondes de clic intégrés à la vidéo : le spectateur voit exactement où vous pointez et cliquez.\n- 🎙️ Micro + audio de l'onglet — commentez au micro tout en gardant le son de la page, mixés en une piste propre.\n- 📷 Bulle webcam — superposez votre caméra en bulle ronde dans un coin, taille réglable.\n- 📐 Tailles et fréquence fixes — original, 1080p, 720p, carré ou vertical, à 24/30/60 fps.\n\nOUTILS PRO — TOUJOURS 100 % SUR VOTRE APPAREIL\n\n- 🔍 Auto-zoom au clic — la vidéo zoome en douceur sur chaque clic : petits boutons et menus restent lisibles.\n- 🎞️ Enregistrement et conversion MP4 — enregistrez directement en MP4 quand le navigateur le permet, ou convertissez un WEBM terminé — sur votre propre appareil.\n- 🌀 Export GIF — transformez un clip en GIF à partager, encodé localement dans le navigateur.\n\nPayer change ce qui est déverrouillé, pas la destination de votre vidéo. Créez un compte gratuit et recevez 10 opérations Pro à l'essai — les trois outils partagent la même réserve. Un abonnement ou un achat à vie unique les déverrouille définitivement.\n\nPRIVÉ PAR CONCEPTION\n\nL'enregistrement gratuit n'émet aucune requête réseau — pas de compte, pas d'analytique, pas de télémétrie. La connexion ne sert qu'à essayer ou déverrouiller les outils Pro, et la seule chose que l'extension demande à notre serveur est si votre forfait est actif. Vos enregistrements ne quittent jamais votre machine. Politique complète : https://reelcap.xeviora.com/privacy\n\nRACCOURCIS CLAVIER\n\nOuvrir ReelCap : Alt+Shift+R · Arrêter l'enregistrement : Alt+Shift+S\n\nPARFAIT POUR\n\nLes makers, fondateurs et créateurs qui filment des démos produit, des vidéos de lancement, des clips d'onboarding et des réponses au support — sans compétences de montage.\n\nNOUVEAUTÉS\n\n1.0.1 — Nouveaux outils Pro : auto-zoom au clic, enregistrement MP4 et export GIF — tout est traité à 100 % sur votre appareil ; connectez-vous une fois pour 10 essais gratuits.\n\nDisponible en 27 langues d'interface.",
+					"metaDescription": "Enregistrez un onglet Chrome en vidéo de démo : curseur mis en évidence, ondes au clic, micro et webcam. Gratuit et sans compte ; Pro ajoute MP4 et GIF, en local.",
 					"features": [
 						{
 							"emoji": "🎬",
@@ -1505,7 +1527,7 @@
 						},
 						{
 							"emoji": "📐",
-							"title": "Sans filigrane, sans limite de durée, sans compte : capture et encodage dans votre navigateur",
+							"title": "Pro ajoute le zoom automatique au clic et l'export MP4 et GIF : toujours sans filigrane, sans limite de durée, et l'encodage reste sur votre machine",
 							"desc": ""
 						}
 					]
@@ -1513,9 +1535,9 @@
 				"ja": {
 					"name": "ReelCap – ウェブデモ画面録画",
 					"tagline": "指したところが、そのまま伝わるデモ動画。",
-					"short": "ReelCap はブラウザのタブをそのまま動画として録画します。強調カーソル、クリック波紋、あなたの声、ウェブカメラのバブル付き。アカウント不要、アップロードなし、透かしなし。",
-					"long": "きれいなウェブデモを録るには、重い録画ソフトを使い、ブラウザーの枠を切り抜く手間が普通です。ReelCap はブラウザー内で完結：タブを録画し、手描きカーソルとクリック強調を合成して、洗練された WEBM をダウンロード。アカウント不要、アップロードなし、データは端末から出ません。\n\n- 🎬 どのタブも録画 — アクティブなタブをそのまま WEBM に、ページ描画のみ、ブラウザー UI は含めません。\n- 🖱️ 強調カーソルとクリック波紋 — 手描きカーソルとクリック波紋を映像に合成し、操作を追いやすく。\n- 🎙️ マイク + タブ音声 — マイクで解説しつつページ音を残し、1本のクリーンな音声トラックに混合。\n- 📷 ウェブカメラバブル — カメラを丸いバブルとして任意の角に重ね、サイズ調整可。\n- 📐 固定の出力サイズとフレームレート — オリジナル、1080p、720p、正方形や縦型、24/30/60 fps。\n- 🔒 完全オフライン・ログイン不要 — 録画とエンコードはブラウザー内；アカウントもサーバーも追跡もなし。\n\nYouTube、Product Hunt、オンボーディング、サポート向けにウェブデモを録るメーカー、創業者、クリエイターに最適。",
-					"metaDescription": "Chrome のタブをそのままデモ動画に。強調カーソル、クリック波紋、マイク、ウェブカメラのバブル、固定の出力サイズに対応。完全オフライン、ログイン不要、透かしなし。",
+					"short": "ReelCap はブラウザのタブをそのまま動画として録画します。強調カーソル、クリック波紋、あなたの声、ウェブカメラのバブル付き。録画は無料でアカウント不要。Pro ではクリック自動ズーム、MP4 と GIF 書き出しが加わり、それもすべてブラウザ内で処理されます。",
+					"long": "きれいなウェブデモを録るには、重い録画ソフトを使い、ブラウザーの枠を切り抜き、カーソルを追いやすくする手間が普通です。ReelCap はブラウザー内で完結します：手描きカーソルとクリック強調が映像に焼き込まれた状態でタブを録画し、洗練された動画をダウンロード。無料の録画は 100% オフライン — アカウント不要、アップロードなし、データは端末から出ません。\n\nインストールする理由\n\nReelCap はプロダクトデモのために作られました。ページだけを録画し（ブラウザー UI は決して含めません）、強調カーソルとクリック波紋を描いて視聴者がすべての操作を追えるようにし、ナレーションとウェブカメラバブルも追加できます。有料の Pro ツールを含むすべての処理があなたのマシン上で行われ、動画がサーバーに触れることはありません。\n\nできること — 無料・ずっとオフライン\n\n- 🎬 どのタブも録画 — アクティブなタブをそのまま WEBM 動画に。ページ描画のみ、ブラウザー UI は含めません。\n- 🖱️ 強調カーソルとクリック波紋 — 手描きカーソルとクリック波紋を映像に焼き込み、どこを指しどこをクリックしたかが正確に伝わります。\n- 🎙️ マイク + タブ音声 — マイクで解説しつつページ音を残し、1 本のクリーンな音声トラックに混合。\n- 📷 ウェブカメラバブル — カメラを丸いバブルとして任意の角に重ね、サイズ調整可。\n- 📐 固定の出力サイズとフレームレート — オリジナル、1080p、720p、正方形や縦型、24/30/60 fps。\n\nPRO ツール — それでも 100% 端末内\n\n- 🔍 クリック自動ズーム — クリックのたびに映像がなめらかにズームし、小さなボタンやメニューもはっきり見えます。\n- 🎞️ MP4 録画と変換 — ブラウザーが対応していれば MP4 で直接録画、または完成した WEBM を端末上で変換。\n- 🌀 GIF 書き出し — クリップを共有しやすい GIF に。エンコードはブラウザー内で完結。\n\n支払いで変わるのは解放される機能であって、動画の行き先ではありません。無料アカウントを作ると Pro 操作を 10 回試せます — 3 つのツールで同じ残数を共有。サブスクリプションか一度きりの買い切りで恒久的に解放されます。\n\n設計からプライベート\n\n無料の録画はネットワークリクエストを一切送りません — アカウントなし、分析なし、テレメトリーなし。ログインが必要なのは Pro ツールを試す・解放するときだけで、拡張機能がサーバーに尋ねるのはプランが有効かどうかだけです。録画があなたのマシンを離れることはありません。ポリシー全文：https://reelcap.xeviora.com/privacy\n\nキーボードショートカット\n\nReelCap を開く：Alt+Shift+R · 録画を停止：Alt+Shift+S\n\nこんな方に\n\nプロダクトデモ、ローンチ動画、オンボーディングクリップ、サポート返信を録るメーカー、創業者、クリエイターに。編集スキルは不要です。\n\n新着情報\n\n1.0.1 — Pro ツールを追加：クリック自動ズーム、MP4 録画、GIF 書き出し — すべて 100% 端末内で処理。一度ログインすると 10 回の無料お試し付き。\n\n27 のインターフェース言語に対応。",
+					"metaDescription": "Chrome のタブをそのままデモ動画に。強調カーソル、クリック波紋、マイク、ウェブカメラのバブルに対応。録画は無料・ログイン不要、Pro で MP4 と GIF 書き出し、すべてローカル処理。",
 					"features": [
 						{
 							"emoji": "🎬",
@@ -1539,7 +1561,7 @@
 						},
 						{
 							"emoji": "📐",
-							"title": "透かしなし、時間制限なし、アカウント不要——録画もエンコードもブラウザ内で完結",
+							"title": "Pro でクリック自動ズーム、MP4・GIF 書き出しを解放——透かしなし・時間制限なしはそのまま、エンコードは自分のマシンで完結",
 							"desc": ""
 						}
 					]
@@ -1547,9 +1569,9 @@
 				"zh-tw": {
 					"name": "ReelCap – 網頁示範螢幕錄製",
 					"tagline": "錄出的示範，觀眾一眼看懂你在指哪。",
-					"short": "ReelCap 把任何瀏覽器分頁直接錄成影片——帶醒目游標、點擊漣漪、你的旁白與攝影機小視窗。免帳號、不上傳、無浮水印。",
-					"long": "錄一段乾淨的網頁示範，通常得用笨重的錄影軟體，再手動裁掉瀏覽器外框。ReelCap 在瀏覽器裡一站搞定：錄製分頁，自帶手繪游標與點擊高亮，直接下載精緻的 WEBM。免註冊、免上傳，任何資料都不離開你的裝置。\n\n- 🎬 錄製任何分頁 — 把目前分頁直接錄成 WEBM，只錄頁面渲染區，不含瀏覽器 UI。\n- 🖱️ 高亮游標與點擊漣漪 — 手繪游標與點擊漣漪直接合進畫面，觀眾跟得上每一步。\n- 🎙️ 麥克風 + 分頁聲音 — 用麥克風旁白，同時保留頁面原聲，混成單一乾淨音軌。\n- 📷 攝影機泡泡 — 把攝影機疊成圓形泡泡放在任一角落，大小可調。\n- 📐 固定輸出尺寸與影格率 — 原始、1080p、720p、方形或直式，24/30/60 fps 任選。\n- 🔒 100% 離線、免登入 — 錄製與編碼全在瀏覽器；無帳號、無後端、無追蹤。\n\n適合做產品示範的創客、創辦人與創作者，發 YouTube、Product Hunt、上手導引與客服。",
-					"metaDescription": "把任何 Chrome 分頁錄成精緻的示範影片：醒目游標、點擊漣漪、麥克風、攝影機小視窗與固定輸出尺寸。100% 離線、免登入、無浮水印。",
+					"short": "ReelCap 把任何瀏覽器分頁直接錄成影片——帶醒目游標、點擊漣漪、你的旁白與攝影機小視窗。錄影永久免費、免帳號；Pro 再加點擊自動縮放、MP4 與 GIF 匯出，同樣只在你的瀏覽器裡執行。",
+					"long": "錄一段乾淨的網頁示範，通常得用笨重的錄影軟體，再手動裁掉瀏覽器外框，還要想辦法讓游標容易跟上。ReelCap 在瀏覽器裡一站搞定：錄製分頁時，手繪游標與點擊高亮直接合進畫面，錄完下載精緻的影片。免費錄製 100% 離線 — 免帳號、免上傳，任何資料都不離開你的裝置。\n\n為什麼安裝\n\nReelCap 專為產品示範打造。它只錄頁面（絕不含瀏覽器 UI），畫出高亮游標與點擊漣漪讓觀眾跟上每一步，還能加上旁白與攝影機泡泡。所有處理 — 包括付費的 Pro 工具 — 都在你自己的電腦上完成；影片絕不經過任何伺服器。\n\n你可以做什麼 — 免費、永遠離線\n\n- 🎬 錄製任何分頁 — 把目前分頁直接錄成 WEBM 影片，只錄頁面渲染區，不含瀏覽器 UI。\n- 🖱️ 高亮游標與點擊漣漪 — 手繪游標與點擊漣漪直接合進影片，觀眾清楚看到你指哪裡、點哪裡。\n- 🎙️ 麥克風 + 分頁聲音 — 用麥克風旁白，同時保留頁面原聲，混成單一乾淨音軌。\n- 📷 攝影機泡泡 — 把攝影機疊成圓形泡泡放在任一角落，大小可調。\n- 📐 固定輸出尺寸與影格率 — 原始、1080p、720p、方形或直式，24/30/60 fps 任選。\n\nPRO 工具 — 依然 100% 在你的裝置上\n\n- 🔍 點擊自動縮放 — 每次點擊影片都平滑放大，小按鈕與選單看得一清二楚。\n- 🎞️ MP4 錄製與轉換 — 瀏覽器支援時直接錄成 MP4，或把錄好的 WEBM 在裝置上轉換。\n- 🌀 GIF 匯出 — 把片段變成易分享的 GIF，在瀏覽器內本機編碼。\n\n付費改變的是解鎖哪些功能，而不是影片去哪裡。註冊免費帳號即獲 10 次 Pro 操作試用 — 三個工具共用同一額度。訂閱或一次性買斷即可永久解鎖。\n\n隱私始於設計\n\n免費錄製完全不發出任何網路請求 — 無帳號、無分析、無遙測。只有在試用或解鎖 Pro 工具時才需要登入，擴充功能向伺服器詢問的唯一一件事，就是你的方案是否有效。你的錄影絕不離開你的電腦。完整政策：https://reelcap.xeviora.com/privacy\n\n鍵盤快速鍵\n\n開啟 ReelCap：Alt+Shift+R · 停止錄製：Alt+Shift+S\n\n適合誰\n\n錄製產品示範、發佈影片、上手導引與客服回覆的創客、創辦人與創作者 — 不需要剪輯技能。\n\n新功能\n\n1.0.1 — 新增 Pro 工具：點擊自動縮放、MP4 錄製與 GIF 匯出 — 全部 100% 在本機處理；登入一次即獲 10 次免費試用。\n\n提供 27 種介面語言。",
+					"metaDescription": "把任何 Chrome 分頁錄成精緻的示範影片：醒目游標、點擊漣漪、麥克風與攝影機小視窗。錄影免費、免登入；Pro 加 MP4 與 GIF 匯出，全部本機完成。",
 					"features": [
 						{
 							"emoji": "🎬",
@@ -1573,7 +1595,7 @@
 						},
 						{
 							"emoji": "📐",
-							"title": "無浮水印、不限時長、免帳號——擷取與編碼全在你的瀏覽器裡完成",
+							"title": "Pro 解鎖點擊自動縮放、MP4 與 GIF 匯出——依然無浮水印、不限時長，每一格都在你自己的機器上編碼",
 							"desc": ""
 						}
 					]
@@ -3729,7 +3751,7 @@
 					"name": "Mail Toolbox for Gmail™",
 					"tagline": "Your Gmail, finally under control.",
 					"short": "Export, summarize and annotate without ever leaving your inbox. Any conversation becomes a PDF, Word file or Markdown note; AI reads the whole thread and hands back a summary with action items or a reply in your own tone; private notes pin to the messages that matter. It never asks for access to your Google account — no OAuth, no Gmail API. Gmail is a trademark of Google LLC; Mail Toolbox is an independent product.",
-					"long": "**You needed one email thread out of your inbox and into a file. Forty minutes later you have eleven screenshots and no idea which order they go in.**\n\nMail Toolbox turns the conversation you are reading into something you can keep, search, hand to a colleague or attach to a ticket — and it does it without ever asking you to authorize an app against your mailbox.\n\nWHY INSTALL IT\n\nMost tools that touch your mail begin with an authorization screen: grant access, receive a token, hope it is looked after. This one does not have that screen. It works with the page you already have open, in the session you are already signed in to. There is no token to leak, nothing to revoke six months from now, and no server holding a key to your inbox.\n\nExports and notes run entirely inside your browser. The AI features are the one exception, and they stay switched off until you sign in and press a button — at which point that one conversation's text is sent over HTTPS to be processed and is not stored or used for training.\n\nWHAT YOU CAN DO\n\n📄 Save a whole conversation, not a screenshot\nOne click turns the thread you are reading into a real document — a PDF that paginates and prints properly, a clean text file for your notes app, or the original message file for your archive. Attachments come along. Pick several threads and they merge into one document instead of one download prompt per message.\n\n🖨️ PDFs your browser renders, so every language survives\nPages are produced by the browser's own print engine rather than a bundled PDF library. Tables keep their shape, inline images stay put, and Japanese, Arabic and Hindi come out looking the way they do on screen instead of turning into boxes.\n\n✨ Read a forty-message thread in one paragraph\nSummarize the conversation you have open, pull out every commitment and deadline as a checklist you can export, or translate the whole thread into your own language.\n\n↩️ Draft the reply, keep the wording yours\nAsk for a draft in the tone and length you want, with your signature already attached, then edit it inside the normal reply box before anything is sent. Nothing is ever sent on your behalf.\n\n🗂️ Sort the backlog instead of reading it\nRun a screenful of conversations through triage in one pass and see which ones need your reply, which are waiting on someone else, which are just FYI, and which can be archived.\n\n📝 Private notes that stay out of the email\nAttach a note to any conversation — the context you would never put in writing to the other party. A colour stripe in the list tells you at a glance which threads carry one. Notes stay in your browser; paid plans can sync them across your devices.\n\n🔔 Unread counts for every account at once\nA badge and optional desktop alerts covering several signed-in accounts and the labels you choose, on an interval you set. It reads the same feed your browser is already allowed to read.\n\n🔒 It never asks for access to your account\nNo authorization screen, no permanent token, nothing to revoke later.\n\nHOW YOU REACH IT\n\nA button in the toolbar above your messages, a right-click entry on any conversation, and keyboard shortcuts (Alt+P to export, Alt+S to summarize, Alt+N for a note). The toolbar button measures itself after it lands and steps down to a compact icon — or removes itself entirely — rather than pushing your message list out of shape on a narrow window.\n\nPRIVATE BY DESIGN\n\nExporting, notes and unread counts are local to your browser. AI runs require an account and send only the single conversation you asked about; that text is not retained and is never used to train a model. Notes stay on your device unless you turn on sync. The full policy, including who processes what, is at https://mailtoolbox.xeviora.com/privacy\n\nGREAT FOR\n\nPeople who live in their inbox: support and sales teams, consultants, recruiters, founders, anyone who has to archive or hand off long threads.\n\nAvailable in 27 interface languages.\n\nNot affiliated with, endorsed by or sponsored by the company that operates the mail service it works with.",
+					"long": "**You needed one email thread out of your inbox and into a file. Forty minutes later you have eleven screenshots and no idea which order they go in.**\n\nMail Toolbox turns the conversation you are reading into something you can keep, search, hand to a colleague or attach to a ticket — and it does it without ever asking you to authorize an app against your mailbox.\n\nWHY INSTALL IT\n\nMost tools that touch your mail begin with an authorization screen: grant access, receive a token, hope it is looked after. This one does not have that screen. It works with the page you already have open, in the session you are already signed in to. There is no token to leak, nothing to revoke six months from now, and no server holding a key to your inbox.\n\nExports and notes run entirely inside your browser. The AI features are the one exception, and they stay switched off until you sign in and press a button — at which point that one conversation's text is sent over HTTPS to be processed and is not stored or used for training.\n\nWHAT YOU CAN DO\n\n📄 Save a whole conversation, not a screenshot\nOne click turns the thread you are reading into a real document — a PDF that paginates and prints properly, a clean text file for your notes app, or the original message file for your archive. Attachments come along. Pick several threads and they merge into one document instead of one download prompt per message.\n\n🖨️ PDFs your browser renders, so every language survives\nPages are produced by the browser's own print engine rather than a bundled PDF library. Tables keep their shape, inline images stay put, and Japanese, Arabic and Hindi come out looking the way they do on screen instead of turning into boxes.\n\n✨ Read a forty-message thread in one paragraph\nSummarize the conversation you have open, pull out every commitment and deadline as a checklist you can export, or translate the whole thread into your own language.\n\n↩️ Draft the reply, keep the wording yours\nAsk for a draft in the tone and length you want, with your signature already attached, then edit it inside the normal reply box before anything is sent. Nothing is ever sent on your behalf.\n\n🗂️ Sort the backlog instead of reading it\nRun a screenful of conversations through triage in one pass and see which ones need your reply, which are waiting on someone else, which are just FYI, and which can be archived.\n\n📝 Private notes that stay out of the email\nAttach a note to any conversation — the context you would never put in writing to the other party. A colour stripe in the list tells you at a glance which threads carry one. Notes stay in your browser; paid plans can sync them across your devices.\n\n🔔 Unread counts for every account at once\nA badge and optional desktop alerts covering several signed-in accounts and the labels you choose, on an interval you set. It reads the same feed your browser is already allowed to read.\n\n🔒 It never asks for access to your account\nNo authorization screen, no permanent token, nothing to revoke later.\n\nHOW YOU REACH IT\n\nA button in the toolbar above your messages, a right-click entry on any conversation, and keyboard shortcuts (Alt+P to export, Alt+S to summarize, Alt+N for a note). The toolbar button measures itself after it lands and steps down to a compact icon — or removes itself entirely — rather than pushing your message list out of shape on a narrow window.\n\nPRIVATE BY DESIGN\n\nExporting, notes and unread counts are local to your browser. AI runs require an account and send only the single conversation you asked about; that text is not retained and is never used to train a model. Notes stay on your device unless you turn on sync. The full policy, including who processes what, is at https://mailtoolbox.xeviora.com/privacy\n\nGREAT FOR\n\nPeople who live in their inbox: support and sales teams, consultants, recruiters, founders, anyone who has to archive or hand off long threads.\n\nWHAT'S NEW\n\n1.1.0 — Output language is now chosen per AI feature and remembered; AI runs show live progress and can be stopped.\n\nAvailable in 27 interface languages.\n\nNot affiliated with, endorsed by or sponsored by the company that operates the mail service it works with.",
 					"metaDescription": "Export Gmail threads to PDF, Word or Markdown, summarize long conversations with AI, and pin private notes — without granting access to your Google account.",
 					"features": [
 						{
@@ -3778,7 +3800,7 @@
 					"name": "Mail Toolbox for Gmail™",
 					"tagline": "让 Gmail 终于回到你手里。",
 					"short": "导出、总结、标注，全在收件箱里就地完成。任意会话都能变成 PDF、Word 或 Markdown；AI 读完整条往来，给出带待办的总结，或按你的语气起草回复；重要的邮件上可以钉一条只有你看得见的便签。它从不索取 Google 账号授权——不走 OAuth，也不碰 Gmail API。Gmail 是 Google LLC 的商标，Mail Toolbox 是独立产品。",
-					"long": "**你只是想把一串邮件从收件箱里捞出来存成文件。四十分钟后，手里是十一张截图，还不知道哪张排在前面。**\n\nMail Toolbox 把你正在读的这串会话，变成可以留存、可以检索、可以交接给同事、可以附进工单的东西 —— 而且全程不会要求你把邮箱授权给任何应用。\n\n为什么要装\n\n多数会碰你邮件的工具，第一步都是授权页：给权限、拿到令牌，然后指望它被妥善保管。这个扩展压根没有那道页面。它就在你已经打开的页面上，用你已经登录的会话干活。没有会泄露的令牌，没有半年后要吊销的东西，也没有哪台服务器攥着你邮箱的钥匙。\n\n导出和便签完全在浏览器里完成。唯一的例外是 AI 功能：在你登录并按下按钮之前它是关着的；按下去的那一刻，也只有那一串会话的正文会经 HTTPS 送去处理，不留存、不拿去训练模型。\n\n它能做什么\n\n📄 存下整串会话，而不是截图\n一键把你正在读的会话变成真正的文档 —— 分页和打印都正常的 PDF、可以丢进笔记软件的干净文本文件，或者留档用的原始邮件文件。附件一并带走。勾选多串会话，它们会合并成一份文档，而不是每封信弹一次下载窗口。\n\n🖨️ PDF 由浏览器自己排版，所以每种语言都活得下来\n版面交给浏览器内置的打印引擎，而不是打包进来的 PDF 库。表格保持原形、内嵌图片留在原位，日文、阿拉伯文、印地文不会变成一格格方块，屏幕上什么样，打出来就是什么样。\n\n✨ 四十封信的会话，一段话读完\n把打开的会话总结成一段、把里面每一项承诺与截止日期抽成可导出的待办清单，或者把整串会话翻译成你的语言。\n\n↩️ 让它拟回复，用词仍然是你的\n指定语气与长度、签名自动附上，先要一份草稿，再到平常那个回复框里改到满意为止 —— 在此之前不会发出任何东西。它永远不会替你发信。\n\n🗂️ 积压的邮件用分类，而不是硬读\n一次把整屏会话跑过分流，看清楚哪些等你回、哪些在等对方、哪些只是知会、哪些可以直接归档。\n\n📝 不会写进邮件里的私人便签\n在任何一串会话上贴一条便签 —— 那些你绝不会白纸黑字写给对方的来龙去脉。列表上的色条让你一眼看出哪几串带着便签。便签留在你的浏览器里；付费方案可以在设备之间同步。\n\n🔔 所有账号的未读数，一次看完\n针对多个已登录账号和你挑选的标签显示数字角标与（可选的）桌面通知，间隔时间你自己定。它读的就是你的浏览器本来就被允许读的那份摘要。\n\n🔒 它从不索取你的账号访问权\n没有授权页、没有长期令牌，日后也没有什么需要吊销。\n\n从哪儿叫出来\n\n邮件列表上方工具栏的按钮、任一串会话上的右键菜单，以及键盘快捷键（Alt+P 导出、Alt+S 总结、Alt+N 便签）。工具栏按钮放进去之后会自己量尺寸，宁可缩成紧凑图标、甚至自己摘掉，也不会在窗口变窄时把你的邮件列表挤变形。\n\n从设计上就是私密的\n\n导出、便签、未读数都在浏览器本机完成。AI 需要账号，而且只送出你指定的那一串会话；那段文字不会被留存，也不会拿去训练任何模型。除非你打开同步，便签就只待在你的设备上。完整政策（含各家处理者）在 https://mailtoolbox.xeviora.com/privacy\n\n适合谁\n\n活在收件箱里的人：客服与销售团队、顾问、招聘、创始人 —— 任何需要归档或交接长串会话的人。\n\n提供 27 种界面语言。\n\n与运营本扩展所搭配的邮件服务的公司无隶属关系，亦未获其背书或赞助。",
+					"long": "**你只是想把一串邮件从收件箱里捞出来存成文件。四十分钟后，手里是十一张截图，还不知道哪张排在前面。**\n\nMail Toolbox 把你正在读的这串会话，变成可以留存、可以检索、可以交接给同事、可以附进工单的东西 —— 而且全程不会要求你把邮箱授权给任何应用。\n\n为什么要装\n\n多数会碰你邮件的工具，第一步都是授权页：给权限、拿到令牌，然后指望它被妥善保管。这个扩展压根没有那道页面。它就在你已经打开的页面上，用你已经登录的会话干活。没有会泄露的令牌，没有半年后要吊销的东西，也没有哪台服务器攥着你邮箱的钥匙。\n\n导出和便签完全在浏览器里完成。唯一的例外是 AI 功能：在你登录并按下按钮之前它是关着的；按下去的那一刻，也只有那一串会话的正文会经 HTTPS 送去处理，不留存、不拿去训练模型。\n\n它能做什么\n\n📄 存下整串会话，而不是截图\n一键把你正在读的会话变成真正的文档 —— 分页和打印都正常的 PDF、可以丢进笔记软件的干净文本文件，或者留档用的原始邮件文件。附件一并带走。勾选多串会话，它们会合并成一份文档，而不是每封信弹一次下载窗口。\n\n🖨️ PDF 由浏览器自己排版，所以每种语言都活得下来\n版面交给浏览器内置的打印引擎，而不是打包进来的 PDF 库。表格保持原形、内嵌图片留在原位，日文、阿拉伯文、印地文不会变成一格格方块，屏幕上什么样，打出来就是什么样。\n\n✨ 四十封信的会话，一段话读完\n把打开的会话总结成一段、把里面每一项承诺与截止日期抽成可导出的待办清单，或者把整串会话翻译成你的语言。\n\n↩️ 让它拟回复，用词仍然是你的\n指定语气与长度、签名自动附上，先要一份草稿，再到平常那个回复框里改到满意为止 —— 在此之前不会发出任何东西。它永远不会替你发信。\n\n🗂️ 积压的邮件用分类，而不是硬读\n一次把整屏会话跑过分流，看清楚哪些等你回、哪些在等对方、哪些只是知会、哪些可以直接归档。\n\n📝 不会写进邮件里的私人便签\n在任何一串会话上贴一条便签 —— 那些你绝不会白纸黑字写给对方的来龙去脉。列表上的色条让你一眼看出哪几串带着便签。便签留在你的浏览器里；付费方案可以在设备之间同步。\n\n🔔 所有账号的未读数，一次看完\n针对多个已登录账号和你挑选的标签显示数字角标与（可选的）桌面通知，间隔时间你自己定。它读的就是你的浏览器本来就被允许读的那份摘要。\n\n🔒 它从不索取你的账号访问权\n没有授权页、没有长期令牌，日后也没有什么需要吊销。\n\n从哪儿叫出来\n\n邮件列表上方工具栏的按钮、任一串会话上的右键菜单，以及键盘快捷键（Alt+P 导出、Alt+S 总结、Alt+N 便签）。工具栏按钮放进去之后会自己量尺寸，宁可缩成紧凑图标、甚至自己摘掉，也不会在窗口变窄时把你的邮件列表挤变形。\n\n从设计上就是私密的\n\n导出、便签、未读数都在浏览器本机完成。AI 需要账号，而且只送出你指定的那一串会话；那段文字不会被留存，也不会拿去训练任何模型。除非你打开同步，便签就只待在你的设备上。完整政策（含各家处理者）在 https://mailtoolbox.xeviora.com/privacy\n\n适合谁\n\n活在收件箱里的人：客服与销售团队、顾问、招聘、创始人 —— 任何需要归档或交接长串会话的人。\n\n最近更新\n\n1.1.0 — 输出语言改为每个 AI 功能单独选择并记住；AI 运行时有实时进度，可随时停止。\n\n提供 27 种界面语言。\n\n与运营本扩展所搭配的邮件服务的公司无隶属关系，亦未获其背书或赞助。",
 					"metaDescription": "把 Gmail 会话导出成 PDF、Word 或 Markdown，用 AI 总结长会话并起草回复，给任意邮件钉上私人便签——全程不需要授权 Google 账号。",
 					"features": [
 						{
@@ -3812,7 +3834,7 @@
 					"name": "Mail Toolbox for Gmail™",
 					"tagline": "Tu Gmail, por fin bajo control.",
 					"short": "Exporta, resume y anota sin salir de la bandeja de entrada. Cualquier conversación se convierte en un PDF, un archivo de Word o una nota Markdown; la IA lee el hilo entero y devuelve un resumen con tareas pendientes o una respuesta con tu propio tono; las notas privadas se quedan pegadas a los mensajes que importan. Nunca pide acceso a tu cuenta de Google: ni OAuth, ni la API de Gmail. Gmail es una marca de Google LLC; Mail Toolbox es un producto independiente.",
-					"long": "**Solo querías sacar una conversación de la bandeja de entrada y meterla en un archivo. Cuarenta minutos después tienes once capturas de pantalla y ni idea de en qué orden van.**\n\nMail Toolbox convierte la conversación que estás leyendo en algo que puedes guardar, buscar, pasar a un compañero o adjuntar a un ticket — y lo hace sin pedirte nunca que autorices una aplicación sobre tu buzón.\n\nPOR QUÉ INSTALARLA\n\nLa mayoría de herramientas que tocan tu correo empiezan por una pantalla de autorización: concede el acceso, recibe un token, confía en que lo cuiden. Esta extensión no tiene esa pantalla. Trabaja con la página que ya tienes abierta, en la sesión en la que ya has iniciado sesión. No hay token que pueda filtrarse, nada que revocar dentro de seis meses y ningún servidor guardando una llave de tu bandeja.\n\nLa exportación y las notas ocurren enteramente dentro de tu navegador. Las funciones de IA son la única excepción: siguen apagadas hasta que inicias sesión y pulsas el botón — solo entonces el texto de esa única conversación viaja por HTTPS para procesarse, sin almacenarse ni usarse para entrenar.\n\nQUÉ PUEDES HACER\n\n📄 Guarda la conversación entera, no una captura\nUn clic convierte el hilo que lees en un documento de verdad — un PDF que pagina e imprime como debe, un archivo de texto limpio para tu aplicación de notas, o el archivo original del mensaje para tu archivo. Los adjuntos van con él. Selecciona varias conversaciones y se fusionan en un solo documento en lugar de abrir una ventana de descarga por mensaje.\n\n🖨️ PDF que renderiza tu navegador, así sobrevive cualquier idioma\nLas páginas las produce el propio motor de impresión del navegador y no una biblioteca de PDF incluida. Las tablas conservan su forma, las imágenes se quedan en su sitio, y el japonés, el árabe y el hindi salen tal como se ven en pantalla en vez de convertirse en cuadraditos.\n\n✨ Lee un hilo de cuarenta mensajes en un párrafo\nResume la conversación abierta, extrae cada compromiso y cada plazo como una lista exportable, o traduce el hilo entero a tu idioma.\n\n↩️ Deja que redacte la respuesta, las palabras siguen siendo tuyas\nPide un borrador con el tono y la extensión que quieras, con tu firma ya puesta, y edítalo en el campo de respuesta de siempre antes de que salga nada. Nunca se envía nada en tu nombre.\n\n🗂️ Clasifica el atasco en lugar de leerlo\nPasa una pantalla entera de conversaciones por el triaje de una vez y ve cuáles necesitan tu respuesta, cuáles esperan a otra persona, cuáles son solo informativas y cuáles pueden archivarse.\n\n📝 Notas privadas que se quedan fuera del correo\nEngancha una nota a cualquier conversación — el contexto que jamás le escribirías a la otra parte. Una franja de color en la lista te dice de un vistazo qué hilos llevan una. Las notas se quedan en tu navegador; los planes de pago pueden sincronizarlas entre tus dispositivos.\n\n🔔 Contadores de no leídos de todas las cuentas a la vez\nUna insignia y alertas de escritorio opcionales que cubren varias cuentas con sesión iniciada y las etiquetas que elijas, con el intervalo que fijes. Lee el mismo feed que tu navegador ya tiene permiso para leer.\n\n🔒 Nunca pide acceso a tu cuenta\nSin pantalla de autorización, sin token permanente, sin nada que revocar después.\n\nCÓMO LLEGAR A ELLA\n\nUn botón en la barra sobre tus mensajes, una entrada en el menú contextual de cualquier conversación y atajos de teclado (Alt+P exportar, Alt+S resumir, Alt+N nota). El botón se mide a sí mismo después de colocarse y baja a un icono compacto — o se retira del todo — antes que descuadrar tu lista de mensajes en una ventana estrecha.\n\nPRIVADA POR DISEÑO\n\nExportar, las notas y los contadores de no leídos son locales. Las ejecuciones de IA requieren cuenta y envían solo esa única conversación por la que preguntaste; ese texto no se conserva ni se usa jamás para entrenar un modelo. Las notas se quedan en tu dispositivo salvo que actives la sincronización. La política completa, incluido quién procesa qué: https://mailtoolbox.xeviora.com/privacy\n\nIDEAL PARA\n\nQuien vive en su bandeja de entrada: equipos de soporte y ventas, consultores, reclutadores, fundadores — cualquiera que tenga que archivar o traspasar hilos largos.\n\nDisponible en 27 idiomas de interfaz.\n\nNo está afiliada, respaldada ni patrocinada por la empresa que opera el servicio de correo con el que funciona.",
+					"long": "**Solo querías sacar una conversación de la bandeja de entrada y meterla en un archivo. Cuarenta minutos después tienes once capturas de pantalla y ni idea de en qué orden van.**\n\nMail Toolbox convierte la conversación que estás leyendo en algo que puedes guardar, buscar, pasar a un compañero o adjuntar a un ticket — y lo hace sin pedirte nunca que autorices una aplicación sobre tu buzón.\n\nPOR QUÉ INSTALARLA\n\nLa mayoría de herramientas que tocan tu correo empiezan por una pantalla de autorización: concede el acceso, recibe un token, confía en que lo cuiden. Esta extensión no tiene esa pantalla. Trabaja con la página que ya tienes abierta, en la sesión en la que ya has iniciado sesión. No hay token que pueda filtrarse, nada que revocar dentro de seis meses y ningún servidor guardando una llave de tu bandeja.\n\nLa exportación y las notas ocurren enteramente dentro de tu navegador. Las funciones de IA son la única excepción: siguen apagadas hasta que inicias sesión y pulsas el botón — solo entonces el texto de esa única conversación viaja por HTTPS para procesarse, sin almacenarse ni usarse para entrenar.\n\nQUÉ PUEDES HACER\n\n📄 Guarda la conversación entera, no una captura\nUn clic convierte el hilo que lees en un documento de verdad — un PDF que pagina e imprime como debe, un archivo de texto limpio para tu aplicación de notas, o el archivo original del mensaje para tu archivo. Los adjuntos van con él. Selecciona varias conversaciones y se fusionan en un solo documento en lugar de abrir una ventana de descarga por mensaje.\n\n🖨️ PDF que renderiza tu navegador, así sobrevive cualquier idioma\nLas páginas las produce el propio motor de impresión del navegador y no una biblioteca de PDF incluida. Las tablas conservan su forma, las imágenes se quedan en su sitio, y el japonés, el árabe y el hindi salen tal como se ven en pantalla en vez de convertirse en cuadraditos.\n\n✨ Lee un hilo de cuarenta mensajes en un párrafo\nResume la conversación abierta, extrae cada compromiso y cada plazo como una lista exportable, o traduce el hilo entero a tu idioma.\n\n↩️ Deja que redacte la respuesta, las palabras siguen siendo tuyas\nPide un borrador con el tono y la extensión que quieras, con tu firma ya puesta, y edítalo en el campo de respuesta de siempre antes de que salga nada. Nunca se envía nada en tu nombre.\n\n🗂️ Clasifica el atasco en lugar de leerlo\nPasa una pantalla entera de conversaciones por el triaje de una vez y ve cuáles necesitan tu respuesta, cuáles esperan a otra persona, cuáles son solo informativas y cuáles pueden archivarse.\n\n📝 Notas privadas que se quedan fuera del correo\nEngancha una nota a cualquier conversación — el contexto que jamás le escribirías a la otra parte. Una franja de color en la lista te dice de un vistazo qué hilos llevan una. Las notas se quedan en tu navegador; los planes de pago pueden sincronizarlas entre tus dispositivos.\n\n🔔 Contadores de no leídos de todas las cuentas a la vez\nUna insignia y alertas de escritorio opcionales que cubren varias cuentas con sesión iniciada y las etiquetas que elijas, con el intervalo que fijes. Lee el mismo feed que tu navegador ya tiene permiso para leer.\n\n🔒 Nunca pide acceso a tu cuenta\nSin pantalla de autorización, sin token permanente, sin nada que revocar después.\n\nCÓMO LLEGAR A ELLA\n\nUn botón en la barra sobre tus mensajes, una entrada en el menú contextual de cualquier conversación y atajos de teclado (Alt+P exportar, Alt+S resumir, Alt+N nota). El botón se mide a sí mismo después de colocarse y baja a un icono compacto — o se retira del todo — antes que descuadrar tu lista de mensajes en una ventana estrecha.\n\nPRIVADA POR DISEÑO\n\nExportar, las notas y los contadores de no leídos son locales. Las ejecuciones de IA requieren cuenta y envían solo esa única conversación por la que preguntaste; ese texto no se conserva ni se usa jamás para entrenar un modelo. Las notas se quedan en tu dispositivo salvo que actives la sincronización. La política completa, incluido quién procesa qué: https://mailtoolbox.xeviora.com/privacy\n\nIDEAL PARA\n\nQuien vive en su bandeja de entrada: equipos de soporte y ventas, consultores, reclutadores, fundadores — cualquiera que tenga que archivar o traspasar hilos largos.\n\nNOVEDADES\n\n1.1.0 — El idioma de salida ahora se elige en cada función de IA y se recuerda; las ejecuciones de IA muestran el progreso y se pueden detener.\n\nDisponible en 27 idiomas de interfaz.\n\nNo está afiliada, respaldada ni patrocinada por la empresa que opera el servicio de correo con el que funciona.",
 					"metaDescription": "Exporta conversaciones de Gmail a PDF, Word o Markdown, resúmelas con IA y guarda notas privadas, sin conceder ningún permiso de tu cuenta de Google.",
 					"features": [
 						{
@@ -3846,7 +3868,7 @@
 					"name": "Mail Toolbox for Gmail™",
 					"tagline": "Votre Gmail, enfin sous contrôle.",
 					"short": "Exportez, résumez et annotez sans quitter votre boîte de réception. N'importe quelle conversation devient un PDF, un fichier Word ou une note Markdown ; l'IA lit le fil entier et renvoie un résumé avec les actions à mener ou une réponse dans votre ton ; les notes privées restent épinglées aux messages qui comptent. Il ne demande jamais l'accès à votre compte Google — ni OAuth, ni API Gmail. Gmail est une marque de Google LLC ; Mail Toolbox est un produit indépendant.",
-					"long": "**Vous vouliez juste sortir un fil de discussion de votre boîte et le mettre dans un fichier. Quarante minutes plus tard, vous avez onze captures d'écran et aucune idée de leur ordre.**\n\nMail Toolbox transforme la conversation que vous êtes en train de lire en quelque chose que vous pouvez conserver, rechercher, transmettre à un collègue ou joindre à un ticket — et il le fait sans jamais vous demander d'autoriser une application sur votre messagerie.\n\nPOURQUOI L'INSTALLER\n\nLa plupart des outils qui touchent à votre courrier commencent par un écran d'autorisation : accordez l'accès, recevez un jeton, espérez qu'il sera bien gardé. Cette extension n'a tout simplement pas cet écran. Elle travaille avec la page que vous avez déjà ouverte, dans la session où vous êtes déjà connecté. Aucun jeton susceptible de fuiter, rien à révoquer dans six mois, aucun serveur détenant une clé de votre boîte.\n\nL'export et les notes se déroulent entièrement dans votre navigateur. Les fonctions d'IA sont la seule exception : elles restent désactivées jusqu'à ce que vous vous connectiez et appuyiez sur le bouton — le texte de cette seule conversation part alors en HTTPS pour être traité, sans être conservé ni utilisé pour de l'entraînement.\n\nCE QU'ELLE FAIT\n\n📄 Enregistrer toute la conversation, pas une capture\nUn clic transforme le fil que vous lisez en véritable document — un PDF qui se pagine et s'imprime correctement, un fichier texte propre pour votre application de notes, ou le fichier d'origine du message pour votre archive. Les pièces jointes suivent. Sélectionnez plusieurs fils : ils fusionnent en un seul document au lieu d'ouvrir une fenêtre de téléchargement par message.\n\n🖨️ Des PDF rendus par votre navigateur, donc toutes les langues survivent\nLes pages sont produites par le moteur d'impression du navigateur plutôt que par une bibliothèque PDF embarquée. Les tableaux gardent leur forme, les images en ligne restent en place, et le japonais, l'arabe et le hindi sortent tels qu'ils s'affichent, au lieu de se changer en carrés.\n\n✨ Lire un fil de quarante messages en un paragraphe\nRésumez la conversation ouverte, extrayez-en chaque engagement et chaque échéance sous forme de liste exportable, ou traduisez le fil entier dans votre langue.\n\n↩️ Faire rédiger la réponse, garder vos mots\nDemandez un brouillon du ton et de la longueur voulus, signature déjà jointe, puis modifiez-le dans le champ de réponse habituel avant tout envoi. Rien n'est jamais envoyé en votre nom.\n\n🗂️ Trier l'arriéré au lieu de le lire\nPassez un écran entier de conversations au tri en une seule fois et voyez lesquelles attendent votre réponse, lesquelles attendent quelqu'un d'autre, lesquelles sont pour information et lesquelles peuvent être archivées.\n\n📝 Des notes privées qui restent hors du courriel\nAttachez une note à n'importe quelle conversation — le contexte que vous n'écririez jamais à votre interlocuteur. Une bande de couleur dans la liste indique d'un coup d'œil quels fils en portent une. Les notes restent dans votre navigateur ; les formules payantes peuvent les synchroniser entre vos appareils.\n\n🔔 Les non-lus de tous vos comptes d'un coup\nUne pastille et des alertes de bureau facultatives couvrant plusieurs comptes connectés et les libellés de votre choix, à l'intervalle que vous fixez. Elle lit le même flux que votre navigateur a déjà le droit de lire.\n\n🔒 Elle ne demande jamais l'accès à votre compte\nPas d'écran d'autorisation, pas de jeton permanent, rien à révoquer plus tard.\n\nCOMMENT Y ACCÉDER\n\nUn bouton dans la barre au-dessus de vos messages, une entrée dans le menu contextuel de toute conversation, et des raccourcis clavier (Alt+P exporter, Alt+S résumer, Alt+N note). Le bouton se mesure après son insertion et se réduit à une icône compacte — ou se retire complètement — plutôt que de déformer votre liste de messages dans une fenêtre étroite.\n\nPRIVÉE PAR CONCEPTION\n\nL'export, les notes et les compteurs de non-lus restent locaux. Les traitements d'IA exigent un compte et n'envoient que la seule conversation demandée ; ce texte n'est pas conservé et ne sert jamais à entraîner un modèle. Les notes restent sur votre appareil tant que vous n'activez pas la synchronisation. La politique complète, y compris qui traite quoi : https://mailtoolbox.xeviora.com/privacy\n\nIDÉALE POUR\n\nCeux qui vivent dans leur boîte de réception : équipes support et commerciales, consultants, recruteurs, fondateurs, toute personne qui doit archiver ou transmettre de longs échanges.\n\nDisponible en 27 langues d'interface.\n\nSans lien avec l'entreprise qui exploite le service de messagerie pris en charge, ni approuvée ni sponsorisée par elle.",
+					"long": "**Vous vouliez juste sortir un fil de discussion de votre boîte et le mettre dans un fichier. Quarante minutes plus tard, vous avez onze captures d'écran et aucune idée de leur ordre.**\n\nMail Toolbox transforme la conversation que vous êtes en train de lire en quelque chose que vous pouvez conserver, rechercher, transmettre à un collègue ou joindre à un ticket — et il le fait sans jamais vous demander d'autoriser une application sur votre messagerie.\n\nPOURQUOI L'INSTALLER\n\nLa plupart des outils qui touchent à votre courrier commencent par un écran d'autorisation : accordez l'accès, recevez un jeton, espérez qu'il sera bien gardé. Cette extension n'a tout simplement pas cet écran. Elle travaille avec la page que vous avez déjà ouverte, dans la session où vous êtes déjà connecté. Aucun jeton susceptible de fuiter, rien à révoquer dans six mois, aucun serveur détenant une clé de votre boîte.\n\nL'export et les notes se déroulent entièrement dans votre navigateur. Les fonctions d'IA sont la seule exception : elles restent désactivées jusqu'à ce que vous vous connectiez et appuyiez sur le bouton — le texte de cette seule conversation part alors en HTTPS pour être traité, sans être conservé ni utilisé pour de l'entraînement.\n\nCE QU'ELLE FAIT\n\n📄 Enregistrer toute la conversation, pas une capture\nUn clic transforme le fil que vous lisez en véritable document — un PDF qui se pagine et s'imprime correctement, un fichier texte propre pour votre application de notes, ou le fichier d'origine du message pour votre archive. Les pièces jointes suivent. Sélectionnez plusieurs fils : ils fusionnent en un seul document au lieu d'ouvrir une fenêtre de téléchargement par message.\n\n🖨️ Des PDF rendus par votre navigateur, donc toutes les langues survivent\nLes pages sont produites par le moteur d'impression du navigateur plutôt que par une bibliothèque PDF embarquée. Les tableaux gardent leur forme, les images en ligne restent en place, et le japonais, l'arabe et le hindi sortent tels qu'ils s'affichent, au lieu de se changer en carrés.\n\n✨ Lire un fil de quarante messages en un paragraphe\nRésumez la conversation ouverte, extrayez-en chaque engagement et chaque échéance sous forme de liste exportable, ou traduisez le fil entier dans votre langue.\n\n↩️ Faire rédiger la réponse, garder vos mots\nDemandez un brouillon du ton et de la longueur voulus, signature déjà jointe, puis modifiez-le dans le champ de réponse habituel avant tout envoi. Rien n'est jamais envoyé en votre nom.\n\n🗂️ Trier l'arriéré au lieu de le lire\nPassez un écran entier de conversations au tri en une seule fois et voyez lesquelles attendent votre réponse, lesquelles attendent quelqu'un d'autre, lesquelles sont pour information et lesquelles peuvent être archivées.\n\n📝 Des notes privées qui restent hors du courriel\nAttachez une note à n'importe quelle conversation — le contexte que vous n'écririez jamais à votre interlocuteur. Une bande de couleur dans la liste indique d'un coup d'œil quels fils en portent une. Les notes restent dans votre navigateur ; les formules payantes peuvent les synchroniser entre vos appareils.\n\n🔔 Les non-lus de tous vos comptes d'un coup\nUne pastille et des alertes de bureau facultatives couvrant plusieurs comptes connectés et les libellés de votre choix, à l'intervalle que vous fixez. Elle lit le même flux que votre navigateur a déjà le droit de lire.\n\n🔒 Elle ne demande jamais l'accès à votre compte\nPas d'écran d'autorisation, pas de jeton permanent, rien à révoquer plus tard.\n\nCOMMENT Y ACCÉDER\n\nUn bouton dans la barre au-dessus de vos messages, une entrée dans le menu contextuel de toute conversation, et des raccourcis clavier (Alt+P exporter, Alt+S résumer, Alt+N note). Le bouton se mesure après son insertion et se réduit à une icône compacte — ou se retire complètement — plutôt que de déformer votre liste de messages dans une fenêtre étroite.\n\nPRIVÉE PAR CONCEPTION\n\nL'export, les notes et les compteurs de non-lus restent locaux. Les traitements d'IA exigent un compte et n'envoient que la seule conversation demandée ; ce texte n'est pas conservé et ne sert jamais à entraîner un modèle. Les notes restent sur votre appareil tant que vous n'activez pas la synchronisation. La politique complète, y compris qui traite quoi : https://mailtoolbox.xeviora.com/privacy\n\nIDÉALE POUR\n\nCeux qui vivent dans leur boîte de réception : équipes support et commerciales, consultants, recruteurs, fondateurs, toute personne qui doit archiver ou transmettre de longs échanges.\n\nNOUVEAUTÉS\n\n1.1.0 — La langue de sortie se choisit désormais pour chaque fonction IA et reste mémorisée ; les traitements IA affichent leur progression et peuvent être arrêtés.\n\nDisponible en 27 langues d'interface.\n\nSans lien avec l'entreprise qui exploite le service de messagerie pris en charge, ni approuvée ni sponsorisée par elle.",
 					"metaDescription": "Exportez vos fils Gmail en PDF, Word ou Markdown, résumez-les par IA et épinglez des notes privées, sans jamais accorder d'accès à votre compte Google.",
 					"features": [
 						{
@@ -3880,7 +3902,7 @@
 					"name": "Mail Toolbox for Gmail™",
 					"tagline": "Gmail を、ようやく自分の手に。",
 					"short": "受信トレイから離れずに、書き出し・要約・メモまで。どのスレッドも PDF や Word、Markdown になり、AI がやり取り全体を読んで、やることリスト付きの要約やあなたの語り口の返信を返します。大事なメールには自分だけに見えるメモを貼れます。Google アカウントへのアクセスは一切求めません——OAuth も Gmail API も使いません。Gmail は Google LLC の商標であり、Mail Toolbox は独立した製品です。",
-					"long": "**受信トレイからスレッドを一本、ファイルに落としたかっただけでした。四十分後、手元にはスクリーンショットが十一枚、しかもどれがどの順番か分からない。**\n\nMail Toolbox は、いま読んでいる会話を、保存でき、検索でき、同僚に渡せて、チケットに添付できるものに変えます。しかもメールボックスへのアプリ認可を一度も求めません。\n\nなぜ入れるのか\n\nメールに触れるツールの多くは認可画面から始まります。アクセスを許可し、トークンを受け取り、それが大切に扱われることを祈る。この拡張機能にはその画面自体がありません。すでに開いているページで、すでにログインしているセッションのまま動きます。漏れうるトークンはなく、半年後に取り消すものもなく、あなたの受信トレイの鍵を握るサーバーもありません。\n\n書き出しとメモはすべてブラウザの中で完結します。唯一の例外が AI 機能で、ログインしてボタンを押すまでは動きません。押した時にだけ、その一件の会話のテキストが HTTPS で送られて処理され、保存も学習利用もされません。\n\nできること\n\n📄 スクリーンショットではなく、会話まるごとを保存\nクリック一回で、読んでいるスレッドが本物の文書になります。ページ送りも印刷も正しく効く PDF、メモアプリに流し込める素直なテキストファイル、あるいは保管用の元メッセージファイル。添付ファイルも一緒に付いてきます。複数のスレッドを選べば、メッセージごとにダウンロード確認が出るのではなく、一つの文書にまとまります。\n\n🖨️ ブラウザが描く PDF だから、どの言語も生き残る\nページは同梱の PDF ライブラリではなく、ブラウザ自身の印刷エンジンが作ります。表は形を保ち、本文中の画像も位置を保ち、日本語・アラビア語・ヒンディー語は豆腐にならず画面どおりに出ます。\n\n✨ 四十通のスレッドを一段落で読む\n開いている会話を要約し、約束と期限をすべて書き出せるチェックリストとして抜き出し、スレッド全体を自分の言語に訳せます。\n\n↩️ 返信は下書きさせ、言い回しは自分のまま\n望みのトーンと長さで、署名まで付いた下書きを頼み、何かが送られる前に普段の返信欄で直してください。あなたの名前で勝手に送信されることは決してありません。\n\n🗂️ 溜まった分は読むのではなく仕分ける\n画面一杯の会話を一度に仕分けて、返信が要るもの、相手待ちのもの、情報共有だけのもの、アーカイブしてよいものを見分けます。\n\n📝 メール本文に書けない、非公開のメモ\nどの会話にもメモを付けられます。相手には決して文字にしない前提のことです。一覧の色帯が、どのスレッドにメモが付いているかを一目で示します。メモはブラウザ内に残り、有料プランでは端末間で同期できます。\n\n🔔 全アカウントの未読数を一度に\nログイン済みの複数アカウントと選んだラベルを対象に、指定した間隔でバッジと任意のデスクトップ通知を出します。読むのは、あなたのブラウザがもともと読んでよいフィードそのものです。\n\n🔒 アカウントへのアクセスを決して求めません\n認可画面もなく、恒久的なトークンもなく、後から取り消すものもありません。\n\n呼び出し方\n\nメッセージ上部のツールバーのボタン、任意の会話での右クリックメニュー、そしてキーボードショートカット（Alt+P 書き出し、Alt+S 要約、Alt+N メモ）。ツールバーのボタンは配置後に自分を採寸し、狭いウィンドウでメッセージ一覧を押し崩すくらいならコンパクトなアイコンに落とすか、自ら消えます。\n\n設計からして非公開\n\n書き出し・メモ・未読数はブラウザ内で完結します。AI の実行にはアカウントが必要で、送るのは尋ねられたその一件の会話だけ。そのテキストは保持されず、モデルの学習にも使われません。メモは同期を有効にしない限り端末に残ります。誰が何を処理するかを含む全文は https://mailtoolbox.xeviora.com/privacy にあります。\n\nこんな人に\n\n受信トレイに住んでいる人へ。サポートと営業のチーム、コンサルタント、採用担当、創業者 — 長いスレッドを保管したり引き継いだりする必要のあるすべての人に。\n\n27 のインターフェース言語に対応。\n\n対応するメールサービスを運営する企業とは提携関係になく、同社の承認・支援も受けていません。",
+					"long": "**受信トレイからスレッドを一本、ファイルに落としたかっただけでした。四十分後、手元にはスクリーンショットが十一枚、しかもどれがどの順番か分からない。**\n\nMail Toolbox は、いま読んでいる会話を、保存でき、検索でき、同僚に渡せて、チケットに添付できるものに変えます。しかもメールボックスへのアプリ認可を一度も求めません。\n\nなぜ入れるのか\n\nメールに触れるツールの多くは認可画面から始まります。アクセスを許可し、トークンを受け取り、それが大切に扱われることを祈る。この拡張機能にはその画面自体がありません。すでに開いているページで、すでにログインしているセッションのまま動きます。漏れうるトークンはなく、半年後に取り消すものもなく、あなたの受信トレイの鍵を握るサーバーもありません。\n\n書き出しとメモはすべてブラウザの中で完結します。唯一の例外が AI 機能で、ログインしてボタンを押すまでは動きません。押した時にだけ、その一件の会話のテキストが HTTPS で送られて処理され、保存も学習利用もされません。\n\nできること\n\n📄 スクリーンショットではなく、会話まるごとを保存\nクリック一回で、読んでいるスレッドが本物の文書になります。ページ送りも印刷も正しく効く PDF、メモアプリに流し込める素直なテキストファイル、あるいは保管用の元メッセージファイル。添付ファイルも一緒に付いてきます。複数のスレッドを選べば、メッセージごとにダウンロード確認が出るのではなく、一つの文書にまとまります。\n\n🖨️ ブラウザが描く PDF だから、どの言語も生き残る\nページは同梱の PDF ライブラリではなく、ブラウザ自身の印刷エンジンが作ります。表は形を保ち、本文中の画像も位置を保ち、日本語・アラビア語・ヒンディー語は豆腐にならず画面どおりに出ます。\n\n✨ 四十通のスレッドを一段落で読む\n開いている会話を要約し、約束と期限をすべて書き出せるチェックリストとして抜き出し、スレッド全体を自分の言語に訳せます。\n\n↩️ 返信は下書きさせ、言い回しは自分のまま\n望みのトーンと長さで、署名まで付いた下書きを頼み、何かが送られる前に普段の返信欄で直してください。あなたの名前で勝手に送信されることは決してありません。\n\n🗂️ 溜まった分は読むのではなく仕分ける\n画面一杯の会話を一度に仕分けて、返信が要るもの、相手待ちのもの、情報共有だけのもの、アーカイブしてよいものを見分けます。\n\n📝 メール本文に書けない、非公開のメモ\nどの会話にもメモを付けられます。相手には決して文字にしない前提のことです。一覧の色帯が、どのスレッドにメモが付いているかを一目で示します。メモはブラウザ内に残り、有料プランでは端末間で同期できます。\n\n🔔 全アカウントの未読数を一度に\nログイン済みの複数アカウントと選んだラベルを対象に、指定した間隔でバッジと任意のデスクトップ通知を出します。読むのは、あなたのブラウザがもともと読んでよいフィードそのものです。\n\n🔒 アカウントへのアクセスを決して求めません\n認可画面もなく、恒久的なトークンもなく、後から取り消すものもありません。\n\n呼び出し方\n\nメッセージ上部のツールバーのボタン、任意の会話での右クリックメニュー、そしてキーボードショートカット（Alt+P 書き出し、Alt+S 要約、Alt+N メモ）。ツールバーのボタンは配置後に自分を採寸し、狭いウィンドウでメッセージ一覧を押し崩すくらいならコンパクトなアイコンに落とすか、自ら消えます。\n\n設計からして非公開\n\n書き出し・メモ・未読数はブラウザ内で完結します。AI の実行にはアカウントが必要で、送るのは尋ねられたその一件の会話だけ。そのテキストは保持されず、モデルの学習にも使われません。メモは同期を有効にしない限り端末に残ります。誰が何を処理するかを含む全文は https://mailtoolbox.xeviora.com/privacy にあります。\n\nこんな人に\n\n受信トレイに住んでいる人へ。サポートと営業のチーム、コンサルタント、採用担当、創業者 — 長いスレッドを保管したり引き継いだりする必要のあるすべての人に。\n\n更新内容\n\n1.1.0 — 出力する言語を AI 機能ごとに選べるようになり、選択は記憶されます。AI の実行中は進捗が表示され、いつでも停止できます。\n\n27 のインターフェース言語に対応。\n\n対応するメールサービスを運営する企業とは提携関係になく、同社の承認・支援も受けていません。",
 					"metaDescription": "Gmail のスレッドを PDF・Word・Markdown に書き出し、長いやり取りを AI で要約して返信を下書き、どのメールにも自分だけのメモを。Google アカウントの認可は不要です。",
 					"features": [
 						{
@@ -3914,7 +3936,7 @@
 					"name": "Mail Toolbox for Gmail™",
 					"tagline": "讓 Gmail 終於回到你手裡。",
 					"short": "匯出、摘要、標註，全在收件匣裡就地完成。任何對話都能變成 PDF、Word 或 Markdown；AI 讀完整則往來，給出帶待辦的摘要，或依你的語氣草擬回覆；重要的信件上可以釘一則只有你看得見的筆記。它從不索取 Google 帳號授權——不走 OAuth，也不碰 Gmail API。Gmail 是 Google LLC 的商標，Mail Toolbox 是獨立產品。",
-					"long": "**你只是想把一串信件從收件匣裡撈出來存成檔案。四十分鐘後，手上有十一張截圖，而且不曉得哪張排前面。**\n\nMail Toolbox 把你正在讀的這串對話，變成可以留存、可以搜尋、可以交接給同事、可以附進工單的東西 —— 而且從頭到尾不會要求你把信箱授權給任何應用程式。\n\n為什麼要裝\n\n多數會碰你信件的工具，第一步都是授權畫面：給權限、拿到權杖，然後祈禱它被好好保管。這個擴充功能根本沒有那道畫面。它就在你已經開著的頁面上，用你已經登入的工作階段運作。沒有會外流的權杖，沒有半年後要撤銷的東西，也沒有哪台伺服器握著你信箱的鑰匙。\n\n匯出與備註完全在瀏覽器裡完成。唯一的例外是 AI 功能：在你登入並按下按鈕之前，它是關著的；按下去的那一刻，也只有那一串對話的文字會經 HTTPS 送出處理，不留存、不拿去訓練模型。\n\n它能做什麼\n\n📄 存下整串對話，而不是截圖\n一鍵就把你正在讀的對話變成真正的文件 —— 分頁與列印都正常的 PDF、可以丟進筆記軟體的乾淨文字檔，或是留作存查的原始信件檔。附件一併帶走。勾選多串對話，它們會合併成一份文件，而不是每封信跳一次下載視窗。\n\n🖨️ PDF 由瀏覽器自己排版，所以每種語言都活得下來\n版面交給瀏覽器內建的列印引擎，而不是打包進來的 PDF 函式庫。表格保持原形、內嵌圖片留在原位，日文、阿拉伯文、印地文不會變成一格格豆腐，螢幕上長什麼樣，印出來就是什麼樣。\n\n✨ 四十封信的對話，一段話讀完\n把開著的對話摘要成一段、把裡面每一項承諾與期限抽成可匯出的待辦清單，或是把整串對話翻成你的語言。\n\n↩️ 讓它擬回覆，用字仍然是你的\n指定語氣與長度、簽名檔自動附上，先要一份草稿，再到平常那個回覆框裡改到滿意為止 —— 在此之前不會送出任何東西。它永遠不會代替你寄信。\n\n🗂️ 積壓的信用分類，而不是硬讀\n一次把整個畫面的對話跑過分流，看清楚哪些等你回、哪些在等對方、哪些只是知會、哪些可以直接封存。\n\n📝 不會寫進信裡的私人備註\n在任何一串對話上貼一則備註 —— 那些你絕不會白紙黑字寫給對方的來龍去脈。清單上的色條讓你一眼看出哪幾串有備註。備註留在你的瀏覽器裡；付費方案可以在裝置之間同步。\n\n🔔 所有帳號的未讀數，一次看完\n針對多個已登入帳號與你挑選的標籤顯示數字徽章與（可選的）桌面通知，間隔時間你自己決定。它讀的就是你的瀏覽器本來就被允許讀的那份摘要。\n\n🔒 它從不索取你的帳號存取權\n沒有授權畫面、沒有長期權杖，日後也沒有什麼需要撤銷。\n\n從哪裡叫出來\n\n信件清單上方工具列的按鈕、任一串對話上的右鍵選單，以及鍵盤快速鍵（Alt+P 匯出、Alt+S 摘要、Alt+N 備註）。工具列按鈕放進去之後會自己量尺寸，寧可縮成精簡圖示、甚至自己撤掉，也不會在視窗變窄時把你的信件清單擠變形。\n\n從設計上就是私密的\n\n匯出、備註、未讀數都在瀏覽器本機完成。AI 需要帳號，而且只送出你指定的那一串對話；那段文字不會被留存，也不會拿去訓練任何模型。除非你打開同步，備註就只待在你的裝置上。完整政策（含各家處理者）在 https://mailtoolbox.xeviora.com/privacy\n\n適合誰\n\n活在收件匣裡的人：客服與業務團隊、顧問、獵才、創辦人 —— 任何需要歸檔或交接長串信件的人。\n\n提供 27 種介面語言。\n\n與經營本擴充功能所搭配之郵件服務的公司無隸屬關係，亦未獲其背書或贊助。",
+					"long": "**你只是想把一串信件從收件匣裡撈出來存成檔案。四十分鐘後，手上有十一張截圖，而且不曉得哪張排前面。**\n\nMail Toolbox 把你正在讀的這串對話，變成可以留存、可以搜尋、可以交接給同事、可以附進工單的東西 —— 而且從頭到尾不會要求你把信箱授權給任何應用程式。\n\n為什麼要裝\n\n多數會碰你信件的工具，第一步都是授權畫面：給權限、拿到權杖，然後祈禱它被好好保管。這個擴充功能根本沒有那道畫面。它就在你已經開著的頁面上，用你已經登入的工作階段運作。沒有會外流的權杖，沒有半年後要撤銷的東西，也沒有哪台伺服器握著你信箱的鑰匙。\n\n匯出與備註完全在瀏覽器裡完成。唯一的例外是 AI 功能：在你登入並按下按鈕之前，它是關著的；按下去的那一刻，也只有那一串對話的文字會經 HTTPS 送出處理，不留存、不拿去訓練模型。\n\n它能做什麼\n\n📄 存下整串對話，而不是截圖\n一鍵就把你正在讀的對話變成真正的文件 —— 分頁與列印都正常的 PDF、可以丟進筆記軟體的乾淨文字檔，或是留作存查的原始信件檔。附件一併帶走。勾選多串對話，它們會合併成一份文件，而不是每封信跳一次下載視窗。\n\n🖨️ PDF 由瀏覽器自己排版，所以每種語言都活得下來\n版面交給瀏覽器內建的列印引擎，而不是打包進來的 PDF 函式庫。表格保持原形、內嵌圖片留在原位，日文、阿拉伯文、印地文不會變成一格格豆腐，螢幕上長什麼樣，印出來就是什麼樣。\n\n✨ 四十封信的對話，一段話讀完\n把開著的對話摘要成一段、把裡面每一項承諾與期限抽成可匯出的待辦清單，或是把整串對話翻成你的語言。\n\n↩️ 讓它擬回覆，用字仍然是你的\n指定語氣與長度、簽名檔自動附上，先要一份草稿，再到平常那個回覆框裡改到滿意為止 —— 在此之前不會送出任何東西。它永遠不會代替你寄信。\n\n🗂️ 積壓的信用分類，而不是硬讀\n一次把整個畫面的對話跑過分流，看清楚哪些等你回、哪些在等對方、哪些只是知會、哪些可以直接封存。\n\n📝 不會寫進信裡的私人備註\n在任何一串對話上貼一則備註 —— 那些你絕不會白紙黑字寫給對方的來龍去脈。清單上的色條讓你一眼看出哪幾串有備註。備註留在你的瀏覽器裡；付費方案可以在裝置之間同步。\n\n🔔 所有帳號的未讀數，一次看完\n針對多個已登入帳號與你挑選的標籤顯示數字徽章與（可選的）桌面通知，間隔時間你自己決定。它讀的就是你的瀏覽器本來就被允許讀的那份摘要。\n\n🔒 它從不索取你的帳號存取權\n沒有授權畫面、沒有長期權杖，日後也沒有什麼需要撤銷。\n\n從哪裡叫出來\n\n信件清單上方工具列的按鈕、任一串對話上的右鍵選單，以及鍵盤快速鍵（Alt+P 匯出、Alt+S 摘要、Alt+N 備註）。工具列按鈕放進去之後會自己量尺寸，寧可縮成精簡圖示、甚至自己撤掉，也不會在視窗變窄時把你的信件清單擠變形。\n\n從設計上就是私密的\n\n匯出、備註、未讀數都在瀏覽器本機完成。AI 需要帳號，而且只送出你指定的那一串對話；那段文字不會被留存，也不會拿去訓練任何模型。除非你打開同步，備註就只待在你的裝置上。完整政策（含各家處理者）在 https://mailtoolbox.xeviora.com/privacy\n\n適合誰\n\n活在收件匣裡的人：客服與業務團隊、顧問、獵才、創辦人 —— 任何需要歸檔或交接長串信件的人。\n\n最近更新\n\n1.1.0 — 輸出語言改為每個 AI 功能單獨選擇並記住；AI 執行時有即時進度，可隨時停止。\n\n提供 27 種介面語言。\n\n與經營本擴充功能所搭配之郵件服務的公司無隸屬關係，亦未獲其背書或贊助。",
 					"metaDescription": "將 Gmail 對話匯出成 PDF、Word 或 Markdown，用 AI 摘要冗長對話並草擬回覆，為任何信件釘上私人筆記——全程不需要授權 Google 帳號。",
 					"features": [
 						{
@@ -4267,7 +4289,7 @@
 					"name": "SheetPilot — Save to Google Sheets™",
 					"tagline": "The web, in your spreadsheet — one click.",
 					"short": "SheetPilot opens a side panel next to any page: highlight and right-click to file a row, or point the AI at a messy listing and it fills the exact columns you named — up to 50 rows from one results page. It learns each site's layout as it reads, so later visits replay locally, instant and free. Rows go straight from your browser to Google's API, never through our servers. Google Sheets is a trademark of Google LLC; SheetPilot is an independent product.",
-					"long": "**You found something worth keeping, and the only way to keep it is to copy, switch windows, paste, fix the columns, and go back for the next one.** SheetPilot removes that loop. One click on the side panel and the page arrives in your own Google Sheets™ spreadsheet as a proper row — with the columns already named.\n\n**Why install it**\n\nBecause the tab you are looking at is data, and the place you actually keep data is Google Sheets. Everything between those two facts is busywork. SheetPilot does the reading, the naming and the writing, and then it remembers the page well enough to do it again for nothing.\n\n**What you can do**\n\n✨ **One click, and the AI does the deciding.** Hit Extract and the assistant reads the page, works out whether it is one item or a whole list, invents sensible column names in your interface language and shows you a preview. Rename any column, untick any row, then send it to Google Sheets.\n\n♻️ **It learns a layout once, then repeats it for free.** The first capture on a site teaches the extension where each value lives. That recipe is saved and replayed locally on every later visit, so the same page never costs credits twice.\n\n🖱️ **Your own right-click menu.** Build menu items that match how you work — save the selected text to the Notes column, the link under the cursor to Link, the image to Image. One click on the page, one value in the column, no panel needed.\n\n🧩 **A visual canvas for repeat jobs.** Drag blocks onto a canvas and wire them up: take the page, pull out the links, drop duplicates, trim the text, split a field, stamp a fixed value, write the result to Google Sheets. Runs entirely on your machine, costs nothing, and can be bound to a keyboard shortcut.\n\n📊 **Tables lifted whole.** Spot a table on the page and append it as rows instead of fighting copy and paste. Existing headers in your Google Sheets tab are matched by name, and columns that do not line up are reported rather than dumped into the wrong place.\n\n🔐 **Rows go straight to Google Sheets, never through us.** Once you connect your Google account, the extension writes to Google Sheets directly from your browser. It asks Google for one permission — writing to your spreadsheets — and nothing more: no file listing, no Drive browsing, no copy of your data on our side.\n\n🌍 **13 interface languages.** The panel, the menus and the column names the AI writes all follow your chosen interface language, so the header row in Google Sheets comes out in the language you actually work in.\n\n**Private by design**\n\nYour rows go from the browser to your own Google Sheets file. Nothing about them is stored, sold or shared. What does reach our server is limited and stated plainly: the text of a page at the moment you ask for an AI extraction — used for that one request, kept only long enough to answer it — and your account email, because the plan and the credit balance have to belong to somebody. A recipe is a set of selectors, not content: it records *where* a title sits on a page, never what the title said. Sign-in to your Google account happens in the browser and the token is never sent to us.\n\n**Great for**\n\nAnyone who keeps a research list, a job hunt, a price watch, a lead list or a reading queue in Google Sheets. Recruiters and job seekers building a pipeline. Analysts collecting listings. Students assembling a bibliography. Anyone who has ever kept a tab open purely because closing it would lose the link.\n\n**Getting started**\n\nInstall, open the side panel (Alt+Shift+S), sign in, connect Google Sheets, and point it at a page. New accounts get 30 credits; recipes and automations replay for free forever, so most days you spend nothing at all. Full details and pricing: https://sheet.xeviora.com — privacy policy: https://sheet.xeviora.com/privacy\n\n*SheetPilot is an independent product and is not affiliated with, endorsed by or sponsored by Google LLC. Google Sheets and Google Drive are trademarks of Google LLC.*",
+					"long": "**You found something worth keeping, and the only way to keep it is to copy, switch windows, paste, fix the columns, and go back for the next one.** SheetPilot removes that loop. One click on the side panel and the page arrives in your own Google Sheets™ spreadsheet as a proper row — with the columns already named.\n\n**Why install it**\n\nBecause the tab you are looking at is data, and the place you actually keep data is Google Sheets. Everything between those two facts is busywork. SheetPilot does the reading, the naming and the writing, and then it remembers the page well enough to do it again for nothing.\n\n**What you can do**\n\n✨ **One click, and the AI does the deciding.** Hit Extract and the assistant reads the page, works out whether it is one item or a whole list, invents sensible column names in your interface language and shows you a preview. Rename any column, untick any row, then send it to Google Sheets.\n\n♻️ **It learns a layout once, then repeats it for free.** The first capture on a site teaches the extension where each value lives. That recipe is saved and replayed locally on every later visit, so the same page never costs credits twice.\n\n🖱️ **Your own right-click menu.** Build menu items that match how you work — save the selected text to the Notes column, the link under the cursor to Link, the image to Image. One click on the page, one value in the column, no panel needed.\n\n🧩 **A visual canvas for repeat jobs.** Drag blocks onto a canvas and wire them up: take the page, pull out the links, drop duplicates, trim the text, split a field, stamp a fixed value, write the result to Google Sheets. Runs entirely on your machine, costs nothing, and can be bound to a keyboard shortcut.\n\n📊 **Tables lifted whole.** Spot a table on the page and append it as rows instead of fighting copy and paste. Existing headers in your Google Sheets tab are matched by name, and columns that do not line up are reported rather than dumped into the wrong place.\n\n🔐 **Rows go straight to Google Sheets, never through us.** Once you connect your Google account, the extension writes to Google Sheets directly from your browser. It asks Google for one permission — writing to your spreadsheets — and nothing more: no file listing, no Drive browsing, no copy of your data on our side.\n\n🌍 **13 interface languages.** The panel, the menus and the column names the AI writes all follow your chosen interface language, so the header row in Google Sheets comes out in the language you actually work in.\n\n**Private by design**\n\nYour rows go from the browser to your own Google Sheets file. Nothing about them is stored, sold or shared. What does reach our server is limited and stated plainly: the text of a page at the moment you ask for an AI extraction — used for that one request, kept only long enough to answer it — and your account email, because the plan and the credit balance have to belong to somebody. A recipe is a set of selectors, not content: it records *where* a title sits on a page, never what the title said. Sign-in to your Google account happens in the browser and the token is never sent to us.\n\n**Great for**\n\nAnyone who keeps a research list, a job hunt, a price watch, a lead list or a reading queue in Google Sheets. Recruiters and job seekers building a pipeline. Analysts collecting listings. Students assembling a bibliography. Anyone who has ever kept a tab open purely because closing it would lose the link.\n\n**Getting started**\n\nInstall, open the side panel (Alt+Shift+S), sign in, connect Google Sheets, and point it at a page. New accounts get 30 credits; recipes and automations run on your device and never cost credits, so most days you spend nothing at all. Full details and pricing: https://sheet.xeviora.com — privacy policy: https://sheet.xeviora.com/privacy\n\n*SheetPilot is an independent product and is not affiliated with, endorsed by or sponsored by Google LLC. Google Sheets and Google Drive are trademarks of Google LLC.*",
 					"metaDescription": "Save any web page into your own Google Sheet in one click. AI turns messy pages and lists into clean rows, learns the layout, then replays it free forever.",
 					"features": [
 						{
@@ -4311,7 +4333,7 @@
 					"name": "SheetPilot — 保存到 Google Sheets™",
 					"tagline": "网页内容，一键进你的表格。",
 					"short": "SheetPilot 在任意页面旁边开一个侧边栏：选中右键即存成一行；把 AI 指向杂乱的页面，它会按你定义的列填好，整页搜索结果一次最多 50 行。AI 读过就顺便学会版式，之后改为本地回放——瞬时完成，也不花点数。数据行由浏览器直连 Google API 写入，绝不经过我们的服务器。Google Sheets 是 Google LLC 的商标，SheetPilot 是独立产品。",
-					"long": "**你找到了值得留下的东西，而唯一的留法是：复制、切窗口、粘贴、把列挪正，然后回去找下一条。** SheetPilot 把这个循环去掉。在侧边栏点一下，这一页就以整齐的一行进到你自己的 Google Sheets™ 表格里——列名都已经取好。\n\n**为什么装它**\n\n因为你正在看的标签页本质上就是数据，而你真正存放数据的地方是 Google Sheets。夹在这两件事中间的，全是体力活。SheetPilot 负责读、负责取名、负责写入，然后把这一页记得够牢，下次免费再做一遍。\n\n**你可以做什么**\n\n✨ **一键，判断交给 AI。** 按下「提取」，助手会读完整页，判断它是单条还是一整份列表，用你的界面语言自己想出合适的列名，再给你一份预览。改列名、取消勾选不要的行，然后存进 Google Sheets。\n\n♻️ **版式学一次，之后免费回放。** 在某个网站的第一次采集，会教会扩展每个值长在哪儿。这份 recipe 会被存下来，之后每次访问都在本地回放，同一页不会被扣两次点数。\n\n🖱️ **属于你自己的右键菜单。** 照你的工作方式做菜单项：选中的文字存到「备注」列、光标下的链接存到「链接」列、图片存到「图片」列。页面上点一下，列里多一个值，连面板都不用开。\n\n🧩 **重复活儿用可视化画布。** 把积木拖到画布上连起来：取整页、抓出链接、去重、修剪文本、拆字段、盖固定值、把结果写进 Google Sheets。全在你自己的电脑上跑，不花任何点数，还能绑键盘快捷键。\n\n📊 **表格整块搬。** 看到页面上的表格，直接按行追加，不用跟复制粘贴较劲。你 Google Sheets 工作表上已有的表头按名字对齐，对不上的列会如实报出来，而不是硬塞进错的位置。\n\n🔐 **行数据直达 Google Sheets，不经过我们。** Google 账号连上之后，扩展是从你的浏览器直接写进 Google Sheets。它只向 Google 要一项权限——写入你的表格——没有别的：不列文件、不翻 Drive，我们这边也不留任何数据副本。\n\n🌍 **13 种界面语言。** 面板、菜单，以及 AI 写出的列名，全都跟着你选的界面语言走，所以 Google Sheets 里的表头那一行会用你真正在用的语言呈现。\n\n**隐私是设计出来的**\n\n你的行数据从浏览器直达你自己的 Google Sheets 文件。这些内容不会被保存、出售或共享。真正会到我们服务器的东西很有限，也说明白：你按下 AI 提取那一刻的页面文本——只用于那一次请求，答完就不留——以及你的账号邮箱，因为套餐和点数余额总得属于某个人。recipe 是一组选择器而不是内容：它记的是标题「长在页面哪个位置」，而不是标题写了什么。登录 Google 账号是在浏览器里完成的，令牌永远不会送到我们这里。\n\n**适合谁**\n\n所有把调研清单、求职进度、比价、线索名单或待读队列放在 Google Sheets 里的人。在搭建人才管道的招聘者与求职者。在收集挂牌信息的分析师。在整理参考文献的学生。以及任何曾经因为「一关就找不回链接」而让标签页一直开着的人。\n\n**开始使用**\n\n安装、打开侧边栏（Alt+Shift+S）、登录、连上 Google Sheets，然后对准一个页面。新账号送 30 点；recipe 与自动化永远免费回放，所以多数日子你其实一点都不会花。完整说明与价格：https://sheet.xeviora.com — 隐私政策：https://sheet.xeviora.com/privacy\n\n*SheetPilot 是独立产品，与 Google LLC 没有隶属关系，也未获得其背书或赞助。Google Sheets 与 Google Drive 为 Google LLC 的商标。*",
+					"long": "**你找到了值得留下的东西，而唯一的留法是：复制、切窗口、粘贴、把列挪正，然后回去找下一条。** SheetPilot 把这个循环去掉。在侧边栏点一下，这一页就以整齐的一行进到你自己的 Google Sheets™ 表格里——列名都已经取好。\n\n**为什么装它**\n\n因为你正在看的标签页本质上就是数据，而你真正存放数据的地方是 Google Sheets。夹在这两件事中间的，全是体力活。SheetPilot 负责读、负责取名、负责写入，然后把这一页记得够牢，下次免费再做一遍。\n\n**你可以做什么**\n\n✨ **一键，判断交给 AI。** 按下「提取」，助手会读完整页，判断它是单条还是一整份列表，用你的界面语言自己想出合适的列名，再给你一份预览。改列名、取消勾选不要的行，然后存进 Google Sheets。\n\n♻️ **版式学一次，之后免费回放。** 在某个网站的第一次采集，会教会扩展每个值长在哪儿。这份 recipe 会被存下来，之后每次访问都在本地回放，同一页不会被扣两次点数。\n\n🖱️ **属于你自己的右键菜单。** 照你的工作方式做菜单项：选中的文字存到「备注」列、光标下的链接存到「链接」列、图片存到「图片」列。页面上点一下，列里多一个值，连面板都不用开。\n\n🧩 **重复活儿用可视化画布。** 把积木拖到画布上连起来：取整页、抓出链接、去重、修剪文本、拆字段、盖固定值、把结果写进 Google Sheets。全在你自己的电脑上跑，不花任何点数，还能绑键盘快捷键。\n\n📊 **表格整块搬。** 看到页面上的表格，直接按行追加，不用跟复制粘贴较劲。你 Google Sheets 工作表上已有的表头按名字对齐，对不上的列会如实报出来，而不是硬塞进错的位置。\n\n🔐 **行数据直达 Google Sheets，不经过我们。** Google 账号连上之后，扩展是从你的浏览器直接写进 Google Sheets。它只向 Google 要一项权限——写入你的表格——没有别的：不列文件、不翻 Drive，我们这边也不留任何数据副本。\n\n🌍 **13 种界面语言。** 面板、菜单，以及 AI 写出的列名，全都跟着你选的界面语言走，所以 Google Sheets 里的表头那一行会用你真正在用的语言呈现。\n\n**隐私是设计出来的**\n\n你的行数据从浏览器直达你自己的 Google Sheets 文件。这些内容不会被保存、出售或共享。真正会到我们服务器的东西很有限，也说明白：你按下 AI 提取那一刻的页面文本——只用于那一次请求，答完就不留——以及你的账号邮箱，因为套餐和点数余额总得属于某个人。recipe 是一组选择器而不是内容：它记的是标题「长在页面哪个位置」，而不是标题写了什么。登录 Google 账号是在浏览器里完成的，令牌永远不会送到我们这里。\n\n**适合谁**\n\n所有把调研清单、求职进度、比价、线索名单或待读队列放在 Google Sheets 里的人。在搭建人才管道的招聘者与求职者。在收集挂牌信息的分析师。在整理参考文献的学生。以及任何曾经因为「一关就找不回链接」而让标签页一直开着的人。\n\n**开始使用**\n\n安装、打开侧边栏（Alt+Shift+S）、登录、连上 Google Sheets，然后对准一个页面。新账号送 30 点；recipe 与自动化在你的设备上执行、不花点数，所以多数日子你其实一点都不会花。完整说明与价格：https://sheet.xeviora.com — 隐私政策：https://sheet.xeviora.com/privacy\n\n*SheetPilot 是独立产品，与 Google LLC 没有隶属关系，也未获得其背书或赞助。Google Sheets 与 Google Drive 为 Google LLC 的商标。*",
 					"metaDescription": "一键把任意网页存进你自己的 Google 表格。AI 把杂乱页面与列表变成干净的数据行，学会版式后永久免费回放。",
 					"features": [
 						{
@@ -4345,7 +4367,7 @@
 					"name": "SheetPilot — Guarda en Google Sheets™",
 					"tagline": "La web en tu hoja de cálculo, con un clic.",
 					"short": "SheetPilot abre un panel lateral junto a cualquier página: selecciona y haz clic derecho para archivar una fila, o apunta la AI a una ficha desordenada y rellenará exactamente las columnas que definiste — hasta 50 filas de una página de resultados. Al leer aprende la estructura del sitio, así que las visitas posteriores se reproducen en local: al instante y gratis. Las filas van de tu navegador directamente a la API de Google, sin pasar nunca por nuestros servidores. Google Sheets es una marca de Google LLC; SheetPilot es un producto independiente.",
-					"long": "**Has encontrado algo que merece la pena guardar, y la única forma de guardarlo es copiar, cambiar de ventana, pegar, arreglar las columnas y volver a por el siguiente.** SheetPilot elimina ese bucle. Un clic en el panel lateral y la página llega a tu propia hoja de Google Sheets™ como una fila en condiciones, con las columnas ya nombradas.\n\n**Por qué instalarlo**\n\nPorque la pestaña que estás mirando son datos, y el sitio donde realmente guardas los datos es Google Sheets. Todo lo que hay entre esos dos hechos es trabajo manual. SheetPilot se encarga de leer, de nombrar y de escribir, y después recuerda la página lo bastante bien como para repetirlo gratis.\n\n**Qué puedes hacer**\n\n✨ **Un clic, y la IA decide.** Pulsa Extraer: el asistente lee la página, averigua si es un solo elemento o una lista entera, inventa nombres de columna con sentido en el idioma de tu interfaz y te enseña una vista previa. Renombra cualquier columna, desmarca cualquier fila y envíalo a Google Sheets.\n\n♻️ **Aprende un diseño una vez y luego lo repite gratis.** La primera captura en un sitio le enseña a la extensión dónde vive cada valor. Esa receta se guarda y se reproduce en local en cada visita posterior, así que la misma página nunca cuesta créditos dos veces.\n\n🖱️ **Tu propio menú contextual.** Crea entradas que encajen con tu forma de trabajar: el texto seleccionado a la columna Notas, el enlace bajo el cursor a Enlace, la imagen a Imagen. Un clic en la página, un valor en la columna, sin abrir el panel.\n\n🧩 **Un lienzo visual para las tareas repetidas.** Arrastra bloques al lienzo y conéctalos: coger la página, sacar los enlaces, quitar duplicados, recortar el texto, dividir un campo, poner un valor fijo, escribir el resultado en Google Sheets. Se ejecuta por completo en tu equipo, no cuesta nada y puede asignarse a un atajo de teclado.\n\n📊 **Tablas enteras de una pieza.** Localiza una tabla en la página y añádela como filas en lugar de pelearte con copiar y pegar. Las cabeceras que ya existen en tu hoja de Google Sheets se emparejan por nombre, y las columnas que no cuadran se informan en vez de meterlas en el sitio equivocado.\n\n🔐 **Las filas van directas a Google Sheets, nunca a través de nosotros.** Una vez conectas tu cuenta de Google, la extensión escribe en Google Sheets directamente desde tu navegador. Le pide a Google un único permiso —escribir en tus hojas de cálculo— y nada más: sin listar archivos, sin recorrer Drive, sin copia de tus datos en nuestro lado.\n\n🌍 **13 idiomas de interfaz.** El panel, los menús y los nombres de columna que escribe la IA siguen el idioma de interfaz elegido, así que la fila de cabecera en Google Sheets sale en el idioma en el que trabajas de verdad.\n\n**Privado por diseño**\n\nTus filas van del navegador a tu propio archivo de Google Sheets. Nada de ellas se almacena, se vende ni se comparte. Lo que llega a nuestro servidor es poco y lo decimos claro: el texto de una página en el momento en que pides una extracción con IA —usado para esa única petición y conservado solo lo justo para responderla— y el correo de tu cuenta, porque el plan y el saldo de créditos tienen que pertenecer a alguien. Una receta es un conjunto de selectores, no contenido: registra *dónde* está un título en la página, nunca lo que decía. El inicio de sesión en tu cuenta de Google ocurre en el navegador y el token no se nos envía nunca.\n\n**Ideal para**\n\nCualquiera que lleve en Google Sheets una lista de investigación, una búsqueda de empleo, un seguimiento de precios, una lista de contactos o una cola de lectura. Reclutadores y candidatos que construyen un embudo. Analistas que recopilan anuncios. Estudiantes que montan una bibliografía. Y todo el que alguna vez ha dejado una pestaña abierta solo porque cerrarla habría supuesto perder el enlace.\n\n**Para empezar**\n\nInstálalo, abre el panel lateral (Alt+Mayús+S), inicia sesión, conecta Google Sheets y apúntalo a una página. Las cuentas nuevas reciben 30 créditos; las recetas y las automatizaciones se reproducen gratis para siempre, así que la mayoría de los días no gastas nada. Detalles y precios: https://sheet.xeviora.com — política de privacidad: https://sheet.xeviora.com/privacy\n\n*SheetPilot es un producto independiente y no está afiliado, respaldado ni patrocinado por Google LLC. Google Sheets y Google Drive son marcas de Google LLC.*",
+					"long": "**Has encontrado algo que merece la pena guardar, y la única forma de guardarlo es copiar, cambiar de ventana, pegar, arreglar las columnas y volver a por el siguiente.** SheetPilot elimina ese bucle. Un clic en el panel lateral y la página llega a tu propia hoja de Google Sheets™ como una fila en condiciones, con las columnas ya nombradas.\n\n**Por qué instalarlo**\n\nPorque la pestaña que estás mirando son datos, y el sitio donde realmente guardas los datos es Google Sheets. Todo lo que hay entre esos dos hechos es trabajo manual. SheetPilot se encarga de leer, de nombrar y de escribir, y después recuerda la página lo bastante bien como para repetirlo gratis.\n\n**Qué puedes hacer**\n\n✨ **Un clic, y la IA decide.** Pulsa Extraer: el asistente lee la página, averigua si es un solo elemento o una lista entera, inventa nombres de columna con sentido en el idioma de tu interfaz y te enseña una vista previa. Renombra cualquier columna, desmarca cualquier fila y envíalo a Google Sheets.\n\n♻️ **Aprende un diseño una vez y luego lo repite gratis.** La primera captura en un sitio le enseña a la extensión dónde vive cada valor. Esa receta se guarda y se reproduce en local en cada visita posterior, así que la misma página nunca cuesta créditos dos veces.\n\n🖱️ **Tu propio menú contextual.** Crea entradas que encajen con tu forma de trabajar: el texto seleccionado a la columna Notas, el enlace bajo el cursor a Enlace, la imagen a Imagen. Un clic en la página, un valor en la columna, sin abrir el panel.\n\n🧩 **Un lienzo visual para las tareas repetidas.** Arrastra bloques al lienzo y conéctalos: coger la página, sacar los enlaces, quitar duplicados, recortar el texto, dividir un campo, poner un valor fijo, escribir el resultado en Google Sheets. Se ejecuta por completo en tu equipo, no cuesta nada y puede asignarse a un atajo de teclado.\n\n📊 **Tablas enteras de una pieza.** Localiza una tabla en la página y añádela como filas en lugar de pelearte con copiar y pegar. Las cabeceras que ya existen en tu hoja de Google Sheets se emparejan por nombre, y las columnas que no cuadran se informan en vez de meterlas en el sitio equivocado.\n\n🔐 **Las filas van directas a Google Sheets, nunca a través de nosotros.** Una vez conectas tu cuenta de Google, la extensión escribe en Google Sheets directamente desde tu navegador. Le pide a Google un único permiso —escribir en tus hojas de cálculo— y nada más: sin listar archivos, sin recorrer Drive, sin copia de tus datos en nuestro lado.\n\n🌍 **13 idiomas de interfaz.** El panel, los menús y los nombres de columna que escribe la IA siguen el idioma de interfaz elegido, así que la fila de cabecera en Google Sheets sale en el idioma en el que trabajas de verdad.\n\n**Privado por diseño**\n\nTus filas van del navegador a tu propio archivo de Google Sheets. Nada de ellas se almacena, se vende ni se comparte. Lo que llega a nuestro servidor es poco y lo decimos claro: el texto de una página en el momento en que pides una extracción con IA —usado para esa única petición y conservado solo lo justo para responderla— y el correo de tu cuenta, porque el plan y el saldo de créditos tienen que pertenecer a alguien. Una receta es un conjunto de selectores, no contenido: registra *dónde* está un título en la página, nunca lo que decía. El inicio de sesión en tu cuenta de Google ocurre en el navegador y el token no se nos envía nunca.\n\n**Ideal para**\n\nCualquiera que lleve en Google Sheets una lista de investigación, una búsqueda de empleo, un seguimiento de precios, una lista de contactos o una cola de lectura. Reclutadores y candidatos que construyen un embudo. Analistas que recopilan anuncios. Estudiantes que montan una bibliografía. Y todo el que alguna vez ha dejado una pestaña abierta solo porque cerrarla habría supuesto perder el enlace.\n\n**Para empezar**\n\nInstálalo, abre el panel lateral (Alt+Mayús+S), inicia sesión, conecta Google Sheets y apúntalo a una página. Las cuentas nuevas reciben 30 créditos; las recetas y las automatizaciones se ejecutan en tu dispositivo y nunca gastan créditos, así que la mayoría de los días no gastas nada. Detalles y precios: https://sheet.xeviora.com — política de privacidad: https://sheet.xeviora.com/privacy\n\n*SheetPilot es un producto independiente y no está afiliado, respaldado ni patrocinado por Google LLC. Google Sheets y Google Drive son marcas de Google LLC.*",
 					"metaDescription": "Guarda cualquier página web en tu propia hoja de Google con un clic. La AI convierte páginas y listas desordenadas en filas limpias y las repite gratis.",
 					"features": [
 						{
@@ -4379,7 +4401,7 @@
 					"name": "SheetPilot — Enregistrer vers Google Sheets™",
 					"tagline": "Le web dans votre feuille de calcul, en un clic.",
 					"short": "SheetPilot ouvre un panneau latéral à côté de n'importe quelle page : surlignez, clic droit, et voilà une ligne classée ; pointez l'AI vers une fiche désordonnée et elle remplit exactement les colonnes que vous avez définies — jusqu'à 50 lignes d'une page de résultats. En lisant, elle apprend la structure du site : les visites suivantes se rejouent en local, instantanément et gratuitement. Les lignes vont de votre navigateur directement à l'API de Google, sans jamais passer par nos serveurs. Google Sheets est une marque de Google LLC ; SheetPilot est un produit indépendant.",
-					"long": "**Vous avez trouvé quelque chose qui mérite d'être conservé, et le seul moyen de le conserver, c'est de copier, changer de fenêtre, coller, corriger les colonnes, puis revenir chercher le suivant.** SheetPilot supprime cette boucle. Un clic dans le panneau latéral et la page arrive dans votre propre feuille Google Sheets™ sous forme de ligne propre, colonnes déjà nommées.\n\n**Pourquoi l'installer**\n\nParce que l'onglet que vous regardez, ce sont des données, et parce que l'endroit où vous conservez réellement vos données, c'est Google Sheets. Tout ce qui sépare ces deux faits n'est que manutention. SheetPilot lit, nomme et écrit, puis retient assez bien la page pour recommencer gratuitement.\n\n**Ce que vous pouvez faire**\n\n✨ **Un clic, et l'IA tranche.** Appuyez sur Extraire : l'assistant lit la page, détermine s'il s'agit d'un élément unique ou d'une liste entière, invente des noms de colonnes sensés dans la langue de votre interface et vous montre un aperçu. Renommez une colonne, décochez une ligne, puis envoyez vers Google Sheets.\n\n♻️ **Il apprend une mise en page une fois, puis la rejoue gratuitement.** La première capture sur un site apprend à l'extension où se trouve chaque valeur. Cette recette est enregistrée puis rejouée localement à chaque visite suivante : la même page ne coûte jamais deux fois des crédits.\n\n🖱️ **Votre propre menu contextuel.** Créez des entrées qui collent à votre façon de travailler : le texte sélectionné vers la colonne Notes, le lien sous le curseur vers Lien, l'image vers Image. Un clic sur la page, une valeur dans la colonne, sans ouvrir le panneau.\n\n🧩 **Un canevas visuel pour les tâches répétitives.** Déposez des blocs sur le canevas et reliez-les : prendre la page, extraire les liens, supprimer les doublons, nettoyer le texte, découper un champ, apposer une valeur fixe, écrire le résultat dans Google Sheets. Tout s'exécute sur votre machine, ne coûte rien et peut être associé à un raccourci clavier.\n\n📊 **Des tableaux repris d'un bloc.** Repérez un tableau sur la page et ajoutez-le en lignes au lieu de vous battre avec le copier-coller. Les en-têtes existants de votre onglet Google Sheets sont mis en correspondance par leur nom, et les colonnes qui ne s'alignent pas sont signalées plutôt que déversées au mauvais endroit.\n\n🔐 **Vos lignes vont droit dans Google Sheets, jamais par nous.** Une fois votre compte Google connecté, l'extension écrit dans Google Sheets directement depuis votre navigateur. Elle demande à Google une seule autorisation — écrire dans vos feuilles de calcul — et rien d'autre : aucune liste de fichiers, aucun parcours de Drive, aucune copie de vos données chez nous.\n\n🌍 **13 langues d'interface.** Le panneau, les menus et les noms de colonnes écrits par l'IA suivent la langue d'interface choisie : la ligne d'en-tête dans Google Sheets sort dans la langue dans laquelle vous travaillez vraiment.\n\n**Confidentiel par conception**\n\nVos lignes vont du navigateur vers votre propre fichier Google Sheets. Rien n'en est stocké, vendu ni partagé. Ce qui atteint notre serveur est limité et dit clairement : le texte d'une page au moment où vous demandez une extraction par l'IA — utilisé pour cette seule requête et conservé juste le temps d'y répondre — et l'adresse e-mail de votre compte, parce qu'un forfait et un solde de crédits doivent bien appartenir à quelqu'un. Une recette est un jeu de sélecteurs, pas du contenu : elle note *où* se trouve un titre sur une page, jamais ce qu'il disait. La connexion à votre compte Google se fait dans le navigateur et le jeton ne nous est jamais transmis.\n\n**Idéal pour**\n\nToute personne qui tient dans Google Sheets une liste de veille, une recherche d'emploi, un suivi de prix, une liste de prospects ou une file de lecture. Recruteurs et candidats qui construisent un pipeline. Analystes qui collectent des annonces. Étudiants qui assemblent une bibliographie. Et quiconque a déjà gardé un onglet ouvert uniquement parce que le fermer aurait fait perdre le lien.\n\n**Pour commencer**\n\nInstallez, ouvrez le panneau latéral (Alt+Maj+S), connectez-vous, reliez Google Sheets et pointez-le sur une page. Les nouveaux comptes reçoivent 30 crédits ; recettes et automatisations se rejouent gratuitement pour toujours, si bien que la plupart des jours vous ne dépensez rien. Détails et tarifs : https://sheet.xeviora.com — politique de confidentialité : https://sheet.xeviora.com/privacy\n\n*SheetPilot est un produit indépendant, non affilié à Google LLC, ni approuvé ni sponsorisé par elle. Google Sheets et Google Drive sont des marques de Google LLC.*",
+					"long": "**Vous avez trouvé quelque chose qui mérite d'être conservé, et le seul moyen de le conserver, c'est de copier, changer de fenêtre, coller, corriger les colonnes, puis revenir chercher le suivant.** SheetPilot supprime cette boucle. Un clic dans le panneau latéral et la page arrive dans votre propre feuille Google Sheets™ sous forme de ligne propre, colonnes déjà nommées.\n\n**Pourquoi l'installer**\n\nParce que l'onglet que vous regardez, ce sont des données, et parce que l'endroit où vous conservez réellement vos données, c'est Google Sheets. Tout ce qui sépare ces deux faits n'est que manutention. SheetPilot lit, nomme et écrit, puis retient assez bien la page pour recommencer gratuitement.\n\n**Ce que vous pouvez faire**\n\n✨ **Un clic, et l'IA tranche.** Appuyez sur Extraire : l'assistant lit la page, détermine s'il s'agit d'un élément unique ou d'une liste entière, invente des noms de colonnes sensés dans la langue de votre interface et vous montre un aperçu. Renommez une colonne, décochez une ligne, puis envoyez vers Google Sheets.\n\n♻️ **Il apprend une mise en page une fois, puis la rejoue gratuitement.** La première capture sur un site apprend à l'extension où se trouve chaque valeur. Cette recette est enregistrée puis rejouée localement à chaque visite suivante : la même page ne coûte jamais deux fois des crédits.\n\n🖱️ **Votre propre menu contextuel.** Créez des entrées qui collent à votre façon de travailler : le texte sélectionné vers la colonne Notes, le lien sous le curseur vers Lien, l'image vers Image. Un clic sur la page, une valeur dans la colonne, sans ouvrir le panneau.\n\n🧩 **Un canevas visuel pour les tâches répétitives.** Déposez des blocs sur le canevas et reliez-les : prendre la page, extraire les liens, supprimer les doublons, nettoyer le texte, découper un champ, apposer une valeur fixe, écrire le résultat dans Google Sheets. Tout s'exécute sur votre machine, ne coûte rien et peut être associé à un raccourci clavier.\n\n📊 **Des tableaux repris d'un bloc.** Repérez un tableau sur la page et ajoutez-le en lignes au lieu de vous battre avec le copier-coller. Les en-têtes existants de votre onglet Google Sheets sont mis en correspondance par leur nom, et les colonnes qui ne s'alignent pas sont signalées plutôt que déversées au mauvais endroit.\n\n🔐 **Vos lignes vont droit dans Google Sheets, jamais par nous.** Une fois votre compte Google connecté, l'extension écrit dans Google Sheets directement depuis votre navigateur. Elle demande à Google une seule autorisation — écrire dans vos feuilles de calcul — et rien d'autre : aucune liste de fichiers, aucun parcours de Drive, aucune copie de vos données chez nous.\n\n🌍 **13 langues d'interface.** Le panneau, les menus et les noms de colonnes écrits par l'IA suivent la langue d'interface choisie : la ligne d'en-tête dans Google Sheets sort dans la langue dans laquelle vous travaillez vraiment.\n\n**Confidentiel par conception**\n\nVos lignes vont du navigateur vers votre propre fichier Google Sheets. Rien n'en est stocké, vendu ni partagé. Ce qui atteint notre serveur est limité et dit clairement : le texte d'une page au moment où vous demandez une extraction par l'IA — utilisé pour cette seule requête et conservé juste le temps d'y répondre — et l'adresse e-mail de votre compte, parce qu'un forfait et un solde de crédits doivent bien appartenir à quelqu'un. Une recette est un jeu de sélecteurs, pas du contenu : elle note *où* se trouve un titre sur une page, jamais ce qu'il disait. La connexion à votre compte Google se fait dans le navigateur et le jeton ne nous est jamais transmis.\n\n**Idéal pour**\n\nToute personne qui tient dans Google Sheets une liste de veille, une recherche d'emploi, un suivi de prix, une liste de prospects ou une file de lecture. Recruteurs et candidats qui construisent un pipeline. Analystes qui collectent des annonces. Étudiants qui assemblent une bibliographie. Et quiconque a déjà gardé un onglet ouvert uniquement parce que le fermer aurait fait perdre le lien.\n\n**Pour commencer**\n\nInstallez, ouvrez le panneau latéral (Alt+Maj+S), connectez-vous, reliez Google Sheets et pointez-le sur une page. Les nouveaux comptes reçoivent 30 crédits ; recettes et automatisations s'exécutent sur votre appareil et ne coûtent aucun crédit, si bien que la plupart des jours vous ne dépensez rien. Détails et tarifs : https://sheet.xeviora.com — politique de confidentialité : https://sheet.xeviora.com/privacy\n\n*SheetPilot est un produit indépendant, non affilié à Google LLC, ni approuvé ni sponsorisé par elle. Google Sheets et Google Drive sont des marques de Google LLC.*",
 					"metaDescription": "Enregistrez n'importe quelle page web dans votre propre feuille Google en un clic. L'AI transforme pages et listes en lignes propres et les rejoue gratuitement.",
 					"features": [
 						{
@@ -4413,7 +4435,7 @@
 					"name": "SheetPilot — Google Sheets™ に保存",
 					"tagline": "ウェブページを、ワンクリックで表に。",
 					"short": "SheetPilot はどんなページの隣にもサイドパネルを開きます。選択して右クリックすれば 1 行として保存。雑然としたページに AI を向ければ決めておいた列のとおりに埋め、検索結果ページなら一度に最大 50 行。読むついでにレイアウトも学習するので、次回からはローカルで再生——一瞬で、点数も不要です。行データはブラウザから Google の API へ直接送られ、当社サーバーを通りません。Google Sheets は Google LLC の商標であり、SheetPilot は独立した製品です。",
-					"long": "**残しておきたいものを見つけた。けれど残す方法は、コピーして、ウィンドウを切り替えて、貼り付けて、列を直して、また次を取りに戻る——それだけ。** SheetPilot はこの往復をなくします。サイドパネルで一度クリックすれば、ページは列名まで整った 1 行として自分の Google Sheets™ スプレッドシートに入ります。\n\n**入れる理由**\n\nいま見ているタブは要するにデータで、データを実際に置いておく場所は Google Sheets だからです。その二つの間にあるものは、ぜんぶ手作業にすぎません。SheetPilot が読み、名前を付け、書き込み、そのページを十分に覚えておいて、次からは無料で同じことをします。\n\n**できること**\n\n✨ **ワンクリック、判断は AI が。** 「抽出」を押すと、アシスタントがページを読み、単一の項目なのかリスト全体なのかを判断し、表示言語に合った列名を自分で考えて、プレビューを見せます。列名を直し、いらない行のチェックを外し、そのまま Google Sheets へ送るだけです。\n\n♻️ **レイアウトは一度覚えれば、あとは無料で再生。** あるサイトでの最初の取り込みが、どの値がどこにあるかを拡張機能に教えます。そのレシピは保存され、次回以降はローカルで再生されるので、同じページに 2 度クレジットを払うことはありません。\n\n🖱️ **自分専用の右クリックメニュー。** 自分の作業に合わせて項目を組み立てられます。選択したテキストはメモ列へ、カーソル下のリンクはリンク列へ、画像は画像列へ。ページ上で 1 クリック、列に値が 1 つ。パネルを開く必要はありません。\n\n🧩 **繰り返し作業のためのビジュアルなキャンバス。** ブロックをキャンバスに置いてつなぐだけ。ページを取る、リンクを抜き出す、重複を落とす、テキストを整える、フィールドを分割する、固定値を入れる、結果を Google Sheets に書く。すべて手元の PC で動き、費用はかからず、ショートカットキーに割り当てられます。\n\n📊 **表はまるごと。** ページ上の表を見つけたら、コピペと格闘せずに行として追記できます。Google Sheets 側にすでにある見出しは名前で突き合わせ、合わない列は間違った場所に押し込まず、そのまま報告します。\n\n🔐 **行データは Google Sheets へ直行し、当社を経由しません。** Google アカウントを接続すると、拡張機能はブラウザーから直接 Google Sheets に書き込みます。Google に求める権限はスプレッドシートへの書き込み 1 つだけ。ファイル一覧の取得も、Drive の閲覧も、当社側にデータの写しが残ることもありません。\n\n🌍 **インターフェイス 13 言語。** パネルもメニューも、AI が付ける列名も、選んだ表示言語に従います。Google Sheets の見出し行は、実際に仕事をしている言語で出てきます。\n\n**設計としてのプライバシー**\n\n行データはブラウザーからあなた自身の Google Sheets ファイルへ渡ります。その内容が保存・販売・共有されることはありません。当社サーバーに届くものは限られていて、はっきり書いておきます。AI 抽出を求めたその瞬間のページ本文（その 1 回のリクエストにのみ使い、応答を返すあいだだけ保持します）と、アカウントのメールアドレス（プランとクレジット残高は誰かに属する必要があるため）です。レシピはセレクターの集まりであって内容ではありません。タイトルがページの*どこ*にあるかは記録しますが、そこに何と書いてあったかは記録しません。Google アカウントへのログインはブラウザー内で行われ、トークンが当社に送られることはありません。\n\n**こんな人に**\n\n調べ物のリスト、転職活動、価格のウォッチ、見込み客リスト、読むもののキューを Google Sheets で管理しているすべての人。パイプラインを組み立てる採用担当者と求職者。掲載情報を集めるアナリスト。参考文献を作る学生。そして、閉じたらリンクを失うという理由だけでタブを開いたままにしたことのある人。\n\n**はじめかた**\n\nインストールしてサイドパネルを開き（Alt+Shift+S）、サインインして Google Sheets を接続し、ページに向けるだけ。新規アカウントには 30 クレジットが付きます。レシピと自動化はずっと無料で再生されるので、ほとんどの日は 1 ポイントも使いません。詳細と価格: https://sheet.xeviora.com — プライバシーポリシー: https://sheet.xeviora.com/privacy\n\n*SheetPilot は独立した製品であり、Google LLC と提携しておらず、同社による承認・後援も受けていません。Google Sheets および Google Drive は Google LLC の商標です。*",
+					"long": "**残しておきたいものを見つけた。けれど残す方法は、コピーして、ウィンドウを切り替えて、貼り付けて、列を直して、また次を取りに戻る——それだけ。** SheetPilot はこの往復をなくします。サイドパネルで一度クリックすれば、ページは列名まで整った 1 行として自分の Google Sheets™ スプレッドシートに入ります。\n\n**入れる理由**\n\nいま見ているタブは要するにデータで、データを実際に置いておく場所は Google Sheets だからです。その二つの間にあるものは、ぜんぶ手作業にすぎません。SheetPilot が読み、名前を付け、書き込み、そのページを十分に覚えておいて、次からは無料で同じことをします。\n\n**できること**\n\n✨ **ワンクリック、判断は AI が。** 「抽出」を押すと、アシスタントがページを読み、単一の項目なのかリスト全体なのかを判断し、表示言語に合った列名を自分で考えて、プレビューを見せます。列名を直し、いらない行のチェックを外し、そのまま Google Sheets へ送るだけです。\n\n♻️ **レイアウトは一度覚えれば、あとは無料で再生。** あるサイトでの最初の取り込みが、どの値がどこにあるかを拡張機能に教えます。そのレシピは保存され、次回以降はローカルで再生されるので、同じページに 2 度クレジットを払うことはありません。\n\n🖱️ **自分専用の右クリックメニュー。** 自分の作業に合わせて項目を組み立てられます。選択したテキストはメモ列へ、カーソル下のリンクはリンク列へ、画像は画像列へ。ページ上で 1 クリック、列に値が 1 つ。パネルを開く必要はありません。\n\n🧩 **繰り返し作業のためのビジュアルなキャンバス。** ブロックをキャンバスに置いてつなぐだけ。ページを取る、リンクを抜き出す、重複を落とす、テキストを整える、フィールドを分割する、固定値を入れる、結果を Google Sheets に書く。すべて手元の PC で動き、費用はかからず、ショートカットキーに割り当てられます。\n\n📊 **表はまるごと。** ページ上の表を見つけたら、コピペと格闘せずに行として追記できます。Google Sheets 側にすでにある見出しは名前で突き合わせ、合わない列は間違った場所に押し込まず、そのまま報告します。\n\n🔐 **行データは Google Sheets へ直行し、当社を経由しません。** Google アカウントを接続すると、拡張機能はブラウザーから直接 Google Sheets に書き込みます。Google に求める権限はスプレッドシートへの書き込み 1 つだけ。ファイル一覧の取得も、Drive の閲覧も、当社側にデータの写しが残ることもありません。\n\n🌍 **インターフェイス 13 言語。** パネルもメニューも、AI が付ける列名も、選んだ表示言語に従います。Google Sheets の見出し行は、実際に仕事をしている言語で出てきます。\n\n**設計としてのプライバシー**\n\n行データはブラウザーからあなた自身の Google Sheets ファイルへ渡ります。その内容が保存・販売・共有されることはありません。当社サーバーに届くものは限られていて、はっきり書いておきます。AI 抽出を求めたその瞬間のページ本文（その 1 回のリクエストにのみ使い、応答を返すあいだだけ保持します）と、アカウントのメールアドレス（プランとクレジット残高は誰かに属する必要があるため）です。レシピはセレクターの集まりであって内容ではありません。タイトルがページの*どこ*にあるかは記録しますが、そこに何と書いてあったかは記録しません。Google アカウントへのログインはブラウザー内で行われ、トークンが当社に送られることはありません。\n\n**こんな人に**\n\n調べ物のリスト、転職活動、価格のウォッチ、見込み客リスト、読むもののキューを Google Sheets で管理しているすべての人。パイプラインを組み立てる採用担当者と求職者。掲載情報を集めるアナリスト。参考文献を作る学生。そして、閉じたらリンクを失うという理由だけでタブを開いたままにしたことのある人。\n\n**はじめかた**\n\nインストールしてサイドパネルを開き（Alt+Shift+S）、サインインして Google Sheets を接続し、ページに向けるだけ。新規アカウントには 30 クレジットが付きます。レシピと自動化はお使いの端末で動きクレジットを消費しないので、ほとんどの日は 1 ポイントも使いません。詳細と価格: https://sheet.xeviora.com — プライバシーポリシー: https://sheet.xeviora.com/privacy\n\n*SheetPilot は独立した製品であり、Google LLC と提携しておらず、同社による承認・後援も受けていません。Google Sheets および Google Drive は Google LLC の商標です。*",
 					"metaDescription": "任意のウェブページをワンクリックで自分の Google スプレッドシートへ。AI が雑然としたページやリストをきれいな行に変え、レイアウトを学習して無料で再生します。",
 					"features": [
 						{
@@ -4447,7 +4469,7 @@
 					"name": "SheetPilot — 儲存到 Google Sheets™",
 					"tagline": "網頁內容，一鍵進你的試算表。",
 					"short": "SheetPilot 在任意頁面旁邊開一個側邊欄：選取後按右鍵即存成一列；把 AI 指向雜亂的頁面，它會按你定義的欄位填好，整頁搜尋結果一次最多 50 列。AI 讀過就順便學會版型，之後改為本機重播——瞬間完成，也不花點數。資料列由瀏覽器直連 Google API 寫入，絕不經過我們的伺服器。Google Sheets 是 Google LLC 的商標，SheetPilot 是獨立產品。",
-					"long": "**你找到了值得留下的東西，而唯一的留法是：複製、切視窗、貼上、把欄位挪正，然後回去找下一筆。** SheetPilot 把這個迴圈拿掉。在側邊欄點一下，這一頁就以一列整齊的資料進到你自己的 Google Sheets™ 試算表——欄名都已經取好。\n\n**為什麼裝它**\n\n因為你正在看的分頁本質上就是資料，而你真正存放資料的地方是 Google Sheets。夾在這兩件事中間的，全是體力活。SheetPilot 負責讀、負責取名、負責寫入，之後還把這一頁記得夠牢，下次免費再做一遍。\n\n**你可以做什麼**\n\n✨ **一鍵，判斷交給 AI。** 按下「擷取」，助理會讀完整頁，判斷它是單一項目還是一整份清單，用你的介面語言自己想出合適的欄名，再給你一份預覽。改欄名、取消勾選不要的列，然後送進 Google Sheets。\n\n♻️ **版式學一次，之後免費重播。** 在某個網站的第一次擷取，會教會擴充功能每個值長在哪裡。這份 recipe 會被存下來，之後每次造訪都在本機重播，同一頁不會被扣兩次點數。\n\n🖱️ **屬於你自己的右鍵選單。** 照你的工作方式做選單項目：選取的文字存到「備註」欄、游標下的連結存到「連結」欄、圖片存到「圖片」欄。頁面上點一下，欄位裡多一個值，連面板都不用開。\n\n🧩 **重複工作用視覺化畫布。** 把積木拖到畫布上接起來：取整頁、抓出連結、去重複、修剪文字、拆欄位、蓋固定值、把結果寫進 Google Sheets。全在你自己的電腦上執行，不花任何點數，還能綁鍵盤快速鍵。\n\n📊 **表格整塊搬。** 看到頁面上的表格，直接以列的形式追加，不必和複製貼上纏鬥。你 Google Sheets 工作表上既有的表頭會依名稱對齊，對不上的欄位會如實回報，而不是硬塞進錯的位置。\n\n🔐 **列資料直達 Google Sheets，不經過我們。** Google 帳號連上之後，擴充功能是從你的瀏覽器直接寫進 Google Sheets。它只向 Google 要一項權限——寫入你的試算表——沒有別的：不列檔案、不翻 Drive，我們這邊也不留任何資料副本。\n\n🌍 **13 種介面語言。** 面板、選單，以及 AI 寫出的欄名，全都跟著你選的介面語言走，所以 Google Sheets 裡的表頭那一列會用你真正在用的語言呈現。\n\n**隱私是設計出來的**\n\n你的資料列從瀏覽器直達你自己的 Google Sheets 檔案。這些內容不會被保存、販售或分享。真正會到我們伺服器的東西很有限，也講明白：你按下 AI 擷取那一刻的頁面文字——只用於那一次請求，回覆完就不留——以及你的帳號電子郵件，因為方案和點數餘額總得屬於某個人。recipe 是一組選擇器而不是內容：它記的是標題「長在頁面哪個位置」，而不是標題寫了什麼。登入 Google 帳號是在瀏覽器裡完成的，權杖永遠不會送到我們這裡。\n\n**適合誰**\n\n所有把調查清單、求職進度、比價、名單或待讀佇列放在 Google Sheets 裡的人。在建立人才管道的招募者與求職者。在蒐集刊登資訊的分析人員。在整理參考書目的學生。以及任何曾經因為「一關就找不回連結」而讓分頁一直開著的人。\n\n**開始使用**\n\n安裝、打開側邊欄（Alt+Shift+S）、登入、連上 Google Sheets，然後對準一個頁面。新帳號送 30 點；recipe 與自動化永遠免費重播，所以多數日子你其實一點都不會花。完整說明與價格：https://sheet.xeviora.com — 隱私權政策：https://sheet.xeviora.com/privacy\n\n*SheetPilot 是獨立產品，與 Google LLC 並無隸屬關係，亦未獲其背書或贊助。Google Sheets 與 Google Drive 為 Google LLC 的商標。*",
+					"long": "**你找到了值得留下的東西，而唯一的留法是：複製、切視窗、貼上、把欄位挪正，然後回去找下一筆。** SheetPilot 把這個迴圈拿掉。在側邊欄點一下，這一頁就以一列整齊的資料進到你自己的 Google Sheets™ 試算表——欄名都已經取好。\n\n**為什麼裝它**\n\n因為你正在看的分頁本質上就是資料，而你真正存放資料的地方是 Google Sheets。夾在這兩件事中間的，全是體力活。SheetPilot 負責讀、負責取名、負責寫入，之後還把這一頁記得夠牢，下次免費再做一遍。\n\n**你可以做什麼**\n\n✨ **一鍵，判斷交給 AI。** 按下「擷取」，助理會讀完整頁，判斷它是單一項目還是一整份清單，用你的介面語言自己想出合適的欄名，再給你一份預覽。改欄名、取消勾選不要的列，然後送進 Google Sheets。\n\n♻️ **版式學一次，之後免費重播。** 在某個網站的第一次擷取，會教會擴充功能每個值長在哪裡。這份 recipe 會被存下來，之後每次造訪都在本機重播，同一頁不會被扣兩次點數。\n\n🖱️ **屬於你自己的右鍵選單。** 照你的工作方式做選單項目：選取的文字存到「備註」欄、游標下的連結存到「連結」欄、圖片存到「圖片」欄。頁面上點一下，欄位裡多一個值，連面板都不用開。\n\n🧩 **重複工作用視覺化畫布。** 把積木拖到畫布上接起來：取整頁、抓出連結、去重複、修剪文字、拆欄位、蓋固定值、把結果寫進 Google Sheets。全在你自己的電腦上執行，不花任何點數，還能綁鍵盤快速鍵。\n\n📊 **表格整塊搬。** 看到頁面上的表格，直接以列的形式追加，不必和複製貼上纏鬥。你 Google Sheets 工作表上既有的表頭會依名稱對齊，對不上的欄位會如實回報，而不是硬塞進錯的位置。\n\n🔐 **列資料直達 Google Sheets，不經過我們。** Google 帳號連上之後，擴充功能是從你的瀏覽器直接寫進 Google Sheets。它只向 Google 要一項權限——寫入你的試算表——沒有別的：不列檔案、不翻 Drive，我們這邊也不留任何資料副本。\n\n🌍 **13 種介面語言。** 面板、選單，以及 AI 寫出的欄名，全都跟著你選的介面語言走，所以 Google Sheets 裡的表頭那一列會用你真正在用的語言呈現。\n\n**隱私是設計出來的**\n\n你的資料列從瀏覽器直達你自己的 Google Sheets 檔案。這些內容不會被保存、販售或分享。真正會到我們伺服器的東西很有限，也講明白：你按下 AI 擷取那一刻的頁面文字——只用於那一次請求，回覆完就不留——以及你的帳號電子郵件，因為方案和點數餘額總得屬於某個人。recipe 是一組選擇器而不是內容：它記的是標題「長在頁面哪個位置」，而不是標題寫了什麼。登入 Google 帳號是在瀏覽器裡完成的，權杖永遠不會送到我們這裡。\n\n**適合誰**\n\n所有把調查清單、求職進度、比價、名單或待讀佇列放在 Google Sheets 裡的人。在建立人才管道的招募者與求職者。在蒐集刊登資訊的分析人員。在整理參考書目的學生。以及任何曾經因為「一關就找不回連結」而讓分頁一直開著的人。\n\n**開始使用**\n\n安裝、打開側邊欄（Alt+Shift+S）、登入、連上 Google Sheets，然後對準一個頁面。新帳號送 30 點；recipe 與自動化在你的裝置上執行、不花點數，所以多數日子你其實一點都不會花。完整說明與價格：https://sheet.xeviora.com — 隱私權政策：https://sheet.xeviora.com/privacy\n\n*SheetPilot 是獨立產品，與 Google LLC 並無隸屬關係，亦未獲其背書或贊助。Google Sheets 與 Google Drive 為 Google LLC 的商標。*",
 					"metaDescription": "一鍵把任意網頁存進你自己的 Google 試算表。AI 把雜亂頁面與列表變成乾淨的資料列，學會版型後永久免費重播。",
 					"features": [
 						{
@@ -6272,6 +6294,300 @@
 							"emoji": "📡",
 							"title": "遠端推送與連線",
 							"desc": "微信小程式經藍牙推送內容；Windows 端區網配對傳檔、改參數、整機備份。"
+						}
+					]
+				}
+			}
+		},
+		{
+			"slug": "shotcake",
+			"category": "app",
+			"type": "inline",
+			"status": "in-development",
+			"pricing": "premium",
+			"platforms": [
+				"desktop"
+			],
+			"techStack": [
+				"Swift",
+				"AppKit",
+				"SwiftUI",
+				"ScreenCaptureKit",
+				"Vision",
+				"XcodeGen",
+				"Next.js",
+				"Cloudflare Workers"
+			],
+			"links": {
+				"site": "https://shotcake.xeviora.com"
+			},
+			"installUrl": "",
+			"categoryLabel": "Screenshot & Markup · macOS",
+			"logo": "/assets/showcase/shotcake/logo.png",
+			"gradient": null,
+			"screenshots": [
+				{
+					"src": "/assets/showcase/shotcake/scrn/01.webp",
+					"caption": "Grab any area, pixel-perfect"
+				},
+				{
+					"src": "/assets/showcase/shotcake/scrn/02.webp",
+					"caption": "Annotate in seconds"
+				},
+				{
+					"src": "/assets/showcase/shotcake/scrn/03.webp",
+					"caption": "Hide anything sensitive"
+				},
+				{
+					"src": "/assets/showcase/shotcake/scrn/04.webp",
+					"caption": "Make it presentable"
+				},
+				{
+					"src": "/assets/showcase/shotcake/scrn/05.webp",
+					"caption": "Pick any color on screen"
+				},
+				{
+					"src": "/assets/showcase/shotcake/scrn/06.webp",
+					"caption": "Pin it. Measure it."
+				},
+				{
+					"src": "/assets/showcase/shotcake/scrn/07.webp",
+					"caption": "Every capture, searchable"
+				}
+			],
+			"privacyMarkdown": null,
+			"content": {
+				"en": {
+					"name": "Shotcake",
+					"tagline": "Screenshots, piece of cake.",
+					"short": "A fast, native screenshot tool for macOS. Capture any area, window or freeform shape, mark it up with arrows, blur and numbered steps, then drag it straight into the app you were already working in. One-time purchase — no subscription, no account, no ads. In development for the Mac App Store.",
+					"long": "Shotcake is a fast, native screenshot tool for macOS. Capture anything on screen, mark it up, and share it — without breaking your flow.\n\n### Capture\n\n- Area, window, full screen, all displays, or any freeform shape\n- Fixed-size capture when you need repeatable screenshots\n- Repeat your last area with a single shortcut\n- Timed capture for menus and hover states\n- Pixel magnifier and window highlighting while you select\n\n### Annotate\n\n- Arrows, lines, rectangles, ellipses, freehand pen and highlighter\n- Text labels and numbered step counters\n- Blur, pixelate and solid redaction to hide private data\n- Spotlight to draw attention to a single detail\n- Crop, rotate and flip — non-destructive and fully undoable\n\n### Make it look good\n\n- Gradient and solid backgrounds with adjustable padding\n- Rounded corners and drop shadows\n- Watermarks with position, size and opacity control\n\n### Work fast\n\n- Global shortcuts for every capture mode, all rebindable\n- Floating preview: drag the shot straight into any app\n- Pin a screenshot on top of everything as a reference\n- Built-in color picker and on-screen ruler\n- Text recognition copies text straight out of an image\n- Capture library keeps your history, with annotations still editable\n\n### Export\n\n- PNG, JPEG, HEIC, TIFF and PDF at 0.5×, 1× or 2×\n- Custom filename templates\n- Copy to the clipboard automatically\n\nShotcake is a one-time purchase. No subscription, no account, no ads. Requires macOS 14 or later and Screen Recording permission.",
+					"metaDescription": "Shotcake — a native macOS screenshot, markup and sharing tool. Capture, annotate, redact, export. One-time purchase, in development.",
+					"features": [
+						{
+							"emoji": "📸",
+							"title": "Capture anything",
+							"desc": "Area, window, full screen, all displays or any freeform shape. Fixed-size and timed capture for repeatable shots, menus and hover states, with a pixel magnifier and window highlighting while you select."
+						},
+						{
+							"emoji": "✏️",
+							"title": "Annotate in seconds",
+							"desc": "Arrows, lines, rectangles, ellipses, freehand pen and highlighter, plus text labels and numbered step counters. Crop, rotate and flip stay non-destructive and fully undoable."
+						},
+						{
+							"emoji": "🙈",
+							"title": "Hide what should not ship",
+							"desc": "Blur, pixelate and solid redaction take private data out of a screenshot before it leaves your machine. Spotlight pushes attention onto the one detail that matters."
+						},
+						{
+							"emoji": "🎨",
+							"title": "A canvas, not just a crop",
+							"desc": "Gradient or solid backgrounds with adjustable padding, rounded corners, drop shadows, and a watermark you can position, size and fade."
+						},
+						{
+							"emoji": "⚡",
+							"title": "Tools that stay out of the way",
+							"desc": "Rebindable global shortcuts for every mode, a floating preview you drag straight into another app, pin-on-top reference shots, a color picker, an on-screen ruler and text recognition."
+						},
+						{
+							"emoji": "📤",
+							"title": "Export on your terms",
+							"desc": "PNG, JPEG, HEIC, TIFF and PDF at 0.5×, 1× or 2×, with custom filename templates and automatic clipboard copy. A searchable library keeps every capture, annotations still editable."
+						}
+					]
+				},
+				"zh-cn": {
+					"name": "Shotcake 截图",
+					"tagline": "截图，小菜一碟。",
+					"short": "一款为 macOS 打造的原生截图工具。截取任意区域、窗口或任意形状，标注好，直接拖进手头正在用的 App。一次买断，没有订阅、不用注册账号、没有广告。目前在开发中，目标是上架 Mac App Store。",
+					"long": "Shotcake 是一款为 macOS 打造的原生截图工具，快。截取屏幕上的任何内容，标注好，不打断手头的事就发出去。\n\n### 截取\n\n- 区域、窗口、整个屏幕、所有显示器，或任意形状\n- 固定尺寸截取，每次都是一样大\n- 一个快捷键重复上次的区域\n- 延时截取，专门用来抓菜单和悬停状态\n- 选择时有像素放大镜和窗口高亮\n\n### 标注\n\n- 箭头、直线、矩形、椭圆、画笔、荧光笔\n- 文字标签和自动连号的步骤序号\n- 模糊、马赛克、涂黑，遮住不该露的信息\n- 聚光效果，把注意力压到某一处\n- 裁剪、旋转、翻转 —— 全部无损，随时撤销\n\n### 让它好看\n\n- 渐变和纯色背景，留白可调\n- 圆角和投影\n- 水印可调位置、大小和不透明度\n\n### 用得快\n\n- 每种截取方式都有全局快捷键，可以随意改\n- 浮动预览可以直接拖进任何 App\n- 把截图钉在最上层当参照\n- 内置取色器和屏幕标尺\n- 文字识别，直接把图里的字拷出来\n- 截图库保留历史，标注仍然可以继续编辑\n\n### 导出\n\n- PNG、JPEG、HEIC、TIFF、PDF，支持 0.5×、1×、2×\n- 自定义文件名模板\n- 自动拷贝到剪贴板\n\nShotcake 一次买断，没有订阅、不用注册账号、没有广告。需要 macOS 14 或更高版本，以及「屏幕录制」权限。",
+					"metaDescription": "Shotcake —— macOS 原生截图、标注与分享工具。截取、标注、打码、导出，一次买断。开发中。",
+					"features": [
+						{
+							"emoji": "📸",
+							"title": "什么都能截",
+							"desc": "区域、窗口、整个屏幕、所有显示器，或任意形状。固定尺寸截取保证每次一样大，延时截取专门用来抓菜单和悬停状态，选择时有像素放大镜和窗口高亮。"
+						},
+						{
+							"emoji": "✏️",
+							"title": "几秒钟标注完",
+							"desc": "箭头、直线、矩形、椭圆、画笔、荧光笔，加上文字标签和自动连号的步骤序号。裁剪、旋转、翻转全部无损，随时撤销。"
+						},
+						{
+							"emoji": "🙈",
+							"title": "该遮的先遮掉",
+							"desc": "模糊、马赛克、纯色涂黑，把不该露的信息在截图离开本机之前就去掉。聚光效果把注意力压到真正要看的那一处。"
+						},
+						{
+							"emoji": "🎨",
+							"title": "不只是裁一块图",
+							"desc": "渐变或纯色背景、可调留白、圆角、投影，以及位置、大小、不透明度都能调的水印。"
+						},
+						{
+							"emoji": "⚡",
+							"title": "顺手，不挡路",
+							"desc": "每种截取方式都有可改的全局快捷键；浮动预览直接拖进另一个 App；截图可钉在最上层当参照；内置取色器、屏幕标尺和文字识别。"
+						},
+						{
+							"emoji": "📤",
+							"title": "按你的规矩导出",
+							"desc": "PNG、JPEG、HEIC、TIFF、PDF，支持 0.5×、1×、2×，文件名模板自定义，自动拷贝到剪贴板。截图库保留全部历史，标注仍可继续编辑。"
+						}
+					]
+				},
+				"es": {
+					"name": "Shotcake",
+					"tagline": "Capturas de pantalla, pan comido.",
+					"short": "Una herramienta de capturas de pantalla nativa y rápida para macOS. Captura un área, una ventana o cualquier forma libre, anótala con flechas, desenfoque y pasos numerados, y arrástrala directamente a la app en la que estabas trabajando. Compra única, sin suscripción ni cuenta. En desarrollo para la Mac App Store.",
+					"long": "Shotcake es una herramienta de capturas de pantalla nativa y rápida para macOS. Captura cualquier cosa en pantalla, anótala y compártela sin interrumpir tu trabajo.\n\n### Capturar\n\n- Área, ventana, pantalla completa, todas las pantallas o forma libre\n- Área fija cuando necesitas capturas siempre del mismo tamaño\n- Repite la última área con un solo atajo\n- Captura con retardo para menús y estados de cursor encima\n- Lupa de píxeles y resaltado de ventanas mientras seleccionas\n\n### Anotar\n\n- Flechas, líneas, rectángulos, elipses, lápiz y rotulador\n- Etiquetas de texto y numeradores de pasos\n- Desenfoque, pixelado y tapado para ocultar datos privados\n- Foco para llamar la atención sobre un detalle\n- Recortar, rotar y voltear: no destructivo y con deshacer\n\n### Que se vea bien\n\n- Fondos degradados o lisos con margen ajustable\n- Esquinas redondeadas y sombras\n- Marcas de agua con posición, tamaño y opacidad\n\n### Trabajar rápido\n\n- Atajos globales para cada modo de captura, todos reasignables\n- Vista previa flotante: arrastra la captura directamente a cualquier app\n- Fija una captura encima de todo como referencia\n- Selector de color y regla de pantalla integrados\n- El reconocimiento de texto copia el texto directamente de la imagen\n- La biblioteca guarda tu historial con las anotaciones aún editables\n\n### Exportar\n\n- PNG, JPEG, HEIC, TIFF y PDF a 0,5×, 1× o 2×\n- Plantillas de nombre de archivo personalizadas\n- Copia automática al portapapeles\n\nShotcake es una compra única. Sin suscripción, sin cuenta y sin anuncios. Requiere macOS 14 o posterior y permiso de grabación de pantalla.",
+					"metaDescription": "Shotcake: herramienta nativa de capturas, anotación y compartición para macOS. Captura, anota, tapa y exporta. Compra única, en desarrollo.",
+					"features": [
+						{
+							"emoji": "📸",
+							"title": "Captura lo que sea",
+							"desc": "Área, ventana, pantalla completa, todas las pantallas o forma libre. Área fija para capturas siempre iguales, captura con retardo para menús y estados de cursor encima, con lupa de píxeles y resaltado de ventanas."
+						},
+						{
+							"emoji": "✏️",
+							"title": "Anota en segundos",
+							"desc": "Flechas, líneas, rectángulos, elipses, lápiz y rotulador, más etiquetas de texto y numeradores de pasos. Recortar, rotar y voltear siguen siendo no destructivos y reversibles."
+						},
+						{
+							"emoji": "🙈",
+							"title": "Oculta lo que no debe salir",
+							"desc": "Desenfoque, pixelado y tapado sólido quitan los datos privados antes de que la captura salga de tu Mac. El foco dirige la atención a un único detalle."
+						},
+						{
+							"emoji": "🎨",
+							"title": "Más que un recorte",
+							"desc": "Fondos degradados o lisos con margen ajustable, esquinas redondeadas, sombras y una marca de agua con posición, tamaño y opacidad a tu gusto."
+						},
+						{
+							"emoji": "⚡",
+							"title": "Herramientas que no estorban",
+							"desc": "Atajos globales reasignables para cada modo, vista previa flotante que arrastras a otra app, captura fijada encima de todo, selector de color, regla de pantalla y reconocimiento de texto."
+						},
+						{
+							"emoji": "📤",
+							"title": "Exporta a tu manera",
+							"desc": "PNG, JPEG, HEIC, TIFF y PDF a 0,5×, 1× o 2×, con plantillas de nombre de archivo y copia automática al portapapeles. La biblioteca conserva el historial con las anotaciones aún editables."
+						}
+					]
+				},
+				"fr": {
+					"name": "Shotcake",
+					"tagline": "Les captures d’écran, un jeu d’enfant.",
+					"short": "Un outil de capture d’écran natif et rapide pour macOS. Capturez une zone, une fenêtre ou une forme libre, annotez avec des flèches, du flou et des étapes numérotées, puis glissez le résultat directement dans l’app où vous travailliez. Achat unique, sans abonnement ni compte. En développement pour le Mac App Store.",
+					"long": "Shotcake est un outil de capture d’écran natif et rapide pour macOS. Capturez n’importe quoi à l’écran, annotez et partagez — sans interrompre votre travail.\n\n### Capturer\n\n- Zone, fenêtre, écran entier, tous les écrans ou forme libre\n- Zone fixe pour des captures toujours identiques\n- Répétez la dernière zone avec un seul raccourci\n- Capture différée pour les menus et les états de survol\n- Loupe de pixels et mise en surbrillance des fenêtres pendant la sélection\n\n### Annoter\n\n- Flèches, lignes, rectangles, ellipses, crayon et surligneur\n- Zones de texte et numérotation des étapes\n- Flou, pixellisation et masquage pour cacher les données privées\n- Projecteur pour attirer l’attention sur un détail\n- Rogner, pivoter et retourner — non destructif et annulable\n\n### Soigner le rendu\n\n- Arrière-plans dégradés ou unis avec marge réglable\n- Coins arrondis et ombres portées\n- Filigranes avec position, taille et opacité\n\n### Travailler vite\n\n- Raccourcis globaux pour chaque mode de capture, tous personnalisables\n- Aperçu flottant : glissez la capture directement dans une app\n- Épinglez une capture au-dessus de tout comme référence\n- Pipette et règle d’écran intégrées\n- La reconnaissance de texte copie le texte directement depuis l’image\n- La bibliothèque conserve l’historique, annotations toujours modifiables\n\n### Exporter\n\n- PNG, JPEG, HEIC, TIFF et PDF en 0,5×, 1× ou 2×\n- Modèles de noms de fichiers personnalisés\n- Copie automatique dans le presse-papiers\n\nShotcake est un achat unique. Pas d’abonnement, pas de compte, pas de publicité. Nécessite macOS 14 ou version ultérieure et l’autorisation « Enregistrement de l’écran ».",
+					"metaDescription": "Shotcake — outil natif de capture, d’annotation et de partage pour macOS. Capturer, annoter, masquer, exporter. Achat unique, en développement.",
+					"features": [
+						{
+							"emoji": "📸",
+							"title": "Capturez n’importe quoi",
+							"desc": "Zone, fenêtre, écran entier, tous les écrans ou forme libre. Zone fixe pour des captures identiques, capture différée pour les menus et les états de survol, avec loupe de pixels et surbrillance des fenêtres."
+						},
+						{
+							"emoji": "✏️",
+							"title": "Annotez en quelques secondes",
+							"desc": "Flèches, lignes, rectangles, ellipses, crayon et surligneur, plus zones de texte et numérotation des étapes. Rogner, pivoter et retourner restent non destructifs et annulables."
+						},
+						{
+							"emoji": "🙈",
+							"title": "Masquez ce qui ne doit pas sortir",
+							"desc": "Flou, pixellisation et masquage plein retirent les données privées avant que la capture ne quitte votre Mac. Le projecteur concentre l’attention sur un seul détail."
+						},
+						{
+							"emoji": "🎨",
+							"title": "Plus qu’un simple recadrage",
+							"desc": "Arrière-plans dégradés ou unis avec marge réglable, coins arrondis, ombres portées et un filigrane dont vous réglez la position, la taille et l’opacité."
+						},
+						{
+							"emoji": "⚡",
+							"title": "Des outils qui ne gênent pas",
+							"desc": "Raccourcis globaux personnalisables pour chaque mode, aperçu flottant à glisser dans une autre app, capture épinglée au premier plan, pipette, règle d’écran et reconnaissance de texte."
+						},
+						{
+							"emoji": "📤",
+							"title": "Exportez à votre façon",
+							"desc": "PNG, JPEG, HEIC, TIFF et PDF en 0,5×, 1× ou 2×, avec modèles de noms de fichiers et copie automatique dans le presse-papiers. La bibliothèque garde l’historique, annotations toujours modifiables."
+						}
+					]
+				},
+				"ja": {
+					"name": "Shotcake",
+					"tagline": "撮る、書き込む、共有する。",
+					"short": "macOS 用の軽快なネイティブスクリーンショットツール。範囲・ウインドウ・自由な形でキャプチャし、矢印やぼかし、連番で書き込んで、作業中の App にそのままドラッグできます。買い切りで、サブスクリプションもアカウントも広告もありません。現在 Mac App Store 向けに開発中です。",
+					"long": "Shotcake は macOS 用の軽快なネイティブスクリーンショットツールです。画面のどこでもキャプチャして、書き込んで、作業の流れを止めずに共有できます。\n\n### キャプチャ\n\n- 範囲、ウインドウ、画面全体、すべてのディスプレイ、自由な形\n- 固定サイズのキャプチャで、同じ大きさの画像を何度でも\n- 前回の範囲をショートカット一つで再キャプチャ\n- メニューやホバー状態を撮るための遅延キャプチャ\n- 選択中のピクセルルーペとウインドウのハイライト\n\n### 注釈\n\n- 矢印、直線、長方形、楕円、ペン、蛍光ペン\n- テキストラベルと連番のステップ番号\n- ぼかし、モザイク、黒塗りで個人情報を隠す\n- スポットライトで一点に注目を集める\n- トリミング、回転、反転 — すべて非破壊で取り消し可能\n\n### 見栄えを整える\n\n- グラデーション／単色の背景と余白の調整\n- 角丸とドロップシャドウ\n- 位置・サイズ・不透明度を指定できるウォーターマーク\n\n### 素早く使う\n\n- すべてのキャプチャ操作にグローバルショートカット（変更可能）\n- フローティングプレビューから他の App へそのままドラッグ\n- スクリーンショットを最前面にピン留めして資料代わりに\n- カラーピッカーと画面ルーラーを内蔵\n- テキスト認識で画像から文字をそのままコピー\n- キャプチャライブラリが履歴を保持、注釈はあとから編集可能\n\n### 書き出し\n\n- PNG、JPEG、HEIC、TIFF、PDF を 0.5×／1×／2× で\n- ファイル名テンプレートのカスタマイズ\n- クリップボードへの自動コピー\n\nShotcake は買い切りです。サブスクリプションもアカウントも広告もありません。macOS 14 以降と「画面収録」の許可が必要です。",
+					"metaDescription": "Shotcake — macOS 用のネイティブなスクリーンショット・注釈・共有ツール。撮って、書き込んで、隠して、書き出す。買い切り、開発中。",
+					"features": [
+						{
+							"emoji": "📸",
+							"title": "何でも撮れる",
+							"desc": "範囲、ウインドウ、画面全体、すべてのディスプレイ、自由な形。固定サイズで同じ大きさを何度でも、遅延キャプチャでメニューやホバー状態も。選択中はピクセルルーペとウインドウのハイライト付き。"
+						},
+						{
+							"emoji": "✏️",
+							"title": "数秒で書き込む",
+							"desc": "矢印、直線、長方形、楕円、ペン、蛍光ペンに、テキストラベルと連番のステップ番号。トリミング・回転・反転はすべて非破壊で取り消せます。"
+						},
+						{
+							"emoji": "🙈",
+							"title": "見せたくないものを隠す",
+							"desc": "ぼかし、モザイク、黒塗りで、画像が Mac を離れる前に個人情報を消せます。スポットライトは見てほしい一点に視線を集めます。"
+						},
+						{
+							"emoji": "🎨",
+							"title": "切り抜くだけで終わらない",
+							"desc": "グラデーションまたは単色の背景、余白の調整、角丸、ドロップシャドウ、位置とサイズと不透明度を指定できるウォーターマーク。"
+						},
+						{
+							"emoji": "⚡",
+							"title": "邪魔をしない道具立て",
+							"desc": "すべてのモードに変更可能なグローバルショートカット。フローティングプレビューは他の App へそのままドラッグ。最前面ピン留め、カラーピッカー、画面ルーラー、テキスト認識も内蔵。"
+						},
+						{
+							"emoji": "📤",
+							"title": "思いどおりに書き出す",
+							"desc": "PNG、JPEG、HEIC、TIFF、PDF を 0.5×／1×／2× で。ファイル名テンプレートを自由に決められ、クリップボードへの自動コピーも。ライブラリは履歴を保持し、注釈はあとから編集できます。"
+						}
+					]
+				},
+				"zh-tw": {
+					"name": "Shotcake 截圖",
+					"tagline": "截圖，小菜一碟。",
+					"short": "一款為 macOS 打造的原生截圖工具。擷取任意區域、視窗或任意形狀，標註好，直接拖進手邊正在用的 App。一次買斷，沒有訂閱、不用註冊帳號、沒有廣告。目前開發中，目標是上架 Mac App Store。",
+					"long": "Shotcake 是一款為 macOS 打造的原生截圖工具，快。擷取螢幕上的任何內容，標註好，不打斷手邊的事就發出去。\n\n### 擷取\n\n- 區域、視窗、整個螢幕、所有顯示器，或任意形狀\n- 固定尺寸擷取，每次都是一樣大\n- 一個快速鍵重複上次的區域\n- 延遲擷取，專門用來抓選單和滑鼠停留狀態\n- 選擇時有像素放大鏡和視窗高亮\n\n### 標註\n\n- 箭頭、直線、矩形、橢圓、畫筆、螢光筆\n- 文字標籤和自動連號的步驟編號\n- 模糊、馬賽克、塗黑，遮住不該露的資訊\n- 聚光效果，把注意力壓到某一處\n- 裁切、旋轉、翻轉 —— 全部無損，隨時還原\n\n### 讓它好看\n\n- 漸層和純色背景，留白可調\n- 圓角和陰影\n- 浮水印可調位置、大小和不透明度\n\n### 用得快\n\n- 每種擷取方式都有全域快速鍵，可以隨意改\n- 浮動預覽可以直接拖進任何 App\n- 把截圖釘在最上層當參照\n- 內建取色器和螢幕尺規\n- 文字辨識，直接把圖裡的字拷出來\n- 截圖圖庫保留歷史，標註仍然可以繼續編輯\n\n### 輸出\n\n- PNG、JPEG、HEIC、TIFF、PDF，支援 0.5×、1×、2×\n- 自訂檔案名稱範本\n- 自動拷貝到剪貼板\n\nShotcake 一次買斷，沒有訂閱、不用註冊帳號、沒有廣告。需要 macOS 14 或更新版本，以及「螢幕錄製」權限。",
+					"metaDescription": "Shotcake —— macOS 原生截圖、標註與分享工具。擷取、標註、遮蔽、輸出，一次買斷。開發中。",
+					"features": [
+						{
+							"emoji": "📸",
+							"title": "什麼都能截",
+							"desc": "區域、視窗、整個螢幕、所有顯示器，或任意形狀。固定尺寸擷取保證每次一樣大，延遲擷取專門用來抓選單和停留狀態，選擇時有像素放大鏡和視窗高亮。"
+						},
+						{
+							"emoji": "✏️",
+							"title": "幾秒鐘標註完",
+							"desc": "箭頭、直線、矩形、橢圓、畫筆、螢光筆，加上文字標籤和自動連號的步驟編號。裁切、旋轉、翻轉全部無損，隨時還原。"
+						},
+						{
+							"emoji": "🙈",
+							"title": "該遮的先遮掉",
+							"desc": "模糊、馬賽克、純色塗黑，把不該露的資訊在截圖離開本機之前就去掉。聚光效果把注意力壓到真正要看的那一處。"
+						},
+						{
+							"emoji": "🎨",
+							"title": "不只是裁一塊圖",
+							"desc": "漸層或純色背景、可調留白、圓角、陰影，以及位置、大小、不透明度都能調的浮水印。"
+						},
+						{
+							"emoji": "⚡",
+							"title": "順手，不擋路",
+							"desc": "每種擷取方式都有可改的全域快速鍵；浮動預覽直接拖進另一個 App；截圖可釘在最上層當參照；內建取色器、螢幕尺規和文字辨識。"
+						},
+						{
+							"emoji": "📤",
+							"title": "按你的規矩輸出",
+							"desc": "PNG、JPEG、HEIC、TIFF、PDF，支援 0.5×、1×、2×，檔名範本自訂，自動拷貝到剪貼板。截圖圖庫保留全部歷史，標註仍可繼續編輯。"
 						}
 					]
 				}

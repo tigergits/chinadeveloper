@@ -7,7 +7,7 @@
 ```
 xeviora 产品注册表（自动） ─┐
 显式条目（manifest）      ─┼→ scripts/gen-showcase.mjs
-                           │     ├→ data/showcase.generated.json      （24 个条目，6 语言）
+                           │     ├→ data/showcase.generated.json      （25 个条目，6 语言）
                            │     └→ public/assets/showcase/<slug>/    （logo + webp 截图）
 content/portfolios（旧 markdown，构建时合并进列表页）
                            ↓
@@ -29,6 +29,14 @@ lib/showcase.ts + lib/legacy-portfolio.ts → /[locale]/portfolios（搜索/筛�
    （缺的语言回退英文），截图用 `screenshots`（相对 sourceDir 或绝对路径）显式列出，
    `logoCandidates` 指定图标候选。sanguo / coding 客户案例 / xeviora 品牌站都是这种。
 
+**注册表条目分类不对时用 `exclude` 覆盖**：`data/portfolio-sources.json` 的 `xeviora.exclude`
+里写上 slug，生成器就跳过注册表那一条，改用 `items` 里的显式条目。已用于 `shotcake`——
+xeviora 注册表只能表达 web/extension，把这个 macOS 原生 app 标成了 `webapp`/`platforms:[web]`
+且没有截图；显式条目改回 `category: app` / `platforms: [desktop]`，并接上 App Store 截图与技术栈。
+
+分类 `app`（Apps）于 2026-09-08 加入 `categories`（order 4，client 顺延到 5）；
+六语言的分类名 `portfolios.categories.app` 在 messages 里本来就有，无需补文案。
+
 旧企业项目继续放 `content/portfolios/<slug>/<locale>.md`，列表页构建时自动并入
 "Client & Enterprise" 分类，不经过生成器。
 
@@ -38,7 +46,7 @@ lib/showcase.ts + lib/legacy-portfolio.ts → /[locale]/portfolios（搜索/筛�
 - 某条目源缺失/构建失败 → **沿用上一版** JSON 与素材并告警，绝不静默丢条目；
   只有从注册表/manifest 主动删除的条目才会消失；
 - `npm run gen:showcase -- --strict`：缺源改为报错退出（CI/自查用）；
-- 截图统一压缩为 webp（宽 ≤1600，q80），24 个条目素材共约 6MB。
+- 截图统一压缩为 webp（宽 ≤1600，q80），25 个条目素材共约 6MB。
 
 ## slug 约定与重定向
 
@@ -66,7 +74,7 @@ lib/showcase.ts + lib/legacy-portfolio.ts → /[locale]/portfolios（搜索/筛�
 
 ## SEO 覆盖
 
-- `app/sitemap.ts`：6 语言 ×（主页面 + 17 个旧详情 + 24 个 showcase 详情 + 扩展隐私页）；
+- `app/sitemap.ts`：6 语言 ×（主页面 + 17 个旧详情 + 25 个 showcase 详情 + 扩展隐私页）；
 - `app/[locale]/feed.xml`：RSS 含全部 showcase 与旧条目（已修复旧版空 feed 的 bug）；
 - JSON-LD：列表页 `ItemList` + `BreadcrumbList`；详情页 `SoftwareApplication` /
   `VideoGame` / `WebApplication`（含 `offers` 定价）+ `BreadcrumbList`；联系页 `Person`（含 sameAs）。

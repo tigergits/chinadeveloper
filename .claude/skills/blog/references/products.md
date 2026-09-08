@@ -2,8 +2,8 @@
 
 # 产品事实卡
 
-数据源：`data/showcase.generated.json`（generatedOn: 2026-08-29）
-共 24 个产品。**写文章提到产品时，事实只能取自这里。**
+数据源：`data/showcase.generated.json`（generatedOn: 2026-09-08）
+共 25 个产品。**写文章提到产品时，事实只能取自这里。**
 
 ## 速查表
 
@@ -13,8 +13,8 @@
 | `web-to-markdown` | Web to Markdown | extension | live | free | Any webpage, clean Markdown. |
 | `bulk-image-downloader` | Bulk Image Downloader | extension | live | free | Save every image, in one click. |
 | `clearkit` | ClearKit – History & Cache Cleaner | extension | live | free | Clear everything. Keep your logins. |
-| `scrncap` | ScrnCap – Screenshot & Full Page Capture | extension | live | free | Screenshot any page. Then make it yours. |
-| `reelcap` | ReelCap – Web Demo Screen Recorder | extension | live | free | Record web demos that point where you point. |
+| `scrncap` | ScrnCap – Screenshot & Full Page Capture | extension | live | freemium | Screenshot any page. Then make it yours. |
+| `reelcap` | ReelCap – Web Demo Screen Recorder | extension | live | freemium | Record web demos that point where you point. |
 | `qr-studio` | QR Studio – QR Code Generator & Scanner | extension | live | free | Styled QR codes, 100% offline. |
 | `ideas` | Ideas | webapp | live | freemium | Your AI brainstorming partner. |
 | `pulse` | Pulse | webapp | live | freemium | Know the moment anything you run changes. |
@@ -33,6 +33,7 @@
 | `one-thought-immortal` | One Thought Immortal | game | in-development | premium | One thought to immortal, one thought to demon. |
 | `sanguo-trade-road` | Sanguo Trade Road (三国商道) | inline | in-development | premium | From a single cart to the greatest merchant house of the Three Kingdom |
 | `inkjet-printer-suite` | Industrial Inkjet Printer Suite | inline | case-study | - | Full-stack control software for an industrial inkjet coding machine. |
+| `shotcake` | Shotcake | inline | in-development | premium | Screenshots, piece of cake. |
 
 ---
 
@@ -133,43 +134,47 @@
 ### ScrnCap – Screenshot & Full Page Capture
 
 - **slug**: `scrncap`　**站内页**: `/en/portfolios/scrncap/`
-- **类型**: extension　**分类**: Productivity　**状态**: live　**定价**: free
+- **类型**: extension　**分类**: Productivity　**状态**: live　**定价**: freemium
 - **平台**: extension, web
-- **技术栈**: Next.js, React, Plasmo, TypeScript, Tailwind CSS, Playwright
+- **技术栈**: Next.js, React, Plasmo, TypeScript, Tailwind CSS, Prisma
 - **链接**: site: https://scrncap.xeviora.com · chromeStore: https://chromewebstore.google.com/detail/mheihdpifmpajkhidbfcccmfihljjpgd
 - **Tagline**: Screenshot any page. Then make it yours.
-- **一句话**: Capture the visible area, the whole scrolling page, a region you draw or an exact size — then crop, annotate and blur right where you took it, and export to PNG, JPG, WEBP or PDF. Nothing is ever uploaded.
+- **一句话**: Capture the visible area, the whole scrolling page, a region you draw or an exact size — then crop, annotate and blur right where you took it, and export to PNG, JPG, WEBP or PDF. Capturing stays free, offline and account-free; Pro adds beautified exports, batch capture and project files, all composed in your browser.
 - **功能点**:
   - Four capture modes — Visible area, full scrolling page (stitched), a region you draw, or a fixed size like 1920×1080 plus your own custom sizes.
   - Built-in annotator — Crop, arrows, rectangles, ellipses, pen, text, highlight, mosaic/blur and numbered steps — with undo & redo.
   - Export anywhere — Save as PNG, JPG, WEBP or PDF, copy to clipboard, or send straight to the system print dialog.
-  - Batch multiple tabs — Capture many open tabs in one go and download them as a ZIP archive or a single multi-page PDF.
-  - Send to AI — Copy the shot to the clipboard and open ChatGPT, Claude or Gemini in one click — paste and ask.
-  - 100% offline & no login — Everything runs in your browser. No account, no backend, no tracking — nothing ever leaves your device.
+  - Send to AI — Copy the shot to the clipboard and open your preferred AI chat site in one click — paste and ask.
+  - Works fully offline — Capturing, annotating and exporting need no account and no network — the extension makes no request at all until you choose to sign in.
+  - Optional Pro — Beautified exports (gradient backgrounds, rounded corners, shadow, browser frame, social sizes), batch capture of your tabs or a URL list, your logo as a watermark, cookie-banner removal before full-page shots, and re-editable project files. Pro runs in your browser too — no screenshot is ever uploaded.
 - **截图说明**（这些 caption 是真实功能描述，可作为写作素材）:
-  - 
-  - 
-  - 
+  - Four capture modes, one keystroke away
+  - Annotate right after the shot — arrows, blur and numbered steps
+  - Pro: drop it on a background, round the corners, add a window frame
+  - Pro: capture every tab you tick, or a whole list of addresses
+  - Your settings — and the optional account that unlocks Pro
 
 ### ReelCap – Web Demo Screen Recorder
 
 - **slug**: `reelcap`　**站内页**: `/en/portfolios/reelcap/`
-- **类型**: extension　**分类**: Productivity　**状态**: live　**定价**: free
+- **类型**: extension　**分类**: Productivity　**状态**: live　**定价**: freemium
 - **平台**: extension, web
-- **技术栈**: Next.js, React, Plasmo, TypeScript, Tailwind CSS, Playwright
+- **技术栈**: Next.js, React, Plasmo, TypeScript, Tailwind CSS, Prisma
 - **链接**: site: https://reelcap.xeviora.com · chromeStore: https://chromewebstore.google.com/detail/kpjphmleblfdacbnieepeicinlhgcfhn
 - **Tagline**: Record web demos that point where you point.
-- **一句话**: ReelCap captures any browser tab straight to video — with a highlighted cursor, click ripples, your voice and a webcam bubble. No account, no upload, no watermark.
+- **一句话**: ReelCap captures any browser tab straight to video — with a highlighted cursor, click ripples, your voice and a webcam bubble. Recording is free and needs no account; Pro adds click auto-zoom, MP4 and GIF export, and those run in your browser too.
 - **功能点**:
   - Record any tab — Capture the active browser tab straight to a WEBM video — page renders only, never the browser UI, so the result stays clean.
   - Highlight cursor & click ripples — A hand-drawn cursor and click ripples are painted into the video so viewers always follow exactly where you point and tap.
   - Mic + tab audio — Narrate with your microphone while keeping the page's own sound — both are mixed into a single clean audio track.
   - Webcam bubble — Overlay your camera as a circular or rounded bubble in any corner, with adjustable size — perfect for a personal demo.
-  - Fixed output sizes & frame rate — Export at original, 1080p, 720p, square or vertical, at 24/30/60 fps — ready for YouTube, Product Hunt or social.
-  - 100% offline & no login — Recording and encoding run entirely in your browser. No account, no backend, no tracking — nothing ever leaves your device.
+  - Fixed output sizes & frame rate — Export at original, 1080p, 720p, square or vertical, at 24/30/60 fps — ready for a launch post, a product page or social.
+  - Click auto-zoom (Pro) — The video smoothly zooms in on every click, so small buttons and menus read clearly even in a full-page recording.
+  - MP4 recording & conversion (Pro) — Record straight to MP4 where the browser supports it, or convert a finished WEBM — the conversion runs on your own device.
+  - GIF export (Pro) — Turn a clip into a shareable GIF, encoded locally in the browser — nothing is uploaded anywhere.
 - **截图说明**（这些 caption 是真实功能描述，可作为写作素材）:
-  - Pick a tab, size, mic & webcam — then hit record
-  - Preview your demo and download the WEBM
+  - Pick a size, format, mic & auto-zoom — then hit record
+  - Preview your demo — download MP4 or export a GIF
   - Tune cursor highlights, click ripples & output
 
 ### QR Studio – QR Code Generator & Scanner
@@ -572,3 +577,28 @@
   - USB-key provisioning — One-click authorized-key creation with dual-redundant license sectors that survive accidental reformatting.
   - Excel batch generation — One spreadsheet row → one print file, with barcode layers, serial numbers and per-row preview.
   - Remote push & LAN link — WeChat mini-program sends content over Bluetooth; the Windows app pairs over LAN for files, parameters and backups.
+
+### Shotcake
+
+- **slug**: `shotcake`　**站内页**: `/en/portfolios/shotcake/`
+- **类型**: inline　**分类**: Screenshot & Markup · macOS　**状态**: in-development　**定价**: premium
+- **平台**: desktop
+- **技术栈**: Swift, AppKit, SwiftUI, ScreenCaptureKit, Vision, XcodeGen, Next.js, Cloudflare Workers
+- **链接**: site: https://shotcake.xeviora.com
+- **Tagline**: Screenshots, piece of cake.
+- **一句话**: A fast, native screenshot tool for macOS. Capture any area, window or freeform shape, mark it up with arrows, blur and numbered steps, then drag it straight into the app you were already working in. One-time purchase — no subscription, no account, no ads. In development for the Mac App Store.
+- **功能点**:
+  - Capture anything — Area, window, full screen, all displays or any freeform shape. Fixed-size and timed capture for repeatable shots, menus and hover states, with a pixel magnifier and window highlighting while you select.
+  - Annotate in seconds — Arrows, lines, rectangles, ellipses, freehand pen and highlighter, plus text labels and numbered step counters. Crop, rotate and flip stay non-destructive and fully undoable.
+  - Hide what should not ship — Blur, pixelate and solid redaction take private data out of a screenshot before it leaves your machine. Spotlight pushes attention onto the one detail that matters.
+  - A canvas, not just a crop — Gradient or solid backgrounds with adjustable padding, rounded corners, drop shadows, and a watermark you can position, size and fade.
+  - Tools that stay out of the way — Rebindable global shortcuts for every mode, a floating preview you drag straight into another app, pin-on-top reference shots, a color picker, an on-screen ruler and text recognition.
+  - Export on your terms — PNG, JPEG, HEIC, TIFF and PDF at 0.5×, 1× or 2×, with custom filename templates and automatic clipboard copy. A searchable library keeps every capture, annotations still editable.
+- **截图说明**（这些 caption 是真实功能描述，可作为写作素材）:
+  - Grab any area, pixel-perfect
+  - Annotate in seconds
+  - Hide anything sensitive
+  - Make it presentable
+  - Pick any color on screen
+  - Pin it. Measure it.
+  - Every capture, searchable

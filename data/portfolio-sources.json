@@ -4,12 +4,13 @@
 		{ "key": "webapp", "order": 1 },
 		{ "key": "extension", "order": 2 },
 		{ "key": "game", "order": 3 },
-		{ "key": "client", "order": 4 }
+		{ "key": "app", "order": 4 },
+		{ "key": "client", "order": 5 }
 	],
 	"xeviora": {
 		"root": "D:/PROJs/xeviora/src",
 		"portal": "D:/PROJs/xeviora/src/xeviora/frontend",
-		"exclude": []
+		"exclude": ["shotcake"]
 	},
 	"items": [
 		{
@@ -372,6 +373,121 @@
 						{ "emoji": "🔑", "title": "USB キー発行", "desc": "ワンクリックで認証キーを作成。二重冗長ライセンスセクタ。" },
 						{ "emoji": "📊", "title": "Excel バッチ生成", "desc": "スプレッドシート 1 行 → 印字ファイル 1 件。バーコードレイヤーと行ごとのプレビュー。" },
 						{ "emoji": "📡", "title": "リモート送信と LAN 連携", "desc": "WeChat ミニプログラムから Bluetooth 送信。LAN ペアリングでファイル・パラメータ・バックアップ。" }
+					]
+				}
+			}
+		},
+		{
+			"slug": "shotcake",
+			"category": "app",
+			"type": "inline",
+			"status": "in-development",
+			"pricing": "premium",
+			"platforms": ["desktop"],
+			"techStack": ["Swift", "AppKit", "SwiftUI", "ScreenCaptureKit", "Vision", "XcodeGen", "Next.js", "Cloudflare Workers"],
+			"links": { "site": "https://shotcake.xeviora.com" },
+			"installUrl": "",
+			"categoryLabel": "Screenshot & Markup · macOS",
+			"sourceDir": "D:/PROJs/macos/scrnshot",
+			"logoCandidates": ["app/support/assets.xcassets/AppIcon.appiconset/icon_256.png", "app/support/assets.xcassets/AppIcon.appiconset/icon_512.png", "app/support/assets.xcassets/AppIcon.appiconset/icon_1024.png"],
+			"screenshots": [
+				{ "src": "store/en-US/screenshots/1-select.png", "caption": "Grab any area, pixel-perfect" },
+				{ "src": "store/en-US/screenshots/2-editor.png", "caption": "Annotate in seconds" },
+				{ "src": "store/en-US/screenshots/3-redact.png", "caption": "Hide anything sensitive" },
+				{ "src": "store/en-US/screenshots/4-canvas.png", "caption": "Make it presentable" },
+				{ "src": "store/en-US/screenshots/5-tools.png", "caption": "Pick any color on screen" },
+				{ "src": "store/en-US/screenshots/6-pin-ruler.png", "caption": "Pin it. Measure it." },
+				{ "src": "store/en-US/screenshots/7-library.png", "caption": "Every capture, searchable" }
+			],
+			"content": {
+				"en": {
+					"name": "Shotcake",
+					"tagline": "Screenshots, piece of cake.",
+					"short": "A fast, native screenshot tool for macOS. Capture any area, window or freeform shape, mark it up with arrows, blur and numbered steps, then drag it straight into the app you were already working in. One-time purchase — no subscription, no account, no ads. In development for the Mac App Store.",
+					"long": "Shotcake is a fast, native screenshot tool for macOS. Capture anything on screen, mark it up, and share it — without breaking your flow.\n\n### Capture\n\n- Area, window, full screen, all displays, or any freeform shape\n- Fixed-size capture when you need repeatable screenshots\n- Repeat your last area with a single shortcut\n- Timed capture for menus and hover states\n- Pixel magnifier and window highlighting while you select\n\n### Annotate\n\n- Arrows, lines, rectangles, ellipses, freehand pen and highlighter\n- Text labels and numbered step counters\n- Blur, pixelate and solid redaction to hide private data\n- Spotlight to draw attention to a single detail\n- Crop, rotate and flip — non-destructive and fully undoable\n\n### Make it look good\n\n- Gradient and solid backgrounds with adjustable padding\n- Rounded corners and drop shadows\n- Watermarks with position, size and opacity control\n\n### Work fast\n\n- Global shortcuts for every capture mode, all rebindable\n- Floating preview: drag the shot straight into any app\n- Pin a screenshot on top of everything as a reference\n- Built-in color picker and on-screen ruler\n- Text recognition copies text straight out of an image\n- Capture library keeps your history, with annotations still editable\n\n### Export\n\n- PNG, JPEG, HEIC, TIFF and PDF at 0.5×, 1× or 2×\n- Custom filename templates\n- Copy to the clipboard automatically\n\nShotcake is a one-time purchase. No subscription, no account, no ads. Requires macOS 14 or later and Screen Recording permission.",
+					"metaDescription": "Shotcake — a native macOS screenshot, markup and sharing tool. Capture, annotate, redact, export. One-time purchase, in development.",
+					"features": [
+						{ "emoji": "📸", "title": "Capture anything", "desc": "Area, window, full screen, all displays or any freeform shape. Fixed-size and timed capture for repeatable shots, menus and hover states, with a pixel magnifier and window highlighting while you select." },
+						{ "emoji": "✏️", "title": "Annotate in seconds", "desc": "Arrows, lines, rectangles, ellipses, freehand pen and highlighter, plus text labels and numbered step counters. Crop, rotate and flip stay non-destructive and fully undoable." },
+						{ "emoji": "🙈", "title": "Hide what should not ship", "desc": "Blur, pixelate and solid redaction take private data out of a screenshot before it leaves your machine. Spotlight pushes attention onto the one detail that matters." },
+						{ "emoji": "🎨", "title": "A canvas, not just a crop", "desc": "Gradient or solid backgrounds with adjustable padding, rounded corners, drop shadows, and a watermark you can position, size and fade." },
+						{ "emoji": "⚡", "title": "Tools that stay out of the way", "desc": "Rebindable global shortcuts for every mode, a floating preview you drag straight into another app, pin-on-top reference shots, a color picker, an on-screen ruler and text recognition." },
+						{ "emoji": "📤", "title": "Export on your terms", "desc": "PNG, JPEG, HEIC, TIFF and PDF at 0.5×, 1× or 2×, with custom filename templates and automatic clipboard copy. A searchable library keeps every capture, annotations still editable." }
+					]
+				},
+				"zh-cn": {
+					"name": "Shotcake 截图",
+					"tagline": "截图，小菜一碟。",
+					"short": "一款为 macOS 打造的原生截图工具。截取任意区域、窗口或任意形状，标注好，直接拖进手头正在用的 App。一次买断，没有订阅、不用注册账号、没有广告。目前在开发中，目标是上架 Mac App Store。",
+					"long": "Shotcake 是一款为 macOS 打造的原生截图工具，快。截取屏幕上的任何内容，标注好，不打断手头的事就发出去。\n\n### 截取\n\n- 区域、窗口、整个屏幕、所有显示器，或任意形状\n- 固定尺寸截取，每次都是一样大\n- 一个快捷键重复上次的区域\n- 延时截取，专门用来抓菜单和悬停状态\n- 选择时有像素放大镜和窗口高亮\n\n### 标注\n\n- 箭头、直线、矩形、椭圆、画笔、荧光笔\n- 文字标签和自动连号的步骤序号\n- 模糊、马赛克、涂黑，遮住不该露的信息\n- 聚光效果，把注意力压到某一处\n- 裁剪、旋转、翻转 —— 全部无损，随时撤销\n\n### 让它好看\n\n- 渐变和纯色背景，留白可调\n- 圆角和投影\n- 水印可调位置、大小和不透明度\n\n### 用得快\n\n- 每种截取方式都有全局快捷键，可以随意改\n- 浮动预览可以直接拖进任何 App\n- 把截图钉在最上层当参照\n- 内置取色器和屏幕标尺\n- 文字识别，直接把图里的字拷出来\n- 截图库保留历史，标注仍然可以继续编辑\n\n### 导出\n\n- PNG、JPEG、HEIC、TIFF、PDF，支持 0.5×、1×、2×\n- 自定义文件名模板\n- 自动拷贝到剪贴板\n\nShotcake 一次买断，没有订阅、不用注册账号、没有广告。需要 macOS 14 或更高版本，以及「屏幕录制」权限。",
+					"metaDescription": "Shotcake —— macOS 原生截图、标注与分享工具。截取、标注、打码、导出，一次买断。开发中。",
+					"features": [
+						{ "emoji": "📸", "title": "什么都能截", "desc": "区域、窗口、整个屏幕、所有显示器，或任意形状。固定尺寸截取保证每次一样大，延时截取专门用来抓菜单和悬停状态，选择时有像素放大镜和窗口高亮。" },
+						{ "emoji": "✏️", "title": "几秒钟标注完", "desc": "箭头、直线、矩形、椭圆、画笔、荧光笔，加上文字标签和自动连号的步骤序号。裁剪、旋转、翻转全部无损，随时撤销。" },
+						{ "emoji": "🙈", "title": "该遮的先遮掉", "desc": "模糊、马赛克、纯色涂黑，把不该露的信息在截图离开本机之前就去掉。聚光效果把注意力压到真正要看的那一处。" },
+						{ "emoji": "🎨", "title": "不只是裁一块图", "desc": "渐变或纯色背景、可调留白、圆角、投影，以及位置、大小、不透明度都能调的水印。" },
+						{ "emoji": "⚡", "title": "顺手，不挡路", "desc": "每种截取方式都有可改的全局快捷键；浮动预览直接拖进另一个 App；截图可钉在最上层当参照；内置取色器、屏幕标尺和文字识别。" },
+						{ "emoji": "📤", "title": "按你的规矩导出", "desc": "PNG、JPEG、HEIC、TIFF、PDF，支持 0.5×、1×、2×，文件名模板自定义，自动拷贝到剪贴板。截图库保留全部历史，标注仍可继续编辑。" }
+					]
+				},
+				"zh-tw": {
+					"name": "Shotcake 截圖",
+					"tagline": "截圖，小菜一碟。",
+					"short": "一款為 macOS 打造的原生截圖工具。擷取任意區域、視窗或任意形狀，標註好，直接拖進手邊正在用的 App。一次買斷，沒有訂閱、不用註冊帳號、沒有廣告。目前開發中，目標是上架 Mac App Store。",
+					"long": "Shotcake 是一款為 macOS 打造的原生截圖工具，快。擷取螢幕上的任何內容，標註好，不打斷手邊的事就發出去。\n\n### 擷取\n\n- 區域、視窗、整個螢幕、所有顯示器，或任意形狀\n- 固定尺寸擷取，每次都是一樣大\n- 一個快速鍵重複上次的區域\n- 延遲擷取，專門用來抓選單和滑鼠停留狀態\n- 選擇時有像素放大鏡和視窗高亮\n\n### 標註\n\n- 箭頭、直線、矩形、橢圓、畫筆、螢光筆\n- 文字標籤和自動連號的步驟編號\n- 模糊、馬賽克、塗黑，遮住不該露的資訊\n- 聚光效果，把注意力壓到某一處\n- 裁切、旋轉、翻轉 —— 全部無損，隨時還原\n\n### 讓它好看\n\n- 漸層和純色背景，留白可調\n- 圓角和陰影\n- 浮水印可調位置、大小和不透明度\n\n### 用得快\n\n- 每種擷取方式都有全域快速鍵，可以隨意改\n- 浮動預覽可以直接拖進任何 App\n- 把截圖釘在最上層當參照\n- 內建取色器和螢幕尺規\n- 文字辨識，直接把圖裡的字拷出來\n- 截圖圖庫保留歷史，標註仍然可以繼續編輯\n\n### 輸出\n\n- PNG、JPEG、HEIC、TIFF、PDF，支援 0.5×、1×、2×\n- 自訂檔案名稱範本\n- 自動拷貝到剪貼板\n\nShotcake 一次買斷，沒有訂閱、不用註冊帳號、沒有廣告。需要 macOS 14 或更新版本，以及「螢幕錄製」權限。",
+					"metaDescription": "Shotcake —— macOS 原生截圖、標註與分享工具。擷取、標註、遮蔽、輸出，一次買斷。開發中。",
+					"features": [
+						{ "emoji": "📸", "title": "什麼都能截", "desc": "區域、視窗、整個螢幕、所有顯示器，或任意形狀。固定尺寸擷取保證每次一樣大，延遲擷取專門用來抓選單和停留狀態，選擇時有像素放大鏡和視窗高亮。" },
+						{ "emoji": "✏️", "title": "幾秒鐘標註完", "desc": "箭頭、直線、矩形、橢圓、畫筆、螢光筆，加上文字標籤和自動連號的步驟編號。裁切、旋轉、翻轉全部無損，隨時還原。" },
+						{ "emoji": "🙈", "title": "該遮的先遮掉", "desc": "模糊、馬賽克、純色塗黑，把不該露的資訊在截圖離開本機之前就去掉。聚光效果把注意力壓到真正要看的那一處。" },
+						{ "emoji": "🎨", "title": "不只是裁一塊圖", "desc": "漸層或純色背景、可調留白、圓角、陰影，以及位置、大小、不透明度都能調的浮水印。" },
+						{ "emoji": "⚡", "title": "順手，不擋路", "desc": "每種擷取方式都有可改的全域快速鍵；浮動預覽直接拖進另一個 App；截圖可釘在最上層當參照；內建取色器、螢幕尺規和文字辨識。" },
+						{ "emoji": "📤", "title": "按你的規矩輸出", "desc": "PNG、JPEG、HEIC、TIFF、PDF，支援 0.5×、1×、2×，檔名範本自訂，自動拷貝到剪貼板。截圖圖庫保留全部歷史，標註仍可繼續編輯。" }
+					]
+				},
+				"ja": {
+					"name": "Shotcake",
+					"tagline": "撮る、書き込む、共有する。",
+					"short": "macOS 用の軽快なネイティブスクリーンショットツール。範囲・ウインドウ・自由な形でキャプチャし、矢印やぼかし、連番で書き込んで、作業中の App にそのままドラッグできます。買い切りで、サブスクリプションもアカウントも広告もありません。現在 Mac App Store 向けに開発中です。",
+					"long": "Shotcake は macOS 用の軽快なネイティブスクリーンショットツールです。画面のどこでもキャプチャして、書き込んで、作業の流れを止めずに共有できます。\n\n### キャプチャ\n\n- 範囲、ウインドウ、画面全体、すべてのディスプレイ、自由な形\n- 固定サイズのキャプチャで、同じ大きさの画像を何度でも\n- 前回の範囲をショートカット一つで再キャプチャ\n- メニューやホバー状態を撮るための遅延キャプチャ\n- 選択中のピクセルルーペとウインドウのハイライト\n\n### 注釈\n\n- 矢印、直線、長方形、楕円、ペン、蛍光ペン\n- テキストラベルと連番のステップ番号\n- ぼかし、モザイク、黒塗りで個人情報を隠す\n- スポットライトで一点に注目を集める\n- トリミング、回転、反転 — すべて非破壊で取り消し可能\n\n### 見栄えを整える\n\n- グラデーション／単色の背景と余白の調整\n- 角丸とドロップシャドウ\n- 位置・サイズ・不透明度を指定できるウォーターマーク\n\n### 素早く使う\n\n- すべてのキャプチャ操作にグローバルショートカット（変更可能）\n- フローティングプレビューから他の App へそのままドラッグ\n- スクリーンショットを最前面にピン留めして資料代わりに\n- カラーピッカーと画面ルーラーを内蔵\n- テキスト認識で画像から文字をそのままコピー\n- キャプチャライブラリが履歴を保持、注釈はあとから編集可能\n\n### 書き出し\n\n- PNG、JPEG、HEIC、TIFF、PDF を 0.5×／1×／2× で\n- ファイル名テンプレートのカスタマイズ\n- クリップボードへの自動コピー\n\nShotcake は買い切りです。サブスクリプションもアカウントも広告もありません。macOS 14 以降と「画面収録」の許可が必要です。",
+					"metaDescription": "Shotcake — macOS 用のネイティブなスクリーンショット・注釈・共有ツール。撮って、書き込んで、隠して、書き出す。買い切り、開発中。",
+					"features": [
+						{ "emoji": "📸", "title": "何でも撮れる", "desc": "範囲、ウインドウ、画面全体、すべてのディスプレイ、自由な形。固定サイズで同じ大きさを何度でも、遅延キャプチャでメニューやホバー状態も。選択中はピクセルルーペとウインドウのハイライト付き。" },
+						{ "emoji": "✏️", "title": "数秒で書き込む", "desc": "矢印、直線、長方形、楕円、ペン、蛍光ペンに、テキストラベルと連番のステップ番号。トリミング・回転・反転はすべて非破壊で取り消せます。" },
+						{ "emoji": "🙈", "title": "見せたくないものを隠す", "desc": "ぼかし、モザイク、黒塗りで、画像が Mac を離れる前に個人情報を消せます。スポットライトは見てほしい一点に視線を集めます。" },
+						{ "emoji": "🎨", "title": "切り抜くだけで終わらない", "desc": "グラデーションまたは単色の背景、余白の調整、角丸、ドロップシャドウ、位置とサイズと不透明度を指定できるウォーターマーク。" },
+						{ "emoji": "⚡", "title": "邪魔をしない道具立て", "desc": "すべてのモードに変更可能なグローバルショートカット。フローティングプレビューは他の App へそのままドラッグ。最前面ピン留め、カラーピッカー、画面ルーラー、テキスト認識も内蔵。" },
+						{ "emoji": "📤", "title": "思いどおりに書き出す", "desc": "PNG、JPEG、HEIC、TIFF、PDF を 0.5×／1×／2× で。ファイル名テンプレートを自由に決められ、クリップボードへの自動コピーも。ライブラリは履歴を保持し、注釈はあとから編集できます。" }
+					]
+				},
+				"es": {
+					"name": "Shotcake",
+					"tagline": "Capturas de pantalla, pan comido.",
+					"short": "Una herramienta de capturas de pantalla nativa y rápida para macOS. Captura un área, una ventana o cualquier forma libre, anótala con flechas, desenfoque y pasos numerados, y arrástrala directamente a la app en la que estabas trabajando. Compra única, sin suscripción ni cuenta. En desarrollo para la Mac App Store.",
+					"long": "Shotcake es una herramienta de capturas de pantalla nativa y rápida para macOS. Captura cualquier cosa en pantalla, anótala y compártela sin interrumpir tu trabajo.\n\n### Capturar\n\n- Área, ventana, pantalla completa, todas las pantallas o forma libre\n- Área fija cuando necesitas capturas siempre del mismo tamaño\n- Repite la última área con un solo atajo\n- Captura con retardo para menús y estados de cursor encima\n- Lupa de píxeles y resaltado de ventanas mientras seleccionas\n\n### Anotar\n\n- Flechas, líneas, rectángulos, elipses, lápiz y rotulador\n- Etiquetas de texto y numeradores de pasos\n- Desenfoque, pixelado y tapado para ocultar datos privados\n- Foco para llamar la atención sobre un detalle\n- Recortar, rotar y voltear: no destructivo y con deshacer\n\n### Que se vea bien\n\n- Fondos degradados o lisos con margen ajustable\n- Esquinas redondeadas y sombras\n- Marcas de agua con posición, tamaño y opacidad\n\n### Trabajar rápido\n\n- Atajos globales para cada modo de captura, todos reasignables\n- Vista previa flotante: arrastra la captura directamente a cualquier app\n- Fija una captura encima de todo como referencia\n- Selector de color y regla de pantalla integrados\n- El reconocimiento de texto copia el texto directamente de la imagen\n- La biblioteca guarda tu historial con las anotaciones aún editables\n\n### Exportar\n\n- PNG, JPEG, HEIC, TIFF y PDF a 0,5×, 1× o 2×\n- Plantillas de nombre de archivo personalizadas\n- Copia automática al portapapeles\n\nShotcake es una compra única. Sin suscripción, sin cuenta y sin anuncios. Requiere macOS 14 o posterior y permiso de grabación de pantalla.",
+					"metaDescription": "Shotcake: herramienta nativa de capturas, anotación y compartición para macOS. Captura, anota, tapa y exporta. Compra única, en desarrollo.",
+					"features": [
+						{ "emoji": "📸", "title": "Captura lo que sea", "desc": "Área, ventana, pantalla completa, todas las pantallas o forma libre. Área fija para capturas siempre iguales, captura con retardo para menús y estados de cursor encima, con lupa de píxeles y resaltado de ventanas." },
+						{ "emoji": "✏️", "title": "Anota en segundos", "desc": "Flechas, líneas, rectángulos, elipses, lápiz y rotulador, más etiquetas de texto y numeradores de pasos. Recortar, rotar y voltear siguen siendo no destructivos y reversibles." },
+						{ "emoji": "🙈", "title": "Oculta lo que no debe salir", "desc": "Desenfoque, pixelado y tapado sólido quitan los datos privados antes de que la captura salga de tu Mac. El foco dirige la atención a un único detalle." },
+						{ "emoji": "🎨", "title": "Más que un recorte", "desc": "Fondos degradados o lisos con margen ajustable, esquinas redondeadas, sombras y una marca de agua con posición, tamaño y opacidad a tu gusto." },
+						{ "emoji": "⚡", "title": "Herramientas que no estorban", "desc": "Atajos globales reasignables para cada modo, vista previa flotante que arrastras a otra app, captura fijada encima de todo, selector de color, regla de pantalla y reconocimiento de texto." },
+						{ "emoji": "📤", "title": "Exporta a tu manera", "desc": "PNG, JPEG, HEIC, TIFF y PDF a 0,5×, 1× o 2×, con plantillas de nombre de archivo y copia automática al portapapeles. La biblioteca conserva el historial con las anotaciones aún editables." }
+					]
+				},
+				"fr": {
+					"name": "Shotcake",
+					"tagline": "Les captures d’écran, un jeu d’enfant.",
+					"short": "Un outil de capture d’écran natif et rapide pour macOS. Capturez une zone, une fenêtre ou une forme libre, annotez avec des flèches, du flou et des étapes numérotées, puis glissez le résultat directement dans l’app où vous travailliez. Achat unique, sans abonnement ni compte. En développement pour le Mac App Store.",
+					"long": "Shotcake est un outil de capture d’écran natif et rapide pour macOS. Capturez n’importe quoi à l’écran, annotez et partagez — sans interrompre votre travail.\n\n### Capturer\n\n- Zone, fenêtre, écran entier, tous les écrans ou forme libre\n- Zone fixe pour des captures toujours identiques\n- Répétez la dernière zone avec un seul raccourci\n- Capture différée pour les menus et les états de survol\n- Loupe de pixels et mise en surbrillance des fenêtres pendant la sélection\n\n### Annoter\n\n- Flèches, lignes, rectangles, ellipses, crayon et surligneur\n- Zones de texte et numérotation des étapes\n- Flou, pixellisation et masquage pour cacher les données privées\n- Projecteur pour attirer l’attention sur un détail\n- Rogner, pivoter et retourner — non destructif et annulable\n\n### Soigner le rendu\n\n- Arrière-plans dégradés ou unis avec marge réglable\n- Coins arrondis et ombres portées\n- Filigranes avec position, taille et opacité\n\n### Travailler vite\n\n- Raccourcis globaux pour chaque mode de capture, tous personnalisables\n- Aperçu flottant : glissez la capture directement dans une app\n- Épinglez une capture au-dessus de tout comme référence\n- Pipette et règle d’écran intégrées\n- La reconnaissance de texte copie le texte directement depuis l’image\n- La bibliothèque conserve l’historique, annotations toujours modifiables\n\n### Exporter\n\n- PNG, JPEG, HEIC, TIFF et PDF en 0,5×, 1× ou 2×\n- Modèles de noms de fichiers personnalisés\n- Copie automatique dans le presse-papiers\n\nShotcake est un achat unique. Pas d’abonnement, pas de compte, pas de publicité. Nécessite macOS 14 ou version ultérieure et l’autorisation « Enregistrement de l’écran ».",
+					"metaDescription": "Shotcake — outil natif de capture, d’annotation et de partage pour macOS. Capturer, annoter, masquer, exporter. Achat unique, en développement.",
+					"features": [
+						{ "emoji": "📸", "title": "Capturez n’importe quoi", "desc": "Zone, fenêtre, écran entier, tous les écrans ou forme libre. Zone fixe pour des captures identiques, capture différée pour les menus et les états de survol, avec loupe de pixels et surbrillance des fenêtres." },
+						{ "emoji": "✏️", "title": "Annotez en quelques secondes", "desc": "Flèches, lignes, rectangles, ellipses, crayon et surligneur, plus zones de texte et numérotation des étapes. Rogner, pivoter et retourner restent non destructifs et annulables." },
+						{ "emoji": "🙈", "title": "Masquez ce qui ne doit pas sortir", "desc": "Flou, pixellisation et masquage plein retirent les données privées avant que la capture ne quitte votre Mac. Le projecteur concentre l’attention sur un seul détail." },
+						{ "emoji": "🎨", "title": "Plus qu’un simple recadrage", "desc": "Arrière-plans dégradés ou unis avec marge réglable, coins arrondis, ombres portées et un filigrane dont vous réglez la position, la taille et l’opacité." },
+						{ "emoji": "⚡", "title": "Des outils qui ne gênent pas", "desc": "Raccourcis globaux personnalisables pour chaque mode, aperçu flottant à glisser dans une autre app, capture épinglée au premier plan, pipette, règle d’écran et reconnaissance de texte." },
+						{ "emoji": "📤", "title": "Exportez à votre façon", "desc": "PNG, JPEG, HEIC, TIFF et PDF en 0,5×, 1× ou 2×, avec modèles de noms de fichiers et copie automatique dans le presse-papiers. La bibliothèque garde l’historique, annotations toujours modifiables." }
 					]
 				}
 			}

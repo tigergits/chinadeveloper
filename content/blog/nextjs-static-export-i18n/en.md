@@ -1,8 +1,8 @@
 ---
 title: "Next.js Static Export i18n Without a Locale Prefix"
 description: "Next.js static export i18n breaks the usual rewrite trick for a prefix-free default locale. Here is the route-group layout I run on two live sites."
-date: 2026-09-07
-updated: 2026-09-07
+date: 2026-09-02
+updated: 2026-09-02
 type: howto
 targetKeyword: "next.js static export i18n"
 secondaryKeywords:

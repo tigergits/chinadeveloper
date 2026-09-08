@@ -1,8 +1,8 @@
 ---
 title: "How to Use optional_host_permissions in a Chrome Extension"
 description: "Shipping optional_host_permissions instead of a broad host_permissions block, with the user-gesture rule that breaks the request and how to structure around it."
-date: 2026-09-09
-updated: 2026-09-09
+date: 2026-08-06
+updated: 2026-08-06
 type: howto
 targetKeyword: "optional_host_permissions"
 secondaryKeywords:

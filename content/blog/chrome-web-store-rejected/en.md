@@ -1,7 +1,7 @@
 ---
 title: "Chrome Web Store Rejected Me 7 Times in 9 Months"
 description: "Chrome Web Store rejected my extensions seven times in nine months. Every notice, the exact code and copy they flagged, and what I changed to pass."
-date: 2026-09-07
+date: 2026-09-05
 updated: 2026-09-08
 type: pitfall
 targetKeyword: "chrome web store rejected"

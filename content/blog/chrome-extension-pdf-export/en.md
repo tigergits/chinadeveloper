@@ -1,8 +1,8 @@
 ---
 title: "Chrome Extension PDF Export Without Shipping a PDF Library"
 description: "A Chrome extension PDF export built on jsPDF can fail review for remote hosted code. Here is the browser-print approach I use instead, plus DOCX and XLSX."
-date: 2026-09-08
-updated: 2026-09-08
+date: 2026-08-01
+updated: 2026-08-01
 type: howto
 targetKeyword: "chrome extension pdf export"
 secondaryKeywords:

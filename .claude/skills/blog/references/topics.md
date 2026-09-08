@@ -62,17 +62,20 @@
 
 | 发布日 | slug | 类型 | targetKeyword |
 | --- | --- | --- | --- |
-| 2026-09-07 | `chrome-web-store-rejected` | pitfall | `chrome web store rejected` |
-| 2026-09-07 | `nextjs-static-export-i18n` | howto | `next.js static export i18n` |
-| 2026-09-08 | `chrome-extension-pdf-export` | howto | `chrome extension pdf export` |
+| 2026-08-01 | `chrome-extension-pdf-export` | howto | `chrome extension pdf export` |
+| 2026-08-06 | `chrome-extension-runtime-host-permissions` | howto | `optional_host_permissions` |
+| 2026-08-11 | `mv3-offscreen-tab-recording` | howto | `mv3 offscreen document` |
+| 2026-08-16 | `gmail-extension-without-gmail-api` | howto | `gmail extension without the gmail api` |
+| 2026-08-21 | `chrome-browsingdata-exclude-origins` | pitfall | `chrome.browsingData excludeOrigins` |
+| 2026-08-27 | `chrome-extension-main-world-content-script` | pitfall | `chrome extension main world content script` |
+| 2026-09-02 | `nextjs-static-export-i18n` | howto | `next.js static export i18n` |
+| 2026-09-05 | `chrome-web-store-rejected` | pitfall | `chrome web store rejected` |
 | 2026-09-08 | `monetize-free-chrome-extension` | build-in-public | `monetize a free chrome extension` |
-| 2026-09-09 | `chrome-extension-runtime-host-permissions` | howto | `optional_host_permissions` |
-| 2026-09-10 | `mv3-offscreen-tab-recording` | howto | `mv3 offscreen document` |
 
 **内链集群**：首篇（拒信）是枢纽，Blue Argon → `chrome-extension-pdf-export`，
-Purple Potassium → `chrome-extension-runtime-host-permissions`，重复功能条款 → `monetize-free-chrome-extension`，六篇两两互链。
+Purple Potassium → `chrome-extension-runtime-host-permissions`，重复功能条款 → `monetize-free-chrome-extension`，九篇两两互链。
 
-**待办**：GSC 提交 6 条 URL；30 天后看 query 报告，按真实曝光词补写小节。
+**待办**：GSC 提交 9 条 URL；30 天后看 query 报告，按真实曝光词补写小节。
 
 ---
 
@@ -89,9 +92,9 @@ Purple Potassium → `chrome-extension-runtime-host-permissions`，重复功能�
   实现取证自 `D:/PROJs/xeviora/src/clearkit/frontend` 与 `imgdown/frontend`（双根 `app/(en)/` + `app/(intl)/[locale]/`）
 - **`D:/PROJs/xeviora/src` 是可自取证的选题矿**（不需要用户提供素材，直接读代码/注释即可）。
   已挖出并写成文章：mailtoolbox 的不打包 PDF/OOXML 库、autorefresh 的运行时主机权限、
-  reelcap 的 offscreen 录屏。**尚未挖的富矿**：
+  reelcap 的 offscreen 录屏、**pinlens 的 MAIN world 被动拦截取数**（2026-09-08）、
+  **clearkit 的 browsingData 白名单**（2026-09-08）、
+  **mailtoolbox 的 Gmail 打印视图 + Atom feed**（2026-09-08）。**尚未挖的富矿**：
   sheetpilot（chrome.identity 仅 spreadsheets scope 直写用户表格、永不过本站服务器）、
-  mailtoolbox（Gmail 打印视图 + Atom feed 取数，绕开 restricted scope 的 CASA 年审）、
-  pinlens（MAIN world 被动拦截取数）、feedlens（本地优先免账号）、
-  clearkit（清理浏览数据但白名单保登录态）、ideas（退掉 Celery/Redis 改 cron + 数据库即队列）
+  feedlens（本地优先免账号）、ideas（退掉 Celery/Redis 改 cron + 数据库即队列）
 - （继续补充：真实报错原文、审核拒信、用户提问）

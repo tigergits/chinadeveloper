@@ -1,8 +1,8 @@
 ---
 title: "How to Record a Tab With an MV3 Offscreen Document"
 description: "A working MV3 offscreen document pipeline for tab recording: where the stream ID has to come from, why audio needs replaying, and the Retina resolution trap."
-date: 2026-09-10
-updated: 2026-09-10
+date: 2026-08-11
+updated: 2026-08-11
 type: howto
 targetKeyword: "mv3 offscreen document"
 secondaryKeywords:

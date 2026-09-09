@@ -3,7 +3,7 @@
 import { useTranslations, useLocale } from 'next-intl'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Github, Linkedin, Mail, Facebook, Youtube, X, ArrowRight, Zap } from "lucide-react"
+import { Github, Linkedin, Mail, Facebook, Youtube, ArrowRight, Zap } from "lucide-react"
 
 interface ContactItem {
   name: string;
@@ -16,8 +16,6 @@ interface HeroSectionProps {
 
 const iconMap: Record<string, typeof Github> = {
   'GitHub': Github,
-  'X': X,
-  'Twitter': X,
   'Facebook': Facebook,
   'YouTube': Youtube,
   'LinkedIn': Linkedin,
@@ -159,7 +157,6 @@ export function HeroSection({ contactInfo = [] }: HeroSectionProps) {
         <div className="flex justify-center gap-4">
           {socialLinks.map((social) => {
             const Icon = iconMap[social.name] || Github;
-            const isX = social.name === 'X' || social.name === 'Twitter';
             return (
               <a
                 key={social.name}
@@ -169,11 +166,7 @@ export function HeroSection({ contactInfo = [] }: HeroSectionProps) {
                 className="p-3 rounded-lg bg-muted hover:bg-muted/80 text-foreground transition"
                 aria-label={social.name}
               >
-                {isX ? (
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.614l-5.106-6.677-5.829 6.677h-3.307l7.735-8.835L2.564 2.25h6.614l4.888 6.469L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z" />
-                  </svg>
-                ) : social.name === 'YouTube' ? (
+                {social.name === 'YouTube' ? (
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M19.615 3.175c-3.674-3.175-9.546-3.175-13.22 0-3.674 3.175-3.674 8.325 0 11.5 3.674 3.175 9.546 3.175 13.22 0 3.674-3.175 3.674-8.325 0-11.5zm-9.615 12.325v-8l5.5 4-5.5 4z" />
                   </svg>

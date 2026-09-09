@@ -149,7 +149,6 @@ export default async function HomePage({ params }: { params: Promise<{ locale: L
 		"url": `https://chinadeveloper.net/${locale}`,
 		"sameAs": socialLinksForJsonLd.length > 0 ? socialLinksForJsonLd : [
 			"https://github.com/tigergits",
-			"https://x.com/tigerhuliu",
 			"https://www.facebook.com/tigerhuliu"
 		],
 		"email": emailForJsonLd,

@@ -1,6 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server"
 import { Locale } from "@/i18n/request"
-import { Github, Twitter, Facebook, Mail, Linkedin, Briefcase, ExternalLink } from "lucide-react"
+import { Github, Facebook, Mail, Linkedin, Briefcase, ExternalLink } from "lucide-react"
 import { getContactInfo } from "@/lib/content"
 import { getHireLinks, getSameAs } from "@/lib/hire"
 import { ContactForm } from "@/components/contact-form"
@@ -8,7 +8,6 @@ import { ContactForm } from "@/components/contact-form"
 const iconMap: Record<string, typeof Mail> = {
 	Email: Mail,
 	GitHub: Github,
-	X: Twitter,
 	Facebook: Facebook,
 	LinkedIn: Linkedin,
 }
